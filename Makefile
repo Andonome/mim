@@ -23,7 +23,7 @@ images/extracted/town.svg: images/extracted
 config/bind.sty:
 	git submodule update --init
 
-handouts.pdf:
+handouts.pdf: handouts.tex
 	pdflatex -shell-escape handouts.tex
 	pdflatex handouts.tex
 

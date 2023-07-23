@@ -8,13 +8,18 @@ global: config/bind.sty .switch-gls
 config/bind.sty:
 	@git submodule update --init
 
-extracts: images/extracted/town.svg images/extracted/under_lost_city.svg
+
+.PHONY : extracts
+extracts: images/extracted/town.svg images/extracted/under_lost_city.svg images/extracted/forest_gate.svg
+
 images/extracted:
 	mkdir -p images/extracted
 images/extracted/under_lost_city.svg: images/extracted
 	inkscape images/Dyson_Logos/under_lost_city.svg --export-id-only --export-id=layer2 -l --export-filename images/extracted/under_lost_city.svg
 images/extracted/town.svg: images/extracted
 	inkscape images/Dyson_Logos/town.svg --export-id-only --export-id=layer5 -l --export-filename images/extracted/town.svg
+images/extracted/forest_gate.svg: images/extracted
+	inkscape images/Dyson_Logos/forest_gate.svg --export-id-only --export-id=layer3 -l --export-filename images/extracted/forest_gate_map.svg
 
 svg-inkscape: | config/bind.sty extracts
 	@pdflatex -shell-escape -jobname $(BOOK) main.tex

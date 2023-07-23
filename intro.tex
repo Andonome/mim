@@ -1,14 +1,6 @@
-\chapter{Side Quests}
+\chapter{Protagonists \& Plots}
   \epigraph{He attacked everything in life with a mix of extraordinary genius and na\"ive incompetence, and it was often difficult to tell which was which.}{Douglas Adams}
 \label{sideQuestIntro}
-
-\begin{multicols}{2}
-
-\ifodd\day
-  \setcounter{gold}{85}
-\else
-  \setcounter{gold}{35}
-\fi
 
 \label{Irina/greylands}
 
@@ -22,6 +14,10 @@
   \rotatebox{55}{\normalsize\nameref{lakeside}}/85/49,
   \rotatebox{10}{\normalsize crossroads}/70/67,
 }
+
+\section{Plots \& Schemes}
+
+\begin{multicols}{2}
 
 \noindent
 Trouble has arrived at \gls{town}, as two great organizations begin their grab for power.
@@ -278,3 +274,25 @@ In the words of \gls{forestpriest}:
 \end{exampletext}
 
 \end{multicols}
+
+\section{Side Quest Summaries}
+\label{sqSummaries}
+
+\begin{multicols}{2}
+
+\noindent
+This complete list of Side~Quests allows you to see which Side~Quests are available at a glance, in each area.
+Once the PCs encounter some Side~Quest which combines with another, pick another Side Quest in the area to continue or start.
+
+Many Side Quests start in the town, then change to the villages, and back again.
+This summary gives you an overview of what happens per-area.
+
+Remember to write a `\sqr' in front of the Side Quest encounters which have become available, and `\ding{55}'~out encounters which you've completed.
+
+\end{multicols}
+
+\foreach \x in {Town, Villages, Forest}{
+  \center\subsection*{\x}
+  \printcontents[\x]{l}{2}{\setcounter{tocdepth}{3}}
+}
+

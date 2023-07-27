@@ -10,18 +10,20 @@
 
   Donkey &   &  4 \glspl{sp} \\
 
-  Horse &  &  60 \glspl{sp} \\
+  Horse &  &  6 \glspl{gp} \\
 
   War Horse &   &  80 \glspl{sp} \\
 
-  Leather Barding &   &  10 \glspl{sp} \\
+  Leather Barding &   &  1 \gls{gp} \\
 
   Chain Barding &   &  2 \glspl{gp} \\
+  \hline
+  \textbf{Specialized} & & \\
+  \hline
 
-  Plate Barding &   &  15 \glspl{gp} \\
+  Plate Barding &   &  150 \glspl{gp} \\
 
 \end{boxtable}
-
 
 \begin{boxtable}[Xcc]
   \index{Clothes}
@@ -47,19 +49,19 @@
 
   Grappling hook &  -2 &  1 \gls{sp} \\
 
-  Ink bottle &  &  2 \glspl{sp} \\
-
   Lantern &  -2 &  3 \glspl{sp} \\
-
-  Lock pick set &   &  10 \glspl{sp} \\
 
   Metallurgy set &  6 &  40 \glspl{sp} \\
 
-  Parchment sheet &   &  4 \glspl{cp} \\
-
-  Quill &   &  4 \glspl{cp} \\
+  Writing set &  &  4 \glspl{cp} \\
 
   Rope, 50' &  -1 &  2 \glspl{sp} \\
+
+  \hline
+  \textbf{Specialized} & & \\
+  \hline
+
+  Lock pick set &   &  10 \glspl{sp} \\
 
   Rope, silk, 50' &  -4 &  3 \glspl{sp} \\
 
@@ -73,8 +75,6 @@
 
   \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Alcohol lantern & -5 & {4 \glspl{sp}} \\
-
   Cart & 10 &  10 \glspl{sp} \\
 
   Camping equipment & 1 & {3 sp} \\
@@ -83,23 +83,22 @@
 
   Torch & -4 & {8 \glspl{cp}} \\
 
+  \hline
+  \textbf{Specialized} & & \\
+  \hline
+  Alcohol lantern & -5 & {4 \glspl{sp}} \\
+
 \end{boxtable}
 
 \end{multicols}
 
 \subsection{Weapons}
 
-
   \begin{nametable}[XXXXXX]{M\^{e}l\'{e}e Weapons}
-
 
   \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
   \Dagger & 2\glspl{sp} \\
-
-  \greataxe & 24 \glspl{sp} \\
-
-  \greatsword & 30 \glspl{sp} \\
 
   \javelin & 4 \glspl{sp} \\
 
@@ -115,20 +114,42 @@
 
   \spear & 5 \glspl{sp} \\
 
+  \hline
+  \textbf{Specialized} & & \\
+  \hline
+
+  \greataxe & 24 \glspl{sp} \\
+
+  \greatsword & 30 \glspl{sp} \\
+
 \end{nametable}
 
 
-  \begin{nametable}[XXXXX]{Shields}
+\begin{boxtable}[XXXXXl]
 
-  \textbf{Name} & \textbf{Defence Bonus} & \textbf{\Glsfmtshortpl{ap} Cost} & \textbf{Weight} & Cost \\\hline
+  \textbf{Projectile} & \textbf{\Gls{ap}} & \textbf{Damage} & \textbf{Weight}  & \textbf{Reload Time} & \textbf{Cost} \\\hline
 
-  \bucklar & 6 \glspl{sp} \\
+  Crossbow &  1 & $2D6$ & 1 & 5 - Str rounds  & {20 sp} \\
 
-  \roundshield & 7 \glspl{sp} \\
+  Longbow &  4 & varies & -4 & 4 - extra Str \glspl{ap}& {10 sp} \\
 
-  \kiteshield & 9 \glspl{sp} \\
+  Shortbow &  1 & $1D6-1$ & -5 & 1 \gls{ap} & {5 sp} \\
 
-  \end{nametable}
+  Throwing knives & 2 & $1D6$ & -5 & 1 \gls{ap} & {100 cp} \\
+
+\end{boxtable}
+
+\begin{nametable}[XXXXX]{Shields}
+
+\textbf{Name} & \textbf{Defence Bonus} & \textbf{\Glsfmtshortpl{ap} Cost} & \textbf{Weight} & Cost \\\hline
+
+\bucklar & 6 \glspl{sp} \\
+
+\roundshield & 7 \glspl{sp} \\
+
+\kiteshield & 9 \glspl{sp} \\
+
+\end{nametable}
 
 \begin{multicols}{2}
 
@@ -145,11 +166,15 @@ Roll your Wits + Wyldcrafting to identify a healthy animal with an agreeable tem
   \textbf{Beast} & \textbf{Cost} \\\hline
   Horse & 20 \glspl{sp} \\
 
-  War Horse & 40 \glspl{sp} \\
-
   Hunting Dog & 4 \glspl{sp} \\
 
   Donkey & 3 \glspl{sp} \\
+
+  \hline
+  \textbf{Specialized} & \\
+  \hline
+
+  War Horse & 40 \glspl{sp} \\
 
 \end{boxtable}
 Characters can significantly improve their average travel-times with a horse, covering 25 miles per day without tiring.
@@ -221,6 +246,8 @@ You can cut these apart from the sheet and give them to players.
 All purchases in a village require a full morning or afternoon.
 Villagers chat, then barter, and finally refer the buyer to someone else.
 
+Specialized items require a Charisma + Vigilance roll, \gls{tn} 12.
+
 \begin{boxtable}[Xcc]
 
   \textbf{Animal} & & \textbf{Cost} \\\hline
@@ -255,9 +282,13 @@ Villagers chat, then barter, and finally refer the buyer to someone else.
 
   Lantern &  -2 &  5 \glspl{sp} \\
 
-  Metallurgy set &  6 &  60 \glspl{sp} \\
-
   Rope, 50' &  -1 &  4 \glspl{sp} \\
+
+  \hline
+  \textbf{Specialized} & & \\
+  \hline
+
+  Metallurgy set &  6 &  60 \glspl{sp} \\
 
 \end{boxtable}
 
@@ -295,6 +326,12 @@ Villagers chat, then barter, and finally refer the buyer to someone else.
   \shortsword & 18 \glspl{sp} \\
 
   \spear & 15 \glspl{sp} \\
+
+  \hline
+  \textbf{Specialized} & & \\
+  \hline
+
+  \longsword & 10 \glspl{sp} \\
 
 \end{nametable}
 

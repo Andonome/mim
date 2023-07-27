@@ -27,7 +27,7 @@ $(BOOK).sls: | $(BOOK).glo
 $(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) $(wildcard config/*.sty)
 	@pdflatex -jobname $(BOOK) main.tex
 
-handouts.pdf: handouts.tex
+handouts.pdf: handouts.tex market.tex
 	pdflatex -shell-escape handouts.tex
 	pdflatex handouts.tex
 creds:

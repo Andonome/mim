@@ -484,10 +484,16 @@ Failure means they fall into the water, \emph{then} get grabbed (with a -2 penal
   {-5}}% CHARISMA
   {3}% DR
   {1}% COMBAT
-  {Aggression 2, Academics 2, Xenomology 3, Medicine 1
-  \Path{\necromancy~4, \saurecanta~3}}% SKILLS
+  {
+    Aggression 2, Academics 2, Xenomology 3, Medicine 1
+  }% SKILLS
   {\longsword}% EQUIPMENT
-  {\addtocounter{xpbonus}{3}}
+  {
+    \addtocounter{xpbonus}{3}
+    \setcounter{Fate}{2}
+    \setcounter{Air}{2}
+    \setcounter{Water}{1}
+  }
 
 \paragraph{Room A} used to house the master of Conjuration, who built the portal in room \ref{summoningRoom}.
 The ogre has kept him around for his own amusement, as a ghoul.
@@ -560,7 +566,7 @@ It's flooded, like every other room on its level.
 
 The two skeletons on the table have aged worse than the other corpses, as they were never preserved in the peat-water.
 They died of hunger rather than facing the dead they knew to be outside.
-One holds a book of poetry, and the other holds a book of conjuration which she never managed to understand before dying.
+One holds a book of poetry, and the other holds a book of Enchantment spells, which she never managed to understand before dying.
 
 \begin{boxtext}
 

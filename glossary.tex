@@ -31,10 +31,13 @@
   {1}% COMBAT
   {
     Deceit~2, Stealth~3, Tactics~2, Wyldcrafting~3
-    \Path{\aldaron~3, \polymorph~4}
   }% SKILLS
   {None}% EQUIPMENT
-  {\lockedmana{5}}
+  {
+    \setcounter{Earth}{3}
+    \setcounter{Water}{3}
+    \setcounter{Fate}{1}
+  }
 }
 
 \newglossaryentry{spiderqueen}{
@@ -70,10 +73,11 @@
   {0}% COMBAT
   {
     Academics~1, Empathy~2, Deceit~1, Larceny~2
-    \Path{Devotion (Alass\"{e})}{\fate~2}
   }% SKILLS
-  {\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
-  {}
+  {\Dagger, 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
+  {
+    \setcounter{Fate}{2}
+  }
 
 }
 \newcommand{\beardedalemaster}{
@@ -123,10 +127,13 @@
   {0}% COMBAT
   {
     Academics~3, Empathy~2, Stealth~2, Vigilance~2
-    \Path{\conjuration~2, \illusion~4}
   }% SKILLS
   {\Dagger, 20gp, crudely drawn maps}% EQUIPMENT
-  {\addtocounter{fp}{10}}
+  {
+    \addtocounter{fp}{10}
+    \setcounter{Fire}{2}
+    \setcounter{Air}{2}
+  }
 }
 
 \newglossaryentry{keras}{
@@ -148,10 +155,13 @@
   {1}% COMBAT
   {
     Projectiles~2, Academics~2, Empathy~2, Performance~3, Seafaring 2, Stealth~1, Vigilance~2, Wyldcrafting~2
-    \Path{\aldaron~3, \enchantment~2, \fate~2, \force~1}
   }% SKILLS
-  {\shortsword, shortbow, dagger, earrings worth 20 sp, necklace worth 2 gp, bracelets each worth 2 sp}% EQUIPMENT
-  {}
+  {\shortsword, shortbow, dagger, earrings worth 20 \glspl{sp}, necklace worth 2 gp, bracelets each worth 2 \glspl{sp}}% EQUIPMENT
+  {
+    \setcounter{Air}{1}
+    \setcounter{Fate}{2}
+    \setcounter{Water}{2}
+  }
 }
 
 \newglossaryentry{elfprince}{
@@ -175,12 +185,13 @@
 {1}% COMBAT
 {
   Projectiles~3, Academics~2, Crafts~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
-  \Path{\aldaron~3, \enchantment~3, \necromancy~5}
 }%SKILLS
 {Hunting Bow, dagger}%EQUIPMENT
 {
-  \lockedmana{6}
   \knacks{\snapshot, \mightydraw, \perfectsneakattack}
+  \setcounter{Fate}{3}
+  \setcounter{Air}{3}
+  \setcounter{Water}{2}
 }
 }
 
@@ -204,10 +215,15 @@
   {1}% COMBAT
   {
     Academics~2, Crafts~1, Deceit~2, Seafaring~1, Stealth~2, Vigilance~1, Wyldcrafting~2
-    \Path{\aldaron~3, \fate~2, \polymorph~4}
   }% SKILLS
   {\quarterstaff, dagger}% EQUIPMENT
-  {\addtocounter{fp}{10}}
+  {
+    \addtocounter{fp}{10}
+    \setcounter{Earth}{3}
+    \setcounter{Air}{2}
+    \setcounter{Water}{2}
+    \setcounter{Fate}{1}
+  }
 }
 
 \newglossaryentry{forestpriest}{
@@ -256,10 +272,14 @@
   {1}% COMBAT
   {
     Academics~1, Caving~1, Deceit~3, Seafaring~1, Tactics~2, Vigilance~2
-    \Path{\conjuration~3, \illusion~3, \necromancy~3, \saurecanta~2}
   }% SKILLS
   {\shortsword, \partialleather, dagger, 20sp}% EQUIPMENT
-  {\addtocounter{fp}{5}\lockedmana{8}}
+  {
+    \addtocounter{fp}{5}
+    \setcounter{Fire}{2}
+    \setcounter{Air}{2}
+    \setcounter{Fate}{1}
+  }
 }
 
 \newglossaryentry{sewerking}{

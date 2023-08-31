@@ -59,7 +59,7 @@ This encounter can easily slip into the background -- the knight has no interest
 
 \begin{boxtext}
 
-  A \seasonDesc\ \season n wind blows through \gls{town}.
+  A rank wind blows through \gls{town}.
   From the street ahead a drunken man in full plate armour falls against a wall, before getting back up and shouting at passers by that they're pathetic for drinking elvish nonsense, and need a proper dwarvish drink.
 
 \end{boxtext}
@@ -504,11 +504,13 @@ Bertold refuses, saying it would put the Ale Guild in a difficult situation, but
 {0}}% CHARISMA
 {0}% DR
 {0}% COMBAT
-{Projectiles~1, Academics~2, Crafts~1, Wyldcrafting~1
-\knacks{\snapcaster}
-\Path{\conjuration~3, \invocation~3, \illusion~1}}% SKILLS
+{Projectiles~1, Academics~2, Crafts~1, Wyldcrafting~1}% SKILLS
 {Mana stone worth 4 MP}% EQUIPMENT
-{\lockedmana{2}}
+{
+  \knacks{\snapcaster}
+  \setcounter{Fire}{2}
+  \setcounter{Air}{2}
+}
 
 \beardedalemaster
 \label{beardedalemaster}

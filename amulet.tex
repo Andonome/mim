@@ -1,0 +1,241 @@
+\resumecontents[Villages]
+\sidequest{The Lizardite Amulet}\label{lizardite}
+\index{Lizardite Amulet}
+\stopcontents[Villages]
+
+\startcontents[sq]
+
+\sqminitoc
+
+\noindent
+\textbf{Background:}
+\gls{townmaster} wanted to give the citadel's greatest treasure to the woodspy bandits, so they could summon whatever building equipment they needed, but if anyone found them using the item, his connection to them would become obvious.
+Therefore, he requested that \gls{alchemist} send the item to \gls{college}, while \gls{traitor} arranged to have the woodspy bandits steal it en route by extortion.
+
+However, \gls{captain} knew that such a famous item would never travel without word spreading, so he has arranged to have several fake items made, each of which will take a different route.
+
+\paragraph{The lizardite amulet}
+summons any item, and is exceptionally powerful as it has 30 MP in total.  It functions as per the third level conjuration sphere.  Unfortunately, it cannot be used unless the user first uses the activation word, and secondly, speaks in Gnomish.\footnote{The amulet was made by a gnomish alchemist, though the University don't like to talk about this fact.}
+
+\magicitem{The Lizardite Amulet}{Conjuration 3}{Alchemy}{Continuous}{Sentient Artefact (Experience)}{5}{30}
+
+The party begin by transporting a copy of the amulet, fighting the woodspy bandits, hearing rumours about the real one, and eventually find it in a random village.
+
+\sqpart{Town}% AREA
+{The Shell Game}% NAME
+{The characters must take a fake amulet to the \glsentrytext{guard} for safe passage out of the area}% SUMMARY
+\label{shellGame}
+
+\Gls{captain}, has arranged for three replicas to be created, and hands them off to the \gls{guard} soldiers one at a time.
+He pulls the PCs into his office (see page \pageref{guardstation}), and tells them the score.
+
+\begin{speechtext}
+
+  With so many of our best guardsmen investigating rumours of bandits around the \glsentrytext{edge}, I am forced to entrust you with the safe keeping of the Lizardite Amulet, at least until you can transport it to the regiment which sits at the crossroads.
+
+  Take the amulet, and this note to them.
+
+\end{speechtext}
+
+\Gls{traitor} has no idea about \gls{captain}'s trickery, so he has arranged for the woodspy bandits to come in large numbers to the crossroads.
+
+\paragraph{The \gls{guard} at the crossroads}
+are a semi-permanent camp who look for trouble around the safe villages.
+Some are soldiers, and many are scouts.
+They have no idea that they are meant to take the amulet.
+
+\humansoldier[\npc{\T[5]\Hu\E}{Five members of the \glsentrytext{guard}}]
+
+\humansoldier[\npc{\T[10]\Hu\E}{Ten of the Woodspy Bandits}]
+
+\woodspyleader
+
+\Gls{woodspyleader} is a massive man, unable to run well, but he rarely needs to.
+
+Each of the bandits rides a war horse (these are the only horses the bandits have).
+
+\paragraph{If the PCs try to understand the item,}
+have them roll Intelligence + Academics, TN 10.
+Success means they understand the forgery.%
+%! Understanding items ref required.
+
+\paragraph{Once the PCs reach the crossroads,}
+they can see the simple \gls{guard} camp in the distance, and hear the woodspy bandits coming behind them.
+
+\paragraph{If the PCs aren't wearing \gls{guard} uniforms, do not carry visible weapons, and simply stroll along quietly,}
+the bandits pass them politely, and attack the \gls{guard} camp.
+
+\paragraph{If the bandits get the item,} they will retreat to \gls{greentower}.%
+\footnote{See page \pageref{green_tower} for more on the Green Tower.}
+They have no interest in bloodshed for its own sake.
+
+\sqpart{Town}% AREA
+{The Book of War}% NAME
+{\Glsentrytext{sewerking} hires a local thief to steal a book to learn of the amulet's command word}% SUMMARY
+
+\textbf{Background:}
+\Gls{sewerking}'s men have taken the Lizardite Amulet, but they cannot use it, so he has \gls{sewerthief} steal the \textit{Book of Ancient Wars}, detailing various battles about the time of time of Rex Dalius.%
+\iftoggle{aif}{
+  \footnote{See Fenestra, page \pageref{h_dalius} for more.}
+}{}%
+The book comes from the restricted works in the Temple of C\'{a}l\"{e} (i.e. the local library).
+Among the various things the book talks about, it mentions the alchemical amulet which conjures things, and describes the word which allows the user to activate its powers.
+This won't be obvious as the book is very long, and very tedious.
+
+What \emph{is} obvious, is the sprinting thief.
+
+\begin{boxtext}
+
+  A man sprints towards you at lightning speed, carrying a book, then darts to the side and down the street.
+
+\end{boxtext}
+
+Players who say they want to stop him before he rushes past should make a Wits + Empathy check at TN 9 (to quickly understand his nefarious intent).
+As soon as he's gone, three of \gls{town} \gls{guard} bound round the corner in pursuit, shouting at the characters to get him.
+
+The thief attempts to run to \gls{pig}, then disappear past the lively crowd, and into the private room.%
+\footnote{See page \pageref{pigPrivate}.}
+
+\sewerthief
+
+\paragraph{If the Lizardite Amulet is definitely elsewhere,}
+it doesn't matter, because \gls{sewerking} does not know that yet.
+He thinks his men still have it, or plans to get it back.
+
+\paragraph{If the PCs catch up,}
+\gls{pigowner} will stop \gls{sewerthief} entering the hatch to the secret labyrinth below, so the immortal bandits will not be discovered.
+
+The thief will have to pay a library fine of 3 cp (unless the PCs push for a harsher penalty).
+
+\paragraph{If the PCs try to understand the importance of the book,}
+they can make an Intelligence + Academics roll, TN 12.
+
+\sqpart{Villages}% AREA
+{\squash Rumours of Magic}% NAME
+{Local villagers think they have figured out the command word for the amulet}% SUMMARY
+
+Whether or not the book survived, one way or another, the item's magical activation word has been discovered\ldots or so the villagers think.
+Specifically, they think the command word ``Saur\"{e}'' will activate the item.
+Everyone's talking about what they would do if they found the ``magical wishing amulet''.
+Most people don't understand its powers, and think they can just wish to be the Rex, or to be young.
+
+An Intelligence + Academics Group Roll at TN 7 lets the party know that this is nonsense.%
+\iftoggle{core}%
+{\footnote{See the core rules, page \pageref{grouproll}, for Group Rolls.}}%
+{}
+
+Play the next Side Quest from the Villages immediately.
+
+\sqpart{Town}% AREA
+{The Mob}% NAME
+{A fake amulet is dropped, and the townsfolk all clamour after it}% SUMMARY
+
+\begin{boxtext}
+
+  A trumpet at the city gate sounds off, and the \gls{guard} can be seen standing upon the great town wall, with three bleeding criminals kneeling at their sides, and three severed heads in their hands.
+The town crier shouts out.
+
+\end{boxtext}
+
+The item resurfaces in town, as a guard drops it, and all the townsfolk are ready to trample each other to death for it.
+
+\begin{boxtext}
+  \begin{quotation}
+    Hear ye, all!
+
+    Our brave, and skilful warriors of the \gls{guard} have gone out to the depths of the forest, and pulled out some of the local bandits who have so terrorized the poor men and women in these lands, with theft and murder.
+
+    They have lost one of their number, and we mourn the loss of \ldots how the hell do I say this?
+
+    We mourn the loss of `Stanisele', who died fighting for \gls{king}.
+
+    But we also celebrate, as the famous lizardite amulet, property of \gls{college}, was rested from the hands of the bandits.
+
+  \end{quotation}
+
+  One of the night guard holds the amulet aloft in great, gloved hands, but then fumbles, and slips.  The amulet falls many yards smoothly to the ground.  The crowd hear the tiniest `clink', and then a young girl runs forward, shouting that she wants to wish for shoes.  The crowd begin to move, \emph{fast}.
+
+\end{boxtext}
+
+Getting through the crowd requires a Strength + Empathy roll, TN 10.
+Town guards nearby also want to use the item, so they pull out their swords and prepare to cut down anyone stealing ``\glsentrytext{king}'s property''.
+If the players don't intervene, the scene turns into a bloodbath within a couple of rounds.
+
+Once finally obtained, an Intelligence + Academics Group Roll at TN 10 shows that this is not the real amulet.
+
+\sqpart{Town}% AREA
+{They Took Our Jobs!}% NAME
+{Novice cutthroats assault the characters, but they have no idea what they're doing.}% SUMMARY
+
+Pick a character who's most likely to go somewhere alone.  If that's not feasible, the party are ambushed when sleeping in a tavern.
+However it goes down, they're being robbed by some wannabe-thieves.
+
+\begin{speechtext}
+
+  Don't try any funny business.  Just hand over the gold. Or silver.  Or at least definitely those boots -- god I'd kill for proper boots.  I mean, I actually will.  I'll kill you.  Hand them over.
+
+\end{speechtext}
+
+A quick Wits + Empathy check, TN 8, reveals the thieves haven't a clue what they're doing.
+Once the non-fight has ended, the characters might ask what these three think they were doing.
+They reply that they once worked for a Villagemaster, but Clarisa was accused of stealing tax money.
+Robert was set to guard the money after the next round of tax collection, but in the morning, it was all gone.
+The next week, all the staff were fired, as their replacements had arrived.
+
+They claim that they never stole a penny, and have no idea how the money vanished.
+
+The truth of the matter is that the taxes in the local village were being paid with false coin.
+One woman, using the Lizardite Amulet, summoned false coinage, which disappeared soon after.
+
+\humanmaid[\npc{\T[2]\E\Hu}{Clarisa and Robert}]
+
+\humanthief[\npc{\M\Hu}{Steven}]
+
+\sqpart{Villages}% AREA
+{The Old Lady}% NAME
+{An old lady has found the amulet, and used it to hand out magical jewellery to local serfs}% SUMMARY
+
+\begin{boxtext}
+  A grubby little girl dances down the road with bear feet, occasionally singing, then stopping.
+
+    ``Do you like my jewels?'', she asks.
+
+  She has one massive green rock of immense value, hanging from a copper chain, and four bracelets on each arm, each studded with crystals.
+\end{boxtext}
+
+The actual Lizardite Amulet left with scouts of the \gls{guard}, a day after the players.
+Chitincrawlers caught and ate the guards, and the leftovers were rummaged through by Martha, a middle-aged villager.
+After a visit from a gnomish alchemist, she learned the item's command word, and a few gnomish words for things to summon.\footnote
+{\textit{Gold coins, ledge, boots, gold-necklace, dry sticks, satchel, fancy bracelet, pestle, morter, horseshoe, bandage, water, frying pan, coat, hat} and \textit{bowl.}}
+
+Today, she summoned jewels to entertain Emily, a little girl.
+Emily wants to keep the source of her jewels a secret, and the characters have zero chance of bribing her.
+After a day, the jewels vanish into thin air.
+
+\NPC{\F}{Martha the Healer}{Three rotten teeth}{``Um-well\ldots''}{Acquisition}
+
+\person{-1}% STRENGTH
+  {0}% DEXTERITY
+  {-3}% SPEED
+  {{1}% INTELLIGENCE
+  {0}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {Academics~1, Empathy~2, Medicine~3}% SKILLS
+  {Lizardite amulet, bandages}% EQUIPMENT
+  {}
+
+\sqpart{Villages}% AREA
+{\squash Martha Returns}% NAME
+{The old woman who has the item helps the characters}% SUMMARY
+
+If the characters left Martha to continue her good work in the villages with the magical item then there's one more part.
+Combine this with the next Side Quest's encounter, and if the characters get into trouble, Martha comes to their aid, along with her sons, Harry and Oscar.
+If not, leave this encounter till the next time the characters are in trouble in the villages.
+
+\humansoldier[\npc{\T[2]\M\Hu}{Harry \& Oscar}]
+
+\stopcontents[sq]
+
+

@@ -1,0 +1,95 @@
+\subsection{The Guard Station}
+\label{guardstation}
+The grounds are patrolled by a minimum of five guards at any point.
+\Gls{captain} has an obsession with guards constantly rotating around the premise.
+As a result, they've hidden a stash of whiskey in the bushes at the back, and sometimes have `rounds', while they do the rounds.
+
+The wooden buildings tacked into the outer wall have thin rooves which constantly bend and creak -- walking silently across them is impossible for anything with a total weight of 4 or more.
+
+Inside, \gls{captain} keeps a few magical items stashed away in his own room.
+
+\magicitem{Scroll of Fire}{Fireball}{Alchemy}{Instant}{Pocket Spell}{4}{4}
+
+\smolMapPic[\Large]{Dyson_Logos/guard_station}{
+  \ref{stationStables}/42/15,
+  \ref{stationStorage}/81/427,
+  \ref{stationStorage}/54/11,
+  \ref{stationToilet}/63/11,
+  \ref{stationCaptainToilet}/895/427,
+  \ref{stationCaptainRoom}/85/59,
+  \ref{stationSleep}/86/14,
+  \ref{stationDressing}/30/11,
+  \ref{stationLecture}/86/81,
+  \ref{stationRecords}/37/41,
+  \ref{stationInterrogation}/285/57,
+  \ref{stationShrine}/44/65,
+  \ref{stationStairs}/53/41,
+}
+
+\humansoldier[\npc{\T[10]\Hu}{30 \gls{guard}}]
+
+Once the words on the scroll are spoken, the scroll is destroyed, and a fireball spanning 5 squares leaps out to deal $2D6$ Damage.
+
+\iftoggle{aif}{
+  The guard house also contains 10 Spider Arrows and three sets of Eternal Warrior's Armour (see \textit{Fenestra}, \autopageref{eternalwarriorarmour}).
+}{}
+
+\mapPic{b}{Daniel_Walthall/prison}{
+  \huge\rotatebox{-45}{\nameref{dunStorage}}/24/82,
+  \ref{dunStorage}/21/77,
+  \huge\rotatebox{-45}{\nameref{guardStationRoom}}/29/24,
+  \ref{guardStationRoom}/21/26,
+  \nameref{mainPrisonRoom}/59/56,
+  \ref{mainPrisonRoom}/56/46,
+  \Large\nameref{dunCells}/66/98,
+  \ref{dunCells}/71/79,
+  \Large\nameref{dunCells}/66/02,
+  \ref{dunCells}/71/21,
+  \Large\rotatebox{-45}{\nameref{dunGrate}}/88/50,
+  \ref{dunGrate}/80/50,
+  \Large\rotatebox{-45}{\nameref{thingsRoom}}/88/79,
+  \ref{thingsRoom}/84/75,
+  \Large\rotatebox{-45}{\nameref{ogreCell}}/84/17,
+  \ref{ogreCell}/88/23,
+  }
+
+\begin{enumerate}
+
+  \item
+  Dressing room, with armour
+  \label{stationDressing}
+  \item
+  Stables\label{stationStables}
+  \item
+  Storeroom room with handheld weapons, siege weapons, and basically every item listed in the core rules
+  \label{stationStorage}
+  \item
+  Toilet
+  \label{stationToilet}
+  \item
+  Sleeping Quarters
+  \label{stationSleep}
+  \item
+  Captain's Toilet
+  \label{stationCaptainToilet}
+  \item
+  \gls{captain}'s Room
+  \label{stationCaptainRoom}
+  \item
+  Lecture Hall (though mostly used as a drinking hall)
+  \label{stationLecture}
+  \item
+  Records Room, containing lists of fugitives, laws, tax records (a copy is kept in \gls{townmaster}'s treasury), and valuable paintings of local nobles
+  \label{stationRecords}
+  \item
+  Interrogation room
+  \label{stationInterrogation}
+  \item
+  Shrines to Alass\"{e}, Laiqu\"{e}, Ohta, Qualm\"{e}, and V\'{e}r\"{e}.
+  \label{stationShrine}
+  \item
+  Stairway down to the dungeons
+  \label{stationStairs}
+\end{enumerate}
+
+

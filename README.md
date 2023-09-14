@@ -21,5 +21,5 @@ The module comes with a great many handouts - mostly maps which the players can 
 
 ![The Grey Valley](images/Irina/greylands.jpg)
 
-[mim]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/mim.pdf?job=compile_pdf
-[handouts]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/handouts.pdf?job=compile_pdf
+[mim]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/mim.pdf?job=build
+[handouts]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/handouts.pdf?job=build

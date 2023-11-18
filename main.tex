@@ -26,12 +26,7 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \mainmatter
 
-\startcontents[Town]
-\startcontents[Villages]
-\startcontents[Forest]
-\stopcontents[Town]
-\stopcontents[Villages]
-\stopcontents[Forest]
+\declareSQareas{Town,Villages,Forest}
 
 \input{intro.tex}
 
@@ -66,6 +61,8 @@ Civil government, insofar as it is instituted for the security of property, is i
 \renewcommand{\sqarea}{Town}
 
 \begin{multicols}{2}
+
+\startcontents[sq]
 
 \input{ale.tex}
 
@@ -159,6 +156,8 @@ If the \glspl{pc} try to purchase anything from the villages, see the handout on
 \stopcontents[Forest]
 
 \backmatter
+
+%\input{sq_summaries.tex}
 
 \printglossary[type=symbols]
 

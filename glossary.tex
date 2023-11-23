@@ -12,14 +12,15 @@
 }
 
 \newglossaryentry{king}{
-  name={Rex Wyatt Fenestra},
-  text={\ifodd\thepage Rex Wyatt\else the Rex\fi},
-  first={Rex Wyatt Fenestra},
+  name={Rex Oakbane Fenestra},
+  text={\ifodd\thepage Oakbane\else the Rex\fi},
+  first={Rex Oakbane Fenestra},
   description={keeps a tight control over Fenestra through the use of magical portals}
 }
 
 \newcommand{\spiderqueen}{
-\NPC{\F\El}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{Experience}\label{spiderqueen}
+\NPC{\F\El}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{to see her babies in action}
+\label{spiderqueen}
 
 \person{0}% STRENGTH
   {3}% DEXTERITY
@@ -61,7 +62,7 @@
 }
 
 \newcommand{\alemaster}{
-  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Alass\"e} 
+  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Guild Reputation} 
 
 \person{0}% STRENGTH
   {1}% DEXTERITY
@@ -81,18 +82,19 @@
 
 }
 \newcommand{\beardedalemaster}{
-  \humandiplomat[\NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Alass\"e}]
+  \humandiplomat[\NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Profits and local respect}]
 }
 
 \newglossaryentry{beardedalemaster}{
-  name={Susan},
-  first={Susan (\glsentrytext{nomad} of the Shale's Ale Guild)},
-  text={Susan},
+  name={Sailhush},
+  first={Sailhush (\glsentrytext{nomad} of the Shale's Ale Guild)},
+  text={Sailhush},
   description={is the leader of the Ale Guild in the Shale, and became rich selling watered-down dwarvish ale},
 }
 
 \newcommand{\woodspyleader}{
-\NPC{\M\Hu}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{Ohta}\label{woodspyleader}
+\NPC{\M\Hu}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{easy targets, with lots of gold}
+\label{woodspyleader}
 
 \person{4}% STRENGTH
 {2}% DEXTERITY
@@ -108,14 +110,13 @@
 }
 
 \newglossaryentry{woodspyleader}{
-  name={Brook},
-  text={Brook},
+  name={Burngrot},
   description={is the leader of the Woodspy Bandits, and meets with \glsentrytext{traitor} on a semi-regular basis in \glsentrytext{whitehorse}. He always enters battle with a mask over his face, and puts on a faux lower-class accent},
-  first={Woodspy Leader Brook}
+  first={Woodspy Leader Burngrot}
 }
 
 \newcommand{\keras}{
-  \NPC{\Gn\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}{Experience}
+  \NPC{\Gn\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}{a quiet pipe}
 
   \person{-1}% STRENGTH
   {2}% DEXTERITY
@@ -143,7 +144,7 @@
 }
 
 \newcommand{\elfprince}{
-\NPC{\M\El}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{Experience}
+\NPC{\M\El}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{to daydream, uninterrupted}
 
   \person{-1}% STRENGTH
   {2}% DEXTERITY
@@ -173,7 +174,7 @@
 
 \newcommand{\thenecromancer}{
 
-\NPC{\M\D}{\Glsentrytext{necromancer}}{Arrogant}{Slack jaw}{Qualm\"e}
+\NPC{\M\D}{\Glsentrytext{necromancer}}{Arrogant}{Slack jaw}{to hear song again}
 
 \person{1}% STRENGTH
 {2}% DEXTERITY
@@ -196,14 +197,14 @@
 }
 
 \newglossaryentry{necromancer}{
-  name={Antonym},
-  first={the Undead Priest Antonym},
-  description={is a priest of Qualm\"{e}, from the time of Nolan Shale.
+  name={Cainpale},
+  first={the Undead Priest Cainpale},
+  description={is a priest of Eldren from the time of Nolan Shale.
   He has since died, but kept himself unliving, and remains in his old temple (see page \pageref{necromancers_lair})}
 }
 
 \newcommand{\forestpriest}{
-\NPC{\M\El\Hu}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Laiqu\"e} 
+\NPC{\M\El\Hu}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{to know himself} 
 
 \person{0}% STRENGTH
   {2}% DEXTERITY
@@ -234,7 +235,7 @@
 }
 
 \newcommand{\banditking}{
-\NPC{\M\Hu}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{Qualm\"e}
+\NPC{\M\Hu}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{to return to nobility}
 
 \person{3}% STRENGTH
   {3}% DEXTERITY
@@ -253,14 +254,14 @@
 }
 
 \newglossaryentry{banditking}{
-  name={Burke},
-  first={Burke Whiteplains},
+  name={Antonym},
+  first={Antonym Whiteplains},
   description={was the child of a noble in Whiteplains, but his family were killed by the Rex.  He's lived as a criminal ringleader ever since}
 }
 
 \newcommand{\sewerking}{
 
-\NPC{\M\Hu}{\Glsentrytext{sewerking}}{Pony tail}{Hands on sword}{Experience}
+\NPC{\M\Hu}{\Glsentrytext{sewerking}}{Pony tail}{Hands on sword}{gather an army}
 
 \person{1}% STRENGTH
   {0}% DEXTERITY
@@ -290,7 +291,7 @@
 
 \newcommand{\sewerthief}{
   \label{sewerthief}
-  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{Tribe}
+  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{look after \glsentrytext{sewerking}}
 
   \person{1}% STRENGTH
 {2}% DEXTERITY
@@ -316,7 +317,7 @@
 }
 
 \newcommand{\nurabaron}{
-\NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{Tribe}
+\NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{\underline{FOOD}!}
 
 \person{5}% STRENGTH
   {0}% DEXTERITY
@@ -334,14 +335,14 @@
 }
 
 \newglossaryentry{nurabaron}{
-  name={Gladun},
-  text={Gladun},
-  first={Warden Gladun},
+  name={Gladsun},
+  text={Gladsun},
+  first={Warden Gladsun},
   description={was a jovial and simple Warden until he had an accident with a magical item, and has since turned into an ogre}
 }
 
 \newcommand{\captain}{
-\NPC{\M\Hu}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{Tribe}
+\NPC{\M\Hu}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{to finish all his paperwork}
 
 \person{1}%STRENGTH
   {2}% DEXTERITY
@@ -367,7 +368,7 @@
 }
 
 \newcommand{\traitor}{
-\NPC{\M\Hu}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{Acquisition}
+\NPC{\M\Hu}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{to side-step into a noble life}
 
 \person{2}% STRENGTH
   {1}% DEXTERITY
@@ -386,7 +387,7 @@
 }
 
 \newcommand{\townmaster}{
-  \humandiplomat[\NPC{\M\Hu}{\glsentrytext{townmaster}}{Enthusiastic}{Snorts, loudly}{Acquisition}]
+  \humandiplomat[\NPC{\M\Hu}{\glsentrytext{townmaster}}{enthusiastic}{shouts `ha!'}{to hear news of victorious, glorious, battles}]
 }
 
 \newglossaryentry{townmaster}{
@@ -406,7 +407,7 @@
 }
 
 \newcommand{\pigowner}{
-\NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{Acquisition}
+\NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{to make powerful friends}
 
 \person{1}% STRENGTH
   {2}% DEXTERITY
@@ -431,7 +432,7 @@
 }
 
 \newcommand{\warningbard}{
-  \humanbard[\NPC{\M\Hu}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{Laiqu\"e}]
+  \humanbard[\NPC{\M\Hu}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{a loving crowd}]
   \label{warningbard}
 }
 

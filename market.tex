@@ -8,17 +8,19 @@ Villagers chat, then barter, and finally refer the buyer to someone else.
 
 Specialized items require a Charisma + Vigilance roll to find (\gls{tn} 12).
 
+The following prices are for \showSeason.
+
 \begin{boxtable}[Xcc]
   \index{Clothes}
 
   \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Peasant clothes &  0 & 1 \gls{sp} \\
+  Peasant clothes &  1 & 1 \gls{sp} \\
 
   Noble clothes &  0 &  18 \glspl{sp} \\
 
   \label{warmClothes}
-  Warm clothes &  2 &  6 \glspl{sp} \\
+  Temp: \arabic{temperature} Warm clothes &  2 &  \ifnum\value{temperature}=0 6\else 2\fi \glspl{sp} \\
 
 \end{boxtable}
 
@@ -50,13 +52,15 @@ Specialized items require a Charisma + Vigilance roll to find (\gls{tn} 12).
 
   Cart & 13 &  13 \glspl{sp} \\
 
-  Tent for 2 & 1 & 3 \glspl{sp} \\
+  Tent for 1 & 1 & 3 \glspl{sp} \\
 
-  Tent for 4 & 2 & 3 \glspl{sp} \\
+  Tent for 2 & 2 & 3 \glspl{sp} \\
 
-  Tent for 6 & 3 & 3 \glspl{sp} \\
+  Tent for 4 & 3 & 3 \glspl{sp} \\
 
-  Rations for a day &  1 &  15 \glspl{cp} \\
+  Tent for 6 & 4 & 3 \glspl{sp} \\
+
+  Rations for a day &  1 &  \ifnum\value{temperature}>0 15\else 30\fi \glspl{cp} \\
 
   Torch & 1 & 10 \glspl{cp} \\
 

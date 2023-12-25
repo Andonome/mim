@@ -17,7 +17,7 @@
 *.acr
 *.alg
 *.glg
-*.glo
+*glo
 *.gls
 *.glsdefs
 *.ist

@@ -37,7 +37,9 @@ all: $(BOOK).pdf handouts.pdf
 	latexmk -jobname=$(BOOK) -shell-escape -pdf main.tex
 
 clean:
-	rm -fr *.aux *.sls *.slo *.slg *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape \
+	rm -fr *.aux *.sls *.slo *.slg *.toc *.acn *.log *.ptc *.out *.idx *.ist \
+	*.glg *.gls *.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape \
+	*glo \
 	images/extracted
 
 .PHONY: clean all extracts

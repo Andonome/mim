@@ -34,14 +34,15 @@
   sort={Spider Queen},
   text={the Spider Queen},
   type={people},
-  description={is an old elf who collects pet chitincrawlers.  She has also started to shapeshift to look like them}
+  description={is an old elf who began shapeshifting into the form of a chitincrawler.
+  Now she has enchanted chitincrawlers to swarm around her, looking up to her as a mother.
+  Her babies always want more food, so she will soon start to feed them humans}
 }
 
 \newglossaryentry{town}{
   name={Greytown},
   text={Greytown},
   nonumberlist,
-  type={people},
   description={is the central town where the action takes place}
 }
 
@@ -54,9 +55,10 @@
 
 \newglossaryentry{alemaster}{
   name={Yerina},
-  first={\glsentrytext{server} Yerina},
+  first={Keeper Yerina},
   type={people},
-  description={is the highest ranking member of the \glsentrytext{wheat}. Also known locally as `that damned Yerina'}
+  description={is the highest ranking member of the \glsentrytext{wheat}. Also known locally as `that damned Yerina'.
+  She hates the recent competition from the \glsentrytext{wheat} of \glsentrytext{southDale}, and plans to hire someone to destroy their reputation}
 }
 
 \newcommand{\alemaster}{
@@ -77,8 +79,8 @@
   {
     \setcounter{Fate}{2}
   }
-
 }
+
 \newcommand{\beardedalemaster}{
   \humandiplomat[\NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Profits and local respect}]
 }
@@ -88,7 +90,8 @@
   first={Sailhush (Keeper of the \glsentrytext{southDale}'s \glsentrytext{wheat})},
   text={Sailhush},
   type={people},
-  description={is the leader of the \glsentrytext{wheat} in \glsentrytext{southDale}, and became rich selling watered-down dwarvish ale},
+  description={is the leader of the \glsentrytext{wheat} in \glsentrytext{southDale}, and plans to become rich selling watered-down dwarvish ale.
+  She travels with her companions, in the group knowns as the `Wolf Heads'},
 }
 
 \newcommand{\woodspyleader}{
@@ -110,9 +113,11 @@
 
 \newglossaryentry{woodspyleader}{
   name={Burngrot},
-  type={people},
-  description={is the leader of the Woodspy Bandits, and meets with \glsentrytext{traitor} on a semi-regular basis in \glsentrytext{whitehorse}. He always enters battle with a mask over his face, and puts on a faux lower-class accent},
   first={Woodspy Leader Burngrot}
+  type={people},
+  description={is the leader of the Woodspy Bandits, and works as a fence.
+  He regularly drinks quietly in \glsentrytext{whitehorse}.
+  He always enters battle with a mask over his face, and puts on a faux lower-class accent},
 }
 
 \newcommand{\keras}{
@@ -167,43 +172,44 @@
 }
 
 \newglossaryentry{elfprince}{
-  name={Prince Arinel},
+  name={Arinel},
   text={Arinel},
-  first={Prince Arinel},
+  first={Arinel},
   type={people},
-  description={an elf, famed for his songs}
+  description={travels just to see the world, and refers to himself as a `prince'}
 }
 
 \newcommand{\thenecromancer}{
-
-\NPC{\M\D}{\Glsentrytext{necromancer}}{Arrogant}{Slack jaw}{to hear song again}
-
-\person{1}% STRENGTH
-{2}% DEXTERITY
-{0}% SPEED
-{{2}% INTELLIGENCE
-{1}% WITS
-{-4}}% CHARISMA
-{2}% DR
-{1}% COMBAT
-{
-  Projectiles~3, Academics~2, Crafts~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
-}%SKILLS
-{Hunting Bow, dagger}%EQUIPMENT
-{
-  \knacks{\snapshot, \mightydraw, \perfectsneakattack}
-  \setcounter{Fate}{3}
-  \setcounter{Air}{3}
-  \setcounter{Water}{2}
-}
+  \NPC{\M\D}{\Glsentrytext{necromancer}}{Arrogant}{Slack jaw}{to hear song again}
+  \person{1}% STRENGTH
+  {2}% DEXTERITY
+  {0}% SPEED
+  {{2}% INTELLIGENCE
+  {1}% WITS
+  {-4}}% CHARISMA
+  {2}% DR
+  {1}% COMBAT
+  {
+    Projectiles~3, Academics~2, Crafts~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
+  }%SKILLS
+  {Hunting Bow, dagger}%EQUIPMENT
+  {
+    \knacks{\snapshot, \mightydraw, \perfectsneakattack}
+    \setcounter{Fate}{3}
+    \setcounter{Air}{3}
+    \setcounter{Water}{2}
+  }
 }
 
 \newglossaryentry{necromancer}{
   name={Cainpale},
   first={the Undead Priest Cainpale},
   type={people},
-  description={is a priest of Eldren from the time of Nolan Shale.
-  He has since died, but kept himself unliving, and remains in his old temple (see page \pageref{necromancers_lair})}
+  description={was a priest of Eldren from the time of Nolan Shale.
+  Since dying, he has continue moving with the use of Death spells.
+  \\
+  \\
+  Unfortunately, his solitude has given him a strong phobia of living people, and his paranoia has driven him to kill people for their armour, then gather an army of corpses}
 }
 
 \newcommand{\forestpriest}{
@@ -235,7 +241,8 @@
   first={Ranger Murklash},
   text={Murklash},
   type={people},
-  description={is a half-elvish Ranger, from the time of Nolan Shale.  He has become irritated at how far men are encroaching into the forest, and hopes to stop them}
+  description={is a half-elvish Ranger, from the time of Nolan Shale.
+  He hunts for people who smuggle food to the Immortal Bandits, and turns them into animals}
 }
 
 \newcommand{\banditking}{
@@ -261,7 +268,11 @@
   name={Antonym},
   first={Antonym Whiteplains},
   type={people},
-  description={was the child of a noble in Whiteplains, but his family were killed by the Rex.  He's lived as a criminal ringleader ever since}
+  description={and his brother \glsentrytext{sewerking} want to replace the local \glsfmtplural{warden}.
+  \\
+  -- Phase I of his plan involves making alliances among the local nobility.
+  \\
+  -- Phase II is to locate magical portals around \glsentrytext{valley}}
 }
 
 \newcommand{\sewerking}{
@@ -292,7 +303,9 @@
   name={Hare},
   first={Hare Whiteplains},
   type={people},
-  description={is a Whiteplains noble, currently living under \glsentrytext{town}}
+  description={and his brother \glsentrytext{banditking} want to replace the local \glsfmtplural{warden}
+  \\-- Phase I of his plan involves stealing dead bodies from \glsentrytext{town} to create an undead army.
+  -- Phase II is to dig under the \glsentrytext{town}'s citadel, and release the undead army}
 }
 
 \newcommand{\sewerthief}{
@@ -316,37 +329,36 @@
 }
 
 \newglossaryentry{sewerthief}{
-  name={Stoatflay},
-  first={Stoatflay Whiteplains},
+  name={Mossfall},
+  first={Mossfall Whiteplains},
   type={people},
-  description={is a member of the Immortal Bandits from Whiteplains.
-  He misses the comforts of nobility.  He spends a lot of his time running errands through \glsentrytext{pig} and across \glsentrytext{town}, such as delivering cursed magical items to \glsentrytext{banditking}}
+  description={is a member of the Immortal Bandits from Whiteplains, and misses the comforts of nobility}
 }
 
 \newcommand{\nurabaron}{
-\NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{\underline{FOOD}!}
+  \NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{\underline{FOOD}!}
 
-\person{5}% STRENGTH
-  {0}% DEXTERITY
-  {4}% SPEED
-  {{-4}% INTELLIGENCE
-  {-2}% WITS
-  {-4}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {Academics~1, Deceit~2}% SKILLS
-  {\greatsword}% EQUIPMENT
-  {
-    \knacks{\adrenalinesurge}
-  }
+  \person{5}% STRENGTH
+    {0}% DEXTERITY
+    {4}% SPEED
+    {{-4}% INTELLIGENCE
+    {-2}% WITS
+    {-4}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {Academics~1, Deceit~2}% SKILLS
+    {\greatsword}% EQUIPMENT
+    {
+      \knacks{\adrenalinesurge}
+    }
 }
 
 \newglossaryentry{nurabaron}{
-  name={Gladsun},
-  text={Gladsun},
-  first={Warden Gladsun},
+  name={Rocklash},
+  text={Rocklash},
+  first={\glsentrytext{warden} Rocklash Redfall},
   type={people},
-  description={was a jovial and simple Warden until he had an accident with a magical item, and has since turned into an ogre}
+  description={was a jovial and simple \glsentrytext{warden} until \glsentrytext{sewerking} gave him a horrifying hunger, using Life magic}
 }
 
 \newcommand{\captain}{
@@ -371,7 +383,7 @@
 \newglossaryentry{captain}{
   name={Captain Vex},
   type={people},
-  description={is the captain of the \glsentrytext{sunGuard} in \glsentrytext{town}}
+  description={is a \glsentrytext{guard} builder who stays in \glsentrytext{town}}
 }
 
 \newcommand{\traitor}{
@@ -398,47 +410,50 @@
 }
 
 \newglossaryentry{townmaster}{
-  name={Prosity},
-  text={Warden Prosity},
-  first={Townwarden Prosity},
+  name={\glsentrytext{warden} Prosity},
+  first={\glsentrytext{warden} Prosity},
+  text={Prosity},
+  sort={Prosity},
   nonumberlist,
   type={people},
-  description={is the town warden, currently attempting to rebuild \glsentrytext{lostcity} by collecting magical items from the nura}
+  description={rules over \glsentrytext{town} when he's not drinking brandy}
 }
 
 \newglossaryentry{traitor}{
-  name={Jotter Rankfilch},
+  name={\Glsfmttext{jotter} Rankfilch},
   sort={Rankfilch},
-  text={Jotter Rankfilch},
-  first={Jotter Rankfilch of the \glsentrytext{guard}},
+  text={\Glsfmttext{jotter} Rankfilch},
+  first={\Glsfmttext{jotter} Rankfilch of the \glsentrytext{guard}},
   type={people},
-  description={is an active and ambitious member of the \glsentrytext{guard}, currently working with \glsentrytext{townmaster} in secret, and taking information to the Woodspy Bandits},
+  description={is an active and ambitious member of the \glsentrytext{guard}, secretly working with \glsentrytext{sewerking} of the Immortal Bandits.
+  \\
+  He begins by having all other \glsfmtplural{jotter} killed, then mismanages the \glsentrytext{guard} until their ruin},
 }
 
 \newcommand{\pigowner}{
-\NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{to make powerful friends}
-
-\person{1}% STRENGTH
-  {2}% DEXTERITY
-  {-1}% SPEED
-  {{1}% INTELLIGENCE
-  {2}% WITS
-  {1}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {Deceit~3, Empathy~1, Tactics~1}% SKILLS
-  {\Dagger, a hidden dagger, and an even more hidden dagger.}% EQUIPMENT
-  {
-  \addtocounter{fp}{5}
-  \knacks{\adrenalinesurge}
-  }
+  \NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{to make powerful friends}
+  \person{1}% STRENGTH
+    {2}% DEXTERITY
+    {-1}% SPEED
+    {{1}% INTELLIGENCE
+    {2}% WITS
+    {1}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {Deceit~3, Empathy~1, Tactics~1}% SKILLS
+    {\Dagger, a hidden dagger, and an even more hidden dagger.}% EQUIPMENT
+    {
+    \addtocounter{fp}{5}
+    \knacks{\adrenalinesurge}
+    }
 }
 
 \newglossaryentry{pigowner}{
   name={Egress, Owner of \glsentrytext{pig}},
   text={Egress Pig},
   type={people},
-  description={is a middle-aged, fierce woman who runs the toughest bar in \glsentrytext{town}. She inherited the bar after her father killed the last owner, forged the ownership deed, then died of alcohol poisoning}
+  description={is a middle-aged, fierce woman who runs the toughest bar in \glsentrytext{town}.
+  She's currently putting up the Immortal Bandits in secret rooms below her tavern, \glsentrytext{pig}}
 }
 
 \newcommand{\warningbard}{
@@ -451,7 +466,8 @@
   text={Loot},
   first={Loot the bard},
   type={people},
-  description={is a young and headstrong bard who writes better than he sings}
+  description={is a young and headstrong bard who writes better than he sings.
+  He sings songs of `brave adventurers', but really means `the Immortal Bandits'}
 }
 
 %%%%% Adventures in Fenestra Places
@@ -459,46 +475,48 @@
 \newglossaryentry{redfall}{
   name={Redfall},
   first={Redfall Village},
-  type={people},
   description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
 }
 
 \newglossaryentry{southDale}{
   name={Southdale},
-  description={is a set of towns, some distance to the South, allied with \glsentrytext{town}}
+  description={is a set of towns, some distance to the South of \glsentrytext{town}, allied with \glsentrytext{town}}
 }
 
 \newglossaryentry{pig}{
   name={Mincing Pig},
   text={the Mincing Pig},
   first={the Mincing Pig Tavern},
-  type={people},
   description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
-  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}}
+  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
+  The Immortal Bandits hide here, in secret rooms, below the tavern, but above the city's abandoned underground section}
 }
 
 \newglossaryentry{whitehorse}{
   name={White Horse Inn},
   text={the White Horse},
   first={the White Horse Inn},
-  type={people},
   description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
 }
 
 \newglossaryentry{lostcity}{
-  name={Lost City},
+  name={The Lost City},
   text={the Lost City},
   nonumberlist,
   first={the Lost City},
-  type={people},
-  description={is a mythical, massive city, which once stretched across the entire area. In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings. A lot of the stone has simply been repurposed for modern buildings}
+  sort={Lost City},
+  description={is a mythical, massive city, which once stretched across the entire area.
+  In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings.
+  A lot of the stone has simply been repurposed for modern buildings.
+  \\
+  \\
+  However, real towns once stood in the area which held portals}
 }
 
 \newglossaryentry{greentower}{
   name={The Green Tower},
   text={the Green Tower},
   sort={Green Tower},
-  type={people},
   description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
 }
 

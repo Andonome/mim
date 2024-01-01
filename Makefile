@@ -8,7 +8,6 @@ global: config/bind.sty .switch-gls
 config/bind.sty:
 	@git submodule update --init
 
-
 extracts: images/extracted/town.svg images/extracted/under_lost_city.svg
 images/extracted:
 	mkdir -p images/extracted
@@ -17,14 +16,9 @@ images/extracted/under_lost_city.svg: images/extracted
 images/extracted/town.svg: images/extracted
 	inkscape images/Dyson_Logos/town.svg --export-id-only --export-id=layer5 -l --export-filename images/extracted/town.svg
 
-
 svg-inkscape: | config/bind.sty extracts
 	@pdflatex -shell-escape -jobname $(BOOK) main.tex
-$(BOOK).glo: | svg-inkscape
-	@pdflatex -jobname $(BOOK) main.tex
-$(BOOK).sls: | $(BOOK).glo
-	@makeglossaries $(BOOK)
-$(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) $(wildcard config/*.sty)
+$(BOOK).pdf: svg-inkscape $(wildcard *.tex) $(wildcard config/*.sty)
 	@pdflatex -jobname $(BOOK) main.tex
 
 handouts.pdf: handouts.tex market.tex

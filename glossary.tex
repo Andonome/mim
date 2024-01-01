@@ -1,3 +1,73 @@
+%%%%% Places
+
+\newglossaryentry{valley}{
+  name={The Grey Valley},
+  text={the Grey Valley},
+  nonumberlist,
+  description={is the name of the area, also known as `Maitavale', by the elves}
+}
+
+\newglossaryentry{town}{
+  name={Greytown},
+  text={Greytown},
+  parent={valley},
+  nonumberlist,
+  description={is the central town where the action takes place}
+}
+
+\newglossaryentry{redfall}{
+  name={Redfall},
+  first={Redfall Village},
+  parent={valley},
+  description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
+}
+
+\newglossaryentry{southDale}{
+  name={Southdale},
+  description={is a set of towns, some distance to the South of \glsentrytext{town}, allied with \glsentrytext{town}}
+}
+
+\newglossaryentry{whitehorse}{
+  name={White Horse Inn},
+  text={the White Horse},
+  first={the White Horse Inn},
+  parent={town},
+  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
+}
+
+\newglossaryentry{pig}{
+  name={Mincing Pig},
+  text={the Mincing Pig},
+  first={the Mincing Pig Tavern},
+  parent={town},
+  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
+  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
+  The Immortal Bandits hide here, in secret rooms, below the tavern, but above the city's abandoned underground section}
+}
+
+\newglossaryentry{lostcity}{
+  name={The Lost City},
+  text={the Lost City},
+  nonumberlist,
+  first={the Lost City},
+  sort={Lost City},
+  parent={valley},
+  description={is a mythical, massive city, which once stretched across the entire area.
+  In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings.
+  A lot of the stone has simply been repurposed for modern buildings.
+  However, real towns once stood in the area which held portals}
+}
+
+\newglossaryentry{greentower}{
+  name={The Green Tower},
+  text={the Green Tower},
+  sort={Green Tower},
+  parent={valley},
+  description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
+}
+
+%%%%% People
+
 \newglossaryentry{king}{
   name={Rex Oakbane Fenestra},
   text={\ifodd\thepage Oakbane\else the Rex\fi},
@@ -29,6 +99,14 @@
   }
 }
 
+\newglossaryentry{alemaster}{
+  name={Yerina},
+  first={Keeper Yerina},
+  type={people},
+  description={is the highest ranking member of the \glsentrytext{wheat}. Also known locally as `that damned Yerina'.
+  She hates the recent competition from the \glsentrytext{wheat} of \glsentrytext{southDale}, and plans to hire someone to destroy their reputation}
+}
+
 \newglossaryentry{spiderqueen}{
   name={The Spider Queen},
   sort={Spider Queen},
@@ -37,28 +115,6 @@
   description={is an old elf who began shapeshifting into the form of a chitincrawler.
   Now she has enchanted chitincrawlers to swarm around her, looking up to her as a mother.
   Her babies always want more food, so she will soon start to feed them humans}
-}
-
-\newglossaryentry{town}{
-  name={Greytown},
-  text={Greytown},
-  nonumberlist,
-  description={is the central town where the action takes place}
-}
-
-\newglossaryentry{valley}{
-  name={The Grey Valley},
-  text={the Grey Valley},
-  nonumberlist,
-  description={is the name of the area, also known as `Maitavale', by the elves}
-}
-
-\newglossaryentry{alemaster}{
-  name={Yerina},
-  first={Keeper Yerina},
-  type={people},
-  description={is the highest ranking member of the \glsentrytext{wheat}. Also known locally as `that damned Yerina'.
-  She hates the recent competition from the \glsentrytext{wheat} of \glsentrytext{southDale}, and plans to hire someone to destroy their reputation}
 }
 
 \newcommand{\alemaster}{
@@ -468,56 +524,6 @@
   type={people},
   description={is a young and headstrong bard who writes better than he sings.
   He sings songs of `brave adventurers', but really means `the Immortal Bandits'}
-}
-
-%%%%% Adventures in Fenestra Places
-
-\newglossaryentry{redfall}{
-  name={Redfall},
-  first={Redfall Village},
-  description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
-}
-
-\newglossaryentry{southDale}{
-  name={Southdale},
-  description={is a set of towns, some distance to the South of \glsentrytext{town}, allied with \glsentrytext{town}}
-}
-
-\newglossaryentry{pig}{
-  name={Mincing Pig},
-  text={the Mincing Pig},
-  first={the Mincing Pig Tavern},
-  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
-  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
-  The Immortal Bandits hide here, in secret rooms, below the tavern, but above the city's abandoned underground section}
-}
-
-\newglossaryentry{whitehorse}{
-  name={White Horse Inn},
-  text={the White Horse},
-  first={the White Horse Inn},
-  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
-}
-
-\newglossaryentry{lostcity}{
-  name={The Lost City},
-  text={the Lost City},
-  nonumberlist,
-  first={the Lost City},
-  sort={Lost City},
-  description={is a mythical, massive city, which once stretched across the entire area.
-  In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings.
-  A lot of the stone has simply been repurposed for modern buildings.
-  \\
-  \\
-  However, real towns once stood in the area which held portals}
-}
-
-\newglossaryentry{greentower}{
-  name={The Green Tower},
-  text={the Green Tower},
-  sort={Green Tower},
-  description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
 }
 
 \newglossaryentry{alchemist}{

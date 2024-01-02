@@ -2,12 +2,20 @@
   \epigraph{He attacked everything in life with a mix of extraordinary genius and na\"ive incompetence, and it was often difficult to tell which was which.}{Douglas Adams}
 \label{sideQuestIntro}
 
+\noindent
+Trouble has arrived in \gls{valley}, as two new groups have arrived to make a grab for power.
+Each faction has its own broad plans or habits, and each one reveals its various \glspl{npc} throughout these various Side~Quests.%
+\exRef{judgement}{Judgement}{sidequests}
+
+The Side~Quests introduce the \glspl{npc}, show shadows of future events, or simply create complications for the \glspl{pc}.
+If any of these major \glspl{npc} die, another takes their place, so all of the Side~Quests below should play out, even if a couple of them perish before their plot matures.
+
+\printglossary[
+  type=people,
+  style=mcolindex,
+]
+
 \label{Irina/greylands}
-
-\section{Plots \& Schemes}
-
-\begin{multicols}{2}
-
 \mapPic[\large]{t}{Dyson_Logos/map_circles}{
   \rule[.3em]{.16\textwidth}{2pt}/86/04,
   \Large 10 miles/86/08,
@@ -18,11 +26,6 @@
   \rotatebox{55}{\normalsize\nameref{lakeside}}/85/49,
   \rotatebox{10}{\normalsize crossroads}/70/67,
 }
-
-\noindent
-Trouble has arrived at \gls{town}, as two great organizations begin their grab for power.
-
-\end{multicols}
 
 \section{Side Quest Summaries}
 \label{sqSummaries}
@@ -40,12 +43,7 @@ Remember to write a `\sqr' in front of the Side Quest encounters which have beco
 
 \end{multicols}
 
-\printglossary[
-  type=people,
-  style=mcolindex,
-]
-
-\foreach \x in {Town, Villages, Forest}{
+\foreach \x in {Villages, Town, Forest}{
   \center\subsection*{\x}
   \printcontents[\x]{l}{2}{\setcounter{tocdepth}{3}}
 }

@@ -114,25 +114,29 @@
 }
 
 \newcommand{\spiderqueen}{
-  \NPC{\F\El}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{to see her babies in action}
-  \label{spiderqueen}
-
+  \NPC{\F\El}{\Glsentrytext{spiderqueen}}{Like a spider-centaur, with six legs on the bottom, by a bulging thorax}{Looks down at her babies}{to see her babies in action}
   \person{0}% STRENGTH
     {3}% DEXTERITY
     {2}% SPEED
     {{2}% INTELLIGENCE
     {3}% WITS
-    {-1}}% CHARISMA
-    {3}% DR
-    {1}% COMBAT
+    {2}}% CHARISMA
+    {0}% DR
+    {0}% COMBAT
+    {}% SKILLS
+    {2 dry sponges (a Fire and Air \gls{ingredient})}% EQUIPMENT
     {
-      Deceit~2, Stealth~3, Tactics~2, Wyldcrafting~3
-    }% SKILLS
-    {None}% EQUIPMENT
-    {
+      \setcounter{Brawl}{2}
+      \setcounter{Deceit}{1}
+      \setcounter{Stealth}{3}
+      \setcounter{Tactics}{2}
+      \setcounter{Wyldcrafting}{3}
       \setcounter{Earth}{3}
+      \setcounter{Air}{2}
       \setcounter{Water}{3}
-      \setcounter{Fate}{1}
+      \setcounter{Fate}{2}
+      \setcounter{Fire}{2}
+      \renewcommand\abilities{\claws, \web, \quadraped\hide{3}}
     }
 }
 
@@ -141,7 +145,6 @@
   sort={Spider Queen},
   text={the Spider Queen},
   type={people},
-  parent={outsiders},
   description={is an old elf who began shapeshifting into the form of a chitincrawler.
   Now she has enchanted chitincrawlers to swarm around her, looking up to her as a mother.
   Her babies always want more food, so she will soon start to feed them humans}
@@ -266,14 +269,17 @@
   {1}}% CHARISMA
   {0}% DR
   {0}% COMBAT
+  {}% SKILLS
+  {\Dagger, gem as big as his nose (worth 5~\glspl{gp}), crudely drawn maps of the area, pipe-kit}% EQUIPMENT
   {
-    Academics~3, Empathy~2, Stealth~2, Vigilance~2
-  }% SKILLS
-  {\Dagger, 20gp, crudely drawn maps}% EQUIPMENT
-  {
-    \addtocounter{fp}{10}
+    \setcounter{Academics}{3}
+    \setcounter{Empathy}{2}
+    \setcounter{Stealth}{2}
+    \setcounter{Vigilance}{2}
+    \setcounter{Wyldcrafting}{3}
     \setcounter{Fire}{2}
     \setcounter{Air}{2}
+    \addtocounter{fp}{10}
   }
 }
 

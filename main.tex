@@ -25,9 +25,80 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \mainmatter
 
-\declareSQareas{Town,Villages,Forest}
+\declareSQareas{Town,Roads,Forest}
 
 \input{plots.tex}
+
+\chapter{Guarded Roads}
+\epigraph{A rock is a good thing, too, you know. If the Isles of Earthsea were all made of diamond, we'd lead a hard life here.}{Ursula Le Guin}
+
+\section{\Gls{village} Locations}
+
+\begin{multicols}{2}
+
+\subsection{Markets}
+\index{Market!Roads}
+
+If the \glspl{pc} try to purchase anything from the \glspl{village}, see the handout on the village market.
+
+%\input{redfall.tex}
+%
+%\input{redfall_fallen.tex}
+
+\input{lakeside.tex}
+
+\end{multicols}
+
+%\section{\Gls{village} Encounters}
+
+%\index{Side Quests!Roads}
+
+%\renewcommand{\sqarea}{Roads}
+
+%\begin{multicols}{2}
+
+%\input{incursions.tex}
+
+%\input{nurabaron.tex}
+
+%\input{anton.tex}
+
+%\stopcontents[Roads]
+
+%\end{multicols}
+
+\chapter{Hungry Forests}
+\epigraph{Come now, my child, if we were planning to harm you, do you think we'd be lurking here beside the path in the very darkest part of the forest?}{Kenneth Patchen}
+
+%\section{Forest Locations}
+
+%\begin{multicols}{2}
+
+%\input{anton_temple.tex}
+
+%\input{camp.tex}
+
+%\input{basement.tex}
+
+%\input{green_tower.tex}
+
+%\end{multicols}
+
+\section{Forest Encounters}
+
+\index{Side Quests!Forest}
+
+\renewcommand{\sqarea}{Forest}
+
+\begin{multicols}{2}
+
+\input{prince.tex}
+
+\input{spider.tex}
+
+\input{forest_random.tex}
+
+\end{multicols}
 
 \chapter{\Glsfmttext{town}}
 \epigraph{A criminal is a person with predatory instincts who has not sufficient capital to form a corporation. Most government is by the rich for the rich.
@@ -73,90 +144,15 @@ Civil government, insofar as it is instituted for the security of property, is i
 
 \end{multicols}
 
-\stopcontents[Town]
-
-\stopcontents[sq]
-
-\chapter{Guarded Villages}
-\epigraph{A rock is a good thing, too, you know. If the Isles of Earthsea were all made of diamond, we'd lead a hard life here.}{Ursula Le Guin}
-
-\section{\Gls{village} Locations}
-
-\begin{multicols}{2}
-
-\subsection{Markets}
-\index{Market!Villages}
-
-If the \glspl{pc} try to purchase anything from the \glspl{village}, see the handout on the village market.
-
-%\input{redfall.tex}
-%
-%\input{redfall_fallen.tex}
-
-\input{lakeside.tex}
-
-\end{multicols}
-
-%\section{\Gls{village} Encounters}
-
-%\index{Side Quests!Villages}
-
-%\renewcommand{\sqarea}{Villages}
-
-%\begin{multicols}{2}
-
-%\input{incursions.tex}
-
-%\input{nurabaron.tex}
-
-%\input{anton.tex}
-
-%\stopcontents[Villages]
-
-%\end{multicols}
-
-\chapter{Hungry Forests}
-\epigraph{Come now, my child, if we were planning to harm you, do you think we'd be lurking here beside the path in the very darkest part of the forest?}{Kenneth Patchen}
-
-%\section{Forest Locations}
-
-%\begin{multicols}{2}
-
-%\input{anton_temple.tex}
-
-%\input{camp.tex}
-
-%\input{basement.tex}
-
-%\input{green_tower.tex}
-
-%\end{multicols}
-
-\section{Forest Encounters}
-
-\index{Side Quests!Forest}
-
-\renewcommand{\sqarea}{Forest}
-
-\begin{multicols}{2}
-
-\input{prince.tex}
-
-\input{spider.tex}
-
-\input{forest_random.tex}
-
-\end{multicols}
-
-\stopcontents[Forest]
-
 \backmatter
 
 \printglossary[
   type=symbols,
   ]
 
-\printglossary
+\printglossary[
+  style=mcolindexspannav,
+]
 
 \printindex
 

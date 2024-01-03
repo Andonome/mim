@@ -16,6 +16,8 @@ Keywords={TTRPG,RPG,roleplaying}
 \externalReferent{core}
 \externalReferent{judgement}
 
+\input{commands.tex}
+
 \begin{document}
 
 \frontpage[Missions in Maitavale]%
@@ -33,17 +35,7 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \input{plots.tex}
 
-\chapter{Guarded Roads}
-\epigraph{A rock is a good thing, too, you know. If the Isles of Earthsea were all made of diamond, we'd lead a hard life here.}{Ursula Le Guin}
-
-\section{\Gls{village} Locations}
-
-\begin{multicols}{2}
-
-\subsection{Markets}
-\index{Market!Roads}
-
-If the \glspl{pc} try to purchase anything from the \glspl{village}, see the handout on the village market.
+\input{loc_roads.tex}
 
 %\input{redfall.tex}
 %
@@ -51,30 +43,23 @@ If the \glspl{pc} try to purchase anything from the \glspl{village}, see the han
 
 \input{lakeside.tex}
 
-\end{multicols}
+\section{Sightings on the Roads}
 
-%\section{\Gls{village} Encounters}
+\index{Side Quests!Roads}
 
-%\index{Side Quests!Roads}
+\renewcommand{\sqarea}{Roads}
 
-%\renewcommand{\sqarea}{Roads}
-
-%\begin{multicols}{2}
+\begin{multicols}{2}
 
 %\input{incursions.tex}
 
-%\input{nurabaron.tex}
+\input{nurabaron.tex}
 
 %\input{anton.tex}
 
-%\stopcontents[Roads]
+\end{multicols}
 
-%\end{multicols}
-
-\chapter{Hungry Forests}
-\epigraph{Come now, my child, if we were planning to harm you, do you think we'd be lurking here beside the path in the very darkest part of the forest?}{Kenneth Patchen}
-
-%\section{Forest Locations}
+\input{loc_forest.tex}
 
 %\begin{multicols}{2}
 
@@ -104,17 +89,9 @@ If the \glspl{pc} try to purchase anything from the \glspl{village}, see the han
 
 \end{multicols}
 
-\chapter{\Glsfmttext{town}}
-\epigraph{A criminal is a person with predatory instincts who has not sufficient capital to form a corporation. Most government is by the rich for the rich.
-Government comprises a large part of the organized injustice in any society, ancient or modern.
-Civil government, insofar as it is instituted for the security of property, is in reality instituted for the defence of the rich against the poor, and for the defence of those who have property against those who have none.}%
-{Adam Smith}
-
-\section{Locations}
+\input{loc_town.tex}
 
 \begin{multicols}{2}
-
-\input{loc_town.tex}
 
 \input{guard_station.tex}
 

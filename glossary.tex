@@ -110,14 +110,6 @@
 
 %%%%% People
 
-\newglossaryentry{king}{
-  name={Rex Oakbane Fenestra},
-  text={\ifodd\thepage Oakbane\else the Rex\fi},
-  first={Rex Oakbane Fenestra},
-  type={people},
-  description={keeps a tight control over Fenestra through the use of magical portals}
-}
-
 \newcommand{\spiderqueen}{
   \NPC{\F\El}{\Glsentrytext{spiderqueen}}{Like a spider-centaur, with six legs on the bottom, by a bulging thorax}{Looks down at her babies}{to see her babies in action}
   \person{0}% STRENGTH
@@ -161,13 +153,14 @@
 
 \newglossaryentry{townmaster}{
   name={\glsentrytext{warden} Prosity},
-  first={\glsentrytext{warden} Prosity},
+  first={Town \glsentrytext{warden} Prosity},
   text={Prosity},
   sort={Prosity},
   nonumberlist,
   type={people},
   parent={establishment},
-  description={rules over \glsentrytext{town} when he's not drinking brandy}
+  description={rules over \glsentrytext{town} when he's not drinking brandy.
+  He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the goods coming from \glsentrytext{whiteplains}}
 }
 
 \newglossaryentry{alemaster}{
@@ -419,7 +412,7 @@
 
 \newglossaryentry{banditking}{
   name={Antonym},
-  first={Antonym Whiteplains},
+  first={Antonym \glsentrytext{whiteplains}},
   type={people},
   parent={whiteBandits},
   description={and his brother \glsentrytext{sewerking} want to replace the local \glsfmtplural{warden}.
@@ -454,7 +447,7 @@
 
 \newglossaryentry{sewerking}{
   name={Hare},
-  first={Hare Whiteplains},
+  first={Hare \glsentrytext{whiteplains}},
   type={people},
   parent={whiteBandits},
   description={and his brother \glsentrytext{banditking} want to replace the local \glsfmtplural{warden}
@@ -486,7 +479,7 @@
 
 \newglossaryentry{sewerthief}{
   name={Mossfall},
-  first={Mossfall Whiteplains},
+  first={Mossfall \glsentrytext{whiteplains}},
   type={people},
   parent={whiteBandits},
   description={just wants to enjoy life's comforts, but has to travel between a stinking sewer, and \glsentrytext{necromancer}'s crumbling temple to fetch more coins.

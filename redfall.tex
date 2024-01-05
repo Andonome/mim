@@ -29,12 +29,7 @@ if they look like like might be officials or soldiers of any type, the villagers
 
 \end{boxtext}
 
-\paragraph{If the \glspl{pc} try to reassure the villagers,}
-have them roll \roll{Strength}{Empathy} (\tn[9]) to holler their message clearly to everyone present.
-
-Failure indicates a nasty pelting, although the villagers don't intend to kill the anyone -- just drive them off.
-
-\npc{\T[4]\E\Hu}{20 Angry Farmers}
+\npc{\T[4]\Hu}{20 Angry Farmers}
 \person{2}% STRENGTH
 {0}% DEXTERITY 
 {0}% SPEED
@@ -47,6 +42,11 @@ Failure indicates a nasty pelting, although the villagers don't intend to kill t
 {Sack-of-rocks, face-covering}% EQUIPMENT
 {}
 
+\paragraph{If the \glspl{pc} try to reassure the villagers,}
+have them roll \roll{Strength}{Empathy} (\tn[9]) to holler their message clearly to everyone present.
+
+Failure indicates a nasty pelting, although the villagers don't intend to kill the anyone -- just drive them off.
+
 \paragraph{If the \glspl{pc} ask about the keep,}
 the villagers complain bitterly, but have no idea that \gls{nurabaron} has become a monster.
 
@@ -55,7 +55,8 @@ they can succeed with a \roll{Charisma}{Tactics} roll, \tn[10]
 (the villagers feel more confident with a strong character leading them).
 Of course the villagers also know that the fortress is armed with archers, and will only agree to enter if the troupe have a solid plan concerning the archers.
 
-Roll Morale checks for all involved, as usual.
+Roll Morale checks for all involved, as usual.%
+\exRef{judgement}{Judgement}{morale}
 The battle will likely end before either side loses too many members.
 
 \mapPic{t}{Dyson_Logos/redfall_keep}{
@@ -84,18 +85,17 @@ The keep contains a conspiracy: everyone in there knows that they harbour monste
 \mapentry[redTower]{Towers}
 
 Each of the towers has two archers, ready to protect their patron, \gls{nurabaron}, as long as nobody gets too close.
+If approached, they surrender.
 
 \humanarcher[\npc{\T[4]\M\Hu}{2 Archers}]
 
 \boxPair[t]{
-
-\smolMapPic{Dyson_Logos/redfall_top}{
-  \Large\rotatebox{-90}{\nameref{redFamily}}/07/38,
-  \ref{redFamily}/175/20,
-  \Large\rotatebox{-45}{\nameref{redStorage}}/67/44,
-  \ref{redStorage}/74/20,
-}
-
+  \smolMapPic{Dyson_Logos/redfall_top}{
+    \Large\rotatebox{-90}{\nameref{redFamily}}/07/38,
+    \ref{redFamily}/175/20,
+    \Large\rotatebox{-45}{\nameref{redStorage}}/67/44,
+    \ref{redStorage}/74/20,
+  }
 }{
   \NPC{\M\N}{Bairnpelt -- ``the Toddler''}{Playful}{Fingers in mouth}{Milk}
   \person{3}% STRENGTH

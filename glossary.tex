@@ -82,7 +82,7 @@
   sort={Outsiders},
   text={outsiders},
   description={are the various non-human people who live around the \glsentrytext{valley}.
-  They have no social connections, and do not have much contact with each other, but they \emph{do} have a set of shred interests in the local humans not causing too much trouble},
+  They have no social connections, but some have a set of shred interests in the local humans not causing too much trouble},
 }
 
 \newglossaryentry{whiteBandits}{
@@ -100,7 +100,7 @@
 
 \newglossaryentry{wolfhead}{
   name={The Wolf Heads},
-  text={Wolf Head},
+  text={Wolf Heads},
   sort={Wolf Heads},
   description={have heard of the legendary \glsentrytext{lostcity}, and the magical portals it held underground.
   They want to find those routes underground, and use them to bypass any taxes based on trade route, and create a base of operations at the centre of various magical portals.
@@ -143,7 +143,8 @@
   sort={Spider Queen},
   text={the Spider Queen},
   type={people},
-  description={is an old elf who began shapeshifting into the form of a chitincrawler.
+  parent={outsiders},
+  description={-- old elf who began shapeshifting into the form of a chitincrawler.
   Now she has enchanted chitincrawlers to swarm around her, looking up to her as a mother.
   Her babies always want more food, so she will soon start to feed them humans}
 }
@@ -160,8 +161,8 @@
   nonumberlist,
   type={people},
   parent={establishment},
-  description={rules over \glsentrytext{town} when he's not drinking brandy.
-  He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the goods coming from \glsentrytext{whiteplains}}
+  description={-- \glsentrytext{warden} to \glsentrytext{town} when he's not drinking brandy.
+  He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the boats coming from \glsentrytext{whiteplains}}
 }
 
 \newglossaryentry{alemaster}{
@@ -169,7 +170,8 @@
   first={Keeper Yerina},
   type={people},
   parent={establishment},
-  description={is the highest ranking member of the \glsentrytext{wheatGuild}. Also known locally as `that damned Yerina'.
+  description={-- Keeper of the local \glsentrytext{wheatGuild}.
+  Also known locally as `that damned Yerina'.
   She hates the recent competition from the \glsentrytext{wheatGuild} of \glsentrytext{southDale}, and plans to destroy their reputation}
 }
 
@@ -202,8 +204,8 @@
   text={Sailhush},
   type={people},
   parent={wolfhead},
-  description={is the leader of the \glsentrytext{wheatGuild} in \glsentrytext{southDale}, and plans to become rich selling watered-down dwarvish ale.
-  She travels with her companions, in the group knowns as the `Wolf Heads'},
+  description={-- Keeper of \glsentrytext{southDale}'s \glsentrytext{wheatGuild}.
+  She plans to become rich selling watered-down dwarvish ale, and smuggling it into \glsentrytext{town} via \glsentrytext{traitor}, to avoid any taxes},
 }
 
 \newcommand\southSeeker{
@@ -230,7 +232,7 @@
   first={\Glsfmttext{seeker} Kinbrine},
   type={people},
   parent={wolfhead},
-  description={is a member of \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate an underground road, to bypass tax laws},
+  description={-- \glsentrytext{seeker} to \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate an underground road, to bypass tax laws},
 }
 
 \newcommand{\woodspyleader}{
@@ -287,7 +289,7 @@
   first={Keras Tri\"{e}l},
   type={people},
   parent={outsiders},
-  description={is a curious gnomish illusionist, who often gets in trouble studying things he shouldn't}
+  description={-- gnomish illusionist, who often gets in trouble studying things he shouldn't}
 }
 
 \newcommand{\elfprince}{
@@ -318,8 +320,7 @@
   first={Arinel},
   type={people},
   parent={outsiders},
-  description={is known across the land for his song, at least among the elves.
-  Unfortunately, the violence and animosity sweeping the land routinely puts him in danger}
+  description={-- an elf known across the land for his song, at least among other elves},
 }
 
 \newcommand{\thenecromancer}{
@@ -348,14 +349,10 @@
   name={Cainpale},
   first={the Undead Priest Cainpale},
   type={people},
-  parent={whiteBandits},
-  description={was a priest of \glsentrytext{eldren} a couple of centuries ago.
+  parent={outsiders},
+  description={-- ex-\glsentrytext{helper} to the \glsentrytext{healersGuild} in \glsentrytext{lostcity} a couple of centuries ago.
   Since dying, he has continue moving with the use of Death magic.
-  \\
-  \\
-  Unfortunately, his solitude has given him a strong phobia of living people, and his paranoia has driven him to kill people for their armour, then gather an army of corpses.
-  He currently trades with the \glsentrytext{whiteBandits} (from afar).
-  They give him armour, corpses, and living prisoners, while he gives them a place to store their gold, and the occasional \glsentrytext{talisman}}
+  Unfortunately, his solitude has given him a strong phobia of living people, and his paranoia has driven him to kill people for their armour, then gather an army of corpses}
 }
 
 \newcommand{\forestpriest}{
@@ -382,14 +379,15 @@
   }
 }
 
+%! Cut?
 \newglossaryentry{forestpriest}{
   name={Murklash},
   first={Ranger Murklash},
   text={Murklash},
   type={people},
   parent={outsiders},
-  description={is a half-elvish Ranger of the \glsentrytext{guard}, who frequently ignores orders.
-  He hunts for people who smuggle food to the \glsentrytext{whiteBandits}, and desperately wants to know what happened with to \glsentrytext{lostcity}}
+  description={-- half-elvish Ranger of the \glsentrytext{guard}, who frequently ignores orders.
+  He hunts for people who smuggle food to the \glsentrytext{whiteBandits}, and desperately wants to know what happened with \glsentrytext{lostcity}}
 }
 
 \newcommand{\banditking}{
@@ -416,10 +414,7 @@
   first={Antonym \glsentrytext{whiteplains}},
   type={people},
   parent={whiteBandits},
-  description={and his brother \glsentrytext{sewerking} want to replace the local \glsfmtplural{warden}.
-  \\
-  He travels the land, killing nobles with his men.
-  All of them can pass into town, and live fairly well, as he keeps a healthy chest of coins with \glsentrytext{necromancer}}
+  description={-- \glsentrytext{whiteplains} agitator, attempting to replace \glsentrytext{townmaster} by getting the local \glsentrytext{village} \glsfmtplural{warden} on-side}
 }
 
 \newcommand{\sewerking}{
@@ -451,8 +446,10 @@
   first={Hare \glsentrytext{whiteplains}},
   type={people},
   parent={whiteBandits},
-  description={and his brother \glsentrytext{banditking} want to replace the local \glsfmtplural{warden}.
-  After trading armour with \glsentrytext{necromancer} for a powerful \glsentrytext{artefact}, he will begin to steal corpses from the bowels of  the \glsentrytext{healersGuild}, and raise them from the dead.
+  description={-- \glsentrytext{whiteplains} agitator, and brother to \glsentrytext{banditking}.
+  He recruits soldiers from the dregs of \glsentrytext{town}, and smuggles items between \glsentrytext{traitor}'s house (outside \glsentrytext{town} wall) and \glsentrytext{pig} (inside the wall).
+  Both want to replace the local \glsfmtplural{warden}.
+  After trading armour with \glsentrytext{necromancer} for a powerful \glsentrytext{artefact}, he will begin to steal corpses from the bowels of the \glsentrytext{healersGuild}, and raise them from the dead.
   Once he has enough undead creatures, he will dig a tunnel under \glsentrytext{town}'s citadel, and unleash the undead, killing \glsentrytext{townmaster}, along with his guards and family}
 }
 
@@ -481,9 +478,7 @@
   first={Mossfall \glsentrytext{whiteplains}},
   type={people},
   parent={whiteBandits},
-  description={just wants to enjoy life's comforts, but has to travel between a stinking sewer, and \glsentrytext{necromancer}'s crumbling temple to fetch more coins.
-  \\
-  \\
+  description={-- a talented down-and-out member of \glsentrytext{town} who now serves as the most capable member of the entourage who live beneath \glsentrytext{town}.
   Despite his laziness, the \glsentrytext{whiteBandits} trust him}
 }
 
@@ -511,10 +506,9 @@
   first={\glsentrytext{warden} Rocklash Redfall},
   type={people},
   parent={establishment},
-  description={was a jovial and simple \glsentrytext{warden}, loyal to \glsentrytext{townmaster}, until \glsentrytext{sewerking} gave him a horrifying hunger, using Life magic.
-  \\
-  \\
-  Now, he and his family mismanage their estate and spend all day eating}
+  description={-- \glsentrytext{warden} to the little hamlet \glsentrytext{redfall}, safely nestled not far from \glsentrytext{town}.
+  He refused to join \glsentrytext{banditking}, so \glsentrytext{banditking} cursed him and his family to become monsters, and eat all day.
+  \Glsentrytext{redfall} now starves, as their masters eat all the food}
 }
 
 \newcommand{\captain}{
@@ -538,8 +532,9 @@
 \newglossaryentry{captain}{
   name={Captain Vex},
   type={people},
+  sort={Vex},
   parent={establishment},
-  description={once worked in the \glsentrytext{guard}, but now stays in \glsentrytext{town}, managing the \glsentrytext{sunGuard} as their captain}
+  description={-- organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice}
 }
 
 \newcommand{\traitor}{
@@ -568,9 +563,8 @@
   first={\Glsfmttext{jotter} Rankfilch of the \glsentrytext{guard}},
   type={people},
   parent={whiteBandits},
-  description={is an active and ambitious member of the \glsentrytext{guard}, secretly working with \glsentrytext{sewerking} of the Immortal Bandits.
-  \\
-  He begins by having all other \glsfmtplural{jotter} killed, then mismanages the \glsentrytext{guard} until their ruin},
+  description={-- \glsentrytext{jotter} to the \glsentrytext{guard}.
+  He wants to become a \glsentrytext{warden}, so he helps smuggle items for the \glsentrytext{whiteBandits}},
 }
 
 \newcommand{\pigowner}{
@@ -592,11 +586,11 @@
 }
 
 \newglossaryentry{pigowner}{
-  name={Egress, Owner of \glsentrytext{pig}},
+  name={Egress},
   text={Egress Pig},
   type={people},
   parent={whiteBandits},
-  description={is a middle-aged, fierce woman who runs the toughest bar in \glsentrytext{town}.
+  description={-- owner of \glsentrytext{pig}, the toughest bar in all of \glsentrytext{town}.
   She's currently putting up the \glsentrytext{whiteBandits} in secret rooms below her tavern, \glsentrytext{pig}, where they pay her very well for access to the underbelly}
 }
 
@@ -611,7 +605,7 @@
   first={Loot the bard},
   type={people},
   parent={wolfhead},
-  description={is a young and headstrong bard who writes better than he sings.
+  description={-- a young and headstrong bard who writes better than he sings.
   He fully believes \glsentrytext{beardedalemaster}'s promises of creating a magical kingdom of safety, and freedom, and sings high praises of the ancient \glsentrytext{lostcity}, and how brave adventurers will return it to its former glory}
 }
 
@@ -622,7 +616,7 @@
   sort={Cleftwarp},
   type={people},
   parent={establishment},
-  description={is the head \glsentrytext{seeker} of the \glsentrytext{paperGuild}, who works for \glsentrytext{townmaster} in \glsentrytext{town}'s citadel}
+  description={-- head \glsentrytext{seeker} of the \glsentrytext{paperGuild}, who stays with \glsentrytext{townmaster} in \glsentrytext{town}'s citadel, rather than the local \glsentrytext{paperGuild}}
 }
 
 \newcommand\citadelAlchemist{
@@ -634,5 +628,5 @@
   first={Scribe Foxglove},
   type={people},
   parent={establishment},
-  description={organizes the local \glsentrytext{paperGuild}}
+  description={-- organizes the local \glsentrytext{paperGuild}, and knows everything one could possibly read in any book, but has no time to talk with anyone}
 }

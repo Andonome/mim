@@ -19,3 +19,23 @@
     {\footnotesize Market}/60/35,
   }
 }
+
+\newcommand\revelationSpell{
+  \spell{Screaming Revelation}% Name
+    {distant, detailed}% Enhancements
+    {Warp}% Action
+    {Fate, Air}% Spheres
+    {\roll{Strength}{Vigilance}}% Resist with
+    {With a description of the grey world beyond, the caster pushes the target into a state of semi-death.
+    They gain \gls{dr} 2, ignore all \gls{fatigue} penalties, and see as the dead see, for \arabic{spellCost}~\glspl{interval}}% Description
+    {
+      The target can make limited use of their normal vision, but mostly feels aware of the penetrating light given off by every soul.
+      Animals emit a feint light.
+      Those with a higher Charisma score tend to emanate a little more.
+
+      The vision becomes indistinct beyond \spellRange\ -- the target understands nothing more than `something might live over there', and any life around them quickly distorts that limited vision.
+
+      For as long as the spell remains active, the target cannot regenerate \glspl{fatigue}, \glspl{mp}, or \glspl{hp}.
+      While the spell diminishes a little with every movement, but targets who remain still retain the spell's effects.
+    }
+}

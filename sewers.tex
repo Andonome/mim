@@ -68,7 +68,6 @@ Once he has four ghouls, he packs them all together and hammers wooden bars to k
 He tried making a larger alcove, but the pressure created by random movements broke the bars open; the ghouls can leave any time they have sufficient motivation, the bars just stop them wandering.
 
 The Immortal Bandits wander in and out safely by using their rings of asphyxiation.%
-\footnote{See \autopageref{ring_asphyxiation}, for the \nameref{ring_asphyxiation}.}
 If many need to come in or out, two go through, and one carries two rings back for the next, so one by one a dozen can enter slowly.
 
 \paragraph{When the \glspl{pc} enter,}
@@ -98,7 +97,9 @@ Again, every 2 margins of failure mean that they have missed the end of the tunn
   \Gls{sewerking} has been using it to create an army of the dead, by locking people in various rooms (originally used for storage) and letting the \gls{artefact} curse them.
 \end{exampletext}
 
+\noindent
 Each storage cell has a bar across the front, and a few ghasts, stuffed in tightly.
+Each was created by the Bladder Skull (\vpageref{The Bladder Skull}).
 
 \paragraph{Anyone knocking off the bar}
 will probably find a nasty surprise.
@@ -146,9 +147,12 @@ they find the dead are silent when not active, and don't respond to noise, as th
     10 & \Gls{necromancer}'s Temple \\
   \end{boxtable}
 }
+\noindent
 Searching the books for meaningful information requires a Group Roll of \roll{Wits}{Academics}.
 Success indicates that they have found an ancient map.
 Find the maps in the handouts.
+
+The skull-filled brazier above is \pgls{artefact} which slowly turns those in the cells undead.
 
 \artefact{The Bladder Skull}% Name
   {Three human skulls, tied together with their guts, each stuffed with their own inflated bladder.
@@ -176,39 +180,49 @@ Find the maps in the handouts.
 \mapentry[sewerDog]{The Guard Dog}
 
 \begin{exampletext}
-  The Immortal Bandits keep one of \gls{traitor}'s dogs chained here at all times (rotating, so they don't get bored).
+  The \gls{whiteBandits} keep one of \gls{traitor}'s dogs chained here at all times (in rotation, so they don't get bored).
 \end{exampletext}
 
 \paragraph{If the characters approach,}
 Rover hears them and begins barking.
-If the group remained silent, they can make a Dexterity + Stealth Group Roll (TN 9) to move silently.
+If the group remained silent, they can make a \roll{Dexterity}{Stealth} Group Roll (\tn[9]) to move silently past the pup.
 
 \paragraph{If Rover hears them,}
 he begins barking and four of the bandits in room \ref{underHall} (\nameref{underHall}) come to investigate.
 
-They won't poke about long, so the \glspl{pc} simply need to pick a reasonable hiding place or roll Intelligence + Stealth (TN 8).
+They won't poke about long, so the \glspl{pc} simply need to pick a reasonable hiding place or roll \roll{Intelligence}{Stealth} (\tn[8]).
 
-\paragraph{If a bandit or a ghast walks by,}
-Rover does nothing -- he got used to the bandits, and even random undead wandering about, and the undead have no interest in animals.
+\paragraph{If a bandit walks by,}
+Rover does nothing -- he knows them all by scent alone.
 
 \huntingdog[\npc{\A}{Rover}]
 
-
 \begin{boxtext}
-
-  The boarded up wall pulls open -- the entire thing was a door made to look like a blocked entrance.  The rings of shelves show a strange assortment of items -- jars filled with human teeth, an old brazier, dried snowdrops, and a vial of blood.
-
-\end{boxtext}
-
-\begin{boxtext}
-  Going down the stairs you feel your feet hitting cold water.  It's not clear how far the water goes down, but it's cold.
+  Going down the stairs you feel your feet hitting cold water.
+  It's not clear how far the water goes down, but it's cold.
 \end{boxtext}
 
 \mapentry[sewerWaterHall]{Drowned Hallway}
 
-This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
+All the waste and filth from \nameref{stationDungeon} flows down a grate, and lands here.
+The frigid water inflicts \pgls{fatigue}, and the filth demands a \roll{Strength}{Medicine} roll (\tn[10]) to avoid contracting a disease which slowly paralyses them.%
+\exRef{judgement}{Judgement}{Corpse Hands}
+The disease will not take effect for $1D6$ \glspl{interval}.
 
-The water goes up to the ceiling by the last step, and for four squares after.  Each ghoul-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
+The roof lowers to meet the water, forcing heads to duck under.
+
+\paragraph{Halfway through the icy slime,}
+a little space to rise, and breathe, emerges.
+And above, \emph{a roar echoes down}.
+
+A tunnel leads straight upwards, and up to the grate sitting in room \nameref{stationDungeon}'s \vref{dunGrate}.
+
+Neither \gls{sewerking}, nor anyone else, have any idea this tunnel exists.
+
+\begin{boxtext}
+  The boarded up wall pulls open -- the entire thing was a door made to look like a blocked entrance.
+  The rings of shelves show a strange assortment of items -- jars filled with human teeth, an old brazier, dried snowdrops, and a vial of blood.
+\end{boxtext}
 
 \mapentry[sewerArtefacts]{Magical Item Storage}
 
@@ -219,9 +233,11 @@ The shelves contain a bunch of books, \lootMagic, and a Wolf-Run potion.
   \item
   An old scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.
   \item
-  \textit{The Secrets of Elven Witchcraft: Attain Great Magic within the Week}.
-  This book rambles about commanding secret spirits who live in reflections, and hints at lost treasure hidden under \gls{town}.
-  The book speaks lies from start to end.
+  \textit{The Secrets of Elven Witchcraft: Attain Great Magic within the Week}.%
+  \footnote{This book rambles about commanding secret spirits who live in reflections, and hints at lost treasure hidden under \gls{town}.
+  The book speaks lies from start to end.}
+  \item
+  Basilisk-hide armour (\gls{dr}~4, \gls{weight}~2).
 \end{enumerate}
 
 \showTalisman
@@ -245,16 +261,21 @@ The shelves contain a bunch of books, \lootMagic, and a Wolf-Run potion.
 \mapentry{\Glsentrytext{sewerking}'s Room}
 \label{sewerKingRoom}
 
+Check the handouts for the maps.
+
 \begin{itemize}
   \item
   The city map shows every entry point the bandits can enter the city above, including the theoretical passage the bandits think could be found again under \glsentrytext{townmaster}'s Citadel.
   \item
-  A map of the area (see the handouts).
+  A map of the area.
   \item
   A complete map of the current location.
+  \item
+  Many books.
 \end{itemize}
 
-The books are variously written on history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erend\"e'), and instructions on hosting a dinner party.
+The books are variously written on history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erend\"e'), and instructions on hosting a dinner party.%
+\footnote{It takes 280 pages to say `use seasoning`, and `have an anecdote'.}
 
 \mapentry[wireTrap]{Wire Trap}
 
@@ -274,34 +295,72 @@ Failing while going downhill also inflicts $1D6$ Damage.
 
 \mapentry[sewerFood]{Food Storage}
 
-The room is normal, except for the basket of choice snacks, which is poisoned with an intense laxative.
-\Gls{sewerking} suspects one of his men steals food when returning from business in \gls{town}, so he's left a basket of poisoned food.
-Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.
-Failure means the character will have a bad night, and gain 3 \glspl{fatigue} each \gls{interval} for the rest of the day.%
+\begin{exampletext}
+  The basket of food in the basket contains a cursed apple, which contains an intense laxative.
+  \Gls{sewerking} suspects one of the people who live down here in the \nameref{sewers} steals food, so he left that tantalizing basket with a poisoned apple, injected with a laxative.
+\end{exampletext}
+
+The \glspl{pc} roll \roll{Wits}{Medicine} (\tn[11]) to notice the poison on the apple, if they try to eat it.%
 \footnote{Feel free to roll for the characters so they're not aware there's a problem.}
+
+\paragraph{Failing the roll}
+means that \pgls{interval} later, they receive 3~\glspl{fatigue}, then 2~\glspl{fatigue} on the next, then 1.
+
+\begin{boxtext}
+  Around the next corner, soft lantern-light trickles into your eyes.
+  Myriad voices murmur, as if planning, quickly.
+\end{boxtext}
 
 \mapentry[underHall]{Grand Hall}
 
-The thieves feast, plan, and sometimes wrestle here.
+Here, the down-and-outs of \gls{town} gather, sleep, drink, and discuss ways to make money.
+Permanent residents sleep in the alcoves to the side.
+Theft is nearly impossible, as the \nameref{underHall} never sits empty.
 
-\begin{boxtext}
-  Opening the door, soft lantern-light trickles into your eyes.
-  The grand hall has a massive feasting table in the centre, currently occupied by a dozen rushing towards you with weapons drawn.
+At night, this place contains 30 people, and the air is foetid.
+During the day, it contains 20.
 
-  ``The dead are lose!'', they cry, as one man prepares some kind of spell.
-\end{boxtext}
+\begin{description}
+  \item[Doorcane] -- a woman with an abusive husband, who's fled to the safety of the \nameref{sewers}.
+  \item[Chowdirge] -- an apprentice thief, learning from \gls{sewerthief}.
+  \item[`Lastlink'] -- (real name `Starvale') the youngest son of \gls{townmaster}, here to find out what `real life is like'.
+  \Gls{townmaster} has no idea he comes here.
+\end{description}
 
-\paragraph{As the \glspl{pc} enter,}
-\gls{sewerking} begins casting a \textit{Potent Sickness} spell.
-After 3 rounds, he deals 1D6 HP damage to the member of the troupe with the highest Strength Bonus.
+\paragraph{If the \glspl{pc} approach from the lower doors,}
+this shocks the crowd, and they run.
+\Gls{sewerking} already warned them never to touch those doors, and to flee if anything exits except for him.
 
-The other bandits rush at them immediately.
+Once the crowd begins to run, they run up the stairs all at once (area \vref{slum_exit}).
+Once half the crowd reach the slippery stairs, a couple at the top slip, and fall, creating a heavy cascade of bruised flesh and broken bones.
+
+If the troupe follow the crowd, the first receives $1D6$ Damage, and gains $1D6$ \glspl{fatigue}, the second $1D3$ of each, and so on.
+
+\paragraph{If the \glspl{pc} approach from the top door,}
+(which leads along to room \ref{sewerKingRoom}) everyone will assume they're \glspl{guard}, trying to run from their duties.
+The crowd will poke fun at them, then welcome them.
+
+\begin{speechtext}
+
+  ``Had enough monsters eh?
+  Careful, this one's a proper monster!''
+
+  ``\Glspl{bothy} toilets not good enough fer yer arse?''
+
+  ``\Glspl{sunGuard} scaring yous?
+  Go have a sit, I'll draw you a nice warm bath\ldots''
+\end{speechtext}
+
+\paragraph{If the \glspl{pc} corner the crowd and attack,}
+they find a dozen regularly fight with the \gls{whiteBandits}.
 
 \sewerking
 
-\humanthief[\npc{\T[12]\E\Hu}{12 Sewer Bandits}]
+\humanthief[\npc{\T[6]\E\Hu}{6 Sewer Bandits}]
 
-\paragraph{Four rounds later,}
+\humanthief[\npc{\T[6]\E\Hu}{6 Sewer Bandits}]
+
+\paragraph{Three rounds later,}
 the cutthroats from room \ref{underGuard} arrive (assuming they weren't killed already).
 
 \begin{boxtext}
@@ -320,18 +379,20 @@ the cutthroats from room \ref{underGuard} arrive (assuming they weren't killed a
 \paragraph{If the \glspl{pc} attack,}
 they will kill it easily -- it can do nothing but attempt to dig.
 
+\begin{boxtext}
+
+  The stairs go upwards for some time, and eventually arrive at a room filled with barrels of food, and a trapdoor above.
+  You can hear a deep snore coming from just beyond the trapdoor.
+
+\end{boxtext}
 \mapentry[sewerPig]{Sewer Entrance}
 
 This artificial stream loops round from \gls{pig}, above.
 The stream continues downwards to an underground abyss.
 
-Hidden in the darkness above, a straight shaft leads upwards to an iron grate at the base of \nameref{stationDungeon}.
-Waste and filth slides down through the grate regularly, followed by the sound of an ogre roaring out of sheer boredom.
-\footnote{\nameref{dunGrate}, room \ref{dunGrate}, \autopageref{dunGrate}.}
-
 \paragraph{Anyone venturing down-river gets swept along,}
-and dies in the unending blackness, unless they make a Dexterity + Caving roll, TN 10, to cling onto the sides.
-PCs can spend 5 \glspl{fp} instead to make the roll automatically.
+and dies in the unending blackness, unless they make a \roll{Dexterity}{Caving} roll, \tn[10], to cling onto the sides.
+\Glspl{pc} can spend 5~\glspl{fp} instead to make the roll automatically.
 
 \mapentry[sewerPigWalk]{Entrance to \glsentrytext{pig}}
 
@@ -339,17 +400,10 @@ Up these stairs, the troupe can reach the bowels of \gls{pig}.
 
 \Gls{pigowner} understands what trouble she's in, and immediately accuses the characters of theft and calls on everyone in the room to kill them.
 
-Calming down the patrons requires a Charisma + Empathy roll (TN 10).
+Calming down the patrons requires a \roll{Charisma}{Empathy} roll (\tn[10]).
 
 \paragraph{If the \glspl{pc} arrest the patrons of \gls{pig},}
 everyone in \gls{pig} will deny any knowledge of the deeper tunnels, and the fact that bandits lived down there.
-
-\begin{boxtext}
-
-  The stairs go upwards for some time, and eventually arrive at a room filled with barrels of food, and a trapdoor above.
-  You can hear a deep snore coming from just beyond the trapdoor.
-
-\end{boxtext}
 
 \mapentry[underGuard]{Guardroom}
 

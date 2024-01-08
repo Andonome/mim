@@ -16,38 +16,51 @@
   \ref{Abyss}/65/00,
 }
 
-A Temple of Hate once stood here, but was destroyed with the rest of \gls{lostcity}.
-Now \gls{townmaster} has sent masons (members of the Woodspy Bandits), to build a base of operations for him to begin rebuilding the old human city.
+\begin{exampletext}
+  Some centuries past, in the time of \gls{lostcity}, a temple of \gls{eldren} stood here, and dug down into the depths to find places to store the heaps of donations people gave them.
+  The diggers soon stumbled into a cave-shaft, going straight down, where little glowing mushrooms glowed green.%
+  \exRef{judgement}{Judgement}{glowshroom}
 
-However, everyone building here is unaware that the lower parts of the temple are still active.
-While \gls{lostcity} still stood, the priests of Hate wanted to make their own trade-routes with the nura realm, but eventually fell to war, just like everyone else.
-The priests of Eldren (who were close with the temple's priests) volunteered to remain, and suppress the horde which came up from below.
+  These `glowshrooms' serve as Fire \glspl{ingredient}, so the \glspl{helper} started `fishing' for them, with little fishing hooks.
 
-The priests still fight -- every few years the nura make some attempt to journey up through the eternally-open portal, and the golden priests of Eldren push them back, to protect a civilization they have no idea has fallen.
+  When little goblins poked their heads out from below, the situation could only go one way\ldots
+\end{exampletext}
+
+The \gls{healersGuild} crumbled, along with the rest of the town.
+The population left their houses for the forest to consume, and eventually forgot the town's name.
+
+Now the \glspl{wolfhead} have commissioned a secret \gls{bothy}, both as a base of operations, and a half-way house between them and where they think they can find one of the gateways of \gls{lostcity}.
 
 \mapentry[greenGrounds]{Outer Grounds}
 
 The area around the tower contains piles of rock which labourers have collected from the surrounding ruins.
 
-\paragraph{If anyone in the party casts spells,}
-they noticed immediately that there is a magical hum of energy in the area.
-Everyone here regenerates 3 \glspl{mp} per \gls{interval}.
+\paragraph{If anyone detects source of mana,}
+they notice something in the area, but will have trouble pinpointing it without triangulation.
+The little trickle in fact comes from a small opening to the abandoned basement (area \ref{underGreenTower} on the map).
 
-The source is a mana lake, slightly underground.
-Any spell-caster with depleted mana can easily locate where the energy is strongest by simply wandering about, and eventually identifying a large rock which blocks the path underground (and has done, for decades).
-The rock has a Weight Rating of 8, so a total Strength of +4 is required to lift it.%
-\footnote{Of course another option is a lot of time, digging, or the proper use of a lever with an Intelligence + Crafts roll (TN 8).}
+The rock has a \gls{weight} of 12.
+
+\paragraph{The masons}
+work outside during the day, and will almost certainly notice the \glspl{pc} walking towards them, from the forest.
+And with no roads in, they will feel immediate suspicion.
+Seeing \gls{guard} uniforms will only deepen their worries.
+
+Unless the \glspl{pc} give them a reason not to, they masons will act friendly, offer them a drink on the top floor (area \ref{greenTop}), lock the trapdoor from below, and leave them to the wind and the griffins.%
+\exRef{judgement}{Judgement}{griffin}
 
 \humanfarmer[\npc{\T[6]\M\Hu}{6 Masons}]
 
 \mapentry[greenConservatory]{Conservatory}
 
 Overnight, the labouring equipment rests here.
-The lock is a simple knot tied on the inside, and anyone slipping a knife inside can get in (Intelligence + Larceny, TN 5).
+The lock is a simple knot tied on the inside.
+Getting in is easy -- \roll{Intelligence}{Larceny} (\tn[6]) to slide a knife through a crack and cut the rope.
+Getting in undetected requires more thinking -- \roll{Intelligence}{Larceny} (\tn[14]) to thread a series of strings through, and create the leverage to undo the knot.
 
 \mapentry[green1]{First Floor}
 
-Basic straw-stuffed beds, clothes, and some bows lie here.
+Basic straw-stuffed beds, clothes, and 10 longbows lie here (+2 Damage).
 
 \mapentry[green2]{Second Floor}
 
@@ -55,16 +68,40 @@ The men sleep here, though it's eventually planned as a station for lower-level 
 
 \mapentry[green3]{Third Floor}
 
-The top floor provides a place for \gls{traitor}, overseer of the operation, to get a good look at the surrounding area.
+The top floor provides a place for \gls{southSeeker}, overseer of the operation, to get a good look at the surrounding area.
 This is also where he keeps a stockpile of weapons:
 
-\begin{itemize}
+\begin{description}
+  \item[Wall Rack]
+  with
+  20 longbows
+  \item[Leather bundles]
+  with
+  50 longswords
+  \item[Wooden Chest 1]
+  with
+  50 suits of partial leather armour
+  \item[Wooden Chest 2]
+  with
+  50 suits of partial chain armour
+  \item[Small Chest]
+  contains:
+  \begin{itemize}
+    \item
+    Fire \gls{boon}
+    \item
+    Air \gls{boon}
+    \item
+    Earth \gls{boon}
+    \item
+    \lootMagic
+  \end{itemize}
+\end{description}
 
-  \item{20 longbows}
-  \item{50 longswords}
-  \item{50 suits of partial leather armour}
+\addtocounter{treasure}{-1}
+\Gls{southSeeker} purchased the \lootMagic\ some years ago, and left it here to ensure none of the \gls{sunGuard} would search him in \gls{town}, and take it from him.
 
-\end{itemize}
+\showTalisman
 
 \mapentry[greenTop]{Top Floor}
 
@@ -92,27 +129,20 @@ They can't see people or creatures sneaking about, but they can see basilisks an
 
 \mapentry[underGreenTower]{The Stairs}
 
-\textbf{Background:}
 Years of growth and soil-spillage have left a thin layer of mucus on the stairs.
 
 \paragraph{Anyone descending}
-must make a Dexterity + Athletics roll, TN 8, or fall down one staircase, taking $1D6-2$ Damage.
-Each of the three staircases require a different roll.
+must make a \roll{Dexterity}{Athletics} roll, \tn[8], or fall down one staircase, taking $1D6-2$ Damage.
 Characters can get a bonus for proper equipment, such as rope.
 
-The air down in the tomb has become so dry and foetid, that anyone spending time there gains 2 \glspl{fatigue} per \gls{interval}.
+The air down in the tomb has become so dry and foetid, that anyone spending time there gains 2~\glspl{fatigue} per \gls{interval}.
 Of course, this can be offset with sufficient rest (or just leaving the place to air out for a few days).
 
 The stairs and all hallways here are rather narrow, making weapons difficult to swing.%
-\footnote{%
-  \iftoggle{core}%
-  {\nameref{enclosedcombat}.}%
-  {See the Core rules on Enclosed Spaces.}%
-}
+\exRef{core}{Core Rules}{enclosedcombat}
 
 \mapentry[underWatcher]{The Watcher}
 
-\textbf{Background:}
 The tomb is guarded by a Pious Ghast who stands in a side-cupboard, sworn to guard the golden priests.
 He has spent a long time down here in the dry air, and his body so seized up that he cannot move.
 A little time, however, will allow him to regain the use of his limbs, and open the door.

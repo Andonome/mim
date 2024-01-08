@@ -29,7 +29,7 @@ make longer weapons difficult to use.%
   \ref{sewerArtefacts}/86/63,
   \large S/83/65,
   \Large\ref{sewerKingRoom}/71/51,
-  \Large\ref{sewerDust}/70/31,
+  \Large\ref{wireTrap}/70/31,
   \ref{sewerWaterHall}/48/38,
   \rotatebox{-23}{\small\nameref{sewerWaterHall}}/43/32,
   \D\ref{sewerLockup}/61/42,
@@ -46,18 +46,19 @@ make longer weapons difficult to use.%
   {\normalsize\rotatebox{-90}{\nameref{sewerPig}}}/97/74,
   \ref{slum_exit}/71/91,
   {\normalsize\nameref{slum_exit}}/71/98,
-  \Large\ref{sewerDust}/49/76,
+  \Large\ref{wireTrap}/49/76,
   \Large\ref{underGuard}/63/865,
   %{\large\D}\ref{sewerCells}/43/79,
   \ref{sewerShrine}/56/77,
   \Large\ref{sewerDog}/33/67,
 }
 
-\mapentry{Stairway to the Slums}
-\label{slum_exit}
+\mapentry[farmExit]{Exit to the \Glsentrytext{jotter}}
 
-An old drain leads out to the city streets.
-%! Where does it go? Doula's house?  Centre of rough street?
+This tunnel connects the \nameref{sewers} to \gls{traitor}'s house, just outside \gls{town}'s walls.
+The \gls{whiteBandits} smuggle goods through here for \gls{pigowner}, and use it to travel, without moving through any official entrances to \gls{town}.
+
+\Gls{traitor}'s house above has several rooms, as he's done rather well for himself, and hopes that once the revolution comes he'll be in an even better position.
 
 \mapentry[sewerCells]{Dead Cells}
 %! Maybe just remove these?
@@ -168,30 +169,73 @@ Find the maps in the handouts.
 
 \begin{boxtext}
 
+  Just ahead, you can see a dog, lying on the ground.
+  It instantly stands up and begins to bark.
+
+\end{boxtext}
+\mapentry[sewerDog]{The Guard Dog}
+
+\begin{exampletext}
+  The Immortal Bandits keep one of \gls{traitor}'s dogs chained here at all times (rotating, so they don't get bored).
+\end{exampletext}
+
+\paragraph{If the characters approach,}
+Rover hears them and begins barking.
+If the group remained silent, they can make a Dexterity + Stealth Group Roll (TN 9) to move silently.
+
+\paragraph{If Rover hears them,}
+he begins barking and four of the bandits in room \ref{underHall} (\nameref{underHall}) come to investigate.
+
+They won't poke about long, so the \glspl{pc} simply need to pick a reasonable hiding place or roll Intelligence + Stealth (TN 8).
+
+\paragraph{If a bandit or a ghast walks by,}
+Rover does nothing -- he got used to the bandits, and even random undead wandering about, and the undead have no interest in animals.
+
+\huntingdog[\npc{\A}{Rover}]
+
+
+\begin{boxtext}
+
   The boarded up wall pulls open -- the entire thing was a door made to look like a blocked entrance.  The rings of shelves show a strange assortment of items -- jars filled with human teeth, an old brazier, dried snowdrops, and a vial of blood.
 
 \end{boxtext}
 
+\begin{boxtext}
+  Going down the stairs you feel your feet hitting cold water.  It's not clear how far the water goes down, but it's cold.
+\end{boxtext}
+
+\mapentry[sewerWaterHall]{Drowned Hallway}
+
+This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
+
+The water goes up to the ceiling by the last step, and for four squares after.  Each ghoul-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
+
 \mapentry[sewerArtefacts]{Magical Item Storage}
 
 \Glsentrytext{sewerking} stashes most of his prizes in this room on a simple series of shelves.
+The shelves contain a bunch of books, \lootMagic, and a Wolf-Run potion.
 
 \begin{enumerate}
-
-  \item
-  A vial of lamb's blood which makes the user invisible to the dead and immune to fatigue, marked ``Dead Wine'' (as per the Torpor spell).
   \item
   An old scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.
   \item
   \textit{The Secrets of Elven Witchcraft: Attain Great Magic within the Week}.
   This book rambles about commanding secret spirits who live in reflections, and hints at lost treasure hidden under \gls{town}.
   The book speaks lies from start to end.
-  \item
-  The Assassination Dagger, which inflicts an additional $1D3+1$ HP Damage during the round's first attack (ignoring all \glspl{fp}).
-  This ability can be used once per \gls{interval}.
-  \item
-  Magic Mushrooms, enchanted with Saurecanta level 2 to decrease the user's Intelligence and Charisma by 3 and increase Speed by the same amount.
 \end{enumerate}
+
+\showTalisman
+
+\talisman{Wolf-Run}% Name
+  {detailed}% Enhancements
+  {Wax}% Action
+  {Air, Water}% Spheres
+  {current \glspl{hp} plus \gls{dr}}% Resistance
+  {Drinking the muddy potion increases the target's Speed by +\arabic{spellPlusOne}, while giving them a wolf-like outer layer of fur.
+  The spell also inflicts a -\arabic{spellCost} Penalty to Intelligence, and forces the target to eat an extra \arabic{spellCost} meals per day, or suffer \glspl{fatigue} from starvation}% Summary
+  {
+  The effects endure until the target takes \gls{fatigue} Penalties due to starvation}% Details
+\showTalisman
 
 \begin{boxtext}
   The door opens to a noble's room, bearing a striking contrast to the dungeon around.  The bed's well made, the sheets are silk, and various books sit on shelves.
@@ -205,31 +249,26 @@ Find the maps in the handouts.
   \item
   The city map shows every entry point the bandits can enter the city above, including the theoretical passage the bandits think could be found again under \glsentrytext{townmaster}'s Citadel.
   \item
-  A map of the area, outlining \glsentrytext{lostcity}, the portal by \glsentrytext{redfall}, and \gls{necromancer}'s lair.
+  A map of the area (see the handouts).
   \item
-  A complete map of the current location
+  A complete map of the current location.
 \end{itemize}
 
-The books are variously written on history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erende'), and instructions on hosting a dinner party.
+The books are variously written on history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erend\"e'), and instructions on hosting a dinner party.
 
-\mapentry[sewerDust]{Ogre Dust Trap}
+\mapentry[wireTrap]{Wire Trap}
 
-A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.
-Anyone failing a \roll{Wits}{Vigilance} roll (\tn[12]) in the twilight, feels the petals fall down.
-A moment later, the character's afflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -4 Charisma.
+A thin wire, nailed across the rock walls, will pull the shins of anyone crossing it.
+Seeing the wire in the dark requires a \roll{Wits}{Athletics} roll (\tn[12] by light, or 16 in darkness).
 
-\begin{boxtext}
-
-  A little thread pushes against your face, like a steel spiderweb.
-  A second later, something flutters around your head.
-  The falling debris feels annoying beyond words, and it's difficult to say why -- you simply feel incredibly irritated, and hungry.
-  \emph{Extremely} hungry.
-
-\end{boxtext}
+Failing while going uphill means the character is Prone.%
+\exRef{core}{Core Rules}{prone}
+Failing while going downhill also inflicts $1D6$ Damage.
 
 \begin{boxtext}
 
-  Barrel after barrel fill the room, along with the smell of wine, apples, and vinegar.  A little basket of choice snacks sits on top.
+  Barrel after barrel fill the room, along with the smell of wine, apples, and vinegar.
+  A little basket of choice snacks sits on top.
 
 \end{boxtext}
 
@@ -240,17 +279,6 @@ The room is normal, except for the basket of choice snacks, which is poisoned wi
 Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.
 Failure means the character will have a bad night, and gain 3 \glspl{fatigue} each \gls{interval} for the rest of the day.%
 \footnote{Feel free to roll for the characters so they're not aware there's a problem.}
-
-\mapentry[sewerWaterHall]{Drowned Hallway}
-
-This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
-
-
-\begin{boxtext}
-  Going down the stairs you feel your feet hitting cold water.  It's not clear how far the water goes down, but it's cold.
-\end{boxtext}
-
-The water goes up to the ceiling by the last step, and for four squares after.  Each ghoul-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
 
 \mapentry[underHall]{Grand Hall}
 
@@ -316,22 +344,12 @@ Calming down the patrons requires a Charisma + Empathy roll (TN 10).
 \paragraph{If the \glspl{pc} arrest the patrons of \gls{pig},}
 everyone in \gls{pig} will deny any knowledge of the deeper tunnels, and the fact that bandits lived down there.
 
-\mapentry[farmExit]{Exit to the External Farm}
-
-\textbf{Background:}
-Outside \gls{town}'s walls the tunnel ends in a farmhouse.
-The Immortal Bandits use this place to move beyond the walls without worrying about any inspections.
-
 \begin{boxtext}
 
   The stairs go upwards for some time, and eventually arrive at a room filled with barrels of food, and a trapdoor above.
   You can hear a deep snore coming from just beyond the trapdoor.
 
 \end{boxtext}
-
-Fleacatch' house above has several rooms, as he's done rather well for himself, and hopes that once the revolution comes he'll be in an even better position.
-
-\humanfarmer[\npc{\M\Hu}{Fleacatch}]
 
 \mapentry[underGuard]{Guardroom}
 
@@ -393,33 +411,10 @@ The character requires a Margin of 2 to know what will happen before casting the
   The closest hostile person loses $1D6$ \glspl{hp} (\glspl{fp} are ignored).
 \end{enumerate}
 
-\mapentry[sewerDog]{The Guard Dog}
+\mapentry{Stairway to the Slums}
+\label{slum_exit}
 
-\begin{exampletext}
-  The Immortal Bandits keep one of farmer Fleacatch' dogs chained here at all times (rotating, so they don't get bored).
-\end{exampletext}
-
-\begin{boxtext}
-
-  Just ahead, you can see a dog, lying on the ground.
-  It instantly stands up and begins to bark.
-
-\end{boxtext}
-
-\paragraph{If the characters approach,}
-Rover hears them and begins barking.
-If the group remained silent, they can make a Dexterity + Stealth Group Roll (TN 9) to move silently.
-
-\paragraph{If Rover hears them,}
-he begins barking and four of the bandits in room \ref{underHall} (\nameref{underHall}) come to investigate.
-
-They won't poke about long, so the \glspl{pc} simply need to pick a reasonable hiding place or roll Intelligence + Stealth (TN 8).
-
-\paragraph{If a bandit or a ghast walks by,}
-Rover does nothing -- he got used to the bandits, and even random undead wandering about, and the undead have no interest in animals.
-
-\huntingdog[\npc{\A}{Rover}]
-
-\vfill\null
+An old drain leads out to the city streets.
+%! Where does it go? Doula's house?  Centre of rough street?
 
 

@@ -128,24 +128,6 @@ On its way out they could see it was a different sort of undead -- not a regular
 The creature looks like a regular, skinny woman, with long brown hair, dead around six months.
 However, the simple shell hosts a powerful necromancer.
 
-\npc{\D}{Monster in the Cellar}
-
-\person{0}% STRENGTH
-  {1}% DEXTERITY
-  {0}% SPEED
-  {{2}% INTELLIGENCE
-  {0}% WITS
-  {-5}}% CHARISMA
-  {2}% DR
-  {2}% COMBAT
-  {Academics~2, Caving~1, Medicine~1, Stealth~3, Vigilance~3}% SKILLS
-  {None}% EQUIPMENT
-  {
-    \setcounter{Air}{2}
-    \setcounter{Fate}{2}
-    \setcounter{Water}{3}
-  }
-
 The creature has already risen the maid from the dead, and has an escape plan.
 It will create a magical mist as it hears anyone attempting to enter the door.
 Once the door opens, the mist pours out, obscuring all vision, and the ghoul-maid will come shambling out.
@@ -153,14 +135,12 @@ Anyone attempting to kill the creature inside will probably attack the maid, and
 In the private room above, it will cover itself in blankets, posing as an embarrassed man who must leave unseen.
 Once on the street, it can find an alley to hide in, and begin its murderous rampage before diving into the river at the first sign of a mob.
 
-\ghoul[\npc{\D\F}{Undead Maid}]
-
 \mapentry[runoff]{Runoff}
 
 Various little pipes, nooks, and gutters in the city lead underground.
 This little drain pops out here, and heads steadily downhill, eventually landing in the sewers below (see page \pageref{sewerPig}).
 
-The first member of the party to go down the tunnel rolls to spot the tripwire (Wits + Vigilance, TN 8), and failure means they immediately go tumbling downwards to the sewers.
+The first member of the party to go down the tunnel rolls to spot the tripwire (\roll{Wits}{Vigilance}, \tn[8]), and failure means they immediately go tumbling downwards to the sewers.
 
 \begin{boxtext}
 
@@ -173,11 +153,12 @@ The first member of the party to go down the tunnel rolls to spot the tripwire (
 
 \mapentry[pigShaft]{Ventilation Shaft}
 
-This little tunnel reaches upwards to allow a modicum of fresh air to circulate down in the nasty little dungeon.  Characters with a Strength of 0 or greater are too large to fit through the narrow hole.  It emerges on a street, just below a rich man's house.
+This little tunnel reaches upwards to allow a modicum of fresh air to circulate down in the nasty little dungeon.
+Characters with a Strength of 0 or greater are too large to fit through the narrow hole.
+It emerges on a street, just below a rich man's house.
 
-\mapentry[pigTemple]{The Temple of Qualm\"e}
+\mapentry[pigTemple]{\Glsentrytext{healersGuild}}
 
-\textbf{Background:}
 When the Immortal Bandits cleared this hallway, they found an entrance to the Temple of Qualm\"e.
 But instead of entering, they pulled out the door, and quietly replaced it with stone.
 
@@ -198,6 +179,8 @@ Each one has little more than blankets and clothing hooks.
 \Gls{sewerthief} has the room to the far right, and while everyone else was digging where \gls{sewerking} ordered, he quietly dug himself a little hiding-hole to stash money and other valuable he's taken for himself.
 In total, he's collected \lootMedium, and one \lootMagic.
 
+\showTalisman
+
 When \gls{sewerking} found out about this, he became annoyed, and placed a ghast in the room, instructing it to frighten (but not kill) \gls{sewerthief}.
 
 \paragraph{If the \glspl{pc} enter \gls{sewerthief}'s room,}
@@ -208,5 +191,4 @@ the ghast jumps out at them.
 
 \mapentry[pigDown]{The Descent}
 This path downwards leads to the thieves' den underground (see page \pageref{sewerPigWalk}).
-
 

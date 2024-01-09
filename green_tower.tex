@@ -127,6 +127,20 @@ They can't see people or creatures sneaking about, but they can see basilisks an
   \ref{Abyss}/68/36,
 }
 
+\begin{exampletext}
+  Before the happy-go-lucky \gls{healersGuild} we know today, they studied the magic of the Death Sphere.
+  `Priests' of high standing would volunteer to continue serving the temple, even after death.
+  They would stand inanimate in their alcoves, adorned with gold, representing a rich afterlife, and allow a spell to be placed upon them, focussing their minds on nothing but their mission -- to obtain the glowshrooms.
+
+  When the mushrooms grew fertile, the `golden priests' would use spells to obtain them, and put them in a chest.
+  When the goblin mushroom-pickers ascended, the golden priests threw offensive spells down at them, then raised them as ghouls to fight again.
+
+  This battle endured throughout these centuries.
+  One priest lost an arm in a battle, another lost a leg, while their army of undead hobgoblins waxed and waned.
+
+  They remain here still, mostly in silence, obtaining mushrooms which then sit in a pile, on top of a chest, rotting.
+\end{exampletext}
+
 \mapentry[underGreenTower]{The Stairs}
 
 Years of growth and soil-spillage have left a thin layer of mucus on the stairs.
@@ -148,27 +162,26 @@ He has spent a long time down here in the dry air, and his body so seized up tha
 A little time, however, will allow him to regain the use of his limbs, and open the door.
 
 \paragraph{Opening the door}
-requires a Strength + Crafts roll at TN 14, as the door is bolted shut from the inside, and will have to be busted in.
+requires a \roll{Strength}{Crafts} roll (\tn[14]), as the door is bolted shut from the inside, and will have to be busted in.
 
 \paragraph{If a player insists on `picking the lock'}
-(despite the lack of lock) they roll Intelligence + Larceny, TN 16.
+(despite the lack of lock) they roll \roll{Intelligence}{Larceny} (\tn[16]).
 
 \begin{boxtext}
 
-  You swing the door open to find a highly decorated corpse with a pendant to Eldren made of gold, with bone strung along the copper thread.
+  You swing the door open to find a highly decorated corpse with a pendant to \gls{eldren} made of gold, with bone strung along the copper thread.
   The clothes look like they were once silk, and the helmet's leather covering seems to be a human face, stretched out and tanned.
 
 \end{boxtext}
 
 \paragraph{If the \glspl{pc} stab the corpse,}
-they can kill it.
+they can kill it\ldots after a few stabs.
 
 \paragraph{If they pass the door,}
-the Pious Ghast animates and comes to kill them.
-He is intelligent enough to know to sneak.
-His use of a shortsword also means he will not gain any penalty from the narrow hallway.
+the Pious Ghast animates and comes to kill them.%
+\footnote{I have seen three groups of players go through this area, observe the corpse, and walk on, leaving him unscathed.}
 
-If the characters enter with the Torpor spell cast, or rings of asphyxiation, they will be able to pass the Pious Ghast and the Golden Priests invisibly, so long as they do not linger too close to any of them.
+His use of a shortsword also means he will not gain any penalty from the narrow hallway.
 
 \npc{\M\D}{The Pious Ghast}
 
@@ -178,17 +191,22 @@ If the characters enter with the Torpor spell cast, or rings of asphyxiation, th
   {{0}% INTELLIGENCE
   {0}% WITS
   {-5}}% CHARISMA
-  {2}% DR
+  {3}% DR
   {3}% COMBAT
-  {Academics~1, Stealth~2, Tactics~2, Vigilance~1}% SKILLS
-  {\shortsword, \completeplate, 200sp worth of jewellery}% EQUIPMENT
-  {}
+  {}% SKILLS
+  {\shortsword, \completeplate, pendant necklace worth 2~\glspl{gp}, \lootJewellery, \lootJewellery}% EQUIPMENT
+  {
+    \setcounter{Academics}{1}
+    \setcounter{Stealth}{2}
+    \setcounter{Tactics}{2}
+    \setcounter{Vigilance}{1}
+    \undead
+  }
 
 \mapentry[underPriests]{Hall of the Golden Priests}
 
-\textbf{Background:}
 A long time ago, onlookers came here to gawk at the splendour of a glorious afterlife.
-The priests of Eldren who gained the highest honours of the temple would remain here to guard it forever.
+The priests of \gls{eldren} who gained the highest honours of the temple would remain here to guard it forever.
 Each is decked in golden jewellery.
 
 \begin{boxtext}
@@ -200,105 +218,75 @@ Each is decked in golden jewellery.
 
 \end{boxtext}
 
-\boxPair[t]{
-  \demilich[\npc{\D\F}{Demilich Delilah}]
-}{
-  \demilich[\npc{\D\M}{Demilich Jonah}]
+\demilich[\npc{\D\F\gls{sickness}}{Demilich Delilah}]
+{
+  \footnotesize
+  \showStdSpells[\setcounter{enc}{1}]
 }
 
-\demilich[\npc{\D\F}{Demilich Tamar}]
+\demilich[\npc{\D\M\gls{sickness}}{Demilich Jonah}]
+{
+  \footnotesize
+  \showStdSpells[\setcounter{enc}{1}]
+}
+
+\demilich[\npc{\D\F\gls{sickness}}{Demilich Tamar}]
+{
+  \footnotesize
+  \showStdSpells[\setcounter{enc}{1}]
+}
 
 \paragraph{Once the \glspl{pc} enter,}
-the demiliches cast hostile spells at them.
+the demiliches cast hostile spells at them (their presence does not help extracting mushrooms).
 
-\mapentry[underDoors]{Exposed Doors}
+\paragraph{Complementing the priests}
+breaks the Mind spell, which has them focussed on their single task.
+All of them have the code `Noble', so anything which would earn a player \glspl{xp} serves to break this spell.%
+\exRef{stories}{Stories}{noble}
 
-\textbf{Background:}
-These openings once had doors to hide the secret items of the Temple of Hate, but the doors have since shattered and broken from centuries of warfare.
-Primitive spears litter the area.
+After this, the priests will stop attacking, and take some time to re-examine their unlives, and discuss (silently, with the unknowable communications of the undead) what they want to do, if anything.
+
+\mapentry[underDoors]{Dirty Tunnels}
+
+\begin{exampletext}
+  These openings once had doors to hide the secret items given to the \gls{healersGuild}, but the doors were destroyed during the centuries of battle.
+\end{exampletext}
+
+Strange and rotten spears, made from unknown plant-matter, litter the area, along with rotten mushrooms.
+A green glow emanates through the narrow paths.
 
 \mapentry[underSideRoom]{Side Room}
 
-\textbf{Background:}
-The natural tunnel was further excavated in order to horde the priests' treasures.
-At present, this room contains \lootMedium, \lootBig, and \lootMagic, all held in a small chest at the side of the room.
+\begin{exampletext}
+  The natural tunnel was further excavated in order to horde the priests' treasures.
+  The glowshrooms collected filled up the chests, but the priests just kept piling them on top, and ordering their undead hobgoblins to do the same.
+\end{exampletext}
+
+At present, this room contains \lootMedium, \lootJewellery, \lootJewellery, \lootJewellery, \lootJewellery, and \lootBig, all held in a small chest at the side of the room, under a massive pile of rotten mushrooms.
 
 The room also contains 14 undead hobgoblins, standing ready to kill any nura who come up from the tunnel, or just anyone who enters.
 
 \undeadhobgoblin[\npc{\T[14]\N\D}{14 Undead Hobgoblins}]
 
-\mapentry[underSpiral]{Downward Spiral}
-
-\paragraph{If the troupe venture down the hallway,}
-they find four more undead hobgoblins in the tunnel.
-Their job is to open the door and jump on any nura climbing up, but they will attack anyone on sight.
-
-\undeadhobgoblin[\npc{\T\N\D}{4 Undead Hobgoblins}]
-
-\begin{exampletext}
-
-  Throughout the long years, the golden priests directed the stupid undead to dig and dig into the hillside.
-  They looped round, and dug into the tunnel, then fashioned a door from the broken wood from previous battles.
-
-Any nura digging upwards can now be attacked by the undead, who hurl themselves down to attach anything climbing up, before one of the golden priests shut the door again.
-While several nura would normally burst through any door, opening a stuck door while climbing can be almost impossible.
-
-\end{exampletext}
-
 \mapentry[Abyss]{Abyss}
 
-Characters entering this area feel a warm breeze coming from the abyss, and intense magical energies.
-The abyss itself is a third-level mana lake, constantly radiating magical energy.
-%! Mana lakes?
+This hole leads down a sharp and muddy incline, some 100 steps below, where hobgoblins listen intently to any noises above.
+
+\paragraph{If the \glspl{pc} dislodge and drop a mushroom,}
+they may see shadows moving below, and wonder who lives down there.
 
 \paragraph{If they somehow get down the hole,}
-they will find a skull embedded in the wall -- the head of a devout warrior.
-His head -- carved with the story of his victories -- functions as a permanently-open magical doorway.
+they have entered the goblin realm, and do not speak the language.
+They have escaped the mundane gods, and their souls will enter a completely unknown realm as their bodies become a living hobgoblin-feast.
 
-%! Removed The Portal Summoner
-
-\paragraph{Destroying the Portal Summoner}
-is easy if one can get close enough.
-However, getting close to it will almost certainly alert the nura below, in their citadel.
-At this point, heavily armoured hobgoblins will attempt to climb up to stop the vandalism.
-
-\hobgoblin
+\mapentry[underSpiral]{Downward Spiral}
 
 \begin{exampletext}
-
-  The priests of the \gls{armourHall}, who opened the door to the Goblin Realm, were not stupid.
- They created the door through a magical artefact and placed that artefact down a deep chasm, so they could better defend their location in case of attack.
-  What they had not counted on was the sheer number of nura who could climb up from below.
-  They clamoured up in their hundreds, with spiked gloves to climb more easily up the soft cavernous walls.
-
-  When the nura turned against the city, the two portals spewed hobgoblins, ogres, and the like, at the same time.
-  The priests argued, and considered caving the entire temple in.
-  They prayed to Hate, and saw a vision of the temple's destruction, with a hole which sucked in more and more earth, getting wider and wider, until nura filled the land.
-
-  At this point, the priests of Eldren decided to take over, and remain, guarding the temple forever.
-  They had their servants wrap them in cloth while warriors fought against the nura.
-  They each took vows to never eat, open their eyes, or listen to music again.
-  All five became demiliches, sworn to serve their temple forever.
-
-  As the nura came up, the golden priests killed them with magic, then raised the bodies from the dead to fight against more nura.
-  This has left the situation in a stalemate.
-  Nura come up from the tunnel, they die, the golden priests raise them as ghouls to fight until all nura lie dead.
-  This repeats every few years.
-
-  So far, two of the golden priests have met their final end.
-  Their remains have been placed back in their chambers by the others.
-
-  Throughout these centuries, barely a dozen goblins have managed to escape and get into the lands above, and almost all died of starvation before finding anywhere above.
-
+  This tunnel swirls round the \nameref{Abyss}, heading down, until it ends in a barred door.
+  Opening the door allows an excellent view of the green glowshrooms all around, and provides an excellent vantage point to shoot any hobgoblins which try to climb up.
 \end{exampletext}
 
-\paragraph{If the troupe attempt to understand this area,}
-they will no doubt find it confusing -- as well they should.
-They will not find communication with the gold priests easy.
-However, the demiliches are willing to communicate, and one can send telepathic thoughts with the Enchantment sphere.
-
-\paragraph{If two of the golden priests die,}
-the nura kill the other and break out.
-Raise the local nura rating by 3.
-
-
+\paragraph{If any one of the golden priests die,}
+the goblins kill the others and break out.
+Raise the local goblin rating by 3.%
+\exRef{judgement}{Judgement}{goblin_rating}

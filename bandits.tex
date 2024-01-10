@@ -1,18 +1,61 @@
-\sidequest[Town,Roads]{Immortal Bandits}
+\sidequest[Town,Roads]{The \Glsentrytext{whiteBandits}}
 
 \noindent
-The Immortal Bandits are a bandit ring with a difference.
+The \gls{whiteBandits} are a bandit ring with a difference.
 Their magic rings make them semi-undead, and they sometimes use undead horses, which cannot gallop, but never tire, so they can raid for many miles around their haven.%
 \footnote{See page \pageref{necromancers_lair} for more on their foetid living conditions.}
 
+\begin{boxtext}
+  In the far distance, a trading caravan approaches.
+  You can see the head rider's massive moustache before anything else.
+  Both coaches have the usual archer on the top, though they don't look like \glspl{guard}.
+\end{boxtext}
+
+\sqpart{Roads}% AREA
+{Art Collectors}% NAME
+{\Glsentrytext{banditking} pulls a cart of stolen goods}% SUMMARY
+
+\begin{exampletext}
+  A month ago, \pgls{guard} reported finding a ruined temple to \gls{traitor}.%
+  \footnote{See \vpageref{necromancers_lair}.}
+  \Gls{traitor} went with \gls{banditking} to investigate it, and they found some old, sacred, and valuable, statues, and \pgls{artefact}%
+  \footnote{See \vpageref{The Bladder Skull}.}.
+  They also received an arrow wound from \gls{necromancer}.
+  \Gls{banditking} has decided to take it upon himself to deliver them to Lakeside.%
+  \footnote{See \vpageref{lakeside}.}
+\end{exampletext}
+
+\setcounter{wounds}{2}
+
+\banditking
+
+\Gls{banditking} greets the troupe in a friendly way, and explains he's going to Lakeside to sell his wares for a `client'.
+He refuses to divulge any information about this client, then begins hinting that if the troupe ever run into anything valuable, and need to sell it, he can be very discrete.
+
+\begin{speechtext}
+  If you brave warriors ever need to sell any paintings, my brother sits in the \gls{whitehorse}, in \gls{town}.
+  Just ask for him, and they'll show you right in.%
+  \footnote{This is simply not true -- \gls{sewerking} keeps a low profile.}
+
+  Anyway, it's a dangerous road.
+  Fancy turning the other way and joining me?
+  You know, all the work you do in the \gls{guard} has real value.
+  People don't tell you that enough, but you guys save everyone, every day, and nobody says `thank you'.
+  Why don't you come and protect people on this road, instead of that one, and I'll say `thank you', at the end.
+\end{speechtext}
+
+%! What statues?
+%! Maybe the artefact?
+
+\Gls{banditking} then offers the troupe 1~\glspl{sp} per mile, in total, if they join him till Lakeside.
+He will only travel by road, so he can avoid \gls{townmaster}'s taxes.
+
 \sqpart{Roads}% AREA
 {The Deal}% NAME
-{The Immortal Bandits request help}% SUMMARY
+{The \glsentrytext{whiteBandits} request help}% SUMMARY
 
-\textbf{Background:}
-The Immortal Bandits have gotten in a fight with the \gls{guard}, and both sides have left in a bad state.
-The Woodspy Bandits heard the battle, came to investigate, then started following them.
-They don't like the idea of two bandit rings in the area, so they plan to follow the Immortal Bandits quietly, and kill them in their sleep.
+The \gls{whiteBandits} have gotten in a fight with the \gls{guard}, and both sides have left in a bad state.
+They don't like the idea of two bandit rings in the area, so they plan to follow the \gls{whiteBandits} quietly, and kill them in their sleep.
 
 \begin{boxtext}
 
@@ -26,13 +69,13 @@ He explains the situation while telling them not to look behind (``the bandits m
 \paragraph{If the \glspl{pc} ask more about his background,}
 he tells them his current business is top-secret.
 
-\humanarcher[\npc{\T[6]\Hu}{6 Immortal Bandits}]
+\humanarcher[\npc{\T[6]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
 
 \sewerking
 
 \humansoldier[\npc{\T[12]\Hu}{12 Woodspy Bandits}]
 
-\paragraph{If the party agree to accompany the Immortal Bandits,}
+\paragraph{If the party agree to accompany the \gls{whiteBandits},}
 then \gls{sewerking} stays with them for a day, but makes sure they do not follow him all the way to their secret home, and avoids town at all cost in case someone recognizes one of his men.
 
 \paragraph{If the party push for a fight,}
@@ -42,21 +85,11 @@ they will have one.
   {To easily resolve fights between \glspl{npc}, see the \textit{Judgement} book, \autopageref{npcfights}.}%
   {}
 
-\sqpart{Roads}% AREA
-{Fallen Traders}% NAME
-{A number of traders have fallen to bandits}% SUMMARY
-
 \begin{boxtext}
 
   A dead caravan lies ahead, with dead horses in front, and dead men at the side.  Every wagon, person and horse has been filled with arrows.
 
 \end{boxtext}
-
-Here the bandits have been again, and removed all the goods they could -- food, beer, clothing, and some swords.
-
-The Night Guard still hunt for the Immortal Bandits, but the bandits appear randomly, and then disappear just as quickly into the depths of the forest.
-This time they've been careless with their tracks.
-The party can follow them with a \roll{Strength}{Wyldcrafting} roll, \tn[8], if they have the time and supplies for a journey of many days.
 
 \sqpart{Roads}% AREA
 {Hidden Eyes}% NAME
@@ -96,12 +129,12 @@ If they come for the rest of the bandits, they flee on horseback.
 
 \sqpart{Roads}% AREA
 {The Feast is Cancelled}% NAME
-{The Immortal Bandits have raided \pgls{village} during a wedding}% SUMMARY
+{The \glsentrytext{whiteBandits} have raided \pgls{village} during a wedding}% SUMMARY
 
 \textbf{Background:}
-Jameson has announced that he will track down and personally behead the Immortal Bandits.
+Jameson has announced that he will track down and personally behead the \gls{whiteBandits}.
 He works in the \gls{guard} as a scout, and enjoys the patronage of his father -- \pgls{village} master.
-Unfortunately the Immortal Bandits heard of his plans, and know where he lives.
+Unfortunately the \gls{whiteBandits} heard of his plans, and know where he lives.
 
 \begin{boxtext}
 
@@ -117,65 +150,6 @@ If the \glspl{pc} catch up to them, the bandits run away.
 
 \paragraph{If anyone asks about why this happened,}
 the villagers all tell them about Jameson's recent bravado.
-
-\sqpart{Roads}% AREA
-{The Dead Tracker}% NAME
-{A member of the \glsentrytext{guard} sent to track down where the dead have come from has returned as a ghoul}% SUMMARY
-
-\textbf{Background:}
-Anderson -- a scout in the \gls{guard} -- was hired to track down the bandits.
-However, \gls{sewerking} (on one of his rare trips to the temple in the forest) spotted him, cast a spell to turn his sword into stone, then stabbed him. 
-Finally, he raised the corpse from the dead, but this is where things went wrong.
-He failed to control the spirit in the body, so it fled into the empty night.
-
-\ghoul[\npc{\D}{Ghouled Tracker}]
-
-\paragraph{If they follow the ghoul's tracks,}
-have them roll \roll{Wits}{Wyldcrafting} (\tn[11]).
-
-\paragraph{If the party enquire with the \gls{guard},}
-they will be told where Anderson was wandering to search for \gls{necromancer}, which should help them narrow the necromancer's location down.
-
-\sqpart{Roads}% AREA
-{The Showdown}% NAME
-{The \glspl{pc} catch the Immortal Bandits resting}% SUMMARY
-
-\textbf{Background:}
-The Immortal Bandits killed yet another trader, taking his supply of meats, and his corpse.
-But this time, they got sloppy, and left some evidence of their crimes.
-Then they wandered beyond the \gls{edge}, into the deep forest.
-When the light vanished, they thought it was night and lit a fire.
-But outside the forest, the Sun is still setting, so the smoke from their fire can be seen easily from the road.
-
-Have the party roll Wits + Vigilance.
-
-\paragraph{If they roll 10 or more,}
-they spot a horse's hoof in the bushes, in the distance, a short walk from the road.
-It leads them to the rest of the horse, and a blood-spattered cart, which once carried fresh meats and bread.
-
-The bandits tidied up the tracks well.
-
-\paragraph{If they roll 8 or more,}
-they spot the bandits' resting-spot.
-
-\begin{boxtext}
-  By the light of the setting Sun, you see smoke coming out of the forest beyond the \gls{edge}.
-  It looks like someone has a campfire.
-\end{boxtext}
-
-\paragraph{If the \glspl{pc} follow,}
-it will take them over an hour to walk, but locating the bandits won't be much trouble as long as they don't lose their baring in the dark.
-Request a Wits + Wyldcrafting roll (\gls{tn} 7) to track the bandits, and a Dexterity + Stealth roll (\gls{tn} 8) to remain unnoticed.
-
-\banditking
-
-\humansoldier[\npc{\T[6]\Hu}{6 Bandits}]
-
-\humanarcher[\npc{\T[6]\Hu}{6 Immortal Bandits}]
-
-Play the next encounter only if the \glspl{pc} take \gls{banditking} in alive.
-
-\resumecontents[Town]
 
 \sqpart{Town}% AREA
 {Bandits Caught}% NAME

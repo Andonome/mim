@@ -402,37 +402,7 @@
 }
 
 \newcommand{\banditking}{
-\NPC{\M\Hu}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{to return to nobility}
-
-\person{3}% STRENGTH
-  {3}% DEXTERITY
-  {0}% SPEED
-  {{0}% INTELLIGENCE
-  {-1}% WITS
-  {2}}% CHARISMA
-  {0}% DR
-  {3}% COMBAT
-  {Academics~1, Empathy~1, Deceit~3, Tactics~2, Wyldcrafting~3}% 
-  {\longsword, \partialchain, 50 sp wrapped in cotton wool, knife}% 
-  {
-    \knacks{\stunningstrike, \charge, \laststand}
-    \addtocounter{fp}{5}
-  }
-}
-
-\newglossaryentry{banditking}{
-  name={Antonym},
-  first={Antonym \glsentrytext{whiteplains}},
-  type={people},
-  symbol={\M\Hu\gls{justice}},
-  parent={whiteBandits},
-  description={-- \glsentrytext{whiteplains} agitator, attempting to replace \glsentrytext{townmaster} by getting the local \glsentrytext{village} \glsfmtplural{warden} on-side}
-}
-
-\newcommand{\sewerking}{
-
-  \NPC{\M\Hu}{\Glsentrytext{sewerking}}{Pony tail}{Hands on sword}{gather an army}
-
+\NPC{\M\Hu}{\glsentrytext{banditking}}{Short hair, massive moustache}{Drums fingers}{to return to nobility}
   \person{1}% STRENGTH
     {0}% DEXTERITY
     {1}% SPEED
@@ -450,7 +420,34 @@
       \setcounter{Fire}{2}
       \setcounter{Air}{2}
       \setcounter{Fate}{1}
-    }
+  }
+}
+
+\newglossaryentry{banditking}{
+  name={Antonym},
+  first={Antonym \glsentrytext{whiteplains}},
+  type={people},
+  symbol={\M\Hu\gls{justice}},
+  parent={whiteBandits},
+  description={-- \glsentrytext{whiteplains} agitator, attempting to replace \glsentrytext{townmaster} by getting the local \glsentrytext{village} \glsfmtplural{warden} on-side}
+}
+
+\newcommand{\sewerking}{
+  \NPC{\M\Hu}{\Glsentrytext{sewerking}}{Pony tail}{Hands on sword}{to depose kill \gls{townmaster}}
+\person{3}% STRENGTH
+  {3}% DEXTERITY
+  {0}% SPEED
+  {{0}% INTELLIGENCE
+  {-1}% WITS
+  {2}}% CHARISMA
+  {0}% DR
+  {3}% COMBAT
+  {Academics~1, Empathy~1, Deceit~3, Tactics~2, Wyldcrafting~3}% 
+  {\longsword, \partialchain, 50~\glspl{sp} wrapped in cotton wool, knife}% 
+  {
+    \knacks{\stunningstrike, \charge, \laststand}
+    \addtocounter{fp}{5}
+  }
 }
 
 \newglossaryentry{sewerking}{

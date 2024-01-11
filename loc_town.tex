@@ -14,18 +14,19 @@ Civil government, insofar as it is instituted for the security of property, is i
 
   \textbf{Number} & \textbf{Location} & & \textbf{Number} & \textbf{Location} \\
   \hline
-  1 & The Citadel of \glsentrytext{townmaster}. & & 5 & \Glsentrytext{pig}. \\
-  2 & \Glsentrytext{sunGuard} Station.          & & 6 & \Gls{healersGuild}. \\
-  3 & \Glsentrytext{whitehorse}.                     & & 7 & \gls{traitor}'s house, with secret entrance to the Lost Library. \\
-  4 & \Gls{paperGuild}.                         & & 8 & \Gls{armourHall}. \\
+  \ref{citadel} & The Citadel of \glsentrytext{townmaster}. & & XX & \Glsentrytext{pig}. \\
+  \ref{guardstation} & \Glsentrytext{sunGuard} Station.          & & \ref{townHealersGuild} & \Gls{healersGuild}. \\
+  XX & \Glsentrytext{whitehorse}.                     & & \ref{smugglerHouse} & \gls{traitor}'s house, with secret entrance to the Lost Library. \\
+  \ref{paperGuild} & \Gls{paperGuild}.                         & & \ref{armourHall} & \Gls{armourHall}. \\
 \end{boxtable}
 
 \end{table*}
 
 \begin{multicols}{2}
 
-\subsection{The Market}
-\label{greyMarket}
+\subsection{Sight Seeing}
+
+\mapentry[greyMarket]{Market}
 \index{Market!\glsentrytext{town}}
 
 Every morning, wagons full of vegetables pour into \gls{town} with food from \glspl{village} and hamlets, and enter the market.
@@ -52,8 +53,7 @@ If someone makes them work in the \gls{guard}, what kind of creature will eat th
 
 Take a look at the handouts for the \gls{town} market.
 
-\subsection{The \Glsfmttext{paperGuild}}
-\label{paperGuild}
+\mapentry[paperGuild]{The \Glsfmttext{paperGuild}}
 \index{Library!Paper Guild}
 
 This massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
@@ -102,8 +102,12 @@ Anyone in \gls{librarian}'s good graces receives a +4 Bonus to research rolls.
 
 These various maps can be found in the handouts.
 
-\subsection{The Citadel}
-\label{citadel}
+\mapentry[armourHall]{\Glsfmttext{armourHall}}
+
+Here, the angry and insolent people, who have not yet committed the kinds of crimes worthy of a place in the \gls{guard} learn to focus their anger on their craft.
+They sell armour of every price to anyone, although the biggest client will always remain the \gls{sunGuard}.
+
+\mapentry[citadel]{The Citadel}
 
 The citadel is massive, and contains various floors.
 
@@ -172,7 +176,7 @@ he threatens the most awesome magic imaginable, even if his real powers leave mu
 
 \townmaster
 
-\subsection{\Glsfmttext{healersGuild}}
+\mapentry[townHealersGuild]{\Glsfmttext{healersGuild}}
 
 The temple houses priests who write biographies (mostly for nobles), handle pensions (repaid on a per-family basis), practice starvation (so others can have more), and sing prayers for their ancestors to stay somewhere nice in the afterlife.
 
@@ -180,7 +184,7 @@ If the temple's groundskeeper -- Ripcrag -- ever finds out what happened to the 
 
 \humanpriest[\npc{\M}{Ripcrag}]
 
-\subsubsection{\Glsfmttext{traitor}'s House}
+\mapentry[smugglerHouse]{\Glsfmttext{traitor}'s House}
 
 This two-story wooden house has every bit of finery normally owned by \glspl{warden}, except for servants.
 It is \emph{filthy}, but otherwise lavish.

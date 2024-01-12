@@ -1,22 +1,23 @@
 \newcommand\townMap{
-  \mapPic[\Large]{t}{Dyson_Logos/town}{
-    \Huge 1/87/50,
-    2/86/41,
-    3/34/75,
-    4/60/65,
-    5/76/28,
+  \mapPic[\large]{t}{Dyson_Logos/town}{
+    \Huge \ref{citadel}/87/50,
+    \ref{guardstation}/86/41,
+    {\footnotesize\nameref{whitehorse}}/34/77,
+    \ref{paperGuild}/60/65,
+    \ref{townHealersGuild}/76/28,
+    \Glsentrytext{pig}/78/30,
     6/78/30,
-    \footnotesize{7}/84/29,
-    8/71/77,
-    \rotatebox{9}{\footnotesize Big Docks}/60/48,
-    \rotatebox{-9}{\footnotesize \Glsentrytext{southDale} Docks}/39/48,
-    \rotatebox{-90}{\footnotesize Windy Bridge}/47/51,
-    \rotatebox{-54}{\footnotesize Citadel Bridge}/72/55,
+    \ref{smugglerHouse}/84/29,
+    \ref{armourHall}/71/77,
+    \rotatebox{9}{Big Docks}/60/48,
+    \rotatebox{-9}{\Glsentrytext{southDale} Docks}/39/48,
+    \rotatebox{-90}{Windy Bridge}/47/51,
+    \rotatebox{-54}{Citadel Bridge}/72/55,
     \rotatebox{-9}{\scriptsize Cowbridge}/51/33,
     \rotatebox{-1}{\scriptsize Sheepbridge}/50/22,
-    \rotatebox{-90}{\footnotesize Spy Grate}/23/54,
-    {\footnotesize Market}/53/71,
-    {\footnotesize Market}/60/35,
+    \rotatebox{-90}{Spy Grate}/23/54,
+    \ref{greyMarket}/53/71,
+    \ref{greyMarket}/60/35,
   }
 }
 
@@ -38,4 +39,77 @@
       For as long as the spell remains active, the target cannot regenerate \glspl{fatigue}, \glspl{mp}, or \glspl{hp}.
       While the spell diminishes a little with every movement, but targets who remain still retain the spell's effects.
     }
+}
+
+\newcommand\bookInvestigationChart{
+  \begin{figure*}[t]
+  \setcounter{diceNo}{6}
+
+  \begin{nametable}[c|m{10em}|X|c]{\nameref{alchemyLibrary} Investigation}
+    \textbf{Roll} & \textbf{Title} & \textbf{Contents} & \textbf{Value} \\
+    \hline
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{Area Map}
+    &
+    An ancient city map, detailing sites of interest such as a Temple of \gls{eldren}, and the `Golden Priests' Magic Mushrooms' (\autopageref{green_tower}).
+    &
+    5~\glspl{sp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{Fire: Uses and Abuses}
+    \hint{Author: Nilawa}
+    &
+    A valuable book on Fire \glspl{talisman}.
+    &
+    10~\glspl{gp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    (letter)
+    &
+    A letter stating that a portal to an unknown labyrinth realm has been opened, and that trade has opened with various dwarves in exchange for food.
+    It also states that the portal will respond to the words `open to trade'.
+    &
+    1~\glspl{sp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    (letter)
+    &
+    Letters of complaint from the `Dean of Conjuration', stating that the `Dean of Illusions' must tidy his room, and that the rats he's brought in have become so bad that he's ordering no food to be permitted in the area, under any circumstances.
+    &
+    1~\gls{sp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{The Earth Sphere (A Guide for Morons)}
+    \hint{Author: Munoka}
+    &
+    A valuable book on the Earth Sphere.
+    &
+    5~\glspl{sp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{The Greatest of Monsters: Taxation}
+    \hint{Author: \gls{warden} Gray}
+    &
+    One of \gls{townmaster}'s ancestors explains why paying taxes for use of  the magical portals, strangles freedom, innovation, and basic decency.
+    &
+    3~\glspl{gp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{Divergent Portals: The Hows \& Why Nots}
+    \hint{Author: Tuleta}
+    &
+    The book details how to use a \textit{Divergent, Distant, Detailed, Duplicated Warp Mind \& Force} spell to simultaneously open many portals to a particular space, while making all of the portals sentient, and able to recast their own spell. 
+    &
+    50~\glspl{gp}
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    (letter)
+    &
+    A letter complaining that the portal has become `too clever for its own good', from a tradesman who's tired of answering riddles.
+    &
+    5~\glspl{sp}
+    \\
+  \end{nametable}
+  \label{libraryTable}
+  \end{figure*}
 }

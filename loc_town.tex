@@ -8,20 +8,6 @@ Civil government, insofar as it is instituted for the security of property, is i
 
 \townMap
 
-\begin{table*}[t]
-
-\begin{boxtable}[cX|ccX]
-
-  \textbf{Number} & \textbf{Location} & & \textbf{Number} & \textbf{Location} \\
-  \hline
-  \ref{citadel} & The Citadel of \glsentrytext{townmaster}. & & XX & \Glsentrytext{pig}. \\
-  \ref{guardstation} & \Glsentrytext{sunGuard} Station.          & & \ref{townHealersGuild} & \Gls{healersGuild}. \\
-  XX & \Glsentrytext{whitehorse}.                     & & \ref{smugglerHouse} & \gls{traitor}'s house, with secret entrance to the Lost Library. \\
-  \ref{paperGuild} & \Gls{paperGuild}.                         & & \ref{armourHall} & \Gls{armourHall}. \\
-\end{boxtable}
-
-\end{table*}
-
 \begin{multicols}{2}
 
 \subsection{Sight Seeing}
@@ -193,5 +179,164 @@ A secret trapdoor in the kitchen leads down to a basement.
 A further trapdoor in the basement leads down to the \nameref{sewers}, area \vref{farmExit}.
 
 At night, the \gls{whiteBandits} arrive here with items, to be smuggled tax-free into \gls{town}.
+
+\mapPic{t}{Dyson_Logos/white_horse_2}{
+  \ref{horseHall}/18/45,
+  \ref{horseKitch}/68/53,
+  \ref{horseYard}/88/57,
+}
+
+\begin{boxtext}
+
+  A massive man with a butter-tipped moustache throws a lanky man from the door.
+  The lanky man recoils with a grimace, and shouts `you owe me my wages!'.
+
+\end{boxtext}
+
+\mapentry[whitehorse]{\Glsentrytext{whitehorse}}
+\index{Taverns}
+
+\begin{exampletext}
+  \Gls{sewerthief} took a job as a cook at \gls{whitehorse} to learn more about \gls{townmaster}, but \gls{townmaster} instantly took umbrage at his \glsentrytext{whiteplains} accent.
+\end{exampletext}
+
+\humandiplomat[\NPC{\M\Hu}{Barkwind}{Proud}{Curling moustache}{ensure everything is `proper'}]
+
+Entry through deception requires a roll against Barkwind's \roll{Wits}{Vigilance} (\tn).
+The players can roll anything as long as it relates to a reasonable plan.
+Otherwise, he forgets their faces within a week.
+
+The \glspl{pc} \emph{must} agree with Barkwind (the doorman) about \gls{sewerthief} (and about \gls{whiteplains} in general) before he agrees to let them in.
+
+\Gls{whitehorse} has no locks as nobody expects thieves to enter.
+ 
+\begin{enumerate}
+  \item
+  The drinking hall contains various \gls{village} \glspl{warden} playing games, and half a dozen local guards (sometimes including \gls{captain}).
+  \label{horseHall}
+  \item
+  \label{horseKitch}
+  The staff sleep in the kitchen here during long shifts.
+  The lack of proper ventilation makes the air difficult to breathe.
+  \item
+  \label{horseYard}
+  The courtyard usually contains a couple of carriages, and nobles playing ridiculous games.
+  \begin{boxtext}
+
+    \Gls{townmaster} is running away from a coterie of chuckling men with his hands tied behind his back.
+     A chicken runs out in front of him with a little paper hat.
+     He lunges forwards and grabs the chicken in his teeth, then shakes it like a mad dog until it stops squawking.
+     He gives a triumphant grin as the crowd clap and another man steps forward to have his hands tied.
+
+  \end{boxtext}
+
+  \item
+  \label{horseUpstairs}
+  The bookshelves contain rather a lot of history books, most focussing upon anti-elven propaganda, such as the time they destroyed \gls{lostcity}.
+
+  A map on the wall shows all of \gls{valley}.
+  Show your players the map in the handouts, but don't give it to them unless the \glspl{pc} want to steal the map.
+  \item
+  \label{horseCupboard}
+  This cupboard contains cleaning supplies, two Fire \glspl{ingredient} (bear hearts), and one Water \gls{ingredient} (a woodspy beak), in case someone becomes sick.
+  \item
+  \label{horseSideRoom}
+  Tavern equipment, bookshelves for less popular books, and beds for the favoured servants, lie in semi-organized heaps and stacks.
+  \item
+  \label{wolfRoom}
+  \Gls{beardedalemaster} and Courtbile of the \gls{wolfhead} sleep in the larger room.%
+\end{enumerate}
+
+\smolMapPic{Dyson_Logos/white_horse_1}{
+  \ref{horseUpstairs}/55/27,
+  \ref{horseSideRoom}/55/80,
+  \ref{wolfRoom}/28/27,
+  \ref{horseCupboard}/85/08,
+}
+
+\mapentry[guardstation]{Guard Station}
+
+The grounds are patrolled by a minimum of five \glspl{sunGuard} at any point.
+\Gls{captain} has an obsession with guards constantly rotating around the premise.
+As a result, they've hidden a stash of whiskey in the bushes at the back, and sometimes have `rounds', while they do the rounds.
+
+The wooden buildings tacked into the outer wall have thin rooves which constantly bend and creak -- walking silently across them is impossible for anything with a total weight of 4 or more.
+
+\smolMapPic[\Large]{Dyson_Logos/guard_station}{
+  \ref{stationStables}/42/15,
+  \ref{stationStorage}/81/427,
+  \ref{stationStorage}/54/11,
+  \ref{stationToilet}/63/11,
+  \ref{stationCaptainToilet}/895/427,
+  \ref{stationCaptainRoom}/85/59,
+  \ref{stationSleep}/86/14,
+  \ref{stationDressing}/30/11,
+  \ref{stationLecture}/86/81,
+  \ref{stationRecords}/37/41,
+  \ref{stationInterrogation}/285/57,
+  \ref{stationShrine}/44/65,
+  \ref{stationStairs}/53/41,
+}
+
+\humansoldier[\npc{\T[10]\Hu}{30 \gls{guard}}]
+
+\mapPic{b}{Daniel_Walthall/prison}{
+  \huge\rotatebox{-45}{\nameref{dunStorage}}/24/82,
+  \ref{dunStorage}/21/77,
+  \huge\rotatebox{-45}{\nameref{guardStationRoom}}/29/24,
+  \ref{guardStationRoom}/21/26,
+  \nameref{mainPrisonRoom}/59/56,
+  \ref{mainPrisonRoom}/56/46,
+  \Large\nameref{dunCells}/66/98,
+  \ref{dunCells}/71/79,
+  \Large\nameref{dunCells}/66/02,
+  \ref{dunCells}/71/21,
+  \Large\rotatebox{-45}{\nameref{dunGrate}}/88/50,
+  \ref{dunGrate}/80/50,
+  \Large\rotatebox{-45}{\nameref{thingsRoom}}/88/79,
+  \ref{thingsRoom}/84/75,
+  \Large\rotatebox{-45}{\nameref{ogreCell}}/84/17,
+  \ref{ogreCell}/88/23,
+  }
+
+\begin{enumerate}
+  \item
+  Dressing room, with armour
+  \label{stationDressing}
+  \item
+  Stables\label{stationStables}
+  \item
+  Storeroom room with handheld weapons, siege weapons, and basically every item listed in the core rules
+  \label{stationStorage}
+  \item
+  Toilet
+  \label{stationToilet}
+  \item
+  Sleeping Quarters
+  \label{stationSleep}
+  \item
+  Captain's Toilet
+  \label{stationCaptainToilet}
+  \item
+  \gls{captain}'s Room
+  \label{stationCaptainRoom}
+  \item
+  Lecture Hall (though mostly used as a drinking hall)
+  \label{stationLecture}
+  \item
+  Records Room, containing lists of fugitives, laws, tax records (a copy is kept in \gls{townmaster}'s treasury), and valuable paintings of local nobles
+  \label{stationRecords}
+  \item
+  Interrogation room
+  \label{stationInterrogation}
+  \item
+  Simulacra of a woodspy, chitincrawler, griffin, (small) basilisk, and bandit, made from wood and leather.
+  The guards use these to explain combat tactics.
+  \label{stationShrine}
+  \item
+  Stairway down to the dungeons
+  \label{stationStairs}
+\end{enumerate}
+
 
 \end{multicols}

@@ -4,7 +4,7 @@
 A century ago, the old \glsentrytext{warden} of \glsentrytext{town} commissioned tunnels to transport goods from the outer gates to the citadel.
 The \gls{healersGuild} also used the tunnels to place the bodies of the dead, then it expanded into a storage area for the citadel and \gls{healersGuild} (who receive artistic gifts from patrons trying to assure a bed for themselves when their time comes).
 
-During the earthquakes of Otsea%
+During the earthquakes of the season of Otsea%
 \exRef{judgement}{Judgement}{Otsea}
 it collapsed, and everyone left the area.
 
@@ -86,13 +86,14 @@ Consult the chart (no matter which door the \glspl{pc} open first, that's the fi
   Door & Contents \\\hline
   1st & 3 ghasts jump out. \\
   2nd & 7 ghasts jump out. \\
-  3rd & \Gls{sewerthief} is taking a nap while he should be working.
-        He ties a piece of string round the bar, then through the door, so he can get out again.
-        \footnote{He positions the bar by balancing it on the door, then shutting it slowly.
-        The bar then falls onto the outer hooks, leaving a small piece of string as the only evidence of the trickery.} \\
+  3rd & String on the door indicates \gls{sewerthief} is taking a nap while he should be working. \\
   4th & 2 ghasts jump out, and one flees towards \nameref{farmExit}, above. \\
   5th+ & 5 ghasts jumps out. \\
 \end{nametable}
+
+\Gls{sewerthief} sleeps secretly by tying a piece of string round the door's bar, pushing the string inside the room, then balances the bar on top of the door.
+When he closes the door, the bar falls into place, leaving only a small strip of string as evidence of the trickery.
+The troupe can spot this, with a \roll{Wits}{Vigilance} roll (\tn[13]).
 
 \paragraph{If the \glspl{pc} listen at the door,}
 they find the dead are silent when not active, and don't respond to noise, as they are also deaf.%
@@ -137,7 +138,7 @@ If anyone manages to communicate with it, the Bladder Skull wants to return to \
   {2}% Intelligence
   {0}% Wits
   {3}% Charisma
-  {make everyone see as the dead see}% Mission
+  {to make everyone see as the dead see}% Mission
   {
     \setcounter{Fate}{2}
     \setcounter{Air}{2}
@@ -145,15 +146,18 @@ If anyone manages to communicate with it, the Bladder Skull wants to return to \
   }% Spheres
   {Projectiles~2, Academics~1, Crafts~1, Vigilance~2}% Skills
   {
-    \revelationSpell
   }% Spells
 
-\begin{boxtext}
+\showStdSpells[
+    \revelationSpell
+    \stepcounter{enc}
+]
 
+\begin{boxtext}
   Just ahead, you can see a dog, lying on the ground.
   It instantly stands up and begins to bark.
-
 \end{boxtext}
+
 \mapentry[sewerDog]{The Guard Dog}
 
 \begin{exampletext}

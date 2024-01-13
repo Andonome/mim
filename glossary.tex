@@ -188,7 +188,7 @@
 }
 
 \newcommand{\alemaster}{
-  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Guild Reputation} 
+  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{long, brown hair half-covers sparkling jewellery, making it glint like clouds over starlight}{humming between sentences and playing dim}{guild reputation} 
   \person{0}% STRENGTH
     {1}% DEXTERITY
     {0}% SPEED
@@ -598,19 +598,22 @@
 }
 
 \newcommand{\pigowner}{
-  \NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{to make powerful friends}
+  \NPC{\F\Hu}{\Glsentrytext{pigowner}}{Long, seaweed-like hair, and a delicate lady-tache}{Chin pointed up}{to make powerful friends}
   \person{1}% STRENGTH
     {2}% DEXTERITY
     {-1}% SPEED
     {{1}% INTELLIGENCE
-    {2}% WITS
-    {1}}% CHARISMA
+    {1}% WITS
+    {2}}% CHARISMA
     {0}% DR
     {1}% COMBAT
-    {Deceit~3, Empathy~1, Tactics~1}% SKILLS
+    {}% SKILLS
     {\Dagger, a hidden dagger, and an even more hidden dagger.}% EQUIPMENT
     {
-    \addtocounter{fp}{5}
+    \setcounter{Deceit}{3}
+    \setcounter{Empathy}{1}
+    \setcounter{Tactics}{2}
+    \addtocounter{fp}{8}
     \knacks{\adrenalinesurge}
     }
 }

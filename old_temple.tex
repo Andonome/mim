@@ -8,24 +8,44 @@
   \ref{antHall}/34/53,
   \ref{antBasilisk}/50/53,
   \ref{antPrison}/34/89,
-  \ref{antCamp}/23/79,
+  \ref{necroGhasts}/23/79,
   \ref{antOgre}/82/30,
   \ref{antTower}/85/67,
   \ref{antStudy}/17/44,
 }
 
-Priests lived here at the side of \pgls{village}, at the time acting as advisors to the nobility.
-\Gls{necromancer} enjoyed his work, and studied hard.
+Priests of \gls{eldren} lived here at the side of \pgls{village} some centuries ago, when \gls{lostcity} still stood.
+See \vpageref{necroStory} for the full background.
 
-Now the garden lies untended, but paradoxically has more life than it ever did when humans tended to the grounds.
-The grass has grown long, the trees' fruit comes and goes according to the seasons, and the local area has become populated with a lot of apple trees.
+All over the temple grounds, ghouls wander, or simply stand and stare.
+The number depends on how many Side~Quest parts have played out in `\nameref{necroStory}' -- in part 1, he has 100 ghouls, in part 2 he has 200, and so on.
+
+These ghouls will see the troupe from a long way off, as the dead can see human souls in the far distance.
+
+\begin{boxtext}
+  In the far distance, through the dense foliage, you see the top of a single crumbling tower, and you can just about make out a statue, or possibly a motionless man, standing watch.
+  Before the tower, something moves through the forest -- many footsteps, like a herd of aurochs, moving silently.%
+  %\exRef{judgement}{Judgement}{auroch}
+\end{boxtext}
+
+If the troupe have no magic to make them less visible to the dead, then \gls{necromancer} will spot them, and begin casting offensive spells (check his abilities \vpageref{antTower}).
+
+Once the horde of the dead arrive in front of the troupe, they have a problem -- they can outrun the dead for a while, but will soon grow tired.
+This is the same problem as part \vref{necroHorde}.
+
+\paragraph{If the \glspl{pc} try to circle round the ghouls,}
+they should roll \roll{Intelligence}{Athletics} (\tn[8]) to figure out the ground they need to cover to out-pace the dead.
+Success means they accrue 2~\glspl{fatigue} from the harsh marching, but gain \pgls{interval} before the ghouls catch up to them.
+A tie indicates they gain 6~\glspl{fatigue}, or simply do not lose the ghouls (players' choice).
 
 \mapentry[antGrounds]{The Grounds}
 
-All over the temple grounds, ghouls wander, or simply stand and stare
-(depending upon which encounter the characters are on, this could be 50 -- 400).
+The garden lies untended, but paradoxically has more life than it ever did when humans tended to the grounds.
+The grass has grown long, the trees' fruit comes and goes according to the seasons, and the local area has become populated with a lot of apple trees.
 
-A hundred broken arrow parts lie littered around the area, as \gls{necromancer} practices with his bow daily.
+A hundred broken arrow parts lie littered around the area, as \gls{necromancer} practices with his bow whenever he has the energy.
+
+\ghoul[\npc{\T[10]\D}{Ghouls}]
 
 \stirgeSwarm
 
@@ -36,12 +56,6 @@ As a result, they have become carriers for a nasty disease -- Breathrot.%
 \exRef{judgement}{Judgement}{Breathrot}
 Anyone stung by the stirges contracts Breathrot, and becoming less able to breathe until they find a cure, or death.
 
-\boxPair{
-  \ghoul[\npc{\T[10]\D}{Ghouls}]
-}{
-  \humanfarmer[\NPC{\M}{Laith}{Pessimistic}{Mouth breather}{Acquisition}]
-}
-
 \mapentry[antHall]{The Hallway}
 
 The shrine at the side of the hallway is composed of five skulls standing on top of each other, all raised on a pillar.
@@ -50,91 +64,104 @@ The shrine at the side of the hallway is composed of five skulls standing on top
 requires an Intelligence + Academics check, TN 10.
 
 Each skull has a female name, and a message thanking all those below for life.
-Anyone saying a prayer of gratitude to their matrilineal lineage in front of the item gains $1D6+3$ \glspl{fp}.%
-\footnote{The item has 9 MP in total, and spends 2 MP to cast the spell.}
+Anyone saying a prayer of gratitude to their matrilineal lineage in front of the item gains $1D6$ \glspl{fp}.%
+\footnote{The \gls{artefact} has 6 MP in total, and spends 2 MP to cast the spell.}
+
+Further along, two empty pedestals show where old treasures once stood.
+These were pilfered by \gls{sewerking} -- see \vpageref{skullCrown}.
 
 \mapentry[antBasilisk]{the Preserved Basilisk}
 
-\textbf{Background:}
-\Gls{necromancer} felled a basilisk recently.
-He worries about raising it as a ghoul, as such a larger creature might cause havoc, and he does not know if his prayers are up to the task.
+\Gls{necromancer} felled a basilisk recently, then raised it as a ghoul.
+If he has already raided the carriage of armour (in part \vref{necroArmour}), then the basilisk also has partial plate armour, cobbled together from bits and pieces of human armour.
 
-It remains here, with a \textit{Preservation} spell to ensure the corpse does not rot.
-He is slowly building armour around it, to create an unstoppable ghoul, but has not completed the armour (it will fall off after taking 2 hits if the creature wakes up).
+This armour is not well-made, so it falls apart once hit.
+Each hit removes the armour \textit{on that \gls{natural}}, so if someone hits it while rolling a `10', then any more rolls of `10' will remove the basilisk's armour.
+
+The plate armour is only \textit{Partial}, so any rolls which hit 3 steps above the \gls{dr} can bypass this armour.
+However, it still has its natural armour, and the \gls{dr} from undeath.%
+\exRef{core}{Core Rules}{stackingarmour}
+
+\undeadBasilisk
 
 \mapentry[antStudy]{The Secret Study}
 
-When the bandits are away, \gls{necromancer} sneaks back to his private study, through a stone door, balanced on massive iron hinges.
-It contains three cages with birds, scattered throughout the room.
+\begin{exampletext}
+The old \gls{healersGuild} collected tributes from the people, which generally just piled up around the room.
+When people abandoned the local town, none dared remove any of the treasures, as they knew that \gls{necromancer} had sworn an oath to protect the temple, including all its valuable assets.
+\end{exampletext}
 
-The books and scrolls consist of:
+A single, very thin, slab of rock was set on hinges in the inner side.
+From the outside, it looks like just another slab of stone, comprising the hallway.
+\paragraph{Noticing the secret entrance}
+requires a \roll{Wits}{Crafts} roll (\tn[12]).
+
+The room contains the following:
 
 \begin{itemize}
-
-  \item
-  Prayers to the dead (lots)
-  \item
-  Old letters praising all the new food passing through the area, as `our under-cousins' do business.
-  \item
-  Letters noting the best routes from one village to another.
-  These are a clue as to the original layout of \gls{lostcity}, and also confirm that the city never stretched across the entire area, but simply contained a number of \glspl{village}.
-  \item
-  A workshop bench with various pieces of armour on it, including a complete suite of chain.
-  \item
-  A small chest containing \lootMedium.
-
+\item
+Many degraded canvases -- once ornate paintings.
+\item
+Shelves with scrolls (all prayers to one's ancestors).
+\item
+A desk with various communications, including praise to the portals, and complaints about how nobody visits this area, as they have no portal.
+\item
+A workshop bench with various pieces of armour on it, including a complete suite of chain (suitable for someone of Strength +1).
+\item
+Degraded coats, now as thin and full of holes as a spiderweb.
+\item
+Three small chests containing \lootMedium, \lootBig, and \lootBig\ respectively.
+\item
+Four ornate wooden boxes (worth 1~\gls{sp} each) containing \lootJewellery, \lootJewellery, \lootJewellery, and \lootJewellery.
 \end{itemize}
+
+The dead cannot see into this room, so the troupe can hide from ghouls, or any non-sentient dead.
+The ghasts will locate them if they saw them enter this area, but \gls{necromancer} has told the ghasts never to enter this room, so they will not.
 
 \mapentry[antPrison]{The Prison}
 
-This room once housed people making important decisions.  \Gls{necromancer} now uses it to house prisoners so he can feed off their souls.
-Currently, it contains one terrified farmer called Laith.
-He's starving, and petrified, as every day all he can hear are the shambling dead, who sometimes come to grope at the locked door.
-\Gls{necromancer}, or course, holds the key.
+This room once housed people making important decisions.
+\Gls{necromancer} now uses it to house prisoners so he can feed off their souls.%
+\footnote{Returning a living person to the area comes with complications, as the ghouls always want to `eat' them.
+  The solution lies in first making them partially undead, and then having the ghasts carry them back.}
+  Currently, it contains four traumatized and terrified farmers.
+  Each have a -2 penalty to everything, due to the starvation.
+  \Gls{necromancer}, or course, holds the key.
 
-Picking the lock requires an Intelligence + Larceny roll, TN 7.
+  Picking the lock requires an \roll{Intelligence}{Larceny} roll, \tn[7].
 
-Laith can join the characters if given a weapon, but he won't be terribly effective.
+  \boxPair{
+    \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
+  }{
+    \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
+  }
 
-\mapentry[antCamp]{The Abandoned Camp}
+\mapentry[necroGhasts]{Ghast Spotters}
 
-\textbf{Background:}
-The Immortal Bandits stayed here for a while, as \gls{banditking} made arrangements with \gls{necromancer}.
-They had to leave once the place became too full of undead, but their bedding and old firepit remain.
+The part \ref{necroRumours} of `\nameref{necroStory}' has already played out, then two ghasts stay here, watching the birds.
+Since the undead cannot hear, they will not notice the \glspl{pc} unless \gls{necromancer} calls to them, or they see the \glspl{pc} approach.
 
-\paragraph{Investigating the bedding}
-shows a pair of gloves, bedding, and other standard items which distinctly come from Whiteplains, although understanding what this means requires and Intelligence + Crafts roll (TN 12).
+\mapentry[antOgre]{two Ghast Guards}
 
-\mapentry[antOgre]{The Undead Ogre}
-
-\Gls{necromancer}'s prized specimen -- an undead ogre.
-\Gls{necromancer} killed the ogre some time ago, and pulled the body back to undeath.
-Since then, \gls{necromancer} has cobbled together leather armour to glad the oversized ghoul in.
-Now he stands humongous and impenetrable.
-
-\npc{\D\N}{Undead Ogre}
-
-\person{6}% STRENGTH
-{0}% DEXTERITY
-{0}% SPEED
-{{0}% INTELLIGENCE
-{-4}% WITS
-{-5}}% CHARISMA
-{2}% DR
-{2}% AGGRESSION
-{Deceit 1}% SKILLS
-{\greatclub, \completeleather}% ABILITIES
-{}%
+The two ghasts stationed here can see outside just as well as the ghouls can, but will not move from their spot.
+The \glspl{pc} will easily notice the two watchmen standing unnaturally still, and observing them from afar.
 
 \mapentry[antTower]{The Watchtower}
 
-This tower once hosted a call to prayer the nearby village could hear.
-Now \gls{necromancer} uses it to practice his longbow daily, or shoot at intruders.
+\begin{exampletext}
+This tower once hosted a call to prayer the nearby \gls{village} could hear.
+Now \gls{necromancer} uses it to watch the world, silently.
+\end{exampletext}
 
-A large stockpile of arrows sits at the side of the little room.
+A large stockpile of 200 arrows sits at the side of the little room, along with a small pile of 4 Water \glspl{boon}, made from Woodspy Beaks.
 
-\pic{Decky/necromancer}
+From here, \gls{necromancer} can see any living person approaching, and has spells which can affect them.
 
 \thenecromancer
 
+\showStdSpells[
+  \deathStormSpell
+]
+
+\pic{Decky/necromancer}
 

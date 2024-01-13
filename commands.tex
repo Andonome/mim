@@ -124,3 +124,32 @@
   \label{libraryTable}
   \end{figure*}
 }
+
+
+\newcommand{\undeadBasilisk}[1][\npc{\D\A}{Undead Basilisk}]{
+  #1
+  \randomtwo
+  \randomtwoB
+  \randomtwoC
+  \addtocounter{r2b}{-1}
+  \randomthree
+  \addtocounter{age}{5}
+  \randomthreeB
+  \addtocounter{r3b}{1}
+  \animal{\arabic{age}}% STRENGTH
+  {\arabic{r2b}}% DEXTERITY
+  {\arabic{r3}}% SPEED
+  {\arabic{r2b}}% WITS
+  {7}% DR
+  {2}% AGGRESSION
+  {}% SKILLS
+  {}% ABILITIES
+  {
+    \renewcommand\abilities{\quadraped}
+    \setcounter{Athletics}{\value{r2c}}
+    \renewcommand\equipment{\partialplate}
+    \undead
+  }
+}
+
+

@@ -11,11 +11,14 @@
 \subsection{\Glsfmttext{lakeside}}
 \label{lakeside}
 
-\Gls{lakeside} began as \pgls{bothy} on cursed soil.
-Plants here cannot thrive, and even the trees grow crooked and pale.
-It has recently grown into \pgls{village}, and sustains itself with fishing, trade, and taxes.
-Builder Cronblight of the \gls{guard} functions effectively as \pgls{warden} to the two-hundred souls who live here.%
-\footnote{Most humans would consider this violation of guild separation outrageous, but the \gls{village}'s small size makes for extenuating circumstances.}
+\begin{exampletext}
+  \Gls{lakeside} began as \pgls{bothy} on cursed soil.
+  Plants here cannot thrive, and even the trees grow crooked and pale.
+  It has recently grown into \pgls{village}, and sustains itself with fishing, trade, and taxes.
+  Builder Cronblight of the \gls{guard} functions effectively as \pgls{warden} to the two-hundred souls who live here.%
+  \footnote{All \glspl{village} begin like this, as do their \glspl{warden}, at least in theory.
+  In practice, Cronblight grew up as \pgls{warden}'s child, in a nearby \gls{village}, and receive fast promotions.}
+\end{exampletext}
 
 Tall stone walls reach 4 metres into the air, and each house has stone walls and slate rooves.
 But its bridges are made of wood, and ready to burn at a moment's notice if either side of the \gls{village} falls to some enemy.
@@ -35,8 +38,9 @@ The town's central square contains a statue of \gls{townmaster}'s father looking
 
 \mapentry[lakeTemple]{Big \Glsfmttext{bothy}}
 
-The \glspl{pc} can buy just about any weapon they can name here.
+The \glspl{pc} can buy just about any weapon they can name here (find prices \vpageref{lakeWeapons}).
 
+\begin{figure*}[t]
 \begin{boxtable}[lYYYYr]
   \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
@@ -44,20 +48,52 @@ The \glspl{pc} can buy just about any weapon they can name here.
 
   \quarterstaff & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 3 \glspl{sp} \\
 
+  \longsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 18~\glspl{sp} \\
+
   \shortsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 15~\glspl{sp} \\
 
   \spear & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 12~\glspl{sp} \\
 
   \hline
-\end{boxtable}
+  \longbow & 0 & (varies) & --- & 1 & 12~\glspl{sp}+2 per Damage \\
 
-\paragraph{If the \glspl{pc} are looking to hire a soldier,}
-they will find capable people here.
+  \hline
+\end{boxtable}
+\label{lakeWeapons}
+\end{figure*}
+
+\paragraph{Hiring services}
+has a default \gls{tn} of 5, since the \gls{village} has reliable and excellent guides, cartographers, and soldiers.
+However, the small \gls{village} does not offer very many services.
 
 \mapentry[lakeDocks]{Docks}
 
 Here, boats from \gls{southDale} enter, carrying dwarvish spirits.
 
-\Gls{beardedalemaster} comes here to collect her barrels of dwarven spirit, and transports them to \gls{pig} in \gls{town} with the rest of the \glspl{wolfhead}.%
-\footnote{See `\nameref{troubleAle}', \vpageref{troubleAle}, for more on the plot.}
-They then journey together, with a cart, to \gls{traitor}'s house, where he can smuggle it into \gls{town}.
+\paragraph{Newcomers at the Docks}
+arrive regularly.
+Roll $1D6$ to find out who has arrived.
+
+\begin{dlist}
+  \item
+  \Gls{beardedalemaster} has come to collect barrels of dwarvish spirits.%
+  \footnote{See `\nameref{troubleAle}', \vpageref{troubleAle}, for more on the plot.}
+  \item
+  \Gls{southSeeker} has come to collect barrels on behalf of \gls{beardedalemaster}.
+  \item
+  \Gls{sewerking} has arrived to sell art, stolen from local \glspl{warden}.
+  \item
+  Nobody of note has arrived.
+  \item
+  A shipment of \glspl{ingredient} of every type have arrived.
+  \Glspl{pc} can select any to buy, and each type costs $1D6$~\glspl{sp} (+1 per purchase as the price rises).
+  The seller has $2D6$ of each type of \gls{ingredient}.
+  For example, if \pgls{pc} wants a Fire \gls{ingredient}, a roll could show the price is 5~\glspl{sp}, then the next costs 6~\glspl{sp}, and so on.
+  \item
+  A dwarvish jeweller from \gls{southDale} has arrived, selling fancy trinkets of every type.
+  If the \glspl{pc} want to sell him stolen goods, they can try with a \roll{Charisma}{Empathy} roll (\tn[12]).
+  If successful, he will buy them for half their value.
+\end{dlist}
+
+If any of the \glspl{wolfhead} have arrived, they journey back to \gls{town}, with a cart, to \gls{traitor}'s house, where he can smuggle it inside, tax-free.
+

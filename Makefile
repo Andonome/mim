@@ -32,8 +32,12 @@ all: $(BOOK).pdf handouts.pdf
 
 clean:
 	rm -fr *.aux *.sls *.slo *.slg *.toc *.acn *.log *.ptc *.out *.idx *.ist \
-	*.glg *.gls *.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape \
+	*glg \
+	*gls \
+	*.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape \
 	*glo \
+	*latexmk \
+	*.fls \
 	images/extracted
 
 .PHONY: clean all extracts

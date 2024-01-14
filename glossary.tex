@@ -250,6 +250,55 @@
   description={-- \glsentrytext{seeker} to \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate an underground road, to bypass tax laws},
 }
 
+\newcommand\southSmith{
+  \NPC{\glssymbol{southSmith}}{\Glsentrytext{southSmith}}{red nose}{massive grin}{to win}
+  \person{3}% STRENGTH
+  {1}% DEXTERITY 
+  {1}% SPEED
+  {{0}% INTELLIGENCE
+  {-1}% WITS
+  {0}}% CHARISMA
+  {0}% DR
+  {2}% COMBAT
+  {Projectiles 1, Athletics 2, Deceit 1, Wyldcrafting 2\knacks{\adrenalinesurge, \unstoppable, \charge}}% SKILLS
+  {\greatsword, \partialchain, dagger, long bow, camping equipment}% EQUIPMENT
+  {}
+}
+
+\newglossaryentry{southSmith}{
+  name={Grogshot},
+  type={people},
+  parent={wolfhead},
+  symbol={\M\Hu\gls{hate}},
+  description={-- a giant of a man.
+  Officially, he works for \glsentrytext{southDale}'s \glsentrytext{armourHall}, but currently enjoys \glsentrytext{beardedalemaster}'s patronage},
+}
+
+
+\newcommand\southRogue{
+  \NPC{\glssymbol{southRogue}}{\Glsentrytext{southRogue}}{black pony-tail}{thumbs up}{your Money}
+  \person{0}% STRENGTH
+  {2}% DEXTERITY 
+  {1}% SPEED
+  {{0}% INTELLIGENCE
+  {1}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {1}% COMBAT
+  {Projectiles 2, Athletics~1, Deceit 1, Larceny~3, Stealth 1, Vigilance~1\knacks{\snapshot, \laststand}}% SKILLS
+  {\shortsword, \partialleather, dagger, short bow, 12sp.}% EQUIPMENT
+  {\addtocounter{fp}{5}}
+}
+
+\newglossaryentry{southRogue}{
+  name={Courtbile},
+  type={people},
+  parent={wolfhead},
+  symbol={\F\Hu},
+  description={has too much energy, so \glsentrytext{southDale} tossed her in the \glsentrytext{guard}.
+  Then she jumped out of the \glsentrytext{guard} and onto an adventure with new people to steal from},
+}
+
 \newcommand{\woodspyleader}{
   \NPC{\M\Hu}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{easy targets, with lots of gold}
   \label{woodspyleader}

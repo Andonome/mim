@@ -40,10 +40,14 @@ If someone makes them work in the \gls{guard}, what kind of creature will eat th
 Take a look at the handouts for the \gls{town} market.
 
 \mapentry[paperGuild]{The \Glsfmttext{paperGuild}}
-\index{Library!Paper Guild}
+\index{Library!\glsentrytext{paperGuild}}
 
-This massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
-Most books are arranged by size first, then either author (if the author wrote enough) or language (authors who write in multiple languages have some books placed by language first), then quality (with marks out of nineteen), and finally arranged by excellence of handwriting.
+The entrance hosts a hundred pegs for clothes, weapons and anything else people might take off.
+The \gls{scribe} at the door insists people remove cloaks, backpacks, or anything else which might help them steal a book or scroll.
+
+Most humans read out-loud, so the library emits a constant murmur (or a proper racket, when someone wants to read a good book to a crowd).
+
+Inside, the massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
 
 \NPC{\F\Hu}{\Glsfmttext{seeker} \Glsfmttext{librarian}}{running nose}{sings `Nobody Knows the Trouble I've seen'}{to find that missing cat}
 
@@ -56,7 +60,7 @@ Most books are arranged by size first, then either author (if the author wrote e
 {0}% DR
 {0}% COMBAT
 {}% SKILLS
-{Writing equipment}% EQUIPMENT
+{Writing equipment, bag of trout-strips}% EQUIPMENT
 {
   \setcounter{Academics}{3}
   \setcounter{Crafts}{1}
@@ -65,16 +69,37 @@ Most books are arranged by size first, then either author (if the author wrote e
 }
 
 While a number of \glspl{seeker} within the \gls{paperGuild} outrank \gls{librarian}, after sorting all of the books, only she knows how to find them.
-As a result, all requests must go through her, and the amount of time she takes generally depends on her disposition towards that person.
+She sorts books by:
 
-Most research rolls here can bring up any number of items -- everything might be found, if only you can find what it lies under.
-Anyone in \gls{librarian}'s good graces receives a +4 Bonus to research rolls.
+\begin{enumerate}
+  \item
+  Size
+  \item
+  Colour
+  \item
+  Artist's name (if it has images)
+  \item
+  Language
+  \item
+  Quality rating (she scores each from 1 to 12)
+  \item
+  Author
+  \item
+  Handwriting quality (scored 1 to 6)
+\end{enumerate}
+
+\paragraph{Researching at the Library}
+only grants a +1 Bonus, due to the incomprehensible sorting algorithm.
+However, if \gls{librarian} helps, the bonus rises to +3.
+
+\ldots but she will not help anyone, as she's too busy sorting, reading, copying, and looking for one of her missing cats.%
+\ldots{`Mouser', `Mixer', `Fagin', and `Blob'.}
 
 \begin{itemize}
   \item
   Researching the local area might bring up a map of the whole of \gls{valley} (\roll{Intelligence}{Wyldcrafting}, \tn[14]).
   \item
-  Researching old temples of Eldren might bring up the map of \gls{necromancer}'s temple (from before it crumbled).
+  Researching old temples of \gls{eldren} might bring up the map of \gls{necromancer}'s temple (from before it crumbled).
   \item
   Asking the young people who frequent the library about what they are doing reveals a young man who has mapped all of \gls{town} (\roll{Intelligence}{Empathy}, \tn[10]).
   \item
@@ -83,7 +108,7 @@ Anyone in \gls{librarian}'s good graces receives a +4 Bonus to research rolls.
   Researching old elvish settlements yields a map.
   The format makes little sense, the cartographer seems to name random places, and age has changed everything which might have been remotely useful.
   However, if you look closely, with an elvish eye, this map matches \gls{valley}.
-  It also shows the location of two nura portals, marked 'gate place'.
+  It also shows the location of two magical portals, marked 'gate place'.
 \end{itemize}
 
 These various maps can be found in the handouts.

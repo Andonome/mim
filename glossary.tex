@@ -49,6 +49,7 @@
 \newglossaryentry{lostcity}{
   name={The Lost City},
   text={the Lost City},
+  plural={the Lost Cities},
   nonumberlist,
   first={the Lost City},
   sort={Lost City},
@@ -255,14 +256,22 @@
   \person{3}% STRENGTH
   {1}% DEXTERITY 
   {1}% SPEED
-  {{0}% INTELLIGENCE
+  {{1}% INTELLIGENCE
   {-1}% WITS
   {0}}% CHARISMA
   {0}% DR
   {2}% COMBAT
-  {Projectiles 1, Athletics 2, Deceit 1, Wyldcrafting 2\knacks{\adrenalinesurge, \unstoppable, \charge}}% SKILLS
-  {\greatsword, \partialchain, dagger, long bow, camping equipment}% EQUIPMENT
-  {}
+  {}% SKILLS
+  {\greatsword, \completechain, dagger, long bow, camping equipment}% EQUIPMENT
+  {
+    \setcounter{Projectiles}{1}
+    \setcounter{Combat}{2}
+    \setcounter{Athletics}{2}
+    \setcounter{Deceit}{1}
+    \setcounter{Wyldcrafting}{2}
+    \knacks{\adrenalinesurge, \unstoppable, \charge}
+    \addtocounter{fp}{5}
+  }
 }
 
 \newglossaryentry{southSmith}{
@@ -276,18 +285,28 @@
 
 
 \newcommand\southRogue{
-  \NPC{\glssymbol{southRogue}}{\Glsentrytext{southRogue}}{black pony-tail}{thumbs up}{your Money}
+  \NPC{\glssymbol{southRogue}}{\Glsentrytext{southRogue}}{shorn-head}{finger-guns}{your money}
   \person{0}% STRENGTH
   {2}% DEXTERITY 
-  {1}% SPEED
-  {{0}% INTELLIGENCE
+  {2}% SPEED
+  {{-2}% INTELLIGENCE
   {1}% WITS
-  {1}}% CHARISMA
+  {2}}% CHARISMA
   {0}% DR
   {1}% COMBAT
-  {Projectiles 2, Athletics~1, Deceit 1, Larceny~3, Stealth 1, Vigilance~1\knacks{\snapshot, \laststand}}% SKILLS
-  {\shortsword, \partialleather, dagger, short bow, 12~\glspl{sp}.}% EQUIPMENT
-  {\addtocounter{fp}{5}}
+  {}% SKILLS
+  {\shortsword, black \partialleather, dagger, short bow, 12~\glspl{sp}}% EQUIPMENT
+  {
+    \setcounter{Projectiles}{2}
+    \setcounter{Athletics}{2}
+    \setcounter{Deceit}{1}
+    \setcounter{Larceny}{3}
+    \setcounter{Stealth}{1}
+    \setcounter{Vigilance}{1}
+    \setcounter{Wyldcrafting}{2}
+    \knacks{\specialist{\emph{fire!}}, \snapshot, \laststand}
+    \addtocounter{fp}{5}
+  }
 }
 
 \newglossaryentry{southRogue}{

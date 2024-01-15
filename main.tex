@@ -47,11 +47,18 @@ Keywords={TTRPG,RPG,roleplaying}
 \section{Introductions}
 \begin{multicols}{2}
 %\input{incursions.tex}
+\ifodd\value{temperature}
+  \input{spider.tex}
+  \input{bandits.tex}
+\fi
 \input{nurabaron.tex}
 \input{wolves.tex}
 \input{prince.tex}
-\input{spider.tex}
-\input{bandits.tex}
+\ifodd\value{temperature}
+\else
+  \input{spider.tex}
+  \input{bandits.tex}
+\fi
 \end{multicols}
 
 \section{Raising Stakes}

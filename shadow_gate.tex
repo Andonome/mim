@@ -26,6 +26,27 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
 \setcounter{r4}{1}
 \jelly[\npc{\A}{Uncommonly Large Ooze}]
 
+\mapentry[shadowOaths]{Lady of Oaths}
+
+\artefact{Lady of Oaths}% Name
+  {A statue of a brass woman, looking up and listening earnestly.
+  The sign beneath says `tell me your intentions'}% Body
+  {2}% Intelligence
+  {0}% Wits
+  {3}% Charisma
+  {to ensure everyone finishes their mission, by casting an \textit{Oath} spell}% Mission
+  {
+    \setcounter{Fate}{2}
+    \setcounter{Water}{2}
+    \setcounter{Empathy}{2}
+    \setcounter{Wyldcrafting}{1}
+  }% Spheres
+
+\showStdSpells[
+  \setcounter{diceNo}{2}
+  \setcounter{enc}{2}
+]
+
 \mapentry[shadowJelly]{Lowly Ooze}
 
 An acidic ooze sits down here, minding its own business.
@@ -54,7 +75,5 @@ The ooze has existed here for a long time, and has grown very large.
 \end{exampletext}
 
 
-% building a waterproof wall around the entrance solves the issue, in time.
 % the inner sanctum goes somewhere else, to a long dungeon.
-% pedestal has...artefact?
 % make handout advert, with words over the important parts.

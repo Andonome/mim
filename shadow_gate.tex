@@ -1,4 +1,10 @@
-\subsection{The Shadow Gate}
+\subsection{Vault of the Shadow Gate}
+
+Water and mud have slid down the stairs of the Shadow Vault for the last couple of centuries.
+Most of the year, the temple has deep water.
+However, during the cold seasons, the water freezes over.
+
+
 
 \mapentry[entranceCullis]{Rusted Portcullis}
 
@@ -23,10 +29,20 @@ The ooze which inhabits the deeper water \vpageref{shadowJelly} occasionally com
 Inside, rests a tiny little ooze-creature, under a \textit{Preservation} spell, ensuring it will not age so long as it remains still.
 The temple \glspl{server} placed it here `in case of emergency', with a vague plan to make the entrance extremely dangerous if anything large entered.
 
-\setcounter{r4}{1}
-\jelly[\npc{\A}{Uncommonly Large Ooze}]
+\jelly[\npc{\A}{Ooze-in-a-Jar}\setcounter{r4}{2}]
 
 \mapentry[shadowOaths]{Lady of Oaths}
+
+\begin{exampletext}
+  `Wouldn't it be great if people could just keep their promises?', is the kind of thing that people say when they don't think about the consequences.
+  One alchemist, who thought he was being clever, created \pgls{artefact} which would listen to people's oaths, promises, or intentions.
+  The \gls{artefact} still thinks people should keep their word, but like any \gls{artefact}, has no concept of context or priorities.
+
+  So whenever anyone states their intentions next to her, she casts an \textit{Oath} spell, ensuring that they will keep their word.
+  If they try, but struggle, she may well aid them with more spells, but if they try to avoid doing what they said, she turns to unfriendly spells.
+
+  The creator abandoned the \gls{artefact} in frustration shortly after making it, then sold it to the Shadow Vault, where it stood as a visitors' attraction.
+\end{exampletext}
 
 \artefact{Lady of Oaths}% Name
   {A statue of a brass woman, looking up and listening earnestly.
@@ -43,8 +59,7 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
   }% Spheres
 
 \showStdSpells[
-  \setcounter{diceNo}{2}
-  \setcounter{enc}{2}
+  \setcounter{diceNo}{0}
 ]
 
 \mapentry[shadowJelly]{Lowly Ooze}
@@ -55,8 +70,11 @@ And sometimes that creature escapes, and sometimes it does not.
 
 The ooze has existed here for a long time, and has grown very large.
 
-\setcounter{r4}{5}
-\jelly[\npc{\A}{Uncommonly Large Ooze}]
+\jelly[\npc{\A}{Uncommonly Large Ooze}\setcounter{r4}{5}]
+
+\mapentry[shadowDesk]{Empty Desks}
+
+\mapentry[shadowGuardian]{Sleeping Guardians}
 
 \begin{exampletext}
   When the magical gateway shut, the local \gls{warden} tasked \pgls{doula} to resolve the situation.

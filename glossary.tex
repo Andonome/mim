@@ -1,9 +1,11 @@
+
 %%%%% Places
 
 \newglossaryentry{valley}{
   name={The Grey Valley},
   text={the Grey Valley},
   sort={Grey Valley},
+  category={location},
   description={is the name of the area, also known as `Maitavale', by the elves}
 }
 
@@ -11,7 +13,7 @@
   name={Greytown},
   text={Greytown},
   parent={valley},
-  nonumberlist,
+  category={location},
   description={is the central town where the action takes place}
 }
 
@@ -19,11 +21,13 @@
   name={Redfall},
   first={the Redfall hamlet},
   parent={valley},
+  category={location},
   description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
 }
 
 \newglossaryentry{southDale}{
   name={Southdale},
+  category={location},
   description={is a set of towns, some distance to the East of \glsentrytext{town} (but South of the place that named it).
   The area boasts an impressive dwarven citadel, where the dwarves make strong ales},
 }
@@ -33,6 +37,7 @@
   text={the White Horse},
   first={the White Horse Inn},
   parent={town},
+  category={location},
   description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
 }
 
@@ -41,6 +46,7 @@
   text={the Mincing Pig},
   first={the Mincing Pig Tavern},
   parent={town},
+  category={location},
   description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
   Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
   The Immortal Bandits hide here, in secret rooms, below the tavern, but above the city's abandoned underground section}
@@ -54,6 +60,7 @@
   first={the Lost City},
   sort={Lost City},
   parent={valley},
+  category={location},
   description={is a mythical, massive city, which once stretched across the entire area.
   In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings.
   A lot of the stone has simply been repurposed for modern buildings.
@@ -65,6 +72,7 @@
   text={the Green Tower},
   sort={Green Tower},
   parent={valley},
+  category={location},
   description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
 }
 
@@ -72,6 +80,7 @@
   name={Lakeside},
   text={Lakeside},
   parent={valley},
+  category={location},
   description={-- where every river \glsentrytext{valley} meets, before heading to \glsentrytext{southDale}}
 }
 
@@ -104,6 +113,8 @@
 
 \newglossaryentry{whiteplains}{
   name={Whiteplains},
+  type={peeps},
+  category={location},
   description={is an open land in the North, with only one river it can use for trade with the outside -- the river which flows through \glsentrytext{town}},
 }
 
@@ -152,7 +163,7 @@
   name={The Spider Queen},
   sort={Spider Queen},
   text={the Spider Queen},
-  type={people},
+  type={peeps},
   symbol={\F\El},
   parent={outsiders},
   description={-- old elf who began shapeshifting into the form of a chitincrawler.
@@ -171,6 +182,7 @@
   sort={Prosity},
   nonumberlist,
   type={people},
+  category={people},
   symbol={\M\Hu\gls{justice}},
   parent={establishment},
   description={-- \glsentrytext{warden} to \glsentrytext{town} when he's not drinking brandy.
@@ -181,6 +193,7 @@
   name={Yerina},
   first={Keeper Yerina},
   type={people},
+  category={people},
   parent={establishment},
   symbol={\F\Hu\gls{poison}},
   description={-- Keeper of the local \glsentrytext{wheatGuild}.
@@ -216,6 +229,7 @@
   first={Sailhush (Keeper of the \glsentrytext{southDale}'s \glsentrytext{wheatGuild})},
   text={Sailhush},
   type={people},
+  category={people},
   symbol={\F\Hu\gls{poison}},
   parent={wolfhead},
   description={-- Keeper of \glsentrytext{southDale}'s \glsentrytext{wheatGuild}.
@@ -246,6 +260,7 @@
   first={Kinbrine},
   prefix={\glsentrytext{seeker}~},
   type={people},
+  category={people},
   parent={wolfhead},
   symbol={\M\Hu\gls{curiosity}},
   description={-- \glsentrytext{seeker} to \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate an underground road, to bypass tax laws},
@@ -277,6 +292,7 @@
 \newglossaryentry{southSmith}{
   name={Grogshot},
   type={people},
+  category={people},
   parent={wolfhead},
   symbol={\M\Hu\gls{hate}},
   description={-- a giant of a man.
@@ -312,6 +328,7 @@
 \newglossaryentry{southRogue}{
   name={Courtbile},
   type={people},
+  category={people},
   parent={wolfhead},
   symbol={\F\Hu},
   description={-- a headstrong \glsentrytext{guard} deserter from \glsentrytext{southDale}, ready to adventure, run, burn, and steal},
@@ -372,7 +389,7 @@
 \newglossaryentry{keras}{
   name={Keras},
   first={Keras Tri\"{e}l},
-  type={people},
+  type={peeps},
   symbol={\M\Gn},
   parent={outsiders},
   description={-- gnomish illusionist, who often gets in trouble studying things he shouldn't}
@@ -404,7 +421,7 @@
   name={Arinel},
   text={Arinel},
   first={Arinel},
-  type={people},
+  type={peeps},
   symbol={\M\El},
   parent={outsiders},
   description={-- an elf known across the land for his song, at least among other elves},
@@ -443,6 +460,7 @@
   name={Cainpale},
   first={the Undead Priest Cainpale},
   type={people},
+  category={people},
   parent={outsiders},
   symbol={\D\M\Hu},
   description={-- ex-\glsentrytext{helper} to the \glsentrytext{healersGuild} in \glsentrytext{lostcity} a couple of centuries ago.
@@ -512,6 +530,7 @@
   name={Burke},
   first={Burke \glsentrytext{whiteplains}},
   type={people},
+  category={people},
   symbol={\M\Hu\gls{justice}},
   parent={whiteBandits},
   description={-- \glsentrytext{whiteplains} agitator, attempting to replace \glsentrytext{townmaster} by getting the local \glsentrytext{village} \glsfmtplural{warden} on-side}
@@ -539,6 +558,7 @@
   name={Hare},
   first={Hare \glsentrytext{whiteplains}},
   type={people},
+  category={people},
   parent={whiteBandits},
   symbol={\M\Hu\gls{justice}},
   description={-- \glsentrytext{whiteplains} agitator, and brother to \glsentrytext{banditking}.
@@ -572,6 +592,7 @@
   name={Mosswipe},
   first={Mosswipe},
   type={people},
+  category={people},
   parent={whiteBandits},
   symbol={\M\Hu},
   description={-- a talented down-and-out member of \glsentrytext{town} who now serves as the most capable member of the entourage who live beneath \glsentrytext{town}.
@@ -600,7 +621,8 @@
   name={Rocklash},
   text={Rocklash},
   first={\glsentrytext{warden} Rocklash Redfall},
-  type={people},
+  type={peeps},
+  category={people},
   symbol={\M\Hu\gls{justice}},
   parent={establishment},
   description={-- \glsentrytext{warden} to the little hamlet \glsentrytext{redfall}, safely nestled not far from \glsentrytext{town}.
@@ -628,7 +650,8 @@
 
 \newglossaryentry{captain}{
   name={Captain Vex},
-  type={people},
+  type={peeps},
+  category={people},
   sort={Vex},
   parent={establishment},
   symbol={\M\Hu\gls{justice}},
@@ -660,6 +683,7 @@
   text={Rankfilch},
   first={\Glsfmttext{jotter} Rankfilch of the \glsentrytext{guard}},
   type={people},
+  category={people},
   symbol={\M\Hu\gls{beasts}},
   parent={whiteBandits},
   description={-- \glsentrytext{jotter} to the \glsentrytext{guard}.
@@ -691,6 +715,7 @@
   name={Egress},
   text={Egress Pig},
   type={people},
+  category={people},
   symbol={\F\Hu\gls{poison}},
   parent={whiteBandits},
   description={-- owner of \glsentrytext{pig}, the toughest bar in all of \glsentrytext{town}.
@@ -707,6 +732,7 @@
   text={Loot},
   first={Loot the bard},
   type={people},
+  category={people},
   symbol={\M\Hu},
   parent={wolfhead},
   description={-- a young and headstrong bard who writes better than he sings.
@@ -718,7 +744,8 @@
   text={Cleftwarp},
   first={\Glsfmttext{seeker} Cleftwarp},
   sort={Cleftwarp},
-  type={people},
+  type={peeps},
+  category={people},
   symbol={\M\Hu\gls{curiosity}},
   parent={establishment},
   description={-- head \glsentrytext{seeker} of the \glsentrytext{paperGuild}, who stays with \glsentrytext{townmaster} in \glsentrytext{town}'s citadel, rather than the local \glsentrytext{paperGuild}}
@@ -731,7 +758,8 @@
 \newglossaryentry{librarian}{
   name={Foxglove},
   first={Scribe Foxglove},
-  type={people},
+  type={peeps},
+  category={people},
   symbol={\F\Hu\gls{curiosity}},
   parent={establishment},
   description={-- organizes the local \glsentrytext{paperGuild}, and knows everything one could possibly read in any book, but has no time to talk with anyone}

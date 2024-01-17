@@ -62,6 +62,10 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
   \setcounter{diceNo}{0}
 ]
 
+\mapentry[guardianArtefact]{Guardian \Glsentrytext{artefact}}
+
+%!
+
 \mapentry[shadowJelly]{Lowly Ooze}
 
 An acidic ooze sits down here, minding its own business.
@@ -72,7 +76,43 @@ The ooze has existed here for a long time, and has grown very large.
 
 \jelly[\npc{\A}{Uncommonly Large Ooze}\setcounter{r4}{5}]
 
-\mapentry[shadowDesk]{Empty Desks}
+The \glspl{pc} may find the ooze a serious problem.
+It's deadly, humongous, hungry, and fearless.
+But like any ooze, it's stupid, so the \glspl{pc} can lead it out of the temple, and the only way it can find its way back is to feel its own slime-trail.
+
+\paragraph{During cold seasons,}
+the ooze rests under the ice.
+
+The entrance to the Shadow Gate (\vpageref{shadowGate}) stands about as tall as a human, under the ice.
+\Glspl{pc} won't see the entrance easily, and will have to smash the ice open to gain access -- \roll{Strength}{Crafts} (\tn[10])\ldots which of course releases the ooze.
+
+\mapentry[shadowGate]{Shadow Gate}
+
+Stairs along the causeway lead to two raised platforms, still blessedly dry.
+Each has little walls to contain all the sand.
+
+When the Shadow Gate wishes to speak, it uses a \textit{Warp Detailed Earth} spell to solidify and soften different parts of the sand, which spells out a riddle.
+
+The Shadow Gate's last riddle remains on the floor, but this riddle has multiple stages, so once someone begins to answer the riddle, the sand will start to shift about.
+
+\artefact{Shadow Gate}% Name
+  {A massive stone doorway to nothing, with a doormat placed in front}% Body
+  {3}% Intelligence
+  {0}% Wits
+  {1}% Charisma
+  {to ask devious riddles}% Mission
+  {
+    \setcounter{Fire}{3}
+    \setcounter{Earth}{2}
+    \setcounter{Fate}{1}
+    \setcounter{Water}{1}
+    \setcounter{Academics}{2}
+    \setcounter{Wyldcrafting}{1}
+  }% Spheres
+
+\showStdSpells[
+  \setcounter{diceNo}{0}
+]
 
 \mapentry[shadowGuardian]{Sleeping Guardians}
 
@@ -92,6 +132,22 @@ The ooze has existed here for a long time, and has grown very large.
   The three rest in this hidden room to this day.
 \end{exampletext}
 
+\mapentry[shadowDesk]{Empty Desks}
+
+\begin{exampletext}
+  This room once had a steep stone staircase up to it.
+  But with the guardians (\vpageref[above]{shadowGuardian}) sleeping peacefully, the proprietor didn't want leave them unprotected (even with the gate present).
+  So he ordered men to build a wall over the entrance, leaving a gap at the top so they could squeeze out.
+\end{exampletext}
+
+The entrance stands at almost double the height of a human, and only wide enough to crawl through, so not many will spot it.
+(and anyone with a Strength of +4 will have to remove their armour to fit through)
+
+Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
+
+With \roll{Wits}{Crafts} (\tn[14]) they might notice the bricks are a little different around that wall.
+
+With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
 
 % the inner sanctum goes somewhere else, to a long dungeon.
 % make handout advert, with words over the important parts.

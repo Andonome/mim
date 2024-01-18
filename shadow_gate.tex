@@ -59,13 +59,14 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
   The creator abandoned the \gls{artefact} in frustration shortly after making it, then sold it to the Shadow Vault, where it stood as a visitors' attraction.
 \end{exampletext}
 
-\artefact{Lady of Oaths}% Name
+\artefact[6]{Lady of Oaths}% Name
   {A statue of a brass woman, looking up and listening earnestly.
   The sign beneath says `tell me your intentions'}% Body
   {2}% Intelligence
   {0}% Wits
   {3}% Charisma
   {to ensure everyone finishes their mission, by casting an \textit{Oath} spell}% Mission
+  {Study Doom}% Base Spell
   {
     \setcounter{Fate}{2}
     \setcounter{Water}{2}
@@ -94,12 +95,13 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
 
 \setcounter{wounds}{9}
 
-\artefact{Peeping Orb}% Name
-  {A perfect, black sphere, made of cooled magma, the size of a head}% Body
+\artefact[1]{Peeping Orb}% Name
+  {A perfect, black sphere, made of cooled magma, the size of a head (but very light)}% Body
   {0}% Intelligence
   {-1}% Wits
   {2}% Charisma
   {to inform everyone of nearby Force spells}% Mission
+  {Float}% Base Spell
   {
     \setcounter{Air}{3}
     \setcounter{Fire}{3}
@@ -163,12 +165,13 @@ When the Shadow Gate wishes to speak, it uses a \textit{Warp Detailed Earth} spe
 
 The Shadow Gate's last riddle remains on the floor, but this riddle has multiple stages, so once someone begins to answer the riddle, the sand will start to shift about.
 
-\artefact{Shadow Gate}% Name
+\artefact[16]{Shadow Gate}% Name
   {A massive stone doorway to nothing, with a doormat placed in front}% Body
   {3}% Intelligence
   {0}% Wits
   {1}% Charisma
   {to ask devious riddles}% Mission
+  {Fae Door}% Base Spell
   {
     \setcounter{Fire}{3}
     \setcounter{Earth}{2}
@@ -272,12 +275,116 @@ uncovers records of riddles\ldots hundreds of riddles.
 \end{exampletext}
 
 \setcounter{wounds}{2}
-\artefact{Nuisance Rock}% Name
-  {A small rock, covered by the illusion of a massive diamond.}% Body
+\artefact[2]{Nuisance Rock}% Name
+  {A grey rock, covered by the illusion of a massive diamond.}% Body
   {-1}% Intelligence
   {1}% Wits
   {2}% Charisma
   {to create the most convincing illusions}% Mission
+  {Phantasm}% Base Spell
+  {
+    \setcounter{Fire}{3}
+    \setcounter{Earth}{2}
+    \setcounter{Fate}{1}
+    \setcounter{Water}{1}
+    \setcounter{Academics}{2}
+    \setcounter{Wyldcrafting}{1}
+  }% Spheres
+
+\showStdSpells[
+  \setcounter{diceNo}{0}
+]
+
+\mapentry[shadowGuardian]{Sleeping Guardians}
+
+\begin{exampletext}
+  When the magical gateway shut, the local \gls{warden} tasked \pgls{doula} to resolve the situation.
+  Like anyone in her position, she told an enchanting story about success, then delegated the task.
+
+  Finding three people too young to know better, she arranged for some very fancy clothes, and declared them `Masters of the Riddle', and `Keepers of the Gate'.
+  Then she sent them into an enchanted state, preserving their bodies, and setting their minds to focus, without failure, on the single task of solving the riddle which had vexed all of \gls{valley}.
+
+  The first thought about how much he hated Maths.
+  The second thought about visualizing the riddle as a series of rivers, each one representing a possible set of questions and answers.
+  The third had already gone to sleep to dream of sex with his attractive neighbour.
+
+  With everyone's attention focussed on the `Masters of the Riddle', the \gls{doula} went home, and died peacefully shortly after.
+
+  The three rest in this hidden room to this day.
+\end{exampletext}
+
+\paragraph{Picking the lock}
+of the rusted steel gate requires a \roll{Strength}{Larceny} roll (\tn[16]).
+
+\paragraph{If the \glspl{pc} awaken any of the sleepers,}
+that one wakes the others up before doing anything else.
+
+The three `Keepers of the Gate' can explain everything concerning the reality of \gls{lostcity}, how the Shadow Gate once worked, and what happened, but they won't\ldots at least not for a while.
+They take a long time to come to terms with their situation.
+
+\NPC{\M\Hu}{Embersnatch}{lost in the clouds, still thinking about the last thing said}{\textit{`ya know, like?'}}{to return to a lost home}
+\setcounter{Intelligence}{-2}
+\person{1}% STRENGTH
+{0}% DEXTERITY 
+{0}% SPEED
+{{-3}% INTELLIGENCE
+{-2}% WITS
+{0}}% CHARISMA
+{0}% DR
+{1}% COMBAT
+{Crafts 1, Empathy 2}% SKILLS
+{\Dagger}% EQUIPMENT
+{}
+
+\begin{speechtext}
+  ``What's Ratpelt doing these days?''
+
+  \textit{\raggedleft\adforn{15} She's dead.}
+
+  ``Her mum won't be happy about that''
+
+  \textit{\raggedleft\adforn{15} Her mum's dead.}
+
+  ``Blimey. Her too?''
+
+  \textit{\raggedleft\adforn{15} It's been two \underline{hundred} years.}
+
+  ``Do I get birthday presents?
+  My mum always gets me a whole chicken for my birthday, ya know?''
+\end{speechtext}
+
+The \glspl{pc} have a serious decision ahead: the three will need food, and to return to civilization.
+
+\mapentry[shadowDesk]{Empty Desks}
+
+\begin{exampletext}
+  This room once had a steep stone staircase up to it.
+  But with the guardians (\vpageref[above]{shadowGuardian}) sleeping peacefully, the proprietor didn't want leave them unprotected (even with the gate present).
+  So he ordered men to build a wall over the entrance, leaving a gap at the top so they could squeeze out.
+\end{exampletext}
+
+The entrance stands at almost double the height of a human, and only wide enough to crawl through, so not many will spot it.
+(and anyone with a Strength of +4 will have to remove their armour to fit through)
+
+Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
+
+With \roll{Wits}{Crafts} (\tn[14]) they might notice the bricks are a little different around that wall.
+
+With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
+
+\paragraph{Rifling through the desk}
+uncovers records of riddles\ldots hundreds of riddles.
+
+\mapentry[memoryOrb]{Empty Desks}
+
+\begin{exampletext}
+  The Nuisance Orb once sat on display for everyone to see, as it would entertain people with various illusions.
+  But after one too many accidents%
+  \footnote{One rampaging basilisk, a false accusation of theft, and three accounts of indecent nudity.}
+  the staff became irritated by it, and eventually locked it away.
+\end{exampletext}
+
+\setcounter{wounds}{2}
   {
     \setcounter{Fire}{2}
     \setcounter{Air}{2}

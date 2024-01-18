@@ -95,7 +95,7 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
 \setcounter{wounds}{9}
 
 \artefact{Peeping Orb}% Name
-  {A perfect sphere, made of green glass, riddles with hydrogen gas-bubbles}% Body
+  {A perfect, black sphere, made of cooled magma, the size of a head}% Body
   {0}% Intelligence
   {-1}% Wits
   {2}% Charisma
@@ -214,8 +214,50 @@ With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
 \paragraph{Rifling through the desk}
 uncovers records of riddles\ldots hundreds of riddles.
 
-%! Memory orb: Makes illusions of people it's seen.
-% It shows the sleepers as younger people.
+\mapentry[memoryOrb]{Empty Desks}
+
+\begin{exampletext}
+  The Nuisance Orb once sat on display for everyone to see, as it would entertain people with various illusions.
+  But after one too many accidents%
+  \footnote{One rampaging basilisk, a false accusation of theft, and three accounts of indecent nudity.}
+  the staff became irritated by it, and eventually locked it away.
+\end{exampletext}
+
+\setcounter{wounds}{2}
+\artefact{Nuisance Rock}% Name
+  {A small rock, covered by the illusion of a massive diamond.}% Body
+  {-1}% Intelligence
+  {1}% Wits
+  {2}% Charisma
+  {to create the most convincing illusions}% Mission
+  {
+    \setcounter{Fire}{2}
+    \setcounter{Air}{2}
+    \setcounter{Academics}{2}
+    \setcounter{Crafts}{1}
+    \setcounter{Empathy}{2}
+    \setcounter{Deceit}{2}
+  }% Spheres
+
+\showStdSpells[
+  \setcounter{diceNo}{0}
+]
+
+The Nuisance Rock cannot imitate people when locked in the little cell, and craves freedom more than anything.
+It can spend 2~\glspl{mp} to `see' around itself, 2~\glspl{mp} to make a convincing illusion of something, or 2~\glspl{mp} to create convincing sound.
+
+\paragraph{If anyone passes by,}
+it creates an illusion of Goutscrape (area \vref{shadowGuardian}), begging to be let out of the cell.
+The illusion will create realistic sound, and then the Nuisance Orb will have no further \glsentrylongpl{mp} to see anything, so it will make the illusion of Goutscrape lie down and sob inconsolably.
+
+\Glspl{pc} can see through the illusion standing in the darkness with a \roll{Wits}{Vigilance} roll
+(\tn[12]).
+
+The Rock will do anything it can to leave this room, although its abilities remain limited (it must wait 2 more \glspl{interval} before it can cast another illusion, or make a voice).
+
+\paragraph{If the \glspl{pc} take it with them,}
+the Rock will cause constant chaos and misunderstandings.
+If it ever speaks, it does so by making an illusion of someone giving advice about what to do with the Rock.
 
 % the inner sanctum goes somewhere else, to a long dungeon.
 % make handout advert, with words over the important parts.

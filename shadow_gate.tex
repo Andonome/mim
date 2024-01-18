@@ -79,7 +79,49 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
 
 \mapentry[guardianArtefact]{Guardian \Glsentrytext{artefact}}
 
-%!
+%! An orb, kept in darkness.
+
+\mapentry[peepingOrb]{Sunken Light}
+
+\begin{exampletext}
+  The Peeping Orb loves to spy on Force spells, especially magical gateways.
+  In fact, it was designed to do just this, in order to peep at the riddles that the Shadow Gate states, so the keepers could write them down.
+
+  And once every three years, during the eclipse of Qualmea,%
+  \exRef{judgement}{Judgement}{Qualmea}
+  if an earthquake hits, if someone releases Fire and Earth \glspl{boon} around the Orb, it would show other images, with strange creatures that sit by distance gateways.
+\end{exampletext}
+
+\setcounter{wounds}{9}
+
+\artefact{Peeping Orb}% Name
+  {A perfect sphere, made of green glass, riddles with hydrogen gas-bubbles}% Body
+  {0}% Intelligence
+  {-1}% Wits
+  {2}% Charisma
+  {to inform everyone of nearby Force spells}% Mission
+  {
+    \setcounter{Air}{3}
+    \setcounter{Fire}{3}
+    \setcounter{Earth}{1}
+    \setcounter{Academics}{2}
+    \setcounter{Xenomology}{2}
+  }% Spheres
+
+\setcounter{wounds}{0}
+
+\showStdSpells[
+  \setcounter{enc}{2}
+  \findGatewaySpell
+]
+
+\paragraph{If the \glspl{pc} feel about,}
+they will find the Orb.
+They can take it away, and it will continue to show the state of any Force spells in range.
+It watches them with fascination, and refuses to do anything else.
+
+Right now, it sits underwater, access to any \glsentrylongpl{mp}, as it sits underwater, deprived of air.
+And it desperately wants to know what is happening with the Shadow Gate (room \vref{shadowGate}).
 
 \mapentry[shadowJelly]{Lowly Ooze}
 

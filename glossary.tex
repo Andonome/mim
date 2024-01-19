@@ -478,29 +478,31 @@
   {2}}% CHARISMA
   {0}% DR
   {1}% COMBAT
+  {}% SKILLS
+  {\walkingStick}% EQUIPMENT
   {
-    Academics~2, Crafts~1, Deceit~2, Seafaring~1, Stealth~2, Vigilance~1, Wyldcrafting~2
-  }% SKILLS
-  {\quarterstaff, dagger}% EQUIPMENT
-  {
-    \addtocounter{fp}{10}
+    \setcounter{Academics}{3}
+    \setcounter{Crafts}{1}
+    \setcounter{Deceit}{2}
+    \setcounter{Seafaring}{1}
+    \setcounter{Stealth}{2}
+    \setcounter{Vigilance}{1}
+    \setcounter{Wyldcrafting}{2}
     \setcounter{Earth}{3}
     \setcounter{Air}{2}
     \setcounter{Water}{2}
     \setcounter{Fate}{1}
+    \addtocounter{fp}{10}
   }
 }
 
 %! Cut?
 \newglossaryentry{forestpriest}{
   name={Murklash},
-  first={Ranger Murklash},
-  text={Murklash},
   type={people},
-  symbol={\M\gls{beasts}},
+  symbol={\F\gls{misgen}},
   parent={outsiders},
-  description={-- half-elvish Ranger of the \glsentrytext{guard}, who frequently ignores orders.
-  He hunts for people who smuggle food to the \glsentrytext{whiteBandits}, and desperately wants to know what happened with \glsentrytext{lostcity}}
+  description={-- just an old lady who used to slay dragons}
 }
 
 \newcommand{\banditking}{

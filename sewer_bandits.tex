@@ -1,4 +1,4 @@
-\sidequest[Town]{Sewer Bandits}
+\sidequest[Roads,Town]{Sewer Bandits}
 \label{sewerking}
 
 \noindent
@@ -6,6 +6,78 @@
 He collects prisoners to lock in his underground kingdom, and then turns them into sentient, ravenous, undead.%
 \exRef{judgement}{Judgement}{ghoul}
 He plans to dig a tunnel under the citadel, and release an army of ghouls into it, from the ground up, killing \gls{warden} and his entire family.
+
+\sqpart{Roads}% AREA
+{Art Collectors}% NAME
+{\Glsentrytext{sewerking} introduces himself as a fence}% SUMMARY
+
+\begin{exampletext}
+  After raiding the \nameref{necromancers_lair} with \gls{traitor} (\vpageref{rottenBreath}), \gls{sewerking} stashed the \gls{artefact}, and decided to sell his more mundane (and valuable) prizes in \gls{lakeside}.
+  He travels by road to avoid the heavy taxes levied in \gls{town}.%
+  \Gls{lakeside} always has someone willing to buy valuable items, without too many questions.%
+  \footnote{See \vpageref{lakeside}.}
+\end{exampletext}
+
+\setcounter{wounds}{2}
+
+\sewerking
+
+\humanarcher[\npc{\T[6]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
+
+\Gls{sewerking} greets the troupe in a friendly way, and explains he's going to \gls{lakeside} to sell his wares for a `client'.
+He refuses to divulge any information about this client, then begins hinting that if the troupe ever run into anything valuable, and need to sell it, he can be very discrete.
+
+\begin{speechtext}
+  If you brave warriors ever need to sell any `paintings' you find, you can always find me in \gls{whitehorse}, in \gls{town}.
+  Just ask for me, and they'll show you right in.%
+  \footnote{This is simply not true -- he keeps a very low profile.}
+
+  Anyway, it's a dangerous road.
+  Fancy turning the other way and joining me?
+  You know, all the work you do in the \gls{guard} has real value.
+  People don't tell you that enough, but you guys save everyone, every day, and nobody says `thank you'.
+  Why don't you come and protect people on this road, instead of that one, and I'll say `thank you', at the end.
+\end{speechtext}
+
+\Gls{sewerking} then offers the troupe 1~\glspl{sp} per mile, in total, if they join him till \gls{lakeside}.
+He will only travel by road, so he can avoid \gls{townmaster}'s taxes.
+
+The length of the journey depends on how far this scene takes place from \gls{lakeside}.
+\Gls{sewerking} takes a route not too far, or close to town, so encounters should consist of traders as much as beasts.
+
+\paragraph{If anyone asks about the archers,}
+\gls{sewerking} explains jovially.
+
+\begin{speechtext}
+  We come from the Temple of `Odd-Job', to save people from the god of messing-about and time-wasting!%
+  \footnote{The characters will understand that this is a joke.}
+\end{speechtext}
+
+\paragraph{If the party press the issue,}
+\gls{sewerking} explains that he comes from \gls{whiteplains}, and while his family were \glspl{warden}, they have become poor, due to the high taxes imposed by \gls{town}, so now he travels and takes work where he can, and hires people to help him.
+
+\paragraph{If the \glspl{pc} abandon their mission,}
+the next time they see \pgls{jotter}, the leader will have some explaining to do.
+They should roll \roll{Intelligence}{Deceit} (\tn[12]), or suffer a demotion.
+Fodder who behave in this way (the lowest rank) will find themselves escorted to the \gls{court} in \gls{town}, where \gls{townmaster} (or some other \gls{warden}) will sentence them.%
+\exRef{judgement}{Judgement}{pitOfJustice}
+
+\paragraph{The wagons hold,}
+
+\begin{itemize}
+  \item
+  20 days' rations.
+  \item
+  2 ancient human skulls, with red stones inserted around the crown.
+  \label{skullCrown}
+  \item
+  A stone statue of a half-dead man in repose, in a coffin.
+\end{itemize}
+
+\begin{boxtext}
+  As the Sun casts red over the forest, darkness closes around you.
+  Then in the distance, fire, then another, not far off.
+\end{boxtext}
 
 \sqpart{Town}% AREA
   {Missing People}% NAME
@@ -65,98 +137,3 @@ the ghasts will be put to the sword one way or another, but the question remains
 they won't find the city streets help much, and the bandits in the sewers will start to clear up the butchers as soon as the horde have gone.
 The roll is \roll{Wits}{Vigilance} (\tn[14]).
 
-\sqpart{Town}% AREA
-{Underground Assassins}% NAME
-{The bandits in the sewer cut \Glsentrytext{captain}'s throat}% SUMMARY
-
-\textbf{Background:}
-\Gls{captain} has been pushing the investigation into the undead and nura sightings in town, so \gls{sewerking} ordered a hit on him, lead by \gls{sewerthief}.
-Five men walked casually about him as he returned home \gls{whitehorse} with his wife, then closed in so one could stab him in the neck.
-
-\begin{boxtext}
-
-  You hear guards shouting ``After them!'', in the distance, and quickly scurrying feet, as a woman shouts for someone to help her wounded husband.
-
-\end{boxtext}
-
-\paragraph{If the characters stay to help the wounded man,}
-they find \gls{captain} with a knife-wound, next to his wife.
-The roll is \roll{Wits}{Medicine}, at \tn[9] to save his life.
-
-\paragraph{If they run after the thieves,}
-the \glspl{pc} make a Group Roll of Speed + Athletics.%
-\iftoggle{core}%
-  {\footnote{See the core rules, page \pageref{grouproll}, for Group Rolls.}}%
-{}%
-Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't be able to join the chase.
-
-\begin{tcolorbox}[tabularx={cX},top=10pt,bottom=10pt]
-
-  Roll & Result \\\hline
-  12 & \textit{``Giving chase, you catch up to four men running from the scene of the crime.''} \\
-  11 & \textit{``You run round an alley, and find a drain cover clanking. The assassins have jumped underground.''} \\
-  9 & \textit{``You run in hot pursuit, but the attackers have disappeared down a street, into thin air.''} \\
-  7 & \textit{``The attackers sprint away, leaving you running in the dark.''} \\
-
-\end{tcolorbox}
-
-\sewerthief
-
-\humanthief[\npc{\T[4]\E\Hu}{Four of the Sewer Thieves}]
-
-\paragraph{If the party follow the assassins underground,}
-they run to the nearest entrance -- perhaps the butchers or \gls{pig}.
-Go to page \pageref{sewers}.
-Otherwise, this incident will remain a mystery.
-
-If \gls{captain} survives, he has little idea of what's happening, although a little investigation could reveal what he's been asking about recently (\roll{Intelligence}{Vigilance} Teamwork Roll, \tn[10]).
-
-\sqpart{Town}% AREA
-{The Dead Rise}% NAME
-{\Glsfmttext{sewerking} releases ghouls upon the citadel}% SUMMARY
-
-\textbf{Background:}
-\Gls{sewerking} undead have finally finished digging the tunnel
-\footnote{See page \pageref{citadelTunnel} for the underground tunnel.}
-underneath \gls{town}'s citadel,
-\footnote{See page \pageref{citadel} for the town's Citadel.}
-where \gls{townmaster} lives.
-He releases the undead, and guides them upstairs, through the dark halls.
-As the \gls{guard} torches cast light on undead faces, each one makes a decision to stay and do their duty, or flee and live.
-
-By this point, the undead horde numbers over a hundred, and the citadel has not prepared for anything like this.
-It has perhaps twenty guards, and most of them work there because they seemed loyal, rather than capable.
-
-\Gls{sewerking} leads his horde to the palace's main door with two ghasts to stop anyone exiting, and leaves the horde to slowly work its way up the stairs and rooms, killing anyone they come across.
-
-Play the next available encounter first, then interrupt it with news of the citadel's attack.
-Everyone can hear the screams from half-way across \gls{town}.
-
-\paragraph{If the \glspl{pc} intervene,}
-they find \gls{sewerking} at the door, with much of his mana depleted already from fights with the guard.
-He will flee to the sewers the moment he feels unsafe.
-
-\ghast
-
-\ghast
-
-\sewerking
-
-\humansoldier[\npc{\T[6]\E\Hu}{Palace Guard}]
-
-\paragraph{If the \glspl{pc} pursue \gls{sewerking},}
-he already has a cave-in prepared to block his escape, so he waits -- holding a piece of rope, tied around a beam.
-As the \glspl{pc} round the corner, they can roll Wits + Crafts (TN 10) to notice the trap and retreat.
-If they fail (or run through the trap anyway), they can roll Speed + Athletics (TN 10) to make it through anyway.
-
-If both rolls fail, the roof collapses, inflicting 8 Damage, and 8 \glspl{fatigue}.
-Digging someone out from under the rubble requires an Intelligence + Crafts roll (TN 12), and they don't have long before the person under the rubble dies from asphyxiation (no resting actions allowed).
-
-\paragraph{If the \glspl{pc} want to run up the stairs and save \gls{townmaster},}
-they have 8 rounds before the ghouls devour him, and will need to travel across 20 squares before reaching \gls{townmaster}'s room on the second floor.
-
-\paragraph{If \gls{townmaster} dies,}
-then his sons most likely die with him.
-Leadership of \gls{town} `temporarily' goes to \Gls{captain} (or \gls{traitor} if \gls{captain} already died).
-
-\stopcontents[sq]

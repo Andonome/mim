@@ -496,7 +496,6 @@
   }
 }
 
-%! Cut?
 \newglossaryentry{forestpriest}{
   name={Murklash},
   type={people},
@@ -515,15 +514,19 @@
     {1}}% CHARISMA
     {0}% DR
     {1}% COMBAT
+    {}% SKILLS
+    {\shortsword, \partialleather, dagger, pouch of marching mushrooms, 20~\glspl{sp}}% EQUIPMENT
     {
-      Academics~1, Caving~1, Deceit~3, Seafaring~1, Tactics~2, Vigilance~2
-    }% SKILLS
-    {\shortsword, \partialleather, dagger, 20sp}% EQUIPMENT
-    {
+      \setcounter{Academics}{2}
+      \setcounter{Caving}{1}
+      \setcounter{Deceit}{2}
+      \setcounter{Seafaring}{1}
+      \setcounter{Tactics}{2}
+      \setcounter{Vigilance}{2}
       \addtocounter{fp}{5}
-      \setcounter{Fire}{2}
       \setcounter{Air}{2}
-      \setcounter{Fate}{1}
+      \setcounter{Earth}{2}
+      \setcounter{Water}{2}
   }
 }
 

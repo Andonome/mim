@@ -70,6 +70,12 @@ His hope is that any predators in the area will wander up to the fire, and not h
   We don't become \glspl{warden} really, and none of the \glspl{warden} I've seen ever started in the \gls{guard}.''
 \end{speechtext}
 
+\boxPair[t]{
+  \humanarcher[\npc{\T[6]\Hu}{\arabic{noAppearing} \glspl{whiteBandits} Archers}]
+}{
+  \humanthief[\npc{\T[3]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
+}
+
 \sqpart{Forest}% AREA
 {New Kids}% NAME
 {The \glsentrytext{whiteBandits} have an argument with the \glsentrytext{guard}}% SUMMARY
@@ -92,7 +98,7 @@ His hope is that any predators in the area will wander up to the fire, and not h
 \end{exampletext}
 
 The \glspl{pc} arrive to find \localMonster, full arrows, at least one of which came from the \gls{guard}.
-Both groups want the corpse, which could fetch a good sum of money.
+Both groups understand that the flesh of \localMonster\ has value to alchemists, and plenty of meat, which could fetch a good sum of money.
 
 Sorting the disagreement won't be easy.
 The exact roll depends on what the \glspl{pc} attempt.
@@ -114,26 +120,64 @@ Remember to roll only for skirmishes the \glspl{pc} have engaged in, and use the
 \paragraph{However this resolves,}
 \gls{banditking} will focus on his own safety above all else, even if it means running away, with any surviving men.
 
-\boxPair[t]{
-  \humanarcher[\npc{\T[6]\Hu}{\arabic{noAppearing} \glspl{whiteBandits} Archers}]
-}{
-  \humanthief[\npc{\T[3]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
-}
+If the \glspl{pc} capture him, \gls{townmaster} will personally pass judgement on him in \gls{town}'s \gls{court}.
+In this case, give \gls{banditking} a \roll{Charisma}{Empathy} roll (\tn[8]).
+Failure means death, but the \glspl{pc} should hear the result no matter which way it goes.
+
+\paragraph{Highly observant \glspl{pc}}
+may notice that \gls{banditking} carries the stench of marching mushrooms.%
+\exRef{judgement}{Judgement}{marching_mushroom}
+
+\begin{boxtext}
+  Bestial roars ahead force your neck around, and a mere 20 \glspl{step} away, you spot \gls{banditking}, with half a dozen archers, taking aim at something just beyond them.
+\end{boxtext}
+
+\sqpart{Forest}% AREA
+{The Beast's Treasure}% NAME
+{\Gls{banditking} displays alchemical knowledge}% SUMMARY
+
+In the distance, the \glspl{pc} hear the cries of \localMonster\ once again.
+This time, \gls{banditking} has fewer soldiers in his entourage, but apparently enough to hunt \localMonster.
+
+\ifnum\value{temperature}=0
+  \griffin
+\else
+  \basilisk
+\fi
+
+\Gls{banditking}'s entourage throw torches towards their prey, while \gls{banditking} himself uses powerful Earth spells.
+
+The fight lasts only a couple of rounds, even if the \glspl{pc} don't help.
+\Gls{banditking} remains jovial and understanding with them, even if they parted on bad terms.
+
+\paragraph{If the \glspl{pc} parted on bad terms,}
+\gls{banditking} will ask them not to approach to close.
+He knows his archers can't do much at close-range.
+
+\paragraph{Once \gls{banditking} feels safe,}
+he kneels down with a knife and starts cutting into flesh.
+He knows how to use the flesh of \localMonster\ to create alchemical \glspl{boon}.%
+\exRef{judgement}{Judgement}{manaIndex}
 
 \sqpart{Roads}% AREA
-{The New Guards}% NAME
-{\Gls{banditking}'s men begin acting as the \gls{guard}}% SUMMARY
+{\gls{vlg} Dead Nobles}% NAME
+{\Gls{banditking} begins his assault on the nobility}% SUMMARY
 
-The troupe receive an order to help a \gls{village}, but upon arrival, find only \gls{banditking} and his troops have solved the issue.
+We start with \glspl{warden}' bodies floating down a river, so if the troupe will not pass any river which lies downstream from a \gls{village}, skip this scene, and return to it later.
 
-If a road has become blocked by \pgls{village} inhabited by monsters, then select that road to be fixed.
-Otherwise, just fill in some seasonally appropriate monster to have terrorized the \gls{village}.
+\begin{exampletext}
+  \Gls{banditking} collected a trove of of diseased marching mushrooms, then sneaked the vile powder into a trader's wine stash, knowing the family and three guards would drink it.
+  With the \gls{warden} house's defences down, \gls{banditking} and his most trusted soldiers entered and slew the lot in the middle of the night.
+\end{exampletext}
 
-\sqpart{Roads}% AREA
-{Dead Nobles}% NAME
-{\Glsfmtplural{warden}' bodies float down a river}% SUMMARY
+Water has bloated the corpses, leaving them barely identifiable (\roll{Intelligence}{Medicine}, \tn[11], on a tie the character recognizes just one).
+Whether they come from \pgls{village} or (more likely) an inner hamlet, the people who served them never liked them, and will not feel ready to cooperate with the \glspl{pc}.
 
-\Gls{sewerking} has pulled up a supply of diseased mushroom, and \gls{banditking} has poisoned an entire \gls{warden} family, before laying waste to the entire family, including servants.
+\paragraph{Searching for bandit tracks}
+may lead the \glspl{pc} to the bandits' lair%
+\footnote{See \autopageref{banditLair}.}
+with a \roll{Wits}{Wyldcrafting} roll (\tn[12]).%
+\exRef{core}{Core Rules}{tracking}
 
 \sqpart{Roads}% AREA
 {Political Positions}% NAME

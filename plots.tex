@@ -17,22 +17,18 @@ They will remain free to ignore any `call to adventure', which will leave the va
   style=mcolindex,
 ]
 
-\label{Irina/greylands}
-\mapPic[\large]{t}{Dyson_Logos/map_circles}{
-  \rule[.3em]{.16\textwidth}{2pt}/86/04,
-  \Large 10 miles/86/08,
-  \normalsize\gls{redfall}/40/52,
-  \nameref{lostcity}/32/96,
-  \Gls{town}/54/67,
-  \rotatebox{-23}{$\huge\Longleftarrow$}/05/64,
-  \gls{whiteplains}/07/57,
-  \rotatebox{190}{$\huge\Longleftarrow$}/94/41,
-  \gls{southDale}/93/35,
-  \D/03/32,
-  \nameref{necromancers_lair}/09/27,
-  \rotatebox{55}{\normalsize\gls{lakeside}}/85/49,
-  \rotatebox{10}{\normalsize crossroads}/70/67,
+\renewcommand\csComments{
+  \label{Irina/greylands}
+  \mapCircle{-4,3.4}{2}{Dyson_Logos/forgotten_city}
+  \mapCircle{-5.6,-2.8}{2}{Dyson_Logos/qualme_temple}
+  \mapCircle[4]{1.1,0.1}{2.5}{Dyson_Logos/town}
+  \mapCircle{6.1,-3.6}{1.7}{Dyson_Logos/shadow_gate}
+  \mapCircle{-1,-0.4}{2}{Dyson_Logos/redfall}
+  \mapCircle{6.3,-0.1}{1.7}{Dyson_Logos/lakeside}
+  \mapCircle{-6.3,2.3}{1.7}{Dyson_Logos/bandit_camp}
 }
+
+\widePic[t]{Irina/greylands}
 
 \section{Side Quest Summaries}
 \label{sqSummaries}

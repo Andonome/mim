@@ -505,7 +505,7 @@
 }
 
 \newcommand{\banditking}{
-\NPC{\M\Hu}{\glsentrytext{banditking}}{Short hair, massive moustache}{Drums fingers}{to return to nobility}
+\NPC{\M\Hu}{\glsentrytext{banditking}}{Short hair, massive beard}{Drums fingers}{to return to nobility}
   \person{1}% STRENGTH
     {0}% DEXTERITY
     {1}% SPEED
@@ -574,22 +574,28 @@
 
 \newcommand{\sewerthief}{
   \label{sewerthief}
-  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{look after \glsentrytext{sewerking}}
+  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{Long face, with droopy moustache}{Grins wide}{look natural!}
 
   \person{1}% STRENGTH
-{2}% DEXTERITY
-{2}% SPEED
-{{-1}% INTELLIGENCE
-{1}% WITS
-{1}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{Deceit~2, Larceny~2, Stealth~1, Vigilance~2, Wyldcrafting~1
-}% SKILLS
-{\shortsword, dagger\ifstrequal{\sqarea}{Forest}{longbow}, rations \boxStat{r4}}% EQUIPMENT
-{
-  \knacks{\stunningstrike, \perfectsneakattack}
-}
+  {2}% DEXTERITY
+  {2}% SPEED
+  {{-1}% INTELLIGENCE
+  {1}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {3}% COMBAT
+  {}% SKILLS
+  {\shortsword, dagger\ifstrequal{\sqarea}{Forest}{longbow}, rations \boxStat{r4}}% EQUIPMENT
+  {
+    \knacks{\stunningstrike, \perfectsneakattack}
+    \setcounter{Projectiles}{2}
+    \setcounter{Academics}{1}
+    \setcounter{Deceit}{2}
+    \setcounter{Larceny}{2}
+    \setcounter{Stealth}{1}
+    \setcounter{Vigilance}{2}
+    \setcounter{Wyldcrafting}{1}
+  }
 }
 
 \newglossaryentry{sewerthief}{

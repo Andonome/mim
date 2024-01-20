@@ -2,19 +2,20 @@
 \label{banditLair}
 
 \renewcommand\csComments{
-  \centering%
-  \callout[10]{7,0}{-1,-1}{Beds, beers, and outhouse \outline{\dicef{6}}}
-  \callout[9]{5.5,5.5}{-1,-2}{Watch Point \outline{\dicef{6}}}
-  \callout[6]{4,-4}{-2,1.3}{Weapons storage}
-  \callout[8]{1.6,-6}{0,0.4}{Watch Point with indoor fire}
-  \callout{-2,-5}{1,1.5}{Large Gate}
-  \callout{-5,-4}{1.3,2.5}{Watch Point}
-  \callout[7]{-8,-2}{1,1}{Bandits playing cards $\dicef{6} + 1$}
-  \callout[4]{-8,3.5}{0,-1.4}{False Welcome}
-  \callout[8]{-3,5}{0,-1}{\Gls{banditking}'s Room}
-  \callout[8]{-7,5}{2,-1.2}{\Glspl{ingredient} Workshop}
-  \callout{0.5,7}{-0.1,-4}{Food!}
-  \callout{2,4.5}{-0.2,-1}{Gate with murder holes $\dicef{3}-1$}
+  \randomdozen
+  \callout[10]{7,0}{-2.5,-1}{Beds,}{beers, and outhouse \dicef{12}}
+  \callout[6]{4,-4}{-2,1.3}{Weapons Storage}{shortsword x 12, longbow x 14, round shield x 2}
+  \callout[9]{5.5,5.5}{-.5,-2}{Watch Point}{\dicef{6}}
+  \callout[8]{1.6,-6}{0,0.4}{Watch Point}{ with indoor fire}
+  \callout{-2,-5}{.7,1.4}{Large Gate}{$\dicef{3}-1$}
+  \callout{-5,-4}{1.3,2.5}{Watch Point}{$\dicef{2}-1$}
+  \callout[7]{-7.5,-6}{4,1}{Archers}{play cards through the night $\dicef{6} + 1$}
+  \callout[7]{-8.5,-3.5}{1,2}{Supplies \& Beds}{$3\times$ shortsword, \arabic{r12}00~\glspl{cp}.  $\dicef{6} + 1$}
+  \callout[5]{-8,3.5}{0,-1.4}{False Welcome}{}
+  \callout[8]{-3,5}{0,-1}{\Glsentrytext{banditking}'s Room}{\arabic{r12}0~\glspl{sp}}
+  \callout[8]{-7,5}{2,-1.2}{\Glspl{ingredient} Workshop}{}
+  \callout{0.5,7}{-0.1,-5}{Food!}{}
+  \callout{2,4.5}{-0.2,-1}{Gate:}{murder holes $\dicef{3}-1$}
 }
 
 \widePic{Dyson_Logos/bandit_camp}

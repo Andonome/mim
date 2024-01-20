@@ -2,30 +2,29 @@
 
 \noindent
 The \gls{whiteplains} \glspl{warden} cannot survive the tax hikes imposed on them when taking their boats through \gls{town}, so they have sent two of their most devious agitators to stir up trouble.
-A \pgls{guard} \gls{jotter} -- \glsentrytext{traitor} -- has decided to join them, in return for promotion to Overseer once they have risen to power, and become \glspl{warden} of \gls{town}, and \gls{valley}.
+They begin by making close alliances, and giving lofty promises to the local \gls{guard}, then bandits.
 
-Throughout this story, they slowly dismantle the existing power structures.
+Throughout this story, they try to slowly replace or destroy existing power structures, and to make an alliance with the \glspl{pc}.
 
 \sqpart{Roads}% AREA
 {Rotten Breath}% NAME
 {\Glsentrytext{traitor} sends the party to find a cure for his breath}% SUMMARY
-
-\Pgls{traitor}
-
 \label{rottenBreath}
+
 \begin{exampletext}
   When \pgls{guard} Rider reported finding a ruined temple%
   \footnote{See \vpageref{necromancers_lair}.}
-  to \gls{traitor}, he went to investigate with \gls{sewerking}.
+  to \gls{traitor}, \gls{traitor} went to investigate with \gls{sewerking}.
   At first, it appeared abandoned, so \gls{sewerking} picked up some interesting items he found in the hall.
 
   A moment later, a swarm of stirges swarmed around \gls{traitor}, and their bite carried an infection.
   \Gls{traitor} now has \textit{Breath Rot}.
   The two fled, carrying statues and a magical \gls{artefact}%
   \footnote{See \vpageref{The Bladder Skull}.}
-  but \gls{traitor} still has foul breath from a disease which will slowly suffocate him to death.
+  but \gls{traitor} still has foul breath from a disease which can slowly suffocate people to death.
 \end{exampletext}
 
+\noindent
 The \gls{jotter} awakens the troupe rudely, and gives them a foul lecture, with stinking breath.
 He needs them to march, as fast as they can, and go to a spot past the \gls{edge} where Screeching Moss%
 \exRef{judgement}{Judgement}{screeching_moss}
@@ -47,9 +46,8 @@ they will find \gls{forestpriest} in the \gls{doulaShop}, not far from \gls{pig}
 \gls{traitor} will be furious with them, but will find another group of \glspl{guard} to bring him a cure.
 
 \begin{boxtext}
-  In the far distance, a trading caravan approaches.
-  You can see the head rider's long hair trailing behind him in the \showTemperature\ wind.
-  Both coaches have the usual archer on the top, though they don't look like \glspl{guard}.
+  Creeping closer to the light, you spot glimpses of the tip of a fire, then a second not far ahead, but no voice, or any movement.
+  You find it impossible to move without making constant crunching and grating sounds.
 \end{boxtext}
 
 \sqpart{Forest}% AREA
@@ -57,7 +55,7 @@ they will find \gls{forestpriest} in the \gls{doulaShop}, not far from \gls{pig}
 {\gls{sewerthief} talks politics}% SUMMARY
 
 \Gls{sewerthief} wants a promotion, so he has taken on the dangerous mission of tracking down a griffin eyrie.
-Since he's alone in the forest, he lights two fires, fairly far apart, then crawls under a little bush to hide.
+To survive the night, he lights two fires, fairly far apart, then crawls under a little bush to hide.
 His hope is that any predators in the area will wander up to the fire, and not him.
 
 \sewerthief
@@ -65,19 +63,62 @@ His hope is that any predators in the area will wander up to the fire, and not h
 \Gls{sewerthief} speaks to the troupe about \gls{lostcity}, then soon after -- politics.
 
 \begin{speechtext}
-  ``Just think about how wonderful it must be if all of this were a big city, with gardens, just like \glspl{warden} have, and we weren't sitting in the dark, away from the fires'', he moans.
+  ``They say all of \gls{valley} used to be one big city, and you could just walk anywhere.
+  Just think about how wonderful it must be if all of this were a big city, with gardens, just like \glspl{warden} have, and we weren't sitting in the dark, away from the fires.
 
   You know they say we can become \glspl{warden} by building a new \gls{village}, but I've never really seen it.
-  We don't become \glspl{warden} really, and none of the \glspl{warden} I've seen ever started in the \gls{guard}.
+  We don't become \glspl{warden} really, and none of the \glspl{warden} I've seen ever started in the \gls{guard}.''
 \end{speechtext}
 
-\sqpart{Roads}% AREA
-{The Deal}% NAME
-{The \glsentrytext{whiteBandits} have gotten in an argument with the \glsentrytext{guard}}% SUMMARY
+\sqpart{Forest}% AREA
+{New Kids}% NAME
+{The \glsentrytext{whiteBandits} have an argument with the \glsentrytext{guard}}% SUMMARY
 
-The \gls{whiteBandits} have gotten in an argument with the \gls{guard}, and both sides have left in a bad state.
+\ifnum\value{temperature}=0
+  \newcommand\localMonster{griffins}
+\else
+  \newcommand\localMonster{a basilisk}
+\fi
+
+\begin{exampletext}
+  \Gls{banditking} tours around \gls{valley} with a dozen men, trying to ingratiate himself to as many \glspl{warden} as he can.
+  He presents the entourage as his \glspl{sunGuard}, but in reality, each of them once worked as bandits, or as the gutter-scum of \gls{town}.
+
+  When a traveller informed him that \localMonster\ had attacked \pgls{village} for the last few nights, he marched hard with his entourage to help.
+  Within the day, they arrived, and stayed the night.
+  Once it attacked, they loosed arrows at it, then followed the trail of blood towards \gls{town}.
+
+  Shortly after, the local \gls{guard} arrived, and began their own volley of arrows.
+\end{exampletext}
+
+The \glspl{pc} arrive to find \localMonster, full arrows, at least one of which came from the \gls{guard}.
+Both groups want the corpse, which could fetch a good sum of money.
+
+Sorting the disagreement won't be easy.
+The exact roll depends on what the \glspl{pc} attempt.
+They might try to threaten one group with \roll{Strength}{Tactics}, or calm the situation with \roll{Charisma}{Empathy}.
+
+\paragraph{If the encounter occurs far from \gls{town},}
+the meat will soon spoil anyway, so resolving the disagreement requires a roll at \tn[9].
+
+If this part occurs closer to \gls{town} (or even a large \gls{village}), the rolls will be at \tn[12].
+
+\paragraph{If the \glspl{pc} cannot resolve the situation within two rolls,}
+the two groups begin to fight.
+
+Remember to roll only for skirmishes the \glspl{pc} have engaged in, and use the simplified combat rules for \glspl{npc} at the end of each round.%
+\exRef{judgement}{Judgement}{npcfights}
 
 \banditking
+
+\paragraph{However this resolves,}
+\gls{banditking} will focus on his own safety above all else, even if it means running away, with any surviving men.
+
+\boxPair[t]{
+  \humanarcher[\npc{\T[6]\Hu}{\arabic{noAppearing} \glspl{whiteBandits} Archers}]
+}{
+  \humanthief[\npc{\T[3]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
+}
 
 \sqpart{Roads}% AREA
 {The New Guards}% NAME

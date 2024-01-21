@@ -2,10 +2,9 @@
 \label{wolfHeads}
 
 \noindent
-The characters hear of a guild crew travelling around, and eventually meet them.
-This \gls{sq} is designed to run in the background, and flavour other encounters.
-
-\Gls{beardedalemaster} gets into other shenanigans later, in \nameref{troubleAle}, \autopageref{troubleAle}.
+The \glspl{wolfhead} \glsdesc{wolfhead}; however, this coterie lacks manpower and finances.
+\Gls{beardedalemaster} has plans for gaining wealth (covered in \nameref{troubleAle}, \vpageref{troubleAle}).
+If the plans there go South, the \glspl{wolfhead} will struggle to hire people.
 
 \sqpart{Roads}% AREA
 {\squash Wanted Poster}% NAME
@@ -33,7 +32,7 @@ everyone recommends \gls{town} or \gls{lakeside}.
 {The troupe hear about the \glspl{wolfhead}}% SUMMARY
 
 The locals gossip about local heroes, known as the \glspl{wolfhead}, recently protecting a \gls{village} from a basilisk.
-They act like the adventurers of old, but officially take their orders from the \gls{wheatGuild} of \gls{southDale}, through \gls{beardedalemaster}.
+People say they act like the adventurers from the stories.
 
 \sqpart{Roads}% AREA
 {New Friends}% NAME
@@ -82,14 +81,15 @@ she plans her escape, however she can.
 She will act on the spur of the moment, at just the right time, and it will probably involve fire.
 
 \sqpart{Forest}% AREA
-{Innocent Wanders}% NAME
+{Just out for a Walk}% NAME
 {\Gls{southSmith} wanders the forest, looking for \gls{lostcity}}% SUMMARY
 
-\Gls{southSmith} has hired eight men from the nearest \gls{village} to join him (at a good price), to hunt for \gls{lostcity}.
+\Gls{southSmith} has hired eight men from the nearest \gls{village} to join him (at 150~\glspl{cp} per day), to hunt for \gls{lostcity}.
 However, he's told them that he's hunting for a magical mushroom called `Dryad's Kiss'.%
 \exRef{judgement}{Judgement}{dryads_kiss}
 He's also told them not to even look at it, because even a single glance at the mushroom will make you incredibly gullible for the rest of the month.
 
+\renewcommand\npcQuote{You don't need to trust us to speak politely.  Can we start again?}
 \southSmith
 
 \paragraph{If he sees the \glspl{pc},}
@@ -97,13 +97,17 @@ he assumes they're bandits, and hides, along with the archers.
 
 \humanarcher[\npc{\T[3]}{8 Archers}]
 
-\paragraph{If violence happens,}
+\paragraph{If violence occurs,}
 \gls{southSmith} will start by asking anyone he doesn't know to keep their distance, then asking the archers to shoot, and then negotiating peacefully.
 
 If anyone scary-looking gets within \pgls{step} of the archers, they all surrender immediately.
 
 \paragraph{If the \glspl{pc} ask \gls{southSmith} about his business in the forest,}
 he continues to lie about his real intentions, then returns the question to them.
+
+\begin{speechtext}
+  Someone doesn't believe the things I say (would you believe that?), so I need the mushrooms to make sure they understand I'm telling the truth.
+\end{speechtext}
 
 \sqpart{Forest}% AREA
 {A Lonely Tower}% NAME
@@ -118,15 +122,20 @@ Wherever the \glspl{pc} have arrived in the forest, \textit{that's} where it is,
 
 And no matter where the \glspl{pc} decide to travel through the forest, they stumble into somewhere they've never been before, and spot \gls{greentower}.
 
-\Gls{southSeeker} commissioned the tower, believing that one of the magical portals in \gls{lostcity} lay there, or nearby.%
-\footnote{Look, you'll have to play this one by ear.
-If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\vpageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
-Or if he's found the latter already, he must be searching for the former.
-And if he's found both, then he's checking in on his half-way house\ldots unless the \gls{greentower} isn't half way between anything, in which case\ldots you'll figure something out.}
+\begin{exampletext}
+  \Gls{southSeeker} found the tower's remains while searching for one of the magical gateways in \gls{lostcity}.
+  Currently, he thinks a magical gateway lies in tunnels underneath \gls{greentower}, or that a gateway lies close to this tower.
+  He has commissioned workers to start rebuilding \gls{greentower}, so he can use it as a base of operations.%
+  \footnote{You'll have to play this one by ear.
+  If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\vpageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
+  Or if he's found the latter already, he must be searching for the former.
+  And if he's found both, then he's checking in on his half-way house\ldots unless the \gls{greentower} isn't half way between anything, in which case\ldots you'll figure something out.}
+
+\end{exampletext}
 
 \paragraph{Once they meet \gls{southSeeker},}
 he will have to ask them to keep the \gls{greentower} a secret.
-He comes up with any number of excuses -- `the \gls{guard} \glspl{jotter} won't accept the need for \pgls{bothy} here', `the locals need \pgls{bothy}', and eventually admit that the \gls{templeOfLight} want to know more about \gls{lostcity}.
+He comes up with any number of excuses -- `the \gls{guard} \glspl{jotter} won't accept the need for \pgls{bothy} here', `the locals need \pgls{bothy}', `the \gls{templeOfLight} want a private research outpost', and eventually admit that the \gls{templeOfLight} want to know more about \gls{lostcity}.
 
 If they accept, he breathes a sight of relief and thanks them.
 Otherwise, he decides to tempt them into the opening below, where he suspects the golden priests existed.%
@@ -138,28 +147,7 @@ then \gls{southSeeker} has deduced the proper location, and will use this as a h
 \paragraph{If the portals lie nowhere remotely close to the tower,}
 \gls{southSeeker} will soon realize this, and leave the tower abandoned; but he will never forget its location and potential uses.
 
-Check \vpageref{green_tower} for details on \gls{greentower}.
-
-\sqpart{Town}% AREA
-{\squash Rumours of Ogres}% NAME
-{The troupe hear of the \glspl{wolfhead} fighting goblins}% SUMMARY
-
-If the \glspl{pc} have destroyed the golden priests under \gls{greentower}, then goblins have risen to investigate \gls{valley}.
-
-\begin{exampletext}
-  The goblins scouted the region, ate all all they could from the forest's trees, and then `found' some cows, which they `hunted'.
-  At this point, humans started to shout at them, and the \glspl{wolfhead} arrived to kill half of them.
-\end{exampletext}
-
-All of \gls{town} are talking about the possibility of ogres invading the area.
-
-\begin{speechtext}
-  Those \glspl{wolfhead} folk, lead by the giant,%
-  \footnote{The rumour-mill has begun to exaggerate \gls{southSmith}'s size and strength.}
-  they fought an army of vicious goblins.
-  And you know what they say about goblins, don't you?
-  Ogres are never too far behind\ldots
-\end{speechtext}
+Go to \vpageref{green_tower} for details on \gls{greentower}.
 
 \sqpart{Forest}% AREA
 {\squash Mixed Karma}% NAME
@@ -179,23 +167,49 @@ Instead, they stand back and have a good laugh.
 
 \sqpart{Roads}% AREA
 {A Cry for Help}% NAME
-{The troupe find the \glsfmtplural{wolfhead} attacked by ogres}% SUMMARY
+{The troupe find the \glsfmtplural{wolfhead} under attack}% SUMMARY
 
-If the golden priests under the \gls{greentower} somehow remained contained, skip this part.
+While on their many expeditions past the \gls{edge}, three of the \glspl{wolfhead} have run into trouble.
+Select the highest possible encounter for the season (such as a basilisk during a mild season), then double their usual numbers, and have them attack the \glspl{wolfhead}.
 
-\begin{exampletext}
-  Once the golden priests fell, goblins spread throughout the local area.
-  Most died of hunger, or managed to retreat back underground, but a couple of goblin communes have survived and even flourished.
-\end{exampletext}
+\basilisk[\npc{\T[2]\A}{\arabic{noAppearing} Basilisks}]
 
-A dozen ogres ambushed the \glspl{wolfhead} on the road, and the troupe heard their cries in the distance.
-By the time the troupe arrive (assuming they come towards the cries) \gls{southSmith} is unconscious (-3~\glspl{hp}), and \gls{southRogue} is nearly dead (2~\glspl{hp} left).
+\setcounter{wounds}{5}
 
-Ten ogres remain alive.
-Five are focussed on the remaining \glspl{wolfhead}, and the other five have decided to wait in the bushes to ambush the troupe (or if not the bushes, inside nearby houses, or anywhere appropriate).
+\southSmith
 
-\ogre[\npc{\T[5]\E\N}{5 Ogres}]
+\Gls{southSmith}'s arm bleeds from a nasty wound.
 
-\ogre[\npc{\T[5]\E\N}{5 Hiding Ogres}]
+\setcounter{wounds}{3}
+\beardedalemaster
 
-%! The Wolf heads will need someone in the night guard to act as builder, so they can officially own a location.
+\southRogue
+
+\sqpart{Roads}% AREA
+{The Deal}% NAME
+{The \glsentrytext{wolfhead} ask the troupe to join them}% SUMMARY
+
+The \gls{wolfhead} have found both magical gateways, and need to secure their assets.
+
+What happens after the other \gls{sq} \glspl{segment} have resolved depends on so much.
+Perhaps the \gls{wolfhead} feel indifferent to the \glspl{pc}.
+Perhaps they want to kill the \glspl{pc}.
+However, if they feel they can trust the \glspl{pc}, then they will propose an alliance, just as soon as they can find the \glspl{pc}.
+
+As luck would have it, \gls{southRogue} meets up with them first.
+
+\paragraph{The setting}
+depends on where exactly the \glspl{pc} find themselves.
+Perhaps \gls{southRogue} finds them in \pgls{bothy}, or while travelling with a caravan of traders on the roads.
+
+\paragraph{The proposal}
+must wait until the \glspl{pc} meet the \glspl{wolfhead} in \gls{town}.
+The \gls{wolfhead} could do with some muscle, both to help them get about safely, and to secure their magical gateways.
+
+\paragraph{If all goes well,}
+the \glspl{pc} and \glspl{wolfhead} can make a plan.
+\Gls{beardedalemaster} will agree to finance the plan (assuming the troupe did not conclude \nameref{troubleAle} and leave her penniless), \gls{southSmith} will agree to find any information required (or at least find out how to find it), and \gls{southSmith} will agree to complete any task he can.
+
+\Gls{southRogue} will agree to complete any task, then not do it.
+
+The rest of the tale depends on your table.

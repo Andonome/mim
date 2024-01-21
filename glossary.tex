@@ -67,12 +67,13 @@
 }
 
 \newglossaryentry{greentower}{
-  name={The Green Tower},
-  text={the Green Tower},
-  sort={Green Tower},
+  name={The Lonely Tower},
+  text={the Lonely Tower},
+  sort={Lonely Tower},
   parent={valley},
   category={location},
-  description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
+  description={once stood in the time of \glsentrytext{lostcity}.
+  \Glsentrytext{southSeeker} has decided to rebuild it as a research outpost}
 }
 
 \newglossaryentry{lakeside}{
@@ -123,10 +124,7 @@
   sort={Wolf Heads},
   plural={Wolf Heads},
   description={have heard of the legend of \glsentrytext{lostcity}, and the magical portals it held underground.
-  They want to find those routes underground, and use them to bypass any taxes based on trade route, and create a base of operations at the centre of various magical portals.
-  \\
-  \\
-  Each member comes from a different guild in \glsentrytext{southDale}},
+  They want to find those routes underground, and use them to bypass any taxes based on trade route, and create a base of operations at the centre of various magical portals},
 }
 
 %%%%% People
@@ -220,7 +218,26 @@
 }
 
 \newcommand{\beardedalemaster}{
-  \humandiplomat[\NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Profits and local respect}]
+  \NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Profits and local respect}
+  \person{1}% STRENGTH
+  {0}% DEXTERITY 
+  {0}% SPEED
+  {{2}% INTELLIGENCE
+  {0}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {1}% COMBAT
+  {}% SKILLS
+  {\rapier, dagger, \lootMedium}% EQUIPMENT
+  {
+    \setcounter{Projectiles}{1}
+    \setcounter{Academics}{2}
+    \setcounter{Crafts}{1}
+    \setcounter{Wyldcrafting}{1}
+    \ifnum\value{wounds}=0
+      \setcounter{fp}{10}
+    \fi
+  }
 }
 
 \newglossaryentry{beardedalemaster}{

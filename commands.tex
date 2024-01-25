@@ -1,3 +1,9 @@
+\makeindex[name=history,title={Chronological Events},columns=2]
+
+\newcommand\histEvent[3]{%
+  \index[history]{{\titleFont C. \Large#1}!{\scshape\showSeason[#2]}\nobreak\\  {#3}|bigLine}%
+}
+
 \newcommand\townMap{
   \mapPic[\large]{t}{Dyson_Logos/town}{
     \Huge \ref{citadel}/87/50,

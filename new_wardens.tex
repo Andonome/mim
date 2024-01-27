@@ -2,6 +2,8 @@
 \label{risingTitles}
 
 The \gls{whiteBandits} and \glspl{digger} finally start pushing their plans to destabilise the area.
+And how these \glspl{segment} play out, depends heavily on the \glspl{pc} political positions.
+They may support some of these actions, or push back against them.
 
 \sqpart{Roads}% AREA
 {\gls{vlg} Dry Inkwells}% NAME
@@ -14,7 +16,6 @@ The \gls{whiteBandits} and \glspl{digger} finally start pushing their plans to d
 \end{exampletext}
 
 The troupe find \pgls{bothy} with a murdered \gls{jotter}, and with some ingenuity may figure out what happened.
-
 
 \begin{enumerate}
   \item
@@ -89,45 +90,44 @@ the knavish \glspl{guard} turn violent quickly.
 {Underground Assassins}% NAME
 {The bandits in the sewer cut \Glsentrytext{captain}'s throat}% SUMMARY
 
-\textbf{Background:}
-\Gls{captain} has been pushing the investigation into the undead and nura sightings in town, so \gls{sewerking} ordered a hit on him, lead by \gls{sewerthief}.
-Five men walked casually about him as he returned home \gls{whitehorse} with his wife, then closed in so one could stab him in the neck.
+\begin{exampletext}
+  \Gls{captain} announced the previous day that he would begin harsh raids against the people living under \gls{town}.
+  The \glspl{digger} didn't like that, so they've organized an assassination.
+
+  Five men walked casually behind him as he returned home from \gls{whitehorse} with his wife, then closed in so \gls{sewerthief} could stab him in the neck.
+\end{exampletext}
+
+If \gls{sewerthief} has died, replace him with \gls{sewerking}, or some other appropriate character.
 
 \begin{boxtext}
-  You hear guards shouting ``After them!'', in the distance, and quickly scurrying feet, as a woman shouts for someone to help her wounded husband.
+  You hear guards shouting ``after them!'', in the distance, and quickly scurrying feet, as a woman shouts for someone to help her wounded husband.
 \end{boxtext}
 
 \paragraph{If the characters stay to help the wounded man,}
 they find \gls{captain} with a knife-wound, next to his wife.
-The roll is \roll{Wits}{Medicine}, at \tn[9] to save his life.
+The roll is \roll{Intelligence}{Medicine} (\tn[9]) to save his life.
 
 \paragraph{If they run after the thieves,}
-the \glspl{pc} make a Group Roll of Speed + Athletics.%
-\iftoggle{core}%
-  {\footnote{See the core rules, page \pageref{grouproll}, for Group Rolls.}}%
-{}%
+the \glspl{pc} make a Group Roll of \roll{Speed}{Athletics}.
+
 Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't be able to join the chase.
 
-\begin{tcolorbox}[tabularx={cX},top=10pt,bottom=10pt]
-
-  Roll & Result \\\hline
+\begin{nametable}{Running Results}
   12 & \textit{``Giving chase, you catch up to four men running from the scene of the crime.''} \\
-  11 & \textit{``You run round an alley, and find a drain cover clanking. The assassins have jumped underground.''} \\
+  11 & \textit{``You run round an alley, and see them entering \gls{town}'s underground.''} \\
   9 & \textit{``You run in hot pursuit, but the attackers have disappeared down a street, into thin air.''} \\
   7 & \textit{``The attackers sprint away, leaving you running in the dark.''} \\
-
-\end{tcolorbox}
+\end{nametable}
 
 \sewerthief
 
-\humanthief[\npc{\T[4]\E\Hu}{Four of the Sewer Thieves}]
+\humanthief[\npc{\T[1]\E\Hu}{\arabic{noAppearing} \Glspl{digger}}]
+
+\humanthief[\npc{\T[1]\E\Hu}{\arabic{noAppearing} \Glspl{digger}}]
 
 \paragraph{If the party follow the assassins underground,}
-they run to the nearest entrance -- perhaps the butchers or \gls{pig}.
-Go to page \pageref{sewers}.
-Otherwise, this incident will remain a mystery.
-
-If \gls{captain} survives, he has little idea of what's happening, although a little investigation could reveal what he's been asking about recently (\roll{Intelligence}{Vigilance} Teamwork Roll, \tn[10]).
+they run to the nearest entrance -- perhaps the \gls{doulaShop} or \gls{pig} (\vpageref{sewers}).
+Otherwise, this incident may remain a mystery.
 
 \sqpart{Town}% AREA
 {Bandits Caught}% NAME
@@ -135,81 +135,79 @@ If \gls{captain} survives, he has little idea of what's happening, although a li
 
 \label{banditsCaught}
 
-\textbf{Background:}
 The \glspl{pc} have captured \gls{banditking} alive.
-
-\begin{boxtext}
-
-  Hear, ye!  Hear all!
-
-  Bandits who roamed the highways, lead by a man known as \gls{banditking}, have been apprehended.  The leader shall be drawn and quartered by week's end, and his companions hanged that night.
-
-  Bakers are henceforth forbidden from purchasing the flour of the Quennome region, and any found doing so will be charged with consorting with elves.
-
-  The temple of Alass\"e invites any charismatic men or women to aid the festivities, as playwrites and attractive actors are required for the upcoming festivities (not you, Margaret!).
-
-\end{boxtext}
 
 \Gls{banditking} will not be killed by law enforcement.
 Those in \gls{pig} will inform \gls{sewerking} long before, and the rescue will commence as the bandits in the sewer storm the guards' holding.
 Meanwhile, if \gls{necromancer}'s lair survives, the other bandits await instructions there.
 
-\humansoldier[\npc{\T[10]\Hu}{10 Bandits}]
+\begin{speechtext}
+  Hear, ye!  Hear all!
 
-The only way for the characters to secure \gls{banditking}'s demise it to watch the guards' station all night.
-If they do so, ten bandits stage an attack during the night.
+  Bandits who roamed the highways, lead by a man known as \gls{banditking}, have been apprehended.  The leader shall be drawn and quartered by week's end, and his companions hanged that night.
 
-\paragraph{The Distraction} starts by using ogre dust in three places in town to distract the local guards.
+  The \gls{templeOfPoison} invites any charismatic men or women to aid the festivities, as playwrites and attractive actors are required for the upcoming festivities (not you, Margaret!).
+\end{speechtext}
 
-The attack begins once there are only ten guards left in the station.
-\Glsentrytext{sewerking}'s men arrive, ready to break everyone out underground and take off into the nearest entrance to the sewer.
+\Gls{sewerking} has recently discovered an underground tunnel which leads from the \nameref{stationDungeon}'s waste-shaft, \vpageref{dunGrate}, to the underground (\nameref{sewerWaterHall}, \vpageref{sewerWaterHall}).
+So this night, he and some of the \glspl{digger} will crawl up from the underground, kill any \gls{sunGuard} around, and take him underground.
+
+\boxPair[t]{
+  \ghast[\npc{\T[7]\D}{\arabic{noAppearing} Ghasts}]
+}{
+  \ghast[\npc{\T[7]\D}{\arabic{noAppearing} Ghasts}]
+}
 
 \sqpart{Town}% AREA
 {The Dead Rise}% NAME
 {\Glsfmttext{sewerking} releases ghouls upon the citadel}% SUMMARY
 
-\textbf{Background:}
-\Gls{sewerking} undead have finally finished digging the tunnel
-\footnote{See page \pageref{citadelTunnel} for the underground tunnel.}
-underneath \gls{town}'s citadel,
-\footnote{See page \pageref{citadel} for the town's Citadel.}
-where \gls{townmaster} lives.
-He releases the undead, and guides them upstairs, through the dark halls.
-As the \gls{guard} torches cast light on undead faces, each one makes a decision to stay and do their duty, or flee and live.
+If the \glspl{pc} have already stolen the \gls{bskulls} or somehow disbanded the \gls{digger} movement, nothing happens here.
+All remains well in \gls{town}.
 
-By this point, the undead horde numbers over a hundred, and the citadel has not prepared for anything like this.
-It has perhaps twenty guards, and most of them work there because they seemed loyal, rather than capable.
+Otherwise, not a single soul in the city will sleep this night.
 
-\Gls{sewerking} leads his horde to the palace's main door with two ghasts to stop anyone exiting, and leaves the horde to slowly work its way up the stairs and rooms, killing anyone they come across.
+\begin{exampletext}
+  The \glspl{digger} finally finished digging the tunnel underneath \gls{town}'s citadel, where \gls{townmaster} lives.%
+  \footnote{See the sewers, \gls{area} \vref{citadelTunnel} for the underground tunnel, and \gls{town}'s \gls{area}~\vref{citadel} for the citadel.}
+  They waited for the \gls{bskulls} to curse them with a touch of undead (so the ghasts would not attack them), barred all the doors and hatches leading to the all-too-lively catacombs, and let the unnatural army take its course, straight into the bowels of the citadel.
+\end{exampletext}
 
-Play the next available encounter first, then interrupt it with news of the citadel's attack.
-Everyone can hear the screams from half-way across \gls{town}.
+\paragraph{If the troupe try to help,}
+they find \gls{sunGuard} fleeing (and trying not to be seen) and about 100 ghasts in the citadel, devouring the face of anyone they encounter.
 
-\paragraph{If the \glspl{pc} intervene,}
-they find \gls{sewerking} at the door, with much of his mana depleted already from fights with the guard.
-He will flee to the sewers the moment he feels unsafe.
+Move through the areas, rapidly.
+Everywhere in the citadel remains dark unless a screaming, fleeing, servant is present.
+A few of the \gls{sunGuard} remain, but most flee.
 
-\ghast
-
-\ghast
-
-\sewerking
-
-\humansoldier[\npc{\T[6]\E\Hu}{Palace Guard}]
-
-\paragraph{If the \glspl{pc} pursue \gls{sewerking},}
-he already has a cave-in prepared to block his escape, so he waits -- holding a piece of rope, tied around a beam.
-As the \glspl{pc} round the corner, they can roll Wits + Crafts (TN 10) to notice the trap and retreat.
-If they fail (or run through the trap anyway), they can roll Speed + Athletics (TN 10) to make it through anyway.
-
-If both rolls fail, the roof collapses, inflicting 8 Damage, and 8 \glspl{fatigue}.
-Digging someone out from under the rubble requires an Intelligence + Crafts roll (TN 12), and they don't have long before the person under the rubble dies from asphyxiation (no resting actions allowed).
-
-\paragraph{If the \glspl{pc} want to run up the stairs and save \gls{townmaster},}
-they have 8 rounds before the ghouls devour him, and will need to travel across 20 squares before reaching \gls{townmaster}'s room on the second floor.
+\humansoldier[\npc{\T[5]\E\Hu}{Palace Guard}]
 
 \paragraph{If \gls{townmaster} dies,}
-then his sons most likely die with him.
-Leadership of \gls{town} `temporarily' goes to \Gls{captain} (or \gls{traitor} if \gls{captain} already died).
+check the next part.
 
+\sqpart{Town}% AREA
+{Same Old New Management}% NAME
+{The troupe clear the citadel of ghasts}% SUMMARY
 
+After \gls{townmaster} dies, his eldest surviving son, Constance, takes over leadership (with the help of \gls{captain}).
+
+The \gls{sunGuard} barricade the citadel, and Builder Cronblight%
+\footnote{Find him \vpageref{cronblight}.}
+at \gls{lakeside} designates new \glspl{jotter}, who then order the \glspl{pc} to clear the citadel of the dead, along with five other \glspl{guard}.%
+\footnote{The \gls{sunGuard} explain that, while the ghasts exist within the citadel, the citadel counts as `beyond the \gls{edge}', and is therefore not their jurisdiction.}
+
+Twenty ghasts remain inside the citadel, while another thirty remain in the catacombs.
+Both groups of ghasts will attack en mass, rather than splitting up.
+
+\bigLine
+
+At this point, the primary arc of the story has so many forks that I have no idea where your story lies.
+Perhaps \gls{banditking} has no troupe left and has to make a last, desperate attempt at lowering taxes by murdering \gls{townmaster}'s heir as a warning to anyone who would overburden \gls{whiteplains} again.
+
+Perhaps \gls{banditking} arrives with a small army, and offers to clear the citadel of ghasts in order to gain the favour of everyone in \gls{town}, then begins to sweet-talk \gls{town}'s guild leaders before making a play for leadership.
+
+Perhaps the \gls{wolfhead} and \gls{whiteBandits} join forces and both get what they want.
+
+Or perhaps all the primary characters died at the hands of the \gls{guard}, and this campaign comes to a halt far before the last few \glspl{segment} can even start.
+
+However it turns out, happy gaming.

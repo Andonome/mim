@@ -1,7 +1,30 @@
 \makeindex[name=history,title={Chronological Events},columns=2]
 
+
 \newcommand\histEvent[3]{%
   \index[history]{{\titleFont C. \Large#1\nobreak}!{\nobreak\scshape\showSeason[#2]}\nobreak\\  {#3}|bigLine}%
+}
+
+\newcommand\INTERRUPT[1]{
+  \clearpage
+  \togglefalse{countedPage}
+  \ifodd\thepage
+    \setcounter{diceNo}{\thepage}
+    \pagestyle{empty}
+  \else
+    \clearpage
+    \setcounter{diceNo}{\thepage}
+    \pagestyle{empty}
+  \fi
+  \input{#1.tex}
+  \cleardoublepage
+  \ifodd\thepage
+  \else
+    \clearpage
+  \fi
+  \toggletrue{countedPage}
+  \pagestyle{plain}
+  \setcounter{page}{\value{diceNo}}
 }
 
 \newcommand\townMap{

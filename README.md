@@ -1,9 +1,6 @@
-## Missions in Mt Arthur
+## Missions in Maitavale
 
-| Downloads                    |
-|:----------------------------:|
-| [Missions in Mt Arthur][mim] |
-| [Handouts][handouts]         |
+[Download][mim]
 
 > The towns are only safe so long as the villages feed them.
 > The villages are only safe due to the patrols, and their outer walls.
@@ -22,4 +19,3 @@ The module comes with a great many handouts - mostly maps which the players can 
 ![The Grey Valley](images/Irina/greylands.jpg)
 
 [mim]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/mim.pdf?job=build
-[handouts]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/handouts.pdf?job=build

@@ -26,13 +26,10 @@ svg-inkscape: | config/bind.sty extracts
 $(BOOK).pdf: svg-inkscape $(wildcard *.tex) $(wildcard config/*.sty)
 	@pdflatex -jobname $(BOOK) main.tex
 
-handouts.pdf: handouts.tex market.tex
-	pdflatex -shell-escape handouts.tex
-	pdflatex handouts.tex
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
-all: $(BOOK).pdf handouts.pdf
+all: $(BOOK).pdf
 	latexmk -jobname=$(BOOK) -shell-escape -pdf main.tex
 
 clean:

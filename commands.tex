@@ -5,16 +5,10 @@
 }
 
 \newcommand\INTERRUPT[1]{
-  \clearpage
+  \cleardoublepage
   \togglefalse{countedPage}
-  \ifodd\thepage
-    \setcounter{diceNo}{\thepage}
-    \pagestyle{empty}
-  \else
-    \clearpage
-    \setcounter{diceNo}{\thepage}
-    \pagestyle{empty}
-  \fi
+  \setcounter{diceNo}{\thepage}
+  \pagestyle{empty}
   \input{#1.tex}
   \cleardoublepage
   \ifodd\thepage

@@ -4,20 +4,61 @@
   \index[history]{{\titleFont C. \Large#1\nobreak}!{\nobreak\scshape\showSeason[#2]}\nobreak\\  {#3}|bigLine}%
 }
 
-\newcommand\INTERRUPT[1]{
-  \cleardoublepage
-  \togglefalse{countedPage}
-  \setcounter{diceNo}{\thepage}
-  \pagestyle{empty}
-  \input{#1.tex}
-  \cleardoublepage
-  \ifodd\thepage
-  \else
-    \clearpage
-  \fi
-  \toggletrue{countedPage}
-  \pagestyle{plain}
-  \setcounter{page}{\value{diceNo}}
+\newtoggle{river}
+\settoggle{river}{true}
+
+\newcommand\mkPrice[2][sp]{%
+  \randomtwo%
+  \randomthree%
+  \randomthreeC%
+  \randomfour%
+  \randomdozen%
+  \setcounter{track}{#2}%
+  \ifnum\value{track}<4%
+  \else%
+    \addtocounter{track}{\value{r2}}%
+    \ifnum\value{track}<14%
+      \addtocounter{track}{\value{r3c}}%
+    \else%
+      \ifnum\value{track}<34%
+        \addtocounter{track}{\value{r4}}%
+      \else%
+        \addtocounter{track}{\value{r12}}%
+      \fi%
+    \fi%
+  \fi%
+  \arabic{track}~\glspl{#1}%
+}
+
+\newcommand\marketItem[4][sp]{
+  \ifodd\value{track}%
+    \randomthree%
+    \randomthreeB%
+    \randomfour%
+  \fi%
+  \randomdozen
+  #2 &% Name
+  #3 &% Weight
+  \mkPrice[#1]{#4} % Price
+  \\
+}
+
+
+\newcommand\rareMarketItem[4][9]{%
+  \ifnum\value{r12}>#1%
+    \marketItem{#2}{#3}{#4}%
+  \fi%
+}
+
+
+\newcommand\showArmourPrice[2]{%
+  #1 & \arabic{armourDR} & \arabic{covering} &  \arabic{weight} & \mkPrice{#2} \\%
+}
+
+\newcommand\rareArmour[3][9]{
+  \ifnum\value{r12}>#1%
+    \showArmour{#2} & \mkPrice{#3} \\
+  \fi%
 }
 
 \newcommand\townMap{

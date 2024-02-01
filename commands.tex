@@ -27,7 +27,11 @@
       \fi%
     \fi%
   \fi%
-  \arabic{track}~\glspl{#1}%
+  \ifnum0<\value{track}%
+    \arabic{track}~\glspl{#1}%
+  \else%
+    \textit{free}!
+  \fi%
 }
 
 \newcommand\marketItem[4][sp]{

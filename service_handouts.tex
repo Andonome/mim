@@ -1,125 +1,49 @@
-\section*{Services}
-
-\begin{multicols*}{2}
-
-\begin{boxtext}
-  It's not safe to go alone.
-  Take me, at a minimum of 5 \glspl{sp} per day, plus travelling expenses.
-\end{boxtext}
-
-To buy good services, the \gls{gm} rolls your Wits + Empathy in secret.
-A bad roll means you have paid for a faker, but will find out too late.
-
-Sellswords will fight with the troupe.
-
-Guides will escort the troupe, but may disappear any time they feel less safe \emph{with} the troupe than without them.
-
-\begin{boxtext}
-  Don't know where you're going?
-  No problem.
-  I know the whole area.
-\end{boxtext}
-
-\noindent
-\begin{tabularx}{\linewidth}{XX}
-
-\textbf{Apothacary} & 1 \gls{sp} / level of Intelligence + Medicine \\\hline
-
-Poison cure & 1 \gls{sp} \\
-
-Poison & 4 \gls{sp} \\\hline
-
-\textbf{Fence} & \\\hline
-
-Common item & 20\% of the item's total value \\
-
-Identifiable valuables & 40\% of the item's total value \\
-
-Magical item & Varies considerably, 50\% chance the item is refused \\\hline
-
-\textbf{Boat Trip} & \\\hline
-
-Popular trading route & $2D6-2$ \gls{sp} (reroll each day) \\
-
-Standard stream & $3D6$ \gls{cp} \\\hline
-
-\textbf{Guide} &  150 \gls{cp}/ day \\\hline
-
-  Inner \glspl{village} & 50 \gls{cp} \\
-  Near the \gls{edge} & 5 \gls{sp} \\
-  Beyond the \gls{edge} & 15 \gls{sp} \\
-
-\end{tabularx}
-
-\noindent
-\begin{tabularx}{\linewidth}{XX}
-\hline
-\textbf{Hospitality} &  \\\hline
-
-Public House & 0 \gls{cp} \\
-
-Meal & 5 \gls{cp} \\
-
-Barn with breakfast & 10 \gls{cp} \\
-
-City Inn & 40 \gls{cp} \\
-
-Fancy Room & 1 \gls{sp} \\\hline
-
-\textbf{Minstrel} &  15 \gls{cp}/ performance \\\hline
-
-Large audience & 500 \gls{cp} \\
-
-Massive audience & 1 \gls{gp} \\
-
-Creating a new song & 2 \gls{sp} \\
-
-Illegal song & 5 \gls{sp} \\\hline
-
-\textbf{Sellsword} & 10 \gls{sp}/ day \\\hline
-
-Opponent & \gls{xp}$^3$ \gls{sp} \\
-
-Illegal Murder & 10 \gls{sp} \\\hline
-
-\textbf{Tracker} &  5 \glspl{sp} / day \\\hline
-
-  Inner \glspl{village} & 1 \gls{sp} \\
-  Near the \gls{edge} & 10 \gls{sp} \\
-  Beyond the \gls{edge} & 20\gls{sp} \\
-\hline
-
-\end{tabularx}
-
-\end{multicols*}
-
-\cleardoublepage
-
 \section*{Sellswords}
 
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
-\humansoldier[\NPC{\M\Hu}{Kartog}{Lively}{Hands on hips}{Wanderer}]
+\humansoldier[\NPC{\M\Hu}{Artquail}{lively}{hands on hips}{to explore}]
 
-\humanthief[\NPC{\F\Hu}{Quartmeg}{Sarky, dark-eyes}{Raises right eyebrow}{Seeker}]
+\humanthief[\NPC{\F\Hu}{Quartshine}{sarky, dark-eyes}{raises right eyebrow}{to write a formal contract}]
 
-\humanfarmer[\NPC{\M\Hu}{Somnal}{Confident}{Thumbs-up}{Noble}]
+\begin{multicols}{2}
 
-\humanfarmer[\NPC{\F\Nl}{Hrash}{Slick and inquisitive}{Spits on palm, smoothes out fur}{Paladin}]
+\end{multicols}
 
-\end{multicols*}
+\humanfarmer[\NPC{\M\Hu}{Somnal}{confident}{two thumbs-up}{to have an adventure}]
 
-\cleardoublepage
+\humanfarmer[\NPC{\F\Nl}{Hrash}{slick and inquisitive}{Spits on palm, smooths out fur}{to prove he's civilized}]
+
+\end{multicols}
+
+\cleardoublepage %%%%%%%%%%%%%%%%%%%%
 
 \section*{Guides}
 
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
-\humanfarmer[\NPC{\F\Hu}{Tenleck}{Dour, short black hair}{Picks nose}{Noble}]
+\elf[\NPC{\F\El}{L\'ir\"e}{golden ringlet~hair}{giggles}{sings of a lost elven song}]
 
-\elf[\NPC{\F\El}{L\'ir\"e}{Golden ringlet~hair}{Giggles}{Wanderer}]
+\ifnum\value{mp}>0
+  \showStdSpells
+\fi
 
-\dwarvensoldier[\NPC{\M\Dw}{Ben of Clan Longhall}{Short beard, practical}{Trims beard}{Money}]
+\columnbreak
 
-\end{multicols*}
+\elf[\NPC{\M\El}{Laiquon}{shaved head}{stares at the back of people's heads when they're not paying attention}{sniggers at weird moments}]
 
+\ifnum\value{mp}>0
+  \showStdSpells
+\fi
+
+\end{multicols}
+
+\cleardoublepage %%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+
+\dwarvensoldier[\NPC{\M\Dw}{Ben of Clan Longhall}{short beard, practical}{trims beard}{to make sure people know he's not poor}]
+
+\humanfarmer[\NPC{\F\Hu}{Tenleck}{dour, short black hair}{picks nose}{to get paid up-front}]
+
+\end{multicols}

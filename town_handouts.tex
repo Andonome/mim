@@ -2,42 +2,71 @@
 
 \begin{multicols}{2}
 
-\noindent
-All purchases in \pgls{village} require a full morning or afternoon.
-Villagers chat, then barter, and finally refer the buyer to someone else.
-
-Specialized items require a \roll{Charisma}{Vigilance} roll to find (\tn[12]).
-
-The following prices are for \showSeason.
+\glsentrytext{frost}
+\textbf{At the Weavers'}
 
 \begin{boxtable}[Xcc]
 
   \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Peasant clothes &  1 & 1 \gls{sp} \\
+  \marketItem{Orange Travelling Robes}{0}{15}
+  \marketItem{Red Travelling Robes}{0}{17}
+  \marketItem{Purple Travelling Robes}{0}{23}
+  \hline
 
-  Noble clothes &  0 &  18 \glspl{sp} \\
-
-  \label{warmClothes}
-  Temp: \arabic{temperature} Warm clothes &  2 &  \ifnum\value{temperature}=0 6\else 2\fi \glspl{sp} \\
+  \marketItem[cp]{Bandages}{0}{2}
+  \hline
+  \marketItem{Rope, 50'}{1}{2}
 
 \end{boxtable}
 
-\begin{boxtable}[Xcc]
+\randomdozen
 
-  \textbf{Professional Tools} & \textbf{Weight} & \textbf{Cost} \\\hline
+\ifnum\value{r12}>7
+\noindent
+\begin{minipage}{\linewidth}
+\glsentrytext{misgen}
+\textbf{At the Doula's}
+  \begin{boxtable}[Xcc]
+    \textbf{Things on shelves} & \textbf{Weight} & \textbf{Cost} \\\hline
+    \rareMarketItem[9]{Air \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Fire \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Earth \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Water \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Fate \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Air \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[9]{Fire \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[8]{Earth \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[9]{Water \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[9]{Fate \Glsentrytext{boon}}{1}{24}%
+    \marketItem{Cup of tea}{0}{0}%
+  \end{boxtable}
+\end{minipage}
+\fi
 
-  Bandages & 0 & 3 \glspl{cp} \\
+\begin{boxtable}[Xc]
 
-  Lantern &  1 &  5 \glspl{sp} \\
+  \textbf{Beasts} & \textbf{Cost} \\\hline
+  Horse & \mkPrice{20} \\
 
-  Rope, 50' &  1 &  4 \glspl{sp} \\
+  Hunting Dog & \mkPrice{5} \\
 
-  \hline
-  \textit{Specialized} & & \\
-  \hline
+  Donkey & \mkPrice{2} \\
 
-  Metallurgy set &  15 &  60 \glspl{sp} \\
+\end{boxtable}
+
+\begin{boxtable}[Xc]
+
+  \textbf{Services} & \textbf{Cost} \\\hline
+  Boat trip & \mkPrice[cp]{14} per mile \\
+
+  Local guide & \mkPrice{2} per mile \\
+
+  Minstrel Performance & \mkPrice[cp]{120} song \\
+
+  New song composition & \mkPrice{5} song \\
+
+  \footnotesize Fence & \footnotesize 50\% \\
 
 \end{boxtable}
 
@@ -45,262 +74,99 @@ The following prices are for \showSeason.
 
   \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Cart & 13 &  13 \glspl{sp} \\
+  Rations for a day &  1 & \mkPrice[cp]{13} \\
 
-  Tent for 1 & 1 & 3 \glspl{sp} \\
+  Rushlights & 0 & \mkPrice[cp]{1} \\
 
-  Tent for 2 & 2 & 3 \glspl{sp} \\
+  Tinder box & 0 & \mkPrice[cp]{3} \\
 
-  Tent for 4 & 3 & 3 \glspl{sp} \\
-
-  Tent for 6 & 4 & 3 \glspl{sp} \\
-
-  Rations for a day &  1 &  \ifnum\value{temperature}>0 15\else 30\fi \glspl{cp} \\
-
-  Rushlight & 0 & 1 \glspl{cp} \\
-
-  Torch & 1 & 10 \glspl{cp} \\
+  Torch & 1 & \mkPrice[cp]{8} \\
 
 \end{boxtable}
 
 \begin{boxtable}[Xc]
 
-  \textbf{Beast} & \textbf{Cost} \\\hline
-  Horse & 20 \glspl{sp} \\
+  \textbf{Hospitality} & \textbf{Cost} \\\hline
 
-  Hunting Dog & 4 \glspl{sp} \\
+  Bed with family & \mkPrice{2} \\
 
-  Donkey & 3 \glspl{sp} \\
+  Hearty Meal & \mkPrice[cp]{5} \\
 
-  \hline
-  \textit{Specialized} & \\
-  \hline
+  Rat Soup & \mkPrice[cp]{2} \\
 
-  War Horse & 40 \glspl{sp} \\
+  Nice room & \mkPrice[cp]{20} \\
+
+  Fancy room & \mkPrice[cp]{80} \\
+
+  \Glsentrytext{whitehorse} & \mkPrice{3} \\
 
 \end{boxtable}
+
+
 \end{multicols}
 
-  \begin{nametable}[XXXXXX]{M\^{e}l\'{e}e Weapons}
-
+\begin{boxtable}[XXXXXX]
 
   \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  \Dagger & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 2\glspl{sp} \\
+  \Dagger & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{2} \\
 
-  \quarterstaff & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 4 \glspl{sp} \\
+  \shortsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{9} \\
 
-  \shortsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 18 \glspl{sp} \\
+  \spear & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{7} \\
 
-  \spear & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 15 \glspl{sp} \\
-
-  \hline
-  \textit{Specialized} & & & & & \\
-  \hline
-
-  \longsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & 10 \glspl{sp} \\
-
-\end{nametable}
-
-\begin{boxtable}[XXXXXl]
-
-  \textbf{Projectile} & \textbf{\Gls{ap}} & \textbf{Damage} & \textbf{Weight}  & \textbf{Reload Time} & \textbf{Cost} \\\hline
-
-  Longbow &  4 & +3 & 1 & 1~\glspl{ap} & 8~\glspl{sp}  \\
-
-  Crossbow &  1 & +3 & 1 & 1~\glspl{ap} & 8~\glspl{sp}  \\
+  \longsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{11} \\
 
 \end{boxtable}
 
-\cleardoublepage
+\glsentrytext{hate}
+\textbf{At the \Glsentrytext{templeOfHate}}
 
-Cut the following animal statblocks apart, for individual use.
+\begin{boxtable}[XXXXc]
+  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{Covering} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \showArmourPrice{\completechain}{28}%
+  \showArmourPrice{\partialchain}{18}%
+\end{boxtable}
 
-\begin{multicols}{2}
+\glsentrytext{beasts}
+\textbf{At the Fletcher's}
+\begin{boxtable}[XYYYXl]
 
-\settoggle{examplecharacter}{true}
-\horse[\npc{\A\F}{Long Trot (Horse)}]
+  \textbf{Projectile} & \textbf{Attack Bonus} & \textbf{Damage} & \textbf{\Gls{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-\settoggle{examplecharacter}{true}
-\horse[\npc{\A\M}{Short Saddle (Horse)}]
+  \hline
 
-\settoggle{examplecharacter}{true}
-\horse[\npc{\A\F}{Becka-de-Trot (Horse)}]
+  Longbow &  +1  & +1 & 1~\glspl{ap} & 1  & \mkPrice{9}  \\
 
-\settoggle{examplecharacter}{true}
-\warhorse[\npc{\A\F}{Slowin Stedy (Warhorse)}]
+  Longbow &  +2  & +2 & 2~\glspl{ap} & 1  & \mkPrice{11}  \\
 
-\settoggle{examplecharacter}{true}
-\warhorse[\npc{\A\M}{Waldo (Warhorse)}]
+  Longbow &  +3  & +3 & 2~\glspl{ap} & 1  & \mkPrice{13}  \\
 
-\settoggle{examplecharacter}{true}
-\warhorse[\npc{\A\M}{Witless (Warhorse)}]
+  Longbow &  +4  & +4 & 2~\glspl{ap} & 1  & \mkPrice{15}  \\
 
-\settoggle{examplecharacter}{true}
-\warhorse[\npc{\A\F}{Warpig (Warhorse)}]
+  \hline
+  Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{16}  \\
 
-\settoggle{examplecharacter}{true}
-\warhorse[\npc{\A\M}{Werner (Warhorse)}]
+  Bolt  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
+  \hline
 
-\settoggle{examplecharacter}{true}
-\huntingdog[\npc{\A\M}{Stayboy (Hunting Dog)}]
+  Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{16}  \\
 
-\settoggle{examplecharacter}{true}
-\huntingdog[\npc{\A\F}{Reaver (Hunting Dog)}]
+\end{boxtable}
 
-\cleardoublepage
+\textbf{At the Tanner's}
 
-\settoggle{examplecharacter}{true}
-\huntingdog[\npc{\A\F}{Singood (Hunting Dog)}]
+\begin{boxtable}[XXXXX]
+  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{Covering} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \showArmourPrice{\partialleather}{5}%
+  \showArmourPrice{\completeleather}{11}%
+\end{boxtable}
 
-\settoggle{examplecharacter}{true}
-\huntingdog[\npc{\A\M}{Gallop (Hunting Dog)}]
+\textbf{At the place with that guy I met at \glsentrytext{pig}\ldots}
 
-\settoggle{examplecharacter}{true}
-\huntingdog[\npc{\A\F}{Forager (Hunting Dog)}]
-
-
-\settoggle{examplecharacter}{true}
-\donkey[\npc{\A\M}{Noway (Donkey)}]
-
-\settoggle{examplecharacter}{true}
-\donkey[\npc{\A\F}{Nochance (Donkey)}]
-
-\settoggle{examplecharacter}{true}
-\donkey[\npc{\A\F}{Feckless (Donkey)}]
-
-\settoggle{examplecharacter}{true}
-\donkey[\npc{\A\M}{Socrates (Donkey)}]
-
-\settoggle{examplecharacter}{true}
-\donkey[\npc{\A\M}{Plato (Donkey)}]
-
-\end{multicols}
-
-\cleardoublepage
-
-\section*{Services}
-
-\begin{multicols*}{2}
-
-\begin{boxtext}
-  It's not safe to go alone.
-  Take me, at a minimum of 5 \glspl{sp} per day, plus travelling expenses.
-\end{boxtext}
-
-To buy good services, the \gls{gm} rolls your Wits + Empathy in secret.
-A bad roll means you have paid for a faker, but will find out too late.
-
-Sellswords will fight with the troupe.
-
-Guides will escort the troupe, but may disappear any time they feel less safe \emph{with} the troupe than without them.
-
-\begin{boxtext}
-  Don't know where you're going?
-  No problem.
-  I know the whole area.
-\end{boxtext}
-
-\noindent
-\begin{tabularx}{\linewidth}{XX}
-
-\textbf{Apothacary} & 1 \gls{sp} / level of Intelligence + Medicine \\\hline
-
-Poison cure & 1 \gls{sp} \\
-
-Poison & 4 \gls{sp} \\\hline
-
-\textbf{Fence} & \\\hline
-
-Common item & 20\% of the item's total value \\
-
-Identifiable valuables & 40\% of the item's total value \\
-
-Magical item & Varies considerably, 50\% chance the item is refused \\\hline
-
-\textbf{Boat Trip} & \\\hline
-
-Popular trading route & $2D6-2$ \gls{sp} (reroll each day) \\
-
-Standard stream & $3D6$ \gls{cp} \\\hline
-
-\textbf{Guide} &  150 \gls{cp}/ day \\\hline
-
-  Inner \glspl{village} & 50 \gls{cp} \\
-  Near the \gls{edge} & 5 \gls{sp} \\
-  Beyond the \gls{edge} & 15 \gls{sp} \\
-
-\end{tabularx}
-
-\noindent
-\begin{tabularx}{\linewidth}{XX}
-\hline
-\textbf{Hospitality} &  \\\hline
-
-Public House & 0 \gls{cp} \\
-
-Meal & 5 \gls{cp} \\
-
-Barn with breakfast & 10 \gls{cp} \\
-
-City Inn & 40 \gls{cp} \\
-
-Fancy Room & 1 \gls{sp} \\\hline
-
-\textbf{Minstrel} &  15 \gls{cp}/ performance \\\hline
-
-Large audience & 500 \gls{cp} \\
-
-Massive audience & 1 \gls{gp} \\
-
-Creating a new song & 2 \gls{sp} \\
-
-Illegal song & 5 \gls{sp} \\\hline
-
-\textbf{Sellsword} & 10 \gls{sp}/ day \\\hline
-
-Opponent & \gls{xp}$^3$ \gls{sp} \\
-
-Illegal Murder & 10 \gls{sp} \\\hline
-
-\textbf{Tracker} &  5 \glspl{sp} / day \\\hline
-
-  Inner \glspl{village} & 1 \gls{sp} \\
-  Near the \gls{edge} & 10 \gls{sp} \\
-  Beyond the \gls{edge} & 20\gls{sp} \\
-\hline
-
-\end{tabularx}
-
-\end{multicols*}
-
-\cleardoublepage
-
-\section*{Sellswords}
-
-\begin{multicols*}{2}
-
-\humansoldier[\NPC{\M\Hu}{Kartog}{Lively}{Hands on hips}{Wanderer}]
-
-\humanthief[\NPC{\F\Hu}{Quartmeg}{Sarky, dark-eyes}{Raises right eyebrow}{Seeker}]
-
-\humanfarmer[\NPC{\M\Hu}{Somnal}{Confident}{Thumbs-up}{Noble}]
-
-\humanfarmer[\NPC{\F\Nl}{Hrash}{Slick and inquisitive}{Spits on palm, smoothes out fur}{Paladin}]
-
-\end{multicols*}
-
-\cleardoublepage
-
-\section*{Guides}
-
-\begin{multicols*}{2}
-
-\humanfarmer[\NPC{\F\Hu}{Tenleck}{Dour, short black hair}{Picks nose}{Noble}]
-
-\elf[\NPC{\F\El}{L\'ir\"e}{Golden ringlet~hair}{Giggles}{Wanderer}]
-
-\dwarvensoldier[\NPC{\M\Dw}{Ben of Clan Longhall}{Short beard, practical}{Trims beard}{Money}]
-
-\end{multicols*}
+\begin{boxtable}[Xcc]
+  \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \marketItem{Lock-pick set}{1}{10}
+  \marketItem{Fake town-pass}{0}{3}
+\end{boxtable}
 

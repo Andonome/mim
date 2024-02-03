@@ -238,18 +238,10 @@
 
 \newcommand{\undeadBasilisk}[1][\npc{\D\A}{Undead Basilisk}]{
   #1
-  \randomtwo
-  \randomtwoB
-  \randomtwoC
-  \addtocounter{r2b}{-1}
-  \randomthree
-  \addtocounter{age}{5}
-  \randomthreeB
-  \addtocounter{r3b}{1}
-  \animal{\arabic{age}}% STRENGTH
-  {\arabic{r2b}}% DEXTERITY
-  {\arabic{r3}}% SPEED
-  {\arabic{r2b}}% WITS
+  \animal{7}% STRENGTH
+  {1}% DEXTERITY
+  {-2}% SPEED
+  {-4}% WITS
   {7}% DR
   {2}% AGGRESSION
   {}% SKILLS

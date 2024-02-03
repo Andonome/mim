@@ -112,6 +112,8 @@ Once the pillars fall, the entire area collapses within two rounds.
 \paragraph{If anyone searches the bodies,}
 they find eight of the ghouls which were once \glspl{guard}.
 
+\bookInvestigationChart[b]
+
 \ghoul[\npc{\T[6]\D}{\arabic{noAppearing} \gls{guard} Ghouls}]
 
 \ghoul[\npc{\T[9]\D}{\arabic{noAppearing} Ancient Ghouls}]
@@ -128,22 +130,28 @@ However, two pouches of red ruby dust remain, which function as Fire \glspl{boon
   Brass beakers, glass beakers, jars with rotten mouthdigger babies suspended in unknown fluids, pots with mould leaching out, and alcohol-burners, litter the shelves.
 \end{boxtext}
 
-\paragraph{Characters who scour the room,}
+\paragraph{Characters who scour the room delicately,}
 can find valuable remains with a \roll{Dexterity}{Academics} roll.
 They gain all items below the \gls{tn}.
 On a draw, something slips from their hand, and into the much, so the player will know they can find the item if they somehow raise their result (perhaps with \pgls{restingaction}, over the course of \pgls{interval}).
 
-\begin{boxtable}
-  \textbf{Roll} & \textbf{Result} \\
-  \hline
-      9         &   \lootMedium\ in a rotten, leather bag. \\
-      10        &   \lootBig\ worth of green topaz lying in the water. \\
-      11        &   Ruby-dust leather pouch (Fire \gls{boon}). \\
-      12        &   Ruby-dust leather pouch (Fire \gls{boon}). \\
-      13        &   \lootJewellery, stashed in a waterlogged book. \\
-\end{boxtable}
+{\small
+  \begin{boxtable}
+    \textbf{Roll} & \textbf{Result} \\
+    \hline
+        9         &   \lootMedium\ in a rotten, leather bag. \\
+        10        &   \lootBig\ worth of green topaz lying in the water. \\
+        11        &   Ruby-dust leather pouch (Fire \gls{boon}). \\
+        12        &   Ruby-dust leather pouch (Fire \gls{boon}). \\
+        13        &   \lootJewellery, stashed in a waterlogged book. \\
+  \end{boxtable}
+}
 
-\bookInvestigationChart
+\boxPair{
+  \inkparch
+}{
+  \deanOfForces
+}
 
 \mapentry[alchemyLibrary]{Library}
 \index{Library!Ancient}
@@ -162,7 +170,7 @@ Looking over these books requires \pgls{interval}, and each of the players shoul
 \begin{exampletext}
   While Inkparch rampaged, the Dean of Forces locked himself in his room, but this did not save him from joining Inkparch in undeath.
 
-  Neither wants to move, as all movement drains the undead of a little of their remaining energy, so they have spent the last couple of centuries communicating bitterly in the silence language of the undead, and occasionally playing chess against each other by memorizing a theoretical board.
+  Neither wants to move, as all movement drains the undead of a little of their remaining energy, so they have spent the last couple of centuries communicating bitterly in the ethereal language of untethered souls, and occasionally playing chess against each other by memorizing a theoretical board.
 \end{exampletext}
 
 Inkparch remains where he began -- at the bottom of the stairs, now wholly covered in water.
@@ -188,7 +196,7 @@ After that, if the character falls below 0~\glspl{ap}, they reflexively breathe 
 \begin{list}{\bfseries Room~\Alph{enumii}. }{\usecounter{enumii}}
   \item
   \label{deanRoom}
-  still houses the undead Dean of Force, who built the gateway in room \vref{summoningRoom}.
+  still houses the undead Dean of Force.
   \item
   \label{deadIllusionist}
   houses nothing but broken furniture, sludge, and the remains of the Dean of Illusion who drank poison to avoid Inkparch's wrath.

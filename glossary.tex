@@ -365,32 +365,36 @@
   description={-- a headstrong \glsentrytext{guard} deserter from \glsentrytext{southDale}, ready to adventure, run, burn, and steal},
 }
 
-\newcommand{\woodspyleader}{
-  \NPC{\M\Hu}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{easy targets, with lots of gold}
-  \label{woodspyleader}
-  \person{4}% STRENGTH
+
+\newcommand{\investigator}{
+  \NPC{\glssymbol{investigator}}{\glsentrytext{investigator}}{short, bald, aggressive, and polished from boot to crown}{points emphatically}{to tell people what's what}
+  \person{2}% STRENGTH
   {2}% DEXTERITY
   {-1}% SPEED
-  {{0}% INTELLIGENCE
-  {1}% WITS
-  {1}}% CHARISMA
+  {{-1}% INTELLIGENCE
+  {0}% WITS
+  {-2}}% CHARISMA
   {0}% DR
   {2}% COMBAT
-  {Academics 1, Deceit 2, Empathy 1, Wyldcrafting 1}% SKILLS
+  {}% SKILLS
   {\longsword, \roundshield, \completechain, dagger}% EQUIPMENT
-  {}
+  {
+    \setcounter{Academics}{1}
+    \setcounter{Deceit}{2}
+    \setcounter{Empathy}{1}
+    \setcounter{Wyldcrafting}{2}
+  }
 }
 
-%! Cut?
-
-\newglossaryentry{woodspyleader}{
+\newglossaryentry{investigator}{
   name={Burngrot},
-  first={Woodspy Leader Burngrot}
-  type={people},
-  symbol={\M\Hu},
-  description={is the leader of the Woodspy Bandits, and works as a fence.
-  He regularly drinks quietly in \glsentrytext{whitehorse}.
-  He always enters battle with a mask over his face, and puts on a faux lower-class accent},
+  first={Builder Burngrot of the \gls{guard}}
+  type={peeps},
+  prefix={Builder},
+  category={people},
+  parent={establishment},
+  symbol={\M\Hu\gls{beasts}},
+  description={grew up in \pgls{warden}'s house in \gls{southDale}, then joined the \gls{guard}, because nowhere else wanted him},
 }
 
 \newcommand{\keras}{

@@ -162,9 +162,10 @@
     {}
 }
 
-\newcommand\bookInvestigationChart{
+\newcommand\bookInvestigationChart[1][t]{
   \begin{figure*}[t]
   \setcounter{diceNo}{6}
+  \small
 
   \begin{nametable}[c|m{10em}|X|c|m{3em}]{\nameref{alchemyLibrary} Investigation}
     \textbf{Roll} & \textbf{Title} & \textbf{Contents} & \textbf{Value} & \textbf{\Glsentrytext{weight}} \\

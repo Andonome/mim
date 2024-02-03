@@ -208,126 +208,106 @@ After that, if the character falls below 0~\glspl{ap}, they reflexively breathe 
   once provided a miniature lobby before the \nameref{alchemySecret} in room \vref{alchemySecret}.
   The Dean of Illusion's disgusting eating habits made the place so rotten and mouldy that others complained, so he covered the mess with an illusion spell.
   \begin{boxtext}
-    The heavy door creaks open to an attractive room, like an expensive upstairs room in a tavern, complete with a couch, a desk, and a freshly cooked breakfast on the table.
+    The heavy door creaks open to a well-kept room, like an expensive upstairs booth in a tavern, complete with a couch, a desk, and a freshly cooked breakfast on the table.
   \end{boxtext}
 \end{list}
 
-\setcounter{wounds}{4}
-\npc{\M\D}{Inkparch}
-\person{1}% STRENGTH
-  {1}% DEXTERITY
-  {0}% SPEED
-  {{3}% INTELLIGENCE
-  {0}% WITS
-  {2}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {
-  }% SKILLS
-  {\longsword}% EQUIPMENT
-  {
-    \addtocounter{xpbonus}{3}
-    \setcounter{Brawl}{2}
-    \setcounter{Academics}{3}
-    \setcounter{Xenomology}{2}
-    \setcounter{Medicine}{1}
-    \setcounter{Stealth}{1}
-    \setcounter{Tactics}{2}
-    \setcounter{Air}{3}
-    \setcounter{Fate}{3}
-    \setcounter{Earth}{2}
-    \setcounter{Fire}{2}
-    \undead
-  }
+\paragraph{If Inkparch receives Damage,}
+he retreats to the bottom of his dank pool.
 
-\showStdSpells
+\paragraph{If nobody in the troupe attack the Dean,}
+he remains motionless, then finally lowers his head, in a silent request to finally die.
 
-\demilich[\npc{\D\M}{Cainrush}]
+\paragraph{If \pgls{pc} brushes the illusion spell out of room \ref{officeEntrance},}
+they will see the door upstairs immediately.
 
-\showStdSpells
-
-\mapentry[alchemySecret]{Secret Study}
+\mapentry[alchemySecret]{Little Study}
 
 Up the stairs the area remains dry, safe and eventually leads to a regular door (no roll required to open it).
 Inside, the room contains tables with extremely old scrolls, dust, and a series of very out-of-date books on alchemical theory.
-
-The \glspl{pc} can make another roll on the old books table \vpageref{libraryTable} (with a +2 Bonus if they have already rolled on it).
 
 \begin{boxtext}
   The stairs reach up, and finally you step your muddy boots out of the water and along a cold, but dry corridor.
 \end{boxtext}
 
+\paragraph{Searching the paperwork}
+uncovers a note complaining that the alchemical gateway's `open to trade password' seems too simple, and should be some word in ancient Dwarvish, without any vowels.
+The \glspl{pc} may read this as `the password which allows the gate to open for trade', rather than the actual meaning -- that the password is literally `open to trade'.
+
+The \glspl{pc} can also make \emph{one} more roll on the old books table \vpageref{libraryTable} (but without the danger of having a book crumble).
+
 \paragraph{Resting here}
-causes no \glspl{fatigue}, as the place is not full of cold water.
+inflicts no \glspl{fatigue}, as the place is not full of cold water or foetid air (tell the players they can breathe better -- they may guess that some passage outside is here).
 
 A \roll{Wits}{Crafts} check, \tn[10], reveals a loose wooden board in the ceiling.
 It used to be an exit to the ground floor of the town above, \vpageref{basementTrapdoor}, but now the upper floor is just the ground outside\ldots after a lot of digging upwards.
 
-\begin{boxtext}
-
-  The bricks fall away easily, revealing a full new room.  Two skeletons rest on a table, each clutching a book.
-
-\end{boxtext}
-
 \mapentry[alchemyGift]{Giftschrank}
 
-\begin{exampletext}
-  The two skeletons on the table have aged worse than the other corpses, as they were never preserved in the peat-water.
+  Two skeletons on the table have aged worse than the other corpses, as they were never preserved in the peat-water.
   They died of hunger rather than facing the dead they knew to be outside.
-  One holds a book of poetry, and the other holds a book of Enchantment spells, which she never managed to understand before dying.
-\end{exampletext}
+  One holds a book of poetry, and the other holds a book of Mind spells, which she never managed to understand before dying.
+
+\begin{boxtext}
+  The bricks fall away easily, revealing a full new room.  Two skeletons rest on a table, each clutching a book.
+\end{boxtext}
 
 The book on Enchantment spells contains various excellent spells.
 It is worth 6~\glspl{gp}, while the book of poems is worth 4~\glspl{sp}.
 
-\paragraph{Finding the words which unlock the gateway}
-requires an \roll{Intelligence}{Vigilance} roll, \tn[9].
-It's hidden among a dozen rather dull books on proper etiquette with alchemy, and accountancy books concerning what the guild brings in and what is can produce.
-
-The door to the Summoning Room is only blocked by a crude wooden panel, so exiting only requires a kick
-
 \paragraph{Spotting the hidden door from the outside}
-requires a \roll{Wits}{Vigilance} (\tn[8]).
+requires a \roll{Wits}{Crafts} (\tn[12]).
+
+\boxPair{
+  \ghoul[\npc{\T[9]\D}{\arabic{noAppearing} Ancient Ghouls}]
+}{
+  \ghoul[\npc{\T[9]\D}{\arabic{noAppearing} Ancient Ghouls}]
+}
+
+\mapentry[summoningRoom]{The Gateway}
+
+The magical gateway can sense any living soul, and can cast a Force spell to detect that one phrase -- `\textit{open to trade}'.
 
 \begin{boxtext}
-  The massive double doors slowly swing inwards, and the torchlight reveals a flooded hallway of six stone pillars, two enclaves, and a stairway leading up to a stage.
-  The stage shows a grand stone arch, like a doorway, leading to darkness.
-  You can see an writing across the top.
+  The massive double doors slowly swing inwards, and the torchlight reveals a flooded hallway of six stone pillars, two enclaves (on the left and right), and a stairway ahead leading up to a stage.
+  The stage shows a grand stone arch, like a doorway, leading nowhere but the darkness behind it.
 \end{boxtext}
-\mapentry[summoningRoom]{Summoning Room}
 
-%! More portal riddle details
-
-\begin{exampletext}
-  This is where the magic happened.
-  When anyone said `open to trade', the gateway came to life and allowed tradesmen to go in and out.
-
-  After Inkparch became resentful of the idea of someone killing him and using this place for their own benefit.
-  He took a measure of chains from the equipment storage, and used them to tie up a number of ghouls to the pillars.
-\end{exampletext}
-
-\paragraph{If any of the players say the words out loud,}
-so do their characters; the gateway opens and the ghouls in the room begin chanting along with them in unison.%
-\footnote{As usual, speech costs 1~\gls{ap}, so if the ghouls are in combat once the words are spoken, the party should enjoy the unexpected advantage they get.}
-
-\paragraph{If the \glspl{pc} remove the gemstones in the gateway,}
-it breaks forever.
-The gems are worth 30gp in total.
-
-If undiscovered, the dead stand and begin their chant, then slowly walk towards the characters.
-
-\paragraph{After 2 rounds,}
-the dead stand up.
+\paragraph{If any of the players say the opening words out loud,}
+then so do their characters; the gateway opens and the ghouls in the room begin chanting along with them in unison,%
+\footnote{As usual, speech costs 1~\gls{ap}, so the \glspl{pc} should enjoy the unexpected and rare advantage they receive from ghouls spending \pgls{ap} on attempting to talk.}
+then immediately attack.
 
 \begin{boxtext}
-  You look behind, and note two-dozen dead men standing from the water and staring at you.
-  Their skin has gone brown with age, and they look barely able to move.
-  Each drags a chain behind it, tied around one of the entrance pillars.
-  They pull together towards you, each uttering the same strange, chanting moan, and then stop as the chains go tight around the stone pillars.
+  You look behind, and rusted chains rise from the water -- one side tied to the pillars, and the other to a dozen of the dead.
+
+  The dead begin to chant\ldots
+
+  `\textbf{Opena trei\ldots opena trei\ldots}'
 \end{boxtext}
 
-\paragraph{If a pillar has six or more ghouls pulling at it,}
-then it collapses after 3 rounds.
+\begin{list}{\bfseries On round~\arabic{enumi}. }{\usecounter{enumi}}
+  \item
+  the room remains silent.
+  \item
+  the ghouls stand up.
+  \item
+  Inkparch approaches the troupe from behind (assuming nobody killed him).
+  \item
+  the pillars visibly strain as long as six or more ghouls pull against them.
+  \item
+  the first pillar collapses if the ghouls have not been felled.
+\end{list}
+
+\paragraph{If two pillars collapse}
+then the entire room collapses.
+Everyone inside receives $1D6$ Damage per round, which increases by 1 each round until everyone has left, or died.
 
 \paragraph{If a group of ghouls grab a character,}
-they stop pulling at their chains and focus on attacking that character.
+they stop pulling at their chains and focus on feeding, until they have fed (they consume souls instantly, once a target dies).
+
+\bigLine
+
+\paragraph{If anyone enters the gateway,}
+they find themselves in a pitch-black room at the \nameref{shadowGate} \vref{shadowGate}.
+

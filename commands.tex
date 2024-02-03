@@ -192,8 +192,8 @@
     \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
     (letter)
     &
-    A letter stating that a portal to an unknown labyrinth realm has been opened, and that trade has opened with various dwarves in exchange for food.
-    It also states that the portal will respond to the words `open to trade'.
+    A letter stating that a gateway to an unknown place (`\textit{perhaps in the \gls{deep}}?' it ponders) has been opened (it does not say where), and this suggests an opportunity for trade if the entities on the other side have any useful \glspl{ingredient}.
+    It also mentions that current trade may soon become difficult, as this side of the gateway has become ever more pedantic with its `command words'.
     &
     1~\glspl{sp}
     &
@@ -204,7 +204,7 @@
     &
     Letters of complaint from the `Dean of Forces', stating that the `Dean of Illusions' must tidy up the foyer, and that the rats his crumbs attract have become so bad that he's ordering no food to be permitted in the area, under any circumstances.
     &
-    1~\gls{sp}
+    0
     &
     0
     \\
@@ -222,17 +222,17 @@
     \textit{The Greatest of Monsters: Taxation}
     \hint{Author: \gls{warden} Gray}
     &
-    One of \gls{townmaster}'s ancestors explains why paying taxes for use of  the magical portals, strangles freedom, innovation, and basic decency.
+    One of \gls{townmaster}'s ancestors explains why paying taxes for use of  the magical gateways, strangles freedom, innovation, and basic decency.
     &
     3~\glspl{gp}
     &
     1
     \\
     \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
-    \textit{Divergent Portals: The Hows \& Why Nots}
+    \textit{Divergent Gateways: The Hows \& Why Nots}
     \hint{Author: Tuleta}
     &
-    The book details how to use a \textit{Divergent, Distant, Detailed, Duplicated Warp Mind \& Force} spell to simultaneously open many portals to a particular space, while making all of the portals sentient, and able to recast their own spell. 
+    The book details how to use a \textit{Divergent, Distant, Detailed, Duplicated Warp Mind \& Force} spell to simultaneously open many gateways to a particular space, while making all of the gateways sentient, and able to recast their own spell. 
     &
     50~\glspl{gp}
     &
@@ -241,7 +241,7 @@
     \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
     (letter)
     &
-    A letter complaining that the portal has become `too clever for its own good', from a tradesman who's tired of answering riddles.
+    A letter complaining that the gateway has become `too clever for its own good', from a tradesman who's tired of answering riddles.
     &
     5~\glspl{sp}
     &
@@ -323,4 +323,63 @@
 
     Undead}% EQUIPMENT
   {}
+}
+
+\newcommand\inkparch{
+  \setcounter{wounds}{4}
+  \npc{\M\D}{Inkparch}
+  \person{1}% STRENGTH
+    {1}% DEXTERITY
+    {0}% SPEED
+    {{3}% INTELLIGENCE
+    {0}% WITS
+    {2}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {
+    }% SKILLS
+    {\longsword}% EQUIPMENT
+    {
+      \setcounter{Brawl}{2}
+      \setcounter{Academics}{3}
+      \setcounter{Xenomology}{2}
+      \setcounter{Medicine}{1}
+      \setcounter{Stealth}{1}
+      \setcounter{Tactics}{2}
+      \setcounter{Air}{3}
+      \setcounter{Fate}{3}
+      \setcounter{Earth}{2}
+      \setcounter{Fire}{2}
+      \undead
+    }
+
+  \showStdSpells
+
+}
+
+\newcommand\deanOfForces{
+  \setcounter{wounds}{4}
+  \npc{\M\D}{Dean Cainrush}
+  \person{1}% STRENGTH
+    {0}% DEXTERITY
+    {0}% SPEED
+    {{2}% INTELLIGENCE
+    {0}% WITS
+    {1}}% CHARISMA
+    {0}% DR
+    {0}% COMBAT
+    {
+    }% SKILLS
+    {Unsent letter to wife, requesting better quality bread}% EQUIPMENT
+    {
+      \setcounter{Academics}{2}
+      \setcounter{Medicine}{2}
+      \setcounter{Air}{1}
+      \setcounter{Earth}{2}
+      \setcounter{Fire}{3}
+      \undead
+    }
+
+  \showStdSpells
+
 }

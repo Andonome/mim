@@ -287,3 +287,23 @@
     \undead
   }
 }
+
+\newcommand\stirgeGhouls[1][\npc{\T[2]\D\Hu}{\arabic{noAppearing} Stirge-Infected Ghouls}]{
+    #1
+    \randomtwo
+    \addtocounter{enc}{-2}
+    \randomtwoB
+    \randomtwoC
+    \randomthreeB
+  \animal{\value{r2}}% STRENGTH
+  {0}% DEXTERITY 
+  {\arabic{enc}}% SPEED
+  {-1}% WITS
+  {2}% DR
+  {2}% AGGRESSION
+  {}% SKILLS
+  {Stirge-nest {\scshape \Glsentrytext{ap} 5, Att 10-HP, Speed 2, Wits 1, \setcounter{track}{8}\Repeat{\value{noAppearing}}{\boxStat{track}, }}
+
+    Undead}% EQUIPMENT
+  {}
+}

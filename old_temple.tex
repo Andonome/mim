@@ -1,16 +1,22 @@
 \mapArea[sickness]{necromancers_lair}{The Forgotten Temple}
 \index{Forgotten Temple}
 
-\mapPic{t}{Dyson_Logos/qualme_temple}{
+\mapPic[\Large]{t}{Dyson_Logos/qualme_temple}{
   \ref{antGrounds}/17/10,
   \Large S/28/46,
   \ref{antHall}/34/53,
-  \ref{antBasilisk}/50/53,
-  \ref{antPrison}/34/89,
+  \ref{antBasilisk}/50/54,
+  \nameref{antBasilisk}/50/49,
+  \ref{antPrison}/34/90,
+  \nameref{antPrison}/34/85,
   \ref{necroGhasts}/23/79,
-  \ref{antOgre}/82/30,
-  \ref{antTower}/85/67,
-  \ref{antStudy}/17/44,
+  \nameref{necroGhasts}/21/72,
+  \ref{antOgre}/82/31,
+  \nameref{antOgre}/82/26,
+  \ref{antTower}/85/68,
+  \nameref{antTower}/85/63,
+  \ref{antStudy}/17/45,
+  \nameref{antStudy}/17/40,
 }
 
 Priests of \gls{eldren} lived here at the side of \pgls{village} some centuries ago, when \gls{lostcity} still stood.
@@ -29,33 +35,37 @@ These ghouls will see the troupe from a long way off, as the dead can see human 
 
 Assuming the troupe have no magic to make them less visible to the dead, then \gls{necromancer} will spot them, and begin casting offensive spells (check his abilities \vpageref{antTower}).
 
-Once the horde of the dead arrive in front of the troupe, this presents the players with a problem -- they can outrun the dead until they become tired; but they cannot hide, and the dead do not tire.
+\paragraph{If the horde of the dead arrive in front of the troupe,}
+this will present the players with a problem -- they can outrun the dead until they become tired; but they cannot hide, and the dead do not tire.
 This is the same problem as in \gls{segment} \vref{necroHorde}.
 
 \paragraph{If the \glspl{pc} try to circle round the ghouls,}
 they should roll \roll{Intelligence}{Athletics} (\tn[8]) to figure out the ground they need to cover to out-pace the dead.
 Success means they accrue 2~\glspl{fatigue} from the harsh marching, but gain \pgls{interval} before the ghouls catch up to them.
-A tie indicates they gain 6~\glspl{fatigue}, or simply do not lose the ghouls (players' choice).
+A tie indicates they gain 6~\glspl{fatigue} before losing the dead, or that they simply do not lose the ghouls (players' choice, but I know which I would choose).
 
 \mapentry[antGrounds]{The Grounds}
 
-The garden lies untended, but paradoxically has more life than it ever did when humans tended to the grounds.
+The garden lies untended, but paradoxically has more life than it ever did when humans tended to them.
 The grass has grown long, the trees' fruit comes and goes according to the seasons, and the local area has become populated with a lot of apple trees.
 
-A hundred broken arrow parts lie littered around the area, as \gls{necromancer} practices with his bow whenever he has the energy.
+A hundred broken arrow parts litter the area, as \gls{necromancer} practices with his bow whenever he has the energy.
 
 \ghoul[\npc{\T[9]\D}{Ghouls}]
 
-\stirgeSwarm
-
 A swarm of stirges%
 \exRef{judgement}{Judgement}{stirge}
-has moved into the area, but continuously make the mistake of trying to feed from the dead.
-As a result, they have become carriers for a nasty disease -- Breathrot.%
+has moved into the area, and made a home inside a ghoul (which hasn't the intelligence to remove the hive from his abdomen).
+They feed a little from its dead flesh, and it continues to wander gormlessly, with a mock-pregnancy.
+As a result of their dead home, the stirges have become carriers for a nasty disease -- Breathrot.%
 \exRef{judgement}{Judgement}{Breathrot}
-Anyone stung by the stirges contracts Breathrot, and becoming less able to breathe until they find a cure, or death.
-This clue might show the \glspl{pc} that \gls{traitor} came here, since he contracted the disease while stealing from \gls{necromancer} with the \gls{whiteplains} brothers.%
-\footnote{\label{broTheftRef}Check \gls{segment} \ref{rottenBreath} of \nameref{entitlement} \vref{rottenBreath}.}
+
+\stirgeGhouls
+
+\paragraph{If the stirges sting \pgls{pc},}
+then the \gls{pc} contracts Breathrot.
+This may clue them into the fact that \gls{traitor} came here before.%
+\footnote{\label{broTheftRef}Check \gls{segment} \vref{rottenBreath} of \nameref{entitlement}.}
 
 \mapentry[antHall]{The Hallway}
 
@@ -102,8 +112,7 @@ Currently, it contains four traumatized and terrified farmers.
 Each have a -2 penalty to everything, due to the starvation.
 
 The door has a massive, brass lock, with the ornate markings of a Dwarvish artisan.
-It also stopped functioning about a century ago.
-
+It stopped functioning about a century ago.
 \Gls{necromancer} relies on fear to keep the prisoners inside, which works better than locks.
 As the prisoners enter, the door shuts and the hungry dead outside can no longer see them, so they leave the doors alone (ghouls are mostly blind, and entirely incurious).
 

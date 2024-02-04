@@ -177,6 +177,7 @@
     {wind speed}% Resist with
     {With a whistful wondering, the caster begins to perceive any magical gateways around \spellRange, in the chosen direction}% Description
     {}
+
 }
 
 \newcommand\bookInvestigationChart[1][t]{
@@ -385,6 +386,25 @@
     \setcounter{Brawl}{\value{r4b}}
     \setcounter{mp}{5}
     \renewcommand\abilities{\mutation{track}, \mutation{age}}
+  }
+}
+
+\newcommand\uncommonlyLargeJelly{
+  \npc{\A}{{Uncommonly Large Ooze}}
+  \animal{5}% STRENGTH
+  {1}% DEXTERITY 
+  {0}% SPEED
+  {-2}% WITS
+  {4}% DR
+  {4}% AGGRESSION
+  {}% SKILLS
+  {
+    \acidBody, \acidSpray, \gloopy
+  }% ABILITIES
+  {
+    \knacks{\berserker, \unstoppable}
+    \setcounter{Athletics}{1}
+    \setcounter{Stealth}{2}
   }
 }
 

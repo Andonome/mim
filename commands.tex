@@ -1,7 +1,13 @@
 \makeindex[name=history,title={Chronological Events},columns=2]
 
 \newcommand\histEvent[3]{%
-  \index[history]{{\titleFont C. \Large#1\nobreak}!{\nobreak\scshape\showSeason[#2]}\nobreak\\  {#3}|bigLine}%
+    \setcounter{track}{\year}%
+    \multiply\value{track} by 3%
+    \stepcounter{track}%
+    \setcounter{diceNo}{#1}%
+    \divide\value{diceNo} by 3%
+    \addtocounter{track}{-\value{diceNo}}%
+  \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showSeason[#2]}\nobreak\\  {#3}|bigLine}%
 }
 
 \newtoggle{river}

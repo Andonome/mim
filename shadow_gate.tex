@@ -47,62 +47,77 @@ Destroying it requires 20 Damage (in a single hit), or someone can try to pick t
 
 \shadowVaultMap
 
-\mapentry[shadowVore]{Guardian \Glsentrytext{artefact}}
-
-\histEvent{5979}{9}{An alchemist opens a second gateway in Sixshadow's Vault called `the Vore Gate'.
-It goes to the wrong place, and dangerous creatures occasionally emerge from that labyrinthine realm.
-The proprietor seals the new gate in its own room}
+\mapentry[shadowVore]{Vore Gate}
 
 \begin{exampletext}
-  While other \glspl{artefact} cause problems, due to their singular focus and complete lack of empathy or perspective, the \textit{Vore Gate} had a well-reasoned creator, who created the \gls{artefact} specifically to serve the purpose he had in mind.
+  A young alchemist descended into the Shadow Vault to cast inquisitive spells through the Vore Gate.
+  However, the moment he unlocked the gate, something assaulted him, removing his fingernails then face before bolting into the night.
 
-  ``Let people enter, when they want'', said the alchemist.
-
-  This solved the first problem which \glspl{artefact} have, and only this problem.%
-  \footnote{If someone in your campaign ever casts a high-level, long-standing spell which has no unintended consequences, you are doing BIND wrong.}
-  The alchemist only had two problems left with his otherwise genius (and certainly inspired) plan.
-  The first was that the Vore Gate went to the wrong place (a lightless \gls{deep}, populated by unpredictable horrors).
-  The second was that it was extremely enthusiastic about people travelling through it, with a very broad definition of `people'.
-
-  The alchemist solved these problems by moving on with his life.
-  The owner of the establishment solved them by building a wall around the gate, with the hope of capitalizing on it later.
-  And the staff capitalized on the issue by building a secret entrance through the wall to trade through the gateway in secret.
+  The alchemists concluded that the Vore Gate had let the creature in earlier, but nobody could see it by looking through the gate for danger.
+  Since then, the alchemists had two peep-holes commissioned at either side of the Vore Gate's enclosure, so they could check if anything hid within the enclosure before unlocking the gate.
 \end{exampletext}
 
 \begin{boxtext}
-  Past the ornate gate, you see a room, and in the far darkness, two pillars surround a gleam\ldots of some description.
+  Past the ornate gate, you see a room, and in the far darkness, two ivory pillars frame a dark glimmer\ldots of some description.
 \end{boxtext}
 
 If the \glspl{pc} manage to speak with the Vore Gate, it tells them enthusiastically, and emphatically, that they have to see the other side.
-It may lie, or embellish the riches on the other side, but most of all it says how much it loves having people entering.
+It may lie, or entice them with mystery, but most of all it says how much it loves having people entering.
 
-\noindent
-\begin{exampletext}
-  When a group of `brave' warriors entered this room to explore the other side of the Vore Gate, a creature struck them dead before they could enter.
-  This strange creature came from the other side of the Vore Gate the previous night, and simply remained at one side of the room, out of view, until someone opened the door.
+\setcounter{statDots}{0}
+Last night, a \superWierdzi\ emerged from the Vore Gate, and it still wants to escape the enclosure.
+The \superWierdzi\ looks like a sickly-yellow mound of Van-Gogh playdough, but whenever someone looks at it, the \superWierdzi\ begins to look a little like them.
 
-  Since that time, the proprieter commissioned two peep-holes, so that people could see everywhere inside the room before he would open the gate.
-\end{exampletext}
+\mphlg
 
-\paragraph{If the \glspl{pc} do not observe one peep-hole each,}
-(and at the same time)
-they will not notice the strange, ectoplasmic, creature floating patiently, and waiting to enter \gls{fenestra}.
+The \superWierdzi\ can reduce any Body Attribute by up to 3 in order to immitate someone's appearance, but cannot make any noises.
 
-Some rare Gnomish books have mentioned this creature, which they call `the archmage', due to its incredible command of magical spheres.
-It has a brain, a few stubby tentacles, and nothing more.
-Air spells allows it to fly, and Force spells allow it to hunt.
+The acidic oozes will not react to the \superWierdzi\ in any way.
 
-\paragraph{If the archmage escapes,}
-it flies off, to some unknown location, probably destroying \pgls{village} along the way.
-It will not harm anyone except as a means to escape.
+\paragraph{If the troupe look into the Vore Gate enclosure,}
+the \superWierdzi\ tries to hide.
+If it cannot (because all peep-holes have someone looking through them), it stares back through a peep-hole, absorbing \pgls{pc}'s face.
 
-\archmage
+\paragraph{If it escapes,}
+the \superWierdzi\ flees, then stops a few steps away, and stares at the troupe, imitating each of them in turn.
+Ranged weapons will make it flee, and then hide outside, waiting to stare at the troupe again.
 
-\showStdSpells
+\paragraph{Letting it observe for 3 rounds}
+allows it to duplicate someone's full bodily appearance exactly, at which point it attempts to return through the Vore Gate (but may wander outside for a few years if the Vore Gate is not available).
+
+\artefact[16]{Vore Gate}% Name
+  {Two ivory pillars, with a beckoning empty space between}% Body
+  {1}% Intelligence
+  {0}% Wits
+  {0}% Charisma
+  {to get people inside}% Mission
+  {Fae Door}% Base Spell
+  {
+    \setcounter{Fire}{3}
+    \setcounter{Earth}{2}
+    \setcounter{Fate}{1}
+    \setcounter{Water}{1}
+    \setcounter{Academics}{2}
+    \setcounter{Wyldcrafting}{1}
+  }% Spheres
+
+\showStdSpells[
+  \setcounter{diceNo}{0}
+]
 
 \mapentry[shadowPot]{Sticky Pot}
 
-This ceramic pot has a thick seal of ropes and wax, and will not open easily.
+\begin{exampletext}
+  After one too many expensive accidents, the alchemists decided to shut down the Shadow Vault, so the \glspl{server} of the \gls{templeOfPoison} bought the building, and the basement.
+  They also inherited all of the \glspl{artefact} which were not considered dangerous, or easy to move.
+
+  Within a year, the Shadow Vault began to see rich visitors, coming just to observe the strange \glspl{artefact}.
+  They didn't have any magical defences, so they bought a few safety precautions from the alchemists.
+\end{exampletext}
+
+The only alchemical safety device remaining is a ceramic pot, with an acidic ooze placed inside, under a \textit{Preservation} spell.
+At the bottom of the pot rests a pile of 30~\glspl{gp} (clearly visible).
+
 The ooze which inhabits the deeper water \vpageref{shadowJelly} occasionally comes out, and leaves acidic mucus all over the pot, presumably sensing the contents.
 
 Inside, rests a tiny little ooze-creature, under a \textit{Preservation} spell, ensuring it will not age so long as it remains still.

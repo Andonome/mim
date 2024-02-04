@@ -175,7 +175,7 @@
     {Witness}% Action
     {Air}% Spheres
     {wind speed}% Resist with
-    {With a whistful wondering, the caster begins to perceive any magical gateways around \spellRange}% Description
+    {With a whistful wondering, the caster begins to perceive any magical gateways around \spellRange, in the chosen direction}% Description
     {}
 }
 
@@ -340,6 +340,52 @@
 
     Undead}% EQUIPMENT
   {}
+}
+
+\newcommand\superWierdzi{%
+  \ifcase\value{statDots}\relax%
+  \rotatebox{160}{Mo}\rotatebox{100}{rp}\rotatebox{-130}{l}\rotatebox{90}{h}\rotatebox{-120}{i}\rotatebox{60}{ng}%
+  \or%
+  \rotatebox{140}{Mor}\rotatebox{80}{h}\rotatebox{80}{p}\rotatebox{-110}{l}\rotatebox{-100}{i}\rotatebox{40}{ng}%
+  \or%
+  \rotatebox{120}{M}or\rotatebox{60}{p}\rotatebox{70}{h}\rotatebox{-90}{l}\rotatebox{-80}{i}\rotatebox{20}{ng}%
+  \or%
+  \rotatebox{80}{M}or\rotatebox{20}{p}\rotatebox{50}{h}\rotatebox{-50}{l}\rotatebox{-40}{i}\rotatebox{0}{ng}%
+  \or%
+  \rotatebox{40}{M}or\rotatebox{10}{p}\rotatebox{30}{h}\rotatebox{-20}{l}\rotatebox{-20}{i}ng%
+  \or%
+  \rotatebox{20}{M}orp\rotatebox{10}{h}\rotatebox{-10}{l}\rotatebox{-10}{i}ng%
+  \else%
+  Morphling%
+  \fi%
+  \stepcounter{statDots}%
+}
+
+\newcommand\mphlg{
+  \randomtwo
+  \randomthree
+  \randomfour
+  \setcounter{diceNo}{\value{track}}
+  \addtocounter{diceNo}{-2}
+  \stepcounter{track}
+  \stepcounter{age}
+  \npc{\gls{curiosity}}{\superWierdzi}
+  \person{\value{r2b}}% STRENGTH
+  {\value{track}}% DEXTERITY 
+  {0}% SPEED
+  {{0}% INTELLIGENCE
+  {\value{track}}% WITS
+  {0}}% CHARISMA
+  {4}% DR
+  {0}% COMBAT
+  {Stretching~2, Go~1, Involution~3}% SKILLS
+  {Nothing}% EQUIPMENT
+  {
+    \setcounter{Xenomology}{3}
+    \setcounter{Brawl}{\value{r4b}}
+    \setcounter{mp}{5}
+    \renewcommand\abilities{\mutation{track}, \mutation{age}}
+  }
 }
 
 \newcommand\inkparch{

@@ -157,26 +157,28 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
   \setcounter{diceNo}{0}
 ]
 
-\mapentry[peepingOrb]{Sunken Light}
+\mapentry[watchfullOrb]{Watchful Orb}
 
 \begin{exampletext}
-  The Peeping Orb loves to spy on Force spells, especially magical gateways.
-  In fact, it was designed to do just this, in order to peep at the riddles that the Shadow Gate states, so the keepers could write them down.
+  Having two wreckless, alchemical gateways in the building means trouble, so the \gls{templeOfPoison} commissioned yet another \gls{artefact}.
+  The Watchful Orb consists of an illusion of a rainbow bubble, with a \textit{Witness} spell layered on top so the illusion spell can react to nearby changes in spells of the Force Sphere.
+  Learning the language of the orb takes a long time.
 
-  And once every three years, during the eclipse of Qualmea,%
-  \exRef{judgement}{Judgement}{Qualmea}
-  if an earthquake hits, if someone releases Fire and Earth \glspl{boon} around the Orb, it would show other images, with strange creatures that sit by distance gateways.
+  Grabbing the orb hurts it, and it loses \pgls{mp} at every contact.
+  All contact should be gentle.
 \end{exampletext}
 
-\setcounter{wounds}{9}
+\begin{boxtext}
+  Within the murky water, at the bottom, something glows.
+\end{boxtext}
 
-\artefact[1]{Peeping Orb}% Name
-  {A perfect, black sphere, made of cooled magma, the size of a head (but very light)}% Body
+\artefact[1]{Watchful Orb}% Name
+  {A rainbow bubble, slowly swirling and changing, always glowing}% Body
   {0}% Intelligence
   {-1}% Wits
   {2}% Charisma
-  {to inform everyone of nearby Force spells}% Mission
-  {Float}% Base Spell
+  {to inform everyone of any Force spells, and how fun they are}% Mission
+  {Find Gateway}% Base Spell
   {
     \setcounter{Air}{3}
     \setcounter{Fire}{3}
@@ -184,8 +186,6 @@ The temple \glspl{server} placed it here `in case of emergency', with a vague pl
     \setcounter{Academics}{2}
     \setcounter{Xenomology}{2}
   }% Spheres
-
-\setcounter{wounds}{0}
 
 \showStdSpells[
   \setcounter{enc}{2}
@@ -231,8 +231,9 @@ Disturbing the pair during this time results in  both attacking at once.
 
 \mapentry[shadowGate]{Shadow Gate}
 
-The entrance to the Shadow Gate (\vpageref{shadowGate}) stands about as tall as a human, under the ice.
-\Glspl{pc} won't see the entrance easily, and will have to smash the ice open to gain access -- \roll{Strength}{Crafts} (\tn[10])\ldots which of course releases the ooze.
+The entrance to the Shadow Gate stands about as tall as a human, so seeing the passage will be a challenge if the troupe get here by swimming atop the slimy water, and over the cold seasons, the troupe have even bigger problems -- they won't even see the entrance to the Shadow Gate.
+
+The \glspl{pc} can roll \roll{Strength}{Crafts} (\tn[10]) to smash through this ice, which of course releases the ooze.
 
 Stairs along the causeway lead to two raised platforms, still blessedly dry.
 Each has little walls to contain all the sand.
@@ -248,17 +249,37 @@ The Shadow Gate's last riddle remains on the floor, but this riddle has multiple
   {to ask devious riddles}% Mission
   {Fae Door}% Base Spell
   {
-    \setcounter{Fire}{3}
-    \setcounter{Earth}{2}
-    \setcounter{Fate}{1}
+    \setcounter{Fire}{2}
+    \setcounter{Earth}{3}
     \setcounter{Water}{1}
     \setcounter{Academics}{2}
-    \setcounter{Wyldcrafting}{1}
+    \setcounter{Caving}{1}
+    \setcounter{Xenomology}{1}
   }% Spheres
 
 \showStdSpells[
   \setcounter{diceNo}{0}
 ]
+
+\mapentry[shadowDesk]{Empty Desks}
+
+\begin{exampletext}
+  This room once had a steep stone staircase up to it.
+  But with the guardians (\vpageref[above]{shadowGuardian}) sleeping peacefully, the proprietor didn't want leave them unprotected (even with the gate present).
+  So he ordered men to build a wall over the entrance, leaving a gap at the top so they could squeeze out.
+\end{exampletext}
+
+The entrance stands at almost double the height of a human, and only wide enough to crawl through, so not many will spot it.
+(and anyone with a Strength of +4 will have to remove their armour to fit through)
+
+Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
+
+With \roll{Wits}{Crafts} (\tn[14]) they might notice the bricks are a little different around that wall.
+
+With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
+
+\paragraph{Rifling through the desk}
+uncovers records of riddles\ldots hundreds of riddles.
 
 \mapentry[shadowGuardian]{Sleeping Guardians}
 
@@ -320,27 +341,7 @@ They take a long time to come to terms with their situation.
 
 The \glspl{pc} have a serious decision ahead: the three will need food, and to return to civilization.
 
-\mapentry[shadowDesk]{Empty Desks}
-
-\begin{exampletext}
-  This room once had a steep stone staircase up to it.
-  But with the guardians (\vpageref[above]{shadowGuardian}) sleeping peacefully, the proprietor didn't want leave them unprotected (even with the gate present).
-  So he ordered men to build a wall over the entrance, leaving a gap at the top so they could squeeze out.
-\end{exampletext}
-
-The entrance stands at almost double the height of a human, and only wide enough to crawl through, so not many will spot it.
-(and anyone with a Strength of +4 will have to remove their armour to fit through)
-
-Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
-
-With \roll{Wits}{Crafts} (\tn[14]) they might notice the bricks are a little different around that wall.
-
-With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
-
-\paragraph{Rifling through the desk}
-uncovers records of riddles\ldots hundreds of riddles.
-
-\mapentry[memoryOrb]{Empty Desks}
+\mapentry[memoryOrb]{Nuisance Orb}
 
 \begin{exampletext}
   The Nuisance Orb once sat on display for everyone to see, as it would entertain people with various illusions.
@@ -349,7 +350,9 @@ uncovers records of riddles\ldots hundreds of riddles.
   the staff became irritated by it, and eventually locked it away.
 \end{exampletext}
 
-\setcounter{wounds}{2}
+The Nuisance Rock cannot imitate people when locked in the little cell, and craves freedom more than anything.
+It can spend 2~\glspl{mp} to `see' around itself, 2~\glspl{mp} to make a convincing illusion of something, or 2~\glspl{mp} to create convincing sound.
+
 \artefact[2]{Nuisance Rock}% Name
   {A grey rock, covered by the illusion of a massive diamond.}% Body
   {-1}% Intelligence
@@ -369,112 +372,6 @@ uncovers records of riddles\ldots hundreds of riddles.
 \showStdSpells[
   \setcounter{diceNo}{0}
 ]
-
-\mapentry[shadowGuardian]{Sleeping Guardians}
-
-\begin{exampletext}
-  When the magical gateway shut, the local \gls{warden} tasked \pgls{doula} to resolve the situation.
-  Like anyone in her position, she told an enchanting story about success, then delegated the task.
-
-  Finding three people too young to know better, she arranged for some very fancy clothes, and declared them `Masters of the Riddle', and `Keepers of the Gate'.
-  Then she sent them into an enchanted state, preserving their bodies, and setting their minds to focus, without failure, on the single task of solving the riddle which had vexed all of \gls{valley}.
-
-  The first thought about how much he hated Maths.
-  The second thought about visualizing the riddle as a series of rivers, each one representing a possible set of questions and answers.
-  The third had already gone to sleep to dream of sex with his attractive neighbour.
-
-  With everyone's attention focussed on the `Masters of the Riddle', the \gls{doula} went home, and died peacefully shortly after.
-
-  The three rest in this hidden room to this day.
-\end{exampletext}
-
-\paragraph{Picking the lock}
-of the rusted steel gate requires a \roll{Strength}{Larceny} roll (\tn[16]).
-
-\paragraph{If the \glspl{pc} awaken any of the sleepers,}
-that one wakes the others up before doing anything else.
-
-The three `Keepers of the Gate' can explain everything concerning the reality of \gls{lostcity}, how the Shadow Gate once worked, and what happened, but they won't\ldots at least not for a while.
-They take a long time to come to terms with their situation.
-
-\NPC{\M\Hu}{Embersnatch}{lost in the clouds, still thinking about the last thing said}{\textit{`ya know, like?'}}{to return to a lost home}
-\setcounter{Intelligence}{-2}
-\person{1}% STRENGTH
-{0}% DEXTERITY 
-{0}% SPEED
-{{-3}% INTELLIGENCE
-{-2}% WITS
-{0}}% CHARISMA
-{0}% DR
-{1}% COMBAT
-{Crafts 1, Empathy 2}% SKILLS
-{\Dagger}% EQUIPMENT
-{}
-
-\begin{speechtext}
-  ``What's Ratpelt doing these days?''
-
-  \textit{\raggedleft\adforn{15} She's dead.}
-
-  ``Her mum won't be happy about that''
-
-  \textit{\raggedleft\adforn{15} Her mum's dead.}
-
-  ``Blimey. Her too?''
-
-  \textit{\raggedleft\adforn{15} It's been two \underline{hundred} years.}
-
-  ``Do I get birthday presents?
-  My mum always gets me a whole chicken for my birthday, ya know?''
-\end{speechtext}
-
-The \glspl{pc} have a serious decision ahead: the three will need food, and to return to civilization.
-
-\mapentry[shadowDesk]{Empty Desks}
-
-\begin{exampletext}
-  This room once had a steep stone staircase up to it.
-  But with the guardians (\vpageref[above]{shadowGuardian}) sleeping peacefully, the proprietor didn't want leave them unprotected (even with the gate present).
-  So he ordered men to build a wall over the entrance, leaving a gap at the top so they could squeeze out.
-\end{exampletext}
-
-The entrance stands at almost double the height of a human, and only wide enough to crawl through, so not many will spot it.
-(and anyone with a Strength of +4 will have to remove their armour to fit through)
-
-Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
-
-With \roll{Wits}{Crafts} (\tn[14]) they might notice the bricks are a little different around that wall.
-
-With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
-
-\paragraph{Rifling through the desk}
-uncovers records of riddles\ldots hundreds of riddles.
-
-\mapentry[memoryOrb]{Empty Desks}
-
-\begin{exampletext}
-  The Nuisance Orb once sat on display for everyone to see, as it would entertain people with various illusions.
-  But after one too many accidents%
-  \footnote{One rampaging basilisk, a false accusation of theft, and three accounts of indecent nudity.}
-  the staff became irritated by it, and eventually locked it away.
-\end{exampletext}
-
-\setcounter{wounds}{2}
-  {
-    \setcounter{Fire}{2}
-    \setcounter{Air}{2}
-    \setcounter{Academics}{2}
-    \setcounter{Crafts}{1}
-    \setcounter{Empathy}{2}
-    \setcounter{Deceit}{2}
-  }% Spheres
-
-\showStdSpells[
-  \setcounter{diceNo}{0}
-]
-
-The Nuisance Rock cannot imitate people when locked in the little cell, and craves freedom more than anything.
-It can spend 2~\glspl{mp} to `see' around itself, 2~\glspl{mp} to make a convincing illusion of something, or 2~\glspl{mp} to create convincing sound.
 
 \paragraph{If anyone passes by,}
 it creates an illusion of Goutscrape (area \vref{shadowGuardian}), begging to be let out of the cell.

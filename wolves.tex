@@ -93,10 +93,7 @@ He's also told them not to even look at it, because even a single glance at the 
 
 \renewcommand\npcQuote{You don't need to trust us to speak politely.  Can we start again?}
 
-\southSmith
-
 \Gls{southSmith} tries the following:
-
 
 \begin{enumerate}
   \item
@@ -110,6 +107,9 @@ He's also told them not to even look at it, because even a single glance at the 
 \end{enumerate}
 
 \humanarcher[\npc{\T[3]}{8 Archers}]
+
+\label{southSmith}
+\southSmith
 
 \paragraph{If the \glspl{pc} ask \gls{southSmith} about his business in the forest,}
 he continues to lie about his real intentions, then returns the question to them.
@@ -164,39 +164,46 @@ Check \vpageref{green_tower} for details on \gls{greentower}.
 \end{exampletext}
 
 The \glspl{wolfhead} come across the troupe at the same time as another encounter.
-How they react depends entirely on their previous dealings -- those who like the \glspl{pc} help, those who don't stand back.
-
-\paragraph{If the \pgls{pc} has tried to kill any of the \glspl{wolfhead},}
-none of them help.
-Instead, they stand back and have a good laugh.
+How they react depends entirely on their previous dealings.
 
 \sqpart{Roads}% AREA
 {A Cry for Help}% NAME
 {The troupe find the \glsfmtplural{wolfhead} under attack}% SUMMARY
 
-While on their many expeditions past the \gls{edge}, three of the \glspl{wolfhead} have run into trouble.
+The \gls{wolfhead} have located the Shadow Vault, so they journeyed out to find it, each of them with 6 days' worth of rations.
+But before they could breath the \gls{edge}, a predator took them off-guard.
+
 Select the highest possible encounter for the season (such as a basilisk during a mild season), then double their usual numbers, and have them attack the \glspl{wolfhead}.
 
 \basilisk[\npc{\T[2]\A}{\arabic{noAppearing} Basilisks}]
 
-\setcounter{wounds}{5}
+% Show South Smith again, but not if he's on the facing page.
+\ifodd\thepage
+  \vpagerefnearby{southSmith}{}{
+    \setcounter{wounds}{5}
+    \southSmith
+  }
+\else
+    \setcounter{wounds}{5}
+    \southSmith
+\fi
 
-\southSmith
-
-\Gls{southSmith}'s arm bleeds from a nasty wound.
+\Gls{southSmith}'s arm bleeds from a nasty wound, and \gls{beardedalemaster} isn't doing much better.
 
 \setcounter{wounds}{3}
 \beardedalemaster
 
 \southRogue
 
-\sqpart{Roads}% AREA
+After this \gls{segment}, the \glspl{wolfhead} return to \gls{town} to rest and heal, at \gls{town}'s \gls{templeOfSickness}.
+
+\sqpart{Town}% AREA
 {The Deal}% NAME
-{The \glsentrytext{wolfhead} ask the troupe to join them}% SUMMARY
+{The \glsentrytext{wolfhead} decide how they feel about the troupe}% SUMMARY
 
 The \gls{wolfhead} have found both magical gateways, and need to secure their assets.
+What happens here depends on so much\ldots
 
-What happens after the other \gls{sq} \glspl{segment} have resolved depends on so much.
 Perhaps the \gls{wolfhead} feel indifferent to the \glspl{pc}.
 Perhaps they want to kill the \glspl{pc}.
 However, if they feel they can trust the \glspl{pc}, then they will propose an alliance, just as soon as they can find the \glspl{pc}.
@@ -205,11 +212,7 @@ As luck would have it, \gls{southRogue} meets up with them first.
 
 \paragraph{The setting}
 depends on where exactly the \glspl{pc} find themselves.
-Perhaps \gls{southRogue} finds them in \pgls{bothy}, or while travelling with a caravan of traders on the roads.
-
-\paragraph{The proposal}
-must wait until the \glspl{pc} meet the \glspl{wolfhead} in \gls{town}.
-The \gls{wolfhead} could do with some muscle, both to help them get about safely, and to secure their magical gateways.
+Perhaps \gls{southRogue} finds them in \gls{pig}, or while travelling with a caravan of traders on the roads.
 
 \paragraph{If all goes well,}
 the \glspl{pc} and \glspl{wolfhead} can make a plan.

@@ -1,22 +1,56 @@
 \section{\Glsentrytext{whiteplains} Outpost}
+\label{banditLair}
 
 \renewcommand\csComments{
   \randomdozen
   \callout[9]{14,12}{-.5,-2}{Watch Point}{\dicef{6}}
   \callout[10]{15.5,7}{-2.5,-1}{Beds,}{beers, and outhouse \dicef{12}}
-  \callout[6]{12.8,2.5}{-2,1.3}{Weapons Storage}{shortsword x 12, longbow x 14, round shield x 2}
-  \callout[8]{10,0.3}{0,0.5}{Watch Point}{ with indoor fire}
+  \callout[6]{12.8,2.5}{-2,1.3}{Horse Supplies}{70 days worth of food}
+  \callout[8]{10,0.3}{0,0.5}{Stables}{with \dicef{12} horses}
   \callout{6.5,1.6}{.7,1.4}{Large Gate}{$\dicef{3}-1$}
   \callout{3.8,2.5}{1.3,2.5}{Watch Point}{$\dicef{2}-1$}
   \callout[7]{1.5,2}{0.8,4}{Archers}{play cards through the night $\dicef{6} + 1$}
   \callout[7]{0,4.5}{1.3,2.3}{Supplies \& Beds}{$3\times$ shortsword, \arabic{r12}00~\glspl{cp}.  $\dicef{6} + 1$}
   \callout[5]{0,9.5}{0.2,-1.7}{False Welcome}{}
   \callout[8]{6,11.3}{0,-1.5}{\Glsentrytext{banditking}'s Room}{\arabic{r12}0~\glspl{sp}}
-  \callout[8]{2,10.6}{2,-1.3}{\Glspl{ingredient} Workshop}{}
-  \callout{9,13}{-0.1,-6}{Food!}{}
-  \callout{10,11}{-0.2,-1}{Gate:}{murder holes $\dicef{3}-1$}
+  \callout[8]{2,11}{2,-1.3}{\Glspl{ingredient} Workshop}{}
+  \callout[10]{9,13}{-0.1,-6}{shortsword x 12, longbow x 14, round shield x 2}{}
+  \callout{11,10.5}{-0.9,-1}{Gate:}{murder holes $\dicef{3}-1$}
 }
 
 \widePic{Dyson_Logos/bandit_camp}
 
+\begin{multicols}{2}
 \histEvent{5}{6}{\Glsfmttext{banditking} begins building a secret \glsfmttext{village}}
+
+\begin{exampletext}
+  \noindent
+  \Gls{banditking} heard about these interesting hills from \gls{sewerthief} last \gls{cycle}, and immediately began making connections with the nearby \glspl{village}.
+  The area lets out almost no light throughout the night, even with a raging fire in the middle.
+  The surrounding mountains provides an early dusk, which helps keeps the covert \gls{village} cool, and keep supplies fresh.
+\end{exampletext}
+
+When the weather clears, neighbouring \glspl{village} can see the light plumes of smoke from the \nameref{banditLair}.
+They gossip about it on occasion, but won't mention it to outsiders -- they suspect the money's coming from some `tax-dodging new \gls{village}', and don't mind so long as they keep buying all the food for a good price.
+
+As \gls{banditking} returns, he stores the wagons a mile from the outpost, then takes the horses the last bit of the journey, after covering the wagons in forest leaves.
+He can't trust the bandits, so he buries his coinage in the forest, and collects it before leaving to make purchases at the four neighbouring \glspl{village}.
+
+\begin{dlist}
+  \item
+  \Gls{banditking} returns from \gls{town} with \dicef{12} bandits.
+  He has money from \gls{sewerking}.
+  \item
+  Bandits drink -- each has a -1 Penalty.
+  \item
+  Bandits have begun to fight.
+  If \gls{banditking} is present, he breaks it up.
+  \item
+  The bandits kill, then eat, a wandering monster.
+  \item
+  \Gls{banditking} returns with \dicef{12} men, on horseback.
+  \item
+  \Gls{banditking} sneaks out with some bags of cash, to bury it in the forest.
+\end{dlist}
+
+\end{multicols}

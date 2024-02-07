@@ -185,7 +185,7 @@
 }
 
 \newcommand{\townmaster}{
-  \humandiplomat[\NPC{\M\Hu}{\glsentrytext{townmaster}}{enthusiastic}{shouts `ha!'}{to hear news of victorious, glorious, battles}]
+  \NPC{\M\Hu}{\glsentrytext{townmaster}}{enthusiastic}{shouts `ha!'}{to hear news of victorious, glorious, battles}
 }
 
 \newglossaryentry{townmaster}{
@@ -799,7 +799,8 @@
 \newglossaryentry{alchemist}{
   name={Cleftwarp},
   text={Cleftwarp},
-  first={\Glsfmttext{seeker} Cleftwarp},
+  first={Cleftwarp},
+  prefix={Seeker\space},
   sort={Cleftwarp},
   type={peeps},
   category={people},

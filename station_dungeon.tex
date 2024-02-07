@@ -7,11 +7,16 @@
 \begin{multicols}{2}
 
 \begin{exampletext}
-  Some time ago, the guards captured an ogre, and \gls{townmaster} ordered them to keep it alive so he and \gls{alchemist} could better understand it.
+  Last month, an ogre escaped past the golden priests, and ran through \gls{valley}, eating every auroch, chitincrawler, and human he came across.
+  And by some miracle, \pgls{guard} managed to capture and bind him.
+
+  \Gls{townmaster} ordered the \gls{sunGuard} to keep it alive so he and \gls{alchemist} could better understand it.
   Since then he's forgotten about it, but the guards have to keep feeding it.
 
   The ogre can't speak the local language, but everyone knows what it wants to say -- `food'.
   Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the great door as a massive, grabbing hand reaches out the shutter and piles the food into its mouth.
+  Sometimes it tries to grab the guard feeding it.
+  Sometimes it grabs the cart of food and throws it at the guard.
 \end{exampletext}
 
 \paragraph{If the \glspl{pc} enter as prisoners,}
@@ -45,28 +50,28 @@ The higher ranking guards leave the wine here, and won't tell Cronsink how to op
 \paragraph{If any prisoners listen carefully,}
 they will hear the bottles being deposited while guards talk about the excellent vintage.
 
-\mapentry[guardStationRoom]{Guard Station}
+\mapentry[guardStationRoom]{Shitlist Lodgings}
 
-The \glspl{sunGuard} on \glsentrytext{captain}'s shitlist have to sleep down here.
+The \glspl{sunGuard} on \gls{captain}'s shitlist have to sleep down here.
 Another guard stays in the \nameref{mainPrisonRoom}, room~\ref{mainPrisonRoom}, below, so that two remain on shift at all times.
 
 Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, along with another for the ogre (in room~\ref{ogreCell}) and a fourth key for the chest in room~\ref{thingsRoom}.
 
-\NPC{\F\Hu}{Hordcut the Guard}{arrogant}{``ha!, sure''}{guild promotion}
+\NPC{\F\Hu}{Hordcut the Guard}{arrogant}{`ha!, yea right\ldots'}{a promotion}
 \person{1}% STRENGTH
-{2}% DEXTERITY 
-{0}% SPEED
-{{0}% INTELLIGENCE
-{0}% WITS
-{-1}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{
-  Deceit~1, Crafts~1
-  \knacks{\brawler, \berserker}
-}% SKILLS
-{\shortsword}% EQUIPMENT
-{}
+  {2}% DEXTERITY 
+  {0}% SPEED
+  {{0}% INTELLIGENCE
+  {0}% WITS
+  {-1}}% CHARISMA
+  {0}% DR
+  {2}% COMBAT
+  {
+    Deceit~1, Crafts~1
+    \knacks{\brawler, \berserker}
+  }% SKILLS
+  {\shortsword, \partialplate}% EQUIPMENT
+  {}
 
 \mapentry[mainPrisonRoom]{Main Hall}
 
@@ -84,15 +89,16 @@ At least one guard remains here at all times.
 
 \humanfarmer[\NPC{\M}{Cronsink the Guard}{hopeful}{swigs bottle}{to be able to sing}]
 
-\mapentry[dunCells]{The Cells}
+\mapentry[dunCells]{Bard Cell}
 
-\paragraph{The top left cell}
-houses \gls{warningbard} (assuming somoeone arrested him)%
+If the \gls{sunGuard} have arrested \gls{warningbard}%
 \footnote{See page \pageref{warningbard}.},
-who sits singing to himself.
+he sits here, singing to himself.
 
-\paragraph{The bottom right cell contains Spybroth,}
-and if anyone speaks hopefully about escape, he tells them what will go wrong with the plan.
+\mapentry[dunBro]{Oh Brother\ldots}
+
+Spybroth sits here, depressed about his past (he shouted that \gls{townmaster}'s last verdict in the \gls{court} was an outrage) and future (most likely the \gls{guard}).
+If anyone speaks hopefully about escape, he tells them everything that will go wrong with the plan.
 
 If the \glspl{pc} prove one of his melancholic predictions wrong, he helps them escape, then goes to hide with his sister, \gls{librarian} in the \gls{paperGuild}.
 
@@ -128,6 +134,8 @@ Their other possessions lie scattered across the room, along with some musical i
 \mapentry[ogreCell]{Ogre's Cell}
 
 Here the wretched ogre stays, unable to do more than sing, and eat too seldomly.
+With a \roll{Intelligence}{Performance} roll (\tn[12]), a character might sing along.
+From that point on, Laban will trust them, and not eat them unless he has no other food.
 
 \npc{\M\N}{Laban the Ogre}
 \person{7}% STRENGTH
@@ -137,10 +145,15 @@ Here the wretched ogre stays, unable to do more than sing, and eat too seldomly.
   {-2}% WITS
   {-4}}% CHARISMA
   {0}% DR
-  {2}% COMBAT
-  {Crafts~1, Tactics~1}% SKILLS
+  {0}% COMBAT
+  {}% SKILLS
   {Nothing}% EQUIPMENT
-  {}
+  {
+    \setcounter{Brawl}{2}
+    \setcounter{Combat}{1}
+    \setcounter{Crafts}{1}
+    \setcounter{Tactics}{1}
+  }
 
 \paragraph{If anyone stages a breakout,}
 Laban comes with them, but immediately stops to eat anything (or anyone) he can.

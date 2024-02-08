@@ -1,14 +1,17 @@
 \widePic{Dyson_Logos/redfall}
 
-\subsection{\glsentrytext{redfall}}
+\section{\Glsfmttext{redfall}}
 \label{redfallVillage}
-\index{Redfall}
+\begin{multicols}{2}
 
 \Gls{redfall} lies safely away from the \gls{edge}, and lies close to its guardian keep where the villagers can run if serious trouble rises.
 The people in the area create pottery from the rich clay deposits.
+They also enjoy a rarity in \gls{fenestra} -- fruit trees.
+Large patches of foliage, fern, and trees invite predators to hide in their shadows, but these creatures so rarely approach this close to \glsentrytext{town}, that \gls{redfall} enjoys them safely.
+\ldots or they did until \gls{nurabaron} ate all of their fruit, and demanded seconds.
 
 The recent hike in taxes has driven the now-hungry villagers to desperate means.%
-\footnote{See page \pageref{desperatemeasures} for more on \glsfmttext{nurabaron}'s draconic taxes.}
+\footnote{See \vpageref{desperatemeasures} for more on \glsfmttext{nurabaron}'s heavy taxes.}
 
 \begin{boxtext}
   \Gls{redfall} seems peaceful, almost idyllic, as children play next to copse of trees without any fear of beasts waiting for them inside.
@@ -16,7 +19,7 @@ The recent hike in taxes has driven the now-hungry villagers to desperate means.
   Ahead, the keep stands three stories high.
 \end{boxtext}
 
-\paragraph{When the PCs enter,}
+\paragraph{When the \glspl{pc} enter,}
 if they look like like might be officials or soldiers of any type, the villagers act natural at first, but arrange to surround the troupe at the bridge.
 
 \begin{boxtext}
@@ -29,12 +32,7 @@ if they look like like might be officials or soldiers of any type, the villagers
 
 \end{boxtext}
 
-\paragraph{If the PCs try to reassure the villagers,}
-have them roll Strength + Empathy (TN 9) to holler their message clearly to everyone present.
-
-Failure indicates a nasty pelting, although the villagers don't intend to kill the anyone -- just drive them off.
-
-\npc{\T[4]\E\Hu}{20 Angry Farmers}
+\npc{\T[4]\Hu}{20 Angry Farmers}
 \person{2}% STRENGTH
 {0}% DEXTERITY 
 {0}% SPEED
@@ -47,20 +45,22 @@ Failure indicates a nasty pelting, although the villagers don't intend to kill t
 {Sack-of-rocks, face-covering}% EQUIPMENT
 {}
 
-\paragraph{If the PCs ask about the keep,}
+\paragraph{If the \glspl{pc} try to reassure the villagers,}
+have them roll \roll{Strength}{Empathy} (\tn[9]) to holler their message clearly to everyone present.
+
+Failure indicates a nasty pelting, although the villagers don't intend to kill the anyone -- just drive them off.
+
+\paragraph{If the \glspl{pc} ask about the keep,}
 the villagers complain bitterly, but have no idea that \gls{nurabaron} has become a monster.
 
 \paragraph{If the troupe attempt to persuade the villagers to assault the keep,}
-they can succeed with a Charisma + Tactics roll, TN 10
+they can succeed with a \roll{Charisma}{Tactics} roll, \tn[10]
 (the villagers feel more confident with a strong character leading them).
 Of course the villagers also know that the fortress is armed with archers, and will only agree to enter if the troupe have a solid plan concerning the archers.
 
-\paragraph{If the keep ever becomes surrounded by peasants,}
-\gls{nurabaron} will run out to an archer's post with a massive bag of food doused in ogre-dust.
-He will pour it down, shouting apologies about the lack of food, and any villagers who eat the food will begin to turn into ogres.
-If the troupe aren't quick, they'll be in a keep surrounded by ogres.
-There isn't enough food for everyone, so after some turn into ogres, they'll start to eat the others, and many will simply flee.
-This will leave ten ogres who chase the villages, ten more who bang on the gates, and ten who decide to go round the back of the keep to look fruitlessly for alternative entrances.
+Roll Morale checks for all involved, as usual.%
+\exRef{judgement}{Judgement}{morale}
+The battle will likely end before either side loses too many members.
 
 \mapPic{t}{Dyson_Logos/redfall_keep}{
   \huge\ref{redTower}/05/68,
@@ -88,20 +88,19 @@ The keep contains a conspiracy: everyone in there knows that they harbour monste
 \mapentry[redTower]{Towers}
 
 Each of the towers has two archers, ready to protect their patron, \gls{nurabaron}, as long as nobody gets too close.
+If approached, they surrender.
 
 \humanarcher[\npc{\T[4]\M\Hu}{2 Archers}]
 
 \boxPair[t]{
-
-\smolMapPic{Dyson_Logos/redfall_top}{
-  \Large\rotatebox{-90}{\nameref{redFamily}}/07/38,
-  \ref{redFamily}/175/20,
-  \Large\rotatebox{-45}{\nameref{redStorage}}/67/44,
-  \ref{redStorage}/74/20,
-}
-
+  \smolMapPic{Dyson_Logos/redfall_top}{
+    \Large\rotatebox{-90}{\nameref{redFamily}}/07/38,
+    \ref{redFamily}/175/20,
+    \Large\rotatebox{-45}{\nameref{redStorage}}/67/44,
+    \ref{redStorage}/74/20,
+  }
 }{
-  \NPC{\M\N}{Benjie -- ``the Toddler''}{Playful}{Fingers in mouth}{Tribe}
+  \NPC{\M\N}{Bairnpelt -- ``the Toddler''}{Playful}{Fingers in mouth}{Milk}
   \person{3}% STRENGTH
   {-1}% DEXTERITY 
   {2}% SPEED
@@ -115,12 +114,6 @@ Each of the towers has two archers, ready to protect their patron, \gls{nurabaro
   {}
 }
 
-\boxPair[b]{
-  \nurabaron
-}{
-  \ogre[\npc{\T[2]\N\F}{Marjorie \& Beth}]
-}
-
 \mapentry[redYard]{Courtyard}
 
 This open courtyard makes archery an easy job.  Anyone outside can easily be picked off if they do not have adequate shielding.
@@ -131,31 +124,41 @@ The dwindling food supplies are kept here.  They build up to monstrous amounts, 
 
 \mapentry[redServants]{Servants' Quarters}
 
-This place holds various cots, chests, and washing equipment.  At present only six members of staff remain -- two cooks, two butlers, one diplomat,\footnote{See page \pageref{thorn} for Thorn the diplomat.} and James the tax collector.
+This place holds various cots, chests, and washing equipment.
+At present only six members of staff remain -- two cooks, two butlers, one diplomat,%
+\footnote{See \vpageref{thorn} for Thorn the diplomat.}
+and Tollfen the tax collector.
+
+\boxPair{
+  \nurabaron
+}{
+  \ogre[\npc{\T[2]\N\F}{Carnfin \& Cloistra}]
+}
+
+\mapentry[redSmolYard]{Small Courtyard}
+
+This area holds a thin, thatched roof, and plenty of space for games without getting wet.
+It's used as a common area by the servants.
 
 \mapentry[redToilet]{Toilet}
 
 This spacious lavatory comes with a runoff to the river outside.
 It also hosts arrow slits to fire at intruders on the river.
-Small characters (with Strength of 0 or less) can fit through the gap from outside, if they are not wearing armour.
-
-\mapentry[redSmolYard]{Small Courtyard}
-
-This area holds a thin, thatched root, and plenty of space for games without getting wet.
-It's used as a common area by the servants.
+Small characters, with Strength of 0, can fit through the gap from outside, if they are not wearing armour.
+Those with Strength -1 or less can fit through even with armour on.
 
 \morphhorse[\npc{\N\A}{Janus, the Demonic Horse}]
 
-One of the horses here was accidentally hit by some of the ogre-dust which affected \gls{nurabaron} and his family.  It ate the others, but despite the men protesting, \gls{nurabaron} has insisted on keeping it alive and very well fed.
+\Gls{nurabaron}'s horse -- Janus -- was affected by the monstrous spell which gave him such strength.
+He still rides Janus, happily, but only at night, when nobody can see him.
+The horse eats an obscene amount of food each day.
 
-\mapentry[redChild]{Benjie's Room}
+\mapentry[redChild]{Bairnpelt's Room}
 
-\Gls{nurabaron}'s youngest son Benjie is only a toddler.
+\Gls{nurabaron}'s youngest son Bairnpelt is only a toddler.
 He doesn't understand his condition, and has no self control.
 This makes him dangerous, so the family have decided to lock him in this little room.
 Characters on the river or anywhere near this room can hear intermittent banging, and infant-like gurgling.
-
-\mapentry[redHall]{Great Hall}
 
 \begin{boxtext}
 
@@ -163,28 +166,34 @@ Characters on the river or anywhere near this room can hear intermittent banging
 
 \end{boxtext}
 
-A heavy wooden door guards the entrance well, and a gate sits in front of that.  Lifting the gate takes a Strength + Athletics roll, TN 10, but the locks on the door don't give much resistance; players can pick them with Intelligence + Larceny, TN 6.  The bars are slim enough that anyone with a Weight Rating of 5 or less can just about squeeze through.
+\mapentry[redHall]{Great Hall}
 
-The hallways contains a long, messy dining table, covered in scraps of bones from all manner of animal.  The side alcoves contain little beds for guards to sleep in.  Four guards are in the area at any one time.
+A heavy wooden door guards the entrance well, and a gate sits in front of that.
+Lifting the gate takes a \roll{Strength}{Athletics} roll, \tn[10], but the locks on the door don't give much resistance; players can pick them with \roll{Intelligence}{Larceny}, \tn[8].
+The bars are slim enough that anyone with a \gls{weight} of 5 or less can just about squeeze through.
 
-The baron can usually be found dining here, shouting at guards about some imagined insult, or just terrifying people for the fun of it.  Thorn, his trusted advisor, is the only one who can calm him down when he gets into a rage.
+The hallways contains a long, messy dining table, covered in scraps of bones from all manner of animal.
+The side alcoves contain little beds for guards to sleep in.  Four guards are in the area at any one time.
+
+The baron can usually be found dining here, shouting at guards about some imagined insult, or just terrifying people for the fun of it.
+Thorn, his trusted advisor, is the only one who can calm him down when he gets into a rage.
 
 \mapentry[redStorage]{Old Storage Shelves}
 
-Here the servants rest.
-The armoury was once staffed by men at arms, but now has nothing but ogre-powder and other magical items from \glsentrylong{sewerking}.
-Anyone disturbing the contents of this room must make a Dexterity + Crafts check, TN 7, or risk toppling something and spilling the powder everywhere, which will affect the characters as per the Saurecanta sphere (see \textit{Fenestra}\iftoggle{aif}{\autopageref{saurecanta}}{});
-specifically, they get +2 to Strength and Speed, but -4 to Intelligence and Charisma.
+\Gls{nurabaron} sold most of the arms here to purchase food, so the room now mostly holds pickled fish, wines, salted meats, and vegetables.
+
+A \roll{Wits}{Larceny} roll (\tn[10]) reveals some bags of coinage, cleverly wedged under the stacks of pickled fish.
+Removing the coins, without making a sound, requires a \roll{Dexterity}{Larceny} roll (\tn[12]).
+Bag 1 has \lootMedium, bag 2 has \lootMedium, and bag 3 has \lootBig.
 
 \mapentry[redFamily]{Hidden Family}
 
-In the upper floor, \gls{nurabaron}'s wife Marjorie stays with three of her children -- two boys and a girl.
+The family have taken to sleeping in a single room -- a pile of straw and knotted bedding which stinks like sickness.
+\Gls{nurabaron}'s wife Carnfin is here, with her two boys, and one daughter.
 All are a little too dangerous to be trusted wandering alone, so only one is let out of their room at a time.
 
-These two attack fiercely, but retreat if any bargains have been made after a single round.
+The two brothers were never good at listening, and will attack anyone who enters the upper floor, unless Carnfin is nearby to talk them down.
 
-The two brothers were never good at listening, and will attack with abandon, unless Marjorie is nearby to talk them down.
+\ogre[\npc{\T[2]\N\M}{Coreolis \& Sinfall}]
 
-\ogre[\npc{\T[2]\N\M}{Richard \& Jim}]
-
-
+\end{multicols}

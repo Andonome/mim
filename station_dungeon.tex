@@ -1,23 +1,37 @@
-\subsection[the Dungeon]{The Dungeon}
+\prisonMap
+
+\section{Station Dungeon}
 \label{stationDungeon}
 \index{Prison}
 
-\textbf{Background:}
-Some time ago, the guards captured an ogre, and \gls{townmaster} ordered them to keep it alive so he could better understand the nura, and perhaps to bring it out as a pet one day.  Since then he's forgotten about it, but the guards have to keep feeding it.  Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the great door as a massive, grabbing hand reaches out the shutter and piles the food into its mouth.
+\begin{multicols}{2}
 
-\paragraph{If the PCs enter as prisoners,}
+\begin{exampletext}
+  Last month, an ogre escaped past the golden priests, and ran through \gls{valley}, eating every auroch, chitincrawler, and human he came across.
+  And by some miracle, \pgls{guard} managed to capture and bind him.
+
+  \Gls{townmaster} ordered the \gls{sunGuard} to keep it alive so he and \gls{alchemist} could better understand it.
+  Since then he's forgotten about it, but the guards have to keep feeding it.
+
+  The ogre can't speak the local language, but everyone knows what it wants to say -- `food'.
+  Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the great door as a massive, grabbing hand reaches out the shutter and piles the food into its mouth.
+  Sometimes it tries to grab the guard feeding it.
+  Sometimes it grabs the cart of food and throws it at the guard.
+\end{exampletext}
+
+\paragraph{If the \glspl{pc} enter as prisoners,}
 they will have to think a lot about how to escape -- this won't be easy!
 
 \paragraph{If anyone tries to pick the locks,}
 they will need to craft some make-shift equipment first, and make sure nobody is listening to them.
-The roll is Intelligence + Larceny, TN 12.
+The roll is \roll{Intelligence}{Larceny}, \tn[12].
 
-Once one lock has been picked, the characters gains a +1 bonus on every cell in the same row.
+Once one lock has been picked, the characters gains a cumulative +1 bonus on every cell in the same row.
 
 \paragraph{Every day,}
 the guards give them two small meals and empty their bucket.
 
-The meals are so small that they gain 1 Fatigue Point, daily.
+The meals are so small that they gain 1 \gls{fatigue}, daily.
 
 \paragraph{On day 2,}
 a scout form the \gls{guard} gets thrown in a cell for dereliction of duty (he living with villagers and sending back false reports).
@@ -30,41 +44,39 @@ She will stay here only one night.
 
 Every day, the guards take the food cart down to the hall, and unload the contents into this room.
 
-\paragraph{The chest}
-contains is an intricate knot, and contains good quality wine.
+A chest, sealed with an intricate knot, contains good quality wine.
 The higher ranking guards leave the wine here, and won't tell Cronsink how to open it.
 
 \paragraph{If any prisoners listen carefully,}
 they will hear the bottles being deposited while guards talk about the excellent vintage.
 
-\mapentry[guardStationRoom]{Guard Station}
+\mapentry[guardStationRoom]{Shitlist Lodgings}
 
-The guards on \glsentrytext{captain}'s shitlist have to sleep down here.
-Another guard stays in the \nameref{mainPrisonRoom}, room \ref{mainPrisonRoom}, below, so that two remain on shift at all times.
+The \glspl{sunGuard} on \gls{captain}'s shitlist have to sleep down here.
+Another guard stays in the \nameref{mainPrisonRoom}, room~\ref{mainPrisonRoom}, below, so that two remain on shift at all times.
 
-Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, along with another for the ogre (in room \ref{ogreCell}) and a fourth key for the chest in room \ref{thingsRoom}.
+Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, along with another for the ogre (in room~\ref{ogreCell}) and a fourth key for the chest in room~\ref{thingsRoom}.
 
-\NPC{\F}{Hordcut the Guard}{arrogant}{``ha!, sure''}{guild promotion}
+\NPC{\F\Hu}{Hordcut the Guard}{arrogant}{`ha!, yea right\ldots'}{a promotion}
 \person{1}% STRENGTH
-{2}% DEXTERITY 
-{0}% SPEED
-{{0}% INTELLIGENCE
-{0}% WITS
-{-1}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{
-  Deceit 1, Crafts 1
-  \knacks{\brawler, \berserker}
-}% SKILLS
-{\shortsword}% EQUIPMENT
-{}
+  {2}% DEXTERITY 
+  {0}% SPEED
+  {{0}% INTELLIGENCE
+  {0}% WITS
+  {-1}}% CHARISMA
+  {0}% DR
+  {2}% COMBAT
+  {
+    Deceit~1, Crafts~1
+    \knacks{\brawler, \berserker}
+  }% SKILLS
+  {\shortsword, \partialplate}% EQUIPMENT
+  {}
 
 \mapentry[mainPrisonRoom]{Main Hall}
 
 At least one guard remains here at all times.
 \begin{itemize}
-
   \item
   When Hordcut is on shift, she tells the prisoners to shut up.
   If they don't, she'll open the doors and bash their heads in.
@@ -73,24 +85,24 @@ At least one guard remains here at all times.
   He passes out from drinking too much shortly afterwards.
   \item
   When both are up and awake, they play cards together, and he complains that Hordcut always wins.
-
 \end{itemize}
 
 \humanfarmer[\NPC{\M}{Cronsink the Guard}{hopeful}{swigs bottle}{to be able to sing}]
 
-\mapentry[dunCells]{The Cells}
+\mapentry[dunCells]{Bard Cell}
 
-\paragraph{The top left cell}
-houses \gls{warningbard} (assuming somoeone arrested him)%
+If the \gls{sunGuard} have arrested \gls{warningbard}%
 \footnote{See page \pageref{warningbard}.},
-who sits singing to himself.
+he sits here, singing to himself.
 
-\paragraph{The bottom right cell contains Ram,}
-and if anyone speaks hopefully about escape, he tells them what will go wrong with the plan.
+\mapentry[dunBro]{Oh Brother\ldots}
 
-If the PCs prove one of his melancholic predictions wrong, he helps them escape.
+Spybroth sits here, depressed about his past (he shouted that \gls{townmaster}'s last verdict in the \gls{court} was an outrage) and future (most likely the \gls{guard}).
+If anyone speaks hopefully about escape, he tells them everything that will go wrong with the plan.
 
-\NPC{\M}{Ram}{doomsayer}{sings `nobody knows the trouble I've seen'}{freedom}
+If the \glspl{pc} prove one of his melancholic predictions wrong, he helps them escape, then goes to hide with his sister, \gls{librarian} in the \gls{paperGuild}.
+
+\NPC{\M\Hu}{Spybroth}{doomsayer}{sings `nobody knows the trouble I've seen'}{freedom}
 \person{1}% STRENGTH
 {0}% DEXTERITY 
 {1}% SPEED
@@ -102,53 +114,49 @@ If the PCs prove one of his melancholic predictions wrong, he helps them escape.
 {Larceny 1, Stealth 2, Wyldcrafting 1}% SKILLS
 {Nothing}% EQUIPMENT
 {}
+\label{spyBroth}
 
 \mapentry[dunGrate]{The Grate}
 
 Here all the filth and debris collected from the prisons gets thrown in the hole.
 
 \paragraph{Breaking the grate open}
-requires a Strength + Crafts roll (TN 10).
-It leads straight downwards to room \ref{sewerPig} in \lowercase{\nameref{sewers}} (page \pageref{sewerPig}).
-Anyone falling down the hole receives 2D6 Damage, then lands in the stream leading into an abyss.
-The dirty hole offers zero purchase.
+requires a \roll{Strength}{Crafts} roll (\tn[10]).
+It leads straight downwards to room~\vref{sewerWaterHall} in \nameref{sewers}.
 
 \mapentry[thingsRoom]{Prisoners' Possessions}
 
-\paragraph{The chest}
-contains any valuable items the prisoners carried which might fit inside the chest.
-The key rests in room \ref{guardStationRoom}.
+The chest contains any valuable items the prisoners carried which might fit inside the chest.
+The key rests in room~\ref{guardStationRoom}.
 
 Their other possessions lie scattered across the room, along with some musical instruments.
 
 \mapentry[ogreCell]{Ogre's Cell}
 
-\textbf{Background:}
-Laban once wandered the lonely roads as a trader, but then \Gls{sewerking} turned him into an ogre, just to practice his nuramancy sphere.
-
-\paragraph{If anyone asks Laban how he's doing,}
-he starts by saying he's hungry, but can continue the conversation -- he still remembers being a man, but has trouble thinking straight any more.
-
-\paragraph{If anyone stages a breakout,}
-Laban agrees, but immediately stops to eat anything (or anyone) he can.
-Once satiated, he will continue following anyone leading a prison break.
+Here the wretched ogre stays, unable to do more than sing, and eat too seldomly.
+With a \roll{Intelligence}{Performance} roll (\tn[12]), a character might sing along.
+From that point on, Laban will trust them, and not eat them unless he has no other food.
 
 \npc{\M\N}{Laban the Ogre}
-
-  \person{7}% STRENGTH
+\person{7}% STRENGTH
   {0}% DEXTERITY
   {4}% SPEED
   {{-3}% INTELLIGENCE
   {-2}% WITS
   {-4}}% CHARISMA
   {0}% DR
-  {2}% COMBAT
-  {Crafts~1, Tactics~1}% SKILLS
+  {0}% COMBAT
+  {}% SKILLS
   {Nothing}% EQUIPMENT
-  {}
+  {
+    \setcounter{Brawl}{2}
+    \setcounter{Combat}{1}
+    \setcounter{Crafts}{1}
+    \setcounter{Tactics}{1}
+  }
 
-\mapPic{t}{Dyson_Logos/white_horse_2}{
-  \ref{horseHall}/18/45,
-  \ref{horseKitch}/68/53,
-  \ref{horseYard}/88/57,
-}
+\paragraph{If anyone stages a breakout,}
+Laban comes with them, but immediately stops to eat anything (or anyone) he can.
+Once satiated, he will continue following anyone leading a prison break.
+
+\end{multicols}

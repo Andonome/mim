@@ -1,65 +1,51 @@
-\documentclass[a4paper,openany]{book}
+{
+  \raggedleft
+  \titleFont
+  Need more salt -- food rotten.
 
-\usepackage{config/bind}
-\input{glossary.tex}
+  \Gls{pigowner} -- 30 gold.
 
-\title{Player Handouts}
+  \includesvg[origin=c,height=\textheight]{images/Dyson_Logos/sewer}
+}
+{
+  \titleFont
+  Citadel tunnel almost done.
+  100 more steps?
+}
 
-\begin{document}
-
-\frontmatter
-
-\input{market.tex}
-
-\pagebreak
-
-\pic{Dyson_Logos/sewer}
-
-\hrule
-
-\vspace{2em}
-
-Citadel tunnel almost done.
-
-Need more salt -- some of the food is rotten.
-
-Tell \gls{sewerthief} to stop stealing my sandwiches.
-
-\Gls{banditking} owes me 30gp.
-
-Possible portal -- near \gls{redfall}.
-
-\pagebreak
+\cleardoublepage
 
 \includesvg[origin=c,angle=90,height=\textheight]{images/Dyson_Logos/old_alchemy_top}
 
 \begin{center}
 \begin{minipage}{.7\textwidth}
-\Large
+{
+\titleFont\Large
 Herein the alchemists profited the surrounding lands greatly, bringing forth from their tower and basement wondrous artefacts and learning.
 
 These items may be found in many a shop and stall across the land, with both men and quen.
+}
 
 \end{minipage}
 \end{center}
 
-\pagebreak
+\cleardoublepage
 
 \includesvg[origin=c,angle=90,height=\textheight]{images/Dyson_Logos/qualme_temple_old.svg}
 
-\pagebreak
+\cleardoublepage
 
 \includegraphics[origin=c,angle=90,height=.75\textheight]{images/Irina/greylands.jpg}
 
-\pagebreak
+\cleardoublepage
 
 \includesvg[angle=90,width=1.5\textwidth]{images/Dyson_Logos/town}
 
-\pagebreak
+\cleardoublepage
 
 \mapPic[\large]{t}{elvish_map}{}
 
-\pagebreak
+\cleardoublepage
 
 \mapPic[\large]{t}{elvish_map}{
   Songhome/74/81,
@@ -81,4 +67,7 @@ These items may be found in many a shop and stall across the land, with both men
   \footnotesize Humans/51/23,
 }
 
-\end{document}
+\cleardoublepage
+
+\includesvg[angle=90,width=1.5\textwidth]{images/extracted/shadow_gate_map}
+

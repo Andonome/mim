@@ -1,49 +1,80 @@
-\subsection{Lakeside Village}
-\index{Lakeside Village}
-\label{lakeside}
 
-\boxPair[t]{
-  \humandiplomat[\npc{\M\Hu}{Guildmaster Cronblight}]
-  \label{cronblight}
-}{
-  \humansoldier[\npc{\T[4]\E\Hu}{Lakeside Soldiers}]
+\mapPic{t}{Dyson_Logos/lakeside}{
+  \rotatebox{-40}{\nameref{lakeSquare}}/51/45,
+  \ref{lakeSquare}/46/43,
+  \rotatebox{-40}{\nameref{lakeTemple}}/78/81,
+  \ref{lakeTemple}/70/79,
+  \rotatebox{40}{\nameref{lakeDocks}}/16/68,
+  \ref{lakeDocks}/21/63,
 }
 
-Lakeside is a small, walled, village near the \gls{edge}, with a large and proud temple to Ohta resting at its side, waiting for battle.
+\section[\Glsfmttext{lakeside}]{\Glsfmttext{justice}~\Glsfmttext{lakeside}~\Glsfmttext{beasts}}
+\label{lakeside}
 
-The tall stone walls reach 4 metres into the air.
-The bridges are made of wood, and ready to burn at a moment's notice if either side of the village falls to some enemy.
-The river running through the centre is not dangerous, but is strong enough to sweep almost anyone away if they try to swim against it.
+\begin{multicols}{2}
 
-Lakeside has an unusually large number of well-armed young soldiers, ready to fight for their little patch of the world at a moment's notice.
-It is lead by Village Master Cronblight, who is also the area's leader of the weapons' guild -- a small organization who are permitted to produce weapons, which are then sold to the \gls{guard}.
+\begin{exampletext}
+  \Gls{lakeside} began as \pgls{bothy} on cursed soil.
+  Plants here cannot thrive, and even the trees grow crooked and pale.
+  It has recently grown into \pgls{village}, and sustains itself with fishing, trade, and taxes.
+  Builder Cronblight of the \gls{guard} functions effectively as \pgls{warden} to the two-hundred souls who live here.%
+  \footnote{All \glspl{village} begin like this, as do their \glspl{warden}, at least in theory.
+  In practice, Cronblight grew up as \pgls{warden}'s child, in a nearby \gls{village}, and receive fast promotions.}
+\end{exampletext}
 
-The ports here provide an important trade to the surrounding areas, and the river provides a relatively safe route out of the area.
-This port provides the only  source of raw iron to the town, so if the village ever perishes, the price of weapons will double.
+Tall stone walls reach 4 metres into the air, and each house has stone walls and slate rooves.
+But its bridges are made of wood, and ready to burn at a moment's notice if either side of the \gls{village} falls to some enemy.
 
-\paragraph{If you use this area for a ghoul attack with \gls{necromancer},}
-the ghouls approach underwater and come up from the river.
+\Gls{lakeside} has an unusually large number of well-armed young soldiers, ready to fight for their little patch of the world at a moment's notice.
+
+The river and lake here provides important trade to the surrounding areas, and has the only source of raw iron to the town, so if the \gls{village} ever perishes, the price of weapons will double.
+
+\humandiplomat[\npc{\M\Hu}{Builder Cronblight}]
+\label{cronblight}
+
+\humansoldier[\npc{\T[4]\E\Hu}{\Glsfmttext{lakeside} Soldiers}]
 
 \mapentry[lakeSquare]{Central Square}
 
-The town's central square contains a statue of \gls{king} looking lordly.
-It was built over a level 2 mana lake, so the entire town will allow a spell-caster to regenerate 1 MP per turn, and anyone closer to the statue will regenerate 2 per turn.
+The town's central square contains a statue of \gls{townmaster}'s father looking lordly.
 
-As only officials of the Temple of Ohta can sell weapons, the village takes pains to show support to \gls{king}, as the weapons provide the majority of its wealth.
+\mapentry[lakeTemple]{Big \Glsfmttext{bothy}}
 
-\mapentry[lakeTemple]{Ohta's House}
+The \glspl{pc} can buy just about any weapon they can name here.
 
-The miniature citadel houses over 1,000 swords, 2,000 shields, and 20,000 arrows, ready for sale.
-The PCs can buy just about any weapon they can name here, all for the basic prices in the core rules.
-
-\paragraph{If a PC follows the code of Ohta,}
-they can pray in the temple, or donate for XP.
-
-\paragraph{If the PCs are looking to hire a soldier,}
-they will find capable people here.
+\paragraph{Hiring services}
+has a default \gls{tn} of 5, since the \gls{village} has reliable and excellent guides, cartographers, and soldiers.
+However, the small \gls{village} does not offer very many services.
 
 \mapentry[lakeDocks]{Docks}
 
-Here, boats from the Shale enter, carrying dwarvish spirits.
+Here, boats from \gls{southDale} enter, carrying dwarvish spirits.
 
+\paragraph{Newcomers at the Docks}
+arrive regularly.
+Roll $1D6$ to find out who has arrived.
 
+\begin{dlist}
+  \item
+  \Gls{beardedalemaster} has come to collect barrels of dwarvish spirits.%
+  \footnote{See `\nameref{troubleAle}', \vpageref{troubleAle}, for more on the plot.}
+  \item
+  \Gls{southSeeker} has come to collect barrels on behalf of \gls{beardedalemaster}.
+  \item
+  \Gls{sewerking} has arrived to sell art, stolen from local \glspl{warden}.
+  \item
+  \Gls{warningbard} arrives to pick up a new loot (the \gls{sunGuard} destroyed his old one).
+  \item
+  A shipment of \glspl{ingredient} of every type have arrived.
+  \Glspl{pc} can select any to buy, and each type costs $1D6$~\glspl{sp} (+1 per purchase as the price rises).
+  The seller has $2D6$ of each type of \gls{ingredient}.
+  For example, if \pgls{pc} wants a Fire \gls{ingredient}, a roll could show the price is 5~\glspl{sp}, then the next costs 6~\glspl{sp}, and so on.
+  \item
+  A dwarvish jeweller from \gls{southDale} has arrived, selling fancy trinkets of every type.
+  If the \glspl{pc} want to sell him stolen goods, they can try with a \roll{Charisma}{Empathy} roll (\tn[12]).
+  If successful, he will buy them for half their value.
+\end{dlist}
+
+If any of the \glspl{wolfhead} have arrived, they journey back to \glsentrytext{town}, with a cart, to \gls{traitor}'s house, where he can smuggle it inside, tax-free.
+
+\end{multicols}

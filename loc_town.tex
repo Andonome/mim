@@ -1,59 +1,30 @@
-\mapPic[\Large]{t}{Dyson_Logos/town}{
-  \Huge 1/87/50,
-  2/86/41,
-  3/34/75,
-  4/60/65,
-  5/80/29,
-  6/84/29,
-  7/78/30,
-  \rotatebox{9}{\footnotesize Big Docks}/60/48,
-  \rotatebox{-9}{\footnotesize Shale Docks}/39/48,
-  \rotatebox{-90}{\footnotesize Windy Bridge}/47/51,
-  \rotatebox{-54}{\footnotesize Citadel Bridge}/72/55,
-  \rotatebox{-9}{\scriptsize Cowbridge}/51/33,
-  \rotatebox{-1}{\scriptsize Sheepbridge}/50/22,
-  \rotatebox{-90}{\footnotesize Spy Grate}/23/54,
-  {\footnotesize Market}/53/71,
-  {\footnotesize Market}/60/35,
-}
+\chapter{\Glsfmttext{town}}
+\epigraph{A criminal is a person with predatory instincts who has not sufficient capital to form a corporation. Most government is by the rich for the rich.
+Government comprises a large part of the organized injustice in any society, ancient or modern.
+Civil government, insofar as it is instituted for the security of property, is in reality instituted for the defence of the rich against the poor, and for the defence of those who have property against those who have none.}%
+{Adam Smith}
 
-\begin{table*}[t]
+\section{About Town}
 
-\begin{boxtable}
+\townMap
 
-  Number & Location \\\hline
-  1 & The Citadel of \glsentrytext{townmaster}. \\
-  2 & The Guard Station. \\
-  3 & The White Horse Tavern. \\
-  4 & The Paper Guild. \\
-  5 & \Glsentrytext{pig}. \\
-  6 & Butcher's entrance to the Lost Library in the sewers. \\
-  7 & Temple of Ohta. \\
+\begin{multicols}{2}
 
-\end{boxtable}
+\subsection{Sight Seeing}
 
-\end{table*}
-
-\subsection{The Market}
-\label{greyMarket}
+\mapentry[greyMarket]{Market}
 \index{Market!\glsentrytext{town}}
 
-Every morning, wagons pour from the villages into \gls{town} with food, and enter the market.
+Every morning, wagons full of vegetables pour into \gls{town} with food from \glspl{village} and hamlets, and enter the market.
+Servants of the \glspl{warden} and guild leaders arrive to buy large baskets.
 
-Servants of the nobles arrive to buy large baskets.
-\Gls{townmaster} and the guild masters always eat well.
-
-The food sellers then take their coin, and move to stalls where the guilds sell their wares -- beer, weapons, contract-witnessing, blessings, clothes, carts, oil, and anything else a village might not produce.
+The food sellers then take their coin, and move to stalls where the guilds sell their wares -- beer, armour, blessings, clothes, carts, oil, and anything else \pgls{village} might not produce.
 Despite its remote location, one can buy almost anything in \gls{town}.
 
-Next, the \gls{guard} take their share.
+Next, the \glspl{sunGuard} take their share.
 They may be few, but they buy a large portion with their heavy taxes on the guilds.
 
 ``No price is too high for safety'', they tell everyone inside \gls{town}'s walls.
-
-While there isn't a legal difference between the guards in the city and the \gls{guard} outside, the difference is palatable.
-Those inside are used to being heavy handed or violent with people, but they're terrified of the monsters outside, or anything unnatural.
-Many have some distant family connection to \gls{townmaster}, ensuring their intense loyalty.
 
 Servants of nobles or the guild then pay for the last of the good food at the market, and return home with what they can get.
 Their employment alone keeps them out of the \gls{guard}.
@@ -62,102 +33,233 @@ And the worse the deed, the closer they may come to the \gls{edge}.
 
 The last group live in a state of constant questioning.
 Will they find a little work, or steal today?
-If they steal, will it be the gallows or the guard?
+If someone catches them, will it be the gallows or the guard?
 If someone makes them work in the \gls{guard}, what kind of creature will eat them?
-
-Criminals taken into the \gls{guard} never return to \gls{town}.
-People say they were `eaten by the forest'.
 
 Take a look at the handouts for the \gls{town} market.
 
-\subsection{The Paper Guild}
-\label{paperGuild}
-\index{Library!Paper Guild}
+\mapentry[paperGuild]{The \Glsfmttext{paperGuild}~\glsfmttext{curiosity}}
+\index{Library!\glsentrytext{paperGuild}}
 
-This massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when Foxglove, the sorting-librarian, disapproves of the book).
-Most books are arranged by size first, then either author (if the author wrote enough) or language (authors who write in multiple languages have some books placed by language first), then quality (with marks out of nineteen), and finally arranged by excellence of handwriting.
+The entrance hosts a hundred pegs for clothes, weapons and anything else people might take off.
+The \gls{scribe} at the door insists people remove cloaks, backpacks, or anything else which might help them steal a book or scroll.
 
-\humandiplomat[\NPC{\F\Hu}{Foxglove}{Running nose}{Sings `Nobody Knows the Trouble I've seen'}{C\'al\"e}]
+Most humans read out-loud, so the library emits a constant murmur (or a proper racket, when someone wants to read a good book to a crowd).
 
-While a number of librarians and priests of C\'al\"e within the Paper Guild outrank Foxglove, after sorting all of the books, only she knows how to find them.
-As a result, all requests must go through her, and the amount of time she takes generally depends on her disposition towards that person.
+Inside, the massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
 
-Most research rolls here can bring up any number of items -- everything might be found, if only you can find what it lies under.
-Anyone in Foxglove's good graces receives a +4 Bonus to research rolls.
+\NPC{\F\Hu}{\Pgls{librarian}}{long sleeves smeared across an eternally running nose}{sings `\textit{Nobody knows the trouble I've seen\ldots}'}{to find that missing cat}
+
+\person{0}% STRENGTH
+{0}% DEXTERITY 
+{-1}% SPEED
+{{2}% INTELLIGENCE
+{-2}% WITS
+{0}}% CHARISMA
+{0}% DR
+{0}% COMBAT
+{}% SKILLS
+{Writing equipment, bag of dried trout-strips}% EQUIPMENT
+{
+  \setcounter{Academics}{3}
+  \setcounter{Crafts}{1}
+  \setcounter{Empathy}{1}
+  \knacks{\specialist{History}}
+}
+
+While a number of \glspl{seeker} within the \gls{paperGuild} outrank \gls{librarian}, she commands respect within the temple after sorting all of the books; only she knows how to find them.
+She sorts books by:
+
+\begin{multicols}{2}
+\begin{enumerate}
+  \item
+  Size
+  \item
+  Colour
+  \item
+  Artist's name (if it has images)
+  \item
+  Language
+  \item
+  Quality (she scores each from 1 to 12)
+  \item
+  Handwriting quality (scored 1 to 6)
+  \item
+  Author
+\end{enumerate}
+\end{multicols}
+
+\paragraph{Researching at the Library}
+only grants a +1 Bonus, due to the incomprehensible sorting algorithm.
+However, if \gls{librarian} helps, the bonus rises to +3.
+
+\ldots but she will not help anyone, as she's too busy sorting, reading, copying, and worrying about a thousand problems.
+
+She can't find one of her cats -- `Blob', the fat black cat (he's gone to the local \gls{healersGuild}, \vpageref{townHealersGuild}),
+her brother's in jail (room  \vref{spyBroth} in the \nameref{stationDungeon}), and \gls{alchemist} hasn't returned his book on \textit{Riddles for Simpletons} (area \vref{citadel_alchemist}).
+\label{paperCat}
 
 \begin{itemize}
-
   \item
-  Researching the local area might bring up a map of the whole of Maitavale (Intelligence + Wyldcrafting, TN 14).
+  Researching the local area might bring up a map of the whole of \gls{valley} (\roll{Intelligence}{Wyldcrafting}, \tn[14]).
   \item
-  Researching old temples of Eldren might bring up the map of \gls{necromancer}'s temple (from before it crumbled).
+  Researching old temples of \gls{eldren} might bring up the map of \gls{necromancer}'s temple (from before it crumbled).
   \item
-  Asking the young people who frequent the library about what they are doing reveals a young man who has mapped all of Greytown (Intelligence + Empathy, TN 10).
+  Asking the young people who frequent the library about what they are doing reveals a young man who has mapped all of \gls{town} (\roll{Intelligence}{Empathy}, \tn[10]).
   \item
-  Researching \gls{lostcity} yields a map of a small wing from the \gls{college} (Wits + Academics, TN 18).
+  Researching \gls{lostcity} yields a map of a small wing from the \gls{paperGuild} (\roll{Wits}{Academics}, \tn[18]).
   \item
   Researching old elvish settlements yields a map.
   The format makes little sense, the cartographer seems to name random places, and age has changed everything which might have been remotely useful.
-  However, if you look closely, with an elvish eye, this map matches Maitavale.
-  It also shows the location of two nura portals, marked 'gate place'.
-
+  However, if you look closely, with an elvish eye, this map matches \gls{valley}.
+  It also shows the location of two magical portals, marked `gate place' (pointing to Archwarp and Sixshadow).
 \end{itemize}
 
 These various maps can be found in the handouts.
 
-\subsection{The Citadel}
-\label{citadel}
+\paragraph{Stealing books}
+will prove more challenging than one might expect.
+The library closes outside daylight hours, and the massive windows admit a lot of Sunlight.
+Its multi-level structure, and the fact that piles of books form a king of pyramid shape mean that anyone on the upper levels has an excellent view of everyone below them.
 
-The citadel is massive, and contains various floors.
+The \glspl{scribe} have various secret whistles to alert each other to a theft, at which point one of them will lock the front door (by the cloak-room) and hide the key in a random coat-pocket.
+
+\paragraph{Brief events}
+play out, whenever \pgls{pc} enters the \gls{paperGuild}:
 
 \begin{enumerate}
-
-  \item{Ground Floor: Outsiders}
-    \begin{itemize}
-      \item{Left Wing: Ballroom.}
-      \item
-      Left Wing: Guardroom.
-      \item
-      Right Wing: Dining Room.
-      \item
-      Right Wing: Servants' Quarters.
-      \item
-      Right Wing: Kitchen.
-    \end{itemize}
-  \item{First Floor: Insiders}
-    \begin{itemize}
-      \item
-      Left Wing: Guest Beds.
-      \item
-      Left Wing: Office.
-      \item
-      Left Wing: Library.\index{Library!Modern}
-      \item
-      Right Wing: \Glsentrytext{townmaster}'s Sons' 9 quarters (a nearby tree stands tall enough to access one room).
-      \item
-      Right Wing: Secret Stairway up to the floor above.
-      \item
-      Right Wing: Winery.
-    \end{itemize}
-
   \item
-  Second Floor: Others
-    \begin{itemize}
-      \item
-      Left Wing: \gls{alchemist}, the Alchmist's Study.
-      \item
-      Left Wing: \Glsentrytext{townmaster}'s close servants' quarters.
-      \item
-      Right Wing: \Glsentrytext{townmaster}'s room.
-      \item
-      Right Wing: Treasury.
-    \end{itemize}
+  Two Philosophers argue over whether a single magical gateway can exist.
+  \begin{speechtext}
+    It must be two gateways, or none!
+    One creates the other\ldots or they create each other, like \underline{being} and \underline{non-being}.
+    Or did you somehow put on a \underline{trouser} this morning?
+  \end{speechtext}
+  \item
+  \Gls{southSeeker} argues angrily with \gls{librarian}, because he cannot find old maps, from the time of \gls{lostcity}.
+  If someone helps resolve their argument, he finds a copy of the old Elvish map of \gls{valley}, but will lie about the contents (`just a map of somewhere near \gls{southDale}! Nothing important').
+  \item
+  Three men debate picking up a book.
+  On the one hand, \gls{townmaster} has requested they fetch it; but on the other hand, a grey cat (Fagin) is sleeping on top of it, and \gls{librarian} never approves of people disturbing her cats.
 
+  The book tells the tail of the \gls{town} \gls{warden} family.
+  %! Add oaths made to gnomes.
+  \item
+  \Gls{warningbard} enters to buy writing equipment, then asks a thousand questions about what the \gls{pc} wants in the \gls{paperGuild}.
 \end{enumerate}
+
+\mapentry[armourHall]{\Glsfmttext{armourHall}~\glsfmttext{hate}}
+
+Here, the angry and insolent people, who have not yet committed the kinds of crimes worthy of a place in the \gls{guard} learn to focus their anger on their craft.
+They sell armour of every price to anyone, although the biggest client will always remain the \gls{sunGuard}.
+
+\mapentry[greyDoulaShop]{\Glsfmttext{doulaShop}~\glsfmttext{misgen}}
+
+Here, \gls{forestpriest} sells her wares.
+The \gls{sunGuard} enter occasionally to ask the kinds of legal questions they have to.
+
+\begin{speechtext}
+  Not storing any of the bad potions, are you?
+  No contraband in here?
+\end{speechtext}
+
+\Gls{forestpriest} tells them calmly that she doesn't have any `bad potions', but in fact the \glspl{ingredient} used to cure diseases can also cause magical catastrophes.
+
+Inside her shop, sitting under a different mess of old laundry every week, a trapdoor leads down to the \glspl{digger}' tunnels, below.%
+\footnote{Area \vref{slum_exit}.}
+
+She has various \glspl{ingredient} and \glspl{boon} at various times (check the handouts), and will buy them for half the price she sells them at.
+
+\mapentry[citadel]{The Citadel~\glsfmttext{justice}}
+
+\histEvent{260}{6}{As people began to migrate from Archwarp, \gls{town}'s \gls{warden} started to transport away much of the stone to build a citadel and improve the walls of \gls{town}}
+
+\begin{exampletext}
+  When the town upriver -- Archwarp -- lost its alchemical gateway, it started to fall into economic collapse.
+  The \gls{warden} of \gls{town} (\gls{townmaster}'s ancestor) took the opportunity to start liberating the rocks which composed Archwarp the moment they left.
+
+  \Gls{town}'s citadel still looks a little brighter than the rest of the town, due to the limestone rocks, pilfered from Archwarp to build it.
+\end{exampletext}
+
+The citadel is massive, and contains so many floors that a map would become expensive in every sense.
+So instead, you can use this conceptual map to tell players what they see, in a fast-fleeting matter.
+
+Sparse lighting divides the citadel into day and night very sharply.
+During the day, the tall building's tall windows let Sunlight stream in, while leaving deep pockets of shadow in the corner of every room.
+At night, the only light comes from servants wandering with lanterns.
+
+\begin{description}
+  \item[Ground Floor:]
+  where outsiders and servants come and go.
+    \begin{description}
+      \item[Left Wing:]
+      with a long hall.
+      \begin{itemize}
+        \item
+        Ballroom.
+        \item
+        Guardroom.
+      \end{itemize}
+      \item[Right Wing:]
+      full of tapestries.
+      \begin{itemize}
+        \item
+        Dining Room.
+        \item
+        Servants' Quarters.
+        \item
+        Kitchen.
+      \end{itemize}
+    \end{description}
+  \item[First Floor:]
+  with servants, and important rooms.
+    \begin{description}
+      \item[Left Wing:]
+      bare walls make echoes.
+      \begin{itemize}
+        \item
+        Office.
+        \item
+        Library.\index{Library!Citadel}
+        \item
+        Guest Rooms.
+      \end{itemize}
+      \item[Right Wing:]
+      paintings of \glspl{guard} in battle on every wall.
+      \begin{itemize}
+        \item
+        \Glsentrytext{townmaster}'s Sons' 9 quarters (a nearby tree stands tall enough to access one room).
+        \item
+        Secret Stairway up to the floor above.
+        \item
+        Winery.
+      \end{itemize}
+    \end{description}
+  \item[Second Floor:]
+  with important people and valuable items.
+    \begin{description}
+      \item[Left Wing:]
+      plain white walls.
+      \begin{itemize}
+        \item
+        \gls{alchemist}, the \gls{seeker}'s Study.
+        \item
+        \Glsentrytext{townmaster}'s close servants' quarters.
+      \end{itemize}
+      \item[Right Wing:]
+      where ornate weapons line the walls.
+      \begin{itemize}
+        \item
+        \Glsentrytext{townmaster}'s room.
+        \item
+        Treasury.
+      \end{itemize}
+    \end{description}
+\end{description}
 
 The lower floor holds fifteen guards in each wing.
 
-\humansoldier[\npc{\T[5]\Hu}{The Citadel Guards}]
+\humansoldier[\npc{\T[5]\Hu}{Citadel Guards}]
 
 \paragraph{If trouble emerges in the Citadel,}
 all the guards rush to the source of the noise, ready to prove themselves.
@@ -173,16 +275,237 @@ they talk big, then surrender before the fight has begun, reminding the intruder
 
 \label{citadel_alchemist}
 
-\paragraph{When \gls{alchemist} sees lawbreakers,}
+\paragraph{If \gls{alchemist} sees lawbreakers,}
 he threatens the most awesome magic imaginable, even if his real powers leave much to be desired.
+
+\paragraph{If the troupe ask \gls{alchemist} for the \gls{paperGuild}'s book back,}
+he will return it only after composing a letter to \gls{librarian}, so the troupe can deliver the letter to her.
+He begins by arranging two books on seducing women, and one on romance, then takes an entire \gls{interval} to actually write the thing. 
 
 \townmaster
 
-\subsection{The Temple of Eldren}
+The book details an extremely fiddly riddle, called `the Riddle of the Shadow Gate', but does not explain any context.
 
-The temple houses priests who white biographies (mostly for nobles), handle pensions (repaid on a per-family basis), practice starvation (so others can have more), and sing prayers for their ancestors to stay somewhere nice in the afterlife.
+\histEvent{270}{5}{All of \gls{valley} tries and fails to solve `the Riddle of the Gate'}
 
-If the temple's groundskeeper -- Ripcrag -- ever finds out what happened to the bodies they lovingly prepare before placing in caskets, he enters a rage and demands to join the PCs to confront the perpetrators immediately.
+\hardestRiddleEver
 
-\humanpriest[\npc{\M}{Ripcrag}]
+\mapentry[townHealersGuild]{\Glsfmttext{healersGuild}~\glsfmttext{sickness}}
 
+The temple houses priests who write biographies (mostly for the rich), handle pensions (repaid on a per-family basis), practice starvation (so others can have more), and sing prayers for their ancestors to stay somewhere nice in the afterlife.
+
+While modern \glspl{healersGuild} ensure maximum accessibility, people created this building some centuries ago, when the guild was not a guild, and things were different.
+It has a lower level, with long, thin, stairs, reserved for the most senior \glspl{helper} to store the bodies of the most worthy dead.
+
+\NPC{\M\Hu}{Ripcrag}{Wide frown, Downs Syndrome}{constantly counting everything around him}{to find how that cat keeps getting in here}
+\person{2}% STRENGTH
+{-3}% DEXTERITY 
+{-2}% SPEED
+{{-1}% INTELLIGENCE
+{0}% WITS
+{1}}% CHARISMA
+{0}% DR
+{0}% COMBAT
+{}% SKILLS
+{Writing equipment}% EQUIPMENT
+{
+  \setcounter{Academics}{1}
+  \setcounter{Empathy}{2}
+  \setcounter{Medicine}{2}
+  \knacks{\specialist{Inventory}}
+  \addtocounter{fp}{5}
+}
+
+\mapPic{t}{Dyson_Logos/white_horse_2}{
+  \ref{horseHall}/18/45,
+  \ref{horseKitch}/68/53,
+  \ref{horseYard}/88/57,
+}
+
+Ripcrag likes to keep track of things, and feels terribly annoyed that a fat, black cat keeps sneaking into the building, and he can't figure out how.
+The ground floor's windows only let in a little Sunlight through wooden slits, but cannot open.
+The only door out opens and closes only when the attentive staff open them with a key.
+
+Ripcrag will not manage to keep the fat, black cat out, as he enters through a secret tunnel in \gls{pig} (area \vref{pigTemple}).
+The \glspl{pc} won't find the cat either, as he's already left to annoy the horses in the \nameref{guardstation} (area \vref{stationStables}).
+
+\mapentry[whitehorse]{\Glsentrytext{whitehorse}~\glsfmttext{poison}}
+\index{Taverns!\Glsentrytext{whitehorse}}
+
+\begin{exampletext}
+  \Gls{sewerthief} took a job as a cook at \gls{whitehorse} to learn more about \gls{townmaster}, but \gls{townmaster} instantly took umbrage at his \glsentrytext{whiteplains} accent.
+\end{exampletext}
+
+\begin{boxtext}
+  A massive man with a butter-tipped moustache throws a lanky man from the door.
+  The lanky man recoils with a grimace, and shouts `you owe me my wages!'.
+\end{boxtext}
+
+\humandiplomat[\NPC{\M\Hu}{Barkwind}{Proud}{Curling moustache}{ensure everything is `proper'}]
+
+Entry through deception requires a roll against Barkwind's \roll{Wits}{Vigilance} (\tn).
+The players can roll anything as long as it relates to a reasonable plan.
+Otherwise, he forgets their faces within a week.
+
+The \glspl{pc} \emph{must} agree with Barkwind (the doorman) about \gls{sewerthief} (and about \gls{whiteplains} in general) before he agrees to let them in.
+
+\Gls{whitehorse} has no locks as nobody expects thieves to enter.
+ 
+\begin{enumerate}
+  \item
+  The drinking hall contains various \gls{village} \glspl{warden} playing games, and half a dozen local guards (sometimes including \gls{captain}).
+  \label{horseHall}
+  \item
+  \label{horseKitch}
+  The staff sleep in the kitchen here during long shifts.
+  The lack of proper ventilation makes the air difficult to breathe.
+  \item
+  \label{horseYard}
+  The courtyard usually contains a couple of carriages, and nobles playing ridiculous games.
+  \item
+  \label{horseUpstairs}
+  The bookshelves contain rather a lot of history books, most focussing upon anti-elven propaganda, such as the time they destroyed \gls{lostcity}.
+
+  A map on the wall shows all of \gls{valley}.
+  Show your players the map in the handouts, but don't give it to them unless the \glspl{pc} want to steal the map.
+  \item
+  \label{horseCupboard}
+  This cupboard contains cleaning supplies, two Fire \glspl{ingredient} (bear hearts), and one Water \gls{ingredient} (a woodspy beak), in case someone becomes sick.
+  \item
+  \label{horseSideRoom}
+  Tavern equipment, bookshelves for less popular books, and beds for the favoured servants, lie in semi-organized heaps and stacks.
+  \item
+  \label{wolfRoom}
+  Guest room.
+\end{enumerate}
+
+\begin{boxtext}
+  \Gls{townmaster} is running away from a coterie of chuckling men with his hands tied behind his back.
+   A chicken runs out in front of him with a little paper hat.
+   He lunges forwards and grabs the chicken in his teeth, then shakes it like a mad dog until it stops squawking.
+   He gives a triumphant grin as the crowd clap and another man steps forward to have his hands tied.
+\end{boxtext}
+
+\smolMapPic{Dyson_Logos/white_horse_1}{
+  \ref{horseUpstairs}/55/27,
+  \ref{horseSideRoom}/55/80,
+  \ref{wolfRoom}/28/27,
+  \ref{horseCupboard}/85/08,
+}
+
+Roll $2D6$ to find the current activities, and combine the results.
+
+\begin{dlist}
+  \item
+  \Gls{alemaster} complains bitterly and loudly about the current ale prices, and the price of staff.
+  \item
+  \Gls{sewerking} sits in a corner, listening quietly to the entire room.
+  \item
+  \Gls{townmaster} plays ridiculous games outside.
+  \item
+  \Gls{alchemist} plays a game of go with another patron.
+  \item
+  \Gls{keras} (\glssymbol{keras}) plays a game of go with another patron (while sitting on three cushions).
+  \item
+  \Gls{captain} and \gls{investigator} argue about which of them must take responsibility for bandit raids close to \gls{town}.
+\end{dlist}
+
+\mapentry[smugglerHouse]{\Glsfmttext{traitor}'s House~\glsfmttext{beasts}}
+
+This two-story wooden house has every bit of finery normally owned by \glspl{warden}, except for servants.
+It is \emph{filthy}, but otherwise lavish.
+
+\begin{boxtext}
+  Dishes and plates with fancy pictures painted on them sit on and under every table.
+  Books, notebooks, and tapestries depicting ancient heroes drop across the walls, and in piles on the side of chairs.
+\end{boxtext}
+
+A secret trapdoor in the kitchen leads down to a basement.
+A further trapdoor in the basement leads down to the \nameref{sewers}, area \vref{farmExit}.
+
+At night, the \gls{whiteBandits} arrive here with items, to be smuggled tax-free into \gls{town}.
+
+\mapentry[gnomishPart]{Oolery \Gn}
+\index{Gnomes!Oolery}
+
+\histEvent{266}{2}{\Gls{deep} gnomes establish a warren outside of \glsfmttext{town}}
+
+Gnomes have enjoyed the safety of living in the centre of \gls{valley} for almost two centuries, but rarely want to enter \gls{town}.
+The horses, cattle, drunkards and noise all seem like too much hassle.
+
+By law, they may only have three openings across the hill (so the \gls{sunGuard} can properly monitor them\ldots in theory) and must give a single cart of carrots to the \gls{warden} at the end of the warm seasons -- Laiquea and Calea.
+And the gnomes certainly deliver the carrots, but the narrow, twisting tunnels, the doors which open wrong, the signs in three languages (one of them dead) present too much of an obstacle for any of the big folk.
+Those not proficient in Gnomish must roll \roll{Intelligence}{Academics} to navigate the warren, at a \gls{tn} equal to 12 plus double their Strength Bonus.
+
+From the outside, the warren looks like a hill peppered with root vegetables, since Gnomes farm from underneath.%
+\exRef{stories}{Stories}{gnomishWarrens}
+But underneath, over five hundred gnomes eat, sleep, and update technical manuals concerning under-farming and the rules for riddles.
+
+\mapentry[guardstation]{Guard Station}
+
+The grounds are patrolled by a minimum of five \glspl{sunGuard} at any point.
+\Gls{captain} has an obsession with guards constantly rotating around the premise.
+As a result, they've hidden a stash of whiskey in the bushes at the back, and sometimes have `rounds', while they do the rounds.
+
+The wooden buildings tacked into the outer wall have thin rooves which constantly bend and creak -- walking silently across them is impossible for anything with a total \gls{weight} of 4 or more.
+
+\humansoldier[\npc{\T[9]\Hu}{30 \glspl{sunGuard}}]
+
+\smolMapPic[\Large]{Dyson_Logos/guard_station}{
+  \ref{stationStables}/42/15,
+  \ref{stationStorage}/81/427,
+  \ref{stationStorage}/54/11,
+  \ref{stationToilet}/63/11,
+  \ref{stationCaptainToilet}/895/427,
+  \ref{stationCaptainRoom}/85/59,
+  \ref{stationSleep}/86/14,
+  \ref{stationDressing}/30/11,
+  \ref{stationLecture}/86/81,
+  \ref{stationRecords}/37/41,
+  \ref{stationInterrogation}/285/57,
+  \ref{stationShrine}/44/65,
+  \ref{stationStairs}/53/41,
+}
+
+\begin{enumerate}
+  \item
+  Dressing room, with armour.
+  \label{stationDressing}
+  \item
+  Stables\label{stationStables} (the horses are terrified of a fat, black cat darting between them, before running off to \gls{pig}).
+  \item
+  Storeroom room with handheld weapons, siege weapons, and basically every item listed in the core rules.
+  \label{stationStorage}
+  \item
+  Toilet.
+  \label{stationToilet}
+  \item
+  Sleeping Quarters.
+  \label{stationSleep}
+  \item
+  Captain's Toilet.
+  \label{stationCaptainToilet}
+  \item
+  \gls{captain}'s Room.
+  \label{stationCaptainRoom}
+  \item
+  Lecture Hall (though mostly used as a drinking hall).
+  \label{stationLecture}
+  \item
+  Records Room, containing lists of fugitives, laws, tax records (a copy is kept in \gls{townmaster}'s treasury), and valuable paintings of local nobles.
+  \label{stationRecords}
+  \item
+  Interrogation room.
+  \label{stationInterrogation}
+  \item
+  Simulacra of a woodspy, chitincrawler, griffin, (small) basilisk, and bandit, made from wood and leather.
+  The guards use these to explain combat tactics.
+  \label{stationShrine}
+  \item
+  Stairway down to the dungeons.
+  \label{stationStairs}
+\end{enumerate}
+
+\end{multicols}
+
+\bigLine

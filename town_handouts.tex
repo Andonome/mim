@@ -1,0 +1,172 @@
+\section*{\Glsfmttext{town} Market}
+
+\begin{multicols}{2}
+
+\glsentrytext{frost}
+\textbf{At the Weavers'}
+
+\begin{boxtable}[Xcc]
+
+  \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
+
+  \marketItem{Orange Travelling Robes}{0}{15}
+  \marketItem{Red Travelling Robes}{0}{17}
+  \marketItem{Purple Travelling Robes}{0}{23}
+  \hline
+
+  \marketItem[cp]{Bandages}{0}{2}
+  \hline
+  \marketItem{Rope, 50'}{1}{2}
+
+\end{boxtable}
+
+\randomdozen
+
+\ifnum\value{r12}>7
+\noindent
+\begin{minipage}{\linewidth}
+\glsentrytext{misgen}
+\textbf{At the Doula's}
+  \begin{boxtable}[Xcc]
+    \textbf{Things on shelves} & \textbf{Weight} & \textbf{Cost} \\\hline
+    \rareMarketItem[9]{Air \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Fire \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Earth \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Water \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Fate \Glsentrytext{ingredient}}{1}{23}%
+    \rareMarketItem[9]{Air \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[9]{Fire \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[8]{Earth \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[9]{Water \Glsentrytext{boon}}{1}{24}%
+    \rareMarketItem[9]{Fate \Glsentrytext{boon}}{1}{24}%
+    \marketItem{Cup of tea}{0}{0}%
+  \end{boxtable}
+\end{minipage}
+\fi
+
+\begin{boxtable}[Xc]
+
+  \textbf{Beasts} & \textbf{Cost} \\\hline
+  Horse & \mkPrice{20} \\
+
+  Hunting Dog & \mkPrice{5} \\
+
+  Donkey & \mkPrice{2} \\
+
+\end{boxtable}
+
+\begin{boxtable}[Xc]
+
+  \textbf{Services} & \textbf{Cost} \\\hline
+  Boat trip & \mkPrice[cp]{14} per mile \\
+
+  Local guide & \mkPrice{2} per mile \\
+
+  Minstrel Performance & \mkPrice[cp]{120} song \\
+
+  New song composition & \mkPrice{5} song \\
+
+  \footnotesize Fence & \footnotesize 50\% \\
+
+\end{boxtable}
+
+\begin{boxtable}[Xcc]
+
+  \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
+
+  Rations for a day &  1 & \mkPrice[cp]{13} \\
+
+  Rushlights & 0 & \mkPrice[cp]{1} \\
+
+  Tinder box & 0 & \mkPrice[cp]{3} \\
+
+  Torch & 1 & \mkPrice[cp]{8} \\
+
+\end{boxtable}
+
+\begin{boxtable}[Xc]
+
+  \textbf{Hospitality} & \textbf{Cost} \\\hline
+
+  Bed with family & \mkPrice{2} \\
+
+  Hearty Meal & \mkPrice[cp]{5} \\
+
+  Rat Soup & \mkPrice[cp]{2} \\
+
+  Nice room & \mkPrice[cp]{20} \\
+
+  Fancy room & \mkPrice[cp]{80} \\
+
+  \Glsentrytext{whitehorse} & \mkPrice{3} \\
+
+\end{boxtable}
+
+
+\end{multicols}
+
+\begin{boxtable}[XXXXXX]
+
+  \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
+
+  \Dagger & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{2} \\
+
+  \shortsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{9} \\
+
+  \spear & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{7} \\
+
+  \longsword & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{11} \\
+
+\end{boxtable}
+
+\glsentrytext{hate}
+\textbf{At the \Glsentrytext{templeOfHate}}
+
+\begin{boxtable}[XXXXc]
+  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{Covering} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \showArmourPrice{\completechain}{28}%
+  \showArmourPrice{\partialchain}{18}%
+\end{boxtable}
+
+\glsentrytext{beasts}
+\textbf{At the Fletcher's}
+\begin{boxtable}[XYYYXl]
+
+  \textbf{Projectile} & \textbf{Attack Bonus} & \textbf{Damage} & \textbf{\Gls{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
+
+  \hline
+
+  Longbow &  +1  & +1 & 1~\glspl{ap} & 1  & \mkPrice{9}  \\
+
+  Longbow &  +2  & +2 & 2~\glspl{ap} & 1  & \mkPrice{11}  \\
+
+  Longbow &  +3  & +3 & 2~\glspl{ap} & 1  & \mkPrice{13}  \\
+
+  Longbow &  +4  & +4 & 2~\glspl{ap} & 1  & \mkPrice{15}  \\
+
+  \hline
+  Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{16}  \\
+
+  Bolt  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
+  \hline
+
+  Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{16}  \\
+
+\end{boxtable}
+
+\textbf{At the Tanner's}
+
+\begin{boxtable}[XXXXX]
+  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{Covering} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \showArmourPrice{\partialleather}{5}%
+  \showArmourPrice{\completeleather}{11}%
+\end{boxtable}
+
+\textbf{At the place with that guy I met at \glsentrytext{pig}\ldots}
+
+\begin{boxtable}[Xcc]
+  \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \marketItem{Lock-pick set}{1}{10}
+  \marketItem{Fake town-pass}{0}{3}
+\end{boxtable}
+

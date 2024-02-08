@@ -1,123 +1,406 @@
-\newglossaryentry{outerKingdom}{
-  name={The Western Kingdom},
-  sort={Western Kingdom},
-  text={the Western Kingdom},
-  description={is the nearest kingdom}
+
+%%%%% Places
+
+\newglossaryentry{valley}{
+  name={The Grey Valley},
+  text={the Grey Valley},
+  sort={Grey Valley},
+  category={location},
+  description={is the name of the area, also known as `Maitavale', by the elves}
 }
 
-\newglossaryentry{nomad}{
-  name={Nomads},
-  text={Nomad},
-  description={are those guild members who travel, by choice or not, to complete distant guild errands}
+\newglossaryentry{town}{
+  name={Greytown},
+  text={Greytown},
+  parent={valley},
+  category={location},
+  description={is the central town where the action takes place}
 }
 
-\newglossaryentry{king}{
-  name={Rex Oakbane Fenestra},
-  text={\ifodd\thepage Oakbane\else the Rex\fi},
-  first={Rex Oakbane Fenestra},
-  description={keeps a tight control over Fenestra through the use of magical portals}
+\newglossaryentry{redfall}{
+  name={Redfall},
+  parent={valley},
+  category={location},
+  description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
 }
+
+\newglossaryentry{southDale}{
+  name={Southdale},
+  category={location},
+  description={is a set of towns, some distance to the East of \glsentrytext{town} (but South of the place that named it).
+  The area boasts an impressive dwarven citadel, where the dwarves make strong ales},
+}
+
+\newglossaryentry{whitehorse}{
+  name={White Horse Inn},
+  text={the White Horse},
+  first={the White Horse Inn},
+  parent={town},
+  category={location},
+  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
+}
+
+\newglossaryentry{pig}{
+  name={Mincing Pig},
+  text={the Mincing Pig},
+  first={the Mincing Pig Tavern},
+  parent={town},
+  category={location},
+  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
+  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
+  The Immortal Bandits hide here, in secret rooms, below the tavern, but above the city's abandoned underground section}
+}
+
+\newglossaryentry{lostcity}{
+  name={The Lost City},
+  text={the Lost City},
+  plural={the Lost Cities},
+  nonumberlist,
+  first={the Lost City},
+  sort={Lost City},
+  parent={valley},
+  category={location},
+  description={is a mythical, massive city, which once stretched across the entire area.
+  In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings.
+  A lot of the stone has simply been repurposed for modern buildings.
+  However, real towns once stood in the area which held portals}
+}
+
+\newglossaryentry{greentower}{
+  name={The Lonely Tower},
+  text={the Lonely Tower},
+  sort={Lonely Tower},
+  parent={valley},
+  category={location},
+  description={once stood in the time of \glsentrytext{lostcity}.
+  \Glsentrytext{southSeeker} has decided to rebuild it as a research outpost}
+}
+
+\newglossaryentry{lakeside}{
+  name={Lakeside},
+  text={Lakeside},
+  parent={valley},
+  category={location},
+  description={-- where every river \glsentrytext{valley} meets, before heading to \glsentrytext{southDale}}
+}
+
+\newglossaryentry{whiteplains}{
+  name={Whiteplains},
+  type={peeps},
+  category={location},
+  description={is an open land in the North, with only one river it can use for trade with the outside -- the river which flows through \glsentrytext{town}},
+}
+
+%%%%% Organizations
+
+\newglossaryentry{establishment}{
+  name={The Establishment},
+  sort={Establishment},
+  text={establishment},
+  type={people},
+  description={are the decision-makers and nobility, they make the status quo and want nothing to change.
+  They are the heads of guilds, and know each other far more than others within their guilds},
+}
+
+\newglossaryentry{outsiders}{
+  name={The Outsiders},
+  sort={Outsiders},
+  text={outsiders},
+  type={people},
+  description={are the various non-human people who live around \glsentrytext{valley}.
+  They have no social connections, but some have a set of shred interests in the local humans not causing too much trouble},
+}
+
+\newglossaryentry{whiteBandits}{
+  name={White Bandits},
+  sort={White Bandits},
+  text={White Bandits},
+  plural={White Bandits},
+  type={people},
+  description={two brothers, banished from their homeland, have come to start a new life in \gls{valley}.
+  They have gained a new appreciation of what it means to be poor, and now plan on enforcing equality throughout the land, by threats, fire, poison, or sword}
+}
+
+\newglossaryentry{wolfhead}{
+  name={The Wolf Heads},
+  text={Wolf Heads},
+  sort={Wolf Heads},
+  plural={Wolf Heads},
+  type={people},
+  description={know about the alchemical gateway between Archwarp and Sixshadow, but don't know where the two ruined \glspl{village} lie.
+  They have a plan to locate them, and fix the gateway, then use it to establish a new trade-route.%
+  },
+}
+
+\newglossaryentry{digger}{
+  name={The Diggers},
+  text={Digger},
+  first={`Digger'},
+  firstplural={`Diggers'},
+  prefix={a\space},
+  sort={Diggers},
+  type={people},
+  description={live beneath \glsentrytext{town}, stealing from the town above and sharing among themselves to survive},
+}
+
+%%%%% People
 
 \newcommand{\spiderqueen}{
-\NPC{\F\El}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{to see her babies in action}
-\label{spiderqueen}
-
-\person{0}% STRENGTH
-  {3}% DEXTERITY
-  {2}% SPEED
-  {{2}% INTELLIGENCE
-  {3}% WITS
-  {-1}}% CHARISMA
-  {3}% DR
-  {1}% COMBAT
-  {
-    Deceit~2, Stealth~3, Tactics~2, Wyldcrafting~3
-  }% SKILLS
-  {None}% EQUIPMENT
-  {
-    \setcounter{Earth}{3}
-    \setcounter{Water}{3}
-    \setcounter{Fate}{1}
-  }
+  \NPC{\F\El}{\Glsentrytext{spiderqueen}}{Like a spider-centaur, with six legs on the bottom, by a bulging thorax}{Looks down at her babies}{to see her babies in action}
+  \person{0}% STRENGTH
+    {3}% DEXTERITY
+    {2}% SPEED
+    {{2}% INTELLIGENCE
+    {3}% WITS
+    {2}}% CHARISMA
+    {0}% DR
+    {0}% COMBAT
+    {}% SKILLS
+    {2 dry sponges (a Fire and Air \gls{ingredient})}% EQUIPMENT
+    {
+      \setcounter{Brawl}{2}
+      \setcounter{Deceit}{1}
+      \setcounter{Stealth}{3}
+      \setcounter{Tactics}{2}
+      \setcounter{Wyldcrafting}{3}
+      \setcounter{Earth}{3}
+      \setcounter{Water}{3}
+      \setcounter{Air}{2}
+      \setcounter{Fate}{2}
+      \setcounter{Fire}{2}
+      \renewcommand\abilities{\claws, \web, \quadraped\hide{3}}
+    }
 }
 
 \newglossaryentry{spiderqueen}{
   name={The Spider Queen},
   sort={Spider Queen},
   text={the Spider Queen},
-  description={is an old elf who collects pet chitincrawlers.  She has also started to shapeshift to look like them}
+  type={peeps},
+  symbol={\F\El},
+  parent={outsiders},
+  description={-- old elf who began shapeshifting into the form of a chitincrawler.
+  Now she has enchanted chitincrawlers to swarm around her, looking up to her as a mother.
+  Her babies always want more food, so she will soon start to feed them humans}
 }
 
-\newglossaryentry{town}{
-  name={Greytown},
-  text={Greytown},
+\newcommand{\townmaster}{
+  \NPC{\M\Hu}{\glsentrytext{townmaster}}{enthusiastic}{shouts `ha!'}{to hear news of victorious, glorious, battles}
+}
+
+\newglossaryentry{townmaster}{
+  name={Prosity},
+  first={Prosity Grey},
+  text={Prosity},
+  sort={Prosity},
   nonumberlist,
-  description={is the central town where the action takes place}
+  type={people},
+  category={people},
+  symbol={\M\Hu\gls{justice}},
+  parent={establishment},
+  description={-- \glsentrytext{warden} to \glsentrytext{town} when he's not drinking brandy.
+  He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the boats coming from \glsentrytext{whiteplains}}
 }
 
 \newglossaryentry{alemaster}{
   name={Yerina},
-  first={Alemaster Yerina},
-  description={is the highest ranking member of the temple of Alass\"{e}, who are synonymous with the Ale Guild. Also known locally as `that damned Yerina'}
+  first={Keeper Yerina},
+  type={people},
+  category={people},
+  parent={establishment},
+  symbol={\F\Hu\gls{poison}},
+  description={-- Keeper of the local \glsentrytext{wheatGuild}.
+  Also known locally as `that damned Yerina'.
+  She hates the recent competition from the \glsentrytext{wheatGuild} of \glsentrytext{southDale}, and plans to destroy their reputation}
 }
 
 \newcommand{\alemaster}{
-  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Guild Reputation} 
-
-\person{0}% STRENGTH
-  {1}% DEXTERITY
-  {0}% SPEED
-  {{1}% INTELLIGENCE
-  {0}% WITS
-  {2}}% CHARISMA
-  {0}% DR
-  {0}% COMBAT
-  {
-    Academics~1, Empathy~2, Deceit~1, Larceny~2
-  }% SKILLS
-  {\Dagger, 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
-  {
-    \setcounter{Fate}{2}
-  }
-
+  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{long, brown hair half-covers sparkling jewellery, making it glint like clouds over starlight}{humming between sentences and playing dim}{guild reputation} 
+  \person{0}% STRENGTH
+    {1}% DEXTERITY
+    {0}% SPEED
+    {{1}% INTELLIGENCE
+    {0}% WITS
+    {2}}% CHARISMA
+    {0}% DR
+    {0}% COMBAT
+    {
+      Academics~1, Empathy~2, Deceit~1, Larceny~2
+    }% SKILLS
+    {\Dagger, 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
+    {
+      \setcounter{Fate}{2}
+    }
 }
+
 \newcommand{\beardedalemaster}{
-  \humandiplomat[\NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Profits and local respect}]
+  \NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Profits and local respect}
+  \person{1}% STRENGTH
+  {0}% DEXTERITY 
+  {0}% SPEED
+  {{2}% INTELLIGENCE
+  {0}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {1}% COMBAT
+  {}% SKILLS
+  {\rapier, dagger, \lootMedium}% EQUIPMENT
+  {
+    \setcounter{Projectiles}{1}
+    \setcounter{Academics}{2}
+    \setcounter{Crafts}{1}
+    \setcounter{Wyldcrafting}{1}
+    \ifnum\value{wounds}=0
+      \setcounter{fp}{10}
+    \fi
+  }
 }
 
 \newglossaryentry{beardedalemaster}{
   name={Sailhush},
-  first={Sailhush (\glsentrytext{nomad} of the Shale's Ale Guild)},
+  first={Sailhush (Keeper of the \glsentrytext{southDale}'s \glsentrytext{wheatGuild})},
   text={Sailhush},
-  description={is the leader of the Ale Guild in the Shale, and became rich selling watered-down dwarvish ale},
+  type={people},
+  category={people},
+  symbol={\F\Hu\gls{poison}},
+  parent={wolfhead},
+  description={-- Keeper of \glsentrytext{southDale}'s \glsentrytext{wheatGuild}.
+  She plans to become rich selling watered-down dwarvish ale, and smuggling it into \glsentrytext{town} via \glsentrytext{traitor}, to avoid any taxes},
 }
 
-\newcommand{\woodspyleader}{
-\NPC{\M\Hu}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{easy targets, with lots of gold}
-\label{woodspyleader}
-
-\person{4}% STRENGTH
-{2}% DEXTERITY
-{-1}% SPEED
-{{0}% INTELLIGENCE
-{1}% WITS
-{1}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{Academics 1, Deceit 2, Empathy 1, Wyldcrafting 1}% SKILLS
-{\longsword, \roundshield, \completechain, dagger}% EQUIPMENT
-{}
+\newcommand\southSeeker{
+  \NPC{\M\Hu}{\glsentrytext{southSeeker}}{Quiet}{Clicks tongue}{arcane knowledge}
+  \person{1}% STRENGTH
+  {0}% DEXTERITY 
+  {-1}% SPEED
+  {{2}% INTELLIGENCE
+  {0}% WITS
+  {0}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {Projectiles~1, Academics~2, Crafts~1, Wyldcrafting~1}% SKILLS
+  {\Dagger, Air \gls{ingredient} \boxStat{r2}, \lootMedium, \lootMagic}% EQUIPMENT
+  {
+    \knacks{\snapcaster}
+    \setcounter{Fire}{2}
+    \setcounter{Air}{2}
+  }
 }
 
-\newglossaryentry{woodspyleader}{
+\newglossaryentry{southSeeker}{
+  name={Kinbrine},
+  first={Kinbrine},
+  prefix={\glsentrytext{seeker}~},
+  type={people},
+  category={people},
+  parent={wolfhead},
+  symbol={\M\Hu\gls{curiosity}},
+  description={-- \glsentrytext{seeker} to \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate an underground road, to bypass tax laws},
+}
+
+\newcommand\southSmith{
+  \NPC{\glssymbol{southSmith}}{\Glsentrytext{southSmith}}{red nose}{massive grin}{to just get on with it in peace and quiet}
+  \person{3}% STRENGTH
+  {1}% DEXTERITY 
+  {1}% SPEED
+  {{1}% INTELLIGENCE
+  {-1}% WITS
+  {0}}% CHARISMA
+  {0}% DR
+  {2}% COMBAT
+  {}% SKILLS
+  {\greatsword, \completechain, dagger, long bow, camping equipment}% EQUIPMENT
+  {
+    \setcounter{Projectiles}{1}
+    \setcounter{Combat}{2}
+    \setcounter{Athletics}{2}
+    \setcounter{Deceit}{1}
+    \setcounter{Wyldcrafting}{2}
+    \knacks{\adrenalinesurge, \unstoppable, \charge}
+    \addtocounter{fp}{5}
+  }
+}
+
+\newglossaryentry{southSmith}{
+  name={Grogshot},
+  type={people},
+  category={people},
+  parent={wolfhead},
+  symbol={\M\Hu\gls{hate}},
+  description={-- a giant of a man.
+  Officially, he works for \glsentrytext{southDale}'s \glsentrytext{armourHall}, but currently enjoys \glsentrytext{beardedalemaster}'s patronage},
+}
+
+
+\newcommand\southRogue{
+  \NPC{\glssymbol{southRogue}}{\Glsentrytext{southRogue}}{shorn-head}{finger-guns}{to not feel bored, for even the smallest instance}
+  \person{0}% STRENGTH
+  {2}% DEXTERITY 
+  {2}% SPEED
+  {{-2}% INTELLIGENCE
+  {1}% WITS
+  {2}}% CHARISMA
+  {0}% DR
+  {1}% COMBAT
+  {}% SKILLS
+  {\shortsword, black \partialleather, dagger, short bow, 12~\glspl{sp}}% EQUIPMENT
+  {
+    \setcounter{Projectiles}{2}
+    \setcounter{Athletics}{2}
+    \setcounter{Deceit}{1}
+    \setcounter{Larceny}{3}
+    \setcounter{Stealth}{1}
+    \setcounter{Vigilance}{1}
+    \setcounter{Wyldcrafting}{2}
+    \knacks{\specialist{\emph{oil fires}}, \snapshot, \laststand}
+    \addtocounter{fp}{5}
+  }
+}
+
+\newglossaryentry{southRogue}{
+  name={Courtbile},
+  type={people},
+  category={people},
+  parent={wolfhead},
+  symbol={\F\Hu},
+  description={-- wreckless daughter to \pgls{warden} in \glsentrytext{southDale}, who ran away to join the \gls{guard}.
+  She sometimes means well, but tends to handle problems with fire too quickly},
+}
+
+
+\newcommand{\investigator}{
+  \NPC{\glssymbol{investigator}}{\glsentrytext{investigator}}{short, bald, aggressive, and polished from boot to crown}{points emphatically}{to tell people what's what}
+  \person{2}% STRENGTH
+  {2}% DEXTERITY
+  {-1}% SPEED
+  {{-1}% INTELLIGENCE
+  {0}% WITS
+  {-2}}% CHARISMA
+  {0}% DR
+  {2}% COMBAT
+  {}% SKILLS
+  {\longsword, \roundshield, \completechain, dagger}% EQUIPMENT
+  {
+    \setcounter{Academics}{1}
+    \setcounter{Deceit}{2}
+    \setcounter{Empathy}{1}
+    \setcounter{Wyldcrafting}{2}
+  }
+}
+
+\newglossaryentry{investigator}{
   name={Burngrot},
-  description={is the leader of the Woodspy Bandits, and meets with \glsentrytext{traitor} on a semi-regular basis in \glsentrytext{whitehorse}. He always enters battle with a mask over his face, and puts on a faux lower-class accent},
-  first={Woodspy Leader Burngrot}
+  first={Builder Burngrot of the \gls{guard}}
+  type={peeps},
+  prefix={Builder},
+  category={people},
+  parent={establishment},
+  symbol={\M\Hu\gls{beasts}},
+  description={grew up in \pgls{warden}'s house in \gls{southDale}, then joined the \gls{guard}, because nowhere else wanted him},
 }
 
 \newcommand{\keras}{
   \NPC{\Gn\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}{a quiet pipe}
-
   \person{-1}% STRENGTH
   {2}% DEXTERITY
   {-1}% SPEED
@@ -126,81 +409,108 @@
   {1}}% CHARISMA
   {0}% DR
   {0}% COMBAT
+  {}% SKILLS
+  {\Dagger, gem as big as his nose (worth 5~\glspl{gp}), crudely drawn maps of the area, pipe-kit}% EQUIPMENT
   {
-    Academics~3, Empathy~2, Stealth~2, Vigilance~2
-  }% SKILLS
-  {\Dagger, 20gp, crudely drawn maps}% EQUIPMENT
-  {
-    \addtocounter{fp}{10}
+    \setcounter{Academics}{3}
+    \setcounter{Empathy}{2}
+    \setcounter{Stealth}{2}
+    \setcounter{Vigilance}{2}
+    \setcounter{Wyldcrafting}{3}
     \setcounter{Fire}{2}
     \setcounter{Air}{2}
+    \addtocounter{fp}{10}
   }
 }
 
 \newglossaryentry{keras}{
   name={Keras},
   first={Keras Tri\"{e}l},
-  description={is a curious gnomish illusionist, who often gets in trouble studying things he shouldn't}
+  type={peeps},
+  symbol={\M\Gn},
+  parent={outsiders},
+  description={-- gnomish illusionist, who often gets in trouble studying things he shouldn't}
 }
 
 \newcommand{\elfprince}{
-\NPC{\M\El}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{to daydream, uninterrupted}
+  \NPC{\M\El}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{to daydream, uninterrupted}
 
-  \person{-1}% STRENGTH
-  {2}% DEXTERITY
-  {1}% SPEED
-  {{1}% INTELLIGENCE
-  {3}% WITS
-  {2}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {
-    Projectiles~2, Academics~2, Empathy~2, Performance~3, Seafaring 2, Stealth~1, Vigilance~2, Wyldcrafting~2
-  }% SKILLS
-  {\shortsword, shortbow, dagger, earrings worth 20 \glspl{sp}, necklace worth 2 gp, bracelets each worth 2 \glspl{sp}}% EQUIPMENT
-  {
-    \setcounter{Air}{1}
-    \setcounter{Fate}{2}
-    \setcounter{Water}{2}
-  }
+    \person{-1}% STRENGTH
+    {2}% DEXTERITY
+    {1}% SPEED
+    {{1}% INTELLIGENCE
+    {3}% WITS
+    {2}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {
+      Projectiles~2, Academics~2, Empathy~2, Performance~3, Seafaring 2, Stealth~1, Vigilance~2, Wyldcrafting~2
+    }% SKILLS
+    {\shortsword, shortbow, dagger, earrings worth 20 \glspl{sp}, necklace worth 2 gp, bracelets each worth 2 \glspl{sp}}% EQUIPMENT
+    {
+      \setcounter{Air}{1}
+      \setcounter{Fate}{2}
+      \setcounter{Water}{2}
+    }
 }
 
 \newglossaryentry{elfprince}{
-  name={Prince Arinel},
+  name={Arinel},
   text={Arinel},
-  first={Prince Arinel},
-  description={an elf, famed for his songs}
+  first={Arinel},
+  type={peeps},
+  symbol={\M\El},
+  parent={outsiders},
+  description={-- an elf known across the land for his song, at least among other elves},
 }
 
 \newcommand{\thenecromancer}{
+  \NPC{\M\D}{\Glsentrytext{necromancer}}{A healthy body, with minor decomposition, and simple bandage-wraps}{wears a minimalist loin cloth, with some hidden \glspl{boon}}{to find his Bladder Skull}
+  \person{1}% STRENGTH
+  {2}% DEXTERITY
+  {0}% SPEED
+  {{2}% INTELLIGENCE
+  {1}% WITS
+  {-4}}% CHARISMA
+  {0}% DR
+  {1}% COMBAT
+  {}%SKILLS
+  {Ivory \longbow, \partialplate, Air~\glspl{boon} \boxStat{Academics}, Fate~\gls{boon} \boxStat{Crafts}, dagger}%EQUIPMENT
+  {
+    \knacks{\snapshot, \mightydraw, \snapcaster}
+    \setcounter{Projectiles}{3}
+    \setcounter{Academics}{2}
+    \setcounter{Crafts}{1}
+    \setcounter{Deceit}{1}
+    \setcounter{Medicine}{3}
+    \setcounter{Vigilance}{3}
+    \setcounter{Wyldcrafting}{1}
 
-\NPC{\M\D}{\Glsentrytext{necromancer}}{Arrogant}{Slack jaw}{to hear song again}
-
-\person{1}% STRENGTH
-{2}% DEXTERITY
-{0}% SPEED
-{{2}% INTELLIGENCE
-{1}% WITS
-{-4}}% CHARISMA
-{2}% DR
-{1}% COMBAT
-{
-  Projectiles~3, Academics~2, Crafts~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
-}%SKILLS
-{Hunting Bow, dagger}%EQUIPMENT
-{
-  \knacks{\snapshot, \mightydraw, \perfectsneakattack}
-  \setcounter{Fate}{3}
-  \setcounter{Air}{3}
-  \setcounter{Water}{2}
-}
+    \setcounter{Fate}{3}
+    \setcounter{Air}{3}
+    \setcounter{Water}{2}
+    \undead
+  }
 }
 
 \newglossaryentry{necromancer}{
   name={Cainpale},
   first={the Undead Priest Cainpale},
-  description={is a priest of Eldren from the time of Nolan Shale.
-  He has since died, but kept himself unliving, and remains in his old temple (see page \pageref{necromancers_lair})}
+  type={people},
+  category={people},
+  parent={outsiders},
+  symbol={\D\M\Hu},
+  description={-- undead guardian of a crumbling temple, from the time of \gls{lostcity}.
+  \Glsentrytext{sewerking} stole his only friend -- \pgls{artefact}, which currently rests beneath \gls{town}.
+  He will soon raise an undead army to retreive his beloved item}
+}
+
+\newglossaryentry{bskulls}{
+  name={Bladderskulls},
+  type={people},
+  category={people},
+  parent={necromancer},
+  description={-- three human skulls, with their own inflated bladder stuffed inside.  The \textit{Preservation} spell cast on the skulls has been made sentient, and it now wants cast spells to make people hear it, and talk about bird-watching}
 }
 
 \newcommand{\forestpriest}{
@@ -214,29 +524,71 @@
   {2}}% CHARISMA
   {0}% DR
   {1}% COMBAT
+  {}% SKILLS
+  {\walkingStick}% EQUIPMENT
   {
-    Academics~2, Crafts~1, Deceit~2, Seafaring~1, Stealth~2, Vigilance~1, Wyldcrafting~2
-  }% SKILLS
-  {\quarterstaff, dagger}% EQUIPMENT
-  {
-    \addtocounter{fp}{10}
+    \setcounter{Academics}{3}
+    \setcounter{Crafts}{1}
+    \setcounter{Deceit}{2}
+    \setcounter{Seafaring}{1}
+    \setcounter{Stealth}{2}
+    \setcounter{Vigilance}{1}
+    \setcounter{Wyldcrafting}{2}
     \setcounter{Earth}{3}
     \setcounter{Air}{2}
     \setcounter{Water}{2}
     \setcounter{Fate}{1}
+    \addtocounter{fp}{10}
   }
 }
 
 \newglossaryentry{forestpriest}{
   name={Murklash},
-  first={Ranger Murklash},
-  text={Murklash},
-  description={is a half-elvish Ranger, from the time of Nolan Shale.  He has become irritated at how far men are encroaching into the forest, and hopes to stop them}
+  type={people},
+  category={people},
+  symbol={\F\gls{misgen}},
+  parent={digger},
+  description={-- just an old lady who used to slay dragons}
 }
 
 \newcommand{\banditking}{
-\NPC{\M\Hu}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{to return to nobility}
+\NPC{\M\Hu}{\glsentrytext{banditking}}{Short hair, massive beard}{Drums fingers}{to return to nobility}
+  \person{1}% STRENGTH
+    {0}% DEXTERITY
+    {1}% SPEED
+    {{2}% INTELLIGENCE
+    {0}% WITS
+    {1}}% CHARISMA
+    {0}% DR
+    {3}% COMBAT
+    {}% SKILLS
+    {\shortsword, \partialleather, dagger, pouch of marching mushrooms, 20~\glspl{sp}}% EQUIPMENT
+    {
+      \setcounter{Academics}{2}
+      \setcounter{Caving}{1}
+      \setcounter{Deceit}{2}
+      \setcounter{Seafaring}{1}
+      \setcounter{Tactics}{2}
+      \setcounter{Vigilance}{2}
+      \addtocounter{fp}{5}
+      \setcounter{Air}{2}
+      \setcounter{Earth}{2}
+      \setcounter{Water}{2}
+  }
+}
 
+\newglossaryentry{banditking}{
+  name={Burke},
+  first={Burke \glsentrytext{whiteplains}},
+  type={people},
+  category={people},
+  symbol={\M\Hu\gls{justice}},
+  parent={whiteBandits},
+  description={-- \glsentrytext{whiteplains} agitator, attempting to replace \glsentrytext{townmaster} by getting the local \glsentrytext{village} \glsfmtplural{warden} on-side}
+}
+
+\newcommand{\sewerking}{
+  \NPC{\M\Hu}{\Glsentrytext{sewerking}}{Pony tail}{Hands on sword}{to depose kill \gls{townmaster}}
 \person{3}% STRENGTH
   {3}% DEXTERITY
   {0}% SPEED
@@ -246,189 +598,185 @@
   {0}% DR
   {3}% COMBAT
   {Academics~1, Empathy~1, Deceit~3, Tactics~2, Wyldcrafting~3}% 
-  {\longsword, \partialchain, 50 sp wrapped in cotton wool, knife}% 
+  {\longsword, \partialchain, 50~\glspl{sp} wrapped in cotton wool, knife}% 
   {
     \knacks{\stunningstrike, \charge, \laststand}
     \addtocounter{fp}{5}
   }
 }
 
-\newglossaryentry{banditking}{
-  name={Antonym},
-  first={Antonym Whiteplains},
-  description={was the child of a noble in Whiteplains, but his family were killed by the Rex.  He's lived as a criminal ringleader ever since}
-}
-
-\newcommand{\sewerking}{
-
-\NPC{\M\Hu}{\Glsentrytext{sewerking}}{Pony tail}{Hands on sword}{gather an army}
-
-\person{1}% STRENGTH
-  {0}% DEXTERITY
-  {1}% SPEED
-  {{2}% INTELLIGENCE
-  {0}% WITS
-  {1}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {
-    Academics~1, Caving~1, Deceit~3, Seafaring~1, Tactics~2, Vigilance~2
-  }% SKILLS
-  {\shortsword, \partialleather, dagger, 20sp}% EQUIPMENT
-  {
-    \addtocounter{fp}{5}
-    \setcounter{Fire}{2}
-    \setcounter{Air}{2}
-    \setcounter{Fate}{1}
-  }
-}
-
 \newglossaryentry{sewerking}{
   name={Hare},
-  first={Hare Whiteplains},
-  description={is a Whiteplains noble, currently living under \glsentrytext{town}}
+  first={Hare \glsentrytext{whiteplains}},
+  type={people},
+  category={people},
+  parent={digger},
+  symbol={\M\Hu\gls{justice}},
+  description={-- \glsentrytext{whiteplains} agitator, and brother to \glsentrytext{banditking}.
+  He recruits soldiers from the dregs of \glsentrytext{town}, and smuggles items between \glsentrytext{traitor}'s house (outside \glsentrytext{town} wall) and \glsentrytext{pig} (inside the wall).
+  Both want to replace the local \glsfmtplural{warden}.
+  After trading armour with \glsentrytext{necromancer} for a powerful \glsentrytext{artefact}, he will begin to steal corpses from the bowels of the \glsentrytext{healersGuild}, and raise them from the dead.
+  Once he has enough undead creatures, he will dig a tunnel under \glsentrytext{town}'s citadel, and unleash the undead, killing \glsentrytext{townmaster}, along with his guards and family}
 }
 
 \newcommand{\sewerthief}{
   \label{sewerthief}
-  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{look after \glsentrytext{sewerking}}
+  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{tubby body, with vacant eyes}{looking about, suspiciously}{just to get to the next meal}
 
   \person{1}% STRENGTH
-{2}% DEXTERITY
-{2}% SPEED
-{{-1}% INTELLIGENCE
-{1}% WITS
-{1}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{Deceit~2, Larceny~2, Stealth~1, Vigilance~2, Wyldcrafting~1
-}% SKILLS
-{\shortsword, dagger}% EQUIPMENT
-{
-  \knacks{\stunningstrike, \perfectsneakattack}
-}
+  {2}% DEXTERITY
+  {2}% SPEED
+  {{-1}% INTELLIGENCE
+  {1}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {3}% COMBAT
+  {}% SKILLS
+  {\shortsword, dagger\ifstrequal{\sqarea}{Forest}{longbow}, rations \boxStat{r4}}% EQUIPMENT
+  {
+    \knacks{\stunningstrike, \perfectsneakattack}
+    \setcounter{Projectiles}{2}
+    \setcounter{Academics}{1}
+    \setcounter{Deceit}{2}
+    \setcounter{Larceny}{2}
+    \setcounter{Stealth}{1}
+    \setcounter{Vigilance}{2}
+    \setcounter{Wyldcrafting}{1}
+  }
 }
 
 \newglossaryentry{sewerthief}{
-  name={Stoatflay},
-  first={Stoatflay Whiteplains},
-  description={is a member of the Immortal Bandits from Whiteplains.
-  He misses the comforts of nobility.  He spends a lot of his time running errands through \glsentrytext{pig} and across \glsentrytext{town}, such as delivering cursed magical items to \glsentrytext{banditking}}
+  name={Mosswipe},
+  first={Mosswipe},
+  type={people},
+  category={people},
+  parent={whiteBandits},
+  symbol={\M\Hu},
+  description={-- a talented down-and-out member of \glsentrytext{town} who now serves as the most capable member of the entourage who live beneath \glsentrytext{town}.
+  Despite his laziness, the \glsentrytext{whiteBandits} trust him}
 }
 
 \newcommand{\nurabaron}{
-\NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{\underline{FOOD}!}
+  \NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{\underline{FOOD}!}
 
-\person{5}% STRENGTH
-  {0}% DEXTERITY
-  {4}% SPEED
-  {{-4}% INTELLIGENCE
-  {-2}% WITS
-  {-4}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {Academics~1, Deceit~2}% SKILLS
-  {\greatsword}% EQUIPMENT
-  {
-    \knacks{\adrenalinesurge}
-  }
+  \person{5}% STRENGTH
+    {0}% DEXTERITY
+    {4}% SPEED
+    {{-4}% INTELLIGENCE
+    {-2}% WITS
+    {-4}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {Academics~1, Deceit~2}% SKILLS
+    {\greatsword}% EQUIPMENT
+    {
+      \knacks{\adrenalinesurge}
+    }
 }
 
 \newglossaryentry{nurabaron}{
-  name={Gladsun},
-  text={Gladsun},
-  first={Warden Gladsun},
-  description={was a jovial and simple Warden until he had an accident with a magical item, and has since turned into an ogre}
+  name={Rocklash},
+  text={Rocklash},
+  first={\glsentrytext{warden} Rocklash Redfall},
+  type={peeps},
+  category={people},
+  symbol={\M\Hu\gls{justice}},
+  parent={establishment},
+  description={-- \glsentrytext{warden} to the little hamlet \glsentrytext{redfall}, safely nestled not far from \glsentrytext{town}.
+  He refused to join \glsentrytext{banditking}, so \glsentrytext{banditking} cursed him and his family to become monsters, and eat all day.
+  \Glsentrytext{redfall} now starves, as their masters eat all the food}
 }
 
 \newcommand{\captain}{
-\NPC{\M\Hu}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{to finish all his paperwork}
-
-\person{1}%STRENGTH
-  {2}% DEXTERITY
-  {0}%  SPEED
-  {{1}% INTELLIGENCE
-  {-1}% WITS
-  {1}}% CHARISMA
-  {0}% DR
-  {2}% COMBAT
-  {Academics~1, Empathy~2, Stealth~2, Tactics~2, Wyldcrafting~1}% SKILLS
-  {\longsword, dagger, 2sp}% EQUIPMENT
-  {
-  \addtocounter{fp}{5}
-  \knacks{\adrenalinesurge}
-  }
+  \NPC{\M\Hu}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{to finish all his paperwork}
+  \person{1}%STRENGTH
+    {2}% DEXTERITY
+    {0}%  SPEED
+    {{1}% INTELLIGENCE
+    {-1}% WITS
+    {1}}% CHARISMA
+    {0}% DR
+    {2}% COMBAT
+    {Academics~1, Empathy~2, Stealth~2, Tactics~2, Wyldcrafting~1}% SKILLS
+    {\longsword, dagger, 2sp}% EQUIPMENT
+    {
+    \addtocounter{fp}{5}
+    \knacks{\adrenalinesurge}
+    }
 }
 
 \newglossaryentry{captain}{
-  name={Leechfrak},
-  text={Leechfrak},
-  first={Overseer Leechfrak},
-  description={is the captain of the \glsentrytext{guard} in \glsentrytext{town}}
+  name={Captain Vex},
+  type={peeps},
+  category={people},
+  sort={Vex},
+  parent={establishment},
+  symbol={\M\Hu\gls{justice}},
+  description={-- organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice}
 }
 
 \newcommand{\traitor}{
-\NPC{\M\Hu}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{to side-step into a noble life}
+  \NPC{\M\Hu}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{to side-step into a noble life}
 
-\person{2}% STRENGTH
-  {1}% DEXTERITY
-  {2}% SPEED
-  {{1}% INTELLIGENCE
-  {0}% WITS
-  {1}}% CHARISMA
-  {0}% DR
-  {2}% COMBAT
-  {Athletics~2, Deceit~1, Larceny~1, Wyldcrafting~2}% SKILLS
-  {\longsword, \partialchain}% EQUIPMENT
-  {
-    \addtocounter{fp}{5}
-    \knacks{\adrenalinesurge, \charge}
-  }
-}
-
-\newcommand{\townmaster}{
-  \humandiplomat[\NPC{\M\Hu}{\glsentrytext{townmaster}}{enthusiastic}{shouts `ha!'}{to hear news of victorious, glorious, battles}]
-}
-
-\newglossaryentry{townmaster}{
-  name={Prosity},
-  text={Warden Prosity},
-  first={Townwarden Prosity},
-  nonumberlist,
-  description={is the town warden, currently attempting to rebuild \glsentrytext{lostcity} by collecting magical items from the nura}
+  \person{2}% STRENGTH
+    {1}% DEXTERITY
+    {2}% SPEED
+    {{1}% INTELLIGENCE
+    {0}% WITS
+    {1}}% CHARISMA
+    {0}% DR
+    {2}% COMBAT
+    {Athletics~2, Deceit~1, Larceny~1, Wyldcrafting~2}% SKILLS
+    {\longsword, \partialchain}% EQUIPMENT
+    {
+      \addtocounter{fp}{5}
+      \knacks{\adrenalinesurge, \charge}
+    }
 }
 
 \newglossaryentry{traitor}{
-  name={Lieutenant Darren},
-  sort={Rankfilch},
-  text={Jotter Rankfilch},
-  first={Lieutenant Rankfilch of the \glsentrytext{guard}},
-  description={is an active and ambitious member of the \glsentrytext{guard}, currently working with \glsentrytext{townmaster} in secret, and taking information to the Woodspy Bandits},
+  name={Rankfilch},
+  text={Rankfilch},
+  type={people},
+  category={people},
+  symbol={\M\Hu\glsentrytext{beasts}},
+  parent={whiteBandits},
+  prefix={Jotter},
+  description={-- \glsentrytext{jotter} to the \glsentrytext{guard}.
+  He wants to become a \glsentrytext{warden}, so he helps smuggle items for the \glsentrytext{whiteBandits}},
 }
 
 \newcommand{\pigowner}{
-\NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{to make powerful friends}
-
-\person{1}% STRENGTH
-  {2}% DEXTERITY
-  {-1}% SPEED
-  {{1}% INTELLIGENCE
-  {2}% WITS
-  {1}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {Deceit~3, Empathy~1, Tactics~1}% SKILLS
-  {\Dagger, a hidden dagger, and an even more hidden dagger.}% EQUIPMENT
-  {
-  \addtocounter{fp}{5}
-  \knacks{\adrenalinesurge}
-  }
+  \NPC{\F\Hu}{\Glsentrytext{pigowner}}{Long, seaweed-like hair, and a delicate lady-tache}{Chin pointed up}{to make powerful friends}
+  \person{1}% STRENGTH
+    {2}% DEXTERITY
+    {-1}% SPEED
+    {{1}% INTELLIGENCE
+    {1}% WITS
+    {2}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {}% SKILLS
+    {\Dagger, a hidden dagger, and an even more hidden dagger.}% EQUIPMENT
+    {
+    \setcounter{Deceit}{3}
+    \setcounter{Empathy}{1}
+    \setcounter{Tactics}{2}
+    \addtocounter{fp}{8}
+    \knacks{\adrenalinesurge}
+    }
 }
 
 \newglossaryentry{pigowner}{
-  name={Egress, Owner of \glsentrytext{pig}},
-  text={Egress Pig},
-  description={is a middle-aged, fierce woman who runs the toughest bar in \glsentrytext{town}. She inherited the bar after her father killed the last owner, forged the ownership deed, then died of alcohol poisoning}
+  name={Egress},
+  first={Egress Pig},
+  text={Egress},
+  type={people},
+  category={people},
+  symbol={\F\Hu\gls{poison}},
+  parent={digger},
+  description={-- owner of \glsentrytext{pig}, the toughest bar in all of \glsentrytext{town}.
+  She's currently putting up the \glsentrytext{whiteBandits} in secret rooms below her tavern, \glsentrytext{pig}, where they pay her very well for access to the underbelly}
 }
 
 \newcommand{\warningbard}{
@@ -440,73 +788,47 @@
   name={Loot},
   text={Loot},
   first={Loot the bard},
-  description={is a young and headstrong bard who writes better than he sings}
-}
-
-%%%%% Adventures in Fenestra Places
-
-\newglossaryentry{redfall}{
-  name={Redfall},
-  first={Redfall Village},
-  description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
-}
-
-\newglossaryentry{alchemists}{
-  name={The Alchemists' Guild},
-  sort={Alchemists' Guild},
-  text={the Alchemists' Guild},
-  nonumberlist,
-  description={has a royal monopoly on alchemical magic.
-  It also generally refers to the primary location in Eastlake}
-}
-
-\newglossaryentry{college}{
-  name={The University of Alchemy},
-  sort={University of Alchemy},
-  text={the University of Alchemy},
-  nonumberlist,
-  first={the University of Alchemy},
-  description={is where all alchemists go for training.  They maintain a complete monopoly on alchemical magic, and all spells must be learned through them or one of their outposts}
-}
-
-\newglossaryentry{pig}{
-  name={Mincing Pig},
-  text={the Mincing Pig},
-  first={the Mincing Pig Tavern},
-  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
-  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}}
-}
-
-\newglossaryentry{whitehorse}{
-  name={White Horse Inn},
-  text={the White Horse},
-  first={the White Horse Inn},
-  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
-}
-
-\newglossaryentry{lostcity}{
-  name={Lost City},
-  text={the Lost City},
-  nonumberlist,
-  first={the Lost City},
-  description={is a mythical, massive city, which once stretched across the entire area. In fact the area simply contained disconnected towns and villages, and had a lot of stone walls and buildings. A lot of the stone has simply been repurposed for modern buildings}
-}
-
-\newglossaryentry{greentower}{
-  name={The Green Tower},
-  text={the Green Tower},
-  sort={Green Tower},
-  description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
+  type={people},
+  category={people},
+  symbol={\M\Hu},
+  parent={digger},
+  description={-- a young and headstrong bard who writes better than he sings.
+  He fully believes \glsentrytext{beardedalemaster}'s promises of creating a magical kingdom of safety, and freedom, and sings high praises of the ancient \glsentrytext{lostcity}, and how brave adventurers will return it to its former glory}
 }
 
 \newglossaryentry{alchemist}{
-  name={Cleftwarp Ventress},
+  name={Cleftwarp},
   text={Cleftwarp},
-  first={Cleftwarp Ventress},
-  description={works for \glsentrytext{townmaster} in \glsentrytext{town}'s citadel}
+  first={Cleftwarp},
+  prefix={Seeker\space},
+  sort={Cleftwarp},
+  type={peeps},
+  category={people},
+  symbol={\M\Hu\gls{curiosity}},
+  parent={establishment},
+  description={-- head \glsentrytext{seeker} of the \glsentrytext{paperGuild}, who stays with \glsentrytext{townmaster} in \glsentrytext{town}'s citadel, rather than the local \glsentrytext{paperGuild}}
 }
 
 \newcommand\citadelAlchemist{
-  \humanalchemist[\NPC{\M\Hu}{\Gls{alchemist}, the Alchemist}{Caring}{Counts everything at every opportunity}{Acquisition}]
+  \humanalchemist[\NPC{\M\Hu}{\Gls{alchemist}, the Alchemist}{Caring}{Counts everything at every opportunity}{to marry \glsentrytext{librarian}}]
 }
 
+\newglossaryentry{librarian}{
+  name={Foxglove},
+  first={Scribe Foxglove},
+  type={peeps},
+  category={people},
+  prefix={Seeker\space},
+  symbol={\F\Hu\gls{curiosity}},
+  parent={establishment},
+  description={-- organizes the local \glsentrytext{paperGuild}, and knows everything one could possibly read in any book, but has no time to talk with anyone}
+}
+
+%%%%% Symbols
+
+\newglossaryentry{vlg}{
+  type=symbols,
+  parent={sqr},
+  name={\Psyche},
+  description={One \Glsentrytext{village} may be destroyed during this part -- mark it off the map}
+}

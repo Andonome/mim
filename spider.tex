@@ -1,39 +1,52 @@
-\sidequest[Forest,Town,Villages]{\Glsentrytext{spiderqueen}'s Song}
+\sidequest[Forest,Town,Roads]{The Spider's Song}
 
 \noindent
 When elves become old, they get weird.
 \Gls{spiderqueen} has left her people, and devoted her life to enchanting animals with song and fostering a kinship with them.
-Currently, she has collected four pet chitincrawlers, but she's having trouble keeping them, because they require too much food.%
-\footnote{\iftoggle{aif}{See \autopageref{chitincrawler} for chitincrawlers.}{Chitincrawlers are gargantuan spiders, about the size of a horse.}}
-She has also begun Polymorphing her own body to look progressively more like a chitincrawler.
+Currently, she has collected three pet chitincrawlers, but she's having trouble keeping them, because they require too much food.%
+\exRef{judgement}{Judgement}{chitincrawler}
+She has also begun magically deforming her own body to look progressively more like a chitincrawler.
+Currently, her lower body has six legs and a thorax, which produces thin webbing.
+Her skin has begun to harden, and sprout thick, brown hair.
 
 Over the course of these encounters, \gls{spiderqueen} becomes progressively more irritating to the troupe and the local area, until the players finally happen upon her lair.
 
-Chitincrawlers don't operate during the Winter, so if you run into a Winter season, just miss these encounters until the world is warmer.
+Chitincrawlers hibernate over the colder seasons, so if \gls{fenestra} has entered a cold season, skip these encounters until later.%
+\exRef{judgement}{Judgement}{astronomy}
 
 \sqpart{Forest}% AREA
 {The Arachnid Double Cross}% NAME
 {\Gls{spiderqueen} double-bluffs the troupe, attacking with illusory chitincrawlers, mixed in with real ones}% SUMMARY
 \label{spiderqueenssong}
 
-\textbf{Background:}
-\Gls{spiderqueen} wants her chitincrawlers to feed well (on the PCs, since they're here), but doesn't want them to get hurt.
-She begins by casting an illusion of seven chitincrawlers, so the PCs will spot the fakery, and stop trying to resist so the real ones can eat them more easily.
-To complete this illusion, she casts yet another illusion of a gnome sitting in a tree, so the PCs will feel convinced that nothing they see is worrying.
+\Gls{spiderqueen} sat with her babies, serenely in the forest, wondering what to feed them.
+She cast a \textit{Witness Life} spell, and discovered the \glspl{pc}, then hatched a cunning plan\ldots
+
+\begin{enumerate}
+  \item
+  She will cast illusions of chitincrawlers, who attack beside her real babies.
+  \item
+  The characters will spot the illusions (they aren't very good) and think they are in no danger.
+  \item
+  A moment later, she creates an illusion of a gnome, so the characters will \emph{think} that they understand where the illusions came from.
+  \item
+  As the real chitincrawlers grab the characters, they will be taken completely by surprise.
+\end{enumerate}
+
+She casts her spells by singing songs.
 
 \begin{boxtext}
-
   You can always tell elven music by a sort of off-beat, where the beat goes wrong in a regular way.
   This one is soft and high-pitched, and interrupted by the sound of snapping twigs.
   More crackles come from in front.
-  The setting Sun casts a red shimmer over the armoured bodies of a dozen man-sized chitinous, crawling creatures.
+  The setting Sun casts a red shimmer over the armoured bodies of a dozen man-sized black-clad, crawling creatures.
   The trees drop a small platoon of arachnids, and in a moment a hundred eyes are calculating how you taste.
 
 \end{boxtext}
 
-The PCs roll Wits + Vigilance to understand their environment.
+The \glspl{pc} roll \roll{Wits}{Vigilance} to understand their environment.
 
-\begin{boxtable}
+\begin{nametable}{What they see\ldots}
 
   \textbf{TN} & \textbf{Result} \\\hline
   8 & The Sunset red on the chitin is too much, like the creatures don't look right.  You instantly spot that these are illusions. \\
@@ -43,24 +56,55 @@ The PCs roll Wits + Vigilance to understand their environment.
   13 & Looking past the poor chitincrawler illusions in front of you, you notice that the rest are completely and definitively real. \\
   14 & The little gnome, however, is entirely fake. \\
 
-\end{boxtable}
+\end{nametable}
 
-Ten chitincrawlers attack (3 real, 7 fake).
+Thirty chitincrawlers attack (3 real, 27 fake).
 
-\paragraph{If any PC cannot tell the real chitincrawlers from the fakes,}
-they will have real problems in combat as they will expend all their AP on the fake ones (which attack first).
+\paragraph{If any \gls{pc} cannot tell the real chitincrawlers from the fakes,}
+they will have real problems in combat as they will expend all their \glspl{ap} on the fake ones (which attack first).
 
 \paragraph{If they kill a chitincrawler,}
 \gls{spiderqueen} `changes her tune', and sings another song to bring them back to her.
 
-\paragraph{If the PCs get close to \gls{spiderqueen},}
-she polymorphs into a bird and flies away.
-
 \chitincrawler[\npc{\A\T[3]}{3 Chitincrawlers}]
 
-\sqpart{Villages}% AREA
+\paragraph{If the \glspl{pc} approach \gls{spiderqueen},}
+she casts another illusion to make herself appear as a bush (\tn[10] to spot).
+
+\paragraph{If two \glspl{pc} die,}
+the chitincrawlers all stop to feed.
+
+\spiderqueen
+\label{spiderqueen}
+\index{Elves!Weird}
+
+\showStdSpells[
+  \spell{Spider Hive}% Name
+    {duplicated,detailed}% Enhancements
+    {Warp}% Action
+    {Air, Fire}% Spheres
+    {\roll{Wits}{Vigilance}}% Resist with
+    {The caster rapidly lists every known property of spiders, and \arabic{spellTargets} chitincrawler illusions emerge from every shadow}% Description
+    {Each chitincrawler has Body Attributes at +\arabic{spellPlusOne}, and vanishes once anything touches them.}
+  \input{config/spells/Light2.tex}
+  \input{config/spells/Life3.tex}
+  \setcounter{enc}{3}
+]
+
+\sqpart{Roads}% AREA
 {Sheep Stampede}% NAME
 {\Glsentrytext{spiderqueen} summons sheep to be eaten by her chitincrawlers}% SUMMARY
+
+\begin{exampletext}
+  \Gls{spiderqueen} has gathered more chitincrawlers, and she needs to feed them again, so they have laid out their webs, and await their dinner.
+\end{exampletext}
+
+If the troupe are near town, they spot a shepherd on his own.
+If they are near the \gls{edge}, then the shepherd is travelling with a two trading wagons and four \glspl{guard}. 
+The \glspl{guard} take a morale check to see if they enter combat.%
+\exRef{core}{Core Rules}{morale}
+
+\humansoldier[\npc{\T[4]\Hu}{\Glspl{guard}}]
 
 \begin{boxtext}
 
@@ -69,8 +113,8 @@ she polymorphs into a bird and flies away.
 
 \end{boxtext}
 
-\textbf{Background:}
-\Gls{spiderqueen} has gathered more chitincrawlers, and she needs to feed them again, so they have laid out their webs, and await their dinner.
+\paragraph{If the \glspl{pc} do nothing,}
+the chitincrawlers feed for thirty minutes, then leave.
 
 \begin{boxtext}
 
@@ -78,33 +122,29 @@ she polymorphs into a bird and flies away.
 
 \end{boxtext}
 
-\paragraph{If the PCs do nothing,}
-the chitincrawlers feed for thirty minutes, then leave.
-
 \paragraph{If the characters pursue,}
-they encounters webs (Wits + Vigilance, TN 9 to spot), then see the chitincrawlers feasting on the sheep.
+they encounters webs (\roll{Wits}{Vigilance} (\tn[9]) to spot), then see the chitincrawlers feasting on the sheep.
 They will disengage and attack the characters if they take any Damage.
 
 \paragraph{If the players mention specifically to look out for webs,}
 their characters should spot them immediately.
 
+\chitincrawler[\npc{\A\T[6]}{\arabic{noAppearing} Chitincrawlers}]
+
 As before, \gls{spiderqueen} waits in the distance, and flees at the first sign of trouble.
 
-\chitincrawler[\npc{\A\T[8]}{8 Chitincrawlers}]
-
-\sqpart{Villages}% AREA
-{Quiet Little Hamlet}% NAME
+\sqpart{Roads}% AREA
+{\gls{vlg} Quiet Little Hamlet}% NAME
 {An entire hamlet has been eaten by chitincrawlers}% SUMMARY
 
 \widePic{Dyson_Logos/ruined_village}
 
-\textbf{Background:}
-Most villages in the inner circle, closer to a town, feel safe.
-If woodspies or chitincrawlers attack, they generally engage with earlier, walled towns, rather than those close to the centre of the circle of civilization.
+Chitincrawlers don't usually reach the inner hamlets -- they get distracted along the way by traders or \glspl{village}.
+But \gls{spiderqueen} can lead her babies anywhere, including past the dangerous, outer \glspl{village}, and into the quiet little areas inside.
+So no matter which road the \glspl{pc} walk, they can encounter a village destroyed by \gls{spiderqueen}.
 
-Knowing this, \gls{spiderqueen} coaxed her babies past the dangerous walled towns, full of armoured archers, and brought them to a quiet little hamlet where they could feed safely, and lay lots of eggs.
-
-The plan went perfectly, so she left them to sleep and mate, and plans to return when she has more little babies to bring home with her.
+If the \glspl{pc} have arrived at a known \gls{village} or \gls{bothy}, use that one.
+Otherwise, use this example.
 
 \begin{boxtext}
 
@@ -132,7 +172,7 @@ However, inside each of the four farmhouses, rooms are filled wall-to-wall with 
 \paragraph{If the troupe want to leave}
 then they can, without issue.
 
-\paragraph{If the PCs make a lot of noise,}
+\paragraph{If the \glspl{pc} make a lot of noise,}
 all of the male chitincrawlers come out, and pursue.
 The females remain with their eggs.
 
@@ -140,73 +180,85 @@ The females remain with their eggs.
 
 \chitincrawler[\npc{\A\T[3]}{Female Chitincrawlers}]
 
+\sqpart{Town}% AREA
+{\gls{vlg} Another Village Down}% NAME
+{Everyone in \glsentrytext{town} talks about another village, taken by \glsentrytext{spiderqueen}}% SUMMARY
+
+Select any village on the map and cross it out.
+\Gls{spiderqueen} has raided it, and the place has become so full of chitincrawlers that people now avoid it, and take another road.
+
+If the \glspl{pc} journey to kill the chitincrawlers, they find 10 chitincrawlers in total, and a lot of remains of dead villagers.
+
 \sqpart{Forest}% AREA
 {The Lone Ranger}% NAME
-{A member of the \glsentrytext{guard} stalks \glsentrytext{spiderqueen}}% SUMMARY
+{A \glsentrytext{guard} ranger describes \glsentrytext{spiderqueen}'s fortress}% SUMMARY
 
-\textbf{Background:}
-Gregory, a scout in the \gls{guard}, went out to track down \gls{spiderqueen}.
+Bilefen, a ranger in the \gls{guard}, went out to track down \gls{spiderqueen}.
 He has succeeded, but won't approach her alone.
 
 \begin{boxtext}
 
-  A man ahead, dressed in greens, stares at you, then slowly wanders forward.  He puts his finger to his mouth, indicating you need to be silent.
+  A man ahead, dressed in black, stares at you, then slowly wanders forward.
+  He puts his finger to his mouth, indicating you need to be silent.
 
 \end{boxtext}
 
-Gregory approaches slowly, and explains his solo mission to track down \gls{spiderqueen}.
-He confesses he feels scared, and asks the troupe to come with him (``but quietly.!.'').
+Bilefen approaches slowly, and explains his solo mission to track down \gls{spiderqueen}.
 
-\paragraph{If the troupe continue following the tracks,}
-they encounter \gls{spiderqueen}'s lair.
+\begin{speechtext}
+  \small
+  There's that creature -- looks like \gls{sylf} went and fucked an elf -- she just went past with half a dozen chitincrawlers following her.
+  We should get a peek at her situation and report back to \pgls{jotter}.
+  But\ldots
 
-\begin{boxtext}
-  In the distance, you see trees covered in so much webbing it seems like a fortress of goo.
-  No clear path presents itself, and shortly after the webs you can see five, then ten, arachnid silhouettes.
-  A few move slowly down their trees.
-\end{boxtext}
+  And I {\large\scshape cannot} stress this enough\ldots
 
-Having found the location, Gregory only wants to return to \gls{town} and give his report.
+  \noindent
+  quietly\ldots
+\end{speechtext}
 
-\paragraph{If the PCs fight,}
-the chitincrawlers don't move out quickly -- they feel safer in their lair, but they may come out if fire begins to burn their home.
+What the troupe see depends on how far they're willing to go.
+Ask the players to make the roll, without \pgls{tn}, give them the results, then ask if they want to press on while raising the \gls{tn}.
 
-Twelve chitincrawlers in total remain in the fortress of webs, and two emerge each round.
-\Gls{spiderqueen} then moves out to cast aggressive Polymorph spells, turning them into goats, birds, or other creatures.
+\begin{nametable}{What they see\ldots}
+  \textbf{\gls{tn}} & \textbf{Result} \\
+  6 & In the distance, you see trees covered in so much webbing it seems like a fortress of goo. \\
+  7 & There's a feint silhouette of \gls{spiderqueen} in the very centre, with two chitincrawlers next to her. \\
+  8 & You can't see a clear path to the centre of the mess of webs yet. \\
+  9 & Bilefen decided to retreat. \\
+  10 & Getting closer, you can count the motionless black spots in the fortress -- about a dozen. \\
+  11 & {\large\scshape They've heard you, they climb down, three are out and running\ldots now six.} \\
+\end{nametable}
 
-\paragraph{If the PCs push for Gregory to join them,}
-someone needs to roll Charisma + Combat, TN 10.
-Whether or not they succeed, Gregory impresses on them that they have no duty to fight.
+\paragraph{If the \glspl{pc} push for Bilefen to join them,}
+someone needs to roll \roll{Charisma}{Tactics}, \tn[11].
 
-\humansoldier[\NPC{\M}{Gregory}{Suspicious}{Purses lips}{Tribe}]
-
-\paragraph{If the troupe attempt to light the forest on fire,}
-they will have a hard time.
-The forest is muggy and damp at the best of times.
-Even in the warmer seasons, lighting a fire requires an Intelligence + Wyldcrafting roll, TN 13.
-No fire will spread fast, so the chitincrawlers will still have time to attack.
+\humansoldier[\NPC{\M\Hu}{Bilefen}{tall, lanky, and agitated}{purses lips}{to get promoted to builder}]
 
 \sqpart{Town}% AREA
 {\squash The Disappearing Fortress}% NAME
-{The \gls{spiderqueen} has moved her fortress}% SUMMARY
+{\Glsentrytext{spiderqueen} has moved her fortress}% SUMMARY
 
-While the next Side Quest plays out, drop the bad news on the PCs -- the \gls{guard} moved out en masse to defeat \gls{spiderqueen}, but by that time she had moved her home and brood elsewhere.
+While the next \gls{sq} plays out, drop the bad news on the \glspl{pc} -- the \gls{guard} moved out en masse to defeat \gls{spiderqueen}, but by that time she had moved her home and brood elsewhere.
 
 Nobody has any idea where she might build her new home, but they know the walls of civilization cannot take much more.
 
 \sqpart{Forest}% AREA
 {The Cunning Plan}% NAME
 {Three gnomes have an elaborate plan for the troupe to kill \gls{spiderqueen}}% SUMMARY
+\index{Gnomes!\Glsfmttext{spiderqueen}}
 
-\textbf{Background:}
-Three gnomes have been debating about how to approach the troupe about their plan.
-\Gls{keras} thinks that it's best to honest, and just approach the troupe and ask if they would like to fight giant spiders.
-However, Holly is the chief illusionist, and her nose is longer than \gls{keras}'s,\footnote{Gnomes consider this to be a very important point.} so she says there's no use talking to the troupe without testing if they really can fight chitincrawlers.
-Greg, meanwhile, just wants both of them to stop fighting and make a decision.
-He's been depressed ever since their village was eaten by chitincrawlers.
+\begin{exampletext}
+  Three gnomes have been debating about how to approach the troupe about their plan.
+  \Gls{keras} thinks that it's best to honest, and just approach the troupe and ask if they would like to fight giant spiders.
+  \glsxtrcopytoglossary{keras}{people}
+  However, Leta is the decision-maker, and her nose is longer than \gls{keras}'s,\footnote{Gnomes consider this to be a very important point.} so she says there's no use talking to the troupe without testing if they really can fight chitincrawlers.
+  Mayelo, meanwhile, just wants both of them to stop fighting and make a decision.
+  He's been depressed ever since their village was eaten by chitincrawlers.
 
-The final plan is to cast an illusion of a chitincrawler and see how the troupe react.
-If they appear as skilled warriors, the gnomes approach and tell them the plan to defeat \gls{spiderqueen}.
+  Their final plan is to cast an illusion of a chitincrawler and see how the troupe react.
+  If they appear as skilled warriors, the gnomes approach and tell them the plan to defeat \gls{spiderqueen}.
+\end{exampletext}
 
 \begin{boxtext}
 
@@ -220,7 +272,7 @@ the encounter ends.
 
 \paragraph{If the illusion of a chitincrawler has been vanquished,}
 the three gnomes step forward.
-Holly begins talking like she's some kind of trader.
+Leta begins talking like she's some kind of trader.
 
 \begin{speechtext}
 
@@ -228,7 +280,7 @@ Holly begins talking like she's some kind of trader.
 
   You really hate them?
 
-  How much would it be worth to you to be rid of \gls{spiderqueen}, who guides them through the human villages?
+  How much would it be worth to you to be rid of \gls{spiderqueen}, who guides them through the human \glspl{village}?
 
   And you seem to be adventurers, in the employment of destroying monsters, is that so?
 
@@ -236,18 +288,18 @@ Holly begins talking like she's some kind of trader.
 
 \end{speechtext}
 
-It's only after the characters emphatically agree that they do want to kill \gls{spiderqueen} that Holly informs them that she's feeling so generous that she's going to help them for free, and indeed has already laid plans.
+It's only after the characters emphatically agree that they do want to kill \gls{spiderqueen} that Leta informs them that she's feeling so generous that she's going to help them for free, and indeed has already laid plans.
 
 If the players ask how the gnomes know exactly where she is, they explain they have triangulated her position through her periodic singing.
-If they ask how the gnomes can be so certain that a half-kilometre tunnel, going somewhere the gnomes have never seen, can be so precisely dug, Gregory shows them his calculations.
-An Intelligence + Academics roll at TN 11 shows that they are correct.
+If they ask how the gnomes can be so certain that a half-kilometre tunnel, going somewhere the gnomes have never seen, can be so precisely dug, Bilefen shows them his calculations.
+An \roll{Intelligence}{Academics} roll at \tn[11] shows that they are correct.
 
 The players should be aware that if they jump out \emph{near} \gls{spiderqueen}, but not quite at her, they will be attacked instantly, with little hope of survival.
 Their only hope is to break out of the earth, kill her in an instant, and hope the chitincrawlers flee once her spell has been broken.
 
 \begin{speechtext}
 
-  It's simple really.
+  It's simple.
   Anyone wandering close to that pit of spiders will be eaten by spiders.
   Any large army approaches, and she will flee, with no option to track here whereabouts.
   The only way to be rid of her is a fast, decisive attack.
@@ -278,13 +330,19 @@ Two of the chitincrawlers will arrive to attack each round, but once \gls{spider
 
 \keras
 
-\gnome[\NPC{\F}{Holly}{Inquisitive}{Picks nose}{Tribe}]
+\showStdSpells
 
-\gnome[\NPC{\M}{Greg}{Creepy}{Scratches Adams apple}{Acquisition}]
+\gnome[\NPC{\Gn\F}{Leta}{Inquisitive}{Picks nose}{less chatter, more action}]
+
+\gnome[\NPC{\Gn\M}{Mayelo}{Creepy}{Scratches Adams apple}{to double-check the Maths}]
 
 \spiderqueen
 
-\Gls{spiderqueen} has spent 4 MP to gain a spider-like body, with +3 Strength and DR 3.
+\showStdSpells[
+  \input{config/spells/Fate2.tex}
+  \input{config/spells/Fire2.tex}
+  \setcounter{enc}{3}
+]
 
 \chitincrawler[\npc{\A\T[6]}{Chitincrawlers}]
 
@@ -293,9 +351,5 @@ If she's damaged and her chitinous children pushed back, she flees to seek new a
 
 \paragraph{Failure} occurs when the characters fail to damage \gls{spiderqueen} or her children before they flee.
 Things get difficult here.
-She attacks neighbouring villages twice, then gains her fifth level of Polymorph, and decides to become an air spirit for a while.
-These two attacks play out as above, so she can only be stopped by a full-on assault at her lair, without the aid of a gnomish tunnel.
-
-\stopcontents[sq]
-
+She destroys two more \glspl{village}, then wanders off to find something else to entertain herself, as elves often do.
 

@@ -1,0 +1,493 @@
+\makeindex[name=history,title={Chronological Events},columns=2]
+
+\newcommand\histEvent[3]{%
+    \setcounter{track}{\year}%
+    \multiply\value{track} by 3%
+    \stepcounter{track}%
+    \setcounter{diceNo}{#1}%
+    \divide\value{diceNo} by 3%
+    \addtocounter{track}{-\value{diceNo}}%
+  \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showSeason[#2]}\nobreak\\  {#3}|bigLine}%
+}
+
+\newtoggle{river}
+\settoggle{river}{true}
+
+\newcommand\mkPrice[2][sp]{%
+  \randomtwo%
+  \randomthree%
+  \randomthreeC%
+  \randomfour%
+  \randomdozen%
+  \setcounter{track}{#2}%
+  \ifnum\value{track}<4%
+  \else%
+    \addtocounter{track}{\value{r2}}%
+    \ifnum\value{track}<14%
+      \addtocounter{track}{\value{r3c}}%
+    \else%
+      \ifnum\value{track}<34%
+        \addtocounter{track}{\value{r4}}%
+      \else%
+        \addtocounter{track}{\value{r12}}%
+      \fi%
+    \fi%
+  \fi%
+  \ifnum0<\value{track}%
+    \arabic{track}~\glspl{#1}%
+  \else%
+    \textit{free}!
+  \fi%
+}
+
+\newcommand\marketItem[4][sp]{
+  \ifodd\value{track}%
+    \randomthree%
+    \randomthreeB%
+    \randomfour%
+  \fi%
+  \randomdozen
+  #2 &% Name
+  #3 &% Weight
+  \mkPrice[#1]{#4} % Price
+  \\
+}
+
+
+\newcommand\rareMarketItem[4][9]{%
+  \ifnum\value{r12}>#1%
+    \marketItem{#2}{#3}{#4}%
+  \fi%
+}
+
+
+\newcommand\showArmourPrice[2]{%
+  #1 & \arabic{armourDR} & \arabic{covering} &  \arabic{weight} & \mkPrice{#2} \\%
+}
+
+\newcommand\rareArmour[3][9]{
+  \ifnum\value{r12}>#1%
+    \showArmour{#2} & \mkPrice{#3} \\
+  \fi%
+}
+
+\newcommand\townMap{
+  \mapPic[\large]{t}{Dyson_Logos/town}{
+    \Huge \ref{citadel}/87/50,
+    \ref{guardstation}~\glsentrytext{justice}/86/41,
+    {\footnotesize\nameref{whitehorse}}/34/77,
+    \ref{paperGuild}~\glsentrytext{curiosity}/60/65,
+    \ref{greyDoulaShop}~\glsentrytext{misgen}/79/35,
+    \ref{townHealersGuild}~\glsentrytext{sickness}/76/28,
+    \Glsentrytext{pig}~\glsentrytext{poison}/78/32,
+    \ref{smugglerHouse}/84/26,
+    \ref{gnomishPart}~\glsentrytext{Gn}/60/92,
+    \ref{armourHall}~\glsentrytext{hate}/71/77,
+    \rotatebox{9}{Big Docks}/60/48,
+    \rotatebox{-9}{\Glsentrytext{southDale} Docks}/39/48,
+    \rotatebox{-90}{Windy Bridge}/47/51,
+    \rotatebox{-54}{Citadel Bridge}/72/55,
+    \rotatebox{-9}{\scriptsize Cowbridge}/51/33,
+    \rotatebox{-1}{\scriptsize Sheepbridge}/50/22,
+    \rotatebox{-90}{Spy Grate}/23/54,
+    \ref{greyMarket}/53/71,
+    \ref{greyMarket}/60/35,
+  }
+}
+
+\newcommand\prisonMap{
+  \mapPic{t}{Daniel_Walthall/prison}{
+    \huge\rotatebox{-45}{\nameref{dunStorage}}/24/82,
+    \ref{dunStorage}/21/77,
+    \huge\rotatebox{-45}{\nameref{guardStationRoom}}/29/24,
+    \ref{guardStationRoom}/21/26,
+    \nameref{mainPrisonRoom}/59/56,
+    \ref{mainPrisonRoom}/56/46,
+    \Large\nameref{dunCells}/66/98,
+    \ref{dunCells}/71/79,
+    \Large\nameref{dunBro}/66/02,
+    \ref{dunCells}/71/21,
+    \Large\rotatebox{-45}{\nameref{dunGrate}}/88/50,
+    \ref{dunGrate}/80/50,
+    \Large\rotatebox{-45}{\nameref{thingsRoom}}/88/79,
+    \ref{thingsRoom}/84/75,
+    \Large\rotatebox{-45}{\nameref{ogreCell}}/84/17,
+    \ref{ogreCell}/88/23,
+    }
+}
+
+\newcommand\shadowVaultMap{
+  \mapPic{t}{Dyson_Logos/shadow_gate}{
+    S/82/47,
+    S/28/26,
+    \ref{shadowStairs}/00/50,
+    {\Large\ref{entranceCullis}}/10/47,
+    \ref{shadowPot}/10/23,
+    \ref{shadowOaths}/23/90,
+    \ref{watchfullOrb}/57/90,
+    \ref{shadowVore}/21/47,
+    \ref{shadowJelly}/77/47,
+    \ref{shadowStaff}/37/12,
+    \ref{janitorCloset}/33/26,
+    \ref{shadowGate}/55/47,
+    \ref{shadowDesk}/88/47,
+    \ref{shadowGuardian}/82/81,
+    \ref{memoryOrb}/82/12,
+    \rotatebox{90}{S}/33/18,
+  }
+}
+
+\newcommand\revelationSpell{
+  \spell{Screaming Revelation}% Name
+    {distant, detailed}% Enhancements
+    {Warp}% Action
+    {Fate, Air}% Spheres
+    {\roll{Strength}{Vigilance}}% Resist with
+    {With a description of the grey world beyond, the caster pushes the target into a state of semi-death.
+    They gain \gls{dr} 2, ignore all \gls{fatigue} penalties, and see as the dead see, for \arabic{spellCost}~\glspl{interval}}% Description
+    {
+      The target can make limited use of their normal vision, but mostly feels aware of the penetrating light given off by every soul.
+      Animals emit a feint light.
+      Those with a higher Charisma score tend to emanate a little more.
+
+      The vision becomes indistinct beyond \spellRange\ -- the target understands nothing more than `something might live over there', and any life around them quickly distorts that limited vision.
+
+      For as long as the spell remains active, the target cannot regenerate \glspl{fatigue}, \glspl{mp}, or \glspl{hp}.
+      While the spell diminishes a little with every movement, but targets who remain still retain the spell's effects.
+    }
+}
+
+\newcommand\doomStudySpell{
+  \spell{Doom Study}% Name
+    {divergent}% Enhancements
+    {Wax}% Action
+    {Fate, Air, Earth, Fire}% Spheres
+    {\roll{Wits}{Vigilance}}% Resist with
+    {The target begins unending focus on their current task, while the force of gravity pulls extra hard.
+    They could as holding an item of \gls{weight}~\arabic{spellPlusOne}, and take a -\arabic{spellPlusOne} penalty to focus on anything but their current object of attention}% Description
+    {The character can snap out of their heavy studies only once they earn \pgls{xp} for following their Code.}
+}
+
+\newcommand\deathStormSpell{
+  \spell{Marshweed}% Name
+    {detailed, distant, duplicated}% Enhancements
+    {Wane}% Action
+    {Air}% Spheres
+    {\roll{Strength}{Athletics}}% Resist with
+    {As the caster gurgles a rotten noise, they release a rancid cloud in the shape of black, whispy, tendrils.
+    They cover an area of \arabic{spellTargets} \glspl{step}, inflicting \arabic{spellPlusTwo}~\glspl{fatigue} to anyone in the area who breathes it in}% Description
+    {}
+}
+
+\newcommand\findGatewaySpell{
+  \spell{Detect Gateway}% Name
+    {detailed, distant}% Enhancements
+    {Witness}% Action
+    {Air}% Spheres
+    {wind speed}% Resist with
+    {With a whistful wondering, the caster begins to perceive any magical gateways around \spellRange, in the chosen direction}% Description
+    {}
+
+}
+
+\newcommand\bookInvestigationChart[1][t]{
+  \begin{figure*}[t]
+  \setcounter{diceNo}{6}
+  \small
+
+  \begin{nametable}[c|m{10em}|X|c|m{3em}]{\nameref{alchemyLibrary} Investigation}
+    \textbf{Roll} & \textbf{Title} & \textbf{Contents} & \textbf{Value} & \textbf{\Glsentrytext{weight}} \\
+    \hline
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{Area Map}
+    &
+    An ancient city map, detailing sites of interest such as a Temple of \gls{eldren}, and the `Golden Priests' Magic Mushrooms' (\autopageref{green_tower}).
+    &
+    5~\glspl{sp}
+    &
+    0
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{Fire: Uses and Abuses}
+    \hint{Author: Nilawa}
+    &
+    A valuable book on Fire \glspl{talisman}.
+    &
+    10~\glspl{gp}
+    &
+    1
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    (letter)
+    &
+    A letter stating that a gateway to an unknown place (`\textit{perhaps in the \gls{deep}}?' it ponders) has been opened (it does not say where), and this suggests an opportunity for trade if the entities on the other side have any useful \glspl{ingredient}.
+    It also mentions that current trade may soon become difficult, as this side of the gateway has become ever more pedantic with its `command words'.
+    &
+    1~\glspl{sp}
+    &
+    0
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    (letter)
+    &
+    Letters of complaint from the `Dean of Forces', stating that the `Dean of Illusions' must tidy up the foyer, and that the rats his crumbs attract have become so bad that he's ordering no food to be permitted in the area, under any circumstances.
+    &
+    0
+    &
+    0
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{The Earth Sphere (A Guide for Morons)}
+    \hint{Author: Munoka}
+    &
+    A valuable book on the Earth Sphere.
+    &
+    5~\glspl{sp}
+    &
+    2
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{The Greatest of Monsters: Taxation}
+    \hint{Author: \gls{warden} Gray}
+    &
+    One of \gls{townmaster}'s ancestors explains why paying taxes for use of  the magical gateways, strangles freedom, innovation, and basic decency.
+    &
+    3~\glspl{gp}
+    &
+    1
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    \textit{Divergent Gateways: The Hows \& Why Nots}
+    \hint{Author: Tuleta}
+    &
+    The book details how to use a \textit{Divergent, Distant, Detailed, Duplicated Warp Mind \& Force} spell to simultaneously open many gateways to a particular space, while making all of the gateways sentient, and able to recast their own spell. 
+    &
+    50~\glspl{gp}
+    &
+    2
+    \\
+    \textbf{\arabic{diceNo}}\stepcounter{diceNo} &
+    (letter)
+    &
+    A letter complaining that the gateway has become `too clever for its own good', from a tradesman who's tired of answering riddles.
+    &
+    5~\glspl{sp}
+    &
+    0
+    \\
+  \end{nametable}
+  \label{libraryTable}
+  \end{figure*}
+}
+
+
+\newcommand{\undeadBasilisk}[1][\npc{\D\A}{Undead Basilisk}]{
+  #1
+  \animal{7}% STRENGTH
+  {1}% DEXTERITY
+  {-2}% SPEED
+  {-4}% WITS
+  {7}% DR
+  {2}% AGGRESSION
+  {}% SKILLS
+  {}% ABILITIES
+  {
+    \renewcommand\abilities{\quadraped}
+    \setcounter{Athletics}{\value{r2c}}
+    \renewcommand\equipment{\partialplate}
+    \undead
+  }
+}
+
+
+\newcommand{\newGhast}[1][\npc{\D\Hu}{Ghast}]{
+    #1
+    \randomtwo\addtocounter{enc}{-1}
+    \randomtwoB
+    \randomtwoC
+    \randomthreeB
+    \addtocounter{r2b}{-1}
+  \person{\arabic{enc}}% STRENGTH
+  {\arabic{r2b}}% DEXTERITY 
+  {0}% SPEED
+  {{0}% INTELLIGENCE
+  {0}% WITS
+  {-5}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {}% SKILLS
+  {%
+    \ifnum\value{noAppearing}>2%
+      \shortsword%
+    \fi%
+  }% EQUIPMENT
+  {
+    \ifodd\value{r3}%
+      \setcounter{Academics}{\value{r3}}
+    \else
+      \setcounter{Deceit}{\value{r3}}
+    \fi
+    \ifodd\value{r2}%
+      \setcounter{Athletics}{\value{r3b}}
+    \else
+      \setcounter{Tactics}{\value{r3b}}
+    \fi
+    \setcounter{Vigilance}{1}
+    \undead
+  }
+}
+
+\newcommand\stirgeGhouls[1][\npc{\T[2]\D\Hu}{\arabic{noAppearing} Stirge-Infected Ghouls}]{
+    #1
+    \randomtwo
+    \addtocounter{enc}{-2}
+    \randomtwoB
+    \randomtwoC
+    \randomthreeB
+  \animal{\value{r2}}% STRENGTH
+  {0}% DEXTERITY 
+  {\arabic{enc}}% SPEED
+  {-1}% WITS
+  {2}% DR
+  {2}% AGGRESSION
+  {}% SKILLS
+  {Abdominal Stirge-Nest: {\scshape \Glsentrytext{ap} 5, Att 10-HP, Speed 2, Wits 1, \setcounter{track}{8}\Repeat{\value{noAppearing}}{\boxStat{track}, }}
+
+    Undead}% EQUIPMENT
+  {}
+}
+
+\newcommand\superWierdzi{%
+  \ifcase\value{statDots}\relax%
+  \rotatebox{160}{Mo}\rotatebox{100}{rp}\rotatebox{-130}{l}\rotatebox{90}{h}\rotatebox{-120}{i}\rotatebox{60}{ng}%
+  \or%
+  \rotatebox{140}{Mor}\rotatebox{80}{h}\rotatebox{80}{p}\rotatebox{-110}{l}\rotatebox{-100}{i}\rotatebox{40}{ng}%
+  \or%
+  \rotatebox{120}{M}or\rotatebox{60}{p}\rotatebox{70}{h}\rotatebox{-90}{l}\rotatebox{-80}{i}\rotatebox{20}{ng}%
+  \or%
+  \rotatebox{80}{M}or\rotatebox{20}{p}\rotatebox{50}{h}\rotatebox{-50}{l}\rotatebox{-40}{i}\rotatebox{0}{ng}%
+  \or%
+  \rotatebox{40}{M}or\rotatebox{10}{p}\rotatebox{30}{h}\rotatebox{-20}{l}\rotatebox{-20}{i}ng%
+  \or%
+  \rotatebox{20}{M}orp\rotatebox{10}{h}\rotatebox{-10}{l}\rotatebox{-10}{i}ng%
+  \else%
+  Morphling%
+  \fi%
+  \stepcounter{statDots}%
+}
+
+\newcommand\mphlg{
+  \randomtwo
+  \randomthree
+  \randomfour
+  \setcounter{diceNo}{\value{track}}
+  \addtocounter{diceNo}{-2}
+  \stepcounter{track}
+  \stepcounter{age}
+  \npc{\gls{curiosity}}{\superWierdzi}
+  \person{\value{r2b}}% STRENGTH
+  {\value{track}}% DEXTERITY 
+  {0}% SPEED
+  {{0}% INTELLIGENCE
+  {\value{track}}% WITS
+  {0}}% CHARISMA
+  {4}% DR
+  {0}% COMBAT
+  {Stretching~2, Go~1, Involution~3}% SKILLS
+  {Nothing}% EQUIPMENT
+  {
+    \setcounter{Xenomology}{3}
+    \setcounter{Brawl}{\value{r4b}}
+    \setcounter{mp}{5}
+    \renewcommand\abilities{\mutation{track}, \mutation{age}}
+  }
+}
+
+\newcommand\uncommonlyLargeJelly{
+  \npc{\A}{{Uncommonly Large Ooze}}
+  \animal{5}% STRENGTH
+  {1}% DEXTERITY 
+  {0}% SPEED
+  {-2}% WITS
+  {4}% DR
+  {4}% AGGRESSION
+  {}% SKILLS
+  {
+    \acidBody, \acidSpray, \gloopy
+  }% ABILITIES
+  {
+    \knacks{\berserker, \unstoppable}
+    \setcounter{Athletics}{1}
+    \setcounter{Stealth}{2}
+  }
+}
+
+\newcommand\inkparch{
+  \setcounter{wounds}{4}
+  \npc{\M\D}{Inkparch}
+  \person{1}% STRENGTH
+    {1}% DEXTERITY
+    {0}% SPEED
+    {{3}% INTELLIGENCE
+    {0}% WITS
+    {2}}% CHARISMA
+    {0}% DR
+    {1}% COMBAT
+    {
+    }% SKILLS
+    {\longsword}% EQUIPMENT
+    {
+      \setcounter{Brawl}{2}
+      \setcounter{Academics}{3}
+      \setcounter{Xenomology}{2}
+      \setcounter{Medicine}{1}
+      \setcounter{Stealth}{1}
+      \setcounter{Tactics}{2}
+      \setcounter{Air}{3}
+      \setcounter{Fate}{3}
+      \setcounter{Earth}{2}
+      \setcounter{Fire}{2}
+      \undead
+    }
+
+  \showStdSpells
+
+}
+
+\newcommand\deanOfForces{
+  \npc{\M\D}{Dean Cainrush}
+  \person{1}% STRENGTH
+    {0}% DEXTERITY
+    {0}% SPEED
+    {{2}% INTELLIGENCE
+    {0}% WITS
+    {1}}% CHARISMA
+    {0}% DR
+    {0}% COMBAT
+    {
+    }% SKILLS
+    {Unsent letter to wife, requesting better quality bread}% EQUIPMENT
+    {
+      \setcounter{Academics}{2}
+      \setcounter{Medicine}{2}
+      \setcounter{Air}{1}
+      \setcounter{Earth}{2}
+      \setcounter{Fire}{3}
+      \undead
+    }
+
+  \showStdSpells
+
+}
+
+\newcommand\hardestRiddleEver{
+  \begin{speechtext}
+    There are three gods, who will not speak your language.
+
+    One speaks only the truth, one speaks only lies, and one selects a random answer.
+
+    You know their language's words for `yes', and `no', but do not know which is which.
+
+    You may ask three questions to identify each god.
+  \end{speechtext}
+}

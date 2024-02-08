@@ -1,139 +1,223 @@
-\sidequest[Town,Villages,Forest]{Wolf Heads}
-
-\noindent
-The characters hear of a guild crew travelling around, and eventually meet them.
-This Side Quest is designed to run in the background, and flavour other encounters.
-
-\Gls{beardedalemaster} gets into other shenanigans later, in \nameref{troubleAle}, page \pageref{troubleAle}.
-
-\sqpart{Town}% AREA
-{\N \squash Rumours of Glory}% NAME
-{The troupe hear about famous warriors in their area}% SUMMARY
-
-The local gossip relates to how the local heroes, known as the \textit{Wolf Heads}, recently protected a town from a goblin invasion.
-They act like the adventurers of old, but officially take their orders from the Ale Guild of the Shale, through \gls{beardedalemaster}.
-
-\begin{enumerate}
-  \item{There were around forty goblins.}
-  \item{The Wolf Heads stopped them with grease spells over the walls, so the goblins could not climb properly, leaving the archers time to pick off more.}
-  \item{The local village master refused to pay for goblin heads taken, claiming it would be illegal as it would count as him raising his own army.}
-  \item{The troupe refused to gather payment from the local peasants, but have sworn a blood oath to kill Village Master Cronblight.}
-\end{enumerate}
-
-This last rumour isn't entirely accurate -- the Wolf Heads are irritated with Village Master Cronblight (see page \pageref{cronblight}), but have not sworn an oath to kill him.
-
-Play this encounter at the same time as the next Side Quest part, and raise the local nura rating by 1.
-
-\sqpart{Villages}% AREA
-{Arm Wrestling}% NAME
-{The characters meet the Wolf Heads}% SUMMARY
+\sidequest[Town,Roads,Forest]{Wolf Heads}
 \label{wolfHeads}
 
-The Wolf Heads have just encountered ten chitincrawlers, and slew the lot.
-They used a giant web spell, along with a lot of arrows.
+\noindent
+The \glspl{wolfhead} \glsdesc{wolfhead}.
+Unfortunately, they lack manpower and finances.
+\Gls{beardedalemaster} has plans for gaining wealth (covered in \nameref{troubleAle}, \vpageref{troubleAle}).
 
-They are tired, but unwounded, and are up for fun, so they went to a nearby village to drink.
-Wherever the characters are, they encounter the Wolf Heads, who then challenge them to arm-wrestling contests, or magical contests.
-The Wolf Heads will also speak about encountering goblins, both during the recent assault on a village, and in general.
-The games are mostly in good faith, but if the troupe have any obviously valuable items, Courtbile will attempt to steal it from them.
+Over the course of this \gls{sq}, the troupe will meet the various members of the \gls{wolfhead}, and form allies or enemies.
 
-\NPC{\F}{Courtbile}{black pony-tail}{thumbs up}{your Money}
-\person{0}% STRENGTH
-{2}% DEXTERITY 
-{1}% SPEED
-{{0}% INTELLIGENCE
-{1}% WITS
-{1}}% CHARISMA
-{0}% DR
-{1}% COMBAT
-{Projectiles 2, Athletics~1, Deceit 1, Larceny~3, Stealth 1, Vigilance~1\knacks{\snapshot, \laststand}}% SKILLS
-{\shortsword, \partialleather, dagger, short bow, 12sp.}% EQUIPMENT
-{\addtocounter{fp}{5}}
-\label{courtbile}
+\sqpart{Roads}% AREA
+{\squash Wanted Poster}% NAME
+{The troupe see a wanted poster for \gls{southRogue}}% SUMMARY
 
-\paragraph{Asking Courtbile about \gls{forestpriest}}
-reveal his project's location in the deep forest (page \pageref{lostcity}), but only if she trust the troupe, or drinks a lot.
+A poster proclaims a 10~\glspl{gp} reward for returning \gls{southRogue} to the \gls{guard} of \gls{southDale}.
 
-\NPC{\M}{Betslick}{red nose}{massive grin}{to win}
-\person{3}% STRENGTH
-{1}% DEXTERITY 
-{1}% SPEED
-{{0}% INTELLIGENCE
-{-1}% WITS
-{0}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{Projectiles 1, Athletics 2, Deceit 1, Wyldcrafting 2\knacks{\adrenalinesurge, \unstoppable, \charge}}% SKILLS
-{\greatsword, \partialchain, dagger, long bow, camping equipment}% EQUIPMENT
-{}
+\begin{boxtext}
+  A new poster in the \gls{bothy} proclaims a 10~\glspl{gp} reward for a young woman.
+  The picture seems useless, but then it describes her as `exhuberant', `wicked', `short-haired', and `expert archer'.
+  The instructions say to hand her over at \gls{lakeside}, and not to let her near oils of any kind.
 
-\paragraph{If the characters ever ask to team up}
-Betslick refuses, saying it would put the Ale Guild in a difficult situation, but won't elaborate.
+  \Pgls{guard} is staring into the poster, and starts explaining that she must be a wayward soul, and that he `\textit{could fix her\ldots}', then looks sad as he continues `\textit{\ldots but the \gls{guard} never marry\ldots}'.
+\end{boxtext}
 
-\NPC{\M}{Kinbrine}{Quiet}{Clicks tongue}{arcane knowledge}
-\person{1}% STRENGTH
-{0}% DEXTERITY 
-{-1}% SPEED
-{{2}% INTELLIGENCE
-{0}% WITS
-{0}}% CHARISMA
-{0}% DR
-{0}% COMBAT
-{Projectiles~1, Academics~2, Crafts~1, Wyldcrafting~1}% SKILLS
-{Mana stone worth 4 MP}% EQUIPMENT
-{
-  \knacks{\snapcaster}
-  \setcounter{Fire}{2}
-  \setcounter{Air}{2}
-}
+Move onto the next \gls{sq} immediately.
+If the \glspl{pc} persue her, they will find her before long.
+Otherwise, just leave this as a feint half-memory for the players.
 
-\beardedalemaster
-\label{beardedalemaster}
-
-\paragraph{If the troupe ask about her interference with the local Ale Guild,}
-she denies everything, while grinning like a kid who ate all the chocolates.
+\paragraph{If the troupe ask about finding her,}
+everyone recommends \gls{town} or \gls{lakeside}.
 
 \sqpart{Town}% AREA
-{\N \squash Rumours of Ogres}% NAME
-{The troupe hear more of the Wolf Heads}% SUMMARY
+{\squash Rumours of Glory}% NAME
+{The troupe hear about the \glspl{wolfhead}}% SUMMARY
 
-The characters hear more of the wolf heads, specifically about how they are looking for some abandoned temple to Qualm\"e, which could be the source of so many goblins in the area.
-The locals generally believe the Wolf Heads will save them all.
+The locals gossip about local heroes, known as the \glspl{wolfhead}, recently protecting a \gls{village} from a basilisk.
+People say they act like the adventurers from the stories.
 
-Play this encounter at the same time as the next Side Quest on your list.
+\sqpart{Roads}% AREA
+{New Friends}% NAME
+{\Gls{southRogue} follows the troupe}% SUMMARY
+
+\Gls{beardedalemaster} wants to know more about the local \gls{guard}, so she sends \gls{southRogue} out to find out what the score is.
+She has bought \gls{southRogue} some black, hardened leather armour, so she would look like \pgls{guard}, then explained the excuse she should use, and \gls{southRogue} joined the first trader caravan leaving \gls{town}.
+
+\paragraph{Once she meets the troupe,}
+she insists on joining them.
+
+\paragraph{If the troupe recognize her from the poster,}
+she protests very quickly.
+
+\begin{speechtext}
+  Listen-but-no!
+  
+  They {\scshape told me}, that I had to join a trader's caravan.
+  I was in Bogpeak (that's in \gls{southDale}), but they went West (\gls{southDale} lies East of here), and I'm not meant to go with them into \gls{town} because I'm a Digger.
+  
+  And listen, LISTEN\ldots
+
+  I can't register with \pgls{jotter} because he won't have my name, because I'm not in the \gls{guard}.
+
+  I mean, not here I'm not.
+  But I'm here now, and I need to save up my pay to get back to Bogpeak (which is in \gls{southDale}).
+\end{speechtext}
+
+\paragraph{If the troupe take her to \pgls{jotter},}
+the \gls{jotter} will begin writing a letter, and ask the troupe to keep a \textit{very} close eye on her in the meantime.
+
+\paragraph{If the troupe take her to the \gls{court} in \gls{town},}
+then \gls{beardedalemaster} intervenes, explaining that \gls{southRogue} must return to her father, the \gls{warden} of Bogpeak, and that she suffers from `Hysterophantasia', and joined the \gls{guard} due to going unmedicated.
+
+\southRogue
+
+However it goes, the troupe must travel with her for a few weeks, at least.
+She attempts to steal anything that looks like `information', but cannot read, so any piece of paper that `looks like something' may go missing.
+Have the \gls{pc} roll \roll{Wits}{Vigilance} against her \roll{Dexterity}{Larceny} (\tn).
+
+\paragraph{If danger emerges,}
+she keeps her distance, and uses her bow.
+
+\paragraph{After a couple of weeks,}
+she plans her escape, however she can.
+She will act on the spur of the moment, at just the right time, and it will probably involve fire.
 
 \sqpart{Forest}% AREA
-{\squash Helping Hands}% NAME
-{The troupe encounter the Wolf Heads again, who lend a hand}% SUMMARY
+{Just out for a Walk}% NAME
+{\Gls{southSmith} wanders the forest, secretly looking for \gls{lostcity}}% SUMMARY
 
-The wolf heads come across the troupe at the same time as another encounter.
-If the troupe are in trouble, they come to save them.
-If the troupe aren't, they may just walk together with them for safety.
+\Gls{southSmith} has hired eight men from the nearest \gls{village} to join him (at 150~\glspl{cp} per day), to hunt for \gls{lostcity}.
+However, he's told them that he's hunting for a magical mushroom called `Dryad's Kiss'.%
+\exRef{judgement}{Judgement}{dryads_kiss}
+He's also told them not to even look at it, because even a single glance at the mushroom will make you incredibly gullible for the rest of the month.
 
-\sqpart{Villages}% AREA
+\renewcommand\npcQuote{You don't need to trust us to speak politely.  Can we start again?}
+
+\Gls{southSmith} tries the following:
+
+\begin{enumerate}
+  \item
+  Wander away from the troupe nonchalantly.
+  \item
+  Yelling a polite request to stay away (`\textit{Please stay back, no offence is meant, but we do not know you, and do not wish to approach people wandering deep in the forest}').
+  \item
+  Asking the archers to fire on the troupe.
+  \item
+  Negotiating, politely.
+\end{enumerate}
+
+\humanarcher[\npc{\T[3]}{8 Archers}]
+
+\label{southSmith}
+\southSmith
+
+\paragraph{If the \glspl{pc} ask \gls{southSmith} about his business in the forest,}
+he continues to lie about his real intentions, then returns the question to them.
+
+\begin{speechtext}
+  I'm searching for some \textit{Dryad's Kiss}\ldots
+
+  It's a mushroom which makes people believe whatever you say.
+  Someone doesn't believe the things I say (would you believe that?), so I need the mushrooms to make sure they understand I'm telling the truth.
+\end{speechtext}
+
+\sqpart{Forest}% AREA
+{A Lonely Tower}% NAME
+{The troupe discover \gls{southSeeker}'s secret tower in the forest}% SUMMARY
+
+\label{green_tower_sq}
+
+%! Link song about golden priests and mushrooms.
+
+\Gls{greentower} does not have an exact location on the map.
+Wherever the \glspl{pc} have arrived in the forest, \textit{that's} where it is, and where it has always been.
+
+``Where do you go next?'', you ask innocently.
+
+And no matter where the \glspl{pc} decide to travel through the forest, they stumble into somewhere they've never been before, and spot \gls{greentower}.
+
+\begin{exampletext}
+  \Gls{southSeeker} found the tower's remains while searching for one of the magical gateways in \gls{lostcity}.
+  Currently, he thinks a magical gateway lies in tunnels underneath \gls{greentower}, or that a gateway lies close to this tower.
+  He has commissioned men from a nearby \gls{village} to work as masons, and start rebuilding \gls{greentower}, so he can use it as a base of operations.%
+  \footnote{You'll have to play this one by ear.
+  If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\vpageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
+  Or if he's found the latter already, he must be searching for the former.
+  And if he's found both, then he's checking in on his half-way house\ldots unless \gls{greentower} isn't half way between anything, in which case\ldots you'll figure something out.}
+\end{exampletext}
+
+\paragraph{If a portal really does lie nearby,}
+then \gls{southSeeker} has deduced the proper location, and will use this as a half-way house and base of operations when he finally discovers the portals.
+
+\paragraph{If the portals lie nowhere remotely close to the tower,}
+\gls{southSeeker} will soon realize this, and leave the tower abandoned; but he will never forget its location and potential uses.
+
+Check \vpageref{green_tower} for details on \gls{greentower}.
+
+\sqpart{Forest}% AREA
+{\squash The Guilded Party}% NAME
+{The troupe encounter the \glspl{wolfhead} while dealing with some other situation}% SUMMARY
+
+\begin{exampletext}
+  The \glspl{wolfhead} went out together, to secretly scout out a potential location of one of the magical gateways in \glspl{lostcity}.%
+  \footnote{They now believe there were multiple towns, not just a single, large city.}
+\end{exampletext}
+
+The \glspl{wolfhead} come across the troupe at the same time as another encounter.
+How they react depends entirely on their previous dealings.
+
+\sqpart{Roads}% AREA
 {A Cry for Help}% NAME
-{The troupe find the Wolf Heads attacked by ogres}% SUMMARY
+{The troupe find the \glsfmtplural{wolfhead} under attack}% SUMMARY
 
-A dozen ogres ambushed the Wolf Heads on the road, and the troupe heard their cries in the distance.
-By the time the troupe arrive (assuming they come towards the cries) Betslick is unconscious (-3 HP), and Courtbile is nearly dead (2 HP left).
+The \gls{wolfhead} have located the Shadow Vault, so they journeyed out to find it, each of them with 6 days' worth of rations.
+But before they could breath the \gls{edge}, a predator took them off-guard.
 
-Ten ogres remain alive.
-Five are focussed on the remaining Wolf Heads, and the other five have decided to wait in the bushes to ambush the troupe (or if not the bushes, inside nearby houses, or anywhere appropriate).
+Select the highest possible encounter for the season (such as a basilisk during a mild season), then double their usual numbers, and have them attack the \glspl{wolfhead}.
 
-\paragraph{\N If the troupe leave}
-then the Wolf Heads die (raise the local Nura rating by 1 as the Wolf Heads can no longer help).
-If the Wolf Heads survive, they will rest in \gls{town}, and be ready for any call to adventure, such as joining the fight against the nura in the future.
+\basilisk[\npc{\T[2]\A}{\arabic{noAppearing} Basilisks}]
 
-\paragraph{If the troupe rescue the Wolf Heads,}
-then the Wolf Heads can tell them about \gls{banditking}'s plan to create a blight, cutting Maitavale off from the rest of the kingdom.%
-\footnote{See \autopageref{blightConspiracy}.}
-They overheard the plan while stalking the Immortal Bandits.
-They do not know where this portal exists, only that the bandits suspect it exists.
+% Show South Smith again, but not if he's on the facing page.
+\ifodd\thepage
+  \vpagerefnearby{southSmith}{}{
+    \setcounter{wounds}{5}
+    \southSmith
+  }
+\else
+    \setcounter{wounds}{5}
+    \southSmith
+\fi
 
-\ogre[\npc{\T[5]\E\N}{5 Ogres}]
+\Gls{southSmith}'s arm bleeds from a nasty wound, and \gls{beardedalemaster} isn't doing much better.
 
-\ogre[\npc{\T[5]\E\N}{5 Hiding Ogres}]
+\setcounter{wounds}{3}
+\beardedalemaster
 
-\stopcontents[sq]
+\southRogue
 
+After this \gls{segment}, the \glspl{wolfhead} return to \gls{town} to rest and heal, at \gls{town}'s \gls{templeOfSickness}.
 
+\sqpart{Town}% AREA
+{The Deal}% NAME
+{The \glsentrytext{wolfhead} decide how they feel about the troupe}% SUMMARY
+
+The \gls{wolfhead} have found both magical gateways, and need to secure their assets.
+What happens here depends on so much\ldots
+
+Perhaps the \gls{wolfhead} feel indifferent to the \glspl{pc}.
+Perhaps they want to kill the \glspl{pc}.
+However, if they feel they can trust the \glspl{pc}, then they will propose an alliance, just as soon as they can find the \glspl{pc}.
+
+As luck would have it, \gls{southRogue} meets up with them first.
+
+\paragraph{The setting}
+depends on where exactly the \glspl{pc} find themselves.
+Perhaps \gls{southRogue} finds them in \gls{pig}, or while travelling with a caravan of traders on the roads.
+
+\paragraph{If all goes well,}
+the \glspl{pc} and \glspl{wolfhead} can make a plan.
+\Gls{beardedalemaster} will agree to finance the plan (assuming the troupe did not conclude \nameref{troubleAle} and leave her penniless), \gls{southSmith} will agree to find any information required (or at least find out how to find it), and \gls{southSmith} will agree to complete any task he can.
+
+\Gls{southRogue} will agree to complete any task, then not do it.
+
+The rest of the tale depends on your table.

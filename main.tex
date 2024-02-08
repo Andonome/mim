@@ -11,158 +11,126 @@ Keywords={TTRPG,RPG,roleplaying}
 }}
 
 \settoggle{verbose}{true}
-\newtoggle{players}
-\settoggle{players}{false}
 \externalReferent{core}
-\externalReferent{aif}
+\externalReferent{stories}
 \externalReferent{judgement}
+
+\input{commands.tex}
 
 \begin{document}
 
 \frontpage[Missions in Maitavale]%
   {A broken story, waiting to be repaired}%
 
-%\input{credits.tex}
+\input{intro.tex}
+
+\printglossary[
+  type=symbols,
+  ]
+
+\printglossary[
+  style=mcolindexspannav,
+]
 
 \mainmatter
 
-\declareSQareas{Town,Villages,Forest}
+\declareSQareas{Town,Roads,Forest}
 
-\input{intro.tex}
+\input{plots.tex}
 
-\chapter{\Glsfmttext{town}}
-\epigraph{A criminal is a person with predatory instincts who has not sufficient capital to form a corporation. Most government is by the rich for the rich.
-Government comprises a large part of the organized injustice in any society, ancient or modern.
-Civil government, insofar as it is instituted for the security of property, is in reality instituted for the defence of the rich against the poor, and for the defence of those who have property against those who have none.}%
-{Adam Smith}
+\clearpage
 
-\section{Locations}
+%%%%%%%%%%%%%
 
+\chapter{Abundant Quests}
+
+\section{Introductions}
 \begin{multicols}{2}
-
-\input{loc_town.tex}
-
-\input{guard_station.tex}
-
-\input{station_dungeon.tex}
-
-\input{white_horse.tex}
-
-\input{pig.tex}
-
-\input{sewers.tex}
-
-\end{multicols}
-
-\section{Distractions in Town}
-
-\index{Side Quests!Town}
-
-\renewcommand{\sqarea}{Town}
-
-\begin{multicols}{2}
-
-\startcontents[sq]
-
-\input{ale.tex}
-
-%\input{amulet.tex}
-
+\ifodd\value{temperature}
+  %\input{spider.tex}
+  \input{bandits.tex}
+\fi
+%\input{nurabaron.tex}
 \input{wolves.tex}
-
-%\input{sewer_bandits.tex}
-
-\input{town_random.tex}
-
+%\input{prince.tex}
+\ifodd\value{temperature}
+\else
+  %\input{spider.tex}
+  \input{bandits.tex}
+\fi
 \end{multicols}
 
-\stopcontents[Town]
+\section{Raising Stakes}
+\begin{multicols}{2}
+\input{ale.tex}
+\input{sewer_bandits.tex}
+\end{multicols}
+
+\section{Eye of the Storm}
+
+\begin{multicols}{2}
+\input{demilich.tex}
+\input{new_wardens.tex}
+\end{multicols}
+
+\section{Random Distractions}
+
+\input{random.tex}
+\begin{multicols}{2}
+\input{town_random.tex}
+\input{forest_random.tex}
+\end{multicols}
 
 \stopcontents[sq]
+\glsresetall
+%%%%%%%%%%%%%%%%%
 
-\chapter{Guarded Villages}
-\epigraph{A rock is a good thing, too, you know. If the Isles of Earthsea were all made of diamond, we'd lead a hard life here.}{Ursula Le Guin}
+\handout{roads_handouts}
+\handout{roads_handouts}
+\handout{roads_handouts}
+\togglefalse{river}
+\handout{roads_handouts}
+\handout{roads_handouts}
+\handout{roads_handouts}
 
-\section{Village Locations}
-
-\begin{multicols}{2}
-
-\subsection{Markets}
-\index{Market!Villages}
-
-If the \glspl{pc} try to purchase anything from the villages, see the handout on the village market.
-
+\input{loc_roads.tex}
 %\input{redfall.tex}
-%
 %\input{redfall_fallen.tex}
-
 \input{lakeside.tex}
+\handout{lakeside_handout}
+\handout{lakeside_handout}
 
-\end{multicols}
+\glsresetall
 
-%\section{Village Encounters}
+%%%%%%%%%%%%%%%%%%
+\input{loc_forest.tex}
+\input{green_tower.tex}
+\input{bandit_bailey.tex}
+\input{old_temple.tex}
+\input{camp.tex}
+\input{basement.tex}
+\input{shadow_gate.tex}
 
-%\index{Side Quests!Villages}
+%
+%%%%%%%%%%%%%%%%%%
+%
 
-%\renewcommand{\sqarea}{Villages}
+\handout{town_handouts}
+\handout{maps_handouts}
 
-%\begin{multicols}{2}
+\glsresetall
+\input{loc_town.tex}
+\input{station_dungeon.tex}
+\input{pig.tex}
+\input{sewers.tex}
 
-%\input{incursions.tex}
-
-%\input{nurabaron.tex}
-
-%\input{anton.tex}
-
-%\input{immortals.tex}
-
-%\stopcontents[Villages]
-
-%\end{multicols}
-
-\chapter{Hungry Forests}
-\epigraph{Come now, my child, if we were planning to harm you, do you think we'd be lurking here beside the path in the very darkest part of the forest?}{Kenneth Patchen}
-
-%\section{Forest Locations}
-
-%\begin{multicols}{2}
-
-%\input{anton_temple.tex}
-
-%\input{camp.tex}
-
-%\input{basement.tex}
-
-%\input{green_tower.tex}
-
-%\end{multicols}
-
-\section{Forest Encounters}
-
-\index{Side Quests!Forest}
-
-\renewcommand{\sqarea}{Forest}
-
-\begin{multicols}{2}
-
-\input{prince.tex}
-
-%\input{spider.tex}
-
-\input{forest_random.tex}
-
-\end{multicols}
-
-\stopcontents[Forest]
+%%%%%%%%%%%
 
 \backmatter
 
-%\input{sq_summaries.tex}
+\input{appendix.tex}
 
-\printglossary[type=symbols]
-
-\printglossary
-
-\printindex
+\handout{service_handouts}
+\handout{animal_handouts}
 
 \end{document}

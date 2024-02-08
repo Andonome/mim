@@ -57,26 +57,6 @@ When this happens, mark the \gls{village} off the map.
 If the \glspl{pc} find \pgls{village} destroyed, this often presents a dangerous situation.
 They will find themselves outside, at night, without the protection of any civilization.
 
-\subsubsection{Getting Started}
-
-Start somewhere on the `Roads'.
-This area covers everywhere outside of town, up to the forest, so it constitutes most of the map \vpageref{Irina/greylands}.
-
-Standard \gls{guard} duties%
-\exRef{judgement}{Judgement}{NGmissions}
-include transporting trader caravans on their ways between \gls{town} and the outer \glspl{village}.
-The pleasant areas, closer to \gls{town}, see more traders and travellers than monsters, while the distance \glspl{village} have roads piercing the forest, and must push back massive predators almost daily.
-
-Once the \glspl{jotter} send them this way and that, they will instantly find \glspl{sq} assaulting them daily, or weekly, or at any pace you like, and the players will eventually investigate at least one lead.
-
-Throughout this time, \glspl{pc} should receive all the standard encounter rolls.
-Mixing the lot -- encounters and plots, \glspl{sq} and \gls{guard} missions -- creates a maelstrom of twists and turns.
-This can be a lot of fun, but it also threatens the players' focus, so it's best to remember to pull that focus back to whatever the players think of a their primary mission.
-This may change half way through the mission, or they may disagree about what's important; and both of those results are fine.
-However, if the players ever feel \emph{confused} about what their characters should be doing, they will quickly disconnect from \gls{fenestra}, and start staring into their rectangles.
-
-Chaos, and focus should flow like breathing in and out.
-
 \subsubsection{Let Players `Ruin' the Mission}
 
 The \glspl{sq} below can withstand a lot of punishment from the players.
@@ -137,7 +117,10 @@ When \glspl{pc}' actions threaten to derail \pgls{sq}, you have a few options.
 \printAllSideQuests{Roads, Forest, Town}
 
 %%%%%%%%%%%%%%%%%%%%
-\noindent
+\begin{multicols}{2}
+
+\subsection{Getting Started}
+
 Each day the \glspl{pc} will awaken to new plots unfolding.
 Most days, they will hear rumours, on other days they will see the consequences of the plots.
 
@@ -147,19 +130,28 @@ But the plots of our various factions will soon begin to interfere with the live
 Resolution will demand hunting down the right locations, but the locations will not make any demands on the players or \glspl{pc}.
 They will remain free to ignore any `call to adventure', which will leave the various actors below free to resolve their plots.
 
-\setglossarypreamble[people]{
-  These are the movers and shakers, the doers and thinkers.
-  You can find each of them in the \glspl{sq}, sometimes as primary actors, other times wandering into the background of multiple threads and \glspl{segment}.
-}
+The first session should start like any other:
 
-\printglossary[
-  type=people,
-  style=topicmcols,
-]
+\input{config/rules/start.tex}
 
-\bigLine
+%! Write up a starting bothy
+The first scene should begin in \pgls{bothy}, somewhere on the `Roads'.
+This area covers everywhere outside of \gls{town}, up to the forest, so it constitutes most of the map \vpageref{Irina/greylands}.
 
-\begin{multicols}{2}
+Standard \gls{guard} duties%
+\exRef{judgement}{Judgement}{NGmissions}
+include transporting trader caravans on their ways between \gls{town} and the outer \glspl{village}.
+The pleasant areas, closer to \gls{town}, see more traders and travellers than monsters, while the distance \glspl{village} have roads piercing the forest, and must push back massive predators almost daily.
+
+Once the \glspl{jotter} send them this way and that, they will instantly find \glspl{sq} assaulting them daily, or weekly, or at any pace you like, and the players will eventually investigate at least one lead.
+
+Throughout this time, \glspl{pc} should receive all the standard encounter rolls.
+Mixing the lot -- encounters and plots, \glspl{sq} and \gls{guard} missions -- creates a maelstrom of twists and turns.
+This can be a lot of fun, but it also threatens the players' focus, so it's best to remember to pull that focus back to whatever the players think of a their primary mission.
+This may change half way through the mission, or they may disagree about what's important; and both of those results are fine.
+However, if the players ever feel \emph{confused} about what their characters should be doing, they will quickly disconnect from \gls{fenestra}, and start staring into their rectangles.
+
+Chaos, and focus should flow like breathing in and out.
 
 \subsection{Cartography}
 
@@ -192,4 +184,13 @@ These little areas have a `civilization rating' of 15 to 17, depending on their 
 
 \end{multicols}
 
+\setglossarypreamble[people]{
+  These are the movers and shakers, the doers and thinkers.
+  You can find each of them in the \glspl{sq}, sometimes as primary actors, other times wandering into the background of multiple threads and \glspl{segment}.
+}
+
+\printglossary[
+  type=people,
+  style=topicmcols,
+]
 

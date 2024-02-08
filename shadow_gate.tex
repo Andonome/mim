@@ -1,4 +1,4 @@
-\section[the Shadow Vault]{The Shadow Vault}
+\section[Shadow Vault]{The Shadow Vault}
 \label{shadowVault}
 
 \begin{multicols}{2}
@@ -34,7 +34,7 @@
 Traversing the stairs demands a \roll{Dexterity}{Caving} roll (\tn[8]).
 Failure inflicts $1D3$ Damage.
 
-\mapentry[entranceCullis]{Rusted Portcullis}
+\mapentry[entranceCullis]{Gnome-Crafted Fence}
 
 \histEvent{340}{01}{Six \glsentrytext{deep} gnomes emerge from the Vore Gate}
 
@@ -342,14 +342,56 @@ The Shadow Gate then proceeds to ask its devious riddle.%
 The entrance stands at almost double the height of a human, and only wide enough to crawl through, so not many will spot it.
 (and anyone with a Strength of +4 will have to remove their armour to fit through)
 
-Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
-
 With \roll{Wits}{Crafts} (\tn[14]) they might notice the bricks are a little different around that wall.
-
 With \roll{Wits}{Vigilance} (\tn[12]) they see the small entrance, above.
+Once the \glspl{pc} pass by the entrance, they can make a single roll for both checks.
 
 \paragraph{Rifling through the desk}
 uncovers records of riddles\ldots hundreds of riddles.
+
+\mapentry[memoryOrb]{Nuisance Orb}
+
+\begin{exampletext}
+  The Nuisance Orb once sat on display for everyone to see, as it would entertain people with various illusions.
+  But after one too many accidents%
+  \footnote{One rampaging basilisk, a false accusation of theft, and three accounts of indecent nudity.}
+  the staff became irritated by it, and eventually locked it away.
+\end{exampletext}
+
+The Nuisance Rock cannot imitate people when locked in the little cell, and craves freedom more than anything.
+It can spend 2~\glspl{mp} to `see' around itself, 2~\glspl{mp} to make a convincing illusion of something, or 2~\glspl{mp} to create convincing sound.
+
+\artefact[2]{Nuisance Rock}% Name
+  {A grey rock, covered by the illusion of a massive diamond.}% Body
+  {-1}% Intelligence
+  {1}% Wits
+  {2}% Charisma
+  {to create the most convincing illusions}% Mission
+  {Phantasm}% Base Spell
+  {
+    \setcounter{Fire}{2}
+    \setcounter{Earth}{2}
+    \setcounter{Air}{2}
+    \setcounter{Academics}{2}
+    \setcounter{Wyldcrafting}{1}
+  }% Spheres
+
+\showStdSpells[
+  \setcounter{diceNo}{0}
+]
+
+\paragraph{If anyone passes by,}
+it creates an illusion of Goutscrape (area \vref{shadowGuardian}), begging to be let out of the cell.
+The illusion will create realistic sound, and then the Nuisance Orb will have no further \glsentrylongpl{mp} to see anything, so it will make the illusion of Goutscrape lie down and sob inconsolably.
+
+\Glspl{pc} can see through the illusion standing in the darkness with a \roll{Wits}{Vigilance} roll
+(\tn[12]).
+
+The Rock will do anything it can to leave this room, although its abilities remain limited (it must wait 2 more \glspl{interval} before it can cast another illusion, or make a voice).
+
+\paragraph{If the \glspl{pc} take it with them,}
+the Rock will cause constant chaos and misunderstandings.
+If it ever speaks, it does so by making an illusion of someone giving advice about what to do with the Rock.
 
 \mapentry[shadowGuardian]{Sleeping Guardians}
 
@@ -359,21 +401,22 @@ uncovers records of riddles\ldots hundreds of riddles.
 
   Finding three people too young to know better, she arranged for some very fancy clothes, and declared them `Masters of the Riddle', and `Keepers of the Gate'.
   Then she sent them into an enchanted state, preserving their bodies, and setting their minds to focus, without failure, on the single task of solving the riddle which had vexed all of \gls{valley}.
+  And `within a year or so', she claimed, one of them would solve the riddle.
 
   The first thought about how much he hated Maths.
   The second thought about visualizing the riddle as a series of rivers, each one representing a possible set of questions and answers.
   The third had already gone to sleep to dream of sex with his attractive neighbour.
 
-  With everyone's attention focussed on the `Masters of the Riddle', the \gls{doula} went home, and died peacefully shortly after.
+  With everyone's attention focussed on the `Masters of the Riddle', the \gls{doula} went home, and died peacefully some years later.
 
-  The three rest in this hidden room to this day.
+  The three rest in this hidden room to this day, still focussed on the same thoughts.
 \end{exampletext}
 
 \paragraph{Picking the lock}
 of the rusted steel gate requires a \roll{Strength}{Larceny} roll (\tn[16]).
 
 \paragraph{If the \glspl{pc} awaken any of the sleepers,}
-that one wakes the others up before doing anything else.
+that one wakes the others up before doing anything else, then they unlock the fence in front of their room.
 
 The three `Keepers of the Gate' can explain everything concerning the reality of \gls{lostcity}, how the Shadow Gate once worked, and what happened, but they won't\ldots at least not for a while.
 They take a long time to come to terms with their situation.
@@ -411,52 +454,5 @@ They take a long time to come to terms with their situation.
 
 The \glspl{pc} have a serious decision ahead: the three will need food, and to return to civilization.
 
-\mapentry[memoryOrb]{Nuisance Orb}
-
-\begin{exampletext}
-  The Nuisance Orb once sat on display for everyone to see, as it would entertain people with various illusions.
-  But after one too many accidents%
-  \footnote{One rampaging basilisk, a false accusation of theft, and three accounts of indecent nudity.}
-  the staff became irritated by it, and eventually locked it away.
-\end{exampletext}
-
-The Nuisance Rock cannot imitate people when locked in the little cell, and craves freedom more than anything.
-It can spend 2~\glspl{mp} to `see' around itself, 2~\glspl{mp} to make a convincing illusion of something, or 2~\glspl{mp} to create convincing sound.
-
-\artefact[2]{Nuisance Rock}% Name
-  {A grey rock, covered by the illusion of a massive diamond.}% Body
-  {-1}% Intelligence
-  {1}% Wits
-  {2}% Charisma
-  {to create the most convincing illusions}% Mission
-  {Phantasm}% Base Spell
-  {
-    \setcounter{Fire}{3}
-    \setcounter{Earth}{2}
-    \setcounter{Fate}{1}
-    \setcounter{Water}{1}
-    \setcounter{Academics}{2}
-    \setcounter{Wyldcrafting}{1}
-  }% Spheres
-
-\showStdSpells[
-  \setcounter{diceNo}{0}
-]
-
-\paragraph{If anyone passes by,}
-it creates an illusion of Goutscrape (area \vref{shadowGuardian}), begging to be let out of the cell.
-The illusion will create realistic sound, and then the Nuisance Orb will have no further \glsentrylongpl{mp} to see anything, so it will make the illusion of Goutscrape lie down and sob inconsolably.
-
-\Glspl{pc} can see through the illusion standing in the darkness with a \roll{Wits}{Vigilance} roll
-(\tn[12]).
-
-The Rock will do anything it can to leave this room, although its abilities remain limited (it must wait 2 more \glspl{interval} before it can cast another illusion, or make a voice).
-
-\paragraph{If the \glspl{pc} take it with them,}
-the Rock will cause constant chaos and misunderstandings.
-If it ever speaks, it does so by making an illusion of someone giving advice about what to do with the Rock.
-
 \end{multicols}
 
-% the inner sanctum goes somewhere else, to a long dungeon.
-% But won't the sleeping guardians give the game away?

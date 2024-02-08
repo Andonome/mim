@@ -302,21 +302,25 @@
 
 \newcommand{\newGhast}[1][\npc{\D\Hu}{Ghast}]{
     #1
-    \randomtwo\addtocounter{enc}{1}
+    \randomtwo\addtocounter{enc}{-1}
     \randomtwoB
     \randomtwoC
     \randomthreeB
     \addtocounter{r2b}{-1}
   \person{\arabic{enc}}% STRENGTH
   {\arabic{r2b}}% DEXTERITY 
-  {\arabic{r2c}}% SPEED
-  {{\arabic{enc}}% INTELLIGENCE
+  {0}% SPEED
+  {{0}% INTELLIGENCE
   {0}% WITS
   {-5}}% CHARISMA
   {0}% DR
   {0}% COMBAT
   {}% SKILLS
-  {}% EQUIPMENT
+  {%
+    \ifnum\value{noAppearing}>2%
+      \shortsword%
+    \fi%
+  }% EQUIPMENT
   {
     \ifodd\value{r3}%
       \setcounter{Academics}{\value{r3}}

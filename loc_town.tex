@@ -19,6 +19,11 @@ It exists to stop woodspies%
 \exRef{judgement}{Judgement}{woodspy}
 slithering into \gls{town}.
 
+\mapentry[greyGraveyard]{Graveyard}
+
+The \gls{templeOfSickness} place the bodies of the honoured dead -- those taken by \gls{eldren} -- in the upper graveyard.
+Most receive nothing, but if someone had enough riches, their family might pay for a cenotaph in the lower graveyard.
+
 \mapentry[greyMarket]{Market}
 \index{Market!\glsentrytext{town}}
 
@@ -303,25 +308,20 @@ The temple houses priests who write biographies (mostly for the rich), handle pe
 
 While modern \glspl{healersGuild} ensure maximum accessibility, people created this building some centuries ago, when the guild was not a guild, and things were different.
 It has a lower level, with long, thin, stairs, reserved for the most senior \glspl{helper} to store the bodies of the most worthy dead.
+Since the catacombs under \gls{town} collapsed, the dead only stay in this room temporarily, before transportation to the graveyard outside.
 
-\NPC{\M\Hu}{Ripcrag}{Wide frown, Downs Syndrome}{constantly counting everything around him}{to find how that cat keeps getting in here}
-\person{2}% STRENGTH
-{-3}% DEXTERITY 
-{-2}% SPEED
-{{-1}% INTELLIGENCE
-{0}% WITS
-{1}}% CHARISMA
-{0}% DR
-{0}% COMBAT
-{}% SKILLS
-{Writing equipment}% EQUIPMENT
-{
-  \setcounter{Academics}{1}
-  \setcounter{Empathy}{2}
-  \setcounter{Medicine}{2}
-  \knacks{\specialist{Inventory}}
-  \addtocounter{fp}{5}
-}
+\begin{exampletext}
+  When \gls{healerLeader} saw one-to-many people in serious need of help just lying in \gls{town}'s streets, and waiting to be flung into the \gls{guard} or the \gls{court}, he decided to do something.
+  After finding unsatisfying answers for some years, \gls{forestpriest} eventually asked him to become part of the solution.
+
+  The \gls{digger} give him poisonous mushrooms which paralyse people,
+  \footnote{See area \vref{sewerMushrooms} in the \nameref{sewers}.}
+  and he feeds them to the rich who take up the \gls{healersGuild}'s beds, instead of those who really need them.
+  Once they freeze up enough, he sends them downstairs, and signs them off as dead.
+  Finally, he has the `body' taken downstairs, where the \glspl{digger} replace it with a body-shaped bag, stuffed with rocks, dirt, and cloth-padding.
+\end{exampletext}
+
+\healerLeader
 
 \mapPic{t}{Dyson_Logos/white_horse_2}{
   \ref{horseHall}/18/45,

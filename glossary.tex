@@ -554,6 +554,40 @@
   description={-- just an old lady who used to slay dragons}
 }
 
+\newglossaryentry{healerLeader}{
+  name={Ripcrag},
+  type={people},
+  category={people},
+  symbol={\M\gls{sickness}},
+  parent={digger},
+  description={despite his sheltered life in the \gls{templeOfSickness}, he has always carried a deep sense of right and wrong.
+  Most people with a disabilty -- acquired, or inherited -- cannot receive care with the \gls{healersGuild}, as most of \gls{town}'s money goes to guild leaders.
+  Ripcrag gives patronage to a few people, but has decided that his temple cannot care for everyone until the current system falls.
+  He currently helps the \glspl{digger} by poisoning any rich people in the care of his temple, marking them off as dead, and sending them down to catacombs below \gls{town}.
+  He doesn't know exactly what happens after that, but he understands they have a plan of some kind}
+}
+
+\newcommand\healerLeader{
+  \NPC{\M\Hu}{Ripcrag}{Cheeky smile, Downs Syndrome}{constantly counting everything around him}{to care for everyone in \glsentrytext{town}}
+  \person{1}% STRENGTH
+  {-3}% DEXTERITY 
+  {-2}% SPEED
+  {{-1}% INTELLIGENCE
+  {0}% WITS
+  {1}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {}% SKILLS
+  {Writing equipment, powder of marching mushrooms}% EQUIPMENT
+  {
+    \setcounter{Academics}{1}
+    \setcounter{Empathy}{2}
+    \setcounter{Medicine}{2}
+    \knacks{\specialist{Inventory}}
+    \addtocounter{fp}{5}
+  }
+}
+
 \newcommand{\banditking}{
 \NPC{\M\Hu}{\glsentrytext{banditking}}{Short hair, massive beard}{Drums fingers}{to return to nobility}
   \person{1}% STRENGTH

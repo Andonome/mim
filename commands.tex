@@ -1,8 +1,7 @@
 \makeindex[name=history,title={Chronological Events},columns=2]
 
 \newcommand\histEvent[3]{%
-    \setcounter{track}{\year}%
-    \multiply\value{track} by 3%
+    \setcounter{track}{\value{cycle}}%
     \stepcounter{track}%
     \setcounter{diceNo}{#1}%
     \divide\value{diceNo} by 3%

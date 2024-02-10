@@ -54,8 +54,6 @@ The grass has grown long, the trees' fruit comes and goes according to the seaso
 
 A hundred broken arrow parts litter the area, as \gls{necromancer} practices with his bow whenever he has the energy.
 
-\ghoul[\npc{\T[9]\D}{Ghouls}]
-
 A swarm of stirges%
 \exRef{judgement}{Judgement}{stirge}
 has moved into the area, and made a home inside a ghoul (which hasn't the intelligence to remove the hive from his abdomen).
@@ -63,12 +61,14 @@ They feed a little from its dead flesh, and it continues to wander gormlessly, w
 As a result of their dead home, the stirges have become carriers for a nasty disease -- Breathrot.%
 \exRef{judgement}{Judgement}{Breathrot}
 
-\stirgeGhouls
+\ghoul[\npc{\T[9]\D}{Ghouls}]
 
 \paragraph{If the stirges sting \pgls{pc},}
 then the \gls{pc} contracts Breathrot.
 This may clue them into the fact that \gls{traitor} came here before.%
 \footnote{\label{broTheftRef}Check \gls{segment} \vref{rottenBreath} of \nameref{entitlement}.}
+
+\stirgeGhouls
 
 \mapentry[antHall]{The Hallway}
 
@@ -99,12 +99,6 @@ However, it still has its natural armour, and the \gls{dr} from undeath.%
 
 \undeadBasilisk
 
-\boxPair[t]{
-  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
-}{
-  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
-}
-
 \mapentry[antPrison]{The Prison}
 
 This room once housed people making important decisions.
@@ -118,6 +112,12 @@ The door has a massive, brass lock, with the ornate markings of a Dwarvish artis
 It stopped functioning about a century ago.
 \Gls{necromancer} relies on fear to keep the prisoners inside, which works better than locks.
 As the prisoners enter, the door shuts and the hungry dead outside can no longer see them, so they leave the doors alone (ghouls are mostly blind, and entirely incurious).
+
+\boxPair[t]{
+  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
+}{
+  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
+}
 
 \mapentry[necroGhasts]{Ghast Spotters}
 

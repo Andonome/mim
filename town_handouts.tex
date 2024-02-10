@@ -1,3 +1,10 @@
+\randomthree
+\ifodd\value{r3}
+  \randomtwo
+\else
+  \randomthreeB
+\fi
+
 \section*{\Glsfmttext{town} Market}
 
 \begin{multicols}{2}
@@ -164,10 +171,10 @@
   \showArmourPrice{\completeleather}{11}%
 \end{boxtable}
 
+\needspace{4em}
 \textbf{At the place with that guy I met at \glsentrytext{pig}\ldots}
-
 \begin{boxtable}[Xcc]
-  \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \textbf{Items} & \textbf{Weight} & \textbf{Cost} \\\hline
   \marketItem{Lock-pick set}{1}{10}
   \marketItem{Fake town-pass}{0}{3}
 \end{boxtable}

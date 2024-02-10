@@ -98,8 +98,9 @@
   sort={Establishment},
   text={establishment},
   type={people},
-  description={are the decision-makers and nobility, they make the status quo and want nothing to change.
-  They are the heads of guilds, and know each other far more than others within their guilds},
+  description={the decision-makers and nobility.
+  They are the heads of guilds, and know each other far more than others within their guilds.
+  They have everything, and need nothing},
 }
 
 \newglossaryentry{outsiders}{
@@ -125,8 +126,8 @@
   text={White Bandits},
   plural={White Bandits},
   type={people},
-  description={two brothers, banished from their homeland, have come to start a new life in \gls{valley}.
-  They have gained a new appreciation of what it means to be poor, and now plan on enforcing equality throughout the land, by threats, fire, poison, or sword}
+  description={This band of irritated down-and-outs, mostly drawn from new \gls{guard} members plans to replace the \gls{guard} once working conditions improve.
+  The leader has gained a new appreciation of what it means to be poor, and now plan on enforcing equality throughout the land, by threats, fire, poison, or sword}
 }
 
 \newglossaryentry{wolfhead}{
@@ -270,7 +271,6 @@
 \newglossaryentry{beardedalemaster}{
   name={Sailhush},
   first={Sailhush (Keeper of the \glsentrytext{southDale}'s \glsentrytext{wheatGuild})},
-  text={Sailhush},
   type={people},
   category={people},
   symbol={\F\Hu\gls{poison}},
@@ -300,7 +300,6 @@
 
 \newglossaryentry{southSeeker}{
   name={Kinbrine},
-  first={Kinbrine},
   prefix={\glsentrytext{seeker}~},
   type={people},
   category={people},
@@ -334,14 +333,14 @@
 
 \newglossaryentry{southSmith}{
   name={Grogshot},
+  text={Grogshot},
   type={people},
   category={people},
-  parent={wolfhead},
   symbol={\M\Hu\gls{hate}},
-  description={-- a giant of a man.
+  parent={wolfhead},
+  description={-- a musclar, but understated man.
   Officially, he works for \glsentrytext{southDale}'s \glsentrytext{armourHall}, but currently enjoys \glsentrytext{beardedalemaster}'s patronage},
 }
-
 
 \newcommand\southRogue{
   \NPC{\glssymbol{southRogue}}{\Glsentrytext{southRogue}}{shorn-head}{finger-guns}{to not feel bored, for even the smallest instance}
@@ -360,7 +359,7 @@
     \setcounter{Athletics}{2}
     \setcounter{Deceit}{1}
     \setcounter{Larceny}{3}
-    \setcounter{Stealth}{1}
+    \setcounter{Stealth}{2}
     \setcounter{Vigilance}{1}
     \setcounter{Wyldcrafting}{2}
     \knacks{\specialist{\emph{oil fires}}, \snapshot, \laststand}
@@ -401,8 +400,8 @@
 
 \newglossaryentry{investigator}{
   name={Burngrot},
-  type={people},
   prefix={Builder},
+  type={people},
   category={people},
   parent={establishment},
   symbol={\M\Hu\gls{beasts}},
@@ -558,7 +557,7 @@
   category={people},
   symbol={\F\gls{misgen}},
   parent={digger},
-  description={-- just an old lady who used to slay dragons}
+  description={-- just an old lady who makes nice cups of tea, and needs some basilisk skin, if you happen across any}
 }
 
 \newglossaryentry{healerLeader}{
@@ -628,7 +627,8 @@
   category={people},
   symbol={\M\Hu\gls{justice}},
   parent={whiteBandits},
-  description={-- \glsentrytext{whiteplains} agitator, attempting to replace \glsentrytext{townmaster} by getting the local \glsentrytext{village} \glsfmtplural{warden} on-side}
+  description={was banished from \glsentrytext{whiteplains} for his wreckless use of alchemy, but continues presenting himself as \pgls{whiteplains} \gls{warden}.
+  His mission is to subtly recruit \glspl{warden} to join him, promising to lower taxes, and handle the constant threat of predators better than \glsentrytext{townmaster}}
 }
 
 \newcommand{\sewerking}{
@@ -657,10 +657,8 @@
   parent={digger},
   symbol={\M\Hu\gls{justice}},
   description={-- \glsentrytext{whiteplains} agitator, and brother to \glsentrytext{banditking}.
-  He recruits soldiers from the dregs of \glsentrytext{town}, and smuggles items between \glsentrytext{traitor}'s house (outside \glsentrytext{town} wall) and \glsentrytext{pig} (inside the wall).
-  Both want to replace the local \glsfmtplural{warden}.
-  After trading armour with \glsentrytext{necromancer} for a powerful \glsentrytext{artefact}, he will begin to steal corpses from the bowels of the \glsentrytext{healersGuild}, and raise them from the dead.
-  Once he has enough undead creatures, he will dig a tunnel under \glsentrytext{town}'s citadel, and unleash the undead, killing \glsentrytext{townmaster}, along with his guards and family}
+  He smuggles items between \glsentrytext{traitor}'s house (outside \glsentrytext{town} wall) and \glsentrytext{pig} (inside the wall).
+  Both want to replace the local \glsfmtplural{warden}}
 }
 
 \newcommand{\sewerthief}{
@@ -751,7 +749,7 @@
 
 \newglossaryentry{captain}{
   name={Captain Vex},
-  type={peeps},
+  type={people},
   category={people},
   sort={Vex},
   parent={establishment},
@@ -820,7 +818,7 @@
   symbol={\F\Hu\gls{poison}},
   parent={digger},
   description={-- owner of \glsentrytext{pig}, the toughest bar in all of \glsentrytext{town}.
-  She's currently putting up the \glsentrytext{whiteBandits} in secret rooms below her tavern, \glsentrytext{pig}, where they pay her very well for access to the underbelly}
+  She's currently putting up the toughest muscle of the \glsentrytext{digger} in secret rooms below her tavern, and helping to smuggle cheap ale into \glsentrytext{town} for \glsentrytext{beardedalemaster}}
 }
 
 \newcommand{\warningbard}{

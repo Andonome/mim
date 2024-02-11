@@ -4,11 +4,11 @@
 
 \histEvent{1}{12}{\Glsfmttext{banditking} curses \glsfmttext{nurabaron} with strength and hunger}
 \begin{exampletext}
-  \Gls{sewerking} approached \gls{nurabaron} and asked him to join `the new \glspl{warden}', with dramatically decreased taxes.
+  \Gls{banditking} approached \gls{nurabaron} and asked him to join `the new \glspl{warden}', with dramatically decreased taxes.
   \Gls{redfall} receives none of the benefits, as it doesn't sit along the primary river, so \gls{nurabaron} seemed like he was in the perfect position to be receptive.
 
-  Unfortunately for \gls{sewerking}, \gls{nurabaron} took offense to the idea of deposing \gls{warden}, and began threatening \gls{sewerking}.
-  \Gls{sewerking} responded with a curse.
+  Unfortunately for \gls{banditking}, \gls{nurabaron} took offense to the idea of deposing \gls{townmaster}, and began threatening \gls{banditking}.
+  \Gls{banditking} responded with a curse.
 
   \begin{speechtext}
     Live off this land, as long as you can.
@@ -18,7 +18,7 @@
 
   \end{speechtext}
   This spell made \gls{nurabaron} and his family massive, muscular, angry, and clumsy.
-  \Gls{sewerking} took that moment to flee, leaving the \gls{redfall} \gls{warden} family cursed.
+  \Gls{banditking} took that moment to flee, leaving the \gls{redfall} \gls{warden} family cursed.
 
   Initially, \gls{nurabaron} enjoyed his `curse' -- he felt strong, and soon adjusted to his new size, and felt less clumsy.
   His family too, adjusted.%
@@ -30,7 +30,7 @@
   In a small \gls{village}, the extra consumption quickly started to put pressure on the locals.
 
   \Gls{nurabaron} then ran into an additional complication -- his massive proportions had made him monstrous.
-  He could not communicate with other nobles, and found it difficult to write letters.
+  He could not show his face to other \glspl{warden}, and found it difficult to write letters.
   All correspondence had to go through a single, well-lettered servant.
   \Gls{redfall} has been mismanaged for some time.
 
@@ -49,23 +49,23 @@ Foxmoss is healthy enough, but the rest of his crew of eight men look nearly ema
 They demand silver, or at least copper, but then quickly settle for any rations the characters might have.
 
 \begin{boxtext}
-
   A single arrow hits the road ten feet in front of you with a dull thud.
   A man stands up from the bushes nearby saying ``Stand forth, and deliver!''.
-
 \end{boxtext}
 
 \paragraph{If the characters refuse,}
-the bandits might shoot, but they're easily intimidated.  If the characters attack, the bandits flee.
+the bandits might shoot, but they're easily intimidated.
+If the characters attack, the bandits flee.
 
 Of course, these aren't proper bandits.
 This is the first robbery they've attempted.
 If pushed, they explain that they're really farmers in the nearby village \gls{redfall}, and the local sheriff's been demanding steadily more and more meat and grain as taxes.
 They don't have the strength to go on.
 
-\humansoldier[\NPC{\M}{Foxmoss}{pessimistic}{squints}{to stop being a bandit}]
+\humansoldier[\NPC{\M\Hu}{Foxmoss}{pessimistic}{squints}{to stop being a bandit}]
 
-\npc{\T[4]\E\Hu}{Emaciated ``Bandits''}
+\setcounter{wounds}{3}
+\npc{\T[4]\Hu}{Emaciated ``Bandits''}
 \person{1}% STRENGTH
   {-1}% DEXTERITY
   {-1}% SPEED
@@ -79,8 +79,8 @@ They don't have the strength to go on.
   {}
 
 \paragraph{If the characters investigate further,}
-they may well end up at Redfall Keep.
-In that case, have them stopped at the gate, and play out the encounter below with Thorn the Diplomat.
+they may well end up at \gls{redfall} Keep.
+In that case, have them stopped at the gate, and play out the encounter below with Thorn the Seneschal.
 He won't let them in the keep, but he will promise all he can if the characters complete the mission he has for them.
 
 Wherever the troupe have encountered these bandits, \gls{redfall} Keep is nearby, so if you want to pen a map as you go, at it here.
@@ -93,44 +93,59 @@ Wherever the troupe have encountered these bandits, \gls{redfall} Keep is nearby
 Normally, \glspl{village} feed the towns, but in this case the town is feeding the village.
 
 \begin{boxtext}
-
-  The road is speckled with light rain, and you pass by various traders en route.
-  All of them are coming from town, so most trundle by with empty wagons, though one has a full cart of chickens in cages.
+  The road is speckled with light rain, and you pass by various traders.
+  All of them are coming from \gls{town}, so most trundle by with empty wagons, though one has a full cart of chickens in cages.
   The rain lets off just as the Sun sets, leaving everyone damp.
-
 \end{boxtext}
 
 Slip in the fact that a trader is travelling with chickens away from \gls{town} casually.
 If the troupe notice, they can ask, and he'll tell them he's going to \gls{redfall} because he was paid a lot to do so.
 Otherwise, just leave the clue dangling.
 
-\begin{boxtext}
-
-  A man wearing a fine, purple gown has been watching you from the side of the tavern for some time.
-
-\end{boxtext}
-
-\sqpart{Town}% AREA
+\sqpart{Roads}% AREA
 {The Search for \Glsentrytext{forestpriest}}% NAME
-{\Glsentrytext{nurabaron}'s diplomat asks the \glspl{pc} to help him}% SUMMARY
+{\Glsentrytext{nurabaron}'s seneschal asks the \glspl{pc} to help him}% SUMMARY
 \label{nonstarter}
 
-Once approached, he explains (or if not approached, he approaches the \glspl{pc}).
+\begin{exampletext}
+  Thorn has left to complete a trade-deal for pottery, and has to hurry back to \gls{redfall} to make sure the estate does not land itself in any trouble.
+  He's heard that the renowned \gls{doula} -- \gls{forestpriest} -- sometimes sells her wares in \gls{town}, and he thinks she can help, but has no time to fetch her.
+\end{exampletext}
+
+Thorn sees the \gls{pc}-troupe on the road while travelling with a caravan, and asks them to deliver a letter to \gls{forestpriest}, in \gls{town} urgently.
+He pays them 5~\glspl{sp} upfront, and tells them they will receive 10 more if they deliver it successfully, and accompany her.
+
+He refuses to give his name.
+The sealed letter reads as follows:
 
 \begin{speechtext}
+  Renowned \pgls{forestpriest},
 
-  You look like a capable bunch.
-  I come with a mission from my lord, who shall remain nameless.
-  A terrible curse has been cast on him, and he needs the services of \gls{forestpriest} to remove the curse.
+  I respectfully request your expedient services at \gls{redfall} estate.
+  Some dark curse has transformed the family and one horse into ravenous beasts.
+  We can pay whatever remains in the power of this diminished estate for your herbal cures, sufficient for a man, and (if immediately available) for four children and \gls{nurabaron}'s wife.
 
-  My patron will pay you a total sum of two hundred gold pieces in return for taking that priest, by any means necessary, to his castle.
-  Once he is with you, return post-haste, and ask for me.
-  I will then bring you to my master's manse.
+  The horse is also afflicted, and all present a danger, with their increases size and appetite.
 
+  The family must be harmed \underline{in no way}.
 \end{speechtext}
 
-\humandiplomat[\NPC{\M}{Thorn the Diplomat}{practical}{scratches nose}{a quiet life}
+\humandiplomat[\NPC{\M\Hu}{Thorn the Seneschal}{practical}{scratches nose}{a quiet life}
 \label{thorn}]
+
+\paragraph{If the troupe go to \gls{town},}
+they will find the usual shenanigans and some new \gls{sq} \gls{segment} before they locate \gls{forestpriest} in her shop in \gls{town}'s area \vref{greyDoulaShop} (unless circumstances have ensured she's elsewhere).
+
+\Gls{forestpriest} will take some supplies, and agree to accompany the troupe to \gls{redfall} (\autopageref{redfallVillage}).
+
+\sqpart{Roads}% AREA
+{Rumours of the Beast}% NAME
+{\gls{vlg} People on the road chatter about the beast who rides at night by \gls{redfall}}% SUMMARY
+On the road, people discuss sightings of the `giant rider'.
+In fact people have seen \gls{nurabaron} riding his massive horse at night (he just wants to ride for fun).
+
+\paragraph{If the troupe save \gls{nurabaron},}
+skip the next \gls{segment}.
 
 \sqpart{Town}% AREA
 {\gls{vlg} The Master's Bounty}% NAME
@@ -140,7 +155,6 @@ Once approached, he explains (or if not approached, he approaches the \glspl{pc}
 A guard at \gls{redfall} has fled, and informed the whole town that \gls{nurabaron} has turned into an ogre.
 
 \begin{speechtext}
-
     Hear ye! Hear ye!
 
     Oi! I said ``Bloody well listen!''
@@ -157,11 +171,10 @@ A guard at \gls{redfall} has fled, and informed the whole town that \gls{nurabar
 
     Listen good to this one!
 
-    \gls{nurabaron} of \gls{redfall} Keep has turned-evil, become-a-depraved-monster, and is to be \underline{\large killed on site}.
+    \gls{nurabaron} of \gls{redfall} Keep has turned-evil, become-a-depraved-monster, and is to be \underline{\large killed.on.site}.
     His last known whereabouts is his own keep.
     Within this establishment, his own staff may be \emph{killed} on the basis that they harbour a criminal.
     All goods found therein are considered legal property by the finder.
-
 \end{speechtext}
 
 Arkblow the crier knows nothing more than he's said.  A number of townsfolk quickly decide to take up arms and slay the local monster, hoping the ransack his house and loot anything of value.
@@ -169,22 +182,22 @@ Arkblow the crier knows nothing more than he's said.  A number of townsfolk quic
 Of course, the only way to put a stop to this is for the characters to find \gls{forestpriest} and bring her to the keep before the angry mob arrive, convince the mob that they have already cured \gls{nurabaron}, or somehow rush \gls{nurabaron} to safety.
 
 \paragraph{Stalling the impending trouble}
-before it starts could involve extolling laws (Charisma + Academics), pleading (Charisma + Empathy), or anything else.
-However they approach the problem, the TN is 12, but they should get at least three rolls before the townsfolk stop listening.
+before it starts could involve extolling laws (\roll{Strength}{Academics}), pleading (\roll{Charisma}{Empathy}), or anything else.
+However they approach the problem, the \gls{tn} is 12, but they should get at least three rolls before the townsfolk stop listening.
 
 \paragraph{Journeying to \gls{redfall} before the crowd}
 won't be a problem if they have horses.
 If no horses are present, a few traders will arrive before them, at the very least.
 
-\sqpart{Town}% AREA
-{The Goblin Fort}% NAME
-{Redfall becomes a goblin fortress}% SUMMARY
-
-If any goblins remain alive in \gls{redfall}, it becomes a bastion for the goblins, and the \glspl{pc} hear all about what happened in \gls{town}.
-
-If farmers and townsfolk stormed the keep, they tore it apart to gain entry, and the goblins inside pulled off bricks to hurl down on their heads.
-
-What the villagers don't know is that a goblin druid has arrived as the \gls{warden}'s advisor.
-
-See \autopageref{redfallFallen}.
+%\sqpart{Town}% AREA
+%{The Goblin Fort}% NAME
+%{\Gls{redfall} becomes a goblin fortress}% SUMMARY
+%
+%If any goblins remain alive in \gls{redfall}, it becomes a bastion for the goblins, and the \glspl{pc} hear all about what happened in \gls{town}.
+%
+%If farmers and townsfolk stormed the keep, they tore it apart to gain entry, and the goblins inside pulled off bricks to hurl down on their heads.
+%
+%What the villagers don't know is that a goblin druid has arrived as the \gls{warden}'s advisor.
+%
+%See \autopageref{redfallFallen}.
 

@@ -297,6 +297,25 @@
   }
 }
 
+\newcommand\thornSeneschal{
+  \NPC{\M\Hu}{Thorn the Seneschal}{practical}{scratches nose}{a quiet life}
+  \person{0}% STRENGTH
+  {1}% DEXTERITY 
+  {-1}% SPEED
+  {{1}% INTELLIGENCE
+  {-1}% WITS
+  {0}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {}% SKILLS
+  {\Dagger, \lootMedium}% EQUIPMENT
+  {
+    \setcounter{Academics}{2}
+    \setcounter{Empathy}{2}
+    \setcounter{Deceit}{1}
+    \setcounter{Tactics}{1}
+  }
+}
 
 \newcommand{\newGhast}[1][\npc{\D\Hu}{Ghast}]{
     #1

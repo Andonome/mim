@@ -29,6 +29,38 @@ Otherwise, just leave this as a feint half-memory for the players.
 \paragraph{If the troupe ask about finding her,}
 everyone recommends \gls{town} or \gls{lakeside}.
 
+\sqpart{Forest}% AREA
+{A Lonely Tower}% NAME
+{The troupe discover \gls{southSeeker}'s secret tower in the forest}% SUMMARY
+
+\label{green_tower_sq}
+
+%! Link song about golden priests and mushrooms.
+
+\Gls{greentower} does not have an exact location on the map.
+Wherever the \glspl{pc} have arrived in the forest, \textit{that's} where it is, and where it has always been.
+
+``Where do you go next?'', you ask innocently.
+And no matter where the \glspl{pc} decide to travel through the forest, they stumble into somewhere they've never been before, and spot \gls{greentower}.
+
+\begin{exampletext}
+  \Gls{southSeeker} found the tower's remains while searching for one of the magical gateways in \gls{lostcity}.
+  Currently, he thinks a magical gateway lies in tunnels underneath \gls{greentower}, or that a gateway lies close to this tower.
+  He has commissioned men from a nearby \gls{village} to work as masons, and start rebuilding \gls{greentower}, so he can use it as a base of operations.%
+  \footnote{You'll have to play this one by ear.
+  If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\vpageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
+  Or if he's found the latter already, he must be searching for the former.
+  And if he's found both, then he's checking in on his half-way house\ldots unless \gls{greentower} isn't half way between anything, in which case\ldots you'll figure something out.}
+\end{exampletext}
+
+\paragraph{If a gateway really does lie nearby,}
+then \gls{southSeeker} has deduced the proper location, and will use this as a half-way house and base of operations when he finally discovers the gateways.
+
+\paragraph{If the gateways lie nowhere remotely close to the tower,}
+\gls{southSeeker} will soon realize this, and leave the tower abandoned; but he will never forget its location and potential uses.
+
+Check \vpageref{green_tower} for details on \gls{greentower}.
+
 \sqpart{Town}% AREA
 {\squash Rumours of Glory}% NAME
 {The troupe hear about the \glspl{wolfhead}}% SUMMARY
@@ -71,8 +103,6 @@ the \gls{jotter} will begin writing a letter, and ask the troupe to keep a \text
 \paragraph{If the troupe take her to the \gls{court} in \gls{town},}
 then \gls{beardedalemaster} intervenes, explaining that \glsentrytext{southRogue} must return to her father, the \gls{warden} of Bogpeak, and that she suffers from `Hysterophantasia', and joined the \gls{guard} due to going unmedicated.
 
-\southRogue
-
 However it goes, the troupe must travel with her for a few weeks, at least.
 She attempts to steal anything that looks like `information', but does not read very well, so any piece of paper that `looks like something' may go missing.
 Have the \gls{pc} roll \roll{Wits}{Vigilance} against her \roll{Dexterity}{Larceny} (\tn).
@@ -83,6 +113,9 @@ she keeps her distance, and uses her bow.
 \paragraph{After a couple of weeks,}
 she plans her escape, however she can.
 She will act on the spur of the moment, at just the right time, and it will probably involve fire.
+
+\southRogue
+\label{southRogue}
 
 \sqpart{Forest}% AREA
 {Just out for a Walk}% NAME
@@ -110,8 +143,8 @@ He's also told them not to even look at it, because even a single glance at the 
 
 \humanarcher[\npc{\T[3]}{8 Archers}]
 
-\label{southSmith}
 \southSmith
+\label{southSmith}
 
 \paragraph{If the \glspl{pc} ask \glsentrytext{southSmith} about his business in the forest,}
 he continues to lie about his real intentions, then returns the question to them.
@@ -122,38 +155,6 @@ he continues to lie about his real intentions, then returns the question to them
   It's a mushroom which makes people believe whatever you say.
   Someone doesn't believe the things I say (would you believe that?), so I need the mushrooms to make sure they understand I'm telling the truth.
 \end{speechtext}
-
-\sqpart{Forest}% AREA
-{A Lonely Tower}% NAME
-{The troupe discover \gls{southSeeker}'s secret tower in the forest}% SUMMARY
-
-\label{green_tower_sq}
-
-%! Link song about golden priests and mushrooms.
-
-\Gls{greentower} does not have an exact location on the map.
-Wherever the \glspl{pc} have arrived in the forest, \textit{that's} where it is, and where it has always been.
-
-``Where do you go next?'', you ask innocently.
-And no matter where the \glspl{pc} decide to travel through the forest, they stumble into somewhere they've never been before, and spot \gls{greentower}.
-
-\begin{exampletext}
-  \Gls{southSeeker} found the tower's remains while searching for one of the magical gateways in \gls{lostcity}.
-  Currently, he thinks a magical gateway lies in tunnels underneath \gls{greentower}, or that a gateway lies close to this tower.
-  He has commissioned men from a nearby \gls{village} to work as masons, and start rebuilding \gls{greentower}, so he can use it as a base of operations.%
-  \footnote{You'll have to play this one by ear.
-  If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\vpageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
-  Or if he's found the latter already, he must be searching for the former.
-  And if he's found both, then he's checking in on his half-way house\ldots unless \gls{greentower} isn't half way between anything, in which case\ldots you'll figure something out.}
-\end{exampletext}
-
-\paragraph{If a gateway really does lie nearby,}
-then \gls{southSeeker} has deduced the proper location, and will use this as a half-way house and base of operations when he finally discovers the gateways.
-
-\paragraph{If the gateways lie nowhere remotely close to the tower,}
-\gls{southSeeker} will soon realize this, and leave the tower abandoned; but he will never forget its location and potential uses.
-
-Check \vpageref{green_tower} for details on \gls{greentower}.
 
 \sqpart{Forest}% AREA
 {\squash The Guilded Party}% NAME
@@ -179,22 +180,20 @@ Select the highest possible encounter for the season (such as a basilisk during 
 \basilisk[\npc{\T[2]\A}{\arabic{noAppearing} Basilisks}]
 
 % Show South Smith again, but not if he's on the facing page.
-\ifodd\thepage
-  \vpagerefnearby{southSmith}{}{
-    \setcounter{wounds}{5}
-    \southSmith
-  }
-\else
-    \setcounter{wounds}{5}
-    \southSmith
-\fi
+\vpagerefnearby{southSmith}{}{
+  \setcounter{wounds}{5}
+  \southSmith
+}
 
 \Gls{southSmith}'s arm bleeds from a nasty wound, and \gls{beardedalemaster} isn't doing much better.
 
 \setcounter{wounds}{3}
 \beardedalemaster
 
-\southRogue
+\vpagerefnearby{southRogue}{}{
+  \setcounter{wounds}{2}
+  \southRogue
+}
 
 After this \gls{segment}, the \glspl{wolfhead} return to \gls{town} to rest and heal, at \gls{town}'s \gls{templeOfSickness}.
 

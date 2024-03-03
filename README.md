@@ -5,6 +5,7 @@
 | [Character Sheets][resources]        |
 | [Condensed Rules][rules summary]     |
 | [Introduction Module][intro module]  |
+| [Email an issue][issues email]       |
 
 *Missions in Maitavale* is a complete campaign for the BIND RPG.
 
@@ -50,3 +51,4 @@ And if the perimeter falls, a deluge of predators will feast on the soft inner a
 [resources]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/resources.pdf?job=build
 [rules summary]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/rules.pdf
 [intro module]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build
+[issues email]: contact-project+bindrpg-mim-46332255-issue-@incoming.gitlab.com

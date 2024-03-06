@@ -1,4 +1,5 @@
 BOOK = $(shell basename "$$(pwd)")
+QR_TARGET = $(shell grep 'mailto' README.md | cut -d' ' -f3)
 
 output: $(BOOK).pdf
 
@@ -21,7 +22,9 @@ images/extracted/town.svg: images/extracted
 images/extracted/shadow_gate_map.svg:| images/extracted
 	inkscape images/Dyson_Logos/shadow_gate.svg --export-id-only --export-id=layer3 -l --export-filename images/extracted/shadow_gate_map.svg
 
-svg-inkscape: | config/bind.sty extracts
+qr.tex: README.md
+	@echo '\qrcode[height=.2\\textwidth]{$(QR_TARGET)}' > qr.tex
+svg-inkscape: | config/bind.sty extracts qr.tex
 	@pdflatex -shell-escape -jobname $(BOOK) main.tex
 $(BOOK).pdf: svg-inkscape $(wildcard *.tex) $(wildcard config/*.sty)
 	@pdflatex -jobname $(BOOK) main.tex
@@ -40,6 +43,7 @@ clean:
 	*glo \
 	*latexmk \
 	*.fls \
+	qr.tex \
 	images/extracted
 
 .PHONY: clean all extracts

@@ -39,3 +39,4 @@ old
 images/extracted
 *.fls
 *latexmk
+qr.tex

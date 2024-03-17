@@ -429,22 +429,11 @@
 }
 
 \newcommand\uncommonlyLargeJelly{
-  \npc{\A}{{Uncommonly Large Ooze}}
-  \animal{5}% STRENGTH
-  {1}% DEXTERITY 
-  {0}% SPEED
-  {-2}% WITS
-  {4}% DR
-  {4}% AGGRESSION
-  {}% SKILLS
-  {
-    \acidBody, \acidSpray, \gloopy
-  }% ABILITIES
-  {
-    \knacks{\berserker, \unstoppable}
-    \setcounter{Athletics}{1}
-    \setcounter{Stealth}{2}
-  }
+  \swarm[\gloopy, \acidSpray, \berserker, \unstoppable]{Uncommonly Large Ooze}% Name
+  {\value{16}}% HP
+  {\value{4}}% Attack
+  {\value{0}}% Speed
+  {\value{-2}}% Wits
 }
 
 \newcommand\inkparch{

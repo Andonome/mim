@@ -20,7 +20,7 @@ images/extracted/shadow_gate_map.svg:| images/extracted
 
 qr.tex: README.md
 	@echo '\qrcode[height=.2\\textwidth]{$(QR_TARGET)}' > qr.tex
-$(BOOK).pdf: $(wildcard *.tex) $(wildcard config/*.sty) config/vars $(EXTRACTS) qr.tex
+$(BOOK).pdf: $(DEPS) $(EXTRACTS) | qr.tex
 	@$(COMPILER) main.tex
 
 creds:

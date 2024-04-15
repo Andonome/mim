@@ -6,7 +6,7 @@
 \Gls{greentower} exists wherever the \glspl{pc} discover it, \vpageref{green_tower_sq}.
 \Gls{southSeeker} will arrive after \pgls{interval}, so the \glspl{pc} may have to endure an encounter before meeting him.
 
-\mapPic[\Large]{b}{Dyson_Logos/green_tower}{
+\mapPic[\Large]{t}{Dyson_Logos/green_tower}{
   \Huge\ref{greenGrounds}/62/55,
   \ref{greenConservatory}/26/35,
   \ref{green1}/10/35,
@@ -58,6 +58,13 @@ If \gls{southSeeker} returns, he will have the masons release them, but ask they
 
 \humanfarmer[\npc{\T[6]\M\Hu}{6 Masons}]
 
+\boxPair[t]{
+  \southSeeker
+
+}{
+  \showStdSpells
+}
+
 \paragraph{If anyone searches for a passage below,}
 they will find a rock covering, with \pgls{weight} of 12.
 The \glspl{pc} will have to work together to lift it.%
@@ -69,10 +76,6 @@ Overnight, the labouring equipment rests here.
 The lock is a simple knot tied on the inside.
 Getting in is easy -- \roll{Intelligence}{Larceny} (\tn[6]) to slide a knife through a crack and cut the rope.
 Getting in undetected requires more thinking -- \roll{Intelligence}{Larceny} (\tn[14]) to thread a series of strings through, and create the leverage to undo the knot.
-
-\southSeeker
-
-\showStdSpells
 
 \mapentry[green1]{First Floor}
 
@@ -127,24 +130,6 @@ This green roof meshes with the local trees for some distance around, but like a
 From the top of the roof, anyone can see for miles around.
 They can't see people or creatures sneaking about, but they can see basilisks and groups of men without fail, even by moonlight.
 
-\mapPic{b}{Dyson_Logos/green_secret}{
-  \rotatebox{15}{\nameref{underGreenTower}}/09/55,
-  \ref{underGreenTower}/17/43,
-  \rotatebox{-15}{\nameref{underWatcher}}/09/02,
-  \ref{underWatcher}/18/09,
-  \rotatebox{15}{\nameref{underPriests}}/20/78,
-  \ref{underPriests}/28/57,
-  \rotatebox{0}{\nameref{underDoors}}/40/02,
-  \ref{underDoors}/375/31,
-  \rotatebox{-15}{\nameref{underSideRoom}}/68/85,
-  \ref{underSideRoom}/56/73,
-  \rotatebox{-90}{\nameref{underSpiral}}/90/43,
-  \ref{underSpiral}/81/40,
-  \rotatebox{25}{\nameref{Abyss}}/67/49,
-  \ref{Abyss}/68/36,
-}
-
-\needspace{10em}
 \subsection{Old Catacombs}
 
 \mapentry[underGreenTower]{The Stairs}
@@ -184,6 +169,23 @@ The stairs and all hallways here are rather narrow, making weapons difficult to 
 The Pious Ghast guards this tomb from inside a closet.
 He swore to protect the golden priests by waiting here in the dry air with a body so seized up that he cannot move.
 But with a little time to shuffle his bones and crack his own skin, he will find enough flexibility to walk out of the closet door.
+
+\mapPic{b}{Dyson_Logos/green_secret}{
+  \rotatebox{15}{\nameref{underGreenTower}}/09/55,
+  \ref{underGreenTower}/17/43,
+  \rotatebox{-15}{\nameref{underWatcher}}/09/02,
+  \ref{underWatcher}/18/09,
+  \rotatebox{15}{\nameref{underPriests}}/20/78,
+  \ref{underPriests}/28/57,
+  \rotatebox{0}{\nameref{underDoors}}/40/02,
+  \ref{underDoors}/375/31,
+  \rotatebox{-15}{\nameref{underSideRoom}}/68/85,
+  \ref{underSideRoom}/56/73,
+  \rotatebox{-90}{\nameref{underSpiral}}/90/43,
+  \ref{underSpiral}/81/40,
+  \rotatebox{25}{\nameref{Abyss}}/67/49,
+  \ref{Abyss}/68/36,
+}
 
 \paragraph{Opening the door}
 requires a \roll{Strength}{Crafts} roll (\tn[14]), as the door is bolted shut from the inside, and will have to be busted in.

@@ -54,19 +54,19 @@ This encounter can easily slip into the background -- the drunkard has no intere
 Players may notice he's pretending to be drunk with a \roll{Wits}{Medicine} Group Roll, or notice that his insignia does not have the right flowers for \gls{southDale} with a \roll{Intelligence}{Academics} roll.
 Both have \tn[10].
 
-\NPC{\M}{\Gls{server} Carnpox}{Bobbing~Adams~Apple}{Pointing at people}{to get paid and go home}
-
-\person{2}% STRENGTH
-  {0}% DEXTERITY
-  {1}% SPEED
-  {{0}% INTELLIGENCE
-  {-1}% WITS
-  {+1}}% CHARISMA
-  {0}% DR
-  {1}% COMBAT
-  {Athletics~1, Deceit~1}% SKILLS
-  {\longsword, \completeplate}% EQUIPMENT
-  {\addtocounter{xpbonus}{-3}}
+\Person{\NPC{\M\Hu}{\Gls{server} Carnpox}{Bobbing~Adams~Apple}{Pointing at people}{to get paid and go home}}%
+  {{2}{0}{1}}% BODY
+  {{0}{-1}{1}}% MIND
+  {%
+    \set{Combat}{1}
+    \set{Athletics}{1}
+    \set{Deceit}{1}
+    \longsword
+    \completeplate
+  }% SKILLS
+  {}% KNACKS
+  {\lootMedium}% EQUIPMENT
+  {}% ABILITIES
 
 If questioned, Carnpox says this is ``just a little joke'', but does not reveal the overall plan.
 

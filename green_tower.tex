@@ -208,25 +208,20 @@ the Pious Ghast animates and comes to kill them.%
 
 His use of a shortsword also means he will not gain any penalty from the narrow hallway.
 
-\npc{\M\D}{The Pious Ghast}
-
-\person{3}% STRENGTH
-  {2}% DEXTERITY
-  {0}% SPEED
-  {{0}% INTELLIGENCE
-  {0}% WITS
-  {-5}}% CHARISMA
-  {3}% DR
-  {3}% COMBAT
-  {}% SKILLS
-  {\shortsword, \completeplate, pendant necklace worth 2~\glspl{gp}, silver earrings worth 1~\gls{gp} each, and 2 golden rings worth 5~\glspl{gp} each}% EQUIPMENT
-  {
-    \setcounter{Academics}{1}
-    \setcounter{Stealth}{2}
-    \setcounter{Tactics}{2}
-    \setcounter{Vigilance}{1}
-    \undead
-  }
+\Person{\npc{\M\D}{The Pious Ghast}}%
+  {{3}{2}{1}}% BODY
+  {{0}{1}{0}}% MIND
+  {%
+    \set{Combat}{1}
+    \set{Tactics}{2}
+    \set{Stealth}{2}
+    \set{Vigilance}{1}
+    \shortsword
+    \completeplate
+  }% SKILLS
+  {\stunningstrike, \adrenalinesurge}% KNACKS
+  {pendant necklace worth 2~\glspl{gp}, silver earrings worth 1~\gls{gp} each, and 2 golden rings worth 5~\glspl{gp} each}% EQUIPMENT
+  {\undead}% ABILITIES
 
 \mapentry[underPriests]{Hall of the Golden Priests}
 
@@ -299,36 +294,9 @@ At present, shelves at the back contain \lootMedium, \lootJewellery, \lootJewell
 
 The room also contains 11 undead goblins, standing ready to kill any nura who come up from the tunnel, or just anyone who enters.
 
-\npc{\T[11]\N\D}{\arabic{noAppearing} Undead Goblins}
-\animal{-1}% STRENGTH
-  {0}% DEXTERITY 
-  {-1}% SPEED
-  {2}% WITS
-  {0}% DR
-  {0}% COMBAT
-  {}% SKILLS
-  {Nothing}% EQUIPMENT
-  {
-    \undead
-  }
+\undeadgoblin
 
-\npc{\T[2]\N\D}{\arabic{noAppearing} Hobgoblin Ghasts}
-\person{2}% STRENGTH
-  {1}% DEXTERITY 
-  {-1}% SPEED
-  {{-2}% INTELLIGENCE
-  {0}% WITS
-  {-5}}% CHARISMA
-  {0}% DR
-  {2}% COMBAT
-  {}% SKILLS
-  {\javelin $\times 3$}% EQUIPMENT
-  {
-    \setcounter{Projectiles}{1}
-    \setcounter{Caving}{2}
-    \setcounter{Tactics}{1}
-    \undead
-  }
+\undeadhobgoblin
 
 \mapentry[Abyss]{Abyss}
 
@@ -348,23 +316,7 @@ They are surely doomed.
   Opening the door allows a place to `fish' for the little glowshrooms, then close the door before goblins ascend.
 \end{exampletext}
 
-\npc{\D\N}{Hobgoblin Ghast}
-\person{2}% STRENGTH
-  {1}% DEXTERITY 
-  {-1}% SPEED
-  {{-2}% INTELLIGENCE
-  {0}% WITS
-  {-5}}% CHARISMA
-  {0}% DR
-  {2}% COMBAT
-  {}% SKILLS
-  {\javelin, fishing rod, glowshrooms $\times 3$}% EQUIPMENT
-  {
-    \setcounter{Projectiles}{1}
-    \setcounter{Caving}{2}
-    \setcounter{Tactics}{1}
-    \undead
-  }
+\ghast[\npc{\D\N}{Hobgoblin Ghast}]
 
 \bigLine
 

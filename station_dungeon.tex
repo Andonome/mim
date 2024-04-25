@@ -57,21 +57,19 @@ Another guard stays in the \nameref{mainPrisonRoom}, room~\ref{mainPrisonRoom}, 
 
 Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, along with another for the ogre (in room~\ref{ogreCell}) and a fourth key for the chest in room~\ref{thingsRoom}.
 
-\NPC{\F\Hu}{Hordcut the Guard}{arrogant}{`ha!, yea right\ldots'}{a promotion}
-\person{1}% STRENGTH
-  {2}% DEXTERITY 
-  {0}% SPEED
-  {{0}% INTELLIGENCE
-  {0}% WITS
-  {-1}}% CHARISMA
-  {0}% DR
-  {2}% COMBAT
-  {
-    Deceit~1, Crafts~1
-    \knacks{\brawler, \berserker}
+\Person{\NPC{\F\Hu}{Hordcut the Guard}{arrogant}{`ha!, yea right\ldots'}{a promotion}}%
+  {{1}{2}{0}}% BODY
+  {{0}{0}{-1}}% MIND
+  {%
+    \set{Combat}{1}
+    \set{Deceit}{2}
+    \set{Crafts}{1}
+    \shortsword
+    \partialplate
   }% SKILLS
-  {\shortsword, \partialplate}% EQUIPMENT
-  {}
+  {\brawler, \berserker}% KNACKS
+  {\lootSmall}% EQUIPMENT
+  {}% ABILITIES
 
 \mapentry[mainPrisonRoom]{Main Hall}
 
@@ -102,18 +100,20 @@ If anyone speaks hopefully about escape, he tells them everything that will go w
 
 If the \glspl{pc} prove one of his melancholic predictions wrong, he helps them escape, then goes to hide with his sister, \gls{librarian} in the \gls{paperGuild}.
 
-\NPC{\M\Hu}{Spybroth}{doomsayer}{sings `nobody knows the trouble I've seen'}{freedom}
-\person{1}% STRENGTH
-{0}% DEXTERITY 
-{1}% SPEED
-{{0}% INTELLIGENCE
-{-1}% WITS
-{0}}% CHARISMA
-{0}% DR
-{1}% COMBAT
-{Larceny 1, Stealth 2, Wyldcrafting 1}% SKILLS
-{Nothing}% EQUIPMENT
-{}
+
+\Person{\NPC{\M\Hu}{Spybroth}{doomsayer}{sings `nobody knows the trouble I've seen'}{freedom}}%
+  {{1}{0}{1}}% BODY
+  {{0}{-1}{0}}% MIND
+  {%
+    \set{Combat}{1}
+    \set{Larceny}{1}
+    \set{Stealth}{2}
+    \set{Wyldcrafting}{1}
+  }% SKILLS
+  {}% KNACKS
+  {\lootSmall}% EQUIPMENT
+  {}% ABILITIES
+
 \label{spyBroth}
 
 \mapentry[dunGrate]{The Grate}
@@ -137,23 +137,17 @@ Here the wretched ogre stays, unable to do more than sing, and eat too seldomly.
 With a \roll{Intelligence}{Performance} roll (\tn[12]), a character might sing along.
 From that point on, Laban will trust them, and not eat them unless he has no other food.
 
-\npc{\M\N}{Laban the Ogre}
-\person{7}% STRENGTH
-  {0}% DEXTERITY
-  {4}% SPEED
-  {{-3}% INTELLIGENCE
-  {-2}% WITS
-  {-4}}% CHARISMA
-  {0}% DR
-  {0}% COMBAT
-  {}% SKILLS
-  {Nothing}% EQUIPMENT
-  {
-    \setcounter{Brawl}{2}
-    \setcounter{Combat}{1}
-    \setcounter{Crafts}{1}
-    \setcounter{Tactics}{1}
-  }
+\Person{\npc{\M\N}{Laban the Ogre}}%
+  {{6}{0}{3}}% BODY
+  {{-3}{-2}{-4}}% MIND
+  {%
+    \set{Combat}{1}
+    \set{Brawl}{2}
+    \set{Empathy}{2}
+  }% SKILLS
+  {}% KNACKS
+  {lucky chicken bone}% EQUIPMENT
+  {}% ABILITIES
 
 \paragraph{If anyone stages a breakout,}
 Laban comes with them, but immediately stops to eat anything (or anyone) he can.

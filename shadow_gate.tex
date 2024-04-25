@@ -427,19 +427,17 @@ that one wakes the others up before doing anything else, then they unlock the fe
 The three `Keepers of the Gate' can explain everything concerning the reality of \gls{lostcity}, how the Shadow Gate once worked, and what happened, but they won't\ldots at least not for a while.
 They take a long time to come to terms with their situation.
 
-\NPC{\M\Hu}{Embersnatch}{lost in the clouds, still thinking about the last thing said}{\textit{`ya know, like?'}}{to return to a lost home}
-\setcounter{Intelligence}{-2}
-\person{1}% STRENGTH
-{0}% DEXTERITY 
-{0}% SPEED
-{{-3}% INTELLIGENCE
-{-2}% WITS
-{0}}% CHARISMA
-{0}% DR
-{1}% COMBAT
-{Crafts 1, Empathy 2}% SKILLS
-{\Dagger}% EQUIPMENT
-{}
+\Person{\NPC{\M\Hu}{Embersnatch}{lost in the clouds, still thinking about the last thing said}{\textit{`ya know, like?'}}{to return to a lost home}}%
+  {{1}{0}{0}}% BODY
+  {{-3}{-2}{0}}% MIND
+  {%
+    \set{Combat}{1}
+    \set{Empathy}{2}
+    \Dagger
+  }% SKILLS
+  {}% KNACKS
+  {\lootSmall}% EQUIPMENT
+  {}% ABILITIES
 
 \begin{speechtext}
   ``What's Ratpelt doing these days?''

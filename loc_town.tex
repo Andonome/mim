@@ -60,24 +60,19 @@ Most humans read out-loud, so the library emits a constant murmur (or a proper r
 
 Inside, the massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
 
-\NPC{\F\Hu}{\Pgls{librarian}}{long sleeves smeared across an eternally running nose}{sings `\textit{Nobody knows the trouble I've seen\ldots}'}{to find that missing cat}
-
-\person{0}% STRENGTH
-{0}% DEXTERITY 
-{-1}% SPEED
-{{2}% INTELLIGENCE
-{-2}% WITS
-{0}}% CHARISMA
-{0}% DR
-{0}% COMBAT
-{}% SKILLS
-{Writing equipment, bag of dried trout-strips}% EQUIPMENT
-{
-  \setcounter{Academics}{3}
-  \setcounter{Crafts}{1}
-  \setcounter{Empathy}{1}
-  \knacks{\specialist{History}}
-}
+\Person{\NPC{\F\Hu}{\Pgls{librarian}}{long sleeves smeared across an eternally running nose}{sings `\textit{Nobody knows the trouble I've seen\ldots}'}{to find that missing cat}}%
+  {{0}{0}{-1}}% BODY
+  {{2}{-2}{0}}% MIND
+  {
+    \setcounter{Academics}{3}
+    \setcounter{Crafts}{1}
+    \setcounter{Empathy}{1}
+  }% SKILLS
+  {%
+    \specialist{Valley History}
+  }% KNACKS
+  {writing equipment, bag of dried trout-strips}% EQUIPMENT
+  {}% ABILITIES
 
 While a number of \glspl{seeker} within the \gls{paperGuild} outrank \gls{librarian}, she commands respect within the temple after sorting all of the books; only she knows how to find them.
 She sorts books by:

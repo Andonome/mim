@@ -26,12 +26,23 @@ Keywords={TTRPG,RPG,roleplaying}
 \input{intro.tex}
 
 \printglossary[
+  style=topicmcols,
+]
+
+\pagebreak
+\printglossary[
   type=symbols,
   ]
 
 \printglossary[
+  type=mech,
   style=mcolindexspannav,
-]
+  ]
+
+\pagebreak
+\printglossary[
+  type=\acronymtype,
+  ]
 
 \mainmatter
 
@@ -45,17 +56,18 @@ Keywords={TTRPG,RPG,roleplaying}
 %%%%%%%%%%%%%
 
 \chapter{Tangled Threads}
+\arabic{temperature}
 
 \section{Introductions}
 \begin{multicols}{2}
-\ifodd\value{temperature}
+\ifnum\value{temperature}>0
   \input{bandits.tex}
   \input{spider.tex}
-\fi
-\input{wolves.tex}
-\input{nurabaron.tex}
-\ifodd\value{temperature}
+  \input{wolves.tex}
+  \input{nurabaron.tex}
 \else
+  \input{wolves.tex}
+  \input{nurabaron.tex}
   \input{bandits.tex}
   \input{spider.tex}
 \fi

@@ -6,7 +6,7 @@
     \setcounter{diceNo}{#1}%
     \divide\value{diceNo} by 3%
     \addtocounter{track}{-\value{diceNo}}%
-  \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showSeason[#2]}\nobreak\\~{#3}|bigLine}%
+  \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showSeason[#2]}\nobreak\\~{#3}|textbf~page~}%
 }
 
 \newtoggle{river}
@@ -300,7 +300,7 @@
 }
 
 \newcommand\thornSeneschal{
-  \humandiplomat[\NPC{\M\Hu}{Thorn the Seneschal}{practical}{scratches nose}{a quiet life}]
+  \humandiplomat[\NPC{\M\Hu}{Thorn the \glsentrytext{seneschal}}{practical}{scratches nose}{a quiet life}]
 }
 
 \newcommand{\newGhast}[1][\npc{\D\Hu}{Ghast}]{

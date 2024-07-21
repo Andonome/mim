@@ -68,8 +68,6 @@ The \gls{scribe} at the door insists people remove cloaks, backpacks, or anythin
 
 Most humans read out-loud, so the library emits a constant murmur (or a proper racket, when someone wants to read a good book to a crowd).
 
-Inside, the massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
-
 \Person{\NPC{\F\Hu}{\Pgls{librarian}}{long sleeves smeared across an eternally running nose}{sings `\textit{Nobody knows the trouble I've seen\ldots}'}{to find that missing cat}}%
   {{0}{0}{-1}}% BODY
   {{2}{-2}{0}}% MIND
@@ -83,6 +81,8 @@ Inside, the massive library contains a wealth of unsorted books in piles, stacks
   }% KNACKS
   {writing equipment, bag of dried trout-strips}% EQUIPMENT
   {}% ABILITIES
+
+Inside, the massive library contains a wealth of unsorted books in piles, stacks, shelves, and occasionally used as doorstops (when \gls{librarian}, the sorting-librarian, disapproves of the book).
 
 While a number of \glspl{seeker} within the \gls{paperGuild} outrank \gls{librarian}, she commands respect within the temple after sorting all of the books; only she knows how to find them.
 She sorts books by:
@@ -317,6 +317,12 @@ The book details a fiendish fiddly riddle, called `the Riddle of the Shadow Gate
 
 \hardestRiddleEver
 
+\mapPic{t}{Dyson_Logos/white_horse_2}{
+  \ref{horseHall}/18/45,
+  \ref{horseKitch}/68/53,
+  \ref{horseYard}/88/57,
+}
+
 \mapentry[townHealersGuild]{\Glsfmttext{healersGuild}~\glssymbol{eldren}}
 
 The temple houses priests who write biographies (mostly for the rich), handle pensions (repaid on a per-family basis), practice starvation (so others can have more), and sing prayers for their ancestors to stay somewhere nice in the afterlife.
@@ -338,12 +344,6 @@ Since the catacombs under \gls{town} collapsed, the dead only stay in this room 
 
 \healerLeader
 
-\mapPic{t}{Dyson_Logos/white_horse_2}{
-  \ref{horseHall}/18/45,
-  \ref{horseKitch}/68/53,
-  \ref{horseYard}/88/57,
-}
-
 \Pgls{healerLeader} likes to keep track of things, and feels terribly annoyed that a fat, black cat keeps sneaking into the building, and he can't figure out how.
 The ground floor's windows only let in a little Sunlight through wooden slits, but cannot open.
 The only door out opens and closes only when the attentive staff open them with a key.
@@ -364,6 +364,32 @@ The \glspl{pc} won't find the cat either, as he's already left to annoy the hors
 \end{boxtext}
 
 \humandiplomat[\NPC{\M\Hu}{Barkwind}{Proud}{Curling moustache}{ensure everything is `proper'}]
+
+\boxPair{
+  \smolMapPic{Dyson_Logos/white_horse_1}{
+    \ref{horseUpstairs}/55/27,
+    \ref{horseSideRoom}/55/80,
+    \ref{wolfRoom}/28/27,
+    \ref{horseCupboard}/85/08,
+  }
+}{
+  Roll two dice to find the current activities, and use both results.
+
+  \begin{dlist}
+    \item
+    \Gls{alemaster} complains bitterly and loudly about the current ale prices, and the price of staff.
+    \item
+    \Gls{sewerking} sits in a corner, listening quietly to the entire room.
+    \item
+    \Gls{townmaster} plays ridiculous games outside.
+    \item
+    \Gls{alchemist} plays a game of go with another patron.
+    \item
+    \Gls{keras} (\glssymbol{keras}) plays a game of go with another patron (while sitting on three cushions).
+    \item
+    \Gls{captain} and \gls{investigator} argue about which of them must take responsibility for bandit raids close to \gls{town}.
+  \end{dlist}
+}
 
 Entry through deception requires a roll against Barkwind's \roll{Wits}{Vigilance} (\tn).
 The players can roll anything as long as it relates to a reasonable plan.
@@ -407,30 +433,6 @@ The \glspl{pc} \emph{must} agree with Barkwind (the doorman) about \gls{sewerthi
    He lunges forwards and grabs the chicken in his teeth, then shakes it like a mad dog until it stops squawking.
    He gives a triumphant grin as the crowd clap and another man steps forward to have his hands tied.
 \end{boxtext}
-
-\smolMapPic{Dyson_Logos/white_horse_1}{
-  \ref{horseUpstairs}/55/27,
-  \ref{horseSideRoom}/55/80,
-  \ref{wolfRoom}/28/27,
-  \ref{horseCupboard}/85/08,
-}
-
-Roll $2D6$ to find the current activities, and combine the results.
-
-\begin{dlist}
-  \item
-  \Gls{alemaster} complains bitterly and loudly about the current ale prices, and the price of staff.
-  \item
-  \Gls{sewerking} sits in a corner, listening quietly to the entire room.
-  \item
-  \Gls{townmaster} plays ridiculous games outside.
-  \item
-  \Gls{alchemist} plays a game of go with another patron.
-  \item
-  \Gls{keras} (\glssymbol{keras}) plays a game of go with another patron (while sitting on three cushions).
-  \item
-  \Gls{captain} and \gls{investigator} argue about which of them must take responsibility for bandit raids close to \gls{town}.
-\end{dlist}
 
 \mapentry[smugglerHouse]{\Glsfmttext{traitor}'s House~\glssymbol{sylf}}
 

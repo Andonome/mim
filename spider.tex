@@ -28,7 +28,7 @@ The \glspl{pc} meet a trader who seems infectiously happy after escaping a near-
 
 \begin{boxtext}
   \begin{speechtext}
-  I just stopped by a stream, near the \gls{edge}, to let the horses drink, and I heard a funny song.
+  I just stopped by a stream, near the \glsentrytext{edge}, to let the horses drink, and I heard a funny song.
   Next thing I know, two-dozen crawlers came out.
   \end{speechtext}
 \end{boxtext}
@@ -192,13 +192,13 @@ However, inside each of the four farmhouses, rooms are filled wall-to-wall with 
 \paragraph{If the troupe want to leave}
 then they can, without issue.
 
-\paragraph{If the \glspl{pc} make a lot of noise,}
-all of the male \glspl{crawler} come out, and pursue.
-The females remain with their eggs.
-
 \chitincrawler[\npc{\A\T[3]}{Male \Glsfmtplural{crawler}}]
 
 \chitincrawler[\npc{\A\T[3]}{Female \Glsfmtplural{crawler}}]
+
+\paragraph{If the \glspl{pc} make a lot of noise,}
+all of the male \glspl{crawler} come out, and pursue.
+The females remain with their eggs.
 
 \sqpart{Town}% AREA
 {\gls{vlg} Another Village Down}% NAME
@@ -352,6 +352,8 @@ Two of the \glspl{crawler} will arrive to attack each round, but once \gls{spide
 
 \gnome[\NPC{\Gn\M}{Mayelo}{Creepy}{Scratches Adams apple}{to double-check the Maths}]
 
+\chitincrawler[\npc{\A\T[6]}{\Glsfmtplural{crawler}}]
+
 \spiderqueen
 
 \showStdSpells[
@@ -359,8 +361,6 @@ Two of the \glspl{crawler} will arrive to attack each round, but once \gls{spide
   \input{config/spells/Fire2.tex}
   \setcounter{enc}{3}
 ]
-
-\chitincrawler[\npc{\A\T[6]}{\Glsfmtplural{crawler}}]
 
 \paragraph{Success} means \gls{spiderqueen} has been killed or quelled.
 If she's damaged and her chitinous children pushed back, she flees to seek new adventures elsewhere, and without killing random villagers.

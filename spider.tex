@@ -40,6 +40,25 @@ At that point, she can confirm.
 \paragraph{If the troupe buy anything from her,}
 it's ten percent off, because today is a good day.
 
+\boxPair{
+  \spiderqueen
+  \label{spiderqueen}
+  \index{Elves!Weird}
+}{
+  \showStdSpells[
+    \spell{Spider Hive}% Name
+      {Duplicated,Detailed}% Enhancements
+      {Warp}% Action
+      {Air, Fire}% Spheres
+      {\roll{Wits}{Vigilance}}% Resist with
+      {The caster rapidly lists every known property of spiders, and \arabic{spellTargets} \gls{crawler} illusions emerge from every shadow}% Description
+      {Each \gls{crawler} has Body Attributes at +\arabic{spellPlusOne}, and vanishes once anything touches them.}
+    \input{config/spells/Light2.tex}
+    \input{config/spells/Life3.tex}
+    \setcounter{enc}{3}
+  ]
+}
+
 \sqpart{Roads}% AREA
 {Sheep Stampede}% NAME
 {\Glsentrytext{spiderqueen} summons sheep to be eaten by her \glsfmtplural{crawler}}% SUMMARY
@@ -54,8 +73,6 @@ The \glspl{guard} take a morale check to see if they enter combat.%
 \exRef{core}{Core Rules}{morale}
 
 \humansoldier[\npc{\T[4]\Hu}{\Glspl{guard}}]
-
-\widePic{Dyson_Logos/ruined_village}
 
 \begin{boxtext}
   A nearby shepherd suddenly shouts out ``Hey!'', as he loses control of his flock.
@@ -79,6 +96,8 @@ their characters should spot them immediately.
 \chitincrawler[\npc{\A\T[6]}{\arabic{noAppearing} \Glsfmtplural{crawler}}]
 
 As before, \gls{spiderqueen} waits in the distance, and flees at the first sign of trouble.
+
+\widePic[t]{Dyson_Logos/ruined_village}
 
 \sqpart{Forest}% AREA
 {The Arachnid Double Cross}% NAME
@@ -139,23 +158,6 @@ she casts another illusion to make herself appear as a bush (\tn[10] to spot).
 \paragraph{If two \glspl{pc} die,}
 the \glspl{crawler} all stop to feed.
 
-\spiderqueen
-\label{spiderqueen}
-\index{Elves!Weird}
-
-\showStdSpells[
-  \spell{Spider Hive}% Name
-    {Duplicated,Detailed}% Enhancements
-    {Warp}% Action
-    {Air, Fire}% Spheres
-    {\roll{Wits}{Vigilance}}% Resist with
-    {The caster rapidly lists every known property of spiders, and \arabic{spellTargets} \gls{crawler} illusions emerge from every shadow}% Description
-    {Each \gls{crawler} has Body Attributes at +\arabic{spellPlusOne}, and vanishes once anything touches them.}
-  \input{config/spells/Light2.tex}
-  \input{config/spells/Life3.tex}
-  \setcounter{enc}{3}
-]
-
 
 \sqpart{Roads}% AREA
 {\gls{vlg} Quiet Little Hamlet}% NAME
@@ -189,12 +191,12 @@ However, inside each of the four farmhouses, rooms are filled wall-to-wall with 
 
 \Gls{spiderqueen} herself has since moved away and left her creatures to multiply.
 
-\paragraph{If the troupe want to leave}
-then they can, without issue.
-
 \chitincrawler[\npc{\A\T[3]}{Male \Glsfmtplural{crawler}}]
 
 \chitincrawler[\npc{\A\T[3]}{Female \Glsfmtplural{crawler}}]
+
+\paragraph{If the troupe want to leave}
+then they can, without issue.
 
 \paragraph{If the \glspl{pc} make a lot of noise,}
 all of the male \glspl{crawler} come out, and pursue.
@@ -292,7 +294,6 @@ the three gnomes step forward.
 Leta begins talking like she's some kind of trader.
 
 \begin{speechtext}
-
   So you don't like the \glspl{crawler}?
 
   You really hate them?
@@ -302,7 +303,6 @@ Leta begins talking like she's some kind of trader.
   And you seem to be adventurers, in the employment of destroying monsters, is that so?
 
   And what if I told you that we could aid you pushing back against \gls{spiderqueen}?
-
 \end{speechtext}
 
 It's only after the characters emphatically agree that they do want to kill \gls{spiderqueen} that Leta informs them that she's feeling so generous that she's going to help them for free, and indeed has already laid plans.

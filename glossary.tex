@@ -193,7 +193,18 @@
 }
 
 \newcommand{\townmaster}{
-  \NPC{\M\Hu}{\glsentrytext{townmaster}}{enthusiastic}{shouts `ha!'}{to hear news of victorious, glorious, battles}
+  \Person{\NPC{\M\Hu}{\glsentrytext{townmaster}}{his gait and small hunch looks like two melted candles, rudely shoved together}{shouts `ha!'}{to hear news of victorious, glorious, battles}}%
+    {{1}{0}{0}}% BODY
+    {{1}{-1}{1}}% MIND
+    {
+        \setcounter{Brawl}{1}
+        \setcounter{Deceit}{2}
+        \setcounter{Academics}{1}
+        \setcounter{Vigilance}{3}
+    }% SKILLS
+    {\lucky}% KNACKS
+    {\lootBig, \lootJewellery}% EQUIPMENT
+    {}% ABILITIES
 }
 
 \newglossaryentry{townmaster}{

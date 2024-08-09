@@ -19,7 +19,7 @@ images/extracted/shadow_gate_map.svg:| images/extracted
 	inkscape images/Dyson_Logos/shadow_gate.svg --export-id-only --export-id=layer3 -l --export-filename images/extracted/shadow_gate_map.svg
 
 qr.tex: README.md
-	@echo '\qrcode[height=.2\\textwidth]{$(QR_TARGET)}' > qr.tex
+	@echo '$(QR_CODE)' > qr.tex
 $(BOOK).pdf: $(DEPS) $(EXTRACTS) | qr.tex
 	@$(COMPILER) main.tex
 

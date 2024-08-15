@@ -9,10 +9,7 @@
 
 \begin{multicols}{2}
 
-\glssymbol{sable}
-\textbf{At the Weavers'}
-
-\begin{boxtable}[Xcc]
+\begin{nametable}[Xcc]{\glsentrysymbol{sable}~At the \glsentrytext{templeOfFrost}}
 
   \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
 
@@ -22,21 +19,21 @@
   \hline
 
   \marketItem[cp]{Bandages}{0}{2}
-  \hline
-  \marketItem{Rope, 50'}{1}{2}
 
-\end{boxtable}
+  \marketItem{Rope, 50'}{1}{2}
+  \hline
+  \ifnum\value{temperature}=0
+    \marketItem[cp]{Rations for a day}{1}{5}
+  \fi
+
+\end{nametable}
 
 \randomdozen
 
 \ifnum\value{r12}>7
 \noindent
 \begin{minipage}{\linewidth}
-  \glssymbol{nulla}
-  \textbf{At the Doula's}
-  \gls{forestpriest} will purchase \glspl{ingredient} for half the cost listed here.
-  She will also prepare \glspl{ingredient} to cure people for the price of the \gls{ingredient} plus a favour owed.
-  \begin{boxtable}[Xcc]
+  \begin{nametable}[Xcc]{\glsentrysymbol{nulla}~\glsentrytext{forestpriest}'s \glsentrytext{doulaShop}}
     \textbf{Things on shelves} & \textbf{Weight} & \textbf{Cost} \\\hline
     \rareMarketItem[9]{Air \Glsentrytext{ingredient}}{1}{23}%
     \rareMarketItem[9]{Fire \Glsentrytext{ingredient}}{1}{23}%
@@ -49,98 +46,168 @@
     \rareMarketItem[9]{Water \Glsentrytext{boon}}{1}{24}%
     \rareMarketItem[9]{Fate \Glsentrytext{boon}}{1}{24}%
     \marketItem{Cup of tea}{0}{0}%
-  \end{boxtable}
+  \end{nametable}
+
+  The \gls{doula} will purchase \glspl{ingredient} for half the cost listed here.
+  She will also prepare \glspl{ingredient} to cure people for the price of the \gls{ingredient} plus a favour owed.
 \end{minipage}
 \fi
 
-\begin{boxtable}[Xc]
+\begin{nametable}[Xc]{\composeHumanName's Working Beasts}
 
   \textbf{Beasts} & \textbf{Cost} \\\hline
   Horse & \mkPrice{20} \\
+
+  Mule & \mkPrice{24} \\
 
   Hunting Dog & \mkPrice{5} \\
 
   Donkey & \mkPrice{2} \\
 
-\end{boxtable}
+\end{nametable}
 
 \begin{boxtable}[Xc]
 
-  \textbf{Services} & \textbf{Cost} \\\hline
-  Boat trip & \mkPrice[cp]{14} per mile \\
+  \textbf{Services in the Market} & \textbf{Cost} \\\hline
+  Boat trip with \ifnum\value{r3}=3 the \composeHumanName\ sisters\else \composeHumanName\fi & \mkPrice[cp]{14} per mile \\
 
-  Local guide & \mkPrice{2} per mile \\
+  Performance by \composeHumanName, the Minstrel & \mkPrice[cp]{90} per song \\
 
-  Minstrel Performance & \mkPrice[cp]{120} song \\
+  New song composition & \mkPrice{4} per song \\
 
-  New song composition & \mkPrice{5} song \\
-
-  \footnotesize Fence & \footnotesize 50\% \\
+  \footnotesize \composeHumanName, the Fence & \footnotesize 50\% and \tiny shhh \\
 
 \end{boxtable}
 
-\begin{boxtable}[Xcc]
+\begin{nametable}[Xcc]{At the Docks}
 
-  \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \textbf{Items} & \textbf{\Glsentrytext{weight}} & \textbf{Cost} \\\hline
 
-  Rations for a day &  1 & \mkPrice[cp]{13} \\
+  Lock-pick set & 1 & \mkPrice{10} \\
+  Fake town-pass & 0 & \mkPrice{4} \\
+\end{nametable}
+
+\begin{nametable}[Xcc]{\glsentrysymbol{yonder}~At the \glsentrytext{templeOfCuriosity}}
+
+  \textbf{Item} & \textbf{Weight} & \textbf{Cost} \\\hline
 
   Rushlights & 0 & \mkPrice[cp]{1} \\
 
+  Writing equipment & 0 & \mkPrice[cp]{20} \\
+
   Tinder box & 0 & \mkPrice[cp]{3} \\
 
-  Torch & 1 & \mkPrice[cp]{8} \\
+  Soap & 0 & \mkPrice[cp]{3} \\
 
-\end{boxtable}
+  Torch & 1 & \mkPrice[cp]{6} \\
 
-\begin{boxtable}[Xc]
+\end{nametable}
+
+\begin{nametable}[Xc]{\composeHumanName's Inn}
 
   \textbf{Hospitality} & \textbf{Cost} \\\hline
 
-  Bed with family & \mkPrice{2} \\
+  Hearty Meal & \mkPrice[cp]{5} \\
+
+  \ifnum\value{temperature}>0
+    Fresh \rations & \mkPrice[cp]{3} \\
+  \fi
+
+  Fortified \rations & \mkPrice[cp]{4} \\
+
+  Rat Soup & \mkPrice[cp]{2} \\
+
+  Basic room & \mkPrice[cp]{20} \\
+
+\end{nametable}
+
+\begin{nametable}[Xc]{\Glsentrytext{pig}}
+  \textbf{Hospitality} & \textbf{Cost} \\\hline
+
+  Entrance and ale & \mkPrice[cp]{2} \\
+
+  \ifnum\value{temperature}>0
+    Sweet \rations & \mkPrice[cp]{4} \\
+  \fi
+
+  Savoury \rations & \mkPrice[cp]{5} \\
 
   Hearty Meal & \mkPrice[cp]{5} \\
 
   Rat Soup & \mkPrice[cp]{2} \\
 
+  Lock-pick set & \mkPrice{8} \\
+
+  Town pass for week & \mkPrice{2} \\
+
+\end{nametable}
+
+\begin{nametable}[Xc]{\composeHumanName's Tavern}
+  \textbf{Hospitality} & \textbf{Cost} \\\hline
+
+  Entrance and cider & \mkPrice[cp]{4} \\
+
+  \ifnum\value{temperature}>0
+    Sweet \rations & \mkPrice[cp]{4} \\
+  \fi
+
+  Savoury \rations & \mkPrice[cp]{5} \\
+
+  Hearty Meal & \mkPrice[cp]{5} \\
+
+  Woodspy Soup & \mkPrice[cp]{4} \\
+
+\end{nametable}
+
+\begin{nametable}[Xc]{\Glsentrytext{whitehorse}}
+
+  \textbf{Hospitality} & \textbf{Cost} \\\hline
+
+  Entrance and wine & \mkPrice[cp]{14} \\
+
+  Hearty Meal & \mkPrice[cp]{6} \\
+
   Nice room & \mkPrice[cp]{20} \\
 
   Fancy room & \mkPrice[cp]{80} \\
 
-  \Glsentrytext{whitehorse} & \mkPrice{3} \\
+\end{nametable}
 
-\end{boxtable}
+\begin{nametable}[Xcl]{\glsentrysymbol{eldren}~At the \Glsentrytext{templeOfSickness} with \glsentrytext{healerLeader}}
 
+  \textbf{Cure} & \textbf{\Glsentrytext{weight}} & \textbf{Cost} \\\hline
+
+  \rareMarketItem[7]{Fate \Glsentrytext{elixir}}{1}{24}%
+
+  \rareMarketItem[9]{Air \Glsentrytext{elixir}}{1}{24}%
+
+  \rareMarketItem[7]{Fire \Glsentrytext{elixir}}{1}{24}%
+
+  \rareMarketItem[10]{Water \Glsentrytext{elixir}}{1}{24}%
+
+  \rareMarketItem[8]{Earth \Glsentrytext{elixir}}{1}{24}%
+
+  Medical supplies & 1 & \mkPrice{2} \\
+
+\end{nametable}
 
 \end{multicols}
 
-\begin{boxtable}[XXXXXX]
+\begin{nametable}[XXXXXX]{\Glsentrytext{captain}'s Reasonable Arms Sales}
 
   \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  \Dagger\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{2} \\
+  \Dagger\weaponName & \arabic{weaponBonus} & \arabic{weaponDamage} & \arabic{heft} & \arabic{weaponWeight} & \mkPrice{2} \\
 
-  \shortsword\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{9} \\
+  \shortsword\weaponName & \arabic{weaponBonus} & \arabic{weaponDamage} & \arabic{heft} & \arabic{weaponWeight} & \mkPrice{9} \\
 
-  \spear\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{7} \\
+  \spear\weaponName & \arabic{weaponBonus} & \arabic{weaponDamage} & \arabic{heft} & \arabic{weaponWeight} & \mkPrice{7} \\
 
-  \longsword\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{11} \\
+  \longsword\weaponName & \arabic{weaponBonus} & \arabic{weaponDamage} & \arabic{heft} & \arabic{weaponWeight} & \mkPrice{11} \\
 
-\end{boxtable}
+\end{nametable}
 
-\glssymbol{wrecan}
-\textbf{At the \Glsentrytext{templeOfHate}}
-
-\begin{boxtable}[XXXXc]
-  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
-  \showArmourPrice{\completechain}{28}%
-  \showArmourPrice{\partialchain}{18}%
-\end{boxtable}
-
-\glssymbol{sylf}
-\textbf{At the Fletcher's}
 \begin{boxtable}[XYYYXl]
-
   \textbf{Projectile} & \textbf{Attack Bonus} & \textbf{Damage} & \textbf{\Gls{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
   \hline
@@ -160,24 +227,21 @@
   \hline
 
   Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{16}  \\
-
 \end{boxtable}
 
-\textbf{At the Tanner's}
+\begin{nametable}[XXXXc]{\glsentrysymbol{wrecan}~At the \Glsentrytext{templeOfHate}}
+  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \showArmourPrice{\partialchain}{14}%
+  \rareArmour[5]{\completechain}{24}%
+  \rareArmour[6]{\partialplate}{36}%
+  \rareArmour[9]{\completeplate}{66}%
+\end{nametable}
 
-\begin{boxtable}[XXXXX]
+\begin{nametable}[XXXXX]{\glsentrysymbol{wrecan}~At the Tanner's}
   \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
   \showArmourPrice{\partialleather}{5}%
   \showArmourPrice{\completeleather}{11}%
-  \showArmourPrice{\partiallisk}{40}%
-  \showArmourPrice{\completelisk}{50}%
-\end{boxtable}
-
-\needspace{4em}
-\textbf{At the place with that guy I met at \glsentrytext{pig}\ldots}
-\begin{boxtable}[Xcc]
-  \textbf{Items} & \textbf{Weight} & \textbf{Cost} \\\hline
-  \marketItem{Lock-pick set}{1}{10}
-  \marketItem{Fake town-pass}{0}{3}
-\end{boxtable}
+  \rareArmour[6]{\partiallisk}{40}%
+  \rareArmour[8]{\completelisk}{50}%
+\end{nametable}
 

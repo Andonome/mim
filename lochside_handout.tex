@@ -2,15 +2,24 @@
 
 \begin{multicols}{2}
 
+\noindent
+All purchases in \pgls{village} require a full morning or afternoon.
+Farmers chat, then barter, and finally refer the buyer to a neighbour.
+
+\Glspl{village} have $1D6\times 10$ of each item with \glsentrytext{weight} 0, $2D6$ of each item with \glsentrytext{weight} 1, and $1D6$ of each heavier items.
+
+\randomize
 \ifodd\value{r3}\else
   \begin{boxtable}[Xc]
 
     \textbf{Beasts} & \textbf{Cost} \\\hline
-    Horse & \mkPrice{19} \\
-
-    Hunting Dog & \mkPrice{3} \\
-
     Donkey & \mkPrice{4} \\
+
+    Horse & \mkPrice{20} \\
+
+    Mule & \mkPrice{23} \\
+
+    Hunting Dog & \mkPrice{4} \\
 
   \end{boxtable}
 \fi
@@ -19,51 +28,41 @@
 
   \textbf{Hospitality} & \textbf{Cost} \\\hline
 
-  Bed with family & \mkPrice[cp]{2} \\
+  Bed in \glsentrysymbol{builder} \composeHumanName's stable & \mkPrice{0} \\
 
-  Hearty Meal & \mkPrice[cp]{2} \\
+  Hearty meal with the \composeHumanName\ family and \arabic{r12} kids & \ifnum\value{temperature}>0\mkPrice[cp]{2}\else\mkPrice[cp]{4}\fi \\
 
 \end{boxtable}
 
-\iftoggle{river}{
-  \begin{boxtable}[Xc]
+\begin{boxtable}[Xc]
 
-  \textbf{Services} & \textbf{Cost} \\\hline
-  Boat trip & \mkPrice[cp]{13} per mile \\
+\textbf{Services} & \textbf{Cost} \\\hline
+Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 
-  Local guide & \mkPrice{16} \\
+\composeHumanName, local guide & \mkPrice{2} \\
 
-  \end{boxtable}
-}{
-  \begin{boxtable}[Xc]
+\end{boxtable}
 
-  \textbf{Services} & \textbf{Cost} \\\hline
-  Archer & \mkPrice[cp]{13} per mile \\
-
-  Local guide & \mkPrice{1} per mile \\
-
-  \end{boxtable}
-}
-
-\begin{boxtable}[Xcc]
+\begin{nametable}[Xcc]{\composeHumanName's Assorted Goods}
 
   \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Cart & 13 &  \mkPrice{13} \\
+  Cart & 13 &  \mkPrice{9} \\
 
-  Rations for a day &  1 & \mkPrice[cp]{15} \\
+  Rations for a day &  1 & \mkPrice[cp]{6} \\
 
-  Rushlights & 0 & \mkPrice[cp]{1} \\
+  50' rope & 1 & \mkPrice[cp]{2} \\
 
   Tinder box & 0 & \mkPrice[cp]{2} \\
 
-  Torch & 1 & \mkPrice[cp]{9} \\
+  Torch & 1 & \mkPrice[cp]{6} \\
 
-\end{boxtable}
+\end{nametable}
 
 \end{multicols}
 
-\begin{boxtable}[XXXXXX]
+\randomize
+\begin{nametable}[XXXXXX]{\composeHumanName's \Glsentrytext{whiteplains} Imports}
 
   \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
@@ -91,65 +90,47 @@
 
   \warhammer\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
 
-\end{boxtable}
+\end{nametable}
 
-\glssymbol{wrecan}
-\textbf{At the Smith's}
-
-\begin{boxtable}[XXXXc]
+\begin{nametable}[XXXXc]{\glsentrysymbol{wrecan}~At \composeHumanName, the Smith's}
   \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
-  \showArmourPrice{\partialchain}{15}%
-  \showArmourPrice{\completechain}{20}%
-  \showArmourPrice{\partialplate}{36}%
-\end{boxtable}
+  \showArmourPrice{\completechain}{28}%
+  \showArmourPrice{\partialchain}{18}%
+\end{nametable}
 
-\glssymbol{sylf}
-\textbf{At the Fletcher's}
-\begin{boxtable}[XYYYXl]
+\begin{nametable}[XYYYXl]{\glsentrysymbol{sylf}~At \composeHumanName, the Fletcher's}
 
   \textbf{Projectile} & Attack Bonus & \textbf{Damage} & \textbf{\Gls{ap}} & \textbf{Weight} & \textbf{Cost} \\\hline
-
-  Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
 
   Longbow &  +1  & +1 & 1~\glspl{ap} & 1  & \mkPrice{8}  \\
 
   Longbow &  +2  & +2 & 2~\glspl{ap} & 1  & \mkPrice{12}  \\
 
-  Longbow &  +3  & +3 & 3~\glspl{ap} & 1  & \mkPrice{15}  \\
+  Longbow &  +1  & +1 & 1 & 1~\glspl{ap} & \mkPrice{8}  \\
 
-  Longbow &  +4  & +4 & 4~\glspl{ap} & 1  & \mkPrice{15}  \\
+  Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{14}  \\
+  \hline
 
-\end{boxtable}
+  Bolt  &  --- & --- & --- & --- & \mkPrice[cp]{14}  \\
 
-  \begin{boxtable}[XYYYXl]
+  Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
 
-    \textbf{Projectile} & Attack Bonus & \textbf{Damage} & \textbf{\Gls{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
+\end{nametable}
 
-    Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
+\ifnum\value{r4b}>2
+  \begin{nametable}[XXXXX]{\glsentrysymbol{sylf}~At \composeHumanName\ the Tanner's}
+    \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
+    \showArmourPrice{\partialleather}{5}%
+    \showArmourPrice{\completeleather}{8}%
+    \showArmourPrice{\partiallisk}{27}%
+  \end{nametable}
 
-    Longbow &  +1  & +1 & 1 & 1~\glspl{ap} & \mkPrice{8}  \\
-    \hline
+  \begin{boxtable}[XXX]
+    \rareMarketItem{Hardened half-yurt (dr 4)}{3}{12}
+    \rareMarketItem{Tent for 4}{4}{8}
+    \rareMarketItem{Tent for 3}{3}{6}
+    \rareMarketItem{Tent for 2}{2}{4}
+    \marketItem{Tent for 1}{1}{3}
+  \end{boxtable}
+\fi
 
-    Bolt  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
-
-    Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{18}  \\
-
-\end{boxtable}
-
-\needspace{6em}
-\textbf{At the Tanner's}
-
-\begin{boxtable}[XXXXX]
-  \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
-  \showArmourPrice{\partialleather}{5}%
-  \showArmourPrice{\partiallisk}{25}%
-  \showArmourPrice{\completeleather}{11}%
-\end{boxtable}
-
-\begin{boxtable}[XXX]
-  \rareMarketItem{Hardened half-yurt}{3}{12}
-  \marketItem{Tent for 4}{4}{8}
-  \marketItem{Tent for 3}{3}{6}
-  \marketItem{Tent for 2}{2}{4}
-  \marketItem{Tent for 1}{1}{3}
-\end{boxtable}

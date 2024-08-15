@@ -19,7 +19,7 @@ images/extracted/shadow_gate_map.svg:| images/extracted
 	inkscape images/Dyson_Logos/shadow_gate.svg --export-id-only --export-id=layer3 -l --export-filename images/extracted/shadow_gate_map.svg
 
 qr.tex: README.md
-	@echo '$(QR_CODE)' > qr.tex
+	@printf "%s\n" "$(QR_CODE)" > qr.tex
 $(BOOK).pdf: $(DEPS) $(EXTRACTS) forest intro raising roads storm tailend town | qr.tex
 	@$(COMPILER) main.tex
 

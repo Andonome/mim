@@ -20,7 +20,7 @@ images/extracted/shadow_gate_map.svg:| images/extracted
 
 qr.tex: README.md
 	@echo '$(QR_CODE)' > qr.tex
-$(BOOK).pdf: $(DEPS) $(EXTRACTS) | qr.tex
+$(BOOK).pdf: $(DEPS) $(EXTRACTS) forest intro raising roads storm tailend town | qr.tex
 	@$(COMPILER) main.tex
 
 creds:

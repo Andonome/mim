@@ -1,15 +1,11 @@
-\randomthree
-\ifodd\value{r3}
-  \randomtwo
-\else
-  \randomthreeB
-\fi
+\randomize
 
-\section*{\Glsfmttext{town} Market}
+\section*{\Glsfmttext{town}}
 
-\begin{multicols}{2}
+\begin{multicols}{3}
 
-\begin{nametable}[Xcc]{\glsentrysymbol{sable}~At the \glsentrytext{templeOfFrost}}
+\renewcommand\npcsymbol{\glsentrysymbol{sable}}
+\begin{nametable}[Xcc]{At the \glsentrytext{templeOfFrost}}
 
   \textbf{Clothing} & \textbf{Weight} & \textbf{Cost} \\\hline
 
@@ -24,6 +20,8 @@
   \hline
   \ifnum\value{temperature}=0
     \marketItem[cp]{Rations for a day}{1}{5}
+
+    Stories by the fire &   \\
   \fi
 
 \end{nametable}
@@ -33,7 +31,8 @@
 \ifnum\value{r12}>7
 \noindent
 \begin{minipage}{\linewidth}
-  \begin{nametable}[Xcc]{\glsentrysymbol{nulla}~\glsentrytext{forestpriest}'s \glsentrytext{doulaShop}}
+  \renewcommand\npcsymbol{\glsentrysymbol{nulla}}
+  \begin{nametable}[Xcc]{\glsentrytext{forestpriest}'s \glsentrytext{doulaShop}}
     \textbf{Things on shelves} & \textbf{Weight} & \textbf{Cost} \\\hline
     \rareMarketItem[9]{Air \Glsentrytext{ingredient}}{1}{23}%
     \rareMarketItem[9]{Fire \Glsentrytext{ingredient}}{1}{23}%
@@ -48,11 +47,10 @@
     \marketItem{Cup of tea}{0}{0}%
   \end{nametable}
 
-  The \gls{doula} will purchase \glspl{ingredient} for half the cost listed here.
-  She will also prepare \glspl{ingredient} to cure people for the price of the \gls{ingredient} plus a favour owed.
 \end{minipage}
 \fi
 
+\renewcommand\npcsymbol{\flourish}
 \begin{nametable}[Xc]{\composeHumanName's Working Beasts}
 
   \textbf{Beasts} & \textbf{Cost} \\\hline
@@ -66,7 +64,7 @@
 
 \end{nametable}
 
-\begin{boxtable}[Xc]
+\begin{boxtable}[Lc]
 
   \textbf{Services in the Market} & \textbf{Cost} \\\hline
   Boat trip with \ifnum\value{r3}=3 the \composeHumanName\ sisters\else \composeHumanName\fi & \mkPrice[cp]{14} per mile \\
@@ -75,19 +73,14 @@
 
   New song composition & \mkPrice{4} per song \\
 
+  Cock fight & 3~\glsfmtplural{cp} \\
+
   \footnotesize \composeHumanName, the Fence & \footnotesize 50\% and \tiny shhh \\
 
 \end{boxtable}
 
-\begin{nametable}[Xcc]{At the Docks}
-
-  \textbf{Items} & \textbf{\Glsentrytext{weight}} & \textbf{Cost} \\\hline
-
-  Lock-pick set & 1 & \mkPrice{10} \\
-  Fake town-pass & 0 & \mkPrice{4} \\
-\end{nametable}
-
-\begin{nametable}[Xcc]{\glsentrysymbol{yonder}~At the \glsentrytext{templeOfCuriosity}}
+\renewcommand\npcsymbol{\glsentrysymbol{yonder}}
+\begin{nametable}[Lcc]{At the \glsentrytext{templeOfCuriosity}}
 
   \textbf{Item} & \textbf{Weight} & \textbf{Cost} \\\hline
 
@@ -103,38 +96,40 @@
 
 \end{nametable}
 
-\begin{nametable}[Xc]{\composeHumanName's Inn}
+\renewcommand\npcsymbol{\flourish}
+\begin{nametable}[Lc]{\composeHumanName's Inn}
 
   \textbf{Hospitality} & \textbf{Cost} \\\hline
 
-  Hearty Meal & \mkPrice[cp]{5} \\
+  Hearty meal & \mkPrice[cp]{5} \\
 
   \ifnum\value{temperature}>0
-    Fresh \rations & \mkPrice[cp]{3} \\
+    Fresh \rations\ to go & \mkPrice[cp]{3} \\
   \fi
 
-  Fortified \rations & \mkPrice[cp]{4} \\
+  Fortified \rations\ to go & \mkPrice[cp]{4} \\
 
-  Rat Soup & \mkPrice[cp]{2} \\
+  Leek Stew & \mkPrice[cp]{2} \\
 
   Basic room & \mkPrice[cp]{20} \\
 
 \end{nametable}
 
-\begin{nametable}[Xc]{\Glsentrytext{pig}}
+\renewcommand\npcsymbol{\glsentrysymbol{abderian}}
+\begin{nametable}[Lc]{\Glsentrytext{pig}}
   \textbf{Hospitality} & \textbf{Cost} \\\hline
 
   Entrance and ale & \mkPrice[cp]{2} \\
 
   \ifnum\value{temperature}>0
-    Sweet \rations & \mkPrice[cp]{4} \\
+    Spiced \rations\ to go & \mkPrice[cp]{4} \\
   \fi
 
-  Savoury \rations & \mkPrice[cp]{5} \\
+  Salted \rations\ to go & \mkPrice[cp]{5} \\
 
   Hearty Meal & \mkPrice[cp]{5} \\
 
-  Rat Soup & \mkPrice[cp]{2} \\
+  Rod' Stew & \mkPrice[cp]{2} \\
 
   Lock-pick set & \mkPrice{8} \\
 
@@ -142,16 +137,19 @@
 
 \end{nametable}
 
+\renewcommand\npcsymbol{\flourish}
 \begin{nametable}[Xc]{\composeHumanName's Tavern}
   \textbf{Hospitality} & \textbf{Cost} \\\hline
 
   Entrance and cider & \mkPrice[cp]{4} \\
 
   \ifnum\value{temperature}>0
-    Sweet \rations & \mkPrice[cp]{4} \\
+    Spiced \rations\ to go & \mkPrice[cp]{4} \\
+  \else
+    Cock fighting & \mkPrice[cp]{4} \\
   \fi
 
-  Savoury \rations & \mkPrice[cp]{5} \\
+  Savoury \rations\ to go & \mkPrice[cp]{5} \\
 
   Hearty Meal & \mkPrice[cp]{5} \\
 
@@ -159,6 +157,7 @@
 
 \end{nametable}
 
+\renewcommand\npcsymbol{\glsentrysymbol{abderian}}
 \begin{nametable}[Xc]{\Glsentrytext{whitehorse}}
 
   \textbf{Hospitality} & \textbf{Cost} \\\hline
@@ -173,7 +172,8 @@
 
 \end{nametable}
 
-\begin{nametable}[Xcl]{\glsentrysymbol{eldren}~At the \Glsentrytext{templeOfSickness} with \glsentrytext{healerLeader}}
+\renewcommand\npcsymbol{\glsentrysymbol{eldren}}
+\begin{nametable}[Xcl]{At the \Glsentrytext{templeOfSickness} with \glsentrytext{healerLeader}}
 
   \textbf{Cure} & \textbf{\Glsentrytext{weight}} & \textbf{Cost} \\\hline
 
@@ -191,8 +191,20 @@
 
 \end{nametable}
 
+\renewcommand\npcsymbol{\glsentrysymbol{paik}}
+\begin{nametable}[Xc]{\Glsentrytext{townmaster}' Citadel}
+  \textbf{Service} & \textbf{Cost} \\\hline
+  Show at the \glsentrytext{court} & 3~\glsfmtplural{cp} \\
+
+  Rotten tomatoes & 1~\glsfmttext{cp} \\
+
+  Snacks & 2~\glsfmtplural{cp} \\
+
+\end{nametable}
+
 \end{multicols}
 
+\renewcommand\npcsymbol{\glsentrysymbol{paik}}
 \begin{nametable}[XXXXXX]{\Glsentrytext{captain}'s Reasonable Arms Sales}
 
   \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
@@ -209,16 +221,15 @@
 
 \begin{boxtable}[XYYYXl]
   \textbf{Projectile} & \textbf{Attack Bonus} & \textbf{Damage} & \textbf{\Gls{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
-
   \hline
 
-  Longbow &  +1  & +1 & 1~\glspl{ap} & 1  & \mkPrice{9}  \\
+  Longbow &  +1  & +1 & 3~\glsfmtplural{ap} & 1  & \mkPrice{9}  \\
 
-  Longbow &  +2  & +2 & 2~\glspl{ap} & 1  & \mkPrice{11}  \\
+  Longbow &  +2  & +2 & 4~\glsfmtplural{ap} & 1  & \mkPrice{11}  \\
 
-  Longbow &  +3  & +3 & 2~\glspl{ap} & 1  & \mkPrice{13}  \\
+  Longbow &  +3  & +3 & 5~\glsfmtplural{ap} & 1  & \mkPrice{13}  \\
 
-  Longbow &  +4  & +4 & 2~\glspl{ap} & 1  & \mkPrice{15}  \\
+  Longbow &  +4  & +4 & 7~\glsfmtplural{ap} & 1  & \mkPrice{15}  \\
 
   \hline
   Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{16}  \\
@@ -229,15 +240,22 @@
   Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{16}  \\
 \end{boxtable}
 
-\begin{nametable}[XXXXc]{\glsentrysymbol{wrecan}~At the \Glsentrytext{templeOfHate}}
+\begin{multicols}{2}
+\renewcommand\npcsymbol{\glsentrysymbol{wrecan}}
+\begin{nametable}[Xcccc]{At the \Glsentrytext{templeOfHate}}
   \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
+
   \showArmourPrice{\partialchain}{14}%
+
   \rareArmour[5]{\completechain}{24}%
+
   \rareArmour[6]{\partialplate}{36}%
+
   \rareArmour[9]{\completeplate}{66}%
+
 \end{nametable}
 
-\begin{nametable}[XXXXX]{\glsentrysymbol{wrecan}~At the Tanner's}
+\begin{nametable}[Xcccc]{At the Tanner's}
   \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
   \showArmourPrice{\partialleather}{5}%
   \showArmourPrice{\completeleather}{11}%
@@ -245,3 +263,4 @@
   \rareArmour[8]{\completelisk}{50}%
 \end{nametable}
 
+\end{multicols}

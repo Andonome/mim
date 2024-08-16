@@ -274,20 +274,20 @@
     {}% ABILITIES
 }
 
-\newcommand\stirgeGhouls[1]{
-  \Animal{\npc{\T[2]\D\Hu}{\arabic{noAppearing} Stirge-Infected Ghouls}}%
-  {{2}{0}{0}}% BODY
-  {2}% WITS
-  {%
-    \set{Brawl}{2}
-    \set{Athletics}{2}
-    \set{Stealth}{r2b}
-    \renewcommand\equipment{%
+\newcommand\stirgeGhouls[1][\npc{\D\Hu}{Stirge-Infected Ghoul}]{
+  \Person{#1}%
+    {{r2}{0}{0}}% BODY
+    {{-6}{-1}{-6}}% MIND
+    {%
+      \set{Brawl}{2}
+      \set{Athletics}{2}
+      \set{Stealth}{r2b}
+    }% SKILLS
+    {}% KNACKS
+    {
       Abdominal Stirge-Nest: {\scshape \Glsentrytext{ap} 5, Att 10-HP, Speed 2, Wits 1, \setcounter{track}{8}\Repeat{\value{noAppearing}}{\boxStat{track}}}
-    }
-  }% SKILLS
-  {}% KNACKS
-  {\undead}% ABILITIES
+}% EQUIPMENT
+    {\undead}% ABILITIES
 }
 
 \newcommand\superWierdzi{%

@@ -1,5 +1,7 @@
 \section*{\Glsfmttext{lochside} Market}
 
+\renewcommand\npcsymbol{\flourish}
+
 \begin{multicols}{2}
 
 \noindent
@@ -10,7 +12,7 @@ Farmers chat, then barter, and finally refer the buyer to a neighbour.
 
 \randomize
 \ifodd\value{r3}\else
-  \begin{boxtable}[Xc]
+  \begin{boxtable}[Lc]
 
     \textbf{Beasts} & \textbf{Cost} \\\hline
     Donkey & \mkPrice{4} \\
@@ -24,7 +26,7 @@ Farmers chat, then barter, and finally refer the buyer to a neighbour.
   \end{boxtable}
 \fi
 
-\begin{boxtable}[Xc]
+\begin{boxtable}[Lc]
 
   \textbf{Hospitality} & \textbf{Cost} \\\hline
 
@@ -34,7 +36,7 @@ Farmers chat, then barter, and finally refer the buyer to a neighbour.
 
 \end{boxtable}
 
-\begin{boxtable}[Xc]
+\begin{boxtable}[Lc]
 
 \textbf{Services} & \textbf{Cost} \\\hline
 Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
@@ -43,11 +45,14 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 
 \end{boxtable}
 
+\renewcommand\npcsymbol{\flourish}
 \begin{nametable}[Xcc]{\composeHumanName's Assorted Goods}
 
   \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Cart & 13 &  \mkPrice{9} \\
+  Boat for 4 & 13 &  \mkPrice{9} \\
+
+  Boat for 6 & 13 &  \mkPrice{15} \\
 
   Rations for a day &  1 & \mkPrice[cp]{6} \\
 
@@ -92,13 +97,16 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 
 \end{nametable}
 
-\begin{nametable}[XXXXc]{\glsentrysymbol{wrecan}~At \composeHumanName, the Smith's}
+\renewcommand\npcsymbol{\glsentrysymbol{wrecan}}
+\begin{nametable}[XXXXc]{At \composeHumanName, the Smith's}
   \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
   \showArmourPrice{\completechain}{28}%
   \showArmourPrice{\partialchain}{18}%
 \end{nametable}
 
-\begin{nametable}[XYYYXl]{\glsentrysymbol{sylf}~At \composeHumanName, the Fletcher's}
+
+\renewcommand\npcsymbol{\glsentrysymbol{sylf}}
+\begin{nametable}[XYYYXl]{At \composeHumanName, the Fletcher's}
 
   \textbf{Projectile} & Attack Bonus & \textbf{Damage} & \textbf{\Gls{ap}} & \textbf{Weight} & \textbf{Cost} \\\hline
 
@@ -118,14 +126,15 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 \end{nametable}
 
 \ifnum\value{r4b}>2
-  \begin{nametable}[XXXXX]{\glsentrysymbol{sylf}~At \composeHumanName\ the Tanner's}
+  \renewcommand\npcsymbol{\glsentrysymbol{wrecan}}
+  \begin{nametable}[LXXXX]{At \composeHumanName\ the Tanner's}
     \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
     \showArmourPrice{\partialleather}{5}%
     \showArmourPrice{\completeleather}{8}%
     \showArmourPrice{\partiallisk}{27}%
   \end{nametable}
 
-  \begin{boxtable}[XXX]
+  \begin{boxtable}[LXX]
     \rareMarketItem{Hardened half-yurt (dr 4)}{3}{12}
     \rareMarketItem{Tent for 4}{4}{8}
     \rareMarketItem{Tent for 3}{3}{6}

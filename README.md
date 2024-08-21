@@ -27,7 +27,7 @@ Reading two-columns of blinding-white PDF on a monitor will only give you a head
     * For Void Linux: `inkscape`, `make`, `texlive-full`, `git-lfs`, and `texlive-latexmk`.
 1. Enter the repo, and do `make all`.
 
-For full setup instructions, see the [wiki](https://gitlab.com/bindrpg/core/-/wikis/dev/startup).
+For full setup instructions, see the [wiki][compiling].
 
 ## The Map
 
@@ -46,6 +46,7 @@ Enter the PCs, charged with defending this peace.
 Throughout the various stories, one bailey after another could fall.
 And if the perimeter falls, a deluge of predators will feast on the soft inner areas.
 
+[compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [core download]: https://gitlab.com/bindrpg/core/-/jobs/artifacts/master/raw/core.pdf?job=build
 [download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/mim.pdf?job=build
 [resources]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/resources.pdf?job=build

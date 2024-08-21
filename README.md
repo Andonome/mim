@@ -3,10 +3,10 @@
 |             Downloads                |
 |:-------------------------------------|
 | [Download][download]                 | 
-| [Core Book][core download]           | 
+| [Core Book][core]                    | 
 | [Character Sheets][resources]        |
-| [Condensed Rules][rules summary]     |
-| [Introduction Module][intro module]  |
+| [Condensed Rules][rules]             |
+| [Introduction Module][oneshot]       |
 | [Email an issue][issues email]       |
 
 *Missions in Maitavale* is a complete campaign for the BIND RPG.
@@ -49,9 +49,9 @@ Throughout the various stories, one bailey after another could fall.
 And if the perimeter falls, a deluge of predators will feast on the soft inner areas.
 
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
-[core download]: https://gitlab.com/bindrpg/core/-/jobs/artifacts/master/raw/core.pdf?job=build
 [download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/Missions_in_Maitavale.pdf?job=build
 [resources]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/resources.pdf?job=build
-[rules summary]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/booklet.pdf?job=build
-[intro module]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build
+[rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/booklet.pdf?job=build
+[oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-mim-46332255-issue-@incoming.gitlab.com
+[core]: https://gitlab.com/bindrpg/core/-/jobs/artifacts/master/raw/Core_Rules.pdf?job=build

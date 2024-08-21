@@ -1,11 +1,9 @@
 include config/vars
 
-output: $(BOOK).pdf
+all: $(RELEASE)
 
 config/vars:
 	@git submodule update --init
-.switch-gls:
-	@touch -r Makefile .switch-gls
 
 EXTRACTS = images/extracted/town.svg images/extracted/under_lost_city.svg images/extracted/shadow_gate_map.svg
 
@@ -18,15 +16,11 @@ images/extracted/town.svg: images/extracted
 images/extracted/shadow_gate_map.svg:| images/extracted
 	inkscape images/Dyson_Logos/shadow_gate.svg --export-id-only --export-id=layer3 -l --export-filename images/extracted/shadow_gate_map.svg
 
-qr.tex: README.md
-	@printf "%s\n" "$(QR_CODE)" > qr.tex
-$(BOOK).pdf: $(DEPS) $(EXTRACTS) forest intro raising roads storm tailend town | qr.tex
+$(DBOOK): $(DEPS) $(EXTRACTS) forest intro raising roads storm tailend town | qr.tex
 	@$(COMPILER) main.tex
 
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
-all: $(BOOK).pdf
-
 clean:
-	$(CLEAN)
+	$(CLEAN) $(EXTRACTS)

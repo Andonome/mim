@@ -1,3 +1,5 @@
+# Missions in Maitavale
+
 |             Downloads                |
 |:-------------------------------------|
 | [Download][download]                 | 
@@ -48,7 +50,7 @@ And if the perimeter falls, a deluge of predators will feast on the soft inner a
 
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [core download]: https://gitlab.com/bindrpg/core/-/jobs/artifacts/master/raw/core.pdf?job=build
-[download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/mim.pdf?job=build
+[download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/Missions_in_Maitavale.pdf?job=build
 [resources]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/resources.pdf?job=build
 [rules summary]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/booklet.pdf?job=build
 [intro module]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build

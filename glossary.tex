@@ -316,8 +316,8 @@
   description={-- \glsentrytext{seeker} to \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate an underground road, to bypass tax laws},
 }
 
-\newcommand\southSmith{
-  \Person{\NPC{\glssymbol{southSmith}}{\Glsentrytext{southSmith}}{red nose}{massive grin}{to just get on with it in peace and quiet}}%
+\newcommand\southSmith[1][]{
+  \Person{\NPC{\glssymbol{southSmith}}{\Glsentrytext{southSmith}}{red nose}{massive grin}{to just get on with it in peace and quiet}#1}%
     {{3}{1}{1}}% BODY
     {{1}{-2}{2}}% MIND
     {
@@ -657,9 +657,8 @@
   Both want to replace the local \glsfmtplural{warden}}
 }
 
-\newcommand{\sewerthief}{
-  \label{sewerthief}
-  \Person{\NPC{\M\Hu}{\Glsfmttext{sewerthief}}{acne scars, tubby body, with vacant eyes}{looking about, suspiciously}{just to get to the next meal}}%
+\newcommand{\sewerthief}[1][]{
+  \Person{\NPC{\M\Hu}{\Glsfmttext{sewerthief}}{acne scars, tubby body, with vacant eyes}{looking about, suspiciously}{just to get to the next meal}#1}%
     {{1}{2}{2}}% BODY
     {{-1}{1}{1}}% MIND
     {

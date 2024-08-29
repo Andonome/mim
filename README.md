@@ -54,4 +54,4 @@ And if the perimeter falls, a deluge of predators will feast on the soft inner a
 [rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/booklet.pdf?job=build
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-mim-46332255-issue-@incoming.gitlab.com
-[core]: https://gitlab.com/bindrpg/core/-/jobs/artifacts/master/raw/Core_Rules.pdf?job=build
+[core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build

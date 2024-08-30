@@ -115,10 +115,12 @@
     {Detailed, Distant, Duplicated}% Enhancements
     {Wane}% Action
     {Air}% Spheres
-    {\roll{Strength}{Athletics}}% Resist with
-    {As the caster gurgles a rotten noise, they release a rancid cloud in the shape of black, whispy, tendrils.
-    They cover an area of \arabic{spellTargets} \glspl{step}, inflicting \arabic{spellPlusTwo}~\glspl{ep} to anyone in the area who breathes it in}% Description
-    {}
+    {\roll{Wits}{Athletics}}% Resist with
+    {As the caster gurgles a rotten noise, they release a rancid cloud in the shape of black, whispy, tendrils, which cover an area of \arabic{spellTargets}~\glspl{step}, inflicting \arabic{spellPlusTwo}~\glspl{ep} to anyone in the area who breathes them in}% Description
+    {
+    The tendrils cover a lot of space, but small gaps between them allow people to take a quick, sharp, breath in, as long as they're discerning about where to breath.
+    Anyone resisting with their \roll{Wits}{Athletics} will need to see a little to spot the cracks in the miasma.
+    If someone wants to take a quick gulp of oxygen during combat, the action costs \pgls{ap} as usual}
 }
 
 \newcommand\findGatewaySpell{

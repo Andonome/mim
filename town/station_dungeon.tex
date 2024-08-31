@@ -7,6 +7,7 @@
 \begin{multicols}{2}
 
 \begin{exampletext}
+  \noindent
   Last month, \pgls{ogre} escaped past the \glspl{goldenPriests}, and ran through \gls{valley}, eating every auroch, \gls{crawler}, and human he came across.
   And by some miracle, \pgls{guard} managed to capture and bind him.
 
@@ -14,7 +15,7 @@
   Since then he's forgotten about it, but the guards have to keep feeding it.
 
   The \gls{ogre} can't speak the local language, but everyone knows what it wants to say -- `food'.
-  Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the great door as a massive, grabbing hand reaches out the shutter and piles the food into its mouth.
+  Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the ogre's cell as a massive, grabbing hand reaches through and piles the food into its mouth.
   Sometimes it tries to grab the guard feeding it.
   Sometimes it grabs the cart of food and throws it at the guard.
 \end{exampletext}
@@ -26,12 +27,12 @@ they will have to think a lot about how to escape -- this won't be easy!
 they will need to craft some make-shift equipment first, and make sure nobody is listening to them.
 The roll is \roll{Intelligence}{Larceny}, \tn[12].
 
-Once someone has picked a lock, they gain a cumulative +1 Bonus on every cell in the same row.
+Once someone has picked a lock, they can automatically pick every other lock, because the same \gls{natural} applies.
 
 \paragraph{Every day,}
 the guards give them two small meals and empty their bucket.
 
-The meals are so small that they gain 1 \gls{ep}, daily.
+The meals are so small that they gain 1~\gls{ep}, daily.
 
 \paragraph{On day 2,}
 a scout form the \gls{guard} gets thrown in a cell for dereliction of duty (he living with villagers and sending back false reports).
@@ -55,7 +56,7 @@ they will hear the bottles being deposited while guards talk about their rare vi
 The \glspl{sunGuard} on \gls{captain}'s shitlist have to sleep down here.
 Another guard stays in the \nameref{mainPrisonRoom}, room~\ref{mainPrisonRoom}, below, so that two remain on shift at all times.
 
-Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, along with another for the \gls{ogre} (in room~\ref{ogreCell}) and a fourth key for the chest in room~\ref{thingsRoom}.
+Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, and a third key for the chest in room~\ref{thingsRoom}.
 
 \Person{\NPC{\F\Hu}{Hordcut the Guard}{arrogant}{`ha!, yea right\ldots'}{a promotion}}%
   {{1}{2}{0}}% BODY
@@ -87,11 +88,38 @@ At least one guard remains here at all times.
 
 \humanfarmer[\NPC{\M}{Cronsink the Guard}{hopeful}{swigs bottle}{to be able to sing}]
 
-\mapentry[dunCells]{Bard Cell}
+\mapentry[shroomCell]{Fungi Cell}
+
+This little cell holds an infection of \glspl{bedshroom} -- enough for 3 Air~\glspl{ingredient}.
+The growth has begun to weaken the wall -- a sufficient push can dislodge the bricks between cells, and provide an opening big enough for anyone with \pgls{weight}~6 or less.
+
+\mapentry[bardCell]{Bard Cell}
 
 If the \gls{sunGuard} have arrested \gls{warningbard}%
 \footnote{See page \pageref{warningbard}.},
 he sits here, singing to himself.
+
+\mapentry[ogreCell]{Ogre's Cell}
+
+Here the wretched \gls{ogre} stays, unable to do more than sing, and eat too seldomly.
+With a \roll{Intelligence}{Performance} roll (\tn[5]), a character might sing along.
+From that point on, Laban will trust them, and not eat them unless he has no other food.
+
+\Person{\npc{\M\N}{Laban the Ogre}}%
+  {{6}{0}{3}}% BODY
+  {{-3}{-2}{-4}}% MIND
+  {%
+    \set{Melee}{1}
+    \set{Brawl}{2}
+    \set{Empathy}{2}
+  }% SKILLS
+  {}% KNACKS
+  {lucky chicken bone}% EQUIPMENT
+  {}% ABILITIES
+
+\paragraph{If anyone stages a breakout,}
+Laban comes with them, but immediately stops to eat anything (or anyone) he can.
+Once satiated, he will continue following anyone leading a prison break.
 
 \mapentry[dunBro]{Oh Brother\ldots}
 
@@ -99,7 +127,6 @@ Spybroth sits here, depressed about his past (he shouted that \gls{townmaster}'s
 If anyone speaks hopefully about escape, he tells them everything that will go wrong with the plan.
 
 If the \glspl{pc} prove one of his melancholic predictions wrong, he helps them escape, then goes to hide with his sister, \gls{greyLibrarian} in the \gls{paperGuild}.
-
 
 \Person{\NPC{\M\Hu}{Spybroth}{doomsayer}{sings `nobody knows the trouble I've seen'}{freedom}}%
   {{1}{0}{1}}% BODY
@@ -131,26 +158,9 @@ The key rests in room~\ref{guardStationRoom}.
 
 Their other possessions lie scattered across the room, along with some musical instruments.
 
-\mapentry[ogreCell]{Ogre's Cell}
+\mapentry[weaponsRoom]{Weapon Storage}
 
-Here the wretched \gls{ogre} stays, unable to do more than sing, and eat too seldomly.
-With a \roll{Intelligence}{Performance} roll (\tn[12]), a character might sing along.
-From that point on, Laban will trust them, and not eat them unless he has no other food.
-
-\Person{\npc{\M\N}{Laban the Ogre}}%
-  {{6}{0}{3}}% BODY
-  {{-3}{-2}{-4}}% MIND
-  {%
-    \set{Melee}{1}
-    \set{Brawl}{2}
-    \set{Empathy}{2}
-  }% SKILLS
-  {}% KNACKS
-  {lucky chicken bone}% EQUIPMENT
-  {}% ABILITIES
-
-\paragraph{If anyone stages a breakout,}
-Laban comes with them, but immediately stops to eat anything (or anyone) he can.
-Once satiated, he will continue following anyone leading a prison break.
+This storeroom has handheld weapons, siege weapons, and basically every weapon listed anywhere.%
+\exRef{core}{Core Rules}{weaponschart}
 
 \end{multicols}

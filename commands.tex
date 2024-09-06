@@ -2,10 +2,8 @@
 \makeindex[name=history,title={Chronological Events},columns=2]
 
 \newcommand\histEvent[3]{%
-    \setcounter{track}{\value{cycle}}%
-    \stepcounter{track}%
+    \setcounter{track}{\value{fenestraYear}}%
     \setcounter{diceNo}{#1}%
-    \divide\value{diceNo} by 3%
     \addtocounter{track}{-\value{diceNo}}%
   \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showCycle[#2]}\nobreak\\~{#3}|textbf~page~}%
 }

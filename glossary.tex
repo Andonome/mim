@@ -70,7 +70,7 @@
   text={Archwarp},
   parent={lostcity},
   category={location},
-  description={holds an alchemical gateway which once took people to Sixshadow, but now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
+  description={holds an alchemical gateway which once took people to \glsentrytext{sixshadow}, but now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
 }
 
 \newglossaryentry{sixshadow}{
@@ -80,6 +80,25 @@
   category={location},
   description={once had an active civilization, supported by its alchemical gateway to \glsentrytext{archwarp}.
   It collapsed under its own weight once the gateway fell, and now lies uninhabited}
+}
+
+\newglossaryentry{shadowVault}{
+  name={The Shadow Vault},
+  text={the Shadow Vault},
+  category={location},
+  parent={sixshadow},
+  description={once held any \glsentrytext{artefact} too dangerous for the old alchemists, and was later opened as a paid attraction of curiosities.
+  The most popular curiosity was an alchemical gateway to \glsentrytext{archwarp}}
+}
+
+\newglossaryentry{shadowGate}{
+  name={The Shadow Gate},
+  text={the Shadow Gate},
+  type={people},
+  category={people},
+  parent={shadowVault},
+  description={is a sentient \glsentrytext{artefact}, only interested in asking challenging riddles.
+  It stopped letting people through after hearing a very difficult riddle}
 }
 
 \newglossaryentry{greentower}{
@@ -522,7 +541,6 @@
 \newglossaryentry{bskulls}{
   name={Bladderskulls},
   type={people},
-  category={people},
   parent={necromancer},
   description={-- three human skulls, with their own inflated bladder stuffed inside.  The skulls wants cast spells to make people hear it, and talk about bird-watching}
 }

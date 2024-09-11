@@ -5,6 +5,7 @@
   name={The Grey Valley},
   text={the Grey Valley},
   sort={Grey Valley},
+  type={people},
   category={location},
   description={The valley stretches farther than most human settlements, and has developed weak shell; only a single strip of road around the edge, peppered with \glsentrytext{broch} and \glsentrytext{village}, stands between the tame farmlands and the outer \glsentrytext{edge}}
 }
@@ -12,20 +13,21 @@
 \newglossaryentry{town}{
   name={Greytown},
   text={Greytown},
-  parent={valley},
+  type={people},
   category={location},
   description={is the central town where the action takes place}
 }
 
 \newglossaryentry{redfall}{
   name={Redfall},
-  parent={valley},
+  type={people},
   category={location},
   description={sits safely near \glsentrytext{town}, full of archers, and famed for its red-earth clay and red apples}
 }
 
 \newglossaryentry{southDale}{
   name={Southdale},
+  type={people},
   category={location},
   description={is a set of towns, some distance to the East of \glsentrytext{town} (but South of the place that named it).
   The area boasts an impressive dwarven citadel, where the dwarves make strong ales},
@@ -36,19 +38,9 @@
   text={the White Horse},
   first={the White Horse Inn},
   parent={town},
+  type={people},
   category={location},
   description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
-}
-
-\newglossaryentry{pig}{
-  name={Mincing Pig},
-  text={the Mincing Pig},
-  first={the Mincing Pig Tavern},
-  parent={town},
-  category={location},
-  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
-  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
-  The \glsentrytext{whiteBandits} hide here, in secret rooms, below the tavern, but above the city's abandoned underground section}
 }
 
 \newglossaryentry{lostcity}{
@@ -57,7 +49,7 @@
   plural={the Lost Cities},
   nonumberlist,
   first={the Lost City},
-  sort={Lost City},
+  type={people},
   category={location},
   description={is a mythical, massive city, which once stretched across the entire area.
   In fact the area simply contained disconnected towns and \glspl{village}, and had a lot of stone walls and buildings.
@@ -69,6 +61,7 @@
   name={Archwarp},
   text={Archwarp},
   parent={lostcity},
+  type={people},
   category={location},
   description={holds an alchemical gateway which once took people to \glsentrytext{sixshadow}, but now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
 }
@@ -77,6 +70,7 @@
   name={Sixshadow},
   text={Sixshadow},
   parent={lostcity},
+  type={people},
   category={location},
   description={once had an active civilization, supported by its alchemical gateway to \glsentrytext{archwarp}.
   It collapsed under its own weight once the gateway fell, and now lies uninhabited}
@@ -85,8 +79,9 @@
 \newglossaryentry{shadowVault}{
   name={The Shadow Vault},
   text={the Shadow Vault},
+  type={people},
   category={location},
-  parent={sixshadow},
+  parent={lostcity},
   description={once held any \glsentrytext{artefact} too dangerous for the old alchemists, and was later opened as a paid attraction of curiosities.
   The most popular curiosity was an alchemical gateway to \glsentrytext{archwarp}}
 }
@@ -105,7 +100,9 @@
   name={The Lonely Tower},
   text={the Lonely Tower},
   sort={Lonely Tower},
+  symbol={\glsentrysymbol{eldren}},
   parent={lostcity},
+  type={people},
   category={location},
   description={once stood in the time of \glsentrytext{lostcity}.
   \Glsentrytext{southSeeker} has decided to rebuild it as a research outpost}
@@ -115,29 +112,33 @@
   name={Lochside},
   text={Lochside},
   parent={valley},
+  type={people},
   category={location},
   description={-- where every river in \glsentrytext{valley} meets, before heading to \glsentrytext{southDale}}
 }
 
 \newglossaryentry{whiteplains}{
   name={Whiteplains},
-  type={peeps},
+  type={people},
   category={location},
-  description={is an open land in the North-West, with only one river it can use for trade with the outside -- the river which flows through \glsentrytext{town}},
+  description={North-West, up the river, the lands are colder, and have wide-open plains, full of auroch.
+  But it has only one river it can use for trade with the outside -- the river which flows through \glsentrytext{town}.
+  The \glsentrytext{town} \glsfmtplural{keeper} have kept Whiteplains poor for over a century.},
 }
 
 %%%%% Organizations
 
 \newglossaryentry{establishment}{
   name={The Establishment},
-  sort={B},
   text={establishment},
+  parent={town},
   type={people},
   description={\textit{Isn't the \glsentrytext{valley} beautiful?
   We're trading weapons from \glsentrytext{whiteplains} for some extra-large cages to expand the \glsentrytext{court} and see if we can't organize some \glsentrytext{monster} fights down there.
   Won't that be fun?}},
 }
 
+%!
 \newglossaryentry{outsiders}{
   name={The Outsiders},
   sort={Outsiders},
@@ -149,8 +150,8 @@
 
 \newglossaryentry{forgottenDead}{
   name={The Dead},
-  sort={J},
   text={dead and forgotten},
+  parent={lostcity},
   type={people},
   description={\textsc{In my day, we worshipped the gods.
   We were to pray forever.
@@ -161,9 +162,10 @@
 
 \newglossaryentry{whiteBandits}{
   name={White Bandits},
-  sort={D},
-  text={White Bandits},
+  text={White Bandit},
+  prefix={a\space},
   plural={White Bandits},
+  parent={whiteplains},
   type={people},
   description={\textit{People around the \glsentrytext{edge} are  dying every day, while \glsentrytext{townmaster} just sits safely in his citadel, getting fat.
   But we don't have to live like this.
@@ -176,8 +178,8 @@
 \newglossaryentry{wolfhead}{
   name={The Wolf Heads},
   text={Wolf Heads},
-  sort={G},
   plural={Wolf Heads},
+  parent={southDale},
   type={people},
   description={\textit{\Glsentrytext{valley} holds secrets, still half-remembered in old songs.
   It once held an alchemical gateway, which allowed any man who stepped inside to save many days in travel, and completely avoid paying taxes on his goods.
@@ -191,7 +193,7 @@
   first={`Digger'},
   firstplural={`Diggers'},
   prefix={a\space},
-  sort={F},
+  parent={town},
   type={people},
   description={\textit{The whole system stinks, even worse than the sewer we live in.
   Money goes to the guildists, and nobody else can compete with the weavers, because of those laws.
@@ -199,6 +201,18 @@
   And nobody can decide on what's `justice' when only some \glsentrytext{warden} gets a say.
   The problem with our society is the prevalent belief in `guildism'.
   So we're gonna cut it down to size, starting with the head, and then we'll make a new kind of justice}},
+}
+
+\newglossaryentry{pig}{
+  name={Mincing Pig},
+  text={the Mincing Pig},
+  first={the Mincing Pig Tavern},
+  parent={diggers},
+  type={people},
+  category={location},
+  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
+  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
+  The \glsentrytext{whiteBandits} hide here, in secret rooms, below the tavern, but above the city's abandoned underground section},
 }
 
 %%%%% People
@@ -226,7 +240,6 @@
 
 \newglossaryentry{spiderqueen}{
   name={The Spider Queen},
-  sort={Spider Queen},
   text={the Spider Queen},
   type={peeps},
   symbol={\F\El},
@@ -268,11 +281,11 @@
 \newglossaryentry{alemaster}{
   name={Fenspit},
   type={people},
-  prefix={Keeper\space},
+  prefix={Chef\space},
   category={people},
   parent={establishment},
   symbol={\F\Hu\glssymbol{abderian}},
-  description={-- Keeper of the local \glsentrytext{wheatGuild}.
+  description={-- Chef at \glsentrytext{whitehorse}, the local \glsentrytext{wheatGuild}.
   She hates the recent competition from the \glsentrytext{wheatGuild} of \glsentrytext{southDale}, and plans to destroy their reputation}
 }
 
@@ -314,12 +327,12 @@
 
 \newglossaryentry{beardedalemaster}{
   name={Yerina},
-  prefix={Keeper\space},
+  prefix={Chef\space},
   type={people},
   category={people},
   symbol={\F\Hu\glssymbol{abderian}},
   parent={wolfhead},
-  description={-- Keeper of \glsentrytext{southDale}'s \glsentrytext{wheatGuild}.
+  description={-- Chef at \glsentrytext{southDale}'s \glsentrytext{wheatGuild}.
   Also known locally as `that damned Yerina'.
   She plans to become rich selling watered-down dwarvish ale, and smuggling it into \glsentrytext{town} via \glsentrytext{traitor}, to avoid any taxes},
 }
@@ -533,7 +546,7 @@
   parent={forgottenDead},
   symbol={\D\M\Hu},
   description={-- undead guardian of a crumbling temple, from the time of \gls{lostcity}.
-  \Glsentrytext{sewerking} stole his only friend -- \pgls{artefact}, which currently rests beneath \gls{town}.
+  \Glsentrytext{sewerking} stole his only friend -- \pgls{artefact}, which currently rests beneath \glsentrytext{town}.
   He will soon raise an undead army to retreive his friend, but without going near anyone, as he has gained a phobia of the living}
 }
 
@@ -602,9 +615,9 @@
   parent={diggers},
   description={works as a \glsentrytext{counter}.
   Despite his sheltered life in the \gls{templeOfSickness}, he has always carried a deep sense of right and wrong.
-  Most people with a disabilty -- acquired, or inherited -- cannot receive care with the \gls{healersGuild}, as most of \gls{town}'s money goes to guild leaders.
+  Most people with a disabilty -- acquired, or inherited -- cannot receive care with the \gls{healersGuild}, as most of \glsentrytext{town}'s money goes to guild leaders.
   Ripcrag gives patronage to a few people, but has decided that his temple cannot care for everyone until the current system falls.
-  He currently helps the \glspl{diggers} by poisoning any rich people in the care of his temple, marking them off as dead, and sending them down to catacombs below \gls{town}.
+  He currently helps the \glspl{diggers} by poisoning any rich people in the care of his temple, marking them off as dead, and sending them down to catacombs below \glsentrytext{town}.
   He doesn't know exactly what happens after that, but he understands they have a plan of some kind}
 }
 
@@ -740,8 +753,8 @@
   first={\glsentrytext{warden} Rocklash Redfall},
   type={people},
   category={people},
-  symbol={\M\Hu\glssymbol{paik}},
-  parent={establishment},
+  symbol={\M\Hu\glsentrysymbol{paik}},
+  parent={redfall},
   description={-- \glsentrytext{warden} to the little hamlet \glsentrytext{redfall}, safely nestled not far from \glsentrytext{town}.
   He refused to join \glsentrytext{banditking}, so \glsentrytext{banditking} cursed him and his family to become monsters, and eat all day.
   \Glsentrytext{redfall} now starves, as their masters eat all the food}
@@ -846,7 +859,7 @@
   type={people},
   category={people},
   symbol={\M\Hu},
-  parent={diggers},
+  parent={whiteBandits},
   description={-- a young and headstrong bard who writes better than he sings.
   He fully believes \glsentrytext{beardedalemaster}'s promises of creating a magical kingdom of safety, and freedom, and sings high praises of the ancient \glsentrytext{lostcity}, and how brave adventurers will return it to its former glory}
 }
@@ -857,10 +870,10 @@
   first={Cleftwarp},
   prefix={Seeker\space},
   sort={Cleftwarp},
-  type={peeps},
+  parent={establishment},
+  type={people},
   category={people},
   symbol={\M\Hu\glssymbol{yonder}},
-  parent={establishment},
   description={-- head \glsentrytext{seeker} of the \glsentrytext{paperGuild}, who stays with \glsentrytext{townmaster} in \glsentrytext{town}'s citadel, rather than the local \glsentrytext{paperGuild}}
 }
 
@@ -874,7 +887,7 @@
 \newglossaryentry{greyLibrarian}{
   name={Foxglove},
   first={Scribe Foxglove},
-  type={peeps},
+  type={people},
   category={people},
   prefix={Seeker\space},
   symbol={\F\Hu\glssymbol{yonder}},

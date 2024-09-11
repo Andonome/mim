@@ -117,19 +117,36 @@ She will act on the spur of the moment, at just the right time, and it will prob
 \southRogue
 \label{southRogue}
 
-\sqpart{Forest}% AREA
-{Just out for a Walk}% NAME
+\sqpart{Roads}% AREA
+{\glsentrysymbol{night}~Just out for a Walk}% NAME
 {\Glsfmttext{southSmith} wanders the forest, secretly looking for \glsfmttext{lostcity}}% SUMMARY
 
-\Gls{southSmith} has hired eight men from the nearest \gls{village} to join him (at 150~\glspl{cp} per day), to hunt for \gls{lostcity}.
-However, he's told them that he's hunting for a mushroom called `\pgls{dryadsKiss}'.%
-He's also told them not to even look at it, because even a single glance at the mushroom will make you incredibly gullible for the rest of the day.
+\begin{exampletext}
+  \Gls{southSmith} has hired eight people from the nearest \gls{village} to join him (at 150~\glspl{cp} per day), to hunt for \gls{lostcity}.
+  Night has fallen, and despite the dangers, the farmers have decided to light a fire, talk and cook.
+  None of them know how close they've come to the road.
+\end{exampletext}
+
+\begin{boxtext}
+  In the distant, darkness of the forest, a fire burns.
+\end{boxtext}
+
+\paragraph{If the successfully sneak up on the group,}
+they overhear the farmers demanding to know what they're doing out here in the forest.
+
+\begin{speechtext}
+  Like I said, I'm hunting for a mushroom called `\pgls{dryadsKiss}'.
+  But when we find it, you need to be careful not to even look at it, because even a single glance at the mushroom will make you incredibly gullible for the rest of the day.
+\end{speechtext}
+
+\Gls{southSmith} isn't lying so that people will believe him.
+He's lying so he doesn't have to tell anyone what he's doing, and so that the farmers have something to say when people ask them where they've been.
+
+\paragraph{If the \glspl{pc} engage,}
 
 \Gls{southSmith} tries the following:
 
 \begin{enumerate}
-  \item
-  Wander away from the troupe nonchalantly.
   \item
   Yelling a polite request to stay away (`\textit{Please stay back, no offence is meant, but we do not know you, and do not wish to approach people wandering deep in the forest}').
   \item
@@ -138,12 +155,12 @@ He's also told them not to even look at it, because even a single glance at the 
   Negotiating, politely.
 \end{enumerate}
 
-\humanarcher[\npc{\T[3]}{8 Archers}]
+\humanarcher[\npc{\T[3]\Hu}{8 Archers}]
 
 \southSmith[\npcQuote{You don't need to trust us to speak politely.  Can we start again?}]
 \label{southSmith}
 
-\paragraph{If the \glspl{pc} ask \glsentrytext{southSmith} about his business in the forest,}
+\paragraph{If the \glspl{pc} ask \gls{southSmith} about his business in the forest,}
 he continues to lie about his real intentions, then returns the question to them.
 
 \begin{speechtext}
@@ -152,6 +169,8 @@ he continues to lie about his real intentions, then returns the question to them
   It's a mushroom which makes people believe whatever you say.
   Someone doesn't believe the things I say (would you believe that?), so I need the mushrooms to make sure they understand I'm telling the truth.
 \end{speechtext}
+
+Once spotted, he returns with the farmers to their \gls{village}, pays them, and abandoned the mission, at least for now.
 
 \sqpart{Forest}% AREA
 {\squash The Guilded Party}% NAME

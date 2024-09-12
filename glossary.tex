@@ -847,11 +847,6 @@
   She's currently putting up the toughest muscle of the \glsentrytext{diggers} in secret rooms below her tavern, and helping to smuggle cheap ale into \glsentrytext{town} for \glsentrytext{beardedalemaster}}
 }
 
-\newcommand{\warningbard}{
-  \humanbard[\NPC{\M\Hu}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{a loving crowd}]
-  \label{warningbard}
-}
-
 \newglossaryentry{warningbard}{
   name={Loot},
   text={Loot},
@@ -861,7 +856,12 @@
   symbol={\M\Hu},
   parent={whiteBandits},
   description={-- a young and headstrong bard who writes better than he sings.
-  He fully believes \glsentrytext{beardedalemaster}'s promises of creating a magical kingdom of safety, and freedom, and sings high praises of the ancient \glsentrytext{lostcity}, and how brave adventurers will return it to its former glory}
+  He fully believes \glsentrytext{banditking}'s promises of creating an enchanted kingdom of safety, and freedom, and sings high praises of the ancient \glsentrytext{lostcity}, and how brave adventurers will return it to its former glory}
+}
+
+\newcommand{\warningbard}{%
+  \humanbard[\NPC{\glsentrysymbol{warningbard}}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{a loving crowd}]
+  \label{warningbard}
 }
 
 \newglossaryentry{alchemist}{

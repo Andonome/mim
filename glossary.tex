@@ -111,6 +111,7 @@
 \newglossaryentry{lochside}{
   name={Lochside},
   text={Lochside},
+  symbol={\glsentrysymbol{sylf}},
   parent={valley},
   type={people},
   category={location},
@@ -276,6 +277,24 @@
   parent={establishment},
   description={-- \glsentrytext{warden} to \glsentrytext{town} when he's not drinking brandy.
   He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the boats coming from \glsentrytext{whiteplains}}
+}
+
+\newglossaryentry{lochWarden}{
+  name={\Glsfmttext{overseer} Cronblight},
+  first={\Glsfmttext{overseer} Cronblight},
+  text={Cronblight},
+  sort={Cronblight},
+  nonumberlist,
+  type={people},
+  category={people},
+  symbol={\M\Hu\glsentrysymbol{sylf}\glsentrysymbol{paik}},
+  parent={valley},
+  description={recently founded a new \glsentrytext{village} -- \glsentrytext{lochside} -- so Cronblight wants to begin his transfer into the \glsentrytext{templeOfJustice}.
+  He helps \glsentrytext{beardedalemaster} smuggle her barrels into \glsentrytext{valley} from \glsentrytext{southDale}, and helps \glsentrytext{banditking} smuggle stolen goods from local \glsfmtplural{warden}}
+}
+
+\newcommand\lochWarden[1][]{%
+  \humandiplomat[\NPC{\glsentrysymbol{lochWarden}}{\Glsfmtname{lochWarden}}{Pink, bald head, rosy-red cheeks, pale skin}{going silent then suddenly naming a distant bird by its call}{to become respected as \pgls{keeper}}#1]
 }
 
 \newglossaryentry{alemaster}{

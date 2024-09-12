@@ -921,13 +921,11 @@
   category={people},
   symbol={\M\Hu},
   parent={whiteBandits},
-  description={-- a young and headstrong bard who writes better than he sings.
-  He fully believes \glsentrytext{banditking}'s promises of creating an enchanted kingdom of safety, and freedom, and sings high praises of the ancient \glsentrytext{lostcity}, and how brave adventurers will return it to its former glory}
+  description={fully believes \glsentrytext{banditking}'s promises of resurrecting \glsentrytext{lostcity}, deposing the `Evil ones' and turning the \glsentrytext{guard} into `adventurers'}
 }
 
-\newcommand{\warningbard}{%
-  \humanbard[\NPC{\glsentrysymbol{warningbard}}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{a loving crowd}]
-  \label{warningbard}
+\newcommand{\warningbard}[1][]{%
+  \humanbard[\NPC{\glsentrysymbol{warningbard}}{\Gls{warningbard}}{Excited}{Drums Fingertips}{a loving crowd}#1]
 }
 
 \longnewglossaryentry{alchemist}{

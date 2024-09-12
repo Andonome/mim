@@ -7,12 +7,13 @@
   sort={Grey Valley},
   type={people},
   category={location},
-  description={The valley stretches farther than most human settlements, and has developed weak shell; only a single strip of road around the edge, peppered with \glsentrytext{broch} and \glsentrytext{village}, stands between the tame farmlands and the outer \glsentrytext{edge}}
+  description={The valley stretches farther than most human settlements, and has developed a weak shell; only a single strip of road guards the \glsentrytext{edge}, with a single layer of \glsfmtplural{broch}}
 }
 
 \newglossaryentry{town}{
   name={Greytown},
   text={Greytown},
+  symbol={\Hu},
   type={people},
   category={location},
   description={is the central town where the action takes place}
@@ -20,29 +21,19 @@
 
 \newglossaryentry{redfall}{
   name={Redfall},
-  type={people},
   symbol={\glsentrysymbol{paik}},
+  type={people},
   category={location},
   description={sits safely near \glsentrytext{town}, full of archers, and famed for its red-earth clay and red apples}
 }
 
 \newglossaryentry{southDale}{
   name={Southdale},
+  symbol={\Hu},
   type={people},
   category={location},
-  description={is a set of towns, some distance to the East of \glsentrytext{valley} (but South of the place that named it).
+  description={is a set of towns, some distance to the East of \glsentrytext{town} (but South of the place that named it).
   The area boasts an impressive dwarven citadel, where the dwarves make strong ales},
-}
-
-\newglossaryentry{whitehorse}{
-  name={White Horse Inn},
-  text={the White Horse},
-  first={the White Horse Inn},
-  symbol={\glsentrysymbol{abderian}},
-  parent={town},
-  type={people},
-  category={location},
-  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
 }
 
 \newglossaryentry{lostcity}{
@@ -58,49 +49,6 @@
   In fact the area simply contained disconnected towns and \glsfmtplural{village}, and had a lot of stone walls and buildings.
   A lot of the stone has simply been repurposed for modern buildings.
   However, real towns once stood in the area which held alchemical gateways}
-}
-
-\newglossaryentry{archwarp}{
-  name={Archwarp},
-  text={Archwarp},
-  symbol={\glsentrysymbol{yonder}},
-  parent={lostcity},
-  type={people},
-  category={location},
-  description={holds an alchemical gateway which once took people to \glsentrytext{sixshadow}, but now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
-}
-
-\newglossaryentry{sixshadow}{
-  name={Sixshadow},
-  text={Sixshadow},
-  symbol={\glsentrysymbol{yonder}},
-  parent={lostcity},
-  type={people},
-  category={location},
-  description={once had an active civilization, supported by its alchemical gateway to \glsentrytext{archwarp}.
-  It collapsed under its own weight once the gateway fell, and now lies uninhabited}
-}
-
-\newglossaryentry{shadowVault}{
-  name={The Shadow Vault},
-  text={the Shadow Vault},
-  symbol={\glsentrysymbol{yonder}},
-  type={people},
-  category={location},
-  parent={lostcity},
-  description={once held any \glsentrytext{artefact} too dangerous for the old alchemists, and was later opened as a paid attraction of curiosities.
-  The most popular curiosity was an alchemical gateway to \glsentrytext{archwarp}}
-}
-
-\newglossaryentry{shadowGate}{
-  name={The Shadow Gate},
-  text={the Shadow Gate},
-  symbol={\glsentrysymbol{yonder}},
-  type={people},
-  category={people},
-  parent={shadowVault},
-  description={is a sentient \glsentrytext{artefact}, only interested in asking challenging riddles.
-  It stopped letting people through after hearing a very difficult riddle}
 }
 
 \newglossaryentry{greentower}{
@@ -147,6 +95,7 @@
   Won't that be fun?}},
 }
 
+%!
 \newglossaryentry{survivors}{
   name={The Survivors},
   sort={Survivors},
@@ -208,8 +157,82 @@
   Money goes to the guildists, and nobody else can compete with the weavers, because of those laws.
   And nobody can harvest the bodies of beasts, without paying the temple, so what's the point in killing them when it's illegal?
   And nobody can decide on what's `justice' when only some \glsentrytext{warden} gets a say.
-  The problem with our society is the prevalent belief in `guildism'.
+  The problem with our society is the prevalent belief in `guild ism'.
   So we're gonna cut it down to size, starting with the head, and then we'll make a new kind of justice}},
+}
+
+%%%%% Locations
+
+\newglossaryentry{whitehorse}{
+  name={White Horse Inn},
+  text={the White Horse},
+  first={the White Horse Inn},
+  symbol={\glsentrysymbol{abderian}},
+  parent={town},
+  type={people},
+  category={location},
+  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
+}
+
+\newglossaryentry{oolery}{
+  name={Oolery},
+  symbol={\glsentrytext{Gn}},
+  parent={town},
+  type={people},
+  category={location},
+  description={was established by a tiny crew gnomes from the \glsentrytext{deep}, and since grew to host over a hundred}
+}
+
+\newglossaryentry{archwarp}{
+  name={Archwarp},
+  text={Archwarp},
+  symbol={\glsentrysymbol{yonder}},
+  parent={lostcity},
+  type={people},
+  category={location},
+  description={holds an alchemical gateway which once took people to \glsentrytext{sixshadow}, but now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
+}
+
+\newglossaryentry{oldTemple}{
+  name={Veldrin Temple},
+  symbol={\glsentrysymbol{eldren}},
+  parent={lostcity},
+  type={people},
+  category={location},
+  description={}
+}
+
+\newglossaryentry{sixshadow}{
+  name={Sixshadow},
+  text={Sixshadow},
+  symbol={\glsentrysymbol{yonder}},
+  parent={lostcity},
+  type={people},
+  category={location},
+  description={once had an active civilization, supported by its alchemical gateway to \glsentrytext{archwarp}.
+  It collapsed under its own weight once the gateway fell, and now lies uninhabited}
+}
+
+\newglossaryentry{shadowVault}{
+  name={The Shadow Vault},
+  text={the Shadow Vault},
+  symbol={\glsentrysymbol{yonder}},
+  type={people},
+  category={location},
+  parent={lostcity},
+  description={once held any \glsentrytext{artefact} too dangerous for the old alchemists, and was later opened as a paid attraction of curiosities.
+  The most popular curiosity was an alchemical gateway to \glsentrytext{archwarp}}
+}
+
+\newglossaryentry{shadowGate}{
+  name={The Shadow Gate},
+  text={the Shadow Gate},
+  symbol={\glsentrysymbol{yonder}},
+  type={people},
+  category={people},
+  parent={shadowVault},
+  description={is a sentient \glsentrytext{artefact}, only interested in asking challenging riddles.
+  It stopped letting people through after hearing a very difficult riddle}
 }
 
 \newglossaryentry{pig}{
@@ -222,6 +245,17 @@
   description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
   Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
   The \glsentrytext{whiteBandits} hide here, in secret rooms, below the tavern, but above the city's abandoned underground section},
+}
+
+%!
+\newglossaryentry{citadel}{
+  name={The Citadel},
+  text={the Citadel},
+  first={the \Glsfmttext{town} Citadel},
+  parent={town},
+  type={people},
+  category={location},
+  description={},
 }
 
 %%%%% People
@@ -247,21 +281,12 @@
     {\claws \web \quadraped\hide{5}\setcounter{covering}{2}}% ABILITIES
 }
 
-\newglossaryentry{oolery}{
-  name={Oolery},
-  symbol={\glsentrysymbol{Gn}},
-  parent={survivors},
-  type={people},
-  category={location},
-  description={was established by a tiny crew gnomes from the \glsentrytext{deep}, and since grew to host over a hundred}
-}
-
 \newglossaryentry{spiderqueen}{
   name={The Spider Queen},
   text={the Spider Queen},
   type={peeps},
   symbol={\F\El},
-  parent={survivors},
+  parent={valley},
   description={has grown tired of her frail elvish body, and now nurses and leads an unnaturally loyal \glsentrytext{crawler} entourage, who look up to her as a mammal views a mother.
   To seal her bond with them, she shapeshifts to gain arachnid features.
   Her babies always want more food, so she will soon start to feed them humans}
@@ -291,14 +316,13 @@
   type={people},
   category={people},
   symbol={\M\Hu\glssymbol{paik}},
-  parent={establishment},
+  parent={town},
   description={-- \glsentrytext{warden} to \glsentrytext{town} when he's not drinking brandy.
   He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the boats coming from \glsentrytext{whiteplains}}
 }
 
 \newglossaryentry{lochWarden}{
   name={\Glsfmttext{overseer} Cronblight},
-  first={\Glsfmttext{overseer} Cronblight},
   text={Cronblight},
   sort={Cronblight},
   nonumberlist,
@@ -307,7 +331,7 @@
   symbol={\M\Hu\glsentrysymbol{sylf}\glsentrysymbol{paik}},
   parent={valley},
   description={recently founded a new \glsentrytext{village} -- \glsentrytext{lochside} -- so Cronblight wants to begin his transfer into the \glsentrytext{templeOfJustice}.
-  He helps \glsentrytext{beardedalemaster} smuggle her barrels into \glsentrytext{valley} from \glsentrytext{southDale}, and helps \glsentrytext{banditking} smuggle stolen goods from local \glsfmtplural{warden}}
+  He helps \glsentrytext{beardedalemaster} smuggle her barrels into \glsentrytext{valley} from \glsentrytext{southDale}, and sells weapons to \glsentrytext{banditking} for stolen goods from local \glsfmtplural{warden}}
 }
 
 \newcommand\lochWarden[1][]{%
@@ -319,7 +343,7 @@
   type={people},
   prefix={Chef\space},
   category={people},
-  parent={establishment},
+  parent={whitehorse},
   symbol={\F\Hu\glssymbol{abderian}},
   description={-- Chef at \glsentrytext{whitehorse}, the local \glsentrytext{wheatGuild}.
   She hates the recent competition from the \glsentrytext{wheatGuild} of \glsentrytext{southDale}, and plans to destroy their reputation}
@@ -480,11 +504,12 @@
 }
 
 \newglossaryentry{investigator}{
-  name={Burngrot},
+  name={\Glsentrytext{builder}~Burngrot},
+  text={Burngrot},
   prefix={Builder},
   type={people},
   category={people},
-  parent={establishment},
+  parent={southDale},
   symbol={\M\Hu\glssymbol{sylf}},
   description={grew up in \pgls{warden}'s house in \glsentrytext{southDale}, then joined the \glsentrytext{guard}, because nowhere else wanted him},
 }
@@ -514,7 +539,7 @@
   first={Keras Tri\"{e}l},
   type={people},
   symbol={\M\Gn},
-  parent={survivors},
+  parent={oolery},
   description={-- gnomish illusionist, who often gets in trouble studying things he shouldn't}
 }
 
@@ -547,7 +572,7 @@
   first={Arinel},
   type={people},
   symbol={\M\El},
-  parent={survivors},
+  parent={valley},
   description={-- an elf known across the land for his song, at least among other elves},
 }
 
@@ -579,7 +604,7 @@
   first={the Undead Priest Cainpale},
   type={people},
   category={people},
-  parent={forgottenDead},
+  parent={oldTemple},
   symbol={\D\M\Hu},
   description={-- undead guardian of a crumbling temple, from the time of \gls{lostcity}.
   \Glsentrytext{sewerking} stole his only friend -- \pgls{artefact}, which currently rests beneath \glsentrytext{town}.
@@ -600,7 +625,7 @@
   prefix={a\space},
   type={people},
   category={people},
-  parent={forgottenDead},
+  parent={greentower},
   symbol={\D\T\Hu},
   description={have guarded the \glsentrytext{valley} from the goblins of \glsentrytext{deep} for centuries, and they continue to guard it even when their tower crumbled, and the settlements around them fell.
 
@@ -818,7 +843,7 @@
   type={people},
   category={people},
   sort={Vex},
-  parent={establishment},
+  parent={town},
   symbol={\M\Hu\glssymbol{paik}},
   description={-- organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice}
 }
@@ -843,7 +868,7 @@
 }
 
 \newglossaryentry{traitor}{
-  name={Rankfilch},
+  name={\Glsentrytext{jotter}~Rankfilch},
   text={Rankfilch},
   type={people},
   category={people},
@@ -878,7 +903,7 @@
   type={people},
   category={people},
   symbol={\F\Hu\glssymbol{abderian}},
-  parent={diggers},
+  parent={pig},
   description={-- owner of \glsentrytext{pig}, the toughest bar in all of \glsentrytext{town}.
   She's currently putting up the toughest muscle of the \glsentrytext{diggers} in secret rooms below her tavern, and helping to smuggle cheap ale into \glsentrytext{town} for \glsentrytext{beardedalemaster}}
 }
@@ -906,7 +931,7 @@
   first={Cleftwarp},
   prefix={Seeker\space},
   sort={Cleftwarp},
-  parent={establishment},
+  parent={citadel},
   type={people},
   category={people},
   symbol={\M\Hu\glssymbol{yonder}},
@@ -927,7 +952,7 @@
   category={people},
   prefix={Seeker\space},
   symbol={\F\Hu\glssymbol{yonder}},
-  parent={establishment},
+  parent={town},
   description={-- organizes the local \glsentrytext{paperGuild}, and knows everything one could possibly read in any book, but has no time to talk with anyone}
 }
 

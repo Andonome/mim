@@ -30,7 +30,7 @@
   name={Southdale},
   type={people},
   category={location},
-  description={is a set of towns, some distance to the East of \glsentrytext{town} (but South of the place that named it).
+  description={is a set of towns, some distance to the East of \glsentrytext{valley} (but South of the place that named it).
   The area boasts an impressive dwarven citadel, where the dwarves make strong ales},
 }
 
@@ -141,19 +141,20 @@
   text={establishment},
   parent={town},
   type={people},
+  category={exposition},
   description={\textit{Isn't the \glsentrytext{valley} beautiful?
   We're trading weapons from \glsentrytext{whiteplains} for some extra-large cages to expand the \glsentrytext{court} and see if we can't organize some \glsentrytext{monster} fights down there.
   Won't that be fun?}},
 }
 
-%!
-\newglossaryentry{outsiders}{
-  name={The Outsiders},
-  sort={Outsiders},
-  text={outsiders},
+\newglossaryentry{survivors}{
+  name={The Survivors},
+  sort={Survivors},
+  text={survivor},
+  category={exposition},
+  prefix={a\space},
   type={people},
-  description={are the various non-human people who live around \glsentrytext{valley}.
-  They have no social connections, but some have a set of shred interests in the local humans not causing too much trouble},
+  description={Just making it till the end of the day},
 }
 
 \newglossaryentry{forgottenDead}{
@@ -246,12 +247,21 @@
     {\claws \web \quadraped\hide{5}\setcounter{covering}{2}}% ABILITIES
 }
 
+\newglossaryentry{oolery}{
+  name={Oolery},
+  symbol={\glsentrysymbol{Gn}},
+  parent={survivors},
+  type={people},
+  category={location},
+  description={was established by a tiny crew gnomes from the \glsentrytext{deep}, and since grew to host over a hundred}
+}
+
 \newglossaryentry{spiderqueen}{
   name={The Spider Queen},
   text={the Spider Queen},
   type={peeps},
   symbol={\F\El},
-  parent={outsiders},
+  parent={survivors},
   description={has grown tired of her frail elvish body, and now nurses and leads an unnaturally loyal \glsentrytext{crawler} entourage, who look up to her as a mammal views a mother.
   To seal her bond with them, she shapeshifts to gain arachnid features.
   Her babies always want more food, so she will soon start to feed them humans}
@@ -502,9 +512,9 @@
 \newglossaryentry{keras}{
   name={Keras},
   first={Keras Tri\"{e}l},
-  type={peeps},
+  type={people},
   symbol={\M\Gn},
-  parent={outsiders},
+  parent={survivors},
   description={-- gnomish illusionist, who often gets in trouble studying things he shouldn't}
 }
 
@@ -535,9 +545,9 @@
   name={Arinel},
   text={Arinel},
   first={Arinel},
-  type={peeps},
+  type={people},
   symbol={\M\El},
-  parent={outsiders},
+  parent={survivors},
   description={-- an elf known across the land for his song, at least among other elves},
 }
 

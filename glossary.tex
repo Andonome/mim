@@ -683,12 +683,14 @@
 }
 
 \longnewglossaryentry{healerLeader}{
-  name={Ripcrag},
+  name={\Glsfmttext{counter} Ripcrag},
+  text={Ripcrag},
   type={people},
   prefix={Counter\space},
-  category={people},
-  symbol={\M\glssymbol{abderian}},
   parent={diggers},
+  type={people},
+  category={people},
+  symbol={\M\glsentrysymbol{abderian}},
   description={works as a \glsentrytext{counter}.
   Despite his sheltered life in the \gls{templeOfSickness}, he has always carried a deep sense of right and wrong.
   Most people with a disabilty -- acquired, or inherited -- cannot receive care with the \gls{healersGuild}, as most of \glsentrytext{town}'s money goes to guild leaders.
@@ -697,8 +699,9 @@
   He doesn't know exactly what happens after that, but he understands they have a plan of some kind}
 }
 
+
 \newcommand\healerLeader{
-  \Person{\NPC{\M\Hu}{Ripcrag}{Cheeky smile, Downs Syndrome}{constantly counting everything around him}{to care for everyone in \glsentrytext{town}}}%
+  \Person{\NPC{\glsentrysymbol{healerLeader}}{\Glsfmtname{healerLeader}}{Cheeky smile, Downs Syndrome}{constantly counting everything around him}{to care for everyone in \glsentrytext{town}}}%
     {{1}{-3}{-2}}% BODY
     {{-1}{0}{1}}% MIND
     {

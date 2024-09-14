@@ -46,22 +46,20 @@
   symbol={\glsentrysymbol{yonder}},
   type={people},
   category={location},
-  description={is a mythical, massive city, which once stretched across the entire area.
-  In fact the area simply contained disconnected towns and \glsfmtplural{village}, and had a lot of stone walls and buildings.
-  A lot of the stone has simply been repurposed for modern buildings.
-  However, real towns once stood in the area which held alchemical gateways}
+  description={is an enchanted, beautiful, and safe city, which never existed.
+  The buildings and settlements in all the songs existed not long ago, but the giant city they all occupied is a myth}
 }
 
 \longnewglossaryentry{greentower}{
   name={The Lonely Tower},
   text={the Lonely Tower},
   sort={Lonely Tower},
-  symbol={\glsentrysymbol{eldren}},
+  symbol={\D\glsentrysymbol{yonder}},
   parent={lostcity},
   type={people},
   category={location},
   description={once stood in the time of \glsentrytext{lostcity}.
-  \Glsentrytext{southSeeker} has decided to rebuild it as a research outpost}
+  \Glsentrytext{southSeeker} has decided to rebuild it as a research outpost, but has no idea what's in the basement}
 }
 
 \longnewglossaryentry{lochside}{
@@ -94,29 +92,6 @@
   prefix={a\space},
   type={people},
   description={Just making it till the end of the day},
-}
-
-\longnewglossaryentry{gatekeepers}{
-  name={The Gate Keepers},
-  text={gate keeper},
-  prefix={a\space},
-  type={people},
-  category={exposition},
-  description={are not a group.
-  They are the set of people old enough to remember the problems once caused by alchemical gateways or underground tunnels to unknown locations.
-  None of them want to see those problems again},
-}
-
-\longnewglossaryentry{forgottenDead}{
-  name={The Dead},
-  text={dead and forgotten},
-  parent={lostcity},
-  type={people},
-  description={\textsc{In my day, we worshipped the gods.
-  We were to pray forever.
-  We had peace, until you awakened us.
-  We felt calm, until you came to our sacred places.
-  We are awake}},
 }
 
 \longnewglossaryentry{whiteBandits}{
@@ -179,23 +154,25 @@
   description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
 }
 
+%! Some still recall the riddle of the gate.
 \longnewglossaryentry{oolery}{
   name={Oolery},
   symbol={\glsentrytext{Gn}},
   parent={town},
   type={people},
   category={location},
-  description={was established by a tiny crew gnomes from the \glsentrytext{deep}, and since grew to host over a hundred}
+  description={was established by a tiny crew of gnomes from the \glsentrytext{deep}, and since grew to host over a hundred},
 }
 
 \longnewglossaryentry{archwarp}{
   name={Archwarp},
   text={Archwarp},
-  symbol={\glsentrysymbol{yonder}},
+  symbol={\D\glsentrysymbol{yonder}},
   parent={lostcity},
   type={people},
   category={location},
-  description={holds an alchemical gateway which once took people to \glsentrytext{sixshadow}, but now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
+  description={holds an alchemical gateway which once took people to \glsentrytext{shadowVault}, by \glsentrytext{sixshadow}.
+  It now lies in disrepair, since the gateway stopped working, and an alchemist killed the gate's guardians}
 }
 
 \longnewglossaryentry{oldTemple}{
@@ -236,8 +213,9 @@
   type={people},
   category={people},
   parent={shadowVault},
-  description={is a sentient \glsentrytext{artefact}, only interested in asking challenging riddles.
-  It stopped letting people through after hearing a very difficult riddle}
+  description={is a sentient \glsentrytext{artefact}, only interested in challenging people with riddles.
+
+  One day, it began to ask a riddle so fiendish that nobody could answer it, and hasn't worked since.},
 }
 
 \longnewglossaryentry{pig}{
@@ -277,7 +255,7 @@
 %%%%% People
 
 \newcommand\spiderqueen{
-  \Person{\NPC{\F\El}{\Glsentrytext{spiderqueen}}{A spider-centaur, with six legs on a bulging thorax, like Gieger tried to draw an anime girl}{Looks down at her babies}{to see her babies in action}}%
+  \Person{\NPC{\glsentrysymbol{spiderqueen}}{\Glsfmtname{spiderqueen}}{A spider-centaur, with six legs on a bulging thorax, like Gieger tried to draw an anime girl}{Looks down at her babies}{to see her babies in action}}%
     {{0}{3}{2}}% BODY
     {{2}{3}{2}}% MIND
     {
@@ -301,12 +279,13 @@
   name={The Spider Queen},
   text={the Spider Queen},
   symbol={\F\El},
+  parent={sixshadow},
   type={people},
   category={people},
-  parent={gatekeepers},
-  description={has grown tired of her frail elvish body, and now nurses and leads an unnaturally loyal \glsentrytext{crawler} entourage, who look up to her as a mammal views a mother.
-  To seal her bond with them, she shapeshifts to gain arachnid features.
-  Her babies always want more food, so she will soon start to feed them humans}
+  description={has taken to enchanting \glsfmtplural{crawler} to follow her like a mother.
+  She even transformed her frail, elvish, body to resemble her pets.
+  Throughout \glsentrytext{cTwo}, she hibernates with them in \glsentrytext{sixshadow}.
+  Once she wakes, she will grow her entourage, and feed entire \glsfmtplural{village} to her babies}
 }
 
 \newcommand{\townmaster}{
@@ -641,9 +620,10 @@
   category={people},
   parent={greentower},
   symbol={\D\T\Hu},
-  description={have guarded the \glsentrytext{valley} from the goblins of \glsentrytext{deep} for centuries, and they continue to guard it even when their tower crumbled, and the settlements around them fell.
+  description={have guarded the \glsentrytext{valley} their temple, underneath the \glsentrytext{greentower}, for centuries.
+  Despite unending invasions from goblins, they continue to guard it even when most of their temple crumbled, and the settlements around them fell.
 
-  Each agreed to a magical oath, and they will continue their work as long as the oath endures}
+  Everything will remain fine, and no goblins will emerge, as long as nobody goes down and kills them just for being undead and having treasure\ldots},
 }
 
 \newcommand{\forestpriest}{

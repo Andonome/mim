@@ -16,11 +16,11 @@
   symbol={\Hu},
   type={people},
   category={location},
-  description={Isn't the \glsentrytext{valley} beautiful?
-  \\
-  \\
-  We're trading weapons from \glsentrytext{whiteplains} for some extra-large cages to expand the \glsentrytext{court} and see if we can't organize some \glsentrytext{monster} fights down there.
-  Won't that be fun?}
+  description={Dank slate rooves, covered in moss.
+  The North holds the bangs of metalworks.
+  The East makes the noise of delighted crowds from the \glsentrytext{court}.
+  In the West, trading boats enter and shout curses as the taxes are raised again.
+  From the South, cattle comes in for slaughter, to feed the hungry town}
 }
 
 \longnewglossaryentry{redfall}{
@@ -141,8 +141,18 @@
   Money goes to the guildists, and nobody else can compete with the weavers, because of those laws.
   And nobody can harvest the bodies of beasts, without paying the temple, so what's the point in killing them when it's illegal?
   And nobody can decide on what's `justice' when only some \glsentrytext{warden} gets a say.
-  The problem with our society is the prevalent belief in `guild ism'.
-  So we're gonna cut it down to size, starting with the head, and then we'll make a new kind of justice},
+  The problem with our society is the prevalent belief in `guildism'.
+  So we're gonna cut it down to size, starting with the head, and then we'll make a new kind of justice.
+
+  We found these screaming skulls that make you half dead.
+  And if they speak to you, and then you die, you go undead but you remember who you are.
+  You go mad enough to kill, but sane enough to hold a sword.
+  So we got a plan.
+
+  We dig a tunnel, under \glsentrytext{citadel}, so we can peek at \glsentrytext{townmaster}'s basements.
+  Then we let the hungry-dead loose in the poshest place in town.
+
+  And after, we rebuild \glsentrytext{town} with some better ideas\ldots something that's not guildism},
 }
 
 %%%%% Locations
@@ -155,7 +165,7 @@
   parent={town},
   type={people},
   category={location},
-  description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
+  description={is a serene and esteemed establishment, with a reputation for high-quality clientele}
 }
 
 %! Some still recall the riddle of the gate.
@@ -165,7 +175,7 @@
   parent={town},
   type={people},
   category={location},
-  description={was established by a tiny crew of gnomes from the \glsentrytext{deep}, and since grew to host over a hundred},
+  description={was established by a tiny crew of gnomes from the \glsentrytext{deep}, and now the warren hosts over a hundred},
 }
 
 \longnewglossaryentry{archwarp}{
@@ -219,30 +229,36 @@
   parent={shadowVault},
   description={is a sentient \glsentrytext{artefact}, only interested in challenging people with riddles.
 
-  One day, it began to ask a riddle so fiendish that nobody could answer it, and hasn't worked since.},
+  One day, it began to ask a riddle so fiendish that nobody could answer it, and hasn't worked since},
 }
 
 \longnewglossaryentry{pig}{
   name={Mincing Pig},
   text={the Mincing Pig},
   first={the Mincing Pig Tavern},
+  symbol={\glsentrysymbol{abderian}},
   parent={town},
   type={people},
   category={location},
-  description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
-  Many people don't get farther than `the Pig' when coming to \glsentrytext{town}.
-  The \glsentrytext{whiteBandits} hide here, in secret rooms, below the tavern, but above the city's abandoned underground section},
+  description={is the nastiest bar in \glsentrytext{town}, and the meeting point for the \glsfmtplural{diggers}},
 }
 
-%!
 \longnewglossaryentry{citadel}{
-  name={The Citadel},
+  name={\Glsfmttext{town} Citadel},
   text={the Citadel},
   first={the \Glsfmttext{town} Citadel},
+  symbol={\glsentrysymbol{paik}},
   parent={town},
   type={people},
-  category={location},
-  description={overlooks all of \glsentrytext{town}, and shines bright-white with a limestone exterior, taken from the remains of \glsentrytext{archwarp}},
+  category={exposition},
+  description={The \glsentrytext{guard} do such a wonderful job guarding everyone.
+  We all feel very safe here.
+  Maybe \glsentrytext{town} has a few bad apples, but I'll see them in the \glsentrytext{court} soon.
+  And if we run out of bad apples, I'm making a deal with a \glsentrytext{southDale} \glsentrytext{warden} for some extra-large monster-traps.
+  I'll have my jester pronounce them `guilty!', and the people can watch them fight.
+  Won't that be fun?
+
+  Never a dull day in the \glsentrytext{court}, never a dull day},
 }
 
 %!
@@ -292,12 +308,23 @@
   Once she wakes, she will grow her entourage, and feed entire \glsfmtplural{village} to her babies}
 }
 
+\longnewglossaryentry{townmaster}{
+  name={\Glsfmttext{warden} Prosity Grey},
+  first={Prosity Grey},
+  text={Prosity},
+  type={people},
+  category={people},
+  symbol={\M\Hu\glssymbol{paik}},
+  parent={citadel},
+  description={doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the boats coming from \glsentrytext{whiteplains}}
+}
+
 \newcommand{\townmaster}{
-  \Person{\NPC{\M\Hu}{\glsentrytext{townmaster}}{his gait and small hunch looks like two melted candles, rudely shoved together}{shouts `ha!'}{to hear news of victorious, glorious, battles}}%
+  \Person{\NPC{\glsentrysymbol{townmaster}}{\Glsfmtname{townmaster}}{his gait, hunch, and chinless neck makes him look like two melted candles, rudely shoved together}{repeats for emphasis, to the point of redundency, then repeats again}{to hear news of victorious, and glorious, battles at the \glsentrytext{edge}}}%
     {{1}{0}{0}}% BODY
     {{1}{-1}{1}}% MIND
     {
-        \setcounter{Brawl}{1}
+        \setcounter{Melee}{1}
         \setcounter{Deceit}{2}
         \setcounter{Academics}{1}
         \setcounter{Vigilance}{3}
@@ -305,19 +332,6 @@
     {\lucky}% KNACKS
     {\lootBig, \lootJewellery}% EQUIPMENT
     {}% ABILITIES
-}
-
-\longnewglossaryentry{townmaster}{
-  name={Prosity},
-  first={Prosity Grey},
-  text={Prosity},
-  nonumberlist,
-  type={people},
-  category={people},
-  symbol={\M\Hu\glssymbol{paik}},
-  parent={citadel},
-  description={-- \glsentrytext{warden} to \glsentrytext{town} when he's not drinking brandy.
-  He doesn't know about the plots around him, and doesn't want to know, he only wants to collect his hefty taxes on all the boats coming from \glsentrytext{whiteplains}}
 }
 
 \longnewglossaryentry{lochWarden}{
@@ -343,7 +357,7 @@
   category={people},
   parent={whitehorse},
   symbol={\F\Hu\glssymbol{abderian}},
-  description={-- Chef at \glsentrytext{whitehorse}, the local \glsentrytext{wheatGuild}.
+  description={-- Chef at \glsentrytext{whitehorse}, a local \glsentrytext{wheatGuild} establishment.
   She hates the recent competition from the \glsentrytext{wheatGuild} of \glsentrytext{southDale}, and plans to destroy their reputation}
 }
 
@@ -538,7 +552,7 @@
   first={Keras Tri\"{e}l},
   type={people},
   symbol={\M\Gn},
-  parent={oolery},
+  parent={whitehorse},
   description={-- gnomish illusionist, who often gets in trouble studying things he shouldn't}
 }
 
@@ -614,7 +628,8 @@
   name={Bladderskulls},
   type={people},
   parent={diggers},
-  description={-- three human skulls, with their own inflated bladder stuffed inside.  The skulls wants cast spells to make people hear it, and talk about bird-watching}
+  description={-- a jabbering \glsentrytext{artefact}, made of three human skulls, with their own inflated bladder stuffed inside.
+  It casts spells to make people see and hear as the undead do, because it likes having people to talk to, and only the undead can hear \glsfmtplural{artefact}}
 }
 
 \longnewglossaryentry{goldenPriests}{
@@ -674,13 +689,12 @@
   parent={diggers},
   type={people},
   category={people},
-  symbol={\M\glsentrysymbol{abderian}},
-  description={works as a \glsentrytext{counter}.
-  Despite his sheltered life in the \gls{templeOfSickness}, he has always carried a deep sense of right and wrong.
-  Most people with a disabilty -- acquired, or inherited -- cannot receive care with the \gls{healersGuild}, as most of \glsentrytext{town}'s money goes to guild leaders.
-  Ripcrag gives patronage to a few people, but has decided that his temple cannot care for everyone until the current system falls.
-  He currently helps the \glspl{diggers} by poisoning any rich people in the care of his temple, marking them off as dead, and sending them down to catacombs below \glsentrytext{town}.
-  He doesn't know exactly what happens after that, but he understands they have a plan of some kind}
+  symbol={\M\glsentrysymbol{eldren}},
+  description={always resented the fact that he had a place at the \glsentrytext{templeOfSickness}, while many others did not.
+  He doesn't know what the solution is, but when people told him they'd bring down the system, he decided he was on board.
+
+  He currently helps the \glsfmtplural{diggers} by poisoning any rich people in the care of his temple, marking them off as dead, and sending them down to catacombs below \glsentrytext{town}.
+  He doesn't know exactly what happens after that, but he trusts the \glsfmtplural{diggers} to have a broader plan of some kind},
 }
 
 
@@ -737,7 +751,7 @@
 
 \newcommand{\sewerking}{
   \Person{\NPC{\M\Hu}{\Glsentrytext{sewerking}}{chubby guy, with black pony tail}{hands on sword}{to kill and depose \gls{townmaster}}}%
-    {{0}{1}{0}}% BODY
+    {{2}{1}{0}}% BODY
     {{1}{0}{2}}% MIND
     {
         \set{Academics}{1}
@@ -763,7 +777,8 @@
   symbol={\M\Hu\glssymbol{paik}},
   description={-- \glsentrytext{whiteplains} agitator, and brother to \glsentrytext{banditking}.
   He smuggles items between \glsentrytext{traitor}'s house (outside \glsentrytext{town} wall) and \glsentrytext{pig} (inside the wall).
-  Both want to replace the local \glsfmtplural{warden}}
+
+  Once the \glsfmtplural{diggers} kill \glsentrytext{townmaster}, he plans to take his place}
 }
 
 \newcommand{\sewerthief}[1][]{
@@ -846,9 +861,9 @@
   type={people},
   category={people},
   sort={Vex},
-  parent={town},
+  parent={whitehorse},
   symbol={\M\Hu\glssymbol{paik}},
-  description={-- organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice}
+  description={-- organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice, then ends the day with a stiff drink}
 }
 
 \newcommand{\traitor}{
@@ -900,15 +915,17 @@
 }
 
 \longnewglossaryentry{pigowner}{
-  name={Egress},
+  name={Egress Pig},
   first={Egress Pig},
   text={Egress},
   type={people},
   category={people},
   symbol={\F\Hu\glssymbol{abderian}},
   parent={pig},
-  description={-- owner of \glsentrytext{pig}, the toughest bar in all of \glsentrytext{town}.
-  She's currently putting up the toughest muscle of the \glsentrytext{diggers} in secret rooms below her tavern, and helping to smuggle cheap ale into \glsentrytext{town} for \glsentrytext{southCook}}
+  description={-- owner of \glsentrytext{pig}, has been networking with all manner of people.
+  She helps \glsentrytext{traitor} smuggle goods in, then hooked up \gls{southCook} so she can smuggle cheap ale in.
+
+  She doesn't really care about those \glsentrytext{diggers} plans, but will quite happily play at having political goals while it makes her money}
 }
 
 \longnewglossaryentry{warningbard}{
@@ -927,16 +944,16 @@
 }
 
 \longnewglossaryentry{alchemist}{
-  name={Cleftwarp},
+  name={\Glsfmttext{librarian} Cleftwarp},
   text={Cleftwarp},
   first={Cleftwarp},
-  prefix={Seeker\space},
+  prefix={\Glsfmttext{librarian}\space},
   sort={Cleftwarp},
   parent={citadel},
   type={people},
   category={people},
   symbol={\M\Hu\glssymbol{yonder}},
-  description={-- head \glsentrytext{seeker} of the \glsentrytext{paperGuild}, who stays with \glsentrytext{townmaster} in \glsentrytext{town}'s citadel, rather than the local \glsentrytext{paperGuild}}
+  description={maintains a separate, personal library in the citadel, away from the \glsentrytext{paperGuild}}
 }
 
 \newcommand\citadelAlchemist{
@@ -953,7 +970,7 @@
   category={people},
   prefix={Seeker\space},
   symbol={\F\Hu\glssymbol{yonder}},
-  parent={town},
+  parent={whitehorse},
   description={-- organizes the local \glsentrytext{paperGuild}, and knows everything one could possibly read in any book, but has no time to talk with anyone}
 }
 

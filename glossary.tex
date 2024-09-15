@@ -80,9 +80,9 @@
   name={Whiteplains},
   type={people},
   category={exposition},
-  description={North-West, up the river, the lands are colder, and have wide-open plains, full of auroch.
-  But it has only one river it can use for trade with the outside -- the river which flows through \glsentrytext{town}.
-  The \glsentrytext{town} \glsfmtplural{keeper} have kept Whiteplains poor for over a century},
+  description={North-West, up the river, the lands are colder, with wide-open plains, full of auroch.
+  Whiteplains has many roads, but only one river it can send boats down -- the river which flows through \glsentrytext{town}.
+  The \glsentrytext{town} \glsfmtplural{keeper} have kept Whiteplains under heavy taxes for a century},
 }
 
 %%%%% Organizations
@@ -99,18 +99,27 @@
 }
 
 \longnewglossaryentry{whiteBandits}{
-  name={White Bandits},
+  name={White Bandits Outpost},
   text={White Bandit},
   prefix={a\space},
   plural={White Bandits},
   parent={whiteplains},
   type={people},
-  description={\textit{People around the \glsentrytext{edge} are  dying every day, while \glsentrytext{townmaster} just sits safely in his citadel, getting fat.
-  But we don't have to live like this.
-  Working together, we can push the \glsentrytext{edge} back.
-  With the \glsentrytext{guard} and \glsentrytext{sunGuard} united into a single force, we could topple every tree, and they could advance upon any \glsentrytext{fiend} who threatened our peace with a thousand swords on a thousand strong arms.
-  Everyone could live free and happy, until \glsentrytext{eldren} takes them.
-  You only need a strong leader, and you could be free}}
+  category={exposition},
+  description={in this world, there are Good people, and Evil.
+
+  The Evil people rob innocent, hardworking people.
+  Then they set themselves up as Evil lords, so they can rob people with taxes, and the threat of their Evil soldiers.
+
+  But there are also Good people.
+  And the Good people, kill the Evil ones.
+
+  So we have come to free the \glsfmtplural{guard} that those Evil ones put in slavery, and called `\glsfmtplural{fodder}'.
+  And there will be no more \glsfmtplural{guard} who have to pay dues to a guild -- instead, they will all be like adventurers of old, who find treasure in ancient places, and they keep all of it by law, but also freely share their gold with the poor farmers.
+
+  And when anyone can kill monsters, and sell their hides, \glsentrytext{valley} will become rich as everyone kills everything, and the people will wander on the road freely, outside of their \glsentrytext{village} walls.
+
+  Just like in the time of \glsentrytext{lostcity}, people will rejoice, and recognize gods of Good, and a Good King, in a land where monsters do not wander},
 }
 
 \longnewglossaryentry{wolfhead}{
@@ -216,7 +225,9 @@
   type={people},
   category={location},
   parent={lostcity},
-  description={once held any \glsentrytext{artefact} too dangerous for the old alchemists, and was later opened as a paid attraction of curiosities.
+  description={once held any \glsentrytext{artefact} too dangerous for the old alchemists.
+
+  As the alchemists sold their assets, the \glsentrytext{wheatGuild} bought the place and opened it as a tourist attraction.
   The most popular curiosity was an alchemical gateway to \glsentrytext{archwarp}}
 }
 
@@ -259,17 +270,6 @@
   Won't that be fun?
 
   Never a dull day in the \glsentrytext{court}, never a dull day},
-}
-
-%!
-\longnewglossaryentry{banditLair}{
-  name={The \Glsfmttext{whiteBandits} Outpost},
-  text={Bandit Outpost},
-  first={the \Glsfmttext{whiteBandits} Outpost},
-  parent={whiteplains},
-  type={people},
-  category={location},
-  description={},
 }
 
 %%%%% People
@@ -716,8 +716,21 @@
     {}% ABILITIES
 }
 
+\longnewglossaryentry{banditking}{
+  name={Burke \glsentrytext{whiteplains}},
+  first={Burke \glsentrytext{whiteplains}},
+  type={people},
+  category={people},
+  symbol={\M\Hu\glsentrysymbol{paik}},
+  parent={whiteBandits},
+  description={was banished from \glsentrytext{whiteplains} for his use of forbidden alchemy (such as the Life \glsentrytext{sphere}) and self-righteous speeches.
+
+  When he speaks to the local \glsentrytext{guard} \glsfmtplural{fodder}, he presents himself as a humble saviour, and possibly a king.
+  When he speaks to local \glsfmtplural{warden}, he presents himself as a simple travelling \glsentrytext{warden} from \glsentrytext{whiteplains}}
+}
+
 \newcommand{\banditking}{
-  \Person{\NPC{\M\Hu}{\glsentrytext{banditking}}{Short hair, massive beard}{Drums fingers}{to return to nobility}}%
+  \Person{\NPC{\glsentrysymbol{banditking}}{\Glsfmtname{banditking}}{Short hair, massive beard}{Drums fingers}{to return to nobility}}%
     {{1}{0}{1}}% BODY
     {{-2}{0}{3}}% MIND
     {
@@ -737,17 +750,6 @@
     {}% KNACKS
     {dagger, pouch of marching mushrooms, pipe, 20~\glspl{sp}}% EQUIPMENT
     {}% ABILITIES
-}
-
-\longnewglossaryentry{banditking}{
-  name={Burke},
-  first={Burke \glsentrytext{whiteplains}},
-  type={people},
-  category={people},
-  symbol={\M\Hu\glsentrysymbol{paik}},
-  parent={whiteBandits},
-  description={was banished from \glsentrytext{whiteplains} for his wreckless use of alchemy, but continues presenting himself as \pgls{whiteplains} \gls{warden}.
-  His mission is to subtly recruit \glspl{warden} to join him, promising to lower taxes, and handle the constant threat of predators better than \glsentrytext{townmaster}}
 }
 
 \newcommand{\sewerking}{
@@ -783,12 +785,11 @@
 }
 
 \newcommand{\sewerthief}[1][]{
-  \Person{\NPC{\M\Hu}{\Glsfmttext{sewerthief}}{acne scars, tubby body, with vacant eyes}{looking about, suspiciously}{just to get to the next meal}#1}%
+  \Person{\NPC{\glsentrysymbol{sewerthief}}{\Glsfmtname{sewerthief}}{acne scars, tubby body, with vacant eyes}{looking about, suspiciously}{to obtain clear thinking on his political thinking}#1}%
     {{1}{2}{2}}% BODY
     {{-1}{1}{1}}% MIND
     {
       \setcounter{Projectiles}{2}
-      \setcounter{Academics}{1}
       \setcounter{Deceit}{2}
       \setcounter{Larceny}{2}
       \setcounter{Stealth}{1}
@@ -809,8 +810,8 @@
   category={people},
   parent={whiteBandits},
   symbol={\glsentrysymbol{sylf}\M\Hu},
-  description={-- a talented down-and-out member of \glsentrytext{town} who now serves as the most capable member of the entourage who live beneath \glsentrytext{town}.
-  Despite his laziness, the \glsentrytext{whiteBandits} trust him}
+  description={came from the slums of \glsentrytext{town}, but has aspirations to become something better.
+  Political thinking is new to him, so he's moving through each step very carefully},
 }
 
 \newcommand{\nurabaron}{
@@ -894,8 +895,7 @@
   symbol={\M\Hu\glssymbol{sylf}},
   parent={whiteBandits},
   prefix={Jotter},
-  description={-- \glsentrytext{jotter} to the \glsentrytext{guard}.
-  He wants to become a \glsentrytext{warden}, so he helps smuggle items for the \glsentrytext{whiteBandits}},
+  description={does not believe in any of the propaganda, but does believe that \gls{banditking} can start a revolution with some help},
 }
 
 \newcommand{\pigowner}{
@@ -937,7 +937,7 @@
   category={people},
   symbol={\M\Hu},
   parent={whiteBandits},
-  description={fully believes \glsentrytext{banditking}'s promises of resurrecting \glsentrytext{lostcity}, deposing the `Evil ones' and turning the \glsentrytext{guard} into `adventurers'}
+  description={fully believes \glsentrytext{banditking}'s every promises and plan, and sings about all of it},
 }
 
 \newcommand{\warningbard}[1][]{%

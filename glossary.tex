@@ -785,10 +785,12 @@
       \setcounter{Stealth}{1}
       \setcounter{Vigilance}{2}
       \setcounter{Survival}{1}
+      %Adjust for rations
+      \ifstrequal{\sqarea}{Forest}{\addtocounter{weight}{2}\addtocounter{weight}{\value{r3}}}{}
       \shortsword
     }% SKILLS
     {\stunningstrike, \perfectsneakattack}% KNACKS
-    {dagger\ifstrequal{\sqarea}{Forest}{longbow, 20 arrows}{}, rations \boxStat{r4}}% EQUIPMENT
+    {dagger, \ifstrequal{\sqarea}{Forest}{longbow, 20 arrows, rations \boxStat{r4}}{\lootMedium}}% EQUIPMENT
     {}% ABILITIES
 }
 

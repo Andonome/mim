@@ -129,8 +129,13 @@ She will act on the spur of the moment, at just the right time, and it will prob
 \end{exampletext}
 
 \begin{boxtext}
-  In the distant, darkness of the forest, a fire burns.
+  In the distant, darkness of the forest, just past the \gls{edge}, a fire burns.
 \end{boxtext}
+
+\humanarcher[\npc{\T[3]\Hu}{8 Archers}]
+
+Of course, the farmers are aware of the dangers, and are keeping \pgls{vigil}.
+Sneaking up requires a \roll{Dexterity}{Stealth} roll against their \roll{Wits}{Vigilance} (\tn, with +2 if snowing).
 
 \paragraph{If the successfully sneak up on the group,}
 they overhear the farmers demanding to know what they're doing out here in the forest.
@@ -168,8 +173,6 @@ he continues to lie about his real intentions, then returns the question to them
 
 Once spotted, he returns with the farmers to their \gls{village}, pays them, and abandoned the mission, at least for now.
 
-\humanarcher[\npc{\T[3]\Hu}{8 Archers}]
-
 \southSmith[\npcQuote{You don't need to trust us to speak politely.  Can we start again?}]
 \label{southSmith}
 
@@ -200,13 +203,14 @@ But before they reached the \gls{edge} six griffins surrounded them.
 
 \Gls{southSmith}'s arm bleeds from a nasty wound, and \gls{southCook} isn't doing much better.
 
-\vpagerefnearby{southRogue}{}{
-  \setcounter{wounds}{2}
-  \southRogue
-}
-
 \setcounter{wounds}{3}
 \southCook
+
+\vpagerefnearby{southRogue}{}{
+  \setcounter{wounds}{2}
+
+  \southRogue
+}
 
 After this \gls{segment}, the \glspl{wolfhead} return to \gls{town} to rest and heal, at \gls{town}'s \gls{templeOfSickness}.
 

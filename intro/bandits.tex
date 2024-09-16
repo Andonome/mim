@@ -69,12 +69,12 @@ they will find \gls{healerLeader} in \gls{town}'s \gls{healersGuild}, not far fr
 To survive the night, he lights two fires in two places, then crawls far away, under a little bush.
 His hope is that any predators in the area will wander up to the fire, and not him.
 
+\sewerthief[\npcQuote{What was that?\ldots maybe the wind.  The wind is always playing tricks on me.}\label{sewerthief}]
+
 \begin{boxtext}
   Creeping closer to the light, you spot glimpses of the tip of a fire, then a second not far ahead, but no voice, or any movement.
   You find it impossible to move without making constant crunching and grating sounds.
 \end{boxtext}
-
-\sewerthief[\npcQuote{What was that?\ldots maybe the wind.  The wind is always playing tricks on me.}\label{sewerthief}]
 
 \Gls{sewerthief} reveals himself, speaks to the troupe about \gls{lostcity}, then soon after -- politics.
 
@@ -93,6 +93,12 @@ His hope is that any predators in the area will wander up to the fire, and not h
   \humanarcher[\npc{\T[6]\Hu}{\arabic{noAppearing} \glspl{whiteBandits} Archers}]
 }{
   \humansoldier[\npc{\T[3]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
+}
+
+\boxPair{
+  \banditking
+}{
+  \showStdSpells
 }
 
 \sqpart{Roads}% AREA
@@ -123,8 +129,6 @@ Sorting the disagreement won't be easy.
 The exact roll depends on what the \glspl{pc} attempt.
 They might try to threaten one group with \roll{Strength}{Deceit}, or calm the situation with \roll{Charisma}{Empathy}.
 
-\pic{Unknown/wizard_and_cat}
-
 \paragraph{If the encounter occurs far from \gls{town},}
 the meat will soon spoil anyway, so resolving the disagreement requires a roll at \tn[9].
 
@@ -146,7 +150,8 @@ Failure means death, but the \glspl{pc} should hear the result no matter which w
 \paragraph{Highly observant \glspl{pc}}
 may notice that \gls{banditking} carries the stench of \glspl{marchingMushroom}.
 
-\banditking
+\pic{Unknown/wizard_and_cat}
+
 
 \sqpart{Town}% AREA
 {Illegal Songs}% NAME

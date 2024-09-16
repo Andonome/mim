@@ -156,11 +156,6 @@ He's lying so he doesn't have to tell anyone what he's doing, and so that the fa
   Negotiating, politely.
 \end{enumerate}
 
-\humanarcher[\npc{\T[3]\Hu}{8 Archers}]
-
-\southSmith[\npcQuote{You don't need to trust us to speak politely.  Can we start again?}]
-\label{southSmith}
-
 \paragraph{If the \glspl{pc} ask \gls{southSmith} about his business in the forest,}
 he continues to lie about his real intentions, then returns the question to them.
 
@@ -172,6 +167,11 @@ he continues to lie about his real intentions, then returns the question to them
 \end{speechtext}
 
 Once spotted, he returns with the farmers to their \gls{village}, pays them, and abandoned the mission, at least for now.
+
+\humanarcher[\npc{\T[3]\Hu}{8 Archers}]
+
+\southSmith[\npcQuote{You don't need to trust us to speak politely.  Can we start again?}]
+\label{southSmith}
 
 \sqpart{Forest}% AREA
 {\squash~The Guilded Party}% NAME
@@ -200,17 +200,17 @@ But before they reached the \gls{edge} six griffins surrounded them.
 
 \Gls{southSmith}'s arm bleeds from a nasty wound, and \gls{southCook} isn't doing much better.
 
-\setcounter{wounds}{3}
-\southCook
-
 \vpagerefnearby{southRogue}{}{
   \setcounter{wounds}{2}
   \southRogue
 }
 
+\setcounter{wounds}{3}
+\southCook
+
 After this \gls{segment}, the \glspl{wolfhead} return to \gls{town} to rest and heal, at \gls{town}'s \gls{templeOfSickness}.
 
-\basilisk[\npc{\T[6]\A}{\arabic{noAppearing} \Glspl{basilisk}}]
+\griffin[\npc{\T[6]\A}{\arabic{noAppearing} griffins}]
 
 \sqpart{Town}% AREA
 {The Deal}% NAME

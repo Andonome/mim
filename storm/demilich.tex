@@ -209,6 +209,29 @@ Mark off another \gls{village} on \gls{valley} map.
   \showStdSpells
 }
 
+\newcommand\deadProgressChart{
+  \begin{nametable}{Dead Tactics}
+
+    \textbf{Round} & \textbf{Event} \\\hline
+
+    1 & 200 ghouls assault the gate. \\
+
+    2 & 4 ghasts each attack a quarter of the \gls{village} each (one attempts to open the gate). \\
+
+    3 & \Gls{necromancer} casts offensive spells on anyone at the gate. \\
+
+    4 & The ghouls have formed a pyramid at the gate. \\
+
+    5 & 5 ghouls climb over the gate. \\
+
+    6 & 10 more ghouls climb over the gate. \\
+
+    7 & 15 more ghouls climb over the gate, and the \gls{village} falls. \\
+
+  \end{nametable}
+  \label{necroTactics}
+}
+
 \sqpart{Town}% AREA
 {\squash~Armourless}% NAME
 {\Glsentrytext{necromancer} kills a trading wagon for their armour}% SUMMARY
@@ -234,26 +257,9 @@ If the troupe try to track him down, remember to check the conditions \vpageref{
 \boxPair{
   \pic{Decky/necromancer}
 }{
-  \begin{nametable}{Dead Tactics}
+  \deadProgressChart
 
-    \textbf{Round} & \textbf{Event} \\\hline
-
-    1 & 200 ghouls assault the gate. \\
-
-    2 & 4 ghasts each attack a quarter of the \gls{village} each (one attempts to open the gate). \\
-
-    3 & \Gls{necromancer} casts offensive spells on anyone at the gate. \\
-
-    4 & The ghouls have formed a pyramid at the gate. \\
-
-    5 & 5 ghouls climb over the gate. \\
-
-    6 & 10 more ghouls climb over the gate. \\
-
-    7 & 15 more ghouls climb over the gate, and the \gls{village} falls. \\
-
-  \end{nametable}
-  \label{necroTactics}
+  \ghoul[\npc{\T[9]\D}{200 Ghouls}]
 }
 
 \sqpart{Roads}% AREA
@@ -323,8 +329,6 @@ the \glspl{pc} may be able to flee (the dead have plenty of farmers, and don't n
 Half of the \gls{village} will flee as well.
 
 If the dead continue tearing \glspl{village} apart, civilization will quickly develop problems, as the outer protections no longer protect, and creatures venture farther and farther into the lands of unprotected hamlets.
-
-\ghoul[\npc{\T[9]\D}{200 Ghouls}]
 
 \ghoul[\npc{\T[7]\D}{200 Ghouls}]
 

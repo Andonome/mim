@@ -60,14 +60,14 @@ They feed a little from its dead flesh, and it continues to wander gormlessly, w
 As a result of their dead home, the stirges have become carriers for a nasty disease -- Breathrot.%
 \exRef{judgement}{Judgement}{Breathrot}
 
-\ghoul[\npc{\T[9]\D}{Ghouls}]
+\stirgeGhouls
 
 \paragraph{If the stirges sting \pgls{pc},}
 then the \gls{pc} contracts Breathrot.
 This may clue them into the fact that \gls{traitor} came here before.%
 \footnote{\label{broTheftRef}Check \gls{segment} \vref{rottenBreath} of \nameref{entitlement}.}
 
-\stirgeGhouls
+\ghoul[\npc{\T[9]\D}{Ghouls}]
 
 \mapentry[antHall]{The Hallway}
 
@@ -83,6 +83,12 @@ Anyone saying a prayer of gratitude to their matrilineal lineage in front of the
 Further along, two empty pedestals show where old treasures once stood, before \gls{sewerking} pilfered them.%
 \footref{broTheftRef}
 
+\boxPair{
+  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
+}{
+  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
+}
+
 \mapentry[antBasilisk]{the Preserved \Glsfmttext{basilisk}}
 
 \Gls{necromancer} felled \pgls{basilisk} recently, then raised it as a ghoul.
@@ -92,7 +98,7 @@ This armour is not well-made, so it falls apart once hit.
 Each hit removes the armour \textit{on that \gls{natural}}, so if someone hits it while rolling a `10', then any more rolls of `10' will ignore the \gls{basilisk}'s armour.
 
 The plate armour is only \textit{Partial}, so any rolls which hit 3 steps above the \gls{dr} can bypass this armour.
-However, it still has its natural armour, and the \gls{dr} from undeath.%
+However, at the Margin of only 3, it still has \gls{dr}~5 from its natural armour, and the \gls{dr} from undeath.%
 \exRef{core}{Core Rules}{bandingArmour}
 
 \undeadBasilisk
@@ -110,12 +116,6 @@ The door has a massive, brass lock, with the ornate markings of a Dwarvish artis
 It stopped functioning about a century ago.
 \Gls{necromancer} relies on fear to keep the prisoners inside, which works better than locks.
 As the prisoners enter, the door shuts and the hungry dead outside can no longer see them, so they leave the doors alone (ghouls are mostly blind, and entirely incurious).
-
-\boxPair[t]{
-  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
-}{
-  \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
-}
 
 \mapentry[necroGhasts]{Ghast Spotters}
 

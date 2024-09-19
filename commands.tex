@@ -243,15 +243,17 @@
 
 
 \newcommand{\undeadBasilisk}{
-  \Animal{\npc{\D\A}{Undead \Glsfmttext{basilisk}}}%
+  \Person{\npc{\D\A}{Undead \Glsfmttext{basilisk}}}%
   {{5}{2}{2}}% BODY
-  {1}% WITS
+  {{-7}{-1}{-7}}% MIND
   {
     \set{Athletics}{2}
     \set{Brawl}{2}
+    \partialplate
   }% SKILLS
-  {}% KNACKS
-  {\undead \hide{4} \quadruped}% ABILITIES
+  {\unstoppable}% KNACKS
+  {}% EQUIPMENT
+  {\undead \hide{5} \hexapod}% ABILITIES
 }
 
 \newcommand\thornSeneschal{

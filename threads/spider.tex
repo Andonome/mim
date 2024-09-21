@@ -12,7 +12,11 @@ In short, she has become \pgls{dryad}.
 
 Over the course of these encounters, \gls{spiderqueen} becomes progressively more irritating to the troupe and the local area, until the players finally happen upon her lair.
 
-\Glspl{crawler} hibernate over \gls{cTwo}, so if your game takes place around \gls{cOne}, and \gls{fenestra}'s Winter is about to hit, skip this \gls{sq} until \gls{fenestra} returns to the \gls{ainumar}'s warmth in \gls{cThree}.
+\ifnum\value{cycle}>1
+  \Glspl{crawler} hibernate over \gls{cTwo}, so if your game takes place around \gls{cOne}, and \gls{fenestra}'s Winter is about to hit, just run \gls{segment} \ref{spiderDreams}, and leave the rest until \gls{fenestra} returns to the \gls{ainumar}'s warmth in \gls{cThree}.
+\else
+  \input{threads/hibernation.tex}
+\fi
 
 \sqpart{Roads}% AREA
 {\squash~Luckiest Trader Alive}% NAME
@@ -368,4 +372,33 @@ She destroys two more \glspl{village}, then wanders off to find something else t
   \input{config/spells/Fire2.tex}
   \setcounter{enc}{3}
 ]
+
+\ifnum\value{cycle}>3
+  \input{threads/hibernation.tex}
+\fi
+
+
+\sqpart{Town}% AREA
+{\squash~Natural Balance}% NAME
+{The lack of \glsfmtplural{crawler} have lead to a growth in griffins}% SUMMARY
+
+Play this part only if \gls{spiderqueen} and a significant number of \glspl{crawler} die.
+
+\Gls{greyLibrarian}%
+\footnote{Find her \vpageref{greyLibrarian}.}
+accosts the troupe on the streets, asking how many griffins they've seen, how many others have seen, how many feathers they've seen, and so on.
+
+\begin{speechtext}
+  As so many \glspl{crawler} died, the local griffin populations have grown to\ldots well, `monstrous' proportions.
+
+  Frightful!
+
+  Skies are no longer safe!
+
+  Maybe we could plant some eggs around the forest.
+
+  Could you track down some \glspl{crawler} eggs, and just spread them about the forest, until the bioarachnid balance restores?
+\end{speechtext}
+
+For the next \gls{cycle}, replace all \gls{crawler} encounters with $1D6$ griffins.
 

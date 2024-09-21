@@ -27,12 +27,19 @@ makes a good default, especially for the first session.
 It sits on a semi-popular road, so travellers and traders often come by to stay the night, and complain about the fact they have nowhere to put their horses.
 If the troupe happen to be here when that happens, they'll have to stay outside, with lit fires all around the \gls{broch}, to make sure the horses stay safe (people value horses far more than \gls{guard} Fodder).
 
-The current \gls{cycle} is \showCycle, and the weather is \showTemperature.
+The current \gls{cycle} is \showCycle, and the wind feels \showTemperature.
+\ifcase\value{temperature}%
+  \Gls{snow} \glsdesc{snow}.
+\or%1
+\or%2
+\else%3
+  \Glspl{heatwave} \glsdesc{heatwave}.
+\fi%
 
 \subsubsection{Missions}
 come from the \gls{jotter}, in room \ref{cinderThree}.%
 \exRef{judgement}{Judgement}{NGmissions}
-These might be easy (accompany these traders), or more challenging (guard that \gls{village} for a week), but once they step onto the road, they should have a little freedom to engage with the various \glspl{sq} before long.
+These might be easy (\textit{accompany these traders}), or more challenging (\textit{guard that \gls{village} for a week}), but once they step onto the road, they should have a little freedom to engage with the various \glspl{sq} before long.
 
 The \gls{broch} contains:
 

@@ -92,7 +92,9 @@ their characters should spot them immediately.
 
 As before, \gls{spiderqueen} waits in the distance, and flees at the first sign of trouble.
 
-\chitincrawler[\npc{\A\T[6]}{\arabic{noAppearing} \Glsfmtplural{crawler}}]
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
+
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
 
 \sqpart{Forest}% AREA
 {The Arachnid Double Cross}% NAME
@@ -151,7 +153,7 @@ the \glspl{crawler} all stop to feed.
 
 \end{nametable}
 
-\chitincrawler[\npc{\A\T[3]}{3 \Glsfmtplural{crawler}}]
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
 
 \widePic[t]{Dyson_Logos/ruined_village}
 
@@ -193,9 +195,9 @@ However, inside each of the four farmhouses, rooms are filled wall-to-wall with 
     One male and one female \gls{crawler}.
 \end{enumerate}
 
-\chitincrawler[\npc{\A\T[3]}{Male \Glsfmtplural{crawler}}]
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
 
-\chitincrawler[\npc{\A\T[3]}{Female \Glsfmtplural{crawler}}]
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
 
 \Gls{spiderqueen} herself has since moved away and left her creatures to multiply.
 
@@ -356,7 +358,9 @@ Two of the \glspl{crawler} will arrive to attack each round, but once \gls{spide
 
 \gnome[\NPC{\Gn\M}{Mayelo}{Creepy}{Scratches Adams apple}{to double-check the Maths}]
 
-\chitincrawler[\npc{\A\T[6]}{\Glsfmtplural{crawler}}]
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
+
+\chitincrawler[\npc{\T[3]\A\ifnum\value{Strength}>4\F\else\M\fi}{\Glsfmtplural{crawler}}]
 
 \paragraph{Success} means \gls{spiderqueen} has been killed or quelled.
 If she's damaged and her chitinous children pushed back, she flees to seek new adventures elsewhere, and without killing random villagers.

@@ -4,7 +4,7 @@
 \noindent
 The \glspl{wolfhead} want to find the \gls{shadowGate}.
 Unfortunately, they lack manpower and finances.
-\Gls{southCook} has plans for gaining wealth (covered in \nameref{troubleAle}, \vpageref{troubleAle}).
+\Gls{southCook} has plans for gaining wealth (covered in \nameref{troubleAle}, \autopageref{troubleAle}).
 
 Over the course of this \gls{sq}, the troupe will meet the various members of the \gls{wolfhead}, and form allies or enemies.
 
@@ -57,7 +57,7 @@ And no matter where the \glspl{pc} decide to travel through the forest, they stu
   Currently, he thinks a magical gateway lies in tunnels underneath \gls{greentower}, or that a gateway lies close to this tower.
   He has commissioned men from a nearby \gls{village} to work as masons, and start rebuilding \gls{greentower}, so he can use it as a base of operations.%
   \footnote{You'll have to play this one by ear.
-  If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\vpageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
+  If \gls{southSeeker} has already found the magical gate in `\nameref{old_alchemy_basement}' (\autopageref{old_alchemy_basement}), then he must be looking for the other gate, behind the mountains.
   Or if he's found the latter already, he must be searching for the former.
   And if he's found both, then he's checking in on his half-way house\ldots unless \gls{greentower} isn't half way between anything, in which case\ldots you'll figure something out.}
 \end{exampletext}
@@ -68,7 +68,7 @@ then \gls{southSeeker} has deduced the proper location, and will use this as a h
 \paragraph{If the gateways lie nowhere remotely close to the tower,}
 \gls{southSeeker} will soon realize this, and leave the tower abandoned; but he will never forget its location and potential uses.
 
-Check \vpageref{green_tower} for details on \gls{greentower}.
+Check \autopageref{green_tower} for details on \gls{greentower}.
 
 \sqpart{Roads}% AREA
 {New Friends}% NAME
@@ -134,8 +134,6 @@ She will act on the spur of the moment, at just the right time, and it will prob
 
 \humanarcher[\npc{\T[3]\Hu}{8 Archers}]
 
-\southSmith[\npcQuote{You don't need to trust us to speak politely.  Can we start again?}\label{southSmith}]
-
 Of course, the farmers are aware of the dangers, and are keeping \pgls{vigil}.
 Sneaking up requires a \roll{Dexterity}{Stealth} roll against their \roll{Wits}{Vigilance} (\tn, with +2 if snowing).
 
@@ -149,6 +147,8 @@ they overhear the farmers demanding to know what they're doing out here in the f
 
 \Gls{southSmith} isn't lying so that people will believe him.
 He's lying so he doesn't have to tell anyone what he's doing, and so that the farmers have something to say when people ask them where they've been.
+
+\southSmith[\npcQuote{You don't need to trust us to speak politely.  Can we start again?}\label{southSmith}]
 
 \paragraph{If the \glspl{pc} engage,}
 
@@ -194,12 +194,6 @@ How they react depends entirely on their previous dealings.
 The \gls{wolfhead} have located \gls{shadowVault}, so they journeyed out to find it, each of them with six days' worth of rations.
 But before they reached the \gls{edge} six griffins surrounded them.
 
-% Show South Smith again, but not if he's on the facing page.
-\vpagerefnearby{southSmith}{}{
-  \setcounter{wounds}{5}
-  \southSmith
-}
-
 \Gls{southSmith}'s arm bleeds from a nasty wound, and \gls{southCook} isn't doing much better.
 
 \setcounter{wounds}{3}
@@ -207,8 +201,15 @@ But before they reached the \gls{edge} six griffins surrounded them.
 
 \vpagerefnearby{southRogue}{}{
   \setcounter{wounds}{2}
-
   \southRogue
+}
+
+%\setcounter{wounds}{5}
+%\southSmith
+% Show South Smith again, but not if he's on the facing page.
+\vpagerefnearby{southSmith}{}{
+  \setcounter{wounds}{5}
+  \southSmith
 }
 
 After this \gls{segment}, the \glspl{wolfhead} return to \gls{town} to rest and heal, at \gls{town}'s \gls{templeOfSickness}.

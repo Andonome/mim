@@ -122,14 +122,19 @@ Keywords={TTRPG,RPG,roleplaying}
 \input{forest/basement.tex}
 \input{forest/shadow_gate.tex}
 
-%
 %%%%%%%%%%%%%%%%%%
-%
 
-\handout{town_handouts}
-\handout{town_handouts}
-\handout{town_handouts}
-\handout{maps_handouts}
+\renewcommand\marketDoula{\Glsentrytext{forestpriest}}
+\renewcommand\marketBard{\Glsentrytext{warningbard}}
+\renewcommand\marketTavernOne{\Glsentrytext{pig}\renewcommand\npcsymbol{\glsentrysymbol{templeOfSickness}}}
+\renewcommand\marketInnTwo{\Glsentrytext{whitehorse} Inn}
+\renewcommand\marketMixer{\Glsentrytext{healerLeader}}
+\renewcommand\marketFence{\Glsentrytext{sewerking}}
+\renewcommand\marketWeaponsSeller{\Glsentrytext{captain}}
+\handout{config/markets/town}
+\handout{config/markets/town}
+\handout{config/markets/town}
+\handout{config/markets/town}
 
 \glsresetall
 \label{townStart}

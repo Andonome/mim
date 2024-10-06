@@ -4,7 +4,7 @@
 |:-------------------------------------|
 | [Download][download]                 | 
 | [Core Book][core]                    | 
-| [Character Sheets][resources]        |
+| [Character Sheets][cs]               |
 | [Condensed Rules][rules]             |
 | [Introduction Module][oneshot]       |
 | [Email an issue][issues email]       |
@@ -50,7 +50,7 @@ And if the perimeter falls, a deluge of predators will feast on the soft inner a
 
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/Missions_in_Maitavale.pdf?job=build
-[resources]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/resources.pdf?job=build
+[cs]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/character_sheets.pdf?job=build
 [rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/booklet.pdf?job=build
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-mim-46332255-issue-@incoming.gitlab.com

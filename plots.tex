@@ -69,6 +69,7 @@ Pick \pgls{sq} -- perhaps `\nameref{wolfHeads}' or `\nameref{sewerking}' -- and 
 \end{multicols}
 
 \printAllSideQuests{Forest}
+\label{sqList}
 
 \begin{multicols}{2}
 \noindent
@@ -87,7 +88,7 @@ They, or the \glspl{pc}, will eventually find the remains of \gls{archwarp} and 
 
 
 \printAllSideQuests{Roads}
-\label{sqList}
+\label{sqListRoads}
 
 \begin{multicols}{2}
 \noindent
@@ -169,21 +170,21 @@ Of course, this may change soon, as \gls{sewerthief} will gently inquire how the
 
 \begin{multicols}{2}
 
+\subsection{Character Introductions}
+
 \subsubsection{In Established \Glsfmtplural{campaign}}
 you might open with the false promise of an idyllic land, so free of crime that the \gls{templeOfBeasts} has no criminals to use as \gls{guard} \glspl{fodder}, and so rich that nobody signs up as \pgls{guard} \gls{soldier}.
 
 \begin{speechtext}
   It's your lucky day!
   The \gls{warden}'s received a letter from \gls{town}, in \gls{valley}, saying they don't have enough \glspl{guard}.
-  \Gls{townmaster} has paid a handsome sum to have a few more sent over to guard the \gls{edge} around \gls{valley}.
+  \Gls{townmaster} has paid a handsome sum to have a few more sent over to guard \gls{valley}.
 
   It's a lovely place; crime-free, and open fields as you can see from a mountain-top.
   Yous can take the first boat upriver, and ask for orders when you get to \gls{lochside}.
 
   Have fun, and try not to get bored.
 \end{speechtext}
-
-Of course, \gls{valley}, \gls{southDale}, and \gls{whiteplains} will have to enter your map, from one side or another.
 
 \subsubsection{New \Glsfmtplural{campaign}}
 should begin as usual; give an overview of \gls{fenestra},%
@@ -212,5 +213,43 @@ who enter the \gls{guard} due to being convicted of a crime
   The character comes from a distant land, North of \gls{southDale}.
   The player should describe that settlement in any way they please, although nobody is required to believe it.
 \end{dlist}
+
+\subsection{The Opening Scene}
+
+Find \nameref{cinderfilch} \vpageref{cinderfilch} and give the players the \gls{broch}'s handout image, then point to their lodgings in room~\ref{cinderBeds}.
+
+\begin{boxtext}
+  Dawn has arrived, giving you the first sight of the surrounding area in daylight.
+  The outside air feels \showTemperature.
+  The forest dominating your vision, despite the \gls{broch}'s height.
+
+  Two roads lead out -- the South road, which you came from last night, and the West road, which lies empty.
+  Below, a droning noise indicates that the piper is calling \gls{sylf}'s children to the \gls{broch}.
+\end{boxtext}
+
+The sound of the pipes has a 2-in-6 chance of attracting a wandering \gls{monster} from past the \gls{edge}.
+The \glspl{soldier} in room~\ref{cinderBows} will kill whatever emerges, but you can still make the encounter roll and note what the \glspl{pc} see (if anything).
+
+With the game started, just follow the standard cycle from the \textit{Book of Judgement}:
+
+\begin{enumerate}
+  \item
+  The characters receive a mission, perhaps from \Gls{ranger}~\composeHumanName\ (room~\ref{cinderUpper}) or \Gls{jotter}~\composeHumanName\ (room~\ref{cinderOffice}).
+  Find the missions in the \textit{Book of Judgement}\iftoggle{judgement}{ (\autopageref{NGmissions})}{}.
+  \item
+  Roll to find the weather and next encounter \iftoggle{judgement}{(\textit{Book of Judgement}, pages \pageref{weather} and \pageref{randomEncounters})}{on the \gls{gm}-shield}.
+  \item
+  Check the next available \gls{sq} \gls{segment} (\vpageref{sqListRoads}).
+\end{enumerate}
+
+The first available \gls{segment} on the roads is
+\ifnum\value{cycle}>2%
+  `\nameref{spiderSong}', where a trader arrives from the South after a harrowing encounter, delighted to be alive, and \emph{at the same time} one of the \glspl{soldier} notes a wanted poster on the \gls{broch}'s wall which kicks off `\nameref{wolfHeads}', and \emph{at the same time} \gls{traitor} arrives on horseback from the West to tell the \glspl{pc} to immediately abandon their mission and help cure his disease.
+\else
+  `\nameref{wolfHeads}', as the \glspl{pc} spot a wanted poster; then only a mile up the road, bandits attack in the first \gls{segment} of the `\nameref{desperatemeasures}' \gls{sq}.
+\fi
+
+That should be enough to convey the feeling of `too much to do, never enough time'.
+And it marks a good moment to remind the players that the \glspl{pc} must return to civilization before the session's end.
 
 \end{multicols}

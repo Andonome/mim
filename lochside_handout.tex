@@ -69,31 +69,31 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 \randomize
 \begin{nametable}[XXXXXX]{\composeHumanName's \Glsentrytext{whiteplains} Imports}
 
-  \textbf{Name} & \textbf{Attack Bonus} & \textbf{Damage Bonus} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \textbf{Name} & \textbf{\scshape Att} & \textbf{\scshape Dam} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  \Dagger\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{2} \\
+  \Dagger\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weaponWeight} & \mkPrice{2} \\
 
-  \javelin\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{1} \\
+  \javelin\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{1} \\
 
-  \glaive\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{7} \\
+  \glaive\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{7} \\
 
-  \greatsword\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{12} \\
+  \greatsword\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{12} \\
 
-  \maul\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{4} \\
+  \maul\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{4} \\
 
-  \shortsword\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{6} \\
+  \shortsword\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{6} \\
 
-  \poleaxe\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{8} \\
+  \poleaxe\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{8} \\
 
-  \quarterstaff\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{8} \\
+  \quarterstaff\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{8} \\
 
-  \rapier\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{17} \\
+  \rapier\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{17} \\
 
-  \spear\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
+  \spear\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
 
-  \longsword\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{9} \\
+  \longsword\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{9} \\
 
-  \warhammer\weaponName & \arabic{weaponBonus} & \arabic{damage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
+  \warhammer\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
 
 \end{nametable}
 
@@ -108,13 +108,13 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 \renewcommand\npcsymbol{\glsentrysymbol{sylf}}
 \begin{nametable}[XYYYXl]{At \composeHumanName, the Fletcher's}
 
-  \textbf{Projectile} & Attack Bonus & \textbf{Damage} & \textbf{\Gls{ap}} & \textbf{Weight} & \textbf{Cost} \\\hline
+  \textbf{Projectile} & \textbf{\scshape Att} & \textbf{\scshape Dam} & \textbf{\Glsentrytext{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Longbow &  +1  & +1 & 1~\glspl{ap} & 1  & \mkPrice{8}  \\
+  Longbow &  +1  & +1 & 3~\glspl{ap} & 1  & \mkPrice{8}  \\
 
-  Longbow &  +2  & +2 & 2~\glspl{ap} & 1  & \mkPrice{12}  \\
+  Longbow &  +2  & +2 & 4~\glspl{ap} & 1  & \mkPrice{12}  \\
 
-  Longbow &  +1  & +1 & 1 & 1~\glspl{ap} & \mkPrice{8}  \\
+  Longbow &  +3  & +1 & 5~\glspl{ap} & 1 & \mkPrice{8}  \\
 
   Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{14}  \\
   \hline

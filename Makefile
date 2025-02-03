@@ -17,7 +17,7 @@ images/extracted/shadow_gate_map.svg:| images/extracted
 $(DBOOK): $(EXTRACTS) EXTERNAL LOCTEX STYLE_FILES forest threads raising roads storm tailend town | qr.tex
 	@$(COMPILER) main.tex
 
-images/extracted/cover.jpg: images/Irina/greylands.jpg images/extracted/inclusion.tex
+images/extracted/cover.jpg: images/Unknown/sixshadow.jpg images/extracted/inclusion.tex
 	$(CP) $< $@
 $(DROSS)/$(BOOK)_cover.pdf: config/cover.tex cover.tex images/extracted/cover.jpg $(DBOOK)
 	$(RUN) -jobname $(BOOK)_cover $<

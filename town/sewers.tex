@@ -154,7 +154,7 @@ Despite its abilities, the \gls{bskulls} only has an interest in casting one spe
   They sit in the cells, hearing the unnatural gibbering of the chatty \gls{artefact}, until they die, and start to feel the unique hunger of undeath.
 
   The \glspl{diggers} plan to have the ghasts storm \gls{town}'s citadel, once they have enough.%
-  \footnote{See \vpageref{ghastPlan} for the plan.}
+  %\footnote{See \vpageref{ghastPlan} for the plan.}
 \end{exampletext}
 
 Each storage cell has a bar across the front, and a few ghasts, stuffed in tightly.
@@ -217,8 +217,8 @@ Any disturbance will set off a lot of the \glspl{bedshroom}, forcing anyone who 
 \mapentry[sewerWaterHall]{Drowned Hallway}
 
 All the waste and filth from \nameref{stationDungeon} flows down a grate, and lands here.
-The frigid water inflicts \pgls{ep}, and the filth demands a \roll{Strength}{Medicine} roll (\tn[10]) to avoid contracting a disease which slowly paralyses them.%
-\exRef{judgement}{Judgement}{Corpse Hands}
+The frigid water inflicts \pgls{ep}, and the filth demands a \roll{Strength}{Medicine} roll (\tn[10]) to avoid contracting
+\iftoggle{judgement}{Corpse Hands (see the book \textit{Judgement}, \autopageref{Corpse Hands})}{a disease which slowly paralyses them}.
 The disease will not take effect for $1D6$ \glspl{interval}.
 
 The roof lowers to meet the water, forcing heads to duck under.
@@ -235,7 +235,10 @@ A tunnel leads straight upwards, and up to the grate sitting in the \nameref{sta
 
 Neither \gls{sewerking}, nor anyone else, have any idea this tunnel exists.
 
-However, if \gls{sewerking} has rescued his brother (see \autopageref{banditsCaught}), he finds out about this tunnel, then later traps it by placing two ghasts down here, chained to heavy weights.
+\paragraph{However, if \gls{sewerking} has rescued his brother}
+(see \autopageref{banditsCaught}), he finds out about this tunnel, then later traps it by placing two ghasts down here, chained to heavy weights at the bottom of the \nameref{sewerWaterHall}.
+The ghasts were recently \glspl{warden} of Twolisk.
+\index{Twolisk}
 
 \newGhast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
 
@@ -292,7 +295,7 @@ The room contains:
   A Wolf-Run potion.
   \item
   Many books.%
-  \footnote{The books cover history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erend\"e'), and instructions on hosting a dinner party (it takes 280 pages to say `use seasoning`, and `have an anecdote').}
+  %\footnote{The books cover history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erend\"e'), and instructions on hosting a dinner party (it takes 280 pages to say `use seasoning`, and `have an anecdote').}
 \end{itemize}
 
 \talisman{Wolf-Run}% Name

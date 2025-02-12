@@ -24,8 +24,14 @@ $(DROSS)/$(BOOK)_cover.pdf: config/cover.tex cover.tex images/extracted/cover.jp
 cover.pdf: $(DROSS)/$(BOOK)_cover.pdf
 	$(CP) $< $@
 
-creds:
+targets += cover.pdf
+
+images/extracted/necromancer.png: images/Decky/necromancer.svg
+	magick $< $@
+
+.PHONY: creds
+creds: art.pdf ## Arist showcase
+art.pdf: images/extracted/necromancer.png
 	cd images && pandoc artists.md -o ../art.pdf
 
-clean:
-	$(CLEAN) $(EXTRACTS)
+output += art.pdf

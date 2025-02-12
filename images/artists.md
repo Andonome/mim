@@ -15,7 +15,7 @@ Dyson has some fantastic classic fantasy maps, many of which are available with 
 I was gifted this image of a magus with a moggy a long time ago by a kindly internet stranger, and cannot track down the source.
 It'd be great to get the name back if anyone knows.  
 
-![Decky](Decky/necromancer.svg)
+![Decky](extracted/necromancer.png)
 
 Deckydraws: https://www.fiverr.com/deckydraws
 

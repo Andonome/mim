@@ -18,7 +18,7 @@ $(DBOOK): $(EXTRACTS) EXTERNAL LOCTEX STYLE_FILES forest threads raising roads s
 	@$(COMPILER) main.tex
 
 images/extracted/bandit_camp.jpg: images/Irina/greylands.jpg
-	magick $< -crop 1000x250+20+100 $@
+	magick $< -crop 1000x250+20+160 $@
 images/extracted/town_wide.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1400x210+200+200 $@
 images/extracted/lochside.jpg: images/Irina/greylands.jpg
@@ -30,7 +30,7 @@ images/extracted/old_temple.jpg: images/Irina/greylands.jpg
 images/extracted/basement.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1000x130+10+30 $@
 images/extracted/cinderfilch.jpg: images/Irina/greylands.jpg
-	magick $< -crop 1000x130+580+50 $@
+	magick $< -crop 1000x130+594+50 $@
 images/extracted/sixshadow.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1000x130+590+600 $@
 images/extracted/gorge.jpg: images/Irina/greylands.jpg

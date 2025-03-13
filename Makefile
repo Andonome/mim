@@ -17,6 +17,28 @@ images/extracted/shadow_gate_map.svg:| images/extracted
 $(DBOOK): $(EXTRACTS) EXTERNAL LOCTEX STYLE_FILES forest threads raising roads storm tailend town | qr.tex
 	@$(COMPILER) main.tex
 
+images/extracted/bandit_camp.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x250+20+100 $@
+images/extracted/town_wide.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1400x210+200+200 $@
+images/extracted/lochside.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x170+600+310 $@
+images/extracted/redfall.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x150+250+340 $@
+images/extracted/old_temple.jpg: images/Irina/greylands.jpg
+	magick $< -crop 900x100+10+640 $@
+images/extracted/basement.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x130+10+30 $@
+images/extracted/cinderfilch.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x130+580+50 $@
+images/extracted/sixshadow.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x130+590+600 $@
+images/extracted/gorge.jpg: images/Irina/greylands.jpg
+	magick $< -crop 1000x140+600+530 $@
+
+
+$(DBOOK): images/extracted/bandit_camp.jpg images/extracted/town_wide.jpg images/extracted/lochside.jpg images/extracted/redfall.jpg images/extracted/old_temple.jpg images/extracted/basement.jpg images/extracted/cinderfilch.jpg images/extracted/sixshadow.jpg images/extracted/gorge.jpg
+
 images/extracted/cover.jpg: images/Unknown/sixshadow.jpg images/extracted/inclusion.tex
 	$(CP) $< $@
 $(DROSS)/$(BOOK)_cover.pdf: config/cover.tex cover.tex images/extracted/cover.jpg $(DBOOK)

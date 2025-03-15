@@ -5,7 +5,10 @@ all: $(RELEASE)
 config/vars:
 	@git submodule update --init
 
-EXTRACTS = images/extracted/town.svg images/extracted/shadow_gate_map.svg
+SVG_EXTRACTS = town shadow_gate_map
+EXTRACTS += $(patsubst %, images/extracted/%.svg, $(SVG_EXTRACTS))
+JPG_EXTRACTS = bandit_camp town_wide lochside redfall old_temple basement cinderfilch sixshadow gorge
+EXTRACTS += $(patsubst %, images/extracted/%.jpg, $(JPG_EXTRACTS))
 
 images/extracted:
 	mkdir -p images/extracted
@@ -35,9 +38,6 @@ images/extracted/sixshadow.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1000x130+590+600 $@
 images/extracted/gorge.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1000x140+600+530 $@
-
-
-$(DBOOK): images/extracted/bandit_camp.jpg images/extracted/town_wide.jpg images/extracted/lochside.jpg images/extracted/redfall.jpg images/extracted/old_temple.jpg images/extracted/basement.jpg images/extracted/cinderfilch.jpg images/extracted/sixshadow.jpg images/extracted/gorge.jpg
 
 images/extracted/cover.jpg: images/Unknown/sixshadow.jpg images/extracted/inclusion.tex
 	$(CP) $< $@

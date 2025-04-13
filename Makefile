@@ -1,5 +1,13 @@
 EXTERNAL_REFERENTS = core stories judgement
 
+local_directories = threads raising storm tailend town roads forest
+
+local_texfiles = $(foreach dir, $(local_directories), \
+	$(wildcard $(dir)/*) \
+)
+
+DEPS += $(local_texfiles)
+
 include config/vars
 
 all: $(RELEASE)
@@ -19,7 +27,7 @@ images/extracted/town.svg: images/extracted
 images/extracted/shadow_gate_map.svg:| images/extracted
 	inkscape images/Dyson_Logos/shadow_gate.svg --export-id-only --export-id=layer1 -l --export-filename images/extracted/shadow_gate_map.svg
 
-$(DBOOK): $(EXTRACTS) $(AUX_REFERENCES) EXTERNAL LOCTEX STYLE_FILES forest threads raising roads storm tailend town | qr.tex
+$(DBOOK): $(DEPS) $(EXTRACTS) $(AUX_REFERENCES) EXTERNAL LOCTEX STYLE_FILES | qr.tex
 	@$(COMPILER) main.tex
 
 images/extracted/bandit_camp.jpg: images/Irina/greylands.jpg

@@ -131,3 +131,39 @@ Material:
 
 \printindex
 
+\section{\Glsfmtplural{segment} by \Glsfmttext{region}}
+
+If you prefer to track all of the \glspl{segment} from one place, you can use this list, instead of the list under each \gls{region}.
+
+\bigLine
+
+\begin{multicols}{2}
+
+\raggedbottom
+
+\needspace{5\baselineskip}
+\subsection{Forest \Glsfmtplural{segment}}
+
+\Gls{region} covered \vpagerefrange{forestStart}{forestEnd}.
+
+\printSideQuestsInRegion{Forest}
+
+\bigLine
+
+\needspace{5\baselineskip}
+\subsection{Roads \Glsfmtplural{segment}}
+
+\Gls{region} covered \vpagerefrange{roadsStart}{roadsEnd}.
+
+\printSideQuestsInRegion{Roads}
+
+\bigLine
+
+\needspace{12\baselineskip}
+\subsection{\Glsfmttext{town} \Glsfmtplural{segment}}
+
+\Gls{region} covered \vpagerefrange{townStart}{townEnd}.
+
+\printSideQuestsInRegion{town}
+
+\end{multicols}

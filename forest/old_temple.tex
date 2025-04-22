@@ -1,13 +1,4 @@
-\section{\Glsfmttext{oldTemple}}
-\label{necromancers_lair}
-
-\mapPic{b}{extracted/old_temple}{
-  \Large \glsentrysymbol{eldren}/45/20,
-}
-
-\begin{multicols}{2}
-
-\mapPic[\Large]{t}{Dyson_Logos/qualme_temple}{
+\mapPic[\Large]{b}{Dyson_Logos/qualme_temple}{
   \ref{antGrounds}/17/10,
   \Large S/28/46,
   \ref{antHall}/34/53,
@@ -24,6 +15,15 @@
   \ref{antStudy}/17/45,
   \nameref{antStudy}/17/40,
 }
+
+\section{\Glsfmttext{oldTemple}}
+\label{necromancers_lair}
+
+\mapPic{b}{extracted/old_temple}{
+  \Large \glsentrysymbol{eldren}/45/20,
+}
+
+\begin{multicols}{2}
 
 \noindent
 Priests of \gls{eldren} lived here at the side of \pgls{village} some centuries ago, when \gls{lostcity} still stood.
@@ -57,6 +57,11 @@ The grass has grown long, the trees' fruit comes and goes according to the seaso
 
 A hundred broken arrow parts litter the area, as \gls{necromancer} practices with his bow whenever he has the energy.
 
+\ghoul[\npc{\T[9]\D}{Ghouls}]
+
+\stirgeGhouls
+
+\null
 A swarm of stirges%
 \exRef{judgement}{Judgement}{stirge}
 has moved into the area, and made a home inside a ghoul (which hasn't the intelligence to remove the hive from his abdomen).
@@ -64,14 +69,10 @@ They feed a little from its dead flesh, and it continues to wander gormlessly, w
 As a result of their dead home, the stirges have become carriers for a nasty disease -- Breathrot.%
 \exRef{judgement}{Judgement}{Breathrot}
 
-\stirgeGhouls
-
 \paragraph{If the stirges sting \pgls{pc},}
 then the \gls{pc} contracts Breathrot.
 This may clue them into the fact that \gls{traitor} came here before.%
 \footnote{\label{broTheftRef}Check \gls{segment} \vref{rottenBreath} of \nameref{entitlement}.}
-
-\ghoul[\npc{\T[9]\D}{Ghouls}]
 
 \mapentry[antHall]{The Hallway}
 
@@ -87,7 +88,7 @@ Anyone saying a prayer of gratitude to their matrilineal lineage in front of the
 Further along, two empty pedestals show where old treasures once stood, before \gls{sewerking} pilfered them.%
 \footref{broTheftRef}
 
-\boxPair{
+\boxPair[t]{
   \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]
 }{
   \ghast[\npc{\T[2]\D}{\arabic{noAppearing} Ghasts}]

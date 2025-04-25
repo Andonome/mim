@@ -262,11 +262,16 @@
 
 \newcommand{\newGhast}[1][\npc{\D\Hu}{Ghast}]{
   \Person{#1}%
-    {{r3}{0}{0}}% BODY
+    {{rn1t2}{r0t1}{0}}% BODY
     {{rn1t2}{-1}{0}}% MIND
     {%
-      \set{Melee}{rn3t3}
-      \set{Athletics}{r3b}
+      \ifodd\value{r3b}
+        \set{Melee}{rn1t2}
+      \else
+        \set{Deceit}{rn1t2}
+      \fi
+      \set{Athletics}{r0t1}
+      \set{Academics}{rn3t3}
       \ifodd\value{r3}
         \set{Survival}{rn1t2}
       \else
@@ -274,8 +279,8 @@
       \fi
     }% SKILLS
     {}% KNACKS
-    {\lootJewellery}% EQUIPMENT
-    {}% ABILITIES
+    {Ragged orange samite robes\ifodd\value{r4b}, \lootJewellery\fi}% EQUIPMENT
+    {\undead}% ABILITIES
 }
 
 \newcommand\stirgeGhouls[1][\npc{\D\Hu}{Stirge-Infected Ghoul}]{

@@ -382,3 +382,54 @@
     You may ask three questions to identify each god, and each question may be directed only one god.
   \end{speechtext}
 }
+
+\newcommand\playCommentarySQ[1][b]{
+  \playCommentary[#1]{
+    \begin{description}
+      \item[Player 1:] We wanted to get to \gls{redfall} last time.
+      Did we make it?
+      \item[\glsentrytext{gm}:] Almost!
+      A few miles outside, just as the smoke from \gls{redfall} keep becomes visible, a caravan of traders joins you\ldots
+    \end{description}
+  }{
+    \noindent
+    Looking up the \gls{sq} list \vpageref{sqList:Roads}, the \gls{gm} finds the first available \gls{segment}:
+    %`\nameref{spiderSong}' \gls{sq} (\vpageref{spiderSong}).
+
+    \textit{`\nameref{spiderPt2}'}
+
+    \noindent
+    The `\squash' symbol shows it should be combined with the next available \gls{segment}:
+
+    \textit{`\nameref{sewerPt1}'}
+
+    \noindent
+    So the troupe will encounter both the `luckiest trader', and \gls{sewerking} (which makes sense, as traders often travel together).
+  }
+
+}
+
+\newcommand\playCommentaryMarket[1][b]{
+  \playCommentary{
+    \begin{description}
+      \item[Player 2:] Let's head straight to the market to sell the dead \gls{griffin}.
+      \item[\Glsentrytext{gm}:] You're approaching \gls{town} from the South road, through the graveyard.
+      A funeral procession's taking up an entire bridge and cows are taking up the other.
+      \item[Player 1:] Can't we just push through the cows?
+      \item[\Glsentrytext{gm}:] Sure, you all carry the corpse above your heads as you wade into the herd.
+      The cowbells clang around you, and behind the funeral procession lets out shocked shouts, and people asking what the hell is happening.
+      \item[Player 2:] Sounds like we need to investigate that.
+      Can I roll for Vigilance?
+      \item[\Glsentrytext{gm}:] No.
+      What's the character doing?
+    \end{description}
+  }{
+    When the first \gls{segment} in the `\nameref{sewerking}' \gls{sq} concludes, the \gls{gm} crosses it off, and marks the second \gls{segment} as ready -- `\sqr'.
+
+    Since the \glspl{pc} have entered \gls{town}, the \gls{gm} can immediately run the second \gls{segment} from the `\nameref{sewerking}'.
+
+    \textit{`\nameref{sewerPt2}'}
+
+    The \glspl{pc} might investigate this oddity, but this \gls{sq} will not continue until they exit \gls{town}, and return to the Roads \gls{region}.
+  }
+}

@@ -20,15 +20,11 @@ EXTRACTS += $(patsubst %, images/extracted/%.svg, $(SVG_EXTRACTS))
 JPG_EXTRACTS = bandit_camp town_wide lochside redfall old_temple basement cinderfilch sixshadow gorge
 EXTRACTS += $(patsubst %, images/extracted/%.jpg, $(JPG_EXTRACTS))
 
-images/extracted/:
-	mkdir $@
-
-
 images/extracted/%: images/extracted/
 
-images/extracted/town.svg: images/Dyson_Logos/town.svg images/extracted/
+images/extracted/town.svg: images/Dyson_Logos/town.svg
 	inkscape $< --export-id-only --export-id=layer5 -l --export-filename $@
-images/extracted/shadow_gate_map.svg: images/Dyson_Logos/shadow_gate.svg | images/extracted/
+images/extracted/shadow_gate_map.svg: images/Dyson_Logos/shadow_gate.svg
 	inkscape $< --export-id-only --export-id=layer1 -l --export-filename $@
 
 $(DBOOK): $(DEPS) $(EXTRACTS) $(AUX_REFERENCES) EXTERNAL LOCTEX STYLE_FILES | qr.tex
@@ -53,7 +49,7 @@ images/extracted/sixshadow.jpg: images/Irina/greylands.jpg
 images/extracted/gorge.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1000x140+600+530 $@
 
-images/extracted/cover.jpg: images/Unknown/sixshadow.jpg images/extracted/inclusion.tex
+images/extracted/cover.jpg: images/Unknown/sixshadow.jpg
 	$(CP) $< $@
 $(DROSS)/$(BOOK)_cover.pdf: config/cover.tex cover.tex images/extracted/cover.jpg $(DBOOK)
 	$(RUN) -jobname $(BOOK)_cover $<

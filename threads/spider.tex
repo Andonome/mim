@@ -16,7 +16,9 @@ Over the course of these encounters, \gls{spiderqueen} becomes progressively mor
   \Glspl{crawler} hibernate over \gls{cTwo} (\gls{fenestra}'s `Winter'), so if your game takes place around \gls{cOne} or \gls{cTwo}, just run \gls{segment} \ref{spiderDreams}, and leave the rest until \gls{fenestra} returns to the \gls{ainumar}'s warmth in \gls{cThree}.%
   \footnote{Check the main glossary \vpageref{fenestraGlosPreamble} for ana overview of the \glspl{cycle}.}
 \else
-  \input{threads/hibernation.tex}
+  \ifnum\value{cycle}<2
+    \input{threads/hibernation.tex}
+  \fi
 \fi
 
 \segment[\squash]{Roads}% AREA
@@ -381,7 +383,7 @@ She destroys two more \glspl{village}, then wanders off to find something else t
   \setcounter{enc}{3}
 ]
 
-\ifnum\value{cycle}>3
+\ifnum\value{cycle}>2
   \input{threads/hibernation.tex}
 \fi
 

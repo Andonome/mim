@@ -297,6 +297,7 @@
 \longnewglossaryentry{townmaster}{
   name={\Glsfmttext{warden} Prosity Grey},
   first={Prosity Grey},
+  prefix={\protect\Glsfmtshort{warden}\space},
   text={Prosity},
   type={people},
   category={people},
@@ -333,17 +334,17 @@
 }
 
 \newcommand\lochWarden[1][]{%
-  \humandiplomat[\NPC{\glsentrysymbol{lochWarden}}{\Glsfmtname{lochWarden}}{Pink, bald head, rosy-red cheeks, pale skin}{going silent then suddenly naming a distant bird by its call}{to become respected as \pgls{keeper}}#1]
+  \humandiplomat[\NPC{\glsentrysymbol{lochWarden}}{\Glsfmtname{lochWarden}}{Pink, bald head, rosy-red cheeks, pale skin}{going silent then suddenly naming a distant bird by its call}{to become as respected as \pglsxtrlong{keeper}}#1]
 }
 
 \longnewglossaryentry{alemaster}{
-  name={Fenspit},
+  name={\protect\Glsfmttext{chef}~Fenspit},
   type={people},
   prefix={\protect\Glsfmttext{chef}\space},
   category={people},
   parent={whitehorse},
   symbol={\F\Hu\glssymbol{abderian}},
-  description={-- Chef at \glsentrytext{whitehorse}, a local \glsentrytext{wheatGuild} establishment.
+  description={-- \glsfmttext{chef} at \glsentrytext{whitehorse}, a local \glsentrytext{wheatGuild} establishment.
   She hates the recent competition from the \glsentrytext{wheatGuild} of \glsentrytext{southDale}, and plans to destroy their reputation}
 }
 
@@ -414,13 +415,14 @@
 }
 
 \longnewglossaryentry{southSeeker}{
-  name={Kinbrine},
+  name={\protect\Glsfmttext{seeker}Kinbrine},
   prefix={\protect\Glsfmttext{seeker}\space},
   type={people},
   category={people},
   parent={wolfhead},
-  symbol={\M\Hu\glssymbol{yonder}},
-  description={-- \glsentrytext{seeker} to \glsentrytext{southDale}'s \glsentrytext{paperGuild}, here to collect information on \glsentrytext{lostcity}, and potentially reinstate \glsentrytext{shadowGate}, to bypass tax laws},
+  symbol={\glsentrysymbol{yonder}\M\Hu},
+  description={read about \glsfmttext{lostcity} in \glsfmttext{southDale}'s \glsfmttext{paperGuild}, and instigated the plan to search for \glsfmttext{shadowGate}, and use it to profit.
+  He hasn't worked out all the details yet, but he has a lot of thin clues and plans to follow all of them},
 }
 
 \newcommand\southSmith[1][]{
@@ -479,7 +481,8 @@
   category={people},
   parent={wolfhead},
   symbol={\F\Hu},
-  description={-- wreckless daughter to \pgls{warden} in \glsentrytext{southDale}, who ran away to join the \gls{guard}.
+  description={-- wreckless daughter to \pglsxtrlong{southDale} \glsfmttext{warden}.
+  She ran away to join the \glsfmttext{guard}.
   She sometimes means well, but tends to handle problems with fire too quickly},
 }
 
@@ -509,7 +512,7 @@
   category={people},
   parent={southDale},
   symbol={\M\Hu\glssymbol{sylf}},
-  description={grew up in \pgls{warden}'s house in \glsentrytext{southDale}, then joined the \glsentrytext{guard}, because nowhere else wanted him.
+  description={grew up in \pglsxtrlong{warden}'s house in \glsentrytext{southDale}, then joined the \glsentrytext{guard}, because nowhere else wanted him.
 
   Currently, he's on the hunt for \glsentrytext{southRogue}, and hoping the collect the reward and receive a promotion.
   He's already failed to prosecute \glsentrytext{southSeeker} for killing \glsfmtplural{basilisk} without paying the \glsentrytext{templeOfBeasts}, and wants vengeance on the \glsfmtplural{wolfhead} in general},
@@ -709,7 +712,7 @@
   first={Burke \glsentrytext{whiteplains}},
   type={people},
   category={people},
-  symbol={\M\Hu\glsentrysymbol{paik}},
+  symbol={\glsentrysymbol{paik}\M\Hu},
   parent={whiteBandits},
   description={was banished from \glsentrytext{whiteplains} for his use of forbidden alchemy (such as the Life \glsentrytext{sphere}) and self-righteous speeches.
 
@@ -760,7 +763,7 @@
 }
 
 \longnewglossaryentry{sewerking}{
-  name={Hare},
+  name={Hare \Glsfmttext{whiteplains}},
   first={Hare \glsentrytext{whiteplains}},
   type={people},
   category={people},
@@ -821,7 +824,7 @@
 \longnewglossaryentry{hungrywarden}{
   name={Gaulshine},
   text={Gaulshine},
-  first={\protect\Glsfmttext{warden} Gaulshine \Glsfmttext{redfall}},
+  first={\protect\Glsfmtshort{warden} Gaulshine~\Glsfmttext{redfall}},
   type={people},
   category={people},
   symbol={\glsentrysymbol{paik}\M\Hu},

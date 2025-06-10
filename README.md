@@ -42,7 +42,7 @@ And if the perimeter falls, a deluge of predators will feast on the soft inner a
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/Missions_in_Maitavale.pdf?job=build
 [cs]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/character_sheets.pdf?job=build
-[rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/booklet.pdf?job=build
+[rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/rules.pdf?job=build
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-mim-46332255-issue-@incoming.gitlab.com
 [core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build

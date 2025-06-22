@@ -8,6 +8,8 @@ local_texfiles = $(foreach dir, $(local_directories), \
 
 DEPS += $(local_texfiles)
 
+dependencies += magick
+
 include config/vars
 
 all: $(RELEASE)

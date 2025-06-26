@@ -28,8 +28,6 @@ Currently, \gls{pig} hides the \glspl{diggers} in rooms underneath, as they help
 \end{boxtext}
 \label{pigCat}
 
-\humanmaid[\npc{\T[3]\Hu}{Loyal Patrons}]
-
 \mapentry[pigHall]{Beerhall}
 
 Here miscreants drink, except for Mog -- the cat -- who spends his time sitting on people while cleaning himself.
@@ -54,8 +52,24 @@ Roll $2D6$ to find the state of the tavern, and use both results.
   $1D6$ \glspl{diggers} exit room \ref{pigPrivate} with some barrels, and place them in room \vref{pigKitch}.
 \end{dlist}
 
+\pigowner
+
 \paragraph{Any trouble here}
 receives a vicious response from \gls{pigowner}' most loyal customers.
+
+\humanmaid[\npc{\T[3]\Hu}{Loyal Customers}]
+
+\humanmaid[\npc{\T[3]\Hu}{Loyal Customers}]
+
+\begin{boxtable}[lYYYc]
+  \textbf{Name} & \textbf{Att Bonus} & \textbf{Dam Bonus} & \textbf{\Gls{weight}} \\\hline
+  \showWeapon{\chair} \\
+  \showWeapon{\firepoker} \\
+  \showWeapon{\skillet} \\
+  \showWeapon{\knife} \\
+  \showWeapon{\Log} \\
+  \showWeapon{\woodaxe} \\
+\end{boxtable}
 
 \mapPic{t}{Dyson_Logos/mincing_pig}{
   \ref{pigHall}/11/46,
@@ -76,8 +90,6 @@ receives a vicious response from \gls{pigowner}' most loyal customers.
   \ref{pigDown}/85/09,
   {\small\vref{sewerPigWalk}}/85/04,
 }
-
-\pigowner
 
 \mapentry[pigKitch]{Kitchen}
 

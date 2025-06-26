@@ -58,6 +58,65 @@
     }
 }
 
+\newcommand\sewerMap[1][b]{
+  \mapPic{t}{Dyson_Logos/sewer}{
+    \ref{farmExit}/23/95,
+    \rotatebox{60}{\normalsize\nameref{farmExit}}/14/85,
+    %{\large\D}\ref{sewerCells}/21/75,
+    %{\large\D}\ref{sewerCells}/52/06,
+    \D\ref{sewerLockup}/07/41,
+    \D\ref{sewerLockup}/37/03,
+    \ref{oldlibrary}/28/49,
+    \ref{sewerSticks}/86/63,
+    \large S/83/65,
+    \Large\ref{sewerKingRoom}/71/51,
+    \Large\ref{wireTrap}/70/31,
+    \ref{sewerWaterHall}/48/38,
+    \rotatebox{-23}{\small\nameref{sewerWaterHall}}/43/32,
+    \D\ref{sewerLockup}/61/42,
+    %{\large\D}\ref{sewerCells}/21/75,
+    \Large\ref{sewerFood}/70/69,
+    \ref{underHall}/77/27,
+    {\normalsize\rotatebox{-90}{\nameref{underHall}}}/87/27,
+    \ref{citadelTunnel}/11/18,
+    {\normalsize\nameref{citadelTunnel}}/05/09,
+    %{\large\D}\ref{sewerCells}/21/16,
+    \ref{sewerPigWalk}/84/82,
+    {\small\rotatebox{45}{\nameref{sewerPigWalk}}}/90/81,
+    \ref{sewerDrop}/92/70,
+    {\normalsize\rotatebox{-90}{\nameref{sewerDrop}}}/97/69,
+    \ref{slum_exit}/71/91,
+    {\normalsize\nameref{slum_exit}}/71/98,
+    \Large\ref{wireTrap}/49/76,
+    \Large\ref{underGuard}/63/865,
+    %{\large\D}\ref{sewerCells}/43/79,
+    \ref{sewerShrine}/56/77,
+    \Large\ref{sewerMushrooms}/33/67,
+  }
+
+
+}
+
+\newcommand\oldTempleMap[1][b]{
+  \mapPic[\Large]{#1}{Dyson_Logos/qualme_temple}{
+    \ref{antGrounds}/17/10,
+    \Large S/28/46,
+    \ref{antHall}/34/53,
+    \ref{antBasilisk}/50/54,
+    \nameref{antBasilisk}/50/49,
+    \ref{antPrison}/34/90,
+    \nameref{antPrison}/34/85,
+    \ref{necroGhasts}/23/79,
+    \nameref{necroGhasts}/21/72,
+    \ref{antOgre}/82/31,
+    \nameref{antOgre}/82/26,
+    \ref{antTower}/85/68,
+    \nameref{antTower}/85/63,
+    \ref{antStudy}/17/45,
+    \nameref{antStudy}/17/40,
+  }
+}
+
 \newcommand\shadowVaultMap{
   \mapPic{t}{Dyson_Logos/shadow_gate}{
     S/82/47,

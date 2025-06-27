@@ -52,7 +52,7 @@ images/extracted/gorge.jpg: images/Irina/greylands.jpg
 
 images/extracted/cover.jpg: images/Unknown/sixshadow.jpg | images/extracted/
 	$(CP) $< $@
-$(DROSS)/$(BOOK)_cover.pdf: config/share/cover.tex cover.tex images/extracted/cover.jpg $(DBOOK)
+$(DROSS)/$(BOOK)_cover.pdf: config/share/cover.tex cover.tex images/extracted/inclusion.tex images/extracted/cover.jpg $(DBOOK)
 	$(RUN) -jobname $(BOOK)_cover $<
 cover.pdf: $(DROSS)/$(BOOK)_cover.pdf
 	$(CP) $< $@

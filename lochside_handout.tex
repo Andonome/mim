@@ -6,25 +6,8 @@
 
 \noindent
 All purchases in \pgls{village} require a full morning or afternoon.
-Farmers chat, then barter, and finally refer the buyer to a neighbour.
-
-\Glspl{village} have $1D6\times 10$ of each item with \glsentrytext{weight} 0, $2D6$ of each item with \glsentrytext{weight} 1, and $1D6$ of each heavier items.
-
-\randomize
-\ifodd\value{r3}\else
-  \begin{boxtable}[Lc]
-
-    \textbf{Beasts} & \textbf{Cost} \\\hline
-    Donkey & \mkPrice{4} \\
-
-    Horse & \mkPrice{20} \\
-
-    Mule & \mkPrice{23} \\
-
-    Hunting Dog & \mkPrice{4} \\
-
-  \end{boxtable}
-\fi
+\Glspl{guard} chat, then barter, and finally refer the buyer to a neighbour.%
+\footnote{The settlement has $1D6\times 10$ of each item with \glsentrytext{weight} 0 or more, $4D6$ of each item with \glsentrytext{weight} 1, and $2D6$ of each heavier items.}
 
 \begin{boxtable}[Lc]
 
@@ -97,33 +80,14 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 
 \end{nametable}
 
-\renewcommand\npcsymbol{\glsentrysymbol{wrecan}}
+\renewcommand\npcsymbol{\glsentrysymbol{sylf}}
 \begin{nametable}[XXXXc]{At \composeHumanName, the Smith's}
   \textbf{Armour} & \textbf{\Glsentrytext{dr}} & \textbf{\glsentrytext{covering}} & \textbf{Weight} & \textbf{Cost} \\\hline
   \showArmourPrice{\completechain}{28}%
   \showArmourPrice{\partialchain}{18}%
 \end{nametable}
 
-
-\renewcommand\npcsymbol{\glsentrysymbol{sylf}}
-\begin{nametable}[XYYYXl]{At \composeHumanName, the Fletcher's}
-
-  \textbf{Projectile} & \textbf{\scshape Att} & \textbf{\scshape Dam} & \textbf{\Glsentrytext{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
-
-  Longbow &  +1  & +1 & 3~\glspl{ap} & 1  & \mkPrice{5}  \\
-
-  Longbow &  +2  & +2 & 4~\glspl{ap} & 1  & \mkPrice{7}  \\
-
-  Longbow &  +3  & +1 & 5~\glspl{ap} & 1 & \mkPrice{11}  \\
-
-  Crossbow &  +2  & +2 & 1~\glspl{ap} & 3  & \mkPrice{14}  \\
-  \hline
-
-  Bolt  &  --- & --- & --- & --- & \mkPrice[cp]{14}  \\
-
-  Arrows  &  --- & --- & --- & --- & \mkPrice[cp]{18}  \\
-
-\end{nametable}
+\baileyFletcher
 
 \ifnum\value{r4b}>2
   \renewcommand\npcsymbol{\glsentrysymbol{wrecan}}

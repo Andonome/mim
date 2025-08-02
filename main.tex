@@ -116,17 +116,21 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \input{config/markets/commands.tex}
 
-\handout{config/markets/bailey}
-\handout{config/markets/bailey}
-\handout{config/markets/bailey}
-\handout{config/markets/bailey}
-\handout{config/markets/bailey}
-\handout{config/markets/bailey}
+\Repeat{5}{%
+  \stepcounter{cycle}
+  \setTemperature%
+  \ifnum\thecycle>5\setcounter{cycle}{0}\fi%
+  \handout{config/markets/bailey}
+}
 \handout{roads_broch_handout}
 
-\handout{lochside_handout}
-\handout{lochside_handout}
-
+\Repeat{2}{%
+  \stepcounter{cycle}
+  \setTemperature%
+  \ifnum\thecycle>5\setcounter{cycle}{0}\fi%
+  \handout{lochside_handout}
+}
+\setCycle{\month}{\day}
 
 \glsresetall
 
@@ -148,10 +152,15 @@ Keywords={TTRPG,RPG,roleplaying}
 \renewcommand\marketMixer{\Glsentrytext{healerLeader}}
 \renewcommand\marketFence{\Glsentrytext{sewerking}}
 \renewcommand\marketWeaponsSeller{\Glsentrytext{captain}}
-\handout{config/markets/town}
-\handout{config/markets/town}
-\handout{config/markets/town}
-\handout{config/markets/town}
+
+\Repeat{3}{%
+  \stepcounter{cycle}
+  \setTemperature%
+  \ifnum\thecycle>5\setcounter{cycle}{0}\fi%
+  \handout{config/markets/town}
+}
+\setCycle{\month}{\day}
+
 
 \handout{maps_handouts}
 

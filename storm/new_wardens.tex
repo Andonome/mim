@@ -122,24 +122,27 @@ Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't b
   7 & \textit{``The attackers sprint away, leaving you running in the dark.''} \\
 \end{nametable}
 
-\null
-
-\humanthief[\npc{\T[2]\F\Hu}{\composeHumanName\ \& \composeHumanName}]
-
-\sewerthief
-
 \paragraph{If the party follow the assassins underground,}
 they run to the nearest entrance -- perhaps the \gls{doulaShop}
 (area \vref{greyDoulaShop})
 or \gls{pig} (\vpageref{sewers}).
 Otherwise, this incident may remain a mystery.
 
+\humanthief[\npc{\T[2]\F\Hu}{\composeHumanName\ \& \composeHumanName}]
+
+\sewerthief
+
 \humanthief[\npc{\T[2]\M\Hu}{\composeHumanName\ \& \composeHumanName}]
+
+\boxPair{
+  \newGhast[\npc{\T[7]\D}{\arabic{noAppearing} \Glsfmtplural{ghast}}]
+}{
+  \newGhast[\npc{\T[7]\D}{\arabic{noAppearing} \Glsfmtplural{ghast}}]
+}
 
 \segment{town}% AREA
 {Bandits Caught}% NAME
 {The \glsentrytext{sunGuard} have captured \glsentrytext{banditking}}% SUMMARY
-
 \label{banditsCaught}
 
 The \glspl{sunGuard} have captured \gls{banditking}, along with four of the bandits.
@@ -164,20 +167,9 @@ Once the \nameref{stationDungeon} fills with smoke, the \glspl{sunGuard} will ha
 it will cast \textit{Soul Specks} on them, allowing them to deal with the smoke.
 Otherwise, \gls{forestpriest} will create \pgls{talisman} for them which creates a \textit{Bubble} spell, to save a lock-smith \gls{diggers} from the smoke.
 
-\boxPair{
-  \newGhast[\npc{\T[7]\D}{\arabic{noAppearing} \Glsfmtplural{ghast}}]
-}{
-  \newGhast[\npc{\T[7]\D}{\arabic{noAppearing} \Glsfmtplural{ghast}}]
-}
-
 \segment{town}% AREA
 {The Dead Rise}% NAME
 {\Glsfmttext{sewerking} releases \glspl{ghoul} upon \glsentrytext{citadel}, killing \glsentrytext{townmaster}}% SUMMARY
-
-If the \glspl{pc} have already stolen the \gls{bskulls} or somehow disbanded the \gls{diggers} movement, nothing happens here.
-All remains well in \gls{town}.
-
-Otherwise, not a single soul in the city will sleep this night, as the \glspl{diggers} enact their plan.
 
 \begin{exampletext}
   The \glspl{diggers} finally finished digging the tunnel underneath \gls{citadel}, where \gls{townmaster} lives.%
@@ -197,6 +189,11 @@ Otherwise, not a single soul in the city will sleep this night, as the \glspl{di
   More hands come from the shadowy window, trying to grapple him back in and he throws the \gls{torch} and jumps to the ground but they already have his wrist.
   The dark hands pull the screaming man back into the dark citadel.
 \end{boxtext}
+
+If the \glspl{pc} have already stolen the \gls{bskulls} or somehow disbanded the \gls{diggers} movement, nothing happens here.
+All remains well in \gls{town}.
+
+Otherwise, not a single soul in the city will sleep this night, as the \glspl{diggers} enact their plan.
 
 \paragraph{If the troupe try to help,}
 they find \gls{sunGuard} fleeing (and trying not to be seen) and about 100 \glspl{ghast} in \gls{citadel}, devouring the face of anyone they encounter.

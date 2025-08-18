@@ -17,19 +17,21 @@ all: $(RELEASE)
 config/common.mk:
 	@git submodule update --init
 
-SVG_EXTRACTS = town shadow_gate_map
-EXTRACTS += $(patsubst %, images/extracted/%.svg, $(SVG_EXTRACTS))
-JPG_EXTRACTS = bandit_camp town_wide lochside redfall old_temple basement cinderfilch sixshadow gorge
-EXTRACTS += $(patsubst %, images/extracted/%.jpg, $(JPG_EXTRACTS))
+SVG_NAMES = town shadow_gate_map
+SVG_EXTRACTS += $(patsubst %, images/extracted/%.svg, $(SVG_NAMES))
+JPG_NAMES = bandit_camp town_wide lochside redfall old_temple basement cinderfilch sixshadow gorge
+JPG_EXTRACTS = $(patsubst %, images/extracted/%.jpg, $(JPG_NAMES))
 
 images/extracted/%: images/extracted/
 
-images/extracted/town.svg: images/Dyson_Logos/town.svg
+images/extracted/town.svg: images/Dyson_Logos/town.svg images/extracted/shadow_gate_map.svg
 	inkscape $< --export-id-only --export-id=layer5 -l --export-filename $@
-images/extracted/shadow_gate_map.svg: images/Dyson_Logos/shadow_gate.svg
+images/extracted/shadow_gate_map.svg: images/Dyson_Logos/shadow_gate.svg 
 	inkscape $< --export-id-only --export-id=layer1 -l --export-filename $@
 
-$(DBOOK): $(DEPS) $(EXTRACTS) $(AUX_REFERENCES) qr.tex
+$(JPG_EXTRACTS): $(SVG_EXTRACTS)
+
+$(DBOOK): $(DEPS) $(JPG_EXTRACTS) $(AUX_REFERENCES) qr.tex
 
 images/extracted/bandit_camp.jpg: images/Irina/greylands.jpg
 	magick $< -crop 1000x250+20+160 $@

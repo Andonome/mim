@@ -33,17 +33,23 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 
   \textbf{Travel} & \textbf{Weight} & \textbf{Cost} \\\hline
 
-  Boat for 4 & 13 &  \mkPrice{9} \\
+  \setcounter{Strength}{\value{r6}}
+  \multiply\value{Strength} by 6
+  \addtocounter{Strength}{0}
+  $1 \times$
+  Boat for \arabic{r6} & 1\arabic{r6} &  \mkPrice{\value{Strength}} \\
 
-  Boat for 6 & 13 &  \mkPrice{15} \\
+  \marketItem[cp]{\rations}{1}{13}
 
-  \Glsfmtplural{ration} &  1 & \mkPrice[cp]{6} \\
+  \marketItem[cp]{\rations}{1}{13}
 
-  50' rope & 1 & \mkPrice{2} \\
+  \marketItem[cp]{\rations}{1}{13}
 
-  Tinder box & 0 & \mkPrice[cp]{2} \\
+  \marketItem{50' rope}{1}{2}
 
-  \Glsfmttext{torch} & 1 & \mkPrice[cp]{6} \\
+  \marketItem[cp]{Tinder box}{0}{8}
+
+  \marketItem[cp]{\Glsfmtplural{torch}}{0}{2}
 
 \end{nametable}
 
@@ -54,28 +60,40 @@ Boat trip with \composeHumanName & \mkPrice[cp]{19} per mile \\
 
   \textbf{Name} & \textbf{\scshape Att} & \textbf{\scshape Dam} & \textbf{\Glsfmtshort{ap} Cost} & \textbf{Weight} & \textbf{Cost} \\\hline
 
+  $\arabic{r12}0\times$
   \Dagger\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weaponWeight} & \mkPrice{2} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \javelin\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{1} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \glaive\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{7} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \greatsword\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{12} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \maul\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{4} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \shortsword\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{6} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \poleaxe\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{8} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \quarterstaff\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \rapier\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{17} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \spear\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{6} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \longsword\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{9} \\
 
+  $\arabic{r6}\arabic{r6b}\times$
   \warhammer\weaponName & \arabic{weaponBonus} & \absNum{weaponDamage} & \arabic{heft} & \arabic{weight} & \mkPrice{3} \\
 
 \end{nametable}

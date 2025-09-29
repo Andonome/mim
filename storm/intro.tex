@@ -1,11 +1,32 @@
 Here comes the mayhem!
-Another \gls{fiend} has arrived, and he wants to turn \gls{valley} into an undead army; and the army sweeps through the land like a house-fire in \gls{cFive}.
-The authorities will not help much, as the \gls{templeOfBeasts} need to focus on  the \glspl{whiteBandits} (who decide to assassinate most of the \glspl{jotter}).
-Hopefully the \glspl{pc} have dealth with \gls{spiderqueen} by this point.
+
+\nameref{necroStory} introduces another \gls{fiend}, who tears apart \gls{valley} to feed his undead army.
+
+In \nameref{risingTitles}, the \glspl{diggers} and \gls{whiteBandits} attack the established political powers in \gls{valley}.
+
+Unless the \glspl{pc} intervene, \gls{town} loses its \gls{warden}, and the \gls{valley}'s \gls{templeOfBeasts} loses most of its \glspl{jotter}.
+Without its established political powers, \gls{valley} remains defenceless, and the dead will tear it apart.
+
+Hopefully the \glspl{pc} have dealt with \gls{spiderqueen} by this point.
+Hopefully \nameref{troubleAle} did not conclude with \gls{town} ravaged by disease.
 Hopefully they found the source of all the undead under \gls{town} before the citadel becomes empty, leaving a child in charge of \gls{valley}.
+Hopefully they have managed to make a couple of friends or allies to work with.
+Because any group which remained politically neutral (and therefore inert) will find their world crumbling around them.
 
 Pulling these \glspl{thread} together depends entirely on what kind of mess the \glspl{pc} have found themselves (and \gls{valley}) in.
 The real conclusions rely on what the players manage to discover around the locations, starting in \autoref{forestChapter}, and ending \vpageref{noEnding}.
 
-The assumed starting date is the year \thefenestraYear, \showCycle, day \thefenestraDay.
-But by this point in the \gls{campaign}, the \glspl{segment} may appear at any time, possibly spread two \glspl{cycle} apart.
+\setcounter{track}{\thefenestraDay}%
+\divide\value{track} by 20%
+\set{age}{\thecycle}%
+\stepcounter{age}%
+
+The \glspl{thread} assume they take place around
+\ifcase\thetrack%
+  early \showCycle.
+\or%
+  mid \showCycle, moving into \showCycle[\theage].
+\else%
+  late \showCycle, just in time for \pgls{storm} to break for \nameref{risingTitles}.
+\fi%
+

@@ -1,8 +1,11 @@
 \makeindex[name=spells,title={Spell Summaries},columns=2]
 \makeindex[name=history,title={Chronological Events},columns=2]
 
+\newcounter{startingYear}
+  \setcounter{startingYear}{\thefenestraYear}
+
 \newcommand\histEvent[3]{%
-    \setcounter{track}{\value{fenestraYear}}%
+    \setcounter{track}{\thestartingYear}%
     \setcounter{diceNo}{#1}%
     \addtocounter{track}{-\value{diceNo}}%
   \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showCycle[#2]}\nobreak\\~{#3}|textbf~page~}%

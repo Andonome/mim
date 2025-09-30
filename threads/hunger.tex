@@ -1,7 +1,14 @@
 \thread[town,Roads]{Desperate Measures}
 \label{desperatemeasures}
 
-\histEvent{0}{5}{\Glsfmttext{banditking} curses \glsfmttext{hungrywarden} with strength and hunger}
+\ifnum\thecycle<2%
+  \setcounter{track}{5}
+  \setcounter{age}{1}%
+\else%
+  \setcounter{age}{3}%
+  \setcounter{track}{1}
+\fi%
+\histEvent{\theage}{\expandafter\thetrack}{\Glsfmttext{banditking} curses \glsfmttext{hungrywarden} with strength and hunger}
 
 \begin{exampletext}
   \noindent

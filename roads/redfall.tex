@@ -83,10 +83,11 @@ The battle will likely end before either side loses too many members.
   \ref{redKitchen}/30/75,
   \Large\rotatebox{-45}{\nameref{redServants}}/43/75,
   \ref{redServants}/41/73,
-  \huge\ref{redChild}/84/19,
+  \huge\ref{redChild}/85/19,
   \Large\rotatebox{45}{\nameref{redChild}}/84/28,
   \Large\rotatebox{45}{\nameref{redSmolYard}}/75/34,
   \ref{redSmolYard}/65/36,
+  \ref{redMechanism}/73/50,
   \huge\nameref{redHall}/63/93,
   \ref{redHall}/63/75,
 }
@@ -124,15 +125,17 @@ At present only six members of staff remain -- two cooks, two butlers, one \gls{
 
 \mapentry[redSmolYard]{Small Courtyard}
 
-This area holds a thin, thatched roof, and plenty of space for games without getting wet.
-It's used as a common area by the servants.
+\begin{boxtext}
+  On the right, a thin, thatched roof covers a stables, which blocks the view of the rest of this courtyard.
+  On the left, the main entrance to the keep, with a raised portcullis and side-tower.
+\end{boxtext}
 
 \mapentry[redToilet]{Toilet}
 
 This spacious lavatory comes with a runoff to the river outside.
 It also hosts arrow slits to fire at intruders on the river.
 Small characters, with Strength of 0, can fit through the gap from outside, if they are not wearing armour.
-Those with Strength -1 or less can fit through even with armour on.
+Those with Strength~-1 or less can fit through even with armour on.
 
 \Gls{hungrywarden}'s horse -- Janus -- was affected by the monstrous spell which gave him such strength.
 He still rides Janus, happily, but only at night, when nobody can see him.
@@ -175,14 +178,26 @@ Characters on the river or anywhere near this room can hear intermittent banging
   }
 }
 
-\mapentry[redHall]{Great Hall}
-
-A heavy wooden door guards the entrance well, and a gate sits in front of that.
-Lifting the gate takes a \roll{Strength}{Athletics} roll, \tn[10], but the locks on the door don't give much resistance; players can pick them with \roll{Intelligence}{Larceny}, \tn[8].
-The bars are slim enough that anyone with a \gls{weight} of 5 or less can just about squeeze through.
+\mapentry[redMechanism]{Mechanism}
 
 \begin{boxtext}
-  You open the door to a massive table full of opulent food, and more food stacked on top.
+  A wooden wheel on the wall has chain wrapped around  it, which stretches up to a hole in the ceiling.
+  Sunlight rays enter through the murder holes.
+\end{boxtext}
+
+A guard remains here on \gls{hungrywarden}'s orders, ready to release the mechanism, which drops the portcullis.
+
+The second \gls{pc} entering should dodge with \roll{Speed}{Vigilance} (\tn[8]) or take \dmg{0}~Damage.
+
+\humansoldier[\npc{\glsentrysymbol{paik}\M\Hu}{\composeHumanName, Loyal \Glsfmttext{sunGuard}}]
+
+\paragraph{Lifting the gate}
+needs \roll{Strength}{Athletics} (\tn[10]), and the bars are slim enough that anyone with a \gls{weight} of 15 or less can just about squeeze through.
+
+\mapentry[redHall]{Great Hall}
+
+\begin{boxtext}
+  Past the massive, wooden, doors, a massive table full of opulent food, and more food stacked on top.
   Layers of bloody bones poke out the side of three layers of filthy dishes, lining the bottom of the feast.
   At the head of the table, sits \gls{hungrywarden}, in a meat-stained dressing gown.
 \end{boxtext}

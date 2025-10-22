@@ -96,12 +96,6 @@ His hope is that any predators in the area will wander up to the fire, and not h
   \humansoldier[\npc{\T[3]\Hu}{\arabic{noAppearing} \glspl{whiteBandits}}]
 }
 
-\boxPair[t]{
-  \banditking
-}{
-  \showStdSpells
-}
-
 \segment{Roads}% AREA
 {New Guards}% NAME
 {\Glsentrytext{whiteBandits} has an argument with the \glsentrytext{guard}, tensions rise, and the troupe must pick a side or de-escalate}% SUMMARY
@@ -251,7 +245,12 @@ The fight lasts only a couple of \glspl{round}, even if the \glspl{pc} don't hel
   Does anyone ever thank you?
 \end{speechtext}
 
-\pic{Unknown/wizard_and_cat}
+\banditking
+\boxPair[t]{
+  \pic{Unknown/wizard_and_cat}
+}{
+  \showStdSpells
+}
 
 \paragraph{If the \glspl{pc} parted on bad terms,}
 \gls{banditking} will ask them not to approach to close.

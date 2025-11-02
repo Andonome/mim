@@ -843,7 +843,24 @@
 }
 
 \newcommand\thornSeneschal{
-  \humandiplomat[\NPC{\glsentrysymbol{paik}\M\Hu}{Thorn the \Glsentrytext{seneschal}}{practical}{scratches nose}{a quiet life}]
+  \Person{%
+  \NPC{\glsentrysymbol{paik}\M\Hu}%
+  {Thorn the \Glsentrytext{seneschal}}%
+  {practical}%
+  {scratches nose}%
+  {a quiet life}}%
+    {{1}{0}{0}}% BODY
+    {{2}{-1}{2}}% MIND
+    {%
+      \set{Academics}{1}
+        \set{Melee}{1}
+      \set{Deceit}{2}
+        \rapier
+        \set{Survival}{2}
+    }% SKILLS
+    {\lucky}% KNACKS
+    {\lootBig}% EQUIPMENT
+    {}% ABILITIES
 }
 
 \longnewglossaryentry{redseneschal}{

@@ -403,20 +403,23 @@
   She plans to become rich selling watered-down dwarvish ale, and smuggling it into \glsentrytext{town} via \glsfmtplural{diggers}' tunnels, to avoid paying dues to the local \glsentrytext{wheatGuild}},
 }
 
-\newcommand\southSeeker{
-  \Person{\NPC{\M\Hu}{\glsentrytext{southSeeker}}{Quiet}{Clicks tongue}{a clear understanding of local history}}%
+\newcommand\southSeeker[1][]{
+  \Person{\NPC{\M\Hu}{\glsentrytext{southSeeker}}%
+  {Dough-ball face}%
+  {Clicks tongue}%
+  {a clear understanding of local history}}%
     {{1}{0}{-1}}% BODY
     {{2}{0}{0}}% MIND
     {
-      \set{Projectiles}{1}
       \set{Academics}{2}
       \set{Crafts}{1}
       \set{Survival}{1}
-      \setcounter{Fire}{2}
+      \setcounter{Fire}{3}
       \setcounter{Air}{2}
+      #1
     }% SKILLS
     {\snapcaster}% KNACKS
-    {Air \gls{boon} \boxStat{r2}, \lootMedium}% EQUIPMENT
+    {Air \gls{boon} \boxStat{r2}, \rations, \lootMedium}% EQUIPMENT
     {}% ABILITIES
 }
 
@@ -741,7 +744,7 @@
         \setcounter{Cultivation}{2}
         \setcounter{Vigilance}{2}
         \addtocounter{fp}{5}
-        \setcounter{Air}{2}
+        \setcounter{Air}{1}
         \setcounter{Earth}{2}
         \setcounter{Water}{2}
         \shortsword

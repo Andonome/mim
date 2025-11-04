@@ -250,7 +250,11 @@ The fight lasts only a couple of \glspl{round}, even if the \glspl{pc} don't hel
 \boxPair[t]{
   \pic{Unknown/wizard_and_cat}
 }{
-  \showStdSpells
+  \showStdSpells[
+    \setcounter{diceNo}{1}
+    \input{config/spells/Earth2.tex}
+    \input{config/spells/Water2.tex}
+  ]
 }
 
 \paragraph{If the \glspl{pc} parted on bad terms,}

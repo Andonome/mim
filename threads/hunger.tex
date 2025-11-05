@@ -50,7 +50,13 @@ They may hear him grumbling in \gls{pig}, or if they go to buy armour, they migh
 
 \begin{boxtext}
   A single arrow hits the road ten feet in front of you with a dull thud.
-  An emaciated man stands up from the bushes nearby saying ``stand forth, and deliver!''.
+  An emaciated man stands up from the 
+  \ifnum\thetemperature>1%
+    gunnera
+  \else%
+    bramble
+  \fi%
+  nearby saying ``stand forth, and deliver!''.
 \end{boxtext}
 
 \Gls{redfall}'s starving inhabitants have taken to banditry, though they don't have the experience or the strength to do it properly.

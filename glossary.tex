@@ -880,7 +880,7 @@
 
 
 \newcommand{\captain}{
-  \Person{\NPC{\M\Hu}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{to finish all his paperwork}}%
+  \Person{\NPC{\M\Hu}{\Glsentryname{sunCaptain}}{Solemn}{Pitying glances}{to finish all his paperwork}}%
     {{1}{2}{0}}% BODY
     {{1}{-1}{1}}% MIND
     {
@@ -896,14 +896,15 @@
     {}% ABILITIES
 }
 
-\longnewglossaryentry{captain}{
-  name={Captain Vex},
+\longnewglossaryentry{sunCaptain}{
+  name={\protect\Glsentrytext{captain}~Vex},
   type={people},
+  prefix={\protect\Glsfmttext{captain}\space},
   category={people},
   sort={Vex},
   parent={whitehorse},
   symbol={\glsentrysymbol{paik}\M\Hu},
-  description={-- organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice, then ends the day with a stiff drink}
+  description={organizes \glsentrytext{town}'s \glsentrytext{sunGuard} with his booming voice, then ends the day with a stiff drink},
 }
 
 \newcommand{\traitor}{

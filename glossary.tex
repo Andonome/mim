@@ -94,7 +94,6 @@
   type={people},
   category={exposition},
   description={in this world, there are Good people, and Evil.
-
   The Evil people rob innocent, hardworking people.
   Then they set themselves up as Evil lords, so they can rob people with taxes, and the threat of their Evil soldiers.
 
@@ -732,7 +731,7 @@
   When he speaks to local \glsfmtplural{warden}, he presents himself as a simple travelling \glsentrytext{warden} from \glsentrytext{whiteplains}}
 }
 
-\newcommand{\banditking}{
+\newcommand{\banditking}[1][\npcQuote{In this world\ldots}]{
   \Person{\NPC{\glsentrysymbol{banditking}}{\Glsfmtname{banditking}}{Short hair, massive beard}{Drums fingers}{to return to nobility}}%
     {{1}{0}{1}}% BODY
     {{-2}{0}{3}}% MIND
@@ -749,6 +748,7 @@
         \setcounter{Water}{2}
         \shortsword
         \partialleather
+        #1
     }% SKILLS
     {}% KNACKS
     {dagger, pouch of marching mushrooms, pipe, 20~\glspl{sp}}% EQUIPMENT

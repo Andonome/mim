@@ -56,11 +56,10 @@ Seeing \gls{guard} uniforms will only deepen their worries.
 Unless the \glspl{pc} give them a reason not to, they masons will act friendly, offer them a drink on the top floor (area \ref{greenTop}), lock the trapdoor from below, and leave them to the wind and the griffins.
 If \gls{southSeeker} returns, he will have the masons release them, but ask they don't reveal the tower's location to anyone.
 
-\humanfarmer[\npc{\T[6]\M\Hu}{6 Masons}]
-
 \boxPair[t]{
-  \southSeeker
+  \humanfarmer[\npc{\T[6]\M\Hu}{6 Masons}]
 
+  \southSeeker
 }{
   \showStdSpells
 }
@@ -180,7 +179,7 @@ The Pious \Gls{ghast} guards this tomb from inside a closet.
 He swore to protect the \glspl{goldenPriests} by waiting here in the dry air with a body so seized up that he cannot move.
 But with a little time to shuffle his bones and crack his own skin, he will find enough flexibility to walk out of the closet door.
 
-\mapPic{b}{Dyson_Logos/green_secret}{
+\mapPic{t}{Dyson_Logos/green_secret}{
   \rotatebox{15}{\nameref{underGreenTower}}/09/55,
   \ref{underGreenTower}/17/43,
   \rotatebox{-15}{\nameref{underWatcher}}/09/02,
@@ -241,6 +240,16 @@ but the clanking armour makes him easy to notice (\roll{Wits}{Vigilance}, \glsen
   Little spears litter the area, as if a battle has taken place here.
 \end{boxtext}
 
+\paragraph{Once the \glspl{pc} enter,}
+the demiliches cast hostile spells at them (their presence does not help extracting mushrooms).
+
+\paragraph{Complementing the priests}
+breaks the Mind spell, which has them focussed on their single task.
+All of them have the Code `Noble', so anything which would earn a player \glspl{xp} serves to break this spell.%
+\exRef{stories}{Stories}{Noble}
+However, like all undead, the priests are deaf, so the \glspl{pc} can only communicate with the use of writing or spells (such as \textit{Soul Specks}).
+
+If the troupe manage to break the spell, the \glspl{goldenPriests} stop picking mushrooms, take some time to re-examine their unlives, and discuss (silently, with the unknowable communications of the undead) what they want to do, if anything.
 
 \demilich[\npc{\D\F\glssymbol{eldren}}{Demilich Delilah}]
 {
@@ -260,16 +269,7 @@ but the clanking armour makes him easy to notice (\roll{Wits}{Vigilance}, \glsen
   \showStdSpells[\setcounter{enc}{1}]
 }
 
-\paragraph{Once the \glspl{pc} enter,}
-the demiliches cast hostile spells at them (their presence does not help extracting mushrooms).
-
-\paragraph{Complementing the priests}
-breaks the Mind spell, which has them focussed on their single task.
-All of them have the Code `Noble', so anything which would earn a player \glspl{xp} serves to break this spell.%
-\exRef{stories}{Stories}{noble}
-However, like all undead, the priests are deaf, so the \glspl{pc} can only communicate with the use of writing or spells (such as \textit{Soul Specks}).
-
-If the troupe manage to break the spell, the \glspl{goldenPriests} stop picking mushrooms, take some time to re-examine their unlives, and discuss (silently, with the unknowable communications of the undead) what they want to do, if anything.
+\null
 
 \mapentry[underDoors]{Dirty Tunnels}
 
@@ -279,6 +279,8 @@ If the troupe manage to break the spell, the \glspl{goldenPriests} stop picking 
 
 Strange and rotten spears, made from unknown plant-matter, litter the area, along with rotten mushrooms.
 A green glow emanates through the narrow paths.
+
+\medbreak
 
 \mapentry[underSideRoom]{Side Room}
 
@@ -290,6 +292,8 @@ The \glspl{glowshroom} filled up the chests, but the priests just kept piling th
 
   Two lines of little creatures shuffle from the shadows, with pointed ears, bleach-white skin, drooping jaws, and a black abyss instead of eyes.
 \end{boxtext}
+
+\null
 
 At present, shelves at the back contain \lootMedium, \lootJewellery, \lootJewellery, \lootJewellery, \lootJewellery, and \lootBig.
 
@@ -310,12 +314,16 @@ they may see shadows moving below, and wonder who lives down there.
 they have entered the goblin realm, and do not speak the language.
 They are surely doomed.
 
+\null
+
 \mapentry[underSpiral]{Downward Spiral}
 
 This tunnel swirls round the \nameref{Abyss}, heading down, until it ends in a barred door.
 Opening the door allows a place to `fish' for the little \glspl{glowshroom}, then close the door before goblins ascend.
 
 \ghast[\npc{\D\N}{Hobgoblin \Glsfmtplural{ghast}}]
+
+\medbreak
 
 \subsection{Wrapping Up}
 
@@ -336,5 +344,7 @@ From then on, any encounter rolls of 3 are goblins, rather than the standard enc
 \exRef{judgement}{Judgement}{goblin_rating}
 
 Soon after, the goblins take \gls{redfall} (details \vpageref{redfallFallen}).
+
+\medbreak
 
 \end{multicols}

@@ -9,6 +9,7 @@ local_texfiles = $(foreach dir, $(local_directories), \
 DEPS += $(local_texfiles)
 
 dependencies += magick
+targets += $(TITLE)_cover.pdf
 
 include config/common.mk
 
@@ -54,14 +55,8 @@ images/extracted/gorge.jpg: images/Irina/greylands.jpg
 
 images/extracted/cover.jpg: images/Unknown/sixshadow.jpg | images/extracted/
 	$(CP) $< $@
-$(DROSS)/$(BOOK)_cover.pdf: config/share/cover.tex cover.tex images/extracted/inclusion.tex images/extracted/cover.jpg $(DBOOK)
-	$(RUN) -jobname $(BOOK)_cover $<
-cover.pdf: $(DROSS)/$(BOOK)_cover.pdf
-	$(CP) $< $@
 
-targets += cover.pdf
-
-images/extracted/necromancer.png: images/Decky/necromancer.svg
+images/extracted/necromancer.png: images/Decky/necromancer.svg | images/extracted/
 	magick $< $@
 
 .PHONY: creds

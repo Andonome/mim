@@ -144,15 +144,6 @@ If you prefer to track all of the \glspl{segment} from one place, you can use th
 
 \raggedbottom
 
-\needspace{5\baselineskip}
-\subsection{Forest \Glsfmtplural{segment}}
-
-\Gls{region} covered \vpagerefrange{forestChapter}{forestEnd}.
-
-\printThreadsInRegion{Forest}
-
-\bigLine
-
 \needspace{16\baselineskip}
 \subsection{Roads \Glsfmtplural{segment}}
 
@@ -160,13 +151,18 @@ If you prefer to track all of the \glspl{segment} from one place, you can use th
 
 \printThreadsInRegion{Roads}
 
-\bigLine
-
-\needspace{12\baselineskip}
+\columnbreak
 \subsection{\Glsfmttext{town} \Glsfmtplural{segment}}
 
 \Gls{region} covered \vpagerefrange{townStart}{townEnd}.
 
 \printThreadsInRegion{town}
+
+\columnbreak
+\subsection{Forest \Glsfmtplural{segment}}
+
+\Gls{region} covered \vpagerefrange{forestChapter}{forestEnd}.
+
+\printThreadsInRegion{Forest}
 
 \end{multicols*}

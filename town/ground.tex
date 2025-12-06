@@ -273,86 +273,186 @@ Sparse lighting divides the citadel sharply into day and night.
 During the day, the tall building's tall windows let Sunlight stream in, while leaving deep pockets of shadow in the corner of every room.
 At night, the only light comes from servants wandering with lanterns.
 
-\Gls{citadel} open doors, beckoning people into the \gls{court}, where \gls{townmaster} makes his verdicts.
+If the \glspl{pc} ever search \gls{citadel}, roll $1D6$ in each hallway as the \glspl{pc} move left or right.
+If a roll repeats, skip it and use the next undiscovered roll above (when moving right) or below (when moving left).
 
+\begin{exampletext}
+  The \glspl{pc} pose as servants to hunt for a book they think \gls{alchemist} might be hiding.
+  They enter left wing's second floor (where they shouldn't be), and the \gls{gm} rolls: \dicef{4}~\dicef{3}~\dicef{3}.
+  They listen at the doors of rooms 5 and 3 before opening the doors.
+  The last number is a repeat, so the \gls{gm} bumps it up to a 4.
+
+  Since they took the time to listen at the doors, the \gls{gm} rolls another die, to see who comes down the hall.
+  \dicef{6}
+  They hear footsteps coming, as a visiting \gls{seneschal} enters her room.
+\end{exampletext}
+
+Every so often, people move through the halls.
+Roll $1D6$ to determine which room.
+If someone's in that room, they leave; otherwise, someone comes down the hall to enter the room.
 
 %!
 \null
 \begin{description}
+  \item[The outer grounds:]
+  Double doors, inside the courtyard, lead downstairs to the \gls{court}.
+  \begin{itemize}
+    \item
+    Stalls of all kinds sell snacks.
+    \item
+    The double doors lead inside \gls{citadel}'s ground floor (right wing, \gls{area}~\ref{citadel:entrance}).
+  \end{itemize}
   \item[\Glsfmttext{court}:]
-  where the public enter.
+  where the public witness justice.
   \begin{itemize}
     \item
     The viewing area, where people buy snacks (see the town market handouts).
     \item
-    \Gls{townmaster}'s platform, with stairs up to the Guard Room, above.
+    \Gls{townmaster}'s platform, with stairs up to \gls{area}~\ref{citadel:guardroom}
+    \label{citadel:watch}
+    \item
+    Temporary prisons, leading into the \gls{court}.
+    \item
+    A massive storage room, full of empty cages, all waiting for \glspl{monster}.
+    \item
+    Hall of records, where \glspl{scrivener} note legal precedent as \gls{townmaster} creates it.
   \end{itemize}
   \item[Ground Floor:]
   where outsiders and servants come and go.
     \begin{description}
       \item[Left Wing:]
-      with a long hall.
-      \begin{itemize}
+      where servants rush down a long hall.
+      \begin{dlist}
         \item
-        Ballroom, with stuffed griffin centre-piece.
+        A secret door (which looks like any other wooden panel) leads to a small room with drinks.
         \item
-        Guardroom, with stairs down to the \gls{court}.
-      \end{itemize}
+        Light closet, with lanterns, lantern oil, candles and tinder boxes.
+        \item
+        Smoking room, with a visiting \gls{seneschal} from \gls{southDale} smoking a pipe.
+        \item
+        Guardroom, with stairs down to \gls{area}~\vref{citadel:watch}.
+        \label{citadel:guardroom}
+        $2D6$~\glspl{sunGuard} at all times.
+        \item
+        Ballroom, with stuffed \gls{griffin} centre-piece, and balconies looking down upon it.
+        \label{citadel:ballroom}
+        \item
+        Grand stairway, leading up to the Left Wing's first floor (\gls{area}~\ref{citadel:updownStairs}).
+      \end{dlist}
       \item[Right Wing:]
       full of tapestries.
-      \begin{itemize}
+      \begin{dlist}
         \item
         Dining Room, table supported by stuffed \gls{basilisk}.
         \item
         Servants' Quarters.
         \item
-        Kitchen.
-      \end{itemize}
+        Clothes washingn room (big tubs, lots of ash and fat).
+        \item
+        Toilet, with jester smoking a pipe (exits outside the citadel, wide enough for someone with \pgls{weight} of 20 or less to fit through).
+        \item
+        Kitchen (fireplace leads up through the floor above, \gls{area}~\vref{citadel:games}).
+        In the larder below, strange knocking sounds can be heard at night (see \gls{area}~\vref{citadelTunnel}).
+        \label{citadel:kitchen}
+        \item
+        Double-doors to courtyard and stairs up to the first floor.
+        Two \glspl{sunGuard} stationed here at all times.
+        \label{citadel:entrance}
+      \end{dlist}
     \end{description}
   \item[First Floor:]
-  where the important people stay.
+  where the important people talk.
     \begin{description}
       \item[Left Wing:]
       bare walls make echoes.
-      \begin{itemize}
+      \begin{dlist}
         \item
-        Office.
+        Light closet, with lanterns, lantern oil, candles and tinder boxes.
         \item
-        Library.\index{Library!Citadel}
+        Stairway down to the ground floor and up to the second.
+        \label{citadel:updownStairs}
+        \item
+        \Gls{townmaster}'s office, with records of sales and taxes.
+        \item
+        Hallway with doors to balconies, each overlooking \gls{area}~\vref{citadel:ballroom}.
+        \item
+        Library (provides +1 to any research).
+        \index{Library!Citadel}
         \item
         Guest Rooms.
-      \end{itemize}
+      \end{dlist}
       \item[Right Wing:]
       paintings of \glspl{guard} on every wall, battling \glspl{monster}.
-      \begin{itemize}
+      \begin{dlist}
         \item
         \Glsentrytext{townmaster}'s Sons' 9 quarters (a nearby tree stands tall enough to access one room).
         \item
-        Secret stairway up to the floor above, behind a door that looks like a wooden panel.
-        \item
         Winery.
-      \end{itemize}
+        \item
+        Games room
+        (fireplace leads up through the floor above, \gls{area}~\ref{citadel:townmaster})
+        \label{citadel:games}
+        \item
+        Sewing room.
+        \item
+        Toilet
+        (exits outside the citadel, wide enough for someone with \pgls{weight} of 25 or less to fit through).
+        \item
+        Secret stairway up to the floor above (\gls{area}~\ref{citadel:shield}), behind a door that looks like a wooden panel
+        (spot with \roll{Wits}{Crafts} at \tn[9]).
+        \label{citadel:secretUp}
+      \end{dlist}
     \end{description}
   \item[Second Floor:]
   with important people and valuable items.
     \begin{description}
       \item[Left Wing:]
       plain white walls.
-      \begin{itemize}
+      \begin{dlist}
         \item
-        \gls{alchemist}, the \gls{seeker}'s Study, with one \lootTalisman, and one \lootTalisman (descriptions \vpageref{talismanIndex}).
+        Stairway down to the first floor.
         \item
-        \Glsentrytext{townmaster}'s close servants' quarters.
-      \end{itemize}
+        \Gls{alchemist}, the \gls{seeker}'s Study, with one \lootTalisman, and one \lootTalisman\ (description \vpageref{talismanIndex}).
+        \item
+        \Gls{alchemist}'s observatory, with telescope and model orrery.
+        Looking through the telescope provides clues about upcoming \glspl{segment} (check what might be visible on the roads, \vpageref{roadsChapter}.)
+        \item
+        \Gls{seneschal} Flay's room (half-deaf and too old to do anything but keep the key to the treasury's second door (\gls{area}~\vref{citadel:treasury}).
+        \item
+        Lady Arsenika Grey's lounge and perfumery.
+        \label{citadel:perfumery}
+        \index{Grey Family!Lady Arsenika Grey}
+        \item
+        A door to the right wing hall.
+      \end{dlist}
       \item[Right Wing:]
       where ornate weapons line the walls.
-      \begin{itemize}
+      \begin{dlist}
         \item
-        \Glsentrytext{townmaster}'s room.
+        Secret staircase behind a massive shield (too large for a human to lift) leading one floor down (\gls{area}~\ref{citadel:secretUp}).
+        \label{citadel:shield}
         \item
-        Treasury, with 30 items, each worth $1D6\times 4$~\glspl{gp}, including a statue of an arachnid-like crab (\gls{weight}~3), made of a red crystal, which serves as 3 Fire \glspl{ingredient}.
+        \Glsentrytext{townmaster}'s room, with a key to the treasury's first door by his bedside candle.
+        \label{citadel:townmaster}
+        \item
+        Treasury, with brass-braced wooden doors, and a gate beyond.
+        Inside the floor is covered in moss which squeaks when stepped on%
+        \iftoggle{judgement}{(see \textit{Judgement}, \autopageref{screechMoss})}{}.
+        \label{citadel:treasury}
+        \index{Treasury, \Glsfmttext{citadel}}
+
+        The central table has a statue of an arachnid-like crab (\gls{weight}~3), made of a red crystal, which serves as 3 Fire \glspl{ingredient}.
         This statue came from the Fingers some centuries ago (covered \vpageref{bookOfFingers}).
-      \end{itemize}
+
+        Various locked chests each contain $1D6 \times 100$ \glspl{sp}.
+        \item
+        A door to the left wing.
+        \item
+        Dressing room, with fancy clothes (worth $1D6$~\glspl{gp}, but increase the \gls{tn} to interact with a fence by 2).
+        \item
+        Watchtower, with wide windows overlooking both \gls{town} and the outer fields.
+        \Pgls{sunGuard} takes notes on people entering \gls{town}.
+      \end{dlist}
     \end{description}
 \end{description}
 
@@ -475,7 +575,9 @@ A tie indicates that he forgets them soon, and they can try again within a week.
 \Gls{whitehorse} has no locks as nobody expects thieves to enter.
  
 %!
-%\null
+\null
+\bigbreak
+
 \begin{enumerate}
   \item
   The drinking hall hosts \gls{village} \glspl{warden} playing games, and half a dozen \glspl{sunGuard} (sometimes including \gls{sunCaptain}).
@@ -492,10 +594,10 @@ A tie indicates that he forgets them soon, and they can try again within a week.
   The bookshelves contain rather a lot of history books, most focussing upon anti-elven propaganda, such as the time they destroyed \gls{lostcity}.
   \index{Books!Elven War on \gls{lostcity}}
   \index{Elves!War on \gls{lostcity}}
+  \index{Maps!\Glsentrytext{valley}}
 
   A map on the wall shows all of \gls{valley}.
   Show your players the map in the handouts, but don't give it to them unless the \glspl{pc} want to steal the map.
-  \index{Maps!\Glsentrytext{valley}}
   \item
   \label{horseCupboard}
   This cupboard contains cleaning supplies, two Fire \glspl{ingredient} (bear hearts), and one Water \gls{ingredient} (\pgls{woodspy} beak), in case someone becomes sick.
@@ -532,6 +634,9 @@ It is \emph{filthy}, but otherwise lavish.
   (\roll{Wits}{Crafts} at \tn[10])
 \end{itemize}
 
+%!
+\null
+
 \mapentry[guardstation]{Guard Station~\glssymbol{paik}}
 
 A minimum of five \glspl{sunGuard} patrol the grounds at a time.
@@ -558,8 +663,6 @@ The wooden buildings tacked into the outer wall have thin rooves which constantl
 
 \humansoldier[\npc{\T[9]\glssymbol{paik}\Hu}{30 \glspl{sunGuard}}]
 
-%!
-\null
 \begin{enumerate}
   \item
   Dressing room, with armour.
@@ -591,11 +694,11 @@ The wooden buildings tacked into the outer wall have thin rooves which constantl
   Interrogation room.
   \label{stationInterrogation}
   \item
-    Simulacra of \pgls{woodspy}, \gls{crawler}, griffin, (small) \gls{basilisk}, and bandit, made from wood and leather.
+  Simulacra of \pgls{woodspy}, \gls{crawler}, \gls{griffin}, (small) \gls{basilisk}, and bandit, made from wood and leather.
   The guards use these to explain combat tactics.
   \label{stationShrine}
   \item
-  Stairway down to the dungeons.
+  Stairway down to the dungeons (\vpageref{stationDungeon}).
   \label{stationStairs}
 \end{enumerate}
 

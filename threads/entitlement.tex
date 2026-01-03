@@ -222,6 +222,8 @@ See \autopageref{talismanIndex} for the full timeline.}
 \paragraph{For the rest of the \gls{cycle},}
 all of \gls{town} is full of talk about the \glspl{goldenPriests} of \gls{lostcity}, and the tragedy of \gls{warningbard}'s arrest.
 
+\needspace{10\baselineskip}
+
 \paragraph{If the troupe do not intervene,}
 \gls{warningbard} will end up in the cells under the \nameref{guardstation} for three \glspl{cycle} (\pageref{guardstation}).
 Of course, there's not a lot they \emph{can} do, unless they want to do something dangerous.
@@ -236,6 +238,17 @@ Of course, there's not a lot they \emph{can} do, unless they want to do somethin
 \end{boxtext}
 
 In the distance, the \glspl{pc} hear \gls{banditking} shouting encouragements at his archers as they hunt \localMonster\ (use the same stats as before, \vpageref{whiteBanditEntourage}).
+
+\banditking
+\boxPair[b]{
+  \pic{Unknown/wizard_and_cat}
+}{
+  \showStdSpells[
+    \setcounter{diceNo}{1}
+    \input{config/spells/Earth2.tex}
+    \input{config/spells/Water2.tex}
+  ]
+}
 
 \ifnum\value{temperature}=0
   \griffin
@@ -258,17 +271,6 @@ The fight lasts only a couple of \glspl{round}, even if the \glspl{pc} don't hel
   You're out here, risking your lives to keep \gls{valley} safe.
   Does anyone ever thank you?
 \end{speechtext}
-
-\banditking
-\boxPair[t]{
-  \pic{Unknown/wizard_and_cat}
-}{
-  \showStdSpells[
-    \setcounter{diceNo}{1}
-    \input{config/spells/Earth2.tex}
-    \input{config/spells/Water2.tex}
-  ]
-}
 
 \paragraph{If the \glspl{pc} parted on bad terms,}
 \gls{banditking} will ask them not to approach to close.
@@ -294,9 +296,8 @@ Water has bloated the corpses, leaving them barely identifiable (\roll{Intellige
 Whether they come from \pgls{village} or (more likely) an inner hamlet, the people who served them never liked them, and will not feel ready to co\"operate with the \glspl{pc}.
 
 \paragraph{Searching for bandit tracks}
-may lead the \glspl{pc} to the bandits' lair,%
-\footnote{See \autopageref{banditLair}.}
-though following them will take some time.
+may lead the \glspl{pc} to the bandits' lair, (\vpageref{banditLair}) though
+following them will take some time.%
 \exRef{core}{Core Rules}{tracking}
 
 \paragraph{Investigating their home}
@@ -310,7 +311,6 @@ reveals \pgls{village} (or hamlet) where the locals never much liked their \glsp
 \Gls{sewerthief} approaches the \glspl{pc} shortly (or immediately) after they saw the \gls{warden} family dead.
 He offers no firm opinion, but only gauges how they feel about the situation, then reports their attitudes to \gls{banditking}.%
 \vpagerefnearby{southSmith}{}{\footnote{Find his \gls{statblock} \vpageref{sewerthief}.}}
-
 
 \paragraph{If the \glspl{pc} somehow notice his connection with \gls{banditking},}
 he does his best to `play the numpty' -- a skill he excels at.

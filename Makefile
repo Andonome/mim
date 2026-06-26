@@ -25,7 +25,7 @@ JPG_EXTRACTS = $(patsubst %, images/extracted/%.jpg, $(JPG_NAMES))
 
 images/extracted/%: images/extracted/
 
-images/extracted/town.svg: images/Dyson_Logos/town.svg images/extracted/shadow_gate_map.svg
+images/extracted/town.svg: images/Dyson_Logos/town.svg
 	inkscape $< --export-id-only --export-id=layer5 -l --export-filename $@
 images/extracted/shadow_gate_map.svg: images/Dyson_Logos/shadow_gate.svg 
 	inkscape $< --export-id-only --export-id=layer1 -l --export-filename $@

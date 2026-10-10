@@ -39,7 +39,7 @@ Enter the PCs, charged with defending this peace.
 Throughout the various stories, one bailey after another could fall.
 And if the perimeter falls, a deluge of predators will feast on the soft inner areas.
 
-[compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
+[compiling]: https://gitlab.com/bindrpg/core/-/wikis/Development/Compiling
 [download]: https://gitlab.com/bindrpg/mim/-/jobs/artifacts/master/raw/Missions_in_Maitavale.pdf?job=build
 [cs]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/character_sheets.pdf?job=build
 [rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/rules.pdf?job=build
